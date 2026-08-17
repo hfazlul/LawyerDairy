@@ -1,0 +1,384 @@
+// Lawyer Diary BD — Prisma Schema (webapp)
+// BD-specific notes:
+//   - chamberId on every user-owned table (multi-tenancy from day 1)
+//   - deletedAt on every mutable table (NEVER hard delete)
+//   - rev on synced tables (optimistic concurrency for mobile sync)
+//   - appRole USER|ADMIN for web dashboards; chamber role stays OWNER|...
+//   - plan / subscriptionEndsAt = entitlement; STARTER+ cause-list; PRO_ADVANCE case mgmt
+//   - jurisdiction (BD|PK|IN) = law pack; User.uiLanguage orthogonal
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// ── Tenancy ───────────────────────────────────────────────────────────────────
+
+model Chamber {
+  id                 String           @id @default(cuid())
+  name               String
+  plan               Plan             @default(FREE)
+  subscriptionEndsAt DateTime?
+  /// Law pack — orthogonal to UI language
+  jurisdiction       JurisdictionCode @default(BD)
+  /// Soft-suggest only until user confirms (first open / signup)
+  jurisdictionConfirmed Boolean       @default(false)
+  smsCredits         Int              @default(0)
+  createdAt          DateTime         @default(now())
+  users              User[]
+  cases              Case[]
+  hearings           Hearing[]
+  clients            Client[]
+  documents          Document[]
+  feeEntries         FeeEntry[]
+  subscriptions      Subscription[]
+}
+
+enum Plan {
+  FREE
+  STARTER
+  PRO
+  PRO_ADVANCE
+  CHAMBER // legacy / team ACL ceiling — treat like PRO_ADVANCE for gates
+}
+
+/// Law content pack (UK skipped for now)
+enum JurisdictionCode {
+  BD
+  PK
+  IN // West Bengal / Tripura belt — one India pack
+}
+
+// ── Users & Auth ──────────────────────────────────────────────────────────────
+
+model User {
+  id           String    @id @default(cuid())
+  chamberId    String
+  chamber      Chamber   @relation(fields: [chamberId], references: [id])
+  name         String
+  phone        String    @unique
+  email        String?   @unique
+  /// bcrypt hash for web email/password auth (mobile still uses phone OTP)
+  passwordHash String?
+  /// Platform role for /admin vs /dashboard (entitlement is Chamber.plan, not this)
+  appRole      AppRole   @default(USER)
+  role         UserRole  @default(OWNER)
+  barRegNo     String?
+  /// UI language — orthogonal to chamber jurisdiction content
+  uiLanguage   UiLanguage @default(bn)
+  createdAt    DateTime  @default(now())
+  sessions     Session[]
+  otpLogs      OtpLog[]
+  loginAttempts LoginAttempt[]
+
+  @@index([chamberId])
+  @@index([email])
+  @@index([appRole])
+}
+
+enum UiLanguage {
+  bn
+  en
+  ur
+}
+
+enum AppRole {
+  USER
+  ADMIN
+}
+
+enum UserRole {
+  OWNER
+  ASSOCIATE
+  CLERK
+  READONLY
+}
+
+model Session {
+  id           String   @id @default(cuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id])
+  refreshToken String   @unique
+  expiresAt    DateTime
+  createdAt    DateTime @default(now())
+
+  @@index([userId])
+}
+
+model OtpLog {
+  id        String   @id @default(cuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  phone     String
+  otp       String
+  used      Boolean  @default(false)
+  expiresAt DateTime
+  createdAt DateTime @default(now())
+
+  @@index([phone, createdAt])
+}
+
+/// Brute-force protection log (auth endpoints)
+model LoginAttempt {
+  id        String   @id @default(cuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  email     String?
+  phone     String?
+  ip        String?
+  success   Boolean  @default(false)
+  createdAt DateTime @default(now())
+
+  @@index([email, createdAt])
+  @@index([ip, createdAt])
+}
+
+// ── Catalog & billing (web sells; mobile only reads entitlement) ───────────────
+
+model SubscriptionPackage {
+  id          String   @id @default(cuid())
+  code        String   @unique // FREE | STARTER | PRO | PRO_ADVANCE | CHAMBER
+  nameBn      String
+  nameEn      String
+  priceBdt    Int      // monthly price in BDT
+  yearlyBdt   Int?
+  featuresJson String  // JSON string list of feature ids
+  active      Boolean  @default(true)
+  sortOrder   Int      @default(0)
+  createdAt   DateTime @default(now())
+  subscriptions Subscription[]
+}
+
+model Subscription {
+  id          String   @id @default(cuid())
+  chamberId   String
+  chamber     Chamber  @relation(fields: [chamberId], references: [id])
+  packageId   String
+  package     SubscriptionPackage @relation(fields: [packageId], references: [id])
+  status      SubStatus @default(PENDING)
+  startsAt    DateTime?
+  endsAt      DateTime?
+  gateway     String?  // SSLCommerz | BKASH | MANUAL
+  gatewayRef  String?
+  createdAt   DateTime @default(now())
+
+  @@index([chamberId, status])
+}
+
+enum SubStatus {
+  PENDING
+  ACTIVE
+  EXPIRED
+  CANCELLED
+}
+
+model EmailCampaign {
+  id          String   @id @default(cuid())
+  subject     String
+  bodyHtml    String
+  audience    String   @default("all") // all | inactive | expiring
+  status      String   @default("draft") // draft | sending | sent | dry_run | failed
+  sentCount   Int      @default(0)
+  createdById String?
+  createdAt   DateTime @default(now())
+  sentAt      DateTime?
+}
+
+// ── Cases ─────────────────────────────────────────────────────────────────────
+
+model Case {
+  id            String    @id @default(cuid())
+  chamberId     String
+  chamber       Chamber   @relation(fields: [chamberId], references: [id])
+  caseNo        String
+  caseYear      Int?
+  court         String
+  courtName     String?
+  courtRoom     String?
+  judgeName     String?
+  caseType      String
+  actsSections  String?
+  policeStation String?
+  onBehalf      String    @default("plaintiff")
+  stage         String?
+  priority      String    @default("medium")
+  status        String    @default("active")
+  clientId      String?
+  filingDate    DateTime?
+  nextDate      DateTime?
+  lastOutcome   String?
+  rev           Int       @default(0)
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  hearings      Hearing[]
+  documents     Document[]
+  feeEntries    FeeEntry[]
+  deadlines     Deadline[]
+  causeListEntries CauseListEntry[]
+
+  @@index([chamberId, nextDate])
+  @@index([chamberId, status])
+  @@index([chamberId, caseNo])
+}
+
+/// Official cause-list rows (pro-advance web + mobile)
+model CauseListEntry {
+  id        String    @id @default(cuid())
+  chamberId String
+  caseId    String?
+  case      Case?     @relation(fields: [caseId], references: [id])
+  date      DateTime
+  courtName String?
+  serialNo  String?
+  partyName String?
+  purpose   String?
+  rawText   String?
+  matched   Boolean   @default(false)
+  rev       Int       @default(0)
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+
+  @@index([chamberId, date])
+  @@index([caseId])
+}
+
+// ── Hearings ──────────────────────────────────────────────────────────────────
+
+model Hearing {
+  id              String    @id @default(cuid())
+  caseId          String
+  case            Case      @relation(fields: [caseId], references: [id])
+  chamberId       String
+  chamber         Chamber   @relation(fields: [chamberId], references: [id])
+  date            DateTime
+  purpose         String?
+  outcome         String?
+  note            String?
+  voiceNotePath   String?
+  attended        Boolean   @default(false)
+  appearingUserId String?
+  rev             Int       @default(0)
+  updatedAt       DateTime  @updatedAt
+  deletedAt       DateTime?
+
+  @@index([chamberId, date])
+  @@index([caseId])
+}
+
+// ── Clients ───────────────────────────────────────────────────────────────────
+
+model Client {
+  id        String    @id @default(cuid())
+  chamberId String
+  chamber   Chamber   @relation(fields: [chamberId], references: [id])
+  name      String
+  phone     String?
+  altPhone  String?
+  email     String?
+  nid       String?
+  address   String?
+  fileNo    String?
+  note      String?
+  createdAt DateTime  @default(now())
+  deletedAt DateTime?
+
+  @@index([chamberId])
+}
+
+// ── Documents ─────────────────────────────────────────────────────────────────
+
+model Document {
+  id         String    @id @default(cuid())
+  caseId     String
+  case       Case      @relation(fields: [caseId], references: [id])
+  chamberId  String
+  chamber    Chamber   @relation(fields: [chamberId], references: [id])
+  kind       DocKind
+  title      String
+  storageKey String
+  pageCount  Int
+  sizeBytes  Int
+  ocrText    String?
+  localOnly  Boolean   @default(false)
+  createdAt  DateTime  @default(now())
+  deletedAt  DateTime?
+
+  @@index([caseId])
+  @@index([chamberId])
+}
+
+enum DocKind {
+  ARJI
+  JOBAB
+  OKALATNAMA
+  SHAKKHYA
+  ADESH
+  OTHER
+}
+
+// ── Fee Entries ───────────────────────────────────────────────────────────────
+
+model FeeEntry {
+  id        String   @id @default(cuid())
+  caseId    String
+  case      Case     @relation(fields: [caseId], references: [id])
+  chamberId String
+  chamber   Chamber  @relation(fields: [chamberId], references: [id])
+  type      FeeType
+  amount    Decimal  @db.Decimal(12, 2)
+  date      DateTime
+  method    String?
+  note      String?
+  receiptNo String?
+  createdAt DateTime @default(now())
+
+  @@index([caseId])
+  @@index([chamberId, date])
+}
+
+enum FeeType {
+  FEE_AGREED
+  RECEIVED
+  EXPENSE_COURT_FEE
+  EXPENSE_STAMP
+  EXPENSE_OTHER
+}
+
+// ── Limitation Deadlines ──────────────────────────────────────────────────────
+
+model Deadline {
+  id              String   @id @default(cuid())
+  caseId          String
+  case            Case     @relation(fields: [caseId], references: [id])
+  chamberId       String
+  kind            String
+  baseDate        DateTime
+  days            Int
+  computedDueDate DateTime
+  ruleRef         String
+  status          String   @default("OPEN")
+  createdAt       DateTime @default(now())
+
+  @@index([caseId])
+  @@index([chamberId, computedDueDate])
+}
+
+// ── Message Log ───────────────────────────────────────────────────────────────
+
+model MessageLog {
+  id        String   @id @default(cuid())
+  chamberId String
+  caseId    String?
+  channel   String
+  to        String
+  template  String?
+  body      String?
+  sentAt    DateTime @default(now())
+  status    String   @default("sent")
+
+  @@index([chamberId, sentAt])
+}
