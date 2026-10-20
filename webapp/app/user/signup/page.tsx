@@ -2,6 +2,9 @@ import { SignupForm } from './signup-form'
 
 type Props = { searchParams?: Promise<{ error?: string }> }
 
+/** Always render this route from the current module. Do not reuse a previous shell. */
+export const dynamic = 'force-dynamic'
+
 export default async function UserSignupPage({ searchParams }: Props) {
   const params = (await searchParams) || {}
   const error = typeof params.error === 'string' ? params.error : ''

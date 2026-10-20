@@ -161,6 +161,7 @@ export function SignupForm({ error }: { error: string }) {
       <form className="mt-4 space-y-3 rounded-[18px] border border-[#e7dfd0] bg-white p-4 shadow-[0_18px_40px_rgba(14,27,44,0.06)] sm:p-5" method="post" action="/api/auth/signup" noValidate onSubmit={onSubmit}>
         <input type="hidden" name="next" value="/user" />
         <input type="hidden" name="uiLanguage" value="bn" />
+        {/* Signup API rejects a missing acceptedTerms flag. The public form has no checkbox. */}
         <input type="hidden" name="acceptedTerms" value="true" />
         <div className="space-y-1.5">
           <Label htmlFor="name">Name</Label>
