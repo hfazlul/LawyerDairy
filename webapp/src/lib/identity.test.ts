@@ -8,10 +8,12 @@ import {
   kPhoneNotRegisteredMessage,
   passwordIssues,
   phoneFieldIssue,
+  kSignupPasswordHelper,
   signupEmailIssue,
   signupNameIssue,
   signupPasswordIssue,
   signupPhoneIssue,
+  signupReferralIssue,
 } from './identity'
 
 describe('auth field rules', () => {
@@ -54,6 +56,17 @@ describe('auth field rules', () => {
     assert.equal(signupEmailIssue('a@b.COM'), null)
     assert.equal(signupEmailIssue('user@mail.org'), 'ইমেইলে @ এবং .com থাকতে হবে।')
     assert.equal(signupEmailIssue('not-an-email'), 'ইমেইলে @ এবং .com থাকতে হবে।')
+  })
+
+  it('signup referral is optional letters and numbers', () => {
+    assert.equal(signupReferralIssue(''), null)
+    assert.equal(signupReferralIssue('Ab12'), null)
+    assert.equal(signupReferralIssue('কোড'), 'রেফারেল কোডে শুধু অক্ষর ও সংখ্যা দিন।')
+    assert.equal(signupReferralIssue('ab-12'), 'রেফারেল কোডে শুধু অক্ষর ও সংখ্যা দিন।')
+  })
+
+  it('signup password helper matches the phone copy', () => {
+    assert.equal(kSignupPasswordHelper, 'Use at least 6 numbers (123) or above. No more than 10.')
   })
 
   it('signup password is 6 to 10 digits and does not change the login rule', () => {

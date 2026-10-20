@@ -48,6 +48,8 @@ export const kSignupNameError = 'Text only.'
 export const kSignupPhoneError = 'ফোন নম্বর ১১ সংখ্যার হতে হবে এবং ০১ দিয়ে শুরু হবে।'
 export const kSignupEmailError = 'ইমেইলে @ এবং .com থাকতে হবে।'
 export const kSignupPasswordError = 'পাসওয়ার্ড ৬ থেকে ১০ সংখ্যা হতে হবে।'
+export const kSignupPasswordHelper = 'Use at least 6 numbers (123) or above. No more than 10.'
+export const kSignupReferralError = 'রেফারেল কোডে শুধু অক্ষর ও সংখ্যা দিন।'
 export const kLoginEmptyMessage = 'নাম ও পাসওয়ার্ড দিন।'
 export const kLoginUnknownMessage = 'নাম বা পাসওয়ার্ড ভুল। আবার চেষ্টা করুন।'
 export const kLoginWrongPasswordMessage = 'পাসওয়ার্ড ভুল।'
@@ -77,6 +79,14 @@ export function signupEmailIssue(raw: string): string | null {
 /** Normal user signup only. Login, reset, and admin signup do not use this. */
 export function signupPasswordIssue(password: string): string | null {
   if (!/^\d{6,10}$/.test(password)) return kSignupPasswordError
+  return null
+}
+
+/** Optional. Blank is fine. Letters and numbers only, up to 32 characters. */
+export function signupReferralIssue(raw: string): string | null {
+  const v = raw.trim()
+  if (!v) return null
+  if (!/^[A-Za-z0-9]{1,32}$/.test(v)) return kSignupReferralError
   return null
 }
 

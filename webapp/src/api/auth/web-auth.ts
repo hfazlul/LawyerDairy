@@ -15,6 +15,7 @@ import {
   signupNameIssue,
   signupPasswordIssue,
   signupPhoneIssue,
+  signupReferralIssue,
   suggestUsername,
   takenAccountMessage,
 } from '@/lib/identity'
@@ -27,6 +28,12 @@ import {
 } from '@/lib/auth/session'
 import { collapseName, findActiveUsersByName, nameAmbiguousMessageBn, nameTakenMessageBn } from '@/lib/auth/login-name'
 import { freeUsername, SignupConflict, signupConflictMessage } from '@/lib/auth/signup-guard'
+import {
+  kSignupMissingSecretMessage,
+  signupFailureMessage,
+  signingSecretMissing,
+} from '@/lib/auth/signup-failure'
+import { applyReferralCode } from '@/lib/referral'
 
 class NameTakenError extends Error {}
 
@@ -46,6 +53,7 @@ const signupSchema = z.object({
   confirmPassword: z.string().max(128).optional(),
   uiLanguage: z.enum(['bn', 'en']).optional(),
   acceptedTerms: z.union([z.boolean(), z.string()]).optional(),
+  referralCode: z.string().trim().max(32).optional().or(z.literal('')),
 })
 
 const loginSchema = z.object({
@@ -109,21 +117,28 @@ function sameOriginUrl(req: NextRequest, path: string) {
   return new URL(path, base)
 }
 
-function authCookieBase() {
-  const secure =
-    process.env.COOKIE_SECURE === 'true' ||
-    (process.env.COOKIE_SECURE !== 'false' && process.env.NODE_ENV === 'production')
+/** Secure cookies are dropped by browsers on plain HTTP, so a production VPS
+ *  on http:// would set a session and then look logged out. */
+function requestIsHttps(req: NextRequest): boolean {
+  const forwarded = (req.headers.get('x-forwarded-proto') || '').split(',')[0].trim().toLowerCase()
+  if (forwarded === 'https') return true
+  if (forwarded === 'http') return false
+  return req.nextUrl.protocol === 'https:'
+}
+
+function authCookieBase(req: NextRequest) {
+  const secure = process.env.COOKIE_SECURE === 'false' ? false : requestIsHttps(req)
   return { httpOnly: true, sameSite: 'lax' as const, secure, path: '/' }
 }
 
-function setAuthCookies(res: NextResponse, accessToken: string, refreshToken: string) {
-  const base = authCookieBase()
+function setAuthCookies(req: NextRequest, res: NextResponse, accessToken: string, refreshToken: string) {
+  const base = authCookieBase(req)
   res.cookies.set('ldb_access', accessToken, { ...base, maxAge: 15 * 60 })
   res.cookies.set('ldb_refresh', refreshToken, { ...base, maxAge: 30 * 24 * 60 * 60 })
 }
 
-function clearAuthCookies(res: NextResponse) {
-  const base = authCookieBase()
+function clearAuthCookies(req: NextRequest, res: NextResponse) {
+  const base = authCookieBase(req)
   res.cookies.set('ldb_access', '', { ...base, maxAge: 0 })
   res.cookies.set('ldb_refresh', '', { ...base, maxAge: 0 })
 }
@@ -133,64 +148,75 @@ function authFail(req: NextRequest, wantsHtml: boolean, backPath: string, messag
   return NextResponse.json({ message }, { status })
 }
 
+function signupCaught(req: NextRequest, wantsHtml: boolean, err: unknown) {
+  if (err instanceof SignupConflict) {
+    return authFail(req, wantsHtml, '/user/signup', err.message, 409)
+  }
+  if (err instanceof NameTakenError) {
+    return authFail(req, wantsHtml, '/user/signup', nameTakenMessageBn, 409)
+  }
+  if (err instanceof Prisma.PrismaClientKnownRequestError && err.code === 'P2002') {
+    const target = (err.meta?.target as string[])?.join(',') ?? ''
+    return authFail(req, wantsHtml, '/user/signup', takenAccountMessage(target), 409)
+  }
+  console.error('signup failed', err)
+  return authFail(req, wantsHtml, '/user/signup', signupFailureMessage(err), 500)
+}
+
 export async function POST_signup(req: NextRequest) {
-  const ip = clientIp(req.headers)
   const contentType = req.headers.get('content-type') || ''
   const wantsHtml = wantsHtmlRedirect(req, contentType)
-
-  if (!isDev()) {
-    const rl = rateLimit(`signup:${ip}`, 5, 60 * 60_000)
-    if (!rl.ok) return authFail(req, wantsHtml, '/user/signup', 'Rate limited — try again later', 429)
-  }
-
-  let raw: Record<string, unknown>
   try {
-    raw = await readBodyObject(req)
-  } catch {
-    return authFail(req, wantsHtml, '/user/signup', 'Invalid form body', 400)
-  }
+    const ip = clientIp(req.headers)
 
-  let body: z.infer<typeof signupSchema>
-  try {
-    body = signupSchema.parse(raw)
-  } catch (err) {
-    return authFail(req, wantsHtml, '/user/signup', zodMessage(err), 400)
-  }
+    if (!isDev()) {
+      const rl = rateLimit(`signup:${ip}`, 5, 60 * 60_000)
+      if (!rl.ok) return authFail(req, wantsHtml, '/user/signup', 'Rate limited — try again later', 429)
+    }
 
-  const termsRaw = String(body.acceptedTerms ?? raw.acceptedTerms ?? '').trim().toLowerCase()
-  const accepted = body.acceptedTerms === true || termsRaw === 'on' || termsRaw === 'true'
-  if (!accepted) {
-    return authFail(req, wantsHtml, '/user/signup', 'শর্তাবলী মেনে নিন', 422)
-  }
+    const raw = await readBodyObject(req)
+    const body = signupSchema.parse(raw)
 
-  if (body.confirmPassword && body.password !== body.confirmPassword) {
-    return authFail(req, wantsHtml, '/user/signup', 'পাসওয়ার্ড মিলেনি', 400)
-  }
+    const termsRaw = String(body.acceptedTerms ?? raw.acceptedTerms ?? '').trim().toLowerCase()
+    const accepted = body.acceptedTerms === true || termsRaw === 'on' || termsRaw === 'true'
+    if (!accepted) {
+      return authFail(req, wantsHtml, '/user/signup', 'শর্তাবলী মেনে নিন', 422)
+    }
 
-  const nameIssue = signupNameIssue(body.name)
-  if (nameIssue) return authFail(req, wantsHtml, '/user/signup', nameIssue, 400)
-  const phoneIssue = signupPhoneIssue(body.phone)
-  if (phoneIssue) return authFail(req, wantsHtml, '/user/signup', phoneIssue, 400)
-  const mailIssue = signupEmailIssue(body.email || '')
-  if (mailIssue) return authFail(req, wantsHtml, '/user/signup', mailIssue, 400)
+    if (body.confirmPassword && body.password !== body.confirmPassword) {
+      return authFail(req, wantsHtml, '/user/signup', 'পাসওয়ার্ড মিলেনি', 400)
+    }
 
-  const phone = normalizeBdPhone(body.phone)
-  if (!phone) return authFail(req, wantsHtml, '/user/signup', kSignupPhoneError, 400)
+    const nameIssue = signupNameIssue(body.name)
+    if (nameIssue) return authFail(req, wantsHtml, '/user/signup', nameIssue, 400)
+    const phoneIssue = signupPhoneIssue(body.phone)
+    if (phoneIssue) return authFail(req, wantsHtml, '/user/signup', phoneIssue, 400)
+    const mailIssue = signupEmailIssue(body.email || '')
+    if (mailIssue) return authFail(req, wantsHtml, '/user/signup', mailIssue, 400)
+    const referralRaw = (body.referralCode || '').trim()
+    const referralErr = signupReferralIssue(referralRaw)
+    if (referralErr) return authFail(req, wantsHtml, '/user/signup', referralErr, 400)
 
-  const username = (body.username || suggestUsername(body.name, phone)).toLowerCase()
-  if (!isValidUsername(username)) {
-    return authFail(req, wantsHtml, '/user/signup', 'ইউজারনেম ৪–২৪ অক্ষর, a-z দিয়ে শুরু', 400)
-  }
-  const pwErr = signupPasswordIssue(body.password)
-  if (pwErr) return authFail(req, wantsHtml, '/user/signup', pwErr, 400)
+    const phone = normalizeBdPhone(body.phone)
+    if (!phone) return authFail(req, wantsHtml, '/user/signup', kSignupPhoneError, 400)
 
-  const email = body.email && body.email.length ? body.email.toLowerCase() : null
-  const name = collapseName(body.name)
+    const username = (body.username || suggestUsername(body.name, phone)).toLowerCase()
+    if (!isValidUsername(username)) {
+      return authFail(req, wantsHtml, '/user/signup', 'ইউজারনেম ৪–২৪ অক্ষর, a-z দিয়ে শুরু', 400)
+    }
+    const pwErr = signupPasswordIssue(body.password)
+    if (pwErr) return authFail(req, wantsHtml, '/user/signup', pwErr, 400)
 
-  const earlyConflict = await signupConflictMessage(prisma, { name, phone, email })
-  if (earlyConflict) return authFail(req, wantsHtml, '/user/signup', earlyConflict, 409)
+    if (signingSecretMissing()) {
+      return authFail(req, wantsHtml, '/user/signup', kSignupMissingSecretMessage, 500)
+    }
 
-  try {
+    const email = body.email && body.email.length ? body.email.toLowerCase() : null
+    const name = collapseName(body.name)
+
+    const earlyConflict = await signupConflictMessage(prisma, { name, phone, email })
+    if (earlyConflict) return authFail(req, wantsHtml, '/user/signup', earlyConflict, 409)
+
     const { user, tokens } = await prisma.$transaction(async (tx) => {
       const conflict = await signupConflictMessage(tx, { name, phone, email })
       if (conflict) throw new SignupConflict(conflict)
@@ -208,6 +234,9 @@ export async function POST_signup(req: NextRequest) {
         },
       })
       await createPersonalWorkspace(tx, created.id, body.name)
+      if (referralRaw) {
+        await applyReferralCode(tx, { referredUserId: created.id, code: referralRaw })
+      }
       const sessionTokens = await issueSession({
         userId: created.id,
         ip,
@@ -222,27 +251,22 @@ export async function POST_signup(req: NextRequest) {
 
     if (wantsHtml) {
       const res = NextResponse.redirect(sameOriginUrl(req, '/user'), 303)
-      setAuthCookies(res, tokens.accessToken, tokens.refreshToken)
+      setAuthCookies(req, res, tokens.accessToken, tokens.refreshToken)
       return res
     }
     const res = NextResponse.json({
       user: { id: user.id, name: user.name, username: user.username, email: user.email },
     })
-    setAuthCookies(res, tokens.accessToken, tokens.refreshToken)
+    setAuthCookies(req, res, tokens.accessToken, tokens.refreshToken)
     return res
   } catch (err) {
-    if (err instanceof SignupConflict) {
-      return authFail(req, wantsHtml, '/user/signup', err.message, 409)
+    if (err instanceof z.ZodError) {
+      return authFail(req, wantsHtml, '/user/signup', zodMessage(err), 400)
     }
-    if (err instanceof NameTakenError) {
-      return authFail(req, wantsHtml, '/user/signup', nameTakenMessageBn, 409)
+    if (err instanceof SyntaxError) {
+      return authFail(req, wantsHtml, '/user/signup', 'Invalid form body', 400)
     }
-    if (err instanceof Prisma.PrismaClientKnownRequestError && err.code === 'P2002') {
-      const target = (err.meta?.target as string[])?.join(',') ?? ''
-      return authFail(req, wantsHtml, '/user/signup', takenAccountMessage(target), 409)
-    }
-    console.error('signup failed', err)
-    return authFail(req, wantsHtml, '/user/signup', 'অ্যাকাউন্ট তৈরি হয়নি। আবার চেষ্টা করুন।', 500)
+    return signupCaught(req, wantsHtml, err)
   }
 }
 
@@ -328,13 +352,13 @@ export async function POST_login(req: NextRequest) {
 
   if (wantsHtml) {
     const res = NextResponse.redirect(sameOriginUrl(req, dest), 303)
-    setAuthCookies(res, tokens.accessToken, tokens.refreshToken)
+    setAuthCookies(req, res, tokens.accessToken, tokens.refreshToken)
     return res
   }
   const res = NextResponse.json({
     user: { id: user.id, name: user.name, username: user.username, email: user.email, appRole: user.appRole },
   })
-  setAuthCookies(res, tokens.accessToken, tokens.refreshToken)
+  setAuthCookies(req, res, tokens.accessToken, tokens.refreshToken)
   return res
 }
 
@@ -345,7 +369,7 @@ export async function POST_logout(req: NextRequest) {
   const res = wantsHtml
     ? NextResponse.redirect(sameOriginUrl(req, '/user/login'), 303)
     : NextResponse.json({ ok: true })
-  clearAuthCookies(res)
+  clearAuthCookies(req, res)
   return res
 }
 
