@@ -24,6 +24,43 @@ test('sandbox_test_ prefix is not live unless ZINIPAY_ALLOW_SANDBOX', () => {
   else process.env.ZINIPAY_ALLOW_SANDBOX = allow
 })
 
+test('production mode refuses a sandbox_test_ key', () => {
+  const prev = process.env.ZINIPAY_API_KEY
+  const mode = process.env.ZINIPAY_MODE
+  const allow = process.env.ZINIPAY_ALLOW_SANDBOX
+  process.env.ZINIPAY_API_KEY = 'sandbox_test_placeholder'
+  process.env.ZINIPAY_MODE = 'production'
+  process.env.ZINIPAY_ALLOW_SANDBOX = 'true'
+  assert.equal(zinipayConfigured(), false)
+  if (prev === undefined) delete process.env.ZINIPAY_API_KEY
+  else process.env.ZINIPAY_API_KEY = prev
+  if (mode === undefined) delete process.env.ZINIPAY_MODE
+  else process.env.ZINIPAY_MODE = mode
+  if (allow === undefined) delete process.env.ZINIPAY_ALLOW_SANDBOX
+  else process.env.ZINIPAY_ALLOW_SANDBOX = allow
+})
+
+test('create rejects amount that is not greater than 0', async () => {
+  const prev = process.env.ZINIPAY_API_KEY
+  const mode = process.env.ZINIPAY_MODE
+  process.env.ZINIPAY_API_KEY = 'test_live_style_key'
+  delete process.env.ZINIPAY_MODE
+  const zero = await createZiniInvoice({
+    cusName: 'Test',
+    amountBdt: 0,
+    metadata: {},
+    redirectUrl: 'http://localhost:3000/r',
+    cancelUrl: 'http://localhost:3000/c',
+    webhookUrl: 'http://localhost:3000/w',
+  })
+  assert.equal(zero.ok, false)
+  if (!zero.ok) assert.match(zero.message, /greater than 0/)
+  if (prev === undefined) delete process.env.ZINIPAY_API_KEY
+  else process.env.ZINIPAY_API_KEY = prev
+  if (mode === undefined) delete process.env.ZINIPAY_MODE
+  else process.env.ZINIPAY_MODE = mode
+})
+
 test('header name follows ZINIPAY_API_KEY_HEADER', () => {
   const prev = process.env.ZINIPAY_API_KEY_HEADER
   delete process.env.ZINIPAY_API_KEY_HEADER

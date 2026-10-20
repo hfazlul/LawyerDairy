@@ -1,51 +1,58 @@
 import 'dart:io' show Platform;
+import 'package:flutter/foundation.dart';
+import 'package:flutter/services.dart' show appFlavor;
 
 /// API host for Dio [BaseOptions.baseUrl].
 /// Paths in auth/sync already include `/api/mobile/v1/...`.
 ///
 /// Debug defaults:
-/// - Android emulator → `http://10.0.2.2:3000` (host machine localhost)
-/// - iOS simulator → `http://127.0.0.1:3000`
-/// - Physical device → set [kLanApiBase] to your PC LAN IP (see below)
+/// - Android phone → [kDevApiBase] (live VPS, plain HTTP until DNS/HTTPS)
+/// - iOS simulator / desktop → `http://127.0.0.1:3000`
+/// - Override with `--dart-define=API_BASE=...`
 ///
-/// Override at run/build time:
-/// ```bash
-/// flutter run --dart-define=API_BASE=http://192.168.0.99:3000
-/// flutter build apk --debug --dart-define=API_BASE=http://192.168.0.99:3000
-/// ```
-///
-/// Production builds (release/profile without override) use [kProdApiBase].
+/// Release/profile without an override still uses [kProdApiBase].
+/// The human-visible website in SMS is https://mamlaq.com and is not this host.
 class ApiConfig {
   ApiConfig._();
 
   /// Production API host (no trailing slash).
   static const String kProdApiBase = 'https://api.lawyerdiarybd.com';
 
-  /// LAN IP of the machine running `webapp` (`npm run dev` on :3000).
-  /// Update this when your Wi‑Fi IP changes, or pass `--dart-define=API_BASE=...`.
-  /// Current machine example IPs seen on setup: 192.168.0.99 / 192.168.30.68
-  static const String kLanApiBase = 'http://192.168.0.99:3000';
+  /// Debug/dev API on the VPS. Not mamlaq.com until DNS and HTTPS are confirmed.
+  static const String kDevApiBase = 'http://187.77.153.28';
+
+  /// `--dart-define=FLAVOR=dev|staging|prod` (Gradle productFlavors optional).
+  static const String flavor =
+      String.fromEnvironment('FLAVOR', defaultValue: 'dev');
+
+  /// Gradle `--flavor` wins when set (`FLUTTER_APP_FLAVOR`); else [flavor].
+  static String get resolvedFlavor =>
+      (appFlavor ?? flavor).toLowerCase();
+
+  /// Debug + `dev` flavor only. False in profile/release and in staging/prod.
+  static bool get allowLocalLoginBypass =>
+      kDebugMode && resolvedFlavor == 'dev';
 
   /// Compile-time override: `--dart-define=API_BASE=http://x.x.x.x:3000`
   static const String _fromDefine = String.fromEnvironment('API_BASE');
 
-  /// Force physical-device LAN default even on Android when true:
-  /// `--dart-define=USE_LAN_API=true`
-  static const bool _useLan =
-      bool.fromEnvironment('USE_LAN_API', defaultValue: false);
+  static const String kStagingApiBase = 'https://staging.lawyerdiarybd.com';
+
+  /// Matches pubspec `version:` (major.minor.patch) for minAppVersion checks.
+  static const String appVersion = '1.0.0';
 
   static String get baseUrl {
     if (_fromDefine.isNotEmpty) return _stripSlash(_fromDefine);
+
+    if (flavor == 'prod') return kProdApiBase;
+    if (flavor == 'staging') return kStagingApiBase;
 
     // Release/profile → production unless explicitly overridden above.
     const isRelease = bool.fromEnvironment('dart.vm.product');
     if (isRelease) return kProdApiBase;
 
-    if (_useLan) return kLanApiBase;
-
     if (Platform.isAndroid) {
-      // Emulator loopback to host. Physical device: use USE_LAN_API or API_BASE.
-      return 'http://10.0.2.2:3000';
+      return kDevApiBase;
     }
     if (Platform.isIOS) {
       return 'http://127.0.0.1:3000';

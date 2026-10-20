@@ -1,0 +1,1557 @@
+{
+  "@@locale": "en",
+  "appTitle": "MAMLAQ – Lawyer Diary",
+  "hubBrandTitle": "MAMLAQ – Lawyer Diary",
+  "hubTagline": "Everything in one: Lawyer Diary, Find a Lawyer, Legal Career",
+  "hubDiaryTitle": "Lawyer Diary",
+  "hubDiarySubtitle": "Today’s hearings, cases, clients — everything. Works without internet.",
+  "hubFindTitle": "Find a lawyer",
+  "hubFindSubtitle": "Contact a lawyer in any district directly",
+  "hubCareerTitle": "Legal Career Hub",
+  "hubCareerSubtitle": "Bar Council · BJS",
+  "loginPasswordHint": "Username or mobile + password. No OTP.",
+  "emptyNothing": "Nothing here yet",
+  "syncNow": "Sync now",
+  "officialCauselist": "Open official e-Causelist",
+  "navHome": "Home",
+  "navClients": "Clients",
+  "navCases": "Cases",
+  "navLawDaily": "Law Daily",
+  "navTools": "Tools",
+  "searchNameOrPhone": "Find client",
+  "clientSearchTitle": "Search clients",
+  "allCases": "All cases",
+  "clientIncompleteBanner": "Client details are incomplete — please finish the form",
+  "partiesLabel": "Parties (client vs opposite)",
+  "diaryHeaderTitle": "My Diary",
+  "menuTooltip": "Menu",
+  "backTooltip": "Back",
+  "hubBackTooltip": "Home",
+  "notifTooltip": "Notifications",
+  "darkModeTooltip": "Dark mode",
+  "lightModeTooltip": "Light mode",
+  "drawerTitle": "Diary",
+  "drawerAppointments": "Client appointments",
+  "drawerGuide": "Video guide",
+  "drawerReferral": "Referral program",
+  "drawerMessaging": "Bulk SMS",
+  "drawerPremium": "Premium",
+  "drawerTeam": "Chamber/Team",
+  "drawerDashboard": "Dashboard",
+  "drawerProfile": "Profile",
+  "drawerLanguage": "বাংলা | English",
+  "drawerShare": "Share",
+  "drawerRating": "Rating",
+  "drawerSettings": "Settings",
+  "settingsTitle": "Settings",
+  "settingsMasterNotif": "All notifications / alarms",
+  "settingsMasterNotifSub": "Off also stops OS, FCM, and auto SMS",
+  "settingsTerms": "Terms",
+  "settingsPrivacy": "Privacy",
+  "settingsBackup": "Backup / Store",
+  "settingsContact": "Contact us",
+  "premiumTitle": "Premium subscription",
+  "premiumInactive": "Premium inactive",
+  "premiumActive": "Premium active",
+  "premiumNoBuy": "Purchases are not available in this app. Status and benefits only.",
+  "premiumPayOnWeb": "Pay on the website",
+  "premiumPayHelp": "Payment help: visit the website. Support WhatsApp is in Contact us — no wallet account numbers in this app.",
+  "referralTitle": "Referral program",
+  "referralGenerate": "Your code",
+  "referralPaste": "Paste a friend’s code",
+  "referralShare": "Share on WhatsApp",
+  "referralRules": "Rewards after the referred person installs and creates an account: 1 → 1 month Starter; 3 → 2 months; 5 → 3 months; 10 → 12 months.",
+  "guideTitle": "Video guide",
+  "guideNotPublished": "Video is not published yet",
+  "guidePart1": "1 · Features and turning on premium",
+  "guidePart2": "2 · How to use (A)",
+  "guidePart3": "3 · How to use (B)",
+  "guidePromoGeneric": "Assalamu alaikum. A short guide to using the app will appear here.",
+  "messagingTitle": "Auto messaging",
+  "messagingShellHint": "Client SMS one day before hearing (D-1) is full auto. Master alarm off also stops SMS.",
+  "appointmentsTitle": "Client appointments",
+  "appointmentsEmpty": "No client has messaged you for an appointment yet",
+  "profileTitle": "Profile",
+  "profilePasswordHidden": "••••••••",
+  "profileLogout": "Log out",
+  "dashboardTitle": "Dashboard",
+  "dashboardPrintCard": "Monthly / weekly diary print",
+  "termsStub": "Terms of use will be published here.",
+  "contactEmpty": "Contact details are not set yet",
+  "backupHonest": "While logged in, data syncs over the network. After uninstall, log in again. JSON export available.",
+  "enableNotifFromSettings": "Turn on notifications in Settings",
+  "switchWorkspace": "Switch workspace",
+  "inboxTitle": "Notifications",
+  "dashSummarySection": "Summary",
+  "dashClientsSection": "Clients",
+  "dashCollected": "Collected",
+  "dashDue": "Due",
+  "dashExpense": "Expenses",
+  "dashNet": "Net",
+  "dashPersonal": "Personal expenses",
+  "dashAddExpense": "Add expense",
+  "dashThisMonth": "This month",
+  "dashClientQty": "Client count",
+  "dashPaidCount": "Paid in full",
+  "dashUnpaidCount": "With dues",
+  "dashCaseCount": "Cases",
+  "dashNoClients": "No clients yet",
+  "dashNoCases": "No cases yet",
+  "dashNoPersonal": "No personal expenses this month",
+  "dashExpenseHint": "Add daily / weekly / monthly with +.",
+  "dashJuniorBlocked": "This page is for the chamber owner.",
+  "dashAdd": "Add",
+  "dashAmountLabel": "৳",
+  "dashExpOther": "Other",
+  "dashExpVehicle": "Vehicle",
+  "dashExpStamp": "Stamp",
+  "dashExpCourt": "Court fee",
+  "dashExpTamadi": "Limitation cost",
+  "dashExpSub": "Subscription",
+  "dashPeriodDaily": "Daily",
+  "dashPeriodWeekly": "Weekly",
+  "dashPeriodMonthly": "Monthly",
+  "teamJoinCodeLabel": "Join with code",
+  "teamJoinCodeHint": "Chamber code (6–8 characters)",
+  "teamJoinSubmit": "Request to join",
+  "teamJoinBlocked": "Server does not accept join codes yet. Use an invite token.",
+  "teamJoinSent": "Request sent. Wait for the owner to accept.",
+  "teamJoinFailed": "Could not send the request.",
+  "teamPendingTitle": "Join requests",
+  "teamPendingEmpty": "No pending requests.",
+  "teamPendingBlocked": "Request list API is not on the server yet.",
+  "teamAccept": "Accept",
+  "teamReject": "Reject",
+  "teamAcceptBlocked": "Accept API is not available — not accepted.",
+  "teamInviteFallback": "Invite by phone (token fallback)",
+  "teamInvitePhone": "Invite phone (no OTP)",
+  "teamInviteToken": "Invite token",
+  "teamSendInvite": "Send invite",
+  "teamAcceptToken": "Invite token",
+  "teamAcceptTokenBtn": "Join with token",
+  "teamCreateChamber": "Create chamber",
+  "teamChamberName": "New chamber name",
+  "teamChamberCreated": "Chamber created — you can also switch from the selector",
+  "teamMembers": "Members",
+  "teamActivity": "Activity log",
+  "teamDigest": "Weekly digest",
+  "teamLoadFailed": "Could not load team",
+  "teamSeatsHint": "Seats besides owner",
+  "teamJoined": "Joined the team",
+  "filePreviewMissing": "No file path",
+  "filePreviewUnreadable": "Could not open file",
+  "filePreviewNoRender": "No in-app render — share or open in another app.",
+  "fileOpenShare": "Open / Share",
+  "filePreviewEmptyDocs": "No files yet",
+  "teamGenerateCode": "Generate chamber code",
+  "teamYourCode": "Your code",
+  "teamJuniorPreset": "Junior preset (Home/Clients/Cases)",
+  "teamJoinFirebaseHint": "Same screen on every phone: generate a code or paste one to request. Owner Accept/Reject here (Spark Firestore). Cases/clients stay on each phone until webapp sync.",
+  "teamCodeCopied": "Code copied",
+  "teamConnectedTo": "Connected to {name}",
+  "@teamConnectedTo": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "teamShareLater": "Cases and clients still stay on each phone until webapp sync.",
+  "teamWaitingOwner": "Waiting for the owner to accept.",
+  "teamRequestRejected": "The owner declined this request.",
+  "teamPendingWithCount": "Join requests ({count})",
+  "@teamPendingWithCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "messagingQuotaUnknown": "Credits: — (local count if server is down)",
+  "messagingAutoBody": "Default D-1 full auto — no per-send confirm. Device sends when gateway is in Remote Config/.env.",
+  "forgotPhoneTab": "Phone OTP",
+  "forgotEmailTab": "Email link",
+  "forgotSendOtp": "Send OTP",
+  "forgotOtpLabel": "6-digit code",
+  "forgotNewPassword": "New password",
+  "forgotConfirmPassword": "Confirm password",
+  "forgotReset": "Set password",
+  "forgotBlockedWebapp": "Server does not verify OTP — password unchanged. Use the email link.",
+  "appointmentsCached": "Offline — last cache",
+  "guideUrlPlaceholder": "Video URLs are empty (Firebase/admin later)",
+  "commManualOnly": "Manual send only. D-1 auto is on Auto Messaging — no per-send confirm.",
+  "termsBody": "MAMLAQ – Lawyer Diary is a personal practice diary, not legal advice. While logged in, cases and clients sync over the network. This APK cannot buy plans. Find Lawyer Contact shares both parties’ phone numbers. Documents stay on the device. Camera is used only to scan files. Professional confidentiality remains yours.",
+  "privacyBody": "Login: username/phone + password (no OTP). Cases and clients live in on-device SQLite; sync uses TLS. v1 documents are local files. Find Lawyer Contact shares phones both ways; public cards hide phone. CAMERA (scan) and RECORD_AUDIO (voice notes) are declared. No ads SDK. Data is not sold. Uninstall means log in again.",
+  "privacyOpenHosted": "Open hosted policy (if a URL exists)",
+  "privacyHostedMissing": "No hosted URL is set",
+  "contactShareHint": "Write a message and email/share it. If the owner adds a Play listing number, it will appear here too.",
+  "contactMessageHint": "Your message",
+  "contactSend": "Send message",
+  "backupWifiOnly": "Sync files on Wi-Fi only",
+  "backupExportJson": "Export JSON",
+  "backupSyncDone": "Sync finished",
+  "settingsOemNote": "OEM battery/force-stop settings can delay notifications.",
+  "notifRationaleTitle": "Hearing notifications",
+  "notifRationaleBody": "Allow notifications for today’s and tomorrow’s hearings, missing files, and premium expiry. You can turn this off later in Settings.",
+  "notifRationaleAllow": "Turn on",
+  "notifRationaleLater": "Later",
+  "emptyHearingsTitle": "No hearings on this date",
+  "emptyHearingsSubtitle": "Pick another date on the calendar, or add a case from the Cases tab.",
+  "emptyClientsTitle": "No clients yet",
+  "emptyClientsSubtitle": "Tap the green +. Add a name, type and mobile for the first client.",
+  "emptyCasesTitle": "No cases yet",
+  "emptyCasesSubtitle": "Tap the green +. Add a court, case number and client for the first case.",
+  "findDistrictLabel": "District",
+  "findPracticeLabel": "Case type",
+  "findAllDistricts": "All districts",
+  "findAllPractice": "All types",
+  "findSearchHint": "Search by name",
+  "findExpMin": "Minimum experience (years)",
+  "clientIncompleteInbox": "{name} — open the client page and finish the details",
+  "@clientIncompleteInbox": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "homeHearingsToday": "Today’s hearings",
+  "homeHearingsTomorrow": "Tomorrow’s hearings",
+  "homeCauseList": "Cause list",
+  "homeLastOutcome": "Last outcome: {value}",
+  "@homeLastOutcome": {
+    "placeholders": {
+      "value": {"type": "String"}
+    }
+  },
+  "homePremiumNearExpiry": "Premium is close to expiry. Open the subscription page to see benefits.",
+  "homeUpdateRequiredTitle": "Update required",
+  "homeUpdateRequiredBody": "This version is no longer supported. Get the new version from Play Store.",
+  "homeUpdateOk": "OK",
+  "guidePromptTitle": "Guide video",
+  "guidePromptBody": "Watch a short video on using the app?",
+  "guidePromptLater": "Later",
+  "guidePromptWatch": "Watch",
+  "homeChecklistTrack": "Track case follow-ups here",
+  "homeChecklistPrep": "Prepare for the hearing",
+  "newClientTooltip": "New client",
+  "newCaseTooltip": "New case",
+  "clientSearchHint": "Find client",
+  "caseSearchTitle": "Search cases",
+  "caseSearchHint": "client, phone, file, case no",
+  "caseSearchHelp": "Find client to print every case for one client. You can also print/share a single case or a date.",
+  "caseGroupByDate": "By date",
+  "caseUngrouped": "All together",
+  "caseMine": "My cases",
+  "caseChamber": "Chamber cases",
+  "docsTitle": "Files",
+  "docsScanPdf": "Scan PDF",
+  "docsUploadFile": "Upload file",
+  "docsEmptyTitle": "No files yet",
+  "docsEmptySubtitle": "Scan a PDF or upload a file to add evidence.",
+  "docsAll": "All",
+  "fileOpenWith": "Open with…",
+  "fileOfficeUnsupported": "Word/Excel cannot be previewed here. Open with another app, or share.",
+  "fileOpenFailed": "No app found for this file. Try Share.",
+  "guidePlay": "Play",
+  "guidePrev": "Previous",
+  "guideNextPart": "Next part",
+  "guidePasteUrl": "Set URL",
+  "guidePasteHint": "https://… (this phone only)",
+  "guideUrlSaved": "URL saved on this phone",
+  "guideUrlInvalid": "Need an http(s) URL",
+  "guideEmptyBody": "No published video yet. When Remote Config or you set a URL, it is saved on this phone.",
+  "apptMobile": "Mobile",
+  "apptEmail": "Email",
+  "apptMessage": "Message",
+  "apptRead": "Read",
+  "apptUnread": "Unread",
+  "apptDelete": "Delete",
+  "apptEdit": "Edit",
+  "apptEditLocal": "Edit (on this phone)",
+  "commonCancel": "Cancel",
+  "commonSave": "Save",
+  "teamPermTitle": "Role and permissions",
+  "teamPermSave": "Save",
+  "teamPermSuspend": "Suspend",
+  "teamJuniorHint": "Junior can use Home (cause-list + print), Clients and Cases (read/write). Fees, reports and team admin stay with the owner.",
+  "commTitle": "Messaging",
+  "commCreditsLoading": "Loading credits…",
+  "commBuyOnWeb": "Hearing SMS is included on Pro+ (150/280/400 per month). No ৳399 SMS pack. Pay on the website.",
+  "commWhatsApp": "WhatsApp (does not use credits)",
+  "commMobile": "Mobile",
+  "commSmsBody": "SMS body",
+  "commSendSms": "Send SMS (uses credits)",
+  "commBulkSms": "Bulk SMS (this body · credit check)",
+  "toolsTitle": "Tools",
+  "toolsTabCalc": "Calculators",
+  "toolsTabForms": "Legal forms & drafts",
+  "toolsSecCourt": "Court",
+  "toolsSecLand": "Land",
+  "toolsSecTax": "Tax",
+  "toolsSecGeneral": "General",
+  "toolLimitation": "Limitation",
+  "toolCourtFee": "Court fee",
+  "toolInterest": "Interest",
+  "toolLandUnit": "Units",
+  "toolHissa": "Share",
+  "toolKhotiyan": "Khatian",
+  "toolLandMeasure": "Plot measure",
+  "toolFaraiz": "Faraiz",
+  "toolAnaGonda": "Ana-gonda",
+  "toolKabin": "Kabin fee",
+  "toolMouza": "Mouza rate",
+  "toolStamp": "Stamp",
+  "toolLandTax": "Land tax",
+  "toolMutation": "Mutation",
+  "toolTax": "Income tax",
+  "toolDateDiff": "Date difference",
+  "toolAge": "Age",
+  "toolPercentage": "Percentage",
+  "toolMath": "Math",
+  "toolCompensation": "Simple multiply",
+  "toolStats": "Income-expense",
+  "toolsCourtLocation": "Court locations",
+  "toolsCourtLocationSub": "Dhaka judges’ court — building, floor, room",
+  "toolsFormsHeading": "Plaint, written statement, wakalatnama, affidavit and draft petitions",
+  "toolsFormsSub": "Skeletons from public CPC / Court Fees blanks · PDF",
+  "toolsSchedules": "Schedules / tafsil",
+  "toolsCourtFeeSched": "Court-fee schedule",
+  "toolsCourtFeeSchedSub": "2010 schedule · check the gazette",
+  "toolsLimitationSched": "Limitation schedule",
+  "toolsLimitationSchedSub": "Limitation Act 1908 · First Schedule",
+  "toolsStampRef": "Stamp reference",
+  "toolsStampRefSub": "No rate table — links only",
+  "toolGuideTitle": "How to use",
+  "toolGuideNotThis": "This is not",
+  "toolCompute": "Calculate",
+  "toolDateStart": "Start date",
+  "toolDateEnd": "End date",
+  "toolBirthDate": "Date of birth",
+  "clientAddTitle": "New client",
+  "clientEditTitle": "Edit client",
+  "clientNameLabel": "Name *",
+  "clientNameRequired": "Enter a name",
+  "clientTypeLabel": "Type",
+  "clientTypeRequired": "Choose a type",
+  "clientRolePlaintiff": "Plaintiff",
+  "clientRoleAccused": "Accused",
+  "clientRoleComplainant": "Complainant",
+  "clientRoleAppellant": "Appellant",
+  "clientRoleDefendant": "Defendant",
+  "clientRolePetitioner": "Petitioner",
+  "clientRoleOpposite": "Opposite party",
+  "clientRoleOther": "Other",
+  "clientRoleOtherHint": "Write other type",
+  "clientContactFromPhone": "Tap here to add from contacts",
+  "clientPhoneLabel": "Mobile",
+  "clientPhoneInvalid": "Enter a valid mobile",
+  "clientEmailLabel": "Email (optional)",
+  "clientAddressLabel": "Address",
+  "clientSave": "Save",
+  "clientUpdate": "Update",
+  "clientDupTitle": "Possible duplicate",
+  "clientDupBody": "Same phone already has {name}. Add anyway?",
+  "@clientDupBody": {
+    "placeholders": {
+      "name": {"type": "String"}
+    }
+  },
+  "clientDupNo": "No",
+  "clientDupYes": "Yes",
+  "clientPluginMissing": "Contacts plugin not found",
+  "caseAddTitle": "New case",
+  "caseEditTitle": "Edit case",
+  "caseCourtLevel": "Court level",
+  "caseCourtType": "Court type",
+  "caseCourtName": "Court name",
+  "caseCourtNameHint": "Type — list appears below",
+  "caseTypeLabel": "Case type",
+  "caseTypeHint": "Type — suggestions below",
+  "caseLawLabel": "Section / law",
+  "caseLawHint": "Type a section — suggestions below",
+  "caseNoLabel": "Case number *",
+  "caseNoRequired": "Enter a case number",
+  "caseCourtNameRequired": "Enter the court name",
+  "caseClientLabel": "Client",
+  "caseFind": "Find",
+  "caseNew": "New",
+  "caseOnBehalfOf": "Whose side am I on? (optional)",
+  "caseForClient": "For the client",
+  "caseAgainst": "Against",
+  "caseOppName": "Opposite party name",
+  "caseFileNo": "File no. (optional)",
+  "caseHearingStage": "Hearing stage",
+  "caseStepNote": "Stage / note",
+  "caseEvidenceTitle": "Evidence or files",
+  "caseEvidenceHint": "If you already added the needed files, you do not need to add them again. Add extra documents here if you want.",
+  "caseSave": "Save case",
+  "caseUpdate": "Update",
+  "lawDailyLaws": "Essential laws",
+  "lawDailySites": "Law sites",
+  "lawDailyNews": "Law news",
+  "lawDailySearch": "Search section, act or word",
+  "lawDailyFullText": "Full text — bdlaws (link)",
+  "lawDailyFullTextSub": "No full statute text here — opens the government portal.",
+  "lawDailyPracticeBlurb": "Daily practice · not a full code · not verified",
+  "lawDailyPracticeNotes": "Practice notes",
+  "lawDailyOpenBdlaws": "Open bdlaws",
+  "lawDailySection": "Section",
+  "lawDailyArticle": "Article",
+  "lawDailyPreamble": "Preamble",
+  "lawDailyDetails": "Details",
+  "lawDailyNeedsNet": "Needs internet",
+  "lawDailyDailyPractice": "Daily practice",
+  "lawDailySitesIntro": "Law sites open inside the app. Turn the internet on first.",
+  "lawDailyNewsIntro": "News sites open inside the app. Turn the internet on first.",
+  "messagingEnableTitle": "Turn on auto messaging?",
+  "messagingEnableBody": "Client SMS will send itself one day before the hearing (D-1). No per-send confirm.",
+  "messagingEnable": "Turn on",
+  "messagingGatewayAll": "One gateway covers all operators (GP, Robi, Banglalink, Teletalk, Airtel).",
+  "messagingGatewayReady": "Gateway is configured — this phone can send D-1.",
+  "messagingGatewayEmpty": "Gateway empty — plug Remote Config/SMS_API_URL later.",
+  "messagingQuietHours": "Quiet hours 21:00–08:00 — delay, do not drop. Auto WhatsApp is off; only SIM SMS.",
+  "messagingCreditsLeft": "Remaining {n} credits",
+  "@messagingCreditsLeft": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "messagingCreditsLocal": "Remaining {n} credits (local)",
+  "@messagingCreditsLocal": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "apptName": "Name",
+  "commCreditsLine": "Month {period} · included {included} · used {used} · left {remaining}",
+  "@commCreditsLine": {
+    "placeholders": {
+      "period": {"type": "String"},
+      "included": {"type": "String"},
+      "used": {"type": "String"},
+      "remaining": {"type": "String"}
+    }
+  },
+  "commSentAdapter": "Sent (adapter)",
+  "commSentOk": "Sent · used {used} · left {remaining}",
+  "@commSentOk": {
+    "placeholders": {
+      "used": {"type": "String"},
+      "remaining": {"type": "String"}
+    }
+  },
+  "commSendFailed": "Gateway failed · credit returned · left {remaining}",
+  "@commSendFailed": {
+    "placeholders": {
+      "remaining": {"type": "String"}
+    }
+  },
+  "commBulkOk": "Bulk: {n} sent (stopped when credits ran out)",
+  "@commBulkOk": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "commLogLabel": "Log",
+  "templateGenerate": "Create PDF",
+  "templateEduHint": "Educational draft {version} — verify law and facts before filing.",
+  "@templateEduHint": {
+    "placeholders": {
+      "version": {"type": "String"}
+    }
+  },
+  "saveProblem": "Problem: {error}",
+  "@saveProblem": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "commonShare": "Share",
+  "commonPrint": "Print",
+  "commonAdd": "Add",
+  "contactHeading": "Contact",
+  "notFound": "Not found",
+  "tabInfo": "Info",
+  "tabFees": "Fees",
+  "capsulePrev": "<< Previous",
+  "capsuleToday": "Today",
+  "capsuleNext": "Next >>",
+  "feeAgreed": "Full contract",
+  "feeInstallment": "Installment",
+  "feeReceived": "Paid / collected",
+  "feeExpCourt": "Court fee (expense)",
+  "feeExpTamadi": "Limitation cost",
+  "feeExpDoc": "Document cost",
+  "feeExpStamp": "Stamp",
+  "feeExpOther": "Other expense",
+  "feeExpense": "Expense",
+  "ledgerFull": "Full",
+  "ledgerReceived": "Received",
+  "ledgerDue": "Due",
+  "ledgerExpense": "Expense",
+  "ledgerNet": "Net",
+  "ledgerEntry": "Ledger entry",
+  "ledgerDetails": "Full ledger",
+  "ledgerEmpty": "No installment or expense yet",
+  "ledgerTitle": "Fee ledger",
+  "ledgerKind": "Head",
+  "ledgerKindName": "Head name",
+  "ledgerAmount": "Amount (৳)",
+  "ledgerNote": "Note (optional)",
+  "ledgerCase": "Case *",
+  "ledgerPickCase": "Choose a case",
+  "feeScreenTitle": "Fees & accounts",
+  "feeMonthEmptyTitle": "No fee entries this month",
+  "feeMonthEmptySub": "Add a ledger entry.",
+  "feeReport": "Report",
+  "caseNoShort": "Case no.",
+  "caseFileNoShort": "File no.",
+  "caseStageLabel": "Stage",
+  "caseNoteLabel": "Note",
+  "casePartyClient": "Party (client)",
+  "caseOpposite": "Opposite party",
+  "caseOnBehalf": "Whose side I am on",
+  "caseLastOutcome": "Last outcome",
+  "caseFilingDate": "Filing date",
+  "caseNextDate": "Next date",
+  "caseStatusLabel": "Status",
+  "caseStatusActive": "● Active",
+  "caseStatusDisposed": "✓ Disposed",
+  "caseStatusCancelled": "Cancelled",
+  "caseNotFound": "Not found",
+  "caseAddDoc": "Add file",
+  "casePrepTips": "Prep tips",
+  "caseReadLawDaily": "Read in Law Daily",
+  "caseAddOutcome": "Today’s outcome / add stage",
+  "caseTimeline": "Stage / note history",
+  "timelineEmpty": "No history yet",
+  "hearingFallback": "Hearing",
+  "noMobile": "No mobile",
+  "templatesBtn": "Templates",
+  "clientFallback": "Client",
+  "clientNotFound": "Client not found",
+  "clientIncomplete": "Details incomplete",
+  "clientCases": "Cases",
+  "clientNoCases": "This client has no cases",
+  "addCaseCta": "+ Add case",
+  "addCaseLong": "Add case",
+  "clientCasesHeading": "Cases:",
+  "clientMerge": "Merge with another client (match phone)",
+  "clientMergeNone": "No other client to merge",
+  "clientMergePick": "Merge into this one and delete",
+  "clientMerged": "Merged",
+  "clientNoCasesLedger": "No cases — ledger empty",
+  "caseWord": "Case",
+  "caseBadgeActive": "Active",
+  "caseBadgeExpired": "Overdue",
+  "caseBadgeToday": "Hearing today",
+  "caseDaysLeft": "{n} days left",
+  "@caseDaysLeft": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "expiredOutcomeTitle": "What is today’s outcome for your {caseNo} — {title} case?",
+  "@expiredOutcomeTitle": {
+    "placeholders": {
+      "caseNo": {"type": "String"},
+      "title": {"type": "String"}
+    }
+  },
+  "expiredDisposed": "Disposed",
+  "expiredNextHearing": "Next hearing",
+  "expiredCancelCase": "Cancel",
+  "expiredLater": "Later",
+  "expiredCancelConfirm": "Cancel this case?",
+  "calcInterestStep1": "Enter principal and annual rate.",
+  "calcInterestStep2": "Choose year mode or day mode.",
+  "calcInterestStep3": "In day mode, interest = principal × rate/100 × days/365.",
+  "calcInterestNotThis": "Decree interest or compound interest.",
+  "calcInterestDaysMode": "Day mode (365-day year)",
+  "calcInterestPrincipal": "Principal (৳)",
+  "calcInterestRate": "Annual rate %",
+  "calcInterestDays": "Days",
+  "calcInterestYears": "Years",
+  "calcInterestResult": "Simple interest ৳{interest} · total ৳{total}",
+  "@calcInterestResult": {
+    "placeholders": {
+      "interest": {"type": "String"},
+      "total": {"type": "String"}
+    }
+  },
+  "calcInterestDisclaimer": "Disclaimer: simple interest; court decree interest may differ.",
+  "calcDateStep1": "Pick start and end dates.",
+  "calcDateStep2": "English calendar.",
+  "calcDateStep3": "Shows weeks + leftover days.",
+  "calcDateNotThis": "Not the limitation engine.",
+  "calcDateEndBefore": "End date is earlier",
+  "calcDateResult": "{days} days · {weeks} weeks {rem} days",
+  "@calcDateResult": {
+    "placeholders": {
+      "days": {"type": "String"},
+      "weeks": {"type": "String"},
+      "rem": {"type": "String"}
+    }
+  },
+  "calcAgeStep1": "Pick date of birth.",
+  "calcAgeStep2": "Shows years/months/days.",
+  "calcAgeNotThis": "Whether 18 is complete — not a legal finding, only a note.",
+  "calcAgeResult": "{years} years {months} months {days} days",
+  "@calcAgeResult": {
+    "placeholders": {
+      "years": {"type": "String"},
+      "months": {"type": "String"},
+      "days": {"type": "String"}
+    }
+  },
+  "calcAgeNote18": " · 18 complete (note only)",
+  "calcAgeNoteUnder18": " · under 18 (note only)",
+  "calcPctStep1": "Mode 1: X% of Y",
+  "calcPctStep2": "Mode 2: X is what % of Y",
+  "calcPctStep3": "Mode 3: increase/decrease %",
+  "calcPctIncrease": "Change",
+  "calcPctYZero": "Y is zero",
+  "calcPctChange": "Change {pct}%",
+  "@calcPctChange": {
+    "placeholders": {
+      "pct": {"type": "String"}
+    }
+  },
+  "calcFaraizBody": "Hanafi/Quranic faraiz calculator is shipped — see assumptions in the tool. Hindu/Christian succession is not here.",
+  "calcMeasureStep1": "Rectangle: length × width.",
+  "calcMeasureStep2": "Triangle: Heron’s formula (three sides).",
+  "calcMeasureStep3": "Trapezoid: two parallels + height.",
+  "calcMeasureNotThis": "Not a legal boundary or GPS.",
+  "calcMeasureRect": "Rectangle",
+  "calcMeasureTriangle": "Triangle",
+  "calcMeasureTrap": "Trapezoid",
+  "calcMeasureLength": "Length (ft)",
+  "calcMeasureWidth": "Width (ft)",
+  "calcMeasureSideA": "Side A (ft)",
+  "calcMeasureSideB": "Side B (ft)",
+  "calcMeasureSideC": "Side C (ft)",
+  "calcMeasureParaA": "Parallel A (ft)",
+  "calcMeasureParaB": "Parallel B (ft)",
+  "calcMeasureHeight": "Height (ft)",
+  "calcMeasureResult": "{sqft} sq ft · {decimal} decimal (approx)",
+  "@calcMeasureResult": {
+    "placeholders": {
+      "sqft": {"type": "String"},
+      "decimal": {"type": "String"}
+    }
+  },
+  "calcMeasureDisclaimer": "No complex plot/GPS. Not a final khatian.",
+  "calcCompStep1": "Monthly × 12 × years.",
+  "calcCompNotThis": "Not a motor-vehicle or labour-law compensation formula.",
+  "calcCompMonthly": "Monthly (৳)",
+  "calcCompYears": "Years",
+  "calcCompResult": "Approx ৳{amount} (monthly × 12 × years)",
+  "@calcCompResult": {
+    "placeholders": {
+      "amount": {"type": "String"}
+    }
+  },
+  "calcCompDisclaimer": "Disclaimer: this is not a court decree. Motor-vehicle/labour formulas depend on the case.",
+  "calcStampStep1": "Rates vary by deed and area.",
+  "calcStampStep2": "A national 3%+2% answer is not shown.",
+  "calcStampStep3": "Check IRD / land schedules.",
+  "calcStampNotThis": "Not a complete stamp calculator.",
+  "calcStampQuarantine": "Stamp figures come from the table on this page. A deed without a gazette row is left out.",
+  "calcOpenLandGov": "Open land.gov.bd",
+  "calcCourtFeeStep1": "Pick a tab, then the case type.",
+  "calcCourtFeeStep2": "Enter value if needed, then calculate.",
+  "calcCourtFeeStep3": "Section 35A does not apply to some fixed fees.",
+  "calcCourtFeeStep4": "Court Fees Act 1870 — indicative only.",
+  "calcCourtFeeNotThis": "Not the final gazette schedule fee.",
+  "calcCourtFeeTabCivil": "Civil",
+  "calcCourtFeeTabAppeal": "Appeal",
+  "calcCourtFeeTabProbate": "Probate",
+  "calcCourtFeeTabCopy": "Copy",
+  "calcCourtFeeTabSch2": "Sch. II",
+  "calcCourtFeeFixed": "Fixed fee",
+  "calcCourtFeeNo35a": "Section 35A does not apply",
+  "calcCourtFeeValue": "Suit value (taka)",
+  "calcCourtFeeAmountHint": "Enter amount",
+  "calcCourtFeeQuick5k": "5 thousand",
+  "calcCourtFeeQuick10k": "10 thousand",
+  "calcCourtFeeQuick50k": "50 thousand",
+  "calcCourtFeeQuick1L": "1 lakh",
+  "calcCourtFeeQuick5L": "5 lakh",
+  "calcCourtFeeResultLabel": "Court fee",
+  "calcCourtFee35aNote": "Section 35A extra fee may apply separately — check the schedule.",
+  "calcCourtFeeFooter": "COURT FEES ACT 1870 · indicative",
+  "calcLimStep1": "Enter the judgment/order date.",
+  "calcLimStep2": "Pick the case type (appeal, revision, etc.).",
+  "calcLimStep3": "If copy collection (s.12), wrong court (s.14) or stay (s.15) applies, add those dates below.",
+  "calcLimStep4": "Fri–Sat and holidays may push the last day under s.4. Indicative only.",
+  "calcLimNotThis": "Not the final court filing deadline.",
+  "calcLimPickKind": "Choose case type",
+  "calcLimOrderDate": "Order / decree date",
+  "calcLimPickDate": "Pick a date",
+  "calcLimFilingDate": "Appeal / revision / review filing date (optional)",
+  "calcLimExclude": "Excludable time",
+  "calcLimS12": "Section 12 (copy collection)",
+  "calcLimS14": "Section 14 (wrong court)",
+  "calcLimS15": "Section 15 (stay)",
+  "calcLimStart": "Start",
+  "calcLimEnd": "End",
+  "calcLimCompute": "Calculate period",
+  "calcLimExpired": "Time has expired",
+  "calcLimUrgent": "{n} days left — urgent!",
+  "@calcLimUrgent": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "calcLimLeft": "{n} days left",
+  "@calcLimLeft": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "calcLimLimit": "Limit",
+  "calcLimDue": "Last date",
+  "calcLimBase": "Base date",
+  "calcLimRule": "Legal source",
+  "calcLimFiling": "Filing",
+  "calcLimFilingLate": "{date} — limitation passed",
+  "@calcLimFilingLate": {
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "calcLimFilingOk": "{date} — in time",
+  "@calcLimFilingOk": {
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "calcLimDays": "{n} days",
+  "@calcLimDays": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "calcLimExcludeDays": "{ref} + excludable {n} days",
+  "@calcLimExcludeDays": {
+    "placeholders": {
+      "ref": {"type": "String"},
+      "n": {"type": "String"}
+    }
+  },
+  "calcUnitStep1": "Pick a preset, enter an amount.",
+  "calcUnitStep2": "Dhaka katha is 1.65 decimal; many districts use 1.5.",
+  "calcUnitStep3": "Khatian is final.",
+  "calcUnitNotThis": "Not a substitute for survey/khatian.",
+  "calcUnitDhaka": "Dhaka katha 1.65",
+  "calcUnitCommon": "Common 1.5",
+  "calcUnitCustom": "Custom",
+  "calcUnitKathaRate": "1 katha = how many decimal",
+  "calcUnitValue": "Value",
+  "calcUnitDecimal": "Decimal",
+  "calcUnitKatha": "Katha",
+  "calcUnitBigha": "Bigha",
+  "calcUnitAcre": "Acre",
+  "calcUnitSqft": "Sq ft",
+  "calcUnitDisclaimer": "Indicative only. Check local khatian/survey. 1 katha is now {rate} decimal.",
+  "@calcUnitDisclaimer": {
+    "placeholders": {
+      "rate": {"type": "String"}
+    }
+  },
+  "calcHissaStep1": "Enter total land.",
+  "calcHissaStep2": "Enter share numerator and denominator (e.g. 1/4).",
+  "calcHissaStep3": "Result is in decimal.",
+  "calcHissaNotThis": "Not an official khatian.",
+  "calcHissaTotal": "Total land (decimal)",
+  "calcHissaNum": "Share numerator",
+  "calcHissaDen": "Share denominator",
+  "calcHissaResult": "Share = {share} decimal",
+  "@calcHissaResult": {
+    "placeholders": {
+      "share": {"type": "String"}
+    }
+  },
+  "calcHissaKathaNote": "≈ {katha} katha (1 katha = 1.65 decimal)",
+  "@calcHissaKathaNote": {
+    "placeholders": {
+      "katha": {"type": "String"}
+    }
+  },
+  "calcKhotStep1": "BS/BRS share = total land × fraction (numerator ÷ denominator).",
+  "calcKhotStep2": "Not an e-Porcha lookup — only the maths.",
+  "calcKhotStep3": "Dag/khatian numbers are not stored; check the portal.",
+  "calcKhotNotThis": "Not the official khatian database.",
+  "calcOpenEporcha": "Open e-Porcha",
+  "calcKhotTabShare": "Land share",
+  "calcKhotTabHeir": "Heirs",
+  "calcKhotTotalLand": "Total land (decimal)",
+  "calcKhotFractionHint": "Share (e.g. 1/3 → numerator=1, denominator=3)",
+  "calcKhotNumHint": "Numerator (1)",
+  "calcKhotDenHint": "Denominator (3)",
+  "calcKhotConvertNote": "Conversion (approx): 1 katha ≈ 1.65 decimal here. This tool does not store dag/khatian numbers.",
+  "calcKhotShareResult": "Share: {decimal} decimal\n= {katha} katha (approx)\n= {bigha} bigha",
+  "@calcKhotShareResult": {
+    "placeholders": {
+      "decimal": {"type": "String"},
+      "katha": {"type": "String"},
+      "bigha": {"type": "String"}
+    }
+  },
+  "calcKhotEstate": "Total estate (৳)",
+  "calcKhotHeirList": "Heir list",
+  "calcKhotSons": "Number of sons",
+  "calcKhotDaughters": "Number of daughters",
+  "calcKhotWifeAlive": "Wife living",
+  "calcKhotFatherAlive": "Father living",
+  "calcKhotMotherAlive": "Mother living",
+  "calcKhotFather": "Father",
+  "calcKhotMother": "Mother",
+  "calcKhotWife": "Wife",
+  "calcKhotSonsN": "{n} sons",
+  "@calcKhotSonsN": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "calcKhotDaughtersN": "{n} daughters",
+  "@calcKhotDaughtersN": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "calcKhotAsaba": "Asaba",
+  "calcKhotShareLabel": "Share: {share}",
+  "@calcKhotShareLabel": {
+    "placeholders": {
+      "share": {"type": "String"}
+    }
+  },
+  "calcKhotEach": "Each: ৳ {amount}",
+  "@calcKhotEach": {
+    "placeholders": {
+      "amount": {"type": "String"}
+    }
+  },
+  "calcKhotHeirDisclaimer": "* Simplified Hanafi method. Ask a lawyer. No DLRS/khatian lookup. Hindu/Christian succession is not here.",
+  "calcMathStep1": "Enter two numbers.",
+  "calcMathStep2": "Pick + − × ÷ then calculate.",
+  "calcMathStep3": "The result card shows Bangla digits.",
+  "calcMathNotThis": "Not income tax, court fee or limitation — math only.",
+  "calcMathFirst": "First number",
+  "calcMathSecond": "Second number",
+  "calcMathDivZero": "Cannot divide by zero",
+  "calcLandTaxStep1": "Rates differ by union / city corporation.",
+  "calcLandTaxStep2": "The app does not compute money without a district pack.",
+  "calcLandTaxStep3": "Match the government portal or local land office.",
+  "calcLandTaxNotThis": "Not a single national-rate calculator.",
+  "calcLandTaxNoPack": "No verified rate pack — no number shown.",
+  "calcMutStep1": "Enter NID, dag and mouza on the official e-Mutation portal.",
+  "calcMutStep2": "Fee is whatever the portal shows — none invented here.",
+  "calcMutStep3": "This screen is not a grant calculator.",
+  "calcMutNotThis": "Does not claim mutation was granted.",
+  "calcOpenMutation": "Open mutation.land.gov.bd",
+  "taxWizardTitle": "Income-tax wizard — AY 2026-27",
+  "taxStep1": "Income year: 1 July–30 June (Dhaka).",
+  "taxStep2": "Individual slabs: NBR Nirdeshika 2026-27 (published 2 Sep 2026).",
+  "taxStep3": "Not an NBR return; no VAT, company or surcharge here.",
+  "taxNotThis": "Not a full income-tax return — individual indicative compute.",
+  "taxUnpublished": "Unverified / unpublished pack",
+  "taxPublished": "Published pack — Nirdeshika 2026-27",
+  "taxPackLine": "Pack: {id}",
+  "@taxPackLine": {
+    "placeholders": {
+      "id": {"type": "String"}
+    }
+  },
+  "taxYearLine": "Assessment {ay} · income year {iy}",
+  "@taxYearLine": {
+    "placeholders": {
+      "ay": {"type": "String"},
+      "iy": {"type": "String"}
+    }
+  },
+  "taxStatusLine": "Status {status} · compute {compute}",
+  "@taxStatusLine": {
+    "placeholders": {
+      "status": {"type": "String"},
+      "compute": {"type": "String"}
+    }
+  },
+  "taxComputeOn": "on",
+  "taxComputeOff": "off",
+  "taxIncomeYearExample": "Income-year example: {y} July – {y2} June",
+  "@taxIncomeYearExample": {
+    "placeholders": {
+      "y": {"type": "String"},
+      "y2": {"type": "String"}
+    }
+  },
+  "taxRetrieved": "Retrieved {date}",
+  "@taxRetrieved": {
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "taxBack": "Back",
+  "taxNext": "Next step",
+  "taxComputeClosed": "Calculate (off)",
+  "taxComputeBtn": "Calculate",
+  "taxSources": "Government sources",
+  "taxSourceCite": "Source: Income-tax Nirdeshika 2026-27, NBR (published 2 Sep 2026).",
+  "taxDotPack": "Pack",
+  "taxDotTaxpayer": "Taxpayer",
+  "taxDotIncome": "Income",
+  "taxDotInvest": "Investment",
+  "taxDotResult": "Result",
+  "taxKindGeneral": "General individual",
+  "taxKindWoman": "Woman / 65+",
+  "taxKindDisabled": "Person with disability",
+  "taxKindFreedom": "Gazetted war-wounded freedom fighter / July warrior",
+  "taxKindCompany": "Company (not computed in this wizard)",
+  "taxStep1Body": "Step 1 — assessment year {year}. Individual slabs from NBR Nirdeshika 2026-27. No company/surcharge.",
+  "@taxStep1Body": {
+    "placeholders": {
+      "year": {"type": "String"}
+    }
+  },
+  "taxStep2Title": "Step 2 — taxpayer type",
+  "taxStep3Title": "Step 3 — income heads",
+  "taxSalary": "Salary / employment (৳) — 1/3 exemption applies",
+  "taxOtherIncome": "Other income / total if not salary (৳)",
+  "taxIncomeHint": "The Nirdeshika ৳50 lakh example is total income — salary field applies the 1/3 employment exemption.",
+  "taxDisabledDependents": "Disabled children/wards (count)",
+  "taxFirstTimeFiler": "First-time filer (minimum tax ৳1,000)",
+  "taxStep4Title": "Step 4 — investment / rebate (s.78 summary)",
+  "taxInvestLabel": "Declared investment (৳)",
+  "taxStep5Title": "Step 5 — result",
+  "taxTaxpayerLine": "Taxpayer: {kind}",
+  "@taxTaxpayerLine": {
+    "placeholders": {
+      "kind": {"type": "String"}
+    }
+  },
+  "taxComputeResult": "Compute result: {result}",
+  "@taxComputeResult": {
+    "placeholders": {
+      "result": {"type": "String"}
+    }
+  },
+  "taxComputeNone": "none — not computed for this kind",
+  "taxNoSlab": "Company/surcharge are not in this wizard. Match NBR Nirdeshika.",
+  "taxComputeNotOn": "Compute is off",
+  "recordMissing": "No record",
+  "outcomeTitle": "Today’s outcome",
+  "outcomeWhatHappened": "What happened today?",
+  "outcomePickStage": "Pick a stage",
+  "outcomeNoteHint": "Short note (optional)",
+  "saveLong": "Save",
+  "saveKeep": "Save",
+  "hearingDetailTitle": "Hearing details",
+  "hearingPurposeLine": "Purpose: {value}",
+  "@hearingPurposeLine": {
+    "placeholders": {
+      "value": {"type": "String"}
+    }
+  },
+  "hearingOutcomeLine": "Outcome: {value}",
+  "@hearingOutcomeLine": {
+    "placeholders": {
+      "value": {"type": "String"}
+    }
+  },
+  "hearingAttendLine": "Attendance: {value}",
+  "@hearingAttendLine": {
+    "placeholders": {
+      "value": {"type": "String"}
+    }
+  },
+  "hearingOutcomeNone": "Not recorded yet",
+  "commonYes": "Yes",
+  "commonNo": "No",
+  "noteAdd": "Add note",
+  "noteEdit": "Edit note",
+  "fieldTitle": "Title",
+  "reportsByStatus": "Active / disposed",
+  "reportsByCourt": "By court",
+  "reportsByType": "Case type",
+  "reportsMonthHearingsTitle": "Hearings this month",
+  "reportsMonthHearingsBody": "{n} · {d} days",
+  "@reportsMonthHearingsBody": {
+    "placeholders": {
+      "n": {"type": "String"},
+      "d": {"type": "String"}
+    }
+  },
+  "reportsFeeCollected": "Fees collected",
+  "reportsFeeDue": "Fees due",
+  "reportsNoDue": "No dues",
+  "reportsTeamActivity": "Team activity",
+  "reportsTeamOffline": "Audit log needs internet — see activity on the Team screen. This card is empty offline.",
+  "reportsPdfFooter": "PDF: practice-pdf online; CSV on this device. Internal summary — not a VAT invoice.",
+  "reportsNoData": "No data",
+  "reportsLoadFail": "Report did not load: {error}",
+  "@reportsLoadFail": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "reportsPdfNeedLogin": "PDF needs login and internet",
+  "reportsPdfFail": "PDF was not created — check net/server; CSV is offline",
+  "searchFtsHint": "Case, client, section, tool… (FTS)",
+  "searchVoiceHint": "Speak Bangla with the keyboard mic. No separate ASR SDK in v1.",
+  "searchEmptyTitle": "Nothing found",
+  "searchEmptySub": "Try case number, client, or section. No voice commands — use the keyboard mic.",
+  "searchCasesExact": "Cases (exact/LIKE)",
+  "casesPrintAllTitle": "All cases? Or search first",
+  "casesPrintAllBody": "Without a search or status filter, the full list will print.",
+  "casesPrintSearch": "Search first",
+  "casesPrintAll": "Print all",
+  "casesListShareTitle": "Case list",
+  "casesListShareHeader": "Lawyer Diary — case list",
+  "caseGroupToday": "Today",
+  "caseGroupTomorrow": "Tomorrow (in 1 day)",
+  "caseGroupIn2Days": "In 2 days",
+  "caseGroupIn3Days": "In 3 days",
+  "caseGroupLater": "Later",
+  "caseGroupDisposed": "Disposed",
+  "tasksTitle": "Tasks / reminders",
+  "tasksNewHint": "New task",
+  "tasksRepeat": "Repeat",
+  "tasksOnce": "Once",
+  "tasksDaily": "Daily",
+  "tasksWeekly": "Weekly",
+  "tasksEmptyTitle": "No tasks",
+  "tasksEmptySub": "Type above to add",
+  "calendarTitle": "Calendar",
+  "calMonth": "Month",
+  "calWeek": "Week",
+  "calAgenda30": "30 days",
+  "calDayEvents": "{date} — hearings and events",
+  "@calDayEvents": {
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "calDayEventsClosed": "{date} — hearings and events · usually closed",
+  "@calDayEventsClosed": {
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "calClosedEmpty": "Usually closed · hearings may not be listed",
+  "calDayEmpty": "No hearings/events on this day",
+  "calAgendaEmpty": "No hearings in the next 30 days",
+  "calKindHearing": "Hearing",
+  "calKindMeeting": "Client meeting",
+  "calKindFiling": "Filing",
+  "calKindDeadline": "Deadline",
+  "calKindReminder": "Reminder",
+  "calKindPayment": "Fee ledger",
+  "calKindPersonal": "Personal task",
+  "scanRecordTitle": "File record",
+  "scanRecordHint": "Scanner and OCR are off in v1 (no CAMERA; AGP plugin commented). Only title and kind are saved — no photo capture.",
+  "prepChecklist": "Checklist",
+  "prepHearing": "Hearing",
+  "prepFiling": "Filing",
+  "prepNewItem": "New item",
+  "composeNotifyClient": "Tell the client",
+  "composeTplNext": "Next hearing",
+  "composeTplToday": "Attend today",
+  "composeTplDate": "Date change",
+  "composeTplFee": "Fee due",
+  "composeTplDocs": "Ask for papers",
+  "composeTplOrder": "Today’s order",
+  "composeTplDisposed": "Disposed",
+  "composeTplMeeting": "Chamber meeting",
+  "composeSms": "SMS",
+  "composeBoth": "Both",
+  "composeOptOut": "Want to stop? Ask the lawyer. WhatsApp does not use credits.",
+  "composeSend": "Send",
+  "composeSmsCost": "SMS · cost {n}",
+  "@composeSmsCost": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "commonClose": "Close",
+  "findLeadsBtn": "Leads",
+  "findProfileBtn": "Profile",
+  "findFeaturedNote": "Featured placement is not sold in v1. Ratings appear only after contact; a count of 0 is hidden.",
+  "findEmptyList": "No lawyers match this filter. Most districts have nobody listed yet — a cold start, not a bug. Pick a district to be notified, or list yourself first. Ratings appear only after contact; 0 is hidden.",
+  "findCacheEmpty": "The last successful list is not offline — cache is empty.",
+  "findOfflineCache": "Offline cache — need the network for a new search",
+  "findNotifyCta": "Tell me when someone joins this district",
+  "findNotifyPickDistrict": "Pick a district and try again",
+  "findNotifySaved": "We’ll tell you when a lawyer joins this district.",
+  "findNotifyFailed": "Notify was not saved",
+  "findBeFirst": "Be the first listed",
+  "findContactTitle": "Contact",
+  "findContactFailed": "Could not send the contact",
+  "findReportDone": "Report submitted",
+  "findReportFailed": "Report failed",
+  "findProfileLoadFail": "Profile did not load",
+  "findCompleteness": "Profile completeness: {pct}%",
+  "@findCompleteness": {
+    "placeholders": {
+      "pct": {"type": "int"}
+    }
+  },
+  "findMedianReply": "Median reply time: {mins} minutes (collected data; not a guess)",
+  "@findMedianReply": {
+    "placeholders": {
+      "mins": {"type": "int"}
+    }
+  },
+  "findRatingLine": "Rating {avg} · {count} people (only after contact; comments are not public)",
+  "@findRatingLine": {
+    "placeholders": {
+      "avg": {"type": "String"},
+      "count": {"type": "String"}
+    }
+  },
+  "findNoRating": "No ratings yet — left blank, not a guess.",
+  "findPhoneHidden": "Phone is not shown on the profile. Up to 3 contacts in 14 days. Contact shares numbers both ways.",
+  "findIssueLabel": "Short description of the problem (optional)",
+  "findContactBtn": "Contact / consult",
+  "findReportBtn": "Report / block",
+  "findRatingSubmitted": "Rating saved — average shows only when count > 0",
+  "findRatingFailed": "Rating was not saved",
+  "findMyProfileTitle": "My lawyer profile",
+  "findCompletenessHint": "Completeness {pct}% — fill name, degree, district and about",
+  "@findCompletenessHint": {
+    "placeholders": {
+      "pct": {"type": "int"}
+    }
+  },
+  "findFieldName": "Name",
+  "findFieldDegree": "Degree",
+  "findFieldDistrict": "District",
+  "findFieldAbout": "About",
+  "findBarReg": "Bar registration no. (verify)",
+  "findEnrolYear": "Year of enrolment",
+  "findPhotoUrl": "Photo URL (upload server later)",
+  "findPhotoHint": "Presign upload is on the webapp. HTTPS URL only here. The account mobile is for the system — it will not show on the public profile.",
+  "findPublish": "Publish",
+  "findVerifySubmitted": "Verify request submitted — manual review",
+  "findVerifyFailed": "Verify was not submitted — save the profile first",
+  "findSubmitVerify": "Submit for verification",
+  "findLeadsTitle": "Leads / requests",
+  "findNeedLogin": "Sign in required",
+  "findLeadsLoadFail": "Leads did not load",
+  "findMyRequests": "My requests",
+  "findNoRequestsTitle": "No requests yet",
+  "findNoRequestsSub": "They appear here after you Contact from the directory.",
+  "findYourRating": "Your rating: {stars}★",
+  "@findYourRating": {
+    "placeholders": {
+      "stars": {"type": "String"}
+    }
+  },
+  "findIncomingLeads": "Incoming leads (lawyer)",
+  "findNoIncomingTitle": "No incoming leads",
+  "findNoIncomingSub": "They appear here when your profile is listed.",
+  "findClientFallback": "Client",
+  "findCaseBtn": "Case",
+  "findRatingPrefix": "Rating: ",
+  "findVerified": "Verified",
+  "findLawyerFallback": "Lawyer",
+  "findYearsExp": "{n} years’ experience",
+  "@findYearsExp": {
+    "placeholders": {
+      "n": {"type": "int"}
+    }
+  },
+  "findSaveFailed": "Save failed",
+  "findPracticeCivil": "Civil",
+  "findPracticeCriminal": "Criminal",
+  "findPracticeFamily": "Family",
+  "findPracticeLand": "Land",
+  "findPracticeLabour": "Labour",
+  "findPracticeCheque": "Cheque / NI",
+  "findContactGreeting": "Assalamu alaikum, how are you? You can contact the lawyer at the number below to help with your problem.",
+  "loginAppName": "Lawyer Diary",
+  "loginIdLabel": "Username or mobile",
+  "loginIdHint": "username or 01XXXXXXXXX",
+  "loginPasswordLabel": "Password",
+  "loginSubmit": "Sign in",
+  "loginForgot": "Forgot password?",
+  "loginSignup": "Create a new account",
+  "loginRestoreBtn": "Restore account (30-day grace)",
+  "loginRestored": "Restored — sign in now",
+  "loginDevOnly": "Debug only — not production",
+  "loginBypass": "Local test — enter without signing in",
+  "signupTitle": "Create account",
+  "signupHint": "No OTP. Email is optional — needed to reset the password.",
+  "signupName": "Name *",
+  "signupPhone": "Mobile *",
+  "signupEmail": "Email (optional)",
+  "signupPassword": "Password *",
+  "signupPassword2": "Confirm password *",
+  "signupTerms": "I accept the terms and privacy policy",
+  "signupWait": "Please wait…",
+  "signupCreate": "Create account",
+  "signupHaveAccount": "Already have an account? Sign in",
+  "signupNeedTerms": "Accept the terms first",
+  "signupPasswordMismatch": "Passwords do not match",
+  "forgotBackLogin": "Back to login",
+  "forgotPhoneHint": "Login has no OTP. A forgotten password uses phone OTP (it costs money). The password does not change without the server.",
+  "forgotEmailHint": "If the account has email, a link will be sent (cheap backup).",
+  "forgotEmailSent": "If this account has email, a reset link was sent. No OTP.",
+  "forgotIdLabel": "Username, mobile or email",
+  "forgotAskLink": "Request link",
+  "forgotOtpSent": "OTP sent (10 minutes).",
+  "forgotWaitRate": "Wait — too many attempts.",
+  "forgotResetDone": "Password updated. Sign in.",
+  "lockUnlock": "Unlock",
+  "profileNameLabel": "Name",
+  "profilePhoneLabel": "Mobile",
+  "profileEmailLabel": "Email",
+  "profileUsernameLabel": "Username",
+  "profilePasswordLabel": "Password",
+  "profileFindSection": "Find Lawyer profile",
+  "profileFindHint": "Photo, years of experience, expertise, degree — public profile will not show mobile.",
+  "profileEditPro": "Edit professional profile",
+  "profileAppLock": "App lock",
+  "profileLockFail": "Biometric/PIN was not verified",
+  "profileDevicePin": "Device PIN / biometric",
+  "profileLogoutAsk": "Log out?",
+  "teamNoLogs": "No logs",
+  "teamLogsFailed": "Logs did not load",
+  "teamDigestEmail": "Email: {note}",
+  "@teamDigestEmail": {
+    "placeholders": {
+      "note": {"type": "String"}
+    }
+  },
+  "teamDigestFailed": "Weekly digest did not load (need network)",
+  "teamUpdateFailed": "Update failed",
+  "teamWorkspaceTitle": "Workspace",
+  "teamWorkspaceHint": "Switching changes cases, clients, cause list and calendar.",
+  "teamNoWorkspace": "No workspace",
+  "teamKindChamber": "Chamber",
+  "teamKindPersonal": "Personal",
+  "resourcesTitle": "Legal resources",
+  "resourcesActs": "Acts / sections",
+  "resourcesActsSub": "Master pack; otherwise bdlaws",
+  "resourcesDailyLaw": "Law Daily",
+  "resourcesDailyLawSub": "Essential laws, sites and news — Law Daily tabs",
+  "resourcesNews": "Legal news",
+  "resourcesNewsSub": "Familiar newspaper sites — not a live feed",
+  "resourcesForms": "Court forms",
+  "resourcesFormsSub": "Drafts following public CPC / Court Fees blanks",
+  "resourcesGovt": "Government services",
+  "resourcesActsEmptyTitle": "Section list is empty",
+  "resourcesActsEmptySub": "They appear here after the master pack syncs. There is no full Bare Acts corpus — use the bdlaws link.",
+  "resourcesDailyBody": "Streak: {n} days. Same count as Career Hub. Full lessons appear here after ingest. Nothing is shown without a source.",
+  "@resourcesDailyBody": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "resourcesNewsBody": "Hand-picked backlog is empty — no live news pipeline (doc 41).",
+  "resourcesFormsBody": "Core form set is not entered yet. Open bdlaws / court forms outside the app.",
+  "resourcesGovtEmpty": "List is empty without network — open again later.",
+  "resourcesSourceChip": "Source · lawyer-diary master pack · verify: pack version",
+  "resourcesEffectiveMissing": "Effective date: not in the source (master JSON/column empty — not a guess).",
+  "resourcesEffective": "Effective date: {date}",
+  "@resourcesEffective": {
+    "placeholders": {
+      "date": {"type": "String"}
+    }
+  },
+  "resourcesSectionsEmpty": "Section list is empty — use the bdlaws fallback.",
+  "resourcesSectionPrefix": "Section {n}",
+  "@resourcesSectionPrefix": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "resourcesTextMissing": "Text has not been ingested.",
+  "resourcesRelatedEmpty": "No related links yet — none are added without a verified source.",
+  "resourcesActFallback": "Act",
+  "conflictTitle": "Sync conflict",
+  "conflictEmpty": "No conflicts",
+  "conflictBody": "The server has a newer version. Your local edit was not dropped.",
+  "conflictKeepLocal": "Keep local",
+  "conflictTakeServer": "Take server",
+  "conflictClear": "Review done — clear the list",
+  "conflictKeepQueued": "Local queued again — goes on the next sync",
+  "conflictServerPulled": "Server version pulled",
+  "dbKeyTitle": "Database would not open",
+  "dbKeyTitleShort": "Database",
+  "dbKeyWipeConfirm": "Type WIPE to confirm",
+  "dbKeyCipherMissing": "This build has no sqlite3mc, but an encrypted database is present. The file was not deleted. Install a previous working APK.",
+  "dbKeyUnlockFail": "The encrypted local database could not be unlocked after a secure-key reset. Your diary file was not deleted. Tap Try again, or wipe local data and sync from the server.",
+  "dbKeySecureReset": "Secure storage was reset. Tap Try again — you may need to log in.",
+  "dbKeyRetry": "Try again",
+  "dbKeyWipeHint": "Last resort: delete the local database and sync from the server. Type WIPE",
+  "dbKeyWiping": "Wiping…",
+  "dbKeyWipeOpen": "Wipe and open again",
+  "backupExportFail": "Export failed: {error}",
+  "@backupExportFail": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "inboxEmptyTitle": "No notifications",
+  "inboxEmptySub": "Hearings, files and subscription news will appear here",
+  "versionTitle": "Version",
+  "commonOk": "OK",
+  "nextDateSelect": "Select next date",
+  "ajaxHint": "Type to search — the list appears below",
+  "ajaxManage": "Add / edit",
+  "searchHintShort": "Search…",
+  "pickerWriteOwn": "Write yourself: {q}",
+  "@pickerWriteOwn": {
+    "placeholders": {
+      "q": {"type": "String"}
+    }
+  },
+  "pickerNone": "Nothing found",
+  "errorHappened": "Something went wrong",
+  "errorRetry": "Please try again",
+  "useAiBody": "If the case is hard to follow, open AI here. ChatGPT stays inside the app.",
+  "useAiButton": "Use AI",
+  "homeLawGlance": "Glance at this law",
+  "homeLawForClient": "{law} — useful in {name}’s case",
+  "@homeLawForClient": {
+    "placeholders": {
+      "law": {"type": "String"},
+      "name": {"type": "String"}
+    }
+  },
+  "practicePetitions": "Petitions / applications",
+  "practiceCalcs": "Fee / calculator",
+  "tmplBail": "Bail petition",
+  "tmplHajira": "Appearance petition",
+  "tmplTime": "Time petition",
+  "tmplPlaint": "Civil plaint",
+  "statTotalCases": "Total cases",
+  "statDisposedCases": "Disposed cases",
+  "statCancelledCases": "Cancelled cases",
+  "statActiveCases": "Ongoing cases",
+  "printDiaryTitle": "Monthly / weekly diary print",
+  "printDiarySub": "Clients, cases, income and expense — PDF",
+  "printMonthly": "Monthly",
+  "printWeekly": "Weekly",
+  "printMonthLabel": "Month",
+  "printYearLabel": "Year",
+  "printWeekRange": "Sun {a}–Thu {b} {month} {year}",
+  "@printWeekRange": {
+    "placeholders": {
+      "a": {"type": "String"},
+      "b": {"type": "String"},
+      "month": {"type": "String"},
+      "year": {"type": "String"}
+    }
+  },
+  "printWeekOff": "Fri–Sat off (gazette holidays are separate)",
+  "printNeedOne": "Pick at least one",
+  "printNeedLogin": "PDF needs login and network",
+  "printFail": "Problem: {error}",
+  "@printFail": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "printPdfMake": "Make PDF",
+  "printServerHonest": "Today’s server PDF is cases/hearings; income-expense is sent in the query — the web app will match later.",
+  "printIncludeIncome": "Income",
+  "printIncludeExpense": "Expense",
+  "monthJan": "January",
+  "monthFeb": "February",
+  "monthMar": "March",
+  "monthApr": "April",
+  "monthMay": "May",
+  "monthJun": "June",
+  "monthJul": "July",
+  "monthAug": "August",
+  "monthSep": "September",
+  "monthOct": "October",
+  "monthNov": "November",
+  "monthDec": "December",
+  "printShortInfo": "Short information",
+  "printAllInfo": "All information",
+  "printSharePdf": "Share / print PDF",
+  "printShareWa": "WhatsApp / share sheet",
+  "scanPdfTitle": "PDF scanner",
+  "scanKindLabel": "File type",
+  "scanPagePreview": "Page preview",
+  "scanPageName": "Page name",
+  "scanPageN": "Page {n}",
+  "@scanPageN": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "scanFileName": "File name",
+  "scanCamera": "Camera",
+  "scanGallery": "Gallery",
+  "scanPdfShare": "Scan PDF",
+  "scanFailed": "Scan failed: {error}",
+  "@scanFailed": {
+    "placeholders": {
+      "error": {"type": "String"}
+    }
+  },
+  "scanSavePdf": "Save PDF",
+  "scanUploadBtn": "Upload file",
+  "scanDeleteItem": "Delete · {title}",
+  "@scanDeleteItem": {
+    "placeholders": {
+      "title": {"type": "String"}
+    }
+  },
+  "evidenceKindsHint": "Petition, Order, Judgment, FIR, Complaint, Evidence, Supporting paper, other Documents.",
+  "courtDirTitle": "Dhaka judges’ court",
+  "courtDirHint": "Search court, room or bench…",
+  "courtDirBuildings": "{n} buildings listed",
+  "@courtDirBuildings": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "courtDirJurisdiction": "Jurisdiction",
+  "courtDirRooms": "{n} rooms",
+  "@courtDirRooms": {
+    "placeholders": {
+      "n": {"type": "String"}
+    }
+  },
+  "scheduleHonestBanner": "Schedule inventory ~40 rows: NBR individual slabs + Constitution 7 schedules (bdlaws Schedule PDF) + Court Fees act-21 PDF extract (15 Sep 2026). CPC/CrPC schedule tables still not on HTML — MBC not copied. Court-fee calculator remains indicative.",
+  "scheduleOfficialLinks": "Official links",
+  "scheduleOfficialBody": "Constitution BN: https://bdlaws.minlaw.gov.bd/act-details-957.html\nLimitation HTML: https://bdlaws.minlaw.gov.bd/act-88.html\nLimitation First Schedule PDF: http://old.bdlaws.minlaw.gov.bd/upload/bdcodeact/2023-12-03-13-53-47-95.-The-Limitation-Act,-1908.pdf\nCourt Fees: https://bdlaws.minlaw.gov.bd/act-21.html\nCPC: https://bdlaws.minlaw.gov.bd/act-86.html\nNBR Nirdeshika 2026-27: nbr.gov.bd publications",
+  "scheduleOpenCourtFee": "Open court-fee calculator",
+  "scheduleOpenStamp": "Stamp reference",
+  "scheduleOpenLimit": "Open limitation calculator",
+  "calcPctOf": "X% of Y",
+  "calcPctIs": "X is % of Y",
+  "calcPctResultOf": "{a}% of {b} = {c}",
+  "@calcPctResultOf": {
+    "placeholders": {
+      "a": {"type": "String"},
+      "b": {"type": "String"},
+      "c": {"type": "String"}
+    }
+  },
+  "calcPctResultIs": "{a} = {c}% of {b}",
+  "@calcPctResultIs": {
+    "placeholders": {
+      "a": {"type": "String"},
+      "b": {"type": "String"},
+      "c": {"type": "String"}
+    }
+  },
+  "linkCopied": "Link copied",
+  "otherSiteTitle": "Another site",
+  "otherSiteBody": "You are going to {host}. Continue?",
+  "@otherSiteBody": {
+    "placeholders": {
+      "host": {"type": "String"}
+    }
+  },
+  "oauthWebviewBlocked": "Google login is blocked in the WebView — open Custom Tab / browser",
+  "openAction": "Open",
+  "loginPopup": "Login / popup",
+  "openCustomTab": "Open in Custom Tab",
+  "openBrowser": "Open in browser",
+  "calcPctX": "X",
+  "calcPctY": "Y",
+  "calcPctXPercent": "X %",
+  "causeAttendOk": "Attendance recorded",
+  "causeNoteTitle": "Add note",
+  "causeNoteHint": "New line — old notes stay",
+  "causePdfNeedLogin": "PDF needs login and internet",
+  "causePdfFail": "PDF failed — check net/server; CSV works offline",
+  "causeOfficialInApp": "Official e-Causelist (in app)",
+  "causeCourtDir": "Court location / room guide",
+  "causeOpenBrowser": "Open in browser",
+  "causeSharePdf": "Share this date as PDF",
+  "causeShareCsv": "Share this date as CSV",
+  "causeEmptyTitle": "No cases of mine on this date",
+  "causeEmptySub": "Official cause-list is not synced — only your nextDate",
+  "causeAttend": "Attendance",
+  "causeNextDate": "Next date",
+  "causeNote": "Note",
+  "causeOrder": "Order",
+  "causeClient": "Client",
+  "messagingClientSms": "Client SMS",
+  "messagingOwnerWa": "Owner WhatsApp",
+  "messagingClientSmsHint": "Manual client SMS opens the phone SMS app. Auto D-1 still uses the device job when keys exist — it does not send from this box.",
+  "messagingOwnerWaHint": "Lawyer-only WhatsApp via wa.me (you tap). Auto WABA send is removed.",
+  "messagingOpenDeviceSms": "Open device SMS",
+  "messagingOpenWa": "Open WhatsApp",
+  "messagingNeedPhone": "Enter a mobile number",
+  "messagingLogTitle": "Last send log (this phone)",
+  "messagingAdvanced": "Bulk / adapter (advanced)",
+  "messagingClientSmsOn": "Allow auto client SMS (D-1 job)",
+  "messagingOwnerWaOn": "Show owner WhatsApp wa.me (not auto-send)",
+  "commSectionClient": "Client SMS",
+  "commSectionOwner": "Owner WhatsApp",
+  "dashToday": "Today",
+  "dashTodayLine": "Today: collected ৳ {recv} · expense ৳ {exp}",
+  "@dashTodayLine": {
+    "placeholders": {
+      "recv": {"type": "String"},
+      "exp": {"type": "String"}
+    }
+  },
+  "onboardingBrand": "Lawyer Diary",
+  "onboardingCountry": "Bangladesh",
+  "onboardingPickLang": "Choose app language",
+  "onboardingStart": "Get started",
+  "aiTitle": "AI assistant",
+  "aiDisclaimer": "Case-aware AI is off without a key. No legal advice is invented. This is not a substitute for a lawyer.",
+  "aiPromptLabel": "Question (sends only if a key exists)",
+  "aiAsk": "Ask",
+  "ocrTitle": "Scan / OCR",
+  "ocrDisclaimer": "CAMERA is not in v1 cloud OCR. Without OCR_API_URL no text is extracted — no fake output.",
+  "ocrNeedCamera": "OCR key is present, but a photo cannot be taken without CAMERA.",
+  "ocrStatus": "Check OCR status",
+  "courtDirCrCognizance": "CR cognizance courts",
+  "waTplHearing": "Hearing reminder",
+  "waTplFee": "Fee reminder",
+  "waTplGeneral": "General message",
+  "waComposeTitle": "Write message",
+  "waComposeHint": "Add the rest of the message after the template",
+  "lawDailyEmptySearch": "No act or section matches this search",
+  "lawDailyEmptySearchSub": "Try a section number or the act’s short name. Full statute text is on bdlaws.",
+  "hybridReload": "Reload",
+  "hybridForward": "Forward",
+  "whatsAppLabel": "WhatsApp",
+  "forgotPhoneLabel": "01XXXXXXXXX",
+  "forgotInvalidPhone": "Enter a valid Bangladesh mobile number.",
+  "forgotInvalidOtp": "Enter the 6-digit code.",
+  "forgotWeakPassword": "Password must be at least 8 characters.",
+  "forgotNetwork": "Network error. Try again.",
+  "messagingWabaReady": "Auto WhatsApp (WABA) is unused — SIM SMS only.",
+  "messagingWabaEmpty": "Auto WhatsApp removed. Manual wa.me still works.",
+  "commQuotaZero": "No SMS credits left this month (local count).",
+  "commAdapterFailed": "Gateway did not accept this SMS.",
+  "templateListDisclaimer": "MAMLAQ drafts — structure follows public CPC/Court Fees blanks; not a gazette form. Verify law and facts before filing.",
+  "templateGenerateOff": "PDF generate is off — not advocate-approved. Educational fields: {fields}",
+  "@templateGenerateOff": {
+    "placeholders": {
+      "fields": {"type": "String"}
+    }
+  },
+  "templatePendingReview": "Draft",
+  "templateEduChip": "Educational · {version} · verify before filing",
+  "@templateEduChip": {
+    "placeholders": {
+      "version": {"type": "String"}
+    }
+  },
+  "conflictOpLine": "op {id} · server v{ver}",
+  "@conflictOpLine": {
+    "placeholders": {
+      "id": {"type": "String"},
+      "ver": {"type": "String"}
+    }
+  },
+  "teamDefaultName": "Chamber",
+  "calToday": "Today",
+  "calDaysCount": "{count} days",
+  "@calDaysCount": {
+    "placeholders": {
+      "count": {"type": "int"}
+    }
+  },
+  "bdlawsSource": "Source: bdlaws.minlaw.gov.bd"
+}

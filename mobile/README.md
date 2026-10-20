@@ -30,20 +30,14 @@ Config: `lib/core/config/api_config.dart`
 
 | Target | Default (debug) |
 |--------|-----------------|
-| Android **emulator** | `http://10.0.2.2:3000` |
-| iOS simulator | `http://127.0.0.1:3000` |
-| **Physical device** | Pass LAN IP (same Wi‑Fi as PC running webapp) |
+| Android phone | `http://187.77.153.28` |
+| iOS simulator / desktop | `http://127.0.0.1:3000` |
 
 ```bash
-# Physical device → PC LAN IP (example)
-flutter run --dart-define=API_BASE=http://192.168.0.99:3000
-# or force LAN constant in api_config.dart:
-flutter run --dart-define=USE_LAN_API=true
-
-# Release still uses https://api.lawyerdiarybd.com unless API_BASE is set
+flutter run --dart-define=API_BASE=http://187.77.153.28
 ```
 
-Webapp must be running on port **3000**. Cleartext HTTP is allowed for debug via Android network security config.
+`--dart-define=API_BASE` still overrides the host. Release without that override uses `https://api.lawyerdiarybd.com`. Cleartext HTTP to the VPS is allowed until HTTPS exists.
 
 ## Temporarily disabled plugins (debug / AGP 9)
 

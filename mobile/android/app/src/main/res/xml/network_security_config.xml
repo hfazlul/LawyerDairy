@@ -6,8 +6,7 @@
         <domain includeSubdomains="true">10.0.2.2</domain>
         <domain includeSubdomains="true">127.0.0.1</domain>
         <domain includeSubdomains="true">localhost</domain>
-        <!-- Common private LAN ranges for physical-device debug -->
-        <domain includeSubdomains="true">192.168.0.99</domain>
-        <domain includeSubdomains="true">192.168.30.68</domain>
+        <!-- Live VPS, plain HTTP until HTTPS exists. -->
+        <domain includeSubdomains="true">187.77.153.28</domain>
     </domain-config>
 </network-security-config>

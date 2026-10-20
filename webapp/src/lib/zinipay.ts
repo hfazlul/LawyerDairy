@@ -52,12 +52,19 @@ export function zinipayHeaderName(): string {
   return 'zini-api-key'
 }
 
+/** production refuses documentation sandbox keys even if ZINIPAY_ALLOW_SANDBOX is set. */
+export function zinipayMode(): 'production' | 'sandbox' {
+  const raw = (process.env.ZINIPAY_MODE || '').trim().toLowerCase()
+  if (raw === 'production' || raw === 'live') return 'production'
+  return 'sandbox'
+}
+
 export function zinipayConfigured(): boolean {
   const key = zinipayApiKey()
   if (!key) return false
-  if (/^sandbox_test_/i.test(key) && process.env.ZINIPAY_ALLOW_SANDBOX !== 'true') {
-    return false
-  }
+  const sample = /^sandbox_test_/i.test(key)
+  if (sample && zinipayMode() === 'production') return false
+  if (sample && process.env.ZINIPAY_ALLOW_SANDBOX !== 'true') return false
   return true
 }
 
@@ -91,6 +98,9 @@ export async function createZiniInvoice(
 ): Promise<ZiniCreateResult> {
   if (!zinipayConfigured()) {
     return { ok: false, reason: 'unconfigured', message: 'ZINIPAY_API_KEY is not set. Checkout is not live.' }
+  }
+  if (!(input.amountBdt > 0)) {
+    return { ok: false, reason: 'vendor', message: 'amount must be greater than 0' }
   }
   try {
     const res = await fetchImpl(`${baseUrl()}/v1/payment/create`, {

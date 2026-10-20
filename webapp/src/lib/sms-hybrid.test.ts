@@ -34,6 +34,7 @@ const SMS_ENV = [
   'SMS_FAILOVER_URL',
   'SMS_FAILOVER_KEY',
   'SMS_SENDER_ID',
+  'SMS_MODE',
 ]
 
 test('hybrid is unconfigured without keys; WhatsApp auto always skipped', async () => {
@@ -53,6 +54,31 @@ test('hybrid is unconfigured without keys; WhatsApp auto always skipped', async 
   assert.equal(wa.ok, false)
   assert.equal(wa.skipped, 'whatsapp_auto_removed')
   restore(prev)
+})
+
+test('SMS_MODE=production uses only the non-masking account', async () => {
+  const prev = stash(SMS_ENV)
+  process.env.SMS_MODE = 'production'
+  process.env.SMS_NET_BD_API_KEY = 'net-key'
+  process.env.BULKSMS24_API_KEY = 'bulk-key'
+  process.env.SMS_API_KEY = 'your-sms-api-key'
+  process.env.SMS_API_URL = 'https://api.sms.net.bd/sendsms'
+  const calls: string[] = []
+  const orig = globalThis.fetch
+  globalThis.fetch = (async (input: RequestInfo | URL) => {
+    calls.push(String(input))
+    return new Response(JSON.stringify({ response_code: 202 }), { status: 200 })
+  }) as typeof fetch
+  try {
+    const r = await sendSmsHybrid({ phone: '01712345678', message: 'hi', kind: 'otp' })
+    assert.equal(r.ok, true)
+    assert.equal(r.provider, '24bulksmsbd')
+    assert.equal(calls.length, 1)
+    assert.match(calls[0], /24bulksmsbd/)
+  } finally {
+    globalThis.fetch = orig
+    restore(prev)
+  }
 })
 
 test('sms.net.bd primary then 24bulksmsbd failover (mocked HTTP)', async () => {

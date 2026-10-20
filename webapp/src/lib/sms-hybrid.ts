@@ -141,12 +141,33 @@ export async function sendBulkSms24(phone: string, message: string): Promise<{
   }
 }
 
+function smsProductionMode(): boolean {
+  return envTrim('SMS_MODE').toLowerCase() === 'production'
+}
+
 export async function sendSmsHybrid(input: {
   phone: string
   message: string
   kind: string
   workspaceId?: string | null
 }): Promise<{ ok: boolean; skipped?: string; provider?: string; error?: string }> {
+  // Production uses the non-masking account (BULKSMS24_API_KEY) only.
+  // sms.net.bd and the generic gateway stay off so a dummy or old key cannot send.
+  if (smsProductionMode()) {
+    if (!bulkSms24Configured()) return { ok: false, skipped: 'sms_unconfigured' }
+    const sent = await sendBulkSms24(input.phone, input.message)
+    if (sent.ok) {
+      await recordSmsUsage({
+        provider: '24bulksmsbd',
+        kind: input.kind,
+        workspaceId: input.workspaceId,
+        phone: input.phone,
+      })
+      return { ok: true, provider: '24bulksmsbd' }
+    }
+    return { ok: false, provider: '24bulksmsbd', error: sent.error, skipped: sent.skipped }
+  }
+
   if (smsNetBdConfigured()) {
     const primary = await sendSmsNetBd(input.phone, input.message)
     if (primary.ok) {
