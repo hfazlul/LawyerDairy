@@ -5,11 +5,17 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { kEmailExample, kPhoneExample } from '@/lib/identity'
+import { plainAuthNotice } from '@/lib/auth/signup-failure'
 
 const kAdminSaveFailed = 'অ্যাডমিন অ্যাকাউন্ট তৈরি হয়নি। আবার চেষ্টা করুন।'
 
+function shownAdminError(raw: string): string {
+  if (!raw.trim()) return ''
+  return plainAuthNotice(raw, kAdminSaveFailed)
+}
+
 export function AdminSignupForm({ invite, notice }: { invite: string; notice: string }) {
-  const [message, setMessage] = useState(notice)
+  const [message, setMessage] = useState(shownAdminError(notice))
   const [busy, setBusy] = useState(false)
   const sending = useRef(false)
 
@@ -36,7 +42,7 @@ export function AdminSignupForm({ invite, notice }: { invite: string; notice: st
       })
       const data = await res.json().catch(() => ({}))
       if (!res.ok || data.ok !== true) {
-        setMessage(typeof data.message === 'string' && data.message.trim() ? data.message : kAdminSaveFailed)
+        setMessage(typeof data.message === 'string' && data.message.trim() ? shownAdminError(data.message) : kAdminSaveFailed)
         sending.current = false
         setBusy(false)
         return

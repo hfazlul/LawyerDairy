@@ -5,6 +5,7 @@ import { FormEvent, useState, Suspense } from 'react'
 import Link from 'next/link'
 import { SiteHeader } from '@/ui/site-chrome'
 import { kPasswordHintBn, passwordIssues } from '@/lib/identity'
+import { plainAuthNotice } from '@/lib/auth/signup-failure'
 import { showAuthToast } from '@/ui/auth-toast'
 
 function ResetInner() {
@@ -41,7 +42,13 @@ function ResetInner() {
       return
     }
     const data = await res.json().catch(() => ({}))
-    const message = typeof data.messageBn === 'string' ? data.messageBn : 'লিংক অবৈধ বা মেয়াদোত্তীর্ণ'
+    const fallback = 'রিসেট লিংক পাঠানো যায়নি। আবার চেষ্টা করুন।'
+    const raw = typeof data.messageBn === 'string' && data.messageBn.trim()
+      ? data.messageBn
+      : typeof data.message === 'string'
+        ? data.message
+        : ''
+    const message = raw.trim() ? plainAuthNotice(raw, fallback) : 'লিংক অবৈধ বা মেয়াদোত্তীর্ণ'
     setMsg(message)
     showAuthToast(message)
   }

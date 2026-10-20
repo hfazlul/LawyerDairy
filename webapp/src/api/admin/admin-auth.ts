@@ -7,7 +7,7 @@ import { hashToken } from '@/lib/crypto-tokens'
 import { ADMIN_COOKIE } from '@/lib/admin-session'
 import { originAllowed } from '@/lib/csrf'
 import {
-  kSignupMissingSecretMessage,
+  logAuthFailure,
   signupFailureMessage,
   signingSecretMissing,
 } from '@/lib/auth/signup-failure'
@@ -68,7 +68,18 @@ async function readForm(req: NextRequest): Promise<Record<string, string>> {
   return out
 }
 
+const kLoginServerMessage = 'লগইন এখন সম্পন্ন হয়নি। আবার চেষ্টা করুন।'
+
 export async function POST_login(req: NextRequest) {
+  try {
+    return await postAdminLogin(req)
+  } catch (err) {
+    logAuthFailure(err, process.env, 'admin login failed')
+    return fail(req, '/hfazlul/login', kLoginServerMessage, 500)
+  }
+}
+
+async function postAdminLogin(req: NextRequest) {
   if (!originAllowed(req)) return NextResponse.json({ message: 'Forbidden' }, { status: 403 })
   const body = await readForm(req)
   const ident = (body.identifier || '').trim()
@@ -123,7 +134,8 @@ export async function POST_signup(req: NextRequest) {
       return fail(req, '/hfazlul/signup', 'পাসওয়ার্ড কমপক্ষে ১০ অক্ষরের হতে হবে।')
     }
     if (signingSecretMissing()) {
-      return fail(req, '/hfazlul/signup', kSignupMissingSecretMessage, 500)
+      logAuthFailure(new Error('signup blocked'), process.env, 'admin signup failed')
+      return fail(req, '/hfazlul/signup', signupFailureMessage(), 500)
     }
     const username = (body.username || '').trim().toLowerCase()
     const email = (body.email || '').trim().toLowerCase()
@@ -172,7 +184,7 @@ export async function POST_signup(req: NextRequest) {
     if (err instanceof Error && err.message === 'Admin invite is no longer valid') {
       return fail(req, '/hfazlul/signup', 'ইনভাইট অবৈধ')
     }
-    console.error('admin signup failed', err)
+    logAuthFailure(err, process.env, 'admin signup failed')
     return fail(req, '/hfazlul/signup', signupFailureMessage(err), 500)
   }
 }

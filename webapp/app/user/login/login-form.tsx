@@ -6,9 +6,16 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { kLoginEmptyMessage, kLoginUnknownMessage, kLoginWrongPasswordMessage, kPasswordHintBn } from '@/lib/identity'
+import { plainAuthNotice } from '@/lib/auth/signup-failure'
 import { cn } from '@/lib/utils'
 
 const invalidClass = 'border-red-600 focus-visible:border-red-600 focus-visible:ring-red-600/20'
+const kLoginServerMessage = 'লগইন এখন সম্পন্ন হয়নি। আবার চেষ্টা করুন।'
+
+function shownLoginError(raw: string): string {
+  if (!raw.trim()) return ''
+  return plainAuthNotice(raw, kLoginServerMessage)
+}
 
 type FieldFlags = { identifier: boolean; password: boolean }
 
@@ -22,13 +29,14 @@ function bordersForLogin(message: string): FieldFlags {
 export function LoginForm({ error, next }: { error: string; next: string }) {
   const router = useRouter()
   const [busy, setBusy] = useState(false)
-  const [message, setMessage] = useState(error)
-  const [invalid, setInvalid] = useState<FieldFlags>(() => bordersForLogin(error))
+  const [message, setMessage] = useState(shownLoginError(error))
+  const [invalid, setInvalid] = useState<FieldFlags>(() => bordersForLogin(shownLoginError(error)))
 
   useEffect(() => {
     if (!error) return
-    setMessage(error)
-    setInvalid(bordersForLogin(error))
+    const text = shownLoginError(error)
+    setMessage(text)
+    setInvalid(bordersForLogin(text))
   }, [error])
 
   function clearField(field: keyof FieldFlags) {
@@ -54,7 +62,7 @@ export function LoginForm({ error, next }: { error: string; next: string }) {
       })
       if (!res.ok) {
         const data = await res.json().catch(() => ({}))
-        const text = typeof data.message === 'string' ? data.message : kLoginUnknownMessage
+        const text = typeof data.message === 'string' && data.message.trim() ? shownLoginError(data.message) : kLoginUnknownMessage
         setMessage(text)
         setInvalid(bordersForLogin(text))
         setBusy(false)

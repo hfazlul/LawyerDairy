@@ -29,7 +29,7 @@ import {
 import { collapseName, findActiveUsersByName, nameAmbiguousMessageBn, nameTakenMessageBn } from '@/lib/auth/login-name'
 import { freeUsername, SignupConflict, signupConflictMessage } from '@/lib/auth/signup-guard'
 import {
-  kSignupMissingSecretMessage,
+  logAuthFailure,
   signupFailureMessage,
   signingSecretMissing,
 } from '@/lib/auth/signup-failure'
@@ -159,7 +159,7 @@ function signupCaught(req: NextRequest, wantsHtml: boolean, err: unknown) {
     const target = (err.meta?.target as string[])?.join(',') ?? ''
     return authFail(req, wantsHtml, '/user/signup', takenAccountMessage(target), 409)
   }
-  console.error('signup failed', err)
+  logAuthFailure(err, process.env, 'signup failed')
   return authFail(req, wantsHtml, '/user/signup', signupFailureMessage(err), 500)
 }
 
@@ -208,7 +208,8 @@ export async function POST_signup(req: NextRequest) {
     if (pwErr) return authFail(req, wantsHtml, '/user/signup', pwErr, 400)
 
     if (signingSecretMissing()) {
-      return authFail(req, wantsHtml, '/user/signup', kSignupMissingSecretMessage, 500)
+      logAuthFailure(new Error('signup blocked'), process.env, 'signup failed')
+      return authFail(req, wantsHtml, '/user/signup', signupFailureMessage(), 500)
     }
 
     const email = body.email && body.email.length ? body.email.toLowerCase() : null
@@ -270,7 +271,19 @@ export async function POST_signup(req: NextRequest) {
   }
 }
 
+const kLoginServerMessage = 'লগইন এখন সম্পন্ন হয়নি। আবার চেষ্টা করুন।'
+
 export async function POST_login(req: NextRequest) {
+  try {
+    return await postLogin(req)
+  } catch (err) {
+    logAuthFailure(err, process.env, 'login failed')
+    const contentType = req.headers.get('content-type') || ''
+    return authFail(req, wantsHtmlRedirect(req, contentType), '/user/login', kLoginServerMessage, 500)
+  }
+}
+
+async function postLogin(req: NextRequest) {
   const ip = clientIp(req.headers)
   const contentType = req.headers.get('content-type') || ''
   const wantsHtml = wantsHtmlRedirect(req, contentType)

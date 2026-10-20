@@ -5,10 +5,17 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { kPhoneExample, kPhoneNotRegisteredMessage, kSignupPhoneError, signupPhoneIssue } from '@/lib/identity'
+import { plainAuthNotice } from '@/lib/auth/signup-failure'
 import { cn } from '@/lib/utils'
 
 const invalidClass = 'border-red-600 focus-visible:border-red-600 focus-visible:ring-red-600/20'
 const sentCopy = 'যদি এই অ্যাকাউন্টে ইমেইল থাকে, একটি লিংক পাঠানো হয়েছে।'
+const kForgotServerMessage = 'রিসেট লিংক পাঠানো যায়নি। আবার চেষ্টা করুন।'
+
+function shownForgotError(raw: string): string {
+  if (!raw.trim()) return ''
+  return plainAuthNotice(raw, kForgotServerMessage)
+}
 
 function phoneBorder(message: string) {
   return message === kSignupPhoneError || message === kPhoneNotRegisteredMessage
@@ -18,8 +25,8 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
   const [phone, setPhone] = useState('')
   const [busy, setBusy] = useState(false)
   const [done, setDone] = useState(sent)
-  const [message, setMessage] = useState(sent ? '' : error)
-  const [invalid, setInvalid] = useState(phoneBorder(error))
+  const [message, setMessage] = useState(sent ? '' : shownForgotError(error))
+  const [invalid, setInvalid] = useState(phoneBorder(shownForgotError(error)))
 
   useEffect(() => {
     if (sent) {
@@ -29,8 +36,9 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
       return
     }
     if (!error) return
-    setMessage(error)
-    setInvalid(phoneBorder(error))
+    const text = shownForgotError(error)
+    setMessage(text)
+    setInvalid(phoneBorder(text))
   }, [error, sent])
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -51,7 +59,7 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
       })
       const data = await res.json().catch(() => ({}))
       if (!res.ok) {
-        const text = typeof data.message === 'string' ? data.message : kSignupPhoneError
+        const text = typeof data.message === 'string' && data.message.trim() ? shownForgotError(data.message) : kForgotServerMessage
         setMessage(text)
         setInvalid(phoneBorder(text))
         setBusy(false)
@@ -61,7 +69,7 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
       setInvalid(false)
       setDone(true)
     } catch {
-      setMessage('রিসেট লিংক পাঠানো যায়নি। আবার চেষ্টা করুন।')
+      setMessage(kForgotServerMessage)
       setInvalid(false)
     } finally {
       setBusy(false)

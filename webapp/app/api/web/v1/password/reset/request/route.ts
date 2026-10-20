@@ -5,6 +5,7 @@ import { kPhoneNotRegisteredMessage, kSignupPhoneError, normalizeBdPhone, signup
 import { hashToken, randomOpaqueToken } from '@/lib/crypto-tokens'
 import { sendEmail } from '@/lib/email'
 import { appBaseUrl } from '@/lib/app-url'
+import { logAuthFailure } from '@/lib/auth/signup-failure'
 
 function isDev(): boolean {
   return process.env.NODE_ENV === 'development'
@@ -61,29 +62,34 @@ export async function POST(req: NextRequest) {
   const phone = normalizeBdPhone(identifier)
   if (!phone) return fail(req, contentType, kSignupPhoneError, 400)
 
-  const user = await prisma.user.findFirst({
-    where: { deletedAt: null, phone },
-    select: { id: true, email: true },
-  })
-  if (!user) return fail(req, contentType, kPhoneNotRegisteredMessage, 404)
+  try {
+    const user = await prisma.user.findFirst({
+      where: { deletedAt: null, phone },
+      select: { id: true, email: true },
+    })
+    if (!user) return fail(req, contentType, kPhoneNotRegisteredMessage, 404)
 
-  if (user.email) {
-    const token = randomOpaqueToken()
-    await prisma.passwordResetToken.create({
-      data: {
-        userId: user.id,
-        tokenHash: hashToken(token),
-        expiresAt: new Date(Date.now() + 30 * 60 * 1000),
-      },
-    })
-    const base = appBaseUrl()
-    const link = `${base}/reset-password?token=${token}`
-    await sendEmail({
-      to: user.email,
-      subject: 'Lawyer Diary — পাসওয়ার্ড রিসেট',
-      html: `<p>পাসওয়ার্ড রিসেট করতে লিংকটি ৩০ মিনিটের মধ্যে খুলুন:</p><p><a href="${link}">${link}</a></p>`,
-    })
+    if (user.email) {
+      const token = randomOpaqueToken()
+      await prisma.passwordResetToken.create({
+        data: {
+          userId: user.id,
+          tokenHash: hashToken(token),
+          expiresAt: new Date(Date.now() + 30 * 60 * 1000),
+        },
+      })
+      const base = appBaseUrl()
+      const link = `${base}/reset-password?token=${token}`
+      await sendEmail({
+        to: user.email,
+        subject: 'Lawyer Diary — পাসওয়ার্ড রিসেট',
+        html: `<p>পাসওয়ার্ড রিসেট করতে লিংকটি ৩০ মিনিটের মধ্যে খুলুন:</p><p><a href="${link}">${link}</a></p>`,
+      })
+    }
+
+    return succeed(req, contentType)
+  } catch (err) {
+    logAuthFailure(err, process.env, 'password reset failed')
+    return fail(req, contentType, 'রিসেট লিংক পাঠানো যায়নি। আবার চেষ্টা করুন।', 500)
   }
-
-  return succeed(req, contentType)
 }

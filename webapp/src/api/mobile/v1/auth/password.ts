@@ -40,6 +40,7 @@ import {
   nameTakenMessageBn,
 } from '@/lib/auth/login-name'
 import { freeUsername, SignupConflict, signupConflictMessage } from '@/lib/auth/signup-guard'
+import { logAuthFailure, signupFailureMessage, signingSecretMissing } from '@/lib/auth/signup-failure'
 
 class NameTakenError extends Error {}
 
@@ -74,7 +75,7 @@ export async function POST_login(req: NextRequest) {
   try {
     return await loginWithPassword(req)
   } catch (err) {
-    console.error('mobile login', err)
+    logAuthFailure(err, process.env, 'login failed')
     return NextResponse.json(
       { error: 'server', messageBn: 'লগইন এখন সম্পন্ন হয়নি। আবার চেষ্টা করুন।' },
       { status: 500 },
@@ -288,12 +289,17 @@ export async function POST_signup(req: NextRequest) {
   const email = parsed.email?.trim().toLowerCase() || null
   const name = collapseName(parsed.name)
 
-  const earlyConflict = await signupConflictMessage(prisma, { name, phone, email })
-  if (earlyConflict) {
-    return NextResponse.json({ error: 'conflict', messageBn: earlyConflict }, { status: 409 })
+  if (signingSecretMissing()) {
+    logAuthFailure(new Error('signup blocked'), process.env, 'signup failed')
+    return NextResponse.json({ error: 'server_error', messageBn: signupFailureMessage() }, { status: 500 })
   }
 
   try {
+    const earlyConflict = await signupConflictMessage(prisma, { name, phone, email })
+    if (earlyConflict) {
+      return NextResponse.json({ error: 'conflict', messageBn: earlyConflict }, { status: 409 })
+    }
+
     const { tokens, envelope, pendingInvites } = await prisma.$transaction(async (tx) => {
       const conflict = await signupConflictMessage(tx, { name, phone, email })
       if (conflict) throw new SignupConflict(conflict)
@@ -373,8 +379,8 @@ export async function POST_signup(req: NextRequest) {
           : 'phone_taken'
       return NextResponse.json({ error, messageBn }, { status: 409 })
     }
-    console.error('signup failed', err)
-    return NextResponse.json({ error: 'server_error' }, { status: 500 })
+    logAuthFailure(err, process.env, 'signup failed')
+    return NextResponse.json({ error: 'server_error', messageBn: signupFailureMessage(err) }, { status: 500 })
   }
 }
 
@@ -416,42 +422,50 @@ export async function POST_passwordResetRequest(req: NextRequest) {
     if (!rl.ok) return NextResponse.json({ ok: true })
   }
   const { identifier } = z.object({ identifier: z.string().min(1) }).parse(await req.json())
-  const phone = normalizeBdPhone(identifier)
-  const byName = await findActiveUsersByName(identifier)
-  const user =
-    byName.length === 1
-      ? byName[0]
-      : byName.length > 1
-        ? null
-        : await prisma.user.findFirst({
-            where: {
-              deletedAt: null,
-              OR: [
-                { username: identifier.trim().toLowerCase() },
-                ...(phone ? [{ phone }] : []),
-                { email: identifier.trim().toLowerCase() },
-              ],
-            },
-          })
-  // Always 200 — no enumeration
-  if (user?.email) {
-    const token = randomOpaqueToken()
-    await prisma.passwordResetToken.create({
-      data: {
-        userId: user.id,
-        tokenHash: hashToken(token),
-        expiresAt: new Date(Date.now() + 30 * 60 * 1000),
-      },
-    })
-    const base = appBaseUrl()
-    const link = `${base}/reset-password?token=${token}`
-    await sendEmail({
-      to: user.email,
-      subject: 'Lawyer Diary — পাসওয়ার্ড রিসেট',
-      html: `<p>পাসওয়ার্ড রিসেট করতে লিংকটি ৩০ মিনিটের মধ্যে খুলুন:</p><p><a href="${link}">${link}</a></p>`,
-    })
+  try {
+    const phone = normalizeBdPhone(identifier)
+    const byName = await findActiveUsersByName(identifier)
+    const user =
+      byName.length === 1
+        ? byName[0]
+        : byName.length > 1
+          ? null
+          : await prisma.user.findFirst({
+              where: {
+                deletedAt: null,
+                OR: [
+                  { username: identifier.trim().toLowerCase() },
+                  ...(phone ? [{ phone }] : []),
+                  { email: identifier.trim().toLowerCase() },
+                ],
+              },
+            })
+    // Always 200 — no enumeration
+    if (user?.email) {
+      const token = randomOpaqueToken()
+      await prisma.passwordResetToken.create({
+        data: {
+          userId: user.id,
+          tokenHash: hashToken(token),
+          expiresAt: new Date(Date.now() + 30 * 60 * 1000),
+        },
+      })
+      const base = appBaseUrl()
+      const link = `${base}/reset-password?token=${token}`
+      await sendEmail({
+        to: user.email,
+        subject: 'Lawyer Diary — পাসওয়ার্ড রিসেট',
+        html: `<p>পাসওয়ার্ড রিসেট করতে লিংকটি ৩০ মিনিটের মধ্যে খুলুন:</p><p><a href="${link}">${link}</a></p>`,
+      })
+    }
+    return NextResponse.json({ ok: true })
+  } catch (err) {
+    logAuthFailure(err, process.env, 'password reset failed')
+    return NextResponse.json(
+      { error: 'server', messageBn: 'রিসেট লিংক পাঠানো যায়নি। আবার চেষ্টা করুন।' },
+      { status: 500 },
+    )
   }
-  return NextResponse.json({ ok: true })
 }
 
 export async function POST_passwordResetComplete(req: NextRequest) {
@@ -466,21 +480,29 @@ export async function POST_passwordResetComplete(req: NextRequest) {
   }
   const pwErr = passwordIssues(body.data.password)
   if (pwErr) return NextResponse.json({ error: 'validation', messageBn: pwErr }, { status: 422 })
-  const row = await prisma.passwordResetToken.findUnique({
-    where: { tokenHash: hashToken(body.data.resetToken) },
-    include: { user: true },
-  })
-  if (!row || row.usedAt || row.expiresAt < new Date()) {
-    return NextResponse.json({ error: 'invalid_token', messageBn: 'লিংক অবৈধ বা মেয়াদোত্তীর্ণ' }, { status: 400 })
-  }
+  try {
+    const row = await prisma.passwordResetToken.findUnique({
+      where: { tokenHash: hashToken(body.data.resetToken) },
+      include: { user: true },
+    })
+    if (!row || row.usedAt || row.expiresAt < new Date()) {
+      return NextResponse.json({ error: 'invalid_token', messageBn: 'লিংক অবৈধ বা মেয়াদোত্তীর্ণ' }, { status: 400 })
+    }
 
-  await prisma.$transaction([
-    prisma.user.update({
-      where: { id: row.userId },
-      data: { passwordHash: await bcrypt.hash(body.data.password, 12) },
-    }),
-    prisma.passwordResetToken.update({ where: { id: row.id }, data: { usedAt: new Date() } }),
-    prisma.session.updateMany({ where: { userId: row.userId, revokedAt: null }, data: { revokedAt: new Date() } }),
-  ])
-  return NextResponse.json({ ok: true })
+    await prisma.$transaction([
+      prisma.user.update({
+        where: { id: row.userId },
+        data: { passwordHash: await bcrypt.hash(body.data.password, 12) },
+      }),
+      prisma.passwordResetToken.update({ where: { id: row.id }, data: { usedAt: new Date() } }),
+      prisma.session.updateMany({ where: { userId: row.userId, revokedAt: null }, data: { revokedAt: new Date() } }),
+    ])
+    return NextResponse.json({ ok: true })
+  } catch (err) {
+    logAuthFailure(err, process.env, 'password reset failed')
+    return NextResponse.json(
+      { error: 'server', messageBn: 'রিসেট লিংক পাঠানো যায়নি। আবার চেষ্টা করুন।' },
+      { status: 500 },
+    )
+  }
 }

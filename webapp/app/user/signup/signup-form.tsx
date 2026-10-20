@@ -20,10 +20,16 @@ import {
   signupPhoneIssue,
   signupReferralIssue,
 } from '@/lib/identity'
+import { plainAuthNotice } from '@/lib/auth/signup-failure'
 import { cn } from '@/lib/utils'
 
 const invalidClass = 'border-red-600 focus-visible:border-red-600 focus-visible:ring-red-600/20'
 const kSignupSaveFailed = 'অ্যাকাউন্ট তৈরি হয়নি। আবার চেষ্টা করুন।'
+
+function shownSignupError(raw: string): string {
+  if (!raw.trim()) return ''
+  return plainAuthNotice(raw, kSignupSaveFailed)
+}
 
 type FieldFlags = { name: boolean; phone: boolean; email: boolean; password: boolean; referral: boolean }
 
@@ -48,7 +54,7 @@ export function SignupForm({ error }: { error: string }) {
   const [referral, setReferral] = useState('')
   const [password, setPassword] = useState('')
   const [busy, setBusy] = useState(false)
-  const [message, setMessage] = useState(error)
+  const [message, setMessage] = useState(shownSignupError(error))
   const [invalid, setInvalid] = useState<FieldFlags>(initialBorders)
   const sending = useRef(false)
 
@@ -62,8 +68,9 @@ export function SignupForm({ error }: { error: string }) {
 
   useEffect(() => {
     if (!error) return
-    const borders = bordersForSignup(error)
-    setMessage(error)
+    const text = shownSignupError(error)
+    const borders = bordersForSignup(text)
+    setMessage(text)
     setInvalid(borders)
     if (borders.email || borders.referral) setExtrasOpen(true)
   }, [error])
@@ -128,7 +135,7 @@ export function SignupForm({ error }: { error: string }) {
       })
       const data = await res.json().catch(() => ({}))
       if (!res.ok) {
-        showIssue(typeof data.message === 'string' && data.message.trim() ? data.message : kSignupSaveFailed)
+        showIssue(typeof data.message === 'string' && data.message.trim() ? shownSignupError(data.message) : kSignupSaveFailed)
         sending.current = false
         setBusy(false)
         return
