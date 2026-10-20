@@ -1,0 +1,415 @@
+{
+  "batch_id": "BATCH-2026-09-028-OFFICIAL-CPC",
+  "schema_version": "1.0",
+  "content_version": "2026.09.14",
+  "created_at": "2026-09-14T00:00:00Z",
+  "source": "bdlaws.minlaw.gov.bd-official-html",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Official bdlaws English extracts for remaining CPC syllabus topics. Interactive lesson player. No invented MCQ. Not lawyer-verified.",
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-01",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-01",
+      "topic_id": "T-CPC-01",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.1",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Scope and application of the Code",
+          "short_description": "Official bdlaws extract for S.1 (Scope and application of the Code). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.1 on bdlaws and map it to the syllabus topic \"Scope and application of the Code\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Scope and application of the Code (S.1).\n\nSection 1.\n(1) This Act may be cited as the Code of Civil Procedure, 1908 .\n\n\t(2) It shall come into force on the first day of January, 1909.\n\n\t(3) It extends to the whole of Bangladesh.\n\n Copyright 뿯½ 2019, Legislative and Parliamentary Affairs Division\n\n Ministry of Law, Justice and Parliamentary Affairs\n\n Related Links\n\n Bangladesh Government Official Web Site\n\n Legislative and Parliamentary Affairs Division\n\n Parliament Secretariat\n\n Law Commission\n\n National Human Rights Commission\n\n Contact Us/Feedback\n\n Legislative and Parliamentary Affairs Division\n\n Ministry of Law, Justice and Parliamentary Affairs\n\n Bangladesh Secretariat, Dhaka - 1000, Bangladesh.\n\n Copyright 뿯½ 2019, Legislative and Parliamentary Affairs Division, Ministry of Law, Justice and Parliamentary Affairs\n\n Designed & Developed By\n\n Base Limited\n\n</html",
+          "key_concepts": [
+            "S.1",
+            "Scope and application of the Code",
+            "S.1",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.1: (1) This Act may be cited as the Code of Civil Procedure, 1908 ."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.1. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.1"
+          ]
+        },
+        "bn": {
+          "title": "বিধির কার্যপরিধি ও প্রয়োগ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.1 (বিধির কার্যপরিধি ও প্রয়োগ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.1 পড়ে সিলেবাস টপিক \"বিধির কার্যপরিধি ও প্রয়োগ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: বিধির কার্যপরিধি ও প্রয়োগ (S.1)।\n\nSection 1.\n(1) This Act may be cited as the Code of Civil Procedure, 1908 .\n\n\t(2) It shall come into force on the first day of January, 1909.\n\n\t(3) It extends to the whole of Bangladesh.\n\n Copyright 뿯½ 2019, Legislative and Parliamentary Affairs Division\n\n Ministry of Law, Justice and Parliamentary Affairs\n\n Related Links\n\n Bangladesh Government Official Web Site\n\n Legislative and Parliamentary Affairs Division\n\n Parliament Secretariat\n\n Law Commission\n\n National Human Rights Commission\n\n Contact Us/Feedback\n\n Legislative and Parliamentary Affairs Division\n\n Ministry of Law, Justice and Parliamentary Affairs\n\n Bangladesh Secretariat, Dhaka - 1000, Bangladesh.\n\n Copyright 뿯½ 2019, Legislative and Parliamentary Affairs Division, Ministry of Law, Justice and Parliamentary Affairs\n\n Designed & Developed By\n\n Base Limited\n\n</html",
+          "key_concepts": [
+            "S.1",
+            "বিধির কার্যপরিধি ও প্রয়োগ",
+            "S.1",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.1: (1) This Act may be cited as the Code of Civil Procedure, 1908 ."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.1-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.1"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-02",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-02",
+      "topic_id": "T-CPC-02",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.2",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Definitions",
+          "short_description": "Official bdlaws extract for S.2 (Definitions). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.2 on bdlaws and map it to the syllabus topic \"Definitions\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Definitions (S.2).\n\nSection 2.\nIn this Act, unless there is anything repugnant in the subject or context,-\n\n(1)\t\"Code\" includes rules:\n\n(2)\t\"decree\" means the formal expression of an adjudication which, so far as regards the Court expressing it, conclusively determines the rights of the parties with regard to all or any of the matters in controversy in the suit and may be either preliminary or final. It shall be deemed to include the rejection of a plaint and the determination of any question within 1 [* * *] section 144, but shall not include-\n\n(a) any adjudication from which an appeal lies as an appeal from an order, or\n\n(b)\tany order of dismissal for default.\n\nExplanation.-A decree is preliminary when further proceedings have to be taken before the suit can be completely disposed of. It is final when such adjudication completely disposes of the suit. It may be partly preliminary and partly final:\n\n(3)\t\"decree-holder\" means any person in whose favour a decree has been passed or an order capable of execution has been made:\n\n(4)\t\"district\" means the local limits of the jurisdiction of a principal Civil Court of original jurisdiction (hereinafter called a \"District Court\"), and includes the local limits of the ordinary original civil jurisdiction of the High Court Division:\n\n(5)\t\"foreign Court\" means a Court situate beyond the limits of Bangladesh which has no authority in Bangladesh and is not established or continued by the Government:\n\n(6)\t\"foreign judgment\" means the judgment of a foreign Court:\n\n(7)\t\"Government Pleader\" includes any officer appointed by the Government to perform all or any of the functions expressly imposed by this Code on the Government Pleader and also any pleader acting under the directions of the Government Pleader:\n\n(8)\t\"Judge\" means the presiding officer of a Civil Court:\n\n(9)\t\"Judgment\" means the statement given by the Judge of the grounds of a decree or order:\n\n(10)\t\"Judgment-debtor\" means any person against whom a decree has been passed or an order capable of execution has been made:\n\n(11)\t\"legal representative\" means a person who in law represents the estate of a deceased person, and includes any person who intermeddles with the estate of the deceased and where a party sues or is sued in a representative character the person on whom the estate devolves on the death of the party so suing or sued:\n\n(12)\t\"mesne profits\" of property means those profits which the person in wrongful possession of such property actually received or might with ordinary diligence have received therefrom, together with interest on such profits but shall not include profits due to improvements made by the person in wrongful possession:\n\n(13)\t\"movable property\" includes growing crops:\n\n(14)\t\"order\" means the formal expression of any decision of a Civil Court which is not a decree:\n\n(15)\t\"pleader\" means any person entitled to appear and plead for another in Court 2 [* * *]:\n\n(16)\t\"prescribed\" means prescribed by rules:\n\n(17)\t\"public officer\" means a person falling under any of the following descriptions, namely:-\n\n(a)\tevery Judge;\n\n(b)\tevery member of the Civil Service of 3 [The Republic];\n\n(c)\tevery commissioned or gazetted officer in the military, naval or air forces of Bangladesh while in the service of the 4 [Republic];\n\n(d)\tevery officer of a Court of Justice whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order, in the Court, and every person especially authorised by a Court of Justice to perform any of such duties;\n\n(e)\tevery person who holds any office by virtue of which he is empowered to place or keep any person in confinement;\n\n(f)\tevery officer of the Government whose duty it is, as such officer, to prevent offences, to give information of offences, to bring offenders to justice, or to protect the public health, safety or convenience;\n\n(g)\tevery officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report on, any matter affecting the pecuniary interest of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for ",
+          "key_concepts": [
+            "S.2",
+            "Definitions",
+            "S.2",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.2: In this Act, unless there is anything repugnant in the subject or context,-\n\n(1)\t\"Code\" includes rules:\n\n(2)\t\"decree\" means the formal expression of an adjudication which, so far as regards the Court expressing it, conclusively determines the rights of the parties with regard to all or any of the matters in controversy in the suit and may be either preliminary or final."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.2. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.2"
+          ]
+        },
+        "bn": {
+          "title": "সংজ্ঞা",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.2 (সংজ্ঞা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.2 পড়ে সিলেবাস টপিক \"সংজ্ঞা\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: সংজ্ঞা (S.2)।\n\nSection 2.\nIn this Act, unless there is anything repugnant in the subject or context,-\n\n(1)\t\"Code\" includes rules:\n\n(2)\t\"decree\" means the formal expression of an adjudication which, so far as regards the Court expressing it, conclusively determines the rights of the parties with regard to all or any of the matters in controversy in the suit and may be either preliminary or final. It shall be deemed to include the rejection of a plaint and the determination of any question within 1 [* * *] section 144, but shall not include-\n\n(a) any adjudication from which an appeal lies as an appeal from an order, or\n\n(b)\tany order of dismissal for default.\n\nExplanation.-A decree is preliminary when further proceedings have to be taken before the suit can be completely disposed of. It is final when such adjudication completely disposes of the suit. It may be partly preliminary and partly final:\n\n(3)\t\"decree-holder\" means any person in whose favour a decree has been passed or an order capable of execution has been made:\n\n(4)\t\"district\" means the local limits of the jurisdiction of a principal Civil Court of original jurisdiction (hereinafter called a \"District Court\"), and includes the local limits of the ordinary original civil jurisdiction of the High Court Division:\n\n(5)\t\"foreign Court\" means a Court situate beyond the limits of Bangladesh which has no authority in Bangladesh and is not established or continued by the Government:\n\n(6)\t\"foreign judgment\" means the judgment of a foreign Court:\n\n(7)\t\"Government Pleader\" includes any officer appointed by the Government to perform all or any of the functions expressly imposed by this Code on the Government Pleader and also any pleader acting under the directions of the Government Pleader:\n\n(8)\t\"Judge\" means the presiding officer of a Civil Court:\n\n(9)\t\"Judgment\" means the statement given by the Judge of the grounds of a decree or order:\n\n(10)\t\"Judgment-debtor\" means any person against whom a decree has been passed or an order capable of execution has been made:\n\n(11)\t\"legal representative\" means a person who in law represents the estate of a deceased person, and includes any person who intermeddles with the estate of the deceased and where a party sues or is sued in a representative character the person on whom the estate devolves on the death of the party so suing or sued:\n\n(12)\t\"mesne profits\" of property means those profits which the person in wrongful possession of such property actually received or might with ordinary diligence have received therefrom, together with interest on such profits but shall not include profits due to improvements made by the person in wrongful possession:\n\n(13)\t\"movable property\" includes growing crops:\n\n(14)\t\"order\" means the formal expression of any decision of a Civil Court which is not a decree:\n\n(15)\t\"pleader\" means any person entitled to appear and plead for another in Court 2 [* * *]:\n\n(16)\t\"prescribed\" means prescribed by rules:\n\n(17)\t\"public officer\" means a person falling under any of the following descriptions, namely:-\n\n(a)\tevery Judge;\n\n(b)\tevery member of the Civil Service of 3 [The Republic];\n\n(c)\tevery commissioned or gazetted officer in the military, naval or air forces of Bangladesh while in the service of the 4 [Republic];\n\n(d)\tevery officer of a Court of Justice whose duty it is, as such officer, to investigate or report on any matter of law or fact, or to make, authenticate or keep any document, or to take charge or dispose of any property, or to execute any judicial process, or to administer any oath, or to interpret, or to preserve order, in the Court, and every person especially authorised by a Court of Justice to perform any of such duties;\n\n(e)\tevery person who holds any office by virtue of which he is empowered to place or keep any person in confinement;\n\n(f)\tevery officer of the Government whose duty it is, as such officer, to prevent offences, to give information of offences, to bring offenders to justice, or to protect the public health, safety or convenience;\n\n(g)\tevery officer whose duty it is, as such officer, to take, receive, keep or expend any property on behalf of the Government, or to make any survey, assessment or contract on behalf of the Government, or to execute any revenue-process, or to investigate, or to report on, any matter affecting the pecuniary interest of the Government, or to make, authenticate or keep any document relating to the pecuniary interests of the Government, or to prevent the infraction of any law for ",
+          "key_concepts": [
+            "S.2",
+            "সংজ্ঞা",
+            "S.2",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.2: In this Act, unless there is anything repugnant in the subject or context,-\n\n(1)\t\"Code\" includes rules:\n\n(2)\t\"decree\" means the formal expression of an adjudication which, so far as regards the Court expressing it, conclusively determines the rights of the parties with regard to all or any of the matters in controversy in the suit and may be either preliminary or final."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.2-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.2"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-03",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-03",
+      "topic_id": "T-CPC-03",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.6",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Jurisdiction of civil courts",
+          "short_description": "Official bdlaws extract for S.6 (Jurisdiction of civil courts). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.6 on bdlaws and map it to the syllabus topic \"Jurisdiction of civil courts\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Jurisdiction of civil courts (S.6).\n\nSection 6.\nSave in so far as is otherwise expressly provided, nothing herein contained shall operate to give any Court jurisdiction over suits the amount or value of the subject-matter of which exceeds the pecuniary limits (if any) of its ordinary jurisdiction.\n\n Small Cause Courts.",
+          "key_concepts": [
+            "S.6",
+            "Jurisdiction of civil courts",
+            "S.6",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.6: Save in so far as is otherwise expressly provided, nothing herein contained shall operate to give any Court jurisdiction over suits the amount or value of the subject-matter of which exceeds the pecuniary limits (if any) of its ordinary jurisdiction."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.6. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.6"
+          ]
+        },
+        "bn": {
+          "title": "দেওয়ানি আদালতের এখতিয়ার",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.6 (দেওয়ানি আদালতের এখতিয়ার)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.6 পড়ে সিলেবাস টপিক \"দেওয়ানি আদালতের এখতিয়ার\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: দেওয়ানি আদালতের এখতিয়ার (S.6)।\n\nSection 6.\nSave in so far as is otherwise expressly provided, nothing herein contained shall operate to give any Court jurisdiction over suits the amount or value of the subject-matter of which exceeds the pecuniary limits (if any) of its ordinary jurisdiction.\n\n Small Cause Courts.",
+          "key_concepts": [
+            "S.6",
+            "দেওয়ানি আদালতের এখতিয়ার",
+            "S.6",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.6: Save in so far as is otherwise expressly provided, nothing herein contained shall operate to give any Court jurisdiction over suits the amount or value of the subject-matter of which exceeds the pecuniary limits (if any) of its ordinary jurisdiction."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.6-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.6"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-13",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-13",
+      "topic_id": "T-CPC-13",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.113",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Reference",
+          "short_description": "Official bdlaws extract for S.113 (Reference). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.113 on bdlaws and map it to the syllabus topic \"Reference\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Reference (S.113).\n\nSection 113.\nSubject to such conditions and limitations as may be prescribed, any Court may state a case and refer the same for the opinion of the High Court Division, and the High Court Division may make such order thereon as it thinks fit.\n\n Review",
+          "key_concepts": [
+            "S.113",
+            "Reference",
+            "S.113",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.113: Subject to such conditions and limitations as may be prescribed, any Court may state a case and refer the same for the opinion of the High Court Division, and the High Court Division may make such order thereon as it thinks fit."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.113. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.113"
+          ]
+        },
+        "bn": {
+          "title": "রেফারেন্স",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.113 (রেফারেন্স)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.113 পড়ে সিলেবাস টপিক \"রেফারেন্স\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: রেফারেন্স (S.113)।\n\nSection 113.\nSubject to such conditions and limitations as may be prescribed, any Court may state a case and refer the same for the opinion of the High Court Division, and the High Court Division may make such order thereon as it thinks fit.\n\n Review",
+          "key_concepts": [
+            "S.113",
+            "রেফারেন্স",
+            "S.113",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.113: Subject to such conditions and limitations as may be prescribed, any Court may state a case and refer the same for the opinion of the High Court Division, and the High Court Division may make such order thereon as it thinks fit."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.113-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.113"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-16",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-16",
+      "topic_id": "T-CPC-16",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.144",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Restitution",
+          "short_description": "Official bdlaws extract for S.144 (Restitution). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.144 on bdlaws and map it to the syllabus topic \"Restitution\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Restitution (S.144).\n\nSection 144.\n(1) Where and in so far as a decree is varied or reversed, the Court of first instance shall, on the application of any party entitled to any benefit by way of restitution or otherwise, cause such restitution to be made as will, so far as may be, place the parties in the position which they would have occupied but for such decree or such part thereof as has been varied or reversed; and, for this purpose, the Court may make any orders, including orders for the refund of costs and for the payment of interest, damages, compensation and mesne profits, which are properly consequential on such variation or reversal.\n\n(2) No suit shall be instituted for the purpose of obtaining any restitution or other relief which could be obtained by application under sub-section (1).\n\n Enforcement of liability of surety.",
+          "key_concepts": [
+            "S.144",
+            "Restitution",
+            "S.144",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.144: (1) Where and in so far as a decree is varied or reversed, the Court of first instance shall, on the application of any party entitled to any benefit by way of restitution or otherwise, cause such restitution to be made as will, so far as may be, place the parties in the position which they would have occupied but for such decree or such part thereof as has been varied or reversed; and, for this purpose, the Court may make any orders, including orders for the refund of costs and for the payment of interest, damages, compensation and mesne profits, which are properly consequential on such variation or reversal."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.144. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.144"
+          ]
+        },
+        "bn": {
+          "title": "প্রত্যর্পণ (রেস্টিটিউশন)",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.144 (প্রত্যর্পণ (রেস্টিটিউশন))। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.144 পড়ে সিলেবাস টপিক \"প্রত্যর্পণ (রেস্টিটিউশন)\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: প্রত্যর্পণ (রেস্টিটিউশন) (S.144)।\n\nSection 144.\n(1) Where and in so far as a decree is varied or reversed, the Court of first instance shall, on the application of any party entitled to any benefit by way of restitution or otherwise, cause such restitution to be made as will, so far as may be, place the parties in the position which they would have occupied but for such decree or such part thereof as has been varied or reversed; and, for this purpose, the Court may make any orders, including orders for the refund of costs and for the payment of interest, damages, compensation and mesne profits, which are properly consequential on such variation or reversal.\n\n(2) No suit shall be instituted for the purpose of obtaining any restitution or other relief which could be obtained by application under sub-section (1).\n\n Enforcement of liability of surety.",
+          "key_concepts": [
+            "S.144",
+            "প্রত্যর্পণ (রেস্টিটিউশন)",
+            "S.144",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.144: (1) Where and in so far as a decree is varied or reversed, the Court of first instance shall, on the application of any party entitled to any benefit by way of restitution or otherwise, cause such restitution to be made as will, so far as may be, place the parties in the position which they would have occupied but for such decree or such part thereof as has been varied or reversed; and, for this purpose, the Court may make any orders, including orders for the refund of costs and for the payment of interest, damages, compensation and mesne profits, which are properly consequential on such variation or reversal."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.144-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.144"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-17",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-17",
+      "topic_id": "T-CPC-17",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.151",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Inherent power of the courts",
+          "short_description": "Official bdlaws extract for S.151 (Inherent power of the courts). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.151 on bdlaws and map it to the syllabus topic \"Inherent power of the courts\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Inherent power of the courts (S.151).\n\nSection 151.\nNothing in this Code shall be deemed to limit or otherwise affect the inherent power of the Court to make such orders as may be necessary for the ends of justice or to prevent abuse of the process of the Court.\n\n Amendment of judgments, decrees or orders.",
+          "key_concepts": [
+            "S.151",
+            "Inherent power of the courts",
+            "S.151",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.151: Nothing in this Code shall be deemed to limit or otherwise affect the inherent power of the Court to make such orders as may be necessary for the ends of justice or to prevent abuse of the process of the Court."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.151. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.151"
+          ]
+        },
+        "bn": {
+          "title": "আদালতের অন্তর্নিহিত ক্ষমতা",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.151 (আদালতের অন্তর্নিহিত ক্ষমতা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.151 পড়ে সিলেবাস টপিক \"আদালতের অন্তর্নিহিত ক্ষমতা\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: আদালতের অন্তর্নিহিত ক্ষমতা (S.151)।\n\nSection 151.\nNothing in this Code shall be deemed to limit or otherwise affect the inherent power of the Court to make such orders as may be necessary for the ends of justice or to prevent abuse of the process of the Court.\n\n Amendment of judgments, decrees or orders.",
+          "key_concepts": [
+            "S.151",
+            "আদালতের অন্তর্নিহিত ক্ষমতা",
+            "S.151",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.151: Nothing in this Code shall be deemed to limit or otherwise affect the inherent power of the Court to make such orders as may be necessary for the ends of justice or to prevent abuse of the process of the Court."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.151-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.151"
+          ]
+        }
+      }
+    }
+  ]
+}

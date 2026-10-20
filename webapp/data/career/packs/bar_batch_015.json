@@ -1,0 +1,278 @@
+{
+  "batch_id": "BATCH-2026-08-015-CPC-EXECUTION",
+  "schema_version": "1.0",
+  "content_version": "2026.08.7",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "First topic in a third depth round for CPC/CrPC/Penal Code. Covers CPC Execution of Decree (T-CPC-10, Sections 36-42), the practically vital 'a decree without execution is a cheque without funds' topic -- which court can execute a decree, when it can be transferred, and what powers the receiving court has.",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-CPC-EXECUTION-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CPC-EXECUTION-001",
+      "topic_id": "T-CPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Sections 36, 38, 39, 41, and 42 were obtained as VERBATIM text via search-indexed content of the primary source (bdlaws.minlaw.gov.bd) during this session, corroborated across four independent search results including the Act's own print version and a WIPO-hosted official text. Section 37's definitional text and Section 56's protective provision were also confirmed verbatim, though Section 56 is mentioned only briefly and is not this lesson's main focus. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": ["T-CPC-09"],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-CPC-EXEC-001", "BC-MCQ-CPC-EXEC-002", "BC-MCQ-CPC-EXEC-003", "BC-MCQ-CPC-EXEC-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CPC-S38-39", "LREF-CPC-S41-42"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CPC-S38-39", "LREF-CPC-S41-42"],
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "language_versions": {
+        "en": {
+          "title": "Execution of Decree (Sections 36-42)",
+          "short_description": "A decree is only as useful as the machinery that enforces it -- Part II of the CPC lets a decree-holder execute a decree either in the court that passed it or, where the judgment-debtor or their property has moved elsewhere, in a different competent court to which the decree is transferred.",
+          "learning_objective": "By the end of this lesson you should be able to: state where a decree may be executed under Section 38; list the situations in which a decree may be transferred to another court under Section 39; and explain why Section 42 gives the transferee court the same powers as the court that originally passed the decree.",
+          "explanation": "Section 36 extends the entire execution machinery of the Code to the enforcement of orders as well as decrees, so far as it is applicable -- execution is not limited to decrees alone. Section 37 then defines 'the Court which passed a decree' broadly: where a decree was passed in the exercise of appellate jurisdiction, this expression is deemed to include the court of first instance, and where that court of first instance has ceased to exist or lost jurisdiction, it is deemed to include whichever court would now have jurisdiction to try the original suit.\n\nSection 38 states the basic rule simply: a decree may be executed either by the court which passed it, or by the court to which it is sent for execution. This second option -- transfer -- exists because a decree is often worthless in the passing court alone if the judgment-debtor and their assets are elsewhere.\n\nSection 39 sets out when the passing court may, on the decree-holder's application, send the decree elsewhere for execution: where the judgment-debtor actually and voluntarily resides, carries on business, or personally works for gain within another court's jurisdiction; where the judgment-debtor lacks sufficient property within the passing court's jurisdiction to satisfy the decree but has property within the other court's jurisdiction; where the decree directs the sale or delivery of immovable property situated outside the passing court's jurisdiction; or where the passing court otherwise considers transfer appropriate for reasons it must record. The passing court may also transfer a decree of its own motion to a competent subordinate court.\n\nOnce a decree is transferred, Section 41 requires the receiving court to certify back to the court which passed the decree the fact of execution, or, if execution failed, the circumstances of that failure -- keeping the originating court informed of the outcome. Section 42 then answers a natural question: what powers does the receiving court actually have? It has the same powers in executing the transferred decree as if it had passed the decree itself, and anyone who disobeys or obstructs execution is punishable by that court in the same manner as if it had been the original passing court.",
+          "key_concepts": ["Execution provisions apply to orders too, not only decrees (S.36)", "'Court which passed a decree' defined broadly, including successor/appellate-related courts (S.37)", "A decree may be executed by the passing court OR a transferee court (S.38)", "The four situations triggering transfer under Section 39", "The transferee court's powers are equal to the passing court's (S.42)"],
+          "important_rules": [
+            "S.38: a decree may be executed either by the court which passed it, or by the court to which it is sent for execution.",
+            "S.39: transfer is available where the judgment-debtor resides/works elsewhere, lacks sufficient property in the passing court's jurisdiction but has property elsewhere, the decree concerns immovable property outside the passing court's jurisdiction, or the passing court records other sufficient reasons.",
+            "S.41: the receiving court must certify back to the passing court the fact of execution, or the circumstances of failure.",
+            "S.42: the receiving court has the same powers to execute the transferred decree as the court that originally passed it."
+          ],
+          "definitions": [
+            { "term": "Judgment-debtor", "definition": "The party against whom a decree has been passed and who is therefore obligated to satisfy it -- the person execution proceedings are directed against." },
+            { "term": "Transfer of decree (S.39)", "definition": "The process by which the court that passed a decree sends it to another competent court for execution, typically because the judgment-debtor or their property is located within that other court's jurisdiction rather than the passing court's own." }
+          ],
+          "examples": [
+            "A obtains a money decree against B in a court in Dhaka, but B has since moved permanently to Chattogram, where B also carries on business and holds property. A may apply for the decree to be sent to a competent court in Chattogram for execution, since B now resides and works there.",
+            "A decree directs the sale of a specific plot of land situated outside the jurisdiction of the court that passed the decree. Because Section 39 specifically covers immovable property located outside the passing court's jurisdiction, the decree-holder can have the decree transferred to the court within whose jurisdiction the land actually lies."
+          ],
+          "exam_focus": "Examiners test whether candidates can correctly list the Section 39 transfer triggers rather than vaguely saying 'transfer is allowed when convenient', and whether candidates understand that a transferee court is not a lesser forum -- Section 42 gives it full, equivalent power over the decree it receives.",
+          "common_traps": [
+            "Assuming a decree can only ever be executed by the court that originally passed it -- Section 38 expressly allows execution by a transferee court too.",
+            "Treating transfer under Section 39 as available on a general 'convenience' standard rather than the specific listed grounds (residence/work elsewhere, insufficient local property, out-of-jurisdiction immovable property, or recorded reasons).",
+            "Assuming the transferee court has lesser or different powers than the original court -- Section 42 makes them equal for purposes of executing that decree."
+          ],
+          "quick_revision": [
+            "S.36 = execution rules apply to orders too.",
+            "S.38 = decree executed by passing court OR transferee court.",
+            "S.39 = transfer triggers: debtor resides/works elsewhere; insufficient local property but property elsewhere; immovable property outside jurisdiction; other recorded reasons.",
+            "S.41 = transferee court certifies outcome back to passing court.",
+            "S.42 = transferee court's powers = same as the passing court's."
+          ],
+          "key_takeaways": [
+            "Execution machinery follows the practical reality that judgment-debtors and their assets don't always stay within the passing court's jurisdiction.",
+            "Transfer is grounds-based, not a general discretion -- know the specific Section 39 triggers.",
+            "A transferee court executing a decree is not a subordinate or lesser forum for that purpose -- it steps fully into the passing court's shoes."
+          ]
+        },
+        "bn": {
+          "title": "ডিক্রি জারি (ধারা ৩৬-৪২)",
+          "short_description": "একটি ডিক্রি কেবল ততটাই কার্যকর যতটা তা প্রয়োগকারী ব্যবস্থা -- দেওয়ানি কার্যবিধির দ্বিতীয় অংশ একজন ডিক্রিদাতাকে হয় যে আদালত ডিক্রি পাস করেছে সেখানে, অথবা, বিচারিক-ঋণী বা তার সম্পত্তি অন্যত্র স্থানান্তরিত হলে, একটি ভিন্ন এখতিয়ারসম্পন্ন আদালতে যেখানে ডিক্রিটি স্থানান্তরিত হয়, ডিক্রি জারি করার অনুমতি দেয়।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৩৮-এর অধীনে কোথায় একটি ডিক্রি জারি করা যেতে পারে তা বলতে পারবেন; ধারা ৩৯-এর অধীনে কোন পরিস্থিতিতে একটি ডিক্রি অন্য আদালতে স্থানান্তরিত হতে পারে তা তালিকাভুক্ত করতে পারবেন; এবং কেন ধারা ৪২ স্থানান্তরপ্রাপ্ত আদালতকে মূল ডিক্রি পাসকারী আদালতের মতোই ক্ষমতা দেয় তা ব্যাখ্যা করতে পারবেন।",
+          "explanation": "ধারা ৩৬ বিধির সম্পূর্ণ জারি ব্যবস্থাকে আদেশ প্রয়োগেও প্রসারিত করে, ডিক্রির পাশাপাশি, যতদূর তা প্রযোজ্য -- জারি কেবল ডিক্রির মধ্যে সীমাবদ্ধ নয়। ধারা ৩৭ এরপর 'যে আদালত ডিক্রি পাস করেছে' অভিব্যক্তিটি বিস্তৃতভাবে সংজ্ঞায়িত করে: যেখানে একটি ডিক্রি আপিলীয় এখতিয়ার প্রয়োগে পাস করা হয়েছে, এই অভিব্যক্তিটি প্রাথমিক আদালতকে অন্তর্ভুক্ত করে বলে গণ্য হয়, এবং যেখানে সেই প্রাথমিক আদালত অস্তিত্ব বা এখতিয়ার হারিয়েছে, সেখানে এটি যে আদালত এখন মূল মামলা বিচারের এখতিয়ার রাখে তাকে অন্তর্ভুক্ত করে বলে গণ্য হয়।\n\nধারা ৩৮ মূল নিয়মটি সহজভাবে বলে: একটি ডিক্রি হয় যে আদালত তা পাস করেছে সেখানে, অথবা যে আদালতে তা জারির জন্য পাঠানো হয়েছে সেখানে জারি করা যেতে পারে। এই দ্বিতীয় বিকল্পটি -- স্থানান্তর -- বিদ্যমান কারণ একটি ডিক্রি প্রায়ই কেবল পাসকারী আদালতে মূল্যহীন হতে পারে যদি বিচারিক-ঋণী ও তার সম্পদ অন্যত্র থাকে।\n\nধারা ৩৯ নির্ধারণ করে কখন পাসকারী আদালত, ডিক্রিদাতার আবেদনে, ডিক্রিটি জারির জন্য অন্যত্র পাঠাতে পারে: যেখানে বিচারিক-ঋণী প্রকৃতপক্ষে ও স্বেচ্ছায় অন্য কোনো আদালতের এখতিয়ারের মধ্যে বসবাস করেন, ব্যবসা পরিচালনা করেন, বা ব্যক্তিগতভাবে অর্থ উপার্জনের জন্য কাজ করেন; যেখানে বিচারিক-ঋণীর পাসকারী আদালতের এখতিয়ারের মধ্যে ডিক্রি পূরণের জন্য পর্যাপ্ত সম্পত্তি নেই কিন্তু অন্য আদালতের এখতিয়ারের মধ্যে সম্পত্তি রয়েছে; যেখানে ডিক্রিটি পাসকারী আদালতের এখতিয়ারের বাইরে অবস্থিত স্থাবর সম্পত্তির বিক্রয় বা হস্তান্তরের নির্দেশ দেয়; অথবা যেখানে পাসকারী আদালত অন্যথায় স্থানান্তরকে উপযুক্ত মনে করে এমন কারণে যা তাকে অবশ্যই লিপিবদ্ধ করতে হবে। পাসকারী আদালত তার নিজস্ব উদ্যোগেও একটি এখতিয়ারসম্পন্ন অধস্তন আদালতে ডিক্রি স্থানান্তর করতে পারে।\n\nএকবার একটি ডিক্রি স্থানান্তরিত হলে, ধারা ৪১ গ্রহণকারী আদালতকে ডিক্রি পাসকারী আদালতের কাছে জারির তথ্য, অথবা, জারি ব্যর্থ হলে, সেই ব্যর্থতার পরিস্থিতি প্রত্যায়িত করতে বলে -- মূল আদালতকে ফলাফল সম্পর্কে অবহিত রাখে। ধারা ৪২ এরপর একটি স্বাভাবিক প্রশ্নের উত্তর দেয়: গ্রহণকারী আদালতের প্রকৃতপক্ষে কী ক্ষমতা রয়েছে? স্থানান্তরিত ডিক্রি জারিতে তার একই ক্ষমতা রয়েছে যেন সে নিজেই ডিক্রিটি পাস করেছে, এবং যে কেউ জারিতে অবাধ্যতা বা বাধা সৃষ্টি করে সে সেই আদালত দ্বারা এমনভাবে দণ্ডনীয় যেন সেই আদালতই মূল পাসকারী আদালত।",
+          "key_concepts": ["জারি বিধান আদেশের ক্ষেত্রেও প্রযোজ্য, কেবল ডিক্রির নয় (ধারা ৩৬)", "'যে আদালত ডিক্রি পাস করেছে' বিস্তৃতভাবে সংজ্ঞায়িত, উত্তরাধিকারী/আপিলীয়-সম্পর্কিত আদালত সহ (ধারা ৩৭)", "একটি ডিক্রি পাসকারী আদালত অথবা স্থানান্তরপ্রাপ্ত আদালত দ্বারা জারি করা যেতে পারে (ধারা ৩৮)", "ধারা ৩৯-এর অধীনে স্থানান্তর সৃষ্টিকারী চারটি পরিস্থিতি", "স্থানান্তরপ্রাপ্ত আদালতের ক্ষমতা পাসকারী আদালতের সমান (ধারা ৪২)"],
+          "important_rules": [
+            "ধারা ৩৮: একটি ডিক্রি হয় যে আদালত তা পাস করেছে, অথবা যে আদালতে তা জারির জন্য পাঠানো হয়েছে, সেখানে জারি করা যেতে পারে।",
+            "ধারা ৩৯: স্থানান্তর উপলব্ধ যেখানে বিচারিক-ঋণী অন্যত্র বসবাস/কাজ করেন, পাসকারী আদালতের এখতিয়ারে পর্যাপ্ত সম্পত্তি নেই কিন্তু অন্যত্র সম্পত্তি আছে, ডিক্রিটি পাসকারী আদালতের এখতিয়ারের বাইরে স্থাবর সম্পত্তি সংক্রান্ত, অথবা পাসকারী আদালত অন্যান্য পর্যাপ্ত কারণ লিপিবদ্ধ করে।",
+            "ধারা ৪১: গ্রহণকারী আদালতকে অবশ্যই পাসকারী আদালতের কাছে জারির তথ্য, বা ব্যর্থতার পরিস্থিতি প্রত্যায়িত করতে হবে।",
+            "ধারা ৪২: গ্রহণকারী আদালতের স্থানান্তরিত ডিক্রি জারির ক্ষমতা মূলত পাসকারী আদালতের সমান।"
+          ],
+          "definitions": [
+            { "term": "বিচারিক-ঋণী (জাজমেন্ট-ডেবটর)", "definition": "যে পক্ষের বিরুদ্ধে একটি ডিক্রি পাস করা হয়েছে এবং যিনি তাই তা পূরণ করতে বাধ্য -- জারি কার্যধারা যার বিরুদ্ধে পরিচালিত হয়।" },
+            { "term": "ডিক্রি স্থানান্তর (ধারা ৩৯)", "definition": "যে প্রক্রিয়ায় যে আদালত ডিক্রি পাস করেছে তা জারির জন্য অন্য কোনো এখতিয়ারসম্পন্ন আদালতে পাঠায়, সাধারণত কারণ বিচারিক-ঋণী বা তার সম্পত্তি পাসকারী আদালতের নিজস্ব এখতিয়ারের পরিবর্তে সেই অন্য আদালতের এখতিয়ারের মধ্যে অবস্থিত।" }
+          ],
+          "examples": [
+            "ক ঢাকার একটি আদালতে খ-এর বিরুদ্ধে একটি অর্থ ডিক্রি পান, কিন্তু খ ততক্ষণে স্থায়ীভাবে চট্টগ্রামে চলে গেছেন, যেখানে খ ব্যবসাও পরিচালনা করেন এবং সম্পত্তিও রাখেন। ক চট্টগ্রামের একটি এখতিয়ারসম্পন্ন আদালতে জারির জন্য ডিক্রিটি পাঠানোর আবেদন করতে পারেন, যেহেতু খ এখন সেখানে বসবাস ও কাজ করেন।",
+            "একটি ডিক্রি পাসকারী আদালতের এখতিয়ারের বাইরে অবস্থিত একটি নির্দিষ্ট জমির টুকরার বিক্রয়ের নির্দেশ দেয়। যেহেতু ধারা ৩৯ সুনির্দিষ্টভাবে পাসকারী আদালতের এখতিয়ারের বাইরে অবস্থিত স্থাবর সম্পত্তি আচ্ছাদন করে, ডিক্রিদাতা যে আদালতের এখতিয়ারে জমিটি প্রকৃতপক্ষে অবস্থিত সেখানে ডিক্রিটি স্থানান্তরিত করাতে পারেন।"
+          ],
+          "exam_focus": "পরীক্ষকরা যাচাই করেন প্রার্থীরা 'যখন সুবিধাজনক তখন স্থানান্তর অনুমোদিত' বলে অস্পষ্টভাবে না বলে ধারা ৩৯-এর স্থানান্তর ট্রিগারগুলো সঠিকভাবে তালিকাভুক্ত করতে পারেন কিনা, এবং প্রার্থীরা বোঝেন কিনা যে একটি স্থানান্তরপ্রাপ্ত আদালত একটি নিম্নতর ফোরাম নয় -- ধারা ৪২ তাকে যে ডিক্রি গ্রহণ করে তার উপর সম্পূর্ণ, সমতুল্য ক্ষমতা দেয়।",
+          "common_traps": [
+            "মনে করা যে একটি ডিক্রি কেবল যে আদালত মূলত তা পাস করেছে সেখানেই জারি করা যেতে পারে -- ধারা ৩৮ স্পষ্টভাবে একটি স্থানান্তরপ্রাপ্ত আদালত দ্বারাও জারির অনুমতি দেয়।",
+            "ধারা ৩৯-এর অধীনে স্থানান্তরকে একটি সাধারণ 'সুবিধা' মানদণ্ডে উপলব্ধ মনে করা, নির্দিষ্ট তালিকাভুক্ত ভিত্তির পরিবর্তে (অন্যত্র বসবাস/কাজ, স্থানীয় সম্পত্তির অভাব কিন্তু অন্যত্র সম্পত্তি, এখতিয়ারের বাইরে স্থাবর সম্পত্তি, বা লিপিবদ্ধ কারণ)।",
+            "মনে করা যে স্থানান্তরপ্রাপ্ত আদালতের মূল আদালতের চেয়ে কম বা ভিন্ন ক্ষমতা রয়েছে -- ধারা ৪২ সেই ডিক্রি জারির উদ্দেশ্যে তাদের সমান করে তোলে।"
+          ],
+          "quick_revision": [
+            "ধারা ৩৬ = জারি বিধান আদেশের ক্ষেত্রেও প্রযোজ্য।",
+            "ধারা ৩৮ = ডিক্রি পাসকারী আদালত বা স্থানান্তরপ্রাপ্ত আদালত দ্বারা জারি হয়।",
+            "ধারা ৩৯ = স্থানান্তর ট্রিগার: ঋণী অন্যত্র বসবাস/কাজ করেন; স্থানীয় সম্পত্তি অপর্যাপ্ত কিন্তু অন্যত্র সম্পত্তি আছে; স্থাবর সম্পত্তি এখতিয়ারের বাইরে; অন্যান্য লিপিবদ্ধ কারণ।",
+            "ধারা ৪১ = স্থানান্তরপ্রাপ্ত আদালত পাসকারী আদালতের কাছে ফলাফল প্রত্যায়িত করে।",
+            "ধারা ৪২ = স্থানান্তরপ্রাপ্ত আদালতের ক্ষমতা = পাসকারী আদালতের সমান।"
+          ],
+          "key_takeaways": [
+            "জারি ব্যবস্থা এই বাস্তবতা অনুসরণ করে যে বিচারিক-ঋণী ও তাদের সম্পদ সবসময় পাসকারী আদালতের এখতিয়ারের মধ্যে থাকে না।",
+            "স্থানান্তর ভিত্তি-নির্ভর, একটি সাধারণ বিবেচনা নয় -- নির্দিষ্ট ধারা ৩৯ ট্রিগারগুলো জানুন।",
+            "একটি ডিক্রি জারিকারী স্থানান্তরপ্রাপ্ত আদালত সেই উদ্দেশ্যে একটি অধস্তন বা নিম্নতর ফোরাম নয় -- এটি সম্পূর্ণরূপে পাসকারী আদালতের জায়গায় প্রবেশ করে।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CPC-S38-39",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Sections 36-39 (Execution: application to orders, definitions, courts of execution, transfer)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "Verbatim text obtained via multiple independently-corroborating search-indexed sources during this session, including the primary bdlaws.minlaw.gov.bd page itself, its official print version, and a WIPO-hosted official text."
+    },
+    {
+      "content_id": "LREF-CPC-S41-42",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Sections 41-42 (Certification of execution results; powers of transferee court)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "Verbatim text obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "BC-MCQ-CPC-EXEC-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-EXEC-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S38-39"],
+      "exam_focus": "S.38's basic rule -- two possible executing courts.",
+      "source_basis": "Original question drawn directly from verbatim S.38 text.",
+      "mistake_tags": ["s38-executing-court-options"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-EXECUTION-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 38, CPC, a decree may be executed by:",
+          "options": { "A": "Only the court which passed it", "B": "Only a court to which it has been transferred", "C": "Either the court which passed it, or the court to which it is sent for execution", "D": "Any court in Bangladesh, regardless of transfer" },
+          "explanation": "Section 38 expressly gives two options: the passing court itself, or the court to which the decree is sent for execution.",
+          "why_other_options_are_wrong": { "A": "This ignores the express transfer option Section 38 provides.", "B": "This ignores that the passing court itself also retains the power to execute.", "D": "Execution is not open to any court generally -- it must be the passing court or a court to which the decree has actually been sent." }
+        },
+        "bn": {
+          "question": "দেওয়ানি কার্যবিধির ধারা ৩৮ অনুযায়ী, একটি ডিক্রি জারি করা যেতে পারে:",
+          "options": { "A": "কেবল যে আদালত তা পাস করেছে", "B": "কেবল যে আদালতে তা স্থানান্তরিত হয়েছে", "C": "যে আদালত তা পাস করেছে, অথবা যে আদালতে তা জারির জন্য পাঠানো হয়েছে, উভয় দ্বারা", "D": "বাংলাদেশের যেকোনো আদালত, স্থানান্তর নির্বিশেষে" },
+          "explanation": "ধারা ৩৮ স্পষ্টভাবে দুটি বিকল্প দেয়: পাসকারী আদালত নিজে, অথবা যে আদালতে ডিক্রিটি জারির জন্য পাঠানো হয়েছে।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ৩৮ যে স্পষ্ট স্থানান্তর বিকল্প প্রদান করে তা উপেক্ষা করে।", "B": "এটি উপেক্ষা করে যে পাসকারী আদালত নিজেও জারির ক্ষমতা ধরে রাখে।", "D": "জারি সাধারণভাবে যেকোনো আদালতের জন্য উন্মুক্ত নয় -- এটি অবশ্যই পাসকারী আদালত বা যে আদালতে ডিক্রিটি প্রকৃতপক্ষে পাঠানো হয়েছে তা হতে হবে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-EXEC-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-EXEC-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S38-39"],
+      "exam_focus": "Recognising the S.39 transfer grounds in a fact pattern.",
+      "source_basis": "Original fact pattern applying Section 39.",
+      "mistake_tags": ["s39-transfer-grounds-recognition"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-EXECUTION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A obtains a decree against B in a Dhaka court. B has no property within that court's jurisdiction sufficient to satisfy the decree, but does have property within the jurisdiction of a court in Sylhet. What may A do under Section 39?",
+          "options": { "A": "Nothing -- the decree can only be executed in the court that passed it", "B": "Apply to have the decree sent to the Sylhet court for execution", "C": "File an entirely new suit in Sylhet", "D": "Ask the Sylhet court to void the original decree" },
+          "explanation": "This fact pattern matches one of Section 39's specific transfer grounds directly: the judgment-debtor lacks sufficient property in the passing court's jurisdiction but has property within another court's jurisdiction.",
+          "why_other_options_are_wrong": { "A": "This ignores Section 39's transfer mechanism, which exists precisely for this situation.", "C": "A fresh suit is unnecessary and is not how Section 39 addresses this situation -- transfer of the existing decree is the mechanism.", "D": "Nothing in Section 39 authorises voiding the original decree; the point is to execute it, not undo it." }
+        },
+        "bn": {
+          "question": "ক ঢাকার একটি আদালতে খ-এর বিরুদ্ধে একটি ডিক্রি পান। খ-এর সেই আদালতের এখতিয়ারের মধ্যে ডিক্রি পূরণের জন্য পর্যাপ্ত সম্পত্তি নেই, কিন্তু সিলেটের একটি আদালতের এখতিয়ারের মধ্যে সম্পত্তি রয়েছে। ধারা ৩৯-এর অধীনে ক কী করতে পারেন?",
+          "options": { "A": "কিছুই না -- ডিক্রিটি কেবল যে আদালত তা পাস করেছে সেখানেই জারি করা যেতে পারে", "B": "জারির জন্য ডিক্রিটি সিলেট আদালতে পাঠানোর আবেদন করতে পারেন", "C": "সিলেটে সম্পূর্ণ নতুন একটি মামলা দায়ের করতে পারেন", "D": "সিলেট আদালতকে মূল ডিক্রি বাতিল করতে বলতে পারেন" },
+          "explanation": "এই ঘটনাপ্রবাহ ধারা ৩৯-এর একটি নির্দিষ্ট স্থানান্তর ভিত্তির সাথে সরাসরি মিলে যায়: বিচারিক-ঋণীর পাসকারী আদালতের এখতিয়ারে পর্যাপ্ত সম্পত্তি নেই কিন্তু অন্য আদালতের এখতিয়ারে সম্পত্তি রয়েছে।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ৩৯-এর স্থানান্তর ব্যবস্থা উপেক্ষা করে, যা ঠিক এই পরিস্থিতির জন্য বিদ্যমান।", "C": "একটি নতুন মামলা অপ্রয়োজনীয় এবং এটি ধারা ৩৯ এই পরিস্থিতির সমাধান করার পদ্ধতি নয় -- বিদ্যমান ডিক্রির স্থানান্তরই পদ্ধতি।", "D": "ধারা ৩৯-এ মূল ডিক্রি বাতিল করার কোনো অনুমোদন নেই; মূল বিষয় এটি জারি করা, বাতিল করা নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-EXEC-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-EXEC-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S41-42"],
+      "exam_focus": "The transferee court's powers under S.42.",
+      "source_basis": "Original question drawn directly from verbatim S.42 text.",
+      "mistake_tags": ["s42-transferee-powers-equal"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-EXECUTION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Once a decree has been transferred to another court for execution, what powers does that court have under Section 42?",
+          "options": { "A": "Only the power to certify the result back to the original court, nothing more", "B": "The same powers in executing the decree as if it had passed the decree itself", "C": "Only the power to attach property, not to sell it", "D": "Reduced powers, requiring the original court's approval for each execution step" },
+          "explanation": "Section 42 gives the transferee court the same powers in executing the decree as if it had passed the decree itself -- a full, not reduced, set of powers for that purpose.",
+          "why_other_options_are_wrong": { "A": "Certification (Section 41) is a separate, additional duty -- it does not describe the full scope of the transferee court's execution powers.", "C": "Section 42 does not limit the transferee court to attachment alone; its powers match the passing court's in full.", "D": "There is no step-by-step approval requirement from the original court under Section 42." }
+        },
+        "bn": {
+          "question": "একবার একটি ডিক্রি জারির জন্য অন্য আদালতে স্থানান্তরিত হলে, ধারা ৪২-এর অধীনে সেই আদালতের কী ক্ষমতা থাকে?",
+          "options": { "A": "কেবল মূল আদালতের কাছে ফলাফল প্রত্যায়িত করার ক্ষমতা, আর কিছু নয়", "B": "ডিক্রি জারিতে একই ক্ষমতা যেন সে নিজেই ডিক্রিটি পাস করেছে", "C": "কেবল সম্পত্তি ক্রোক করার ক্ষমতা, বিক্রি করার নয়", "D": "হ্রাসকৃত ক্ষমতা, প্রতিটি জারি পদক্ষেপের জন্য মূল আদালতের অনুমোদন প্রয়োজন" },
+          "explanation": "ধারা ৪২ স্থানান্তরপ্রাপ্ত আদালতকে ডিক্রি জারিতে একই ক্ষমতা দেয় যেন সে নিজেই ডিক্রিটি পাস করেছে -- সেই উদ্দেশ্যে সম্পূর্ণ, হ্রাসকৃত নয় এমন ক্ষমতা।",
+          "why_other_options_are_wrong": { "A": "প্রত্যায়ন (ধারা ৪১) একটি পৃথক, অতিরিক্ত কর্তব্য -- এটি স্থানান্তরপ্রাপ্ত আদালতের জারি ক্ষমতার সম্পূর্ণ পরিধি বর্ণনা করে না।", "C": "ধারা ৪২ স্থানান্তরপ্রাপ্ত আদালতকে কেবল ক্রোকে সীমাবদ্ধ করে না; তার ক্ষমতা সম্পূর্ণরূপে পাসকারী আদালতের সাথে মিলে যায়।", "D": "ধারা ৪২-এর অধীনে মূল আদালতের কাছ থেকে ধাপে ধাপে অনুমোদনের কোনো প্রয়োজনীয়তা নেই।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-EXEC-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-EXEC-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S38-39"],
+      "exam_focus": "S.36's extension of execution provisions to orders.",
+      "source_basis": "Original question drawn directly from verbatim S.36 text.",
+      "mistake_tags": ["s36-orders-included"],
+      "revision_priority": "LOW",
+      "related_lesson_ids": ["BC-CPC-EXECUTION-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 36, CPC, the Code's provisions relating to execution of decrees apply to:",
+          "options": { "A": "The execution of orders as well, so far as those provisions are applicable", "B": "Only decrees, never orders", "C": "Only decrees passed by the Appellate Division", "D": "Only money decrees, not decrees for possession" },
+          "explanation": "Section 36 extends the execution machinery to orders as well as decrees, so far as it is applicable -- execution is not confined to decrees alone.",
+          "why_other_options_are_wrong": { "B": "This directly contradicts Section 36's express extension to orders.", "C": "Section 36 is not limited to any particular level of court's decrees.", "D": "Section 36 draws no distinction between money decrees and possession decrees." }
+        },
+        "bn": {
+          "question": "দেওয়ানি কার্যবিধির ধারা ৩৬ অনুযায়ী, ডিক্রি জারি সংক্রান্ত বিধির বিধানসমূহ প্রযোজ্য:",
+          "options": { "A": "আদেশ জারির ক্ষেত্রেও, যতদূর সেই বিধানগুলো প্রযোজ্য", "B": "কেবল ডিক্রির ক্ষেত্রে, আদেশের ক্ষেত্রে কখনো নয়", "C": "কেবল আপিল বিভাগ কর্তৃক পাস করা ডিক্রির ক্ষেত্রে", "D": "কেবল অর্থ ডিক্রির ক্ষেত্রে, দখলের ডিক্রির ক্ষেত্রে নয়" },
+          "explanation": "ধারা ৩৬ জারি ব্যবস্থাকে ডিক্রির পাশাপাশি আদেশেও প্রসারিত করে, যতদূর তা প্রযোজ্য -- জারি কেবল ডিক্রির মধ্যে সীমাবদ্ধ নয়।",
+          "why_other_options_are_wrong": { "B": "এটি ধারা ৩৬-এর আদেশে স্পষ্ট সম্প্রসারণের সরাসরি বিপরীত।", "C": "ধারা ৩৬ কোনো নির্দিষ্ট স্তরের আদালতের ডিক্রির মধ্যে সীমাবদ্ধ নয়।", "D": "ধারা ৩৬ অর্থ ডিক্রি ও দখলের ডিক্রির মধ্যে কোনো পার্থক্য করে না।" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,261 @@
+{
+  "batch_id": "BATCH-2026-08-010-CRPC-HABEAS-CORPUS",
+  "schema_version": "1.0",
+  "content_version": "2026.08.5",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Second topic in the 'go deeper into the 20-mark subjects' round: CrPC Section 491 (habeas corpus). Chosen for high exam value, conceptual richness (personal liberty), and because it is explicitly named in the syllabus's own topic list (T-CRPC-22, 'Directions of the nature of habeas corpus').",
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "BC-CRPC-HABEASCORPUS-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CRPC-HABEASCORPUS-001",
+      "topic_id": "T-CRPC-22",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "verification_note": "Core structure (the specific directions a court may give; the exclusion for preventive-detention cases) is corroborated across a Bangladesh-specific human-rights reference source and general S.491 commentary shared across jurisdictions inheriting this identically-numbered 1898 Code provision. The exact verbatim text of S.491 itself was not successfully fetched in full during this session (the specific bdlaws.minlaw.gov.bd section page returned a robots-disallowed error) -- confidence rests on corroborated secondary description rather than a directly-read primary text, unlike the CPC S.96 and Penal Code S.299/300 lessons in this same round. Flagged accordingly. Real Bangladeshi case citations (with DLR references) surfaced during research for this topic and were deliberately excluded from all content, consistent with this dataset's no-case-law policy -- see the main README.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 25,
+      "prerequisite_ids": [],
+      "related_lesson_ids": ["BC-CRPC-BAIL-001"],
+      "related_question_ids": ["BC-MCQ-CRPC-HC-001", "BC-MCQ-CRPC-HC-002", "BC-MCQ-CRPC-HC-003", "BC-MCQ-CRPC-HC-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CRPC-S491"],
+      "related_case_ids": [],
+      "legal_reference_ids": ["LREF-CRPC-S491"],
+      "important_case_law": [],
+      "source_ids": ["SRC-DEFENSEWIKI-BD-001", "SRC-BDLAWS-CRPC1898-001"],
+      "language_versions": {
+        "en": {
+          "title": "Habeas Corpus (Section 491, CrPC)",
+          "short_description": "Section 491 lets a court order that a person be produced and, if their detention turns out to be illegal or improper, set at liberty -- the CrPC's own version of the personal-liberty writ, older and distinct from Bangladesh's constitutional remedy under Article 102.",
+          "learning_objective": "By the end of this lesson you should be able to: state the core purpose of a Section 491 application; list at least three of the specific directions a court may give under it; and explain why it does not apply to a person detained under a law providing for preventive detention.",
+          "explanation": "Section 491 gives a court the discretionary power to direct the release, production, or transfer of a person, most importantly where someone is illegally or improperly detained in public or private custody. It is triggered by an application (traditionally called a petition for habeas corpus, though the section itself does not use that Latin phrase) asking the court to inquire into the legality of a detention.\n\nAmong the specific directions the section allows are that a person be brought up before the court to be dealt with according to law; that a person illegally or improperly detained in public or private custody be set at liberty; that a prisoner be brought before the court to be examined as a witness in a pending matter; and that a prisoner be transferred from one custody to another for the purpose of trial. The common thread is judicial oversight of whether a detention -- by the state or by a private party -- is actually lawful, not a general power to review the merits of a case.\n\nA specific and frequently tested limitation: Section 491 does not apply to a person detained under any law that itself provides for preventive detention. Where a special law authorises detention without trial for preventive purposes, a challenge to that detention proceeds under that law's own framework (and, in Bangladesh, ultimately under the Constitution's own remedy for unlawful detention, Article 102), not through an ordinary Section 491 application. This carve-out is precisely why habeas corpus under the CrPC and constitutional remedies against preventive detention are related but legally distinct tools, each with a different scope.",
+          "key_concepts": ["Habeas corpus (as embodied in S.491, without that Latin phrase appearing in the section)", "Illegal or improper detention in public OR private custody", "The court's specific directions (produce, release, examine as witness, transfer)", "Exclusion for persons detained under preventive-detention laws", "Distinct from, but related to, the Constitution's own remedy for unlawful detention"],
+          "important_rules": [
+            "S.491 empowers a court to direct that a person illegally or improperly detained in public or private custody be set at liberty.",
+            "The section also empowers directions to produce a person to be dealt with according to law, or as a witness, or to transfer a prisoner between custodies for trial.",
+            "S.491 does NOT apply to a person detained under any law providing for preventive detention -- that is a specific, express carve-out."
+          ],
+          "definitions": [
+            { "term": "Habeas corpus (in this context)", "definition": "Court oversight of whether a person's detention -- by the state or by a private individual -- is actually lawful, with the power to order release if it is not." },
+            { "term": "Preventive detention", "definition": "Detention authorised by a special law to prevent an anticipated future act, rather than to punish a proven past offence -- expressly outside the reach of a Section 491 application." }
+          ],
+          "examples": [
+            "A family member is held by private individuals against their will, with no police case or legal order behind the confinement. An application under Section 491 can ask the court to direct that this person be produced and, since the detention is neither by lawful authority nor under any legal process, set at liberty.",
+            "A person is detained under a special preventive-detention law pending an advisory board's review. Because Section 491(3) excludes persons detained under such laws, a challenge to this specific detention is not brought as an ordinary Section 491 petition -- it proceeds under that law's own review mechanism, or as a constitutional remedy."
+          ],
+          "exam_focus": "Examiners test whether candidates know the private-custody angle (Section 491 is not limited to state detention) and, especially, the preventive-detention exclusion -- a fact pattern involving detention under a special preventive law is a common trap for candidates who assume Section 491 covers every kind of detention.",
+          "common_traps": [
+            "Assuming Section 491 only applies to detention by the police or state -- it also covers illegal or improper detention in private custody.",
+            "Forgetting the preventive-detention exclusion and applying Section 491 to a fact pattern that actually falls under a special preventive-detention law.",
+            "Treating Section 491 and the constitutional remedy under Article 102 as the same thing -- they are related but distinct legal bases, each with different scope and procedure."
+          ],
+          "quick_revision": [
+            "S.491 = court can order production/release for illegal or improper detention, public OR private custody.",
+            "Specific directions include: produce & deal with according to law; release if illegally detained; produce as witness; transfer custody for trial.",
+            "Preventive detention under a special law = OUTSIDE Section 491's reach -- express exclusion.",
+            "Distinct from, but related to, Article 102 of the Constitution."
+          ],
+          "key_takeaways": [
+            "Section 491 is broader than 'checking on the police' -- it reaches unlawful detention by private individuals too.",
+            "The preventive-detention exclusion is the single most tested limitation on this section's scope.",
+            "This is a CrPC-level remedy, older than and distinct from (though related to) Bangladesh's constitutional remedy for unlawful detention."
+          ]
+        },
+        "bn": {
+          "title": "হেবিয়াস কর্পাস (ধারা ৪৯১, ফৌজদারি কার্যবিধি)",
+          "short_description": "ধারা ৪৯১ আদালতকে কোনো ব্যক্তিকে হাজির করার এবং, তার আটক অবৈধ বা অনুচিত প্রমাণিত হলে, মুক্ত করার নির্দেশ দেওয়ার ক্ষমতা দেয় -- এটি ফৌজদারি কার্যবিধির নিজস্ব ব্যক্তিস্বাধীনতা-সংক্রান্ত রিট, যা বাংলাদেশের সংবিধানের ধারা ১০২-এর অধীনে সাংবিধানিক প্রতিকার থেকে পুরনো ও পৃথক।",
+          "learning_objective": "এই পাঠ শেষে আপনি: একটি ধারা ৪৯১ আবেদনের মূল উদ্দেশ্য বলতে পারবেন; এর অধীনে আদালত যে নির্দিষ্ট নির্দেশগুলো দিতে পারে তার অন্তত তিনটি তালিকাভুক্ত করতে পারবেন; এবং কেন এটি প্রতিরোধমূলক আটকের আইনের অধীনে আটক ব্যক্তির ক্ষেত্রে প্রযোজ্য নয় তা ব্যাখ্যা করতে পারবেন।",
+          "explanation": "ধারা ৪৯১ আদালতকে কোনো ব্যক্তির মুক্তি, হাজিরা, বা স্থানান্তরের নির্দেশ দেওয়ার বিবেচনাধীন ক্ষমতা দেয়, সবচেয়ে গুরুত্বপূর্ণভাবে যখন কেউ সরকারি বা বেসরকারি হেফাজতে অবৈধভাবে বা অনুচিতভাবে আটক থাকেন। এটি একটি আবেদনের (ঐতিহ্যগতভাবে হেবিয়াস কর্পাসের আবেদন বলা হয়, যদিও ধারাটি নিজে সেই ল্যাটিন শব্দগুচ্ছ ব্যবহার করে না) মাধ্যমে সক্রিয় হয় যা আদালতকে আটকের বৈধতা তদন্ত করতে অনুরোধ করে।\n\nধারাটি যেসব নির্দিষ্ট নির্দেশ দেওয়ার অনুমতি দেয় তার মধ্যে রয়েছে: কোনো ব্যক্তিকে আইন অনুযায়ী ব্যবস্থা নেওয়ার জন্য আদালতে হাজির করা; সরকারি বা বেসরকারি হেফাজতে অবৈধভাবে বা অনুচিতভাবে আটক ব্যক্তিকে মুক্ত করা; কোনো বিচারাধীন বিষয়ে সাক্ষী হিসেবে পরীক্ষার জন্য একজন বন্দীকে আদালতে হাজির করা; এবং বিচারের উদ্দেশ্যে একজন বন্দীকে এক হেফাজত থেকে অন্য হেফাজতে স্থানান্তর করা। সাধারণ সূত্রটি হলো একটি আটক -- রাষ্ট্র দ্বারা হোক বা কোনো বেসরকারি পক্ষ দ্বারা -- প্রকৃতপক্ষে বৈধ কিনা তার বিচারিক তত্ত্বাবধান, কোনো মামলার গুণাগুণ পর্যালোচনার সাধারণ ক্ষমতা নয়।\n\nএকটি সুনির্দিষ্ট ও প্রায়শই পরীক্ষায় আসা সীমাবদ্ধতা: ধারা ৪৯১ এমন কোনো ব্যক্তির ক্ষেত্রে প্রযোজ্য নয় যিনি প্রতিরোধমূলক আটকের বিধানসম্পন্ন কোনো আইনের অধীনে আটক আছেন। যেখানে কোনো বিশেষ আইন প্রতিরোধমূলক উদ্দেশ্যে বিচার ছাড়াই আটকের অনুমোদন দেয়, সেই আটককে চ্যালেঞ্জ করা সেই আইনের নিজস্ব কাঠামোর অধীনে হয় (এবং, বাংলাদেশে, শেষ পর্যন্ত সংবিধানের নিজস্ব অবৈধ আটকের প্রতিকার, ধারা ১০২-এর অধীনে), সাধারণ ধারা ৪৯১ আবেদনের মাধ্যমে নয়। এই ব্যতিক্রমটিই ঠিক কেন ফৌজদারি কার্যবিধির হেবিয়াস কর্পাস ও প্রতিরোধমূলক আটকের বিরুদ্ধে সাংবিধানিক প্রতিকার সম্পর্কিত কিন্তু আইনগতভাবে ভিন্ন হাতিয়ার, প্রতিটির ভিন্ন পরিধিসহ।",
+          "key_concepts": ["হেবিয়াস কর্পাস (ধারা ৪৯১-এ প্রতিফলিত, যদিও ল্যাটিন শব্দগুচ্ছটি ধারায় নেই)", "সরকারি বা বেসরকারি হেফাজতে অবৈধ বা অনুচিত আটক", "আদালতের নির্দিষ্ট নির্দেশ (হাজির করা, মুক্ত করা, সাক্ষী হিসেবে পরীক্ষা, স্থানান্তর)", "প্রতিরোধমূলক আটকের আইনের অধীনে আটক ব্যক্তিদের জন্য ব্যতিক্রম", "সংবিধানের নিজস্ব অবৈধ আটকের প্রতিকার থেকে পৃথক, কিন্তু সম্পর্কিত"],
+          "important_rules": [
+            "ধারা ৪৯১ আদালতকে সরকারি বা বেসরকারি হেফাজতে অবৈধভাবে বা অনুচিতভাবে আটক ব্যক্তিকে মুক্ত করার নির্দেশ দেওয়ার ক্ষমতা দেয়।",
+            "ধারাটি আইন অনুযায়ী ব্যবস্থা নেওয়ার জন্য, বা সাক্ষী হিসেবে, কোনো ব্যক্তিকে হাজির করার, বা বিচারের জন্য বন্দীকে হেফাজত থেকে হেফাজতে স্থানান্তরের নির্দেশও দেওয়ার ক্ষমতা দেয়।",
+            "ধারা ৪৯১ প্রতিরোধমূলক আটকের বিধানসম্পন্ন কোনো আইনের অধীনে আটক ব্যক্তির ক্ষেত্রে প্রযোজ্য নয় -- এটি একটি সুনির্দিষ্ট, স্পষ্ট ব্যতিক্রম।"
+          ],
+          "definitions": [
+            { "term": "হেবিয়াস কর্পাস (এই প্রসঙ্গে)", "definition": "কোনো ব্যক্তির আটক -- রাষ্ট্র দ্বারা হোক বা কোনো বেসরকারি ব্যক্তি দ্বারা -- প্রকৃতপক্ষে বৈধ কিনা তার আদালতিক তত্ত্বাবধান, এবং তা না হলে মুক্তির নির্দেশ দেওয়ার ক্ষমতা।" },
+            { "term": "প্রতিরোধমূলক আটক", "definition": "একটি প্রমাণিত অতীত অপরাধের শাস্তির পরিবর্তে একটি প্রত্যাশিত ভবিষ্যৎ কাজ প্রতিরোধের জন্য একটি বিশেষ আইন দ্বারা অনুমোদিত আটক -- স্পষ্টভাবে একটি ধারা ৪৯১ আবেদনের নাগালের বাইরে।" }
+          ],
+          "examples": [
+            "একজন পরিবারের সদস্যকে বেসরকারি ব্যক্তিরা তার ইচ্ছার বিরুদ্ধে আটকে রাখে, আটকের পেছনে কোনো পুলিশ মামলা বা আইনি আদেশ নেই। ধারা ৪৯১-এর অধীনে একটি আবেদন আদালতকে এই ব্যক্তিকে হাজির করার এবং, যেহেতু আটকটি বৈধ কর্তৃপক্ষ দ্বারা বা কোনো আইনি প্রক্রিয়ার অধীনে নয়, মুক্ত করার নির্দেশ দিতে বলতে পারে।",
+            "একজন ব্যক্তিকে একটি পরামর্শক বোর্ডের পর্যালোচনা মুলতুবি রেখে একটি বিশেষ প্রতিরোধমূলক আটক আইনের অধীনে আটক রাখা হয়। যেহেতু ধারা ৪৯১(৩) এই ধরনের আইনের অধীনে আটক ব্যক্তিদের বাদ দেয়, এই নির্দিষ্ট আটককে চ্যালেঞ্জ করা একটি সাধারণ ধারা ৪৯১ আবেদন হিসেবে আনা হয় না -- এটি সেই আইনের নিজস্ব পর্যালোচনা ব্যবস্থার অধীনে, বা একটি সাংবিধানিক প্রতিকার হিসেবে অগ্রসর হয়।"
+          ],
+          "exam_focus": "পরীক্ষকরা যাচাই করেন প্রার্থীরা বেসরকারি-হেফাজতের দিকটি জানেন কিনা (ধারা ৪৯১ কেবল রাষ্ট্রীয় আটকের মধ্যে সীমাবদ্ধ নয়) এবং, বিশেষত, প্রতিরোধমূলক-আটকের ব্যতিক্রম -- একটি বিশেষ প্রতিরোধমূলক আইনের অধীনে আটক জড়িত একটি ঘটনাপ্রবাহ এমন প্রার্থীদের জন্য একটি সাধারণ ফাঁদ যারা মনে করেন ধারা ৪৯১ প্রতিটি ধরনের আটক আচ্ছাদন করে।",
+          "common_traps": [
+            "মনে করা যে ধারা ৪৯১ কেবল পুলিশ বা রাষ্ট্র দ্বারা আটকের ক্ষেত্রে প্রযোজ্য -- এটি বেসরকারি হেফাজতে অবৈধ বা অনুচিত আটকও আচ্ছাদন করে।",
+            "প্রতিরোধমূলক-আটকের ব্যতিক্রম ভুলে যাওয়া এবং এমন একটি ঘটনাপ্রবাহে ধারা ৪৯১ প্রয়োগ করা যা প্রকৃতপক্ষে একটি বিশেষ প্রতিরোধমূলক-আটক আইনের অধীনে পড়ে।",
+            "ধারা ৪৯১ ও ধারা ১০২-এর অধীনে সাংবিধানিক প্রতিকারকে একই জিনিস মনে করা -- এগুলো সম্পর্কিত কিন্তু ভিন্ন আইনি ভিত্তি, প্রতিটির ভিন্ন পরিধি ও পদ্ধতি।"
+          ],
+          "quick_revision": [
+            "ধারা ৪৯১ = অবৈধ বা অনুচিত আটকের জন্য আদালত হাজিরা/মুক্তির নির্দেশ দিতে পারে, সরকারি বা বেসরকারি হেফাজত উভয়ই।",
+            "নির্দিষ্ট নির্দেশের মধ্যে রয়েছে: হাজির করা ও আইন অনুযায়ী ব্যবস্থা নেওয়া; অবৈধ আটক হলে মুক্ত করা; সাক্ষী হিসেবে হাজির করা; বিচারের জন্য হেফাজত স্থানান্তর।",
+            "একটি বিশেষ আইনের অধীনে প্রতিরোধমূলক আটক = ধারা ৪৯১-এর নাগালের বাইরে -- স্পষ্ট ব্যতিক্রম।",
+            "সংবিধানের ধারা ১০২ থেকে পৃথক, কিন্তু সম্পর্কিত।"
+          ],
+          "key_takeaways": [
+            "ধারা ৪৯১ 'পুলিশের উপর নজর রাখা'-র চেয়ে বিস্তৃত -- এটি বেসরকারি ব্যক্তিদের দ্বারা অবৈধ আটকও নাগালে আনে।",
+            "প্রতিরোধমূলক-আটকের ব্যতিক্রম এই ধারার পরিধির উপর সবচেয়ে বেশি পরীক্ষায় আসা সীমাবদ্ধতা।",
+            "এটি একটি ফৌজদারি কার্যবিধি-স্তরের প্রতিকার, বাংলাদেশের অবৈধ আটকের সাংবিধানিক প্রতিকারের চেয়ে পুরনো এবং পৃথক (যদিও সম্পর্কিত)।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CRPC-S491",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Section 491 (Power to issue directions of the nature of a habeas corpus)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-DEFENSEWIKI-BD-001", "SRC-BDLAWS-CRPC1898-001"],
+      "note": "Section's existence, title, and general structure confirmed from the primary source's table of contents; the section's full operative verbatim text was not successfully fetched in this session (robots-disallowed on direct fetch of the specific section page). Substantive description in the lesson rests on a Bangladesh-specific secondary source (a human-rights reference wiki) corroborated by cross-jurisdictional commentary on this identically-numbered, shared-heritage provision, not a directly-read primary text -- flagged accordingly, distinct from the CPC S.96 and Penal Code S.299/300 references in this same batch round, which ARE verbatim-verified."
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-HC-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-HC-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-22",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S491"],
+      "exam_focus": "Whether S.491 covers private custody as well as state detention.",
+      "source_basis": "Original question on the public/private custody scope.",
+      "mistake_tags": ["s491-private-custody-scope"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-HABEASCORPUS-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "An application under Section 491, CrPC can be used to challenge illegal or improper detention:",
+          "options": { "A": "Only where the detaining authority is the police", "B": "Only where the detaining authority is a government agency of any kind", "C": "In both public custody (state authorities) and private custody (private individuals)", "D": "Only in cases where a First Information Report has already been filed" },
+          "explanation": "Section 491 is not limited to state or police detention -- it explicitly reaches illegal or improper detention in private custody as well.",
+          "why_other_options_are_wrong": { "A": "This understates the section's scope by limiting it to police detention specifically.", "B": "This also understates the scope -- private custody is covered too, not just government detention.", "D": "There is no such FIR precondition for a Section 491 application." }
+        },
+        "bn": {
+          "question": "ফৌজদারি কার্যবিধির ধারা ৪৯১-এর অধীনে একটি আবেদন অবৈধ বা অনুচিত আটক চ্যালেঞ্জ করতে ব্যবহার করা যেতে পারে:",
+          "options": { "A": "কেবল যেখানে আটককারী কর্তৃপক্ষ পুলিশ", "B": "কেবল যেখানে আটককারী কর্তৃপক্ষ যেকোনো ধরনের সরকারি সংস্থা", "C": "সরকারি হেফাজত (রাষ্ট্রীয় কর্তৃপক্ষ) ও বেসরকারি হেফাজত (বেসরকারি ব্যক্তি) উভয় ক্ষেত্রেই", "D": "কেবল সেই ক্ষেত্রে যেখানে ইতিমধ্যে একটি এজাহার (এফআইআর) দায়ের হয়েছে" },
+          "explanation": "ধারা ৪৯১ রাষ্ট্রীয় বা পুলিশ আটকের মধ্যে সীমাবদ্ধ নয় -- এটি স্পষ্টভাবে বেসরকারি হেফাজতে অবৈধ বা অনুচিত আটকও নাগালে আনে।",
+          "why_other_options_are_wrong": { "A": "এটি ধারাটির পরিধি নির্দিষ্টভাবে পুলিশ আটকে সীমাবদ্ধ করে কম বলে দেখায়।", "B": "এটিও পরিধি কম বলে দেখায় -- বেসরকারি হেফাজতও আচ্ছাদিত, কেবল সরকারি আটক নয়।", "D": "একটি ধারা ৪৯১ আবেদনের জন্য এমন কোনো এফআইআর পূর্বশর্ত নেই।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-HC-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-HC-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-22",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S491"],
+      "exam_focus": "The preventive-detention exclusion -- the single most tested limitation.",
+      "source_basis": "Original fact pattern on the preventive-detention carve-out.",
+      "mistake_tags": ["s491-preventive-detention-exclusion"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-HABEASCORPUS-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A is detained under a special law that authorises detention without trial for preventive purposes, pending review by an advisory board. Can A's family challenge this specific detention through an ordinary Section 491 application?",
+          "options": { "A": "Yes, Section 491 applies to every kind of detention without exception", "B": "No, Section 491 expressly does not apply to a person detained under a law providing for preventive detention", "C": "Yes, but only after the advisory board issues its report", "D": "No, because Section 491 only applies to detention by private individuals, not the state" },
+          "explanation": "Section 491 contains an express exclusion for persons detained under a law providing for preventive detention -- such a challenge proceeds under that law's own framework or as a constitutional remedy, not through an ordinary Section 491 application.",
+          "why_other_options_are_wrong": { "A": "This ignores the specific, express preventive-detention exclusion.", "C": "The exclusion is not conditional on the advisory board's report timing -- it applies to this category of detention generally.", "D": "This reverses the actual limitation -- Section 491 does cover state detention generally; the specific carve-out is for preventive detention, not state action as such." }
+        },
+        "bn": {
+          "question": "ক-কে একটি বিশেষ আইনের অধীনে আটক রাখা হয়েছে যা প্রতিরোধমূলক উদ্দেশ্যে বিচার ছাড়াই আটকের অনুমোদন দেয়, একটি পরামর্শক বোর্ডের পর্যালোচনা মুলতুবি রেখে। ক-এর পরিবার কি একটি সাধারণ ধারা ৪৯১ আবেদনের মাধ্যমে এই নির্দিষ্ট আটক চ্যালেঞ্জ করতে পারে?",
+          "options": { "A": "হ্যাঁ, ধারা ৪৯১ ব্যতিক্রম ছাড়াই প্রতিটি ধরনের আটকের ক্ষেত্রে প্রযোজ্য", "B": "না, ধারা ৪৯১ স্পষ্টভাবে প্রতিরোধমূলক আটকের বিধানসম্পন্ন আইনের অধীনে আটক ব্যক্তির ক্ষেত্রে প্রযোজ্য নয়", "C": "হ্যাঁ, তবে কেবল পরামর্শক বোর্ড তার প্রতিবেদন প্রদানের পরে", "D": "না, কারণ ধারা ৪৯১ কেবল বেসরকারি ব্যক্তিদের দ্বারা আটকের ক্ষেত্রে প্রযোজ্য, রাষ্ট্র দ্বারা নয়" },
+          "explanation": "ধারা ৪৯১-এ প্রতিরোধমূলক আটকের বিধানসম্পন্ন আইনের অধীনে আটক ব্যক্তিদের জন্য একটি স্পষ্ট ব্যতিক্রম রয়েছে -- এমন একটি চ্যালেঞ্জ সেই আইনের নিজস্ব কাঠামোর অধীনে বা একটি সাংবিধানিক প্রতিকার হিসেবে অগ্রসর হয়, একটি সাধারণ ধারা ৪৯১ আবেদনের মাধ্যমে নয়।",
+          "why_other_options_are_wrong": { "A": "এটি সুনির্দিষ্ট, স্পষ্ট প্রতিরোধমূলক-আটকের ব্যতিক্রম উপেক্ষা করে।", "C": "ব্যতিক্রমটি পরামর্শক বোর্ডের প্রতিবেদনের সময়ের উপর শর্তসাপেক্ষ নয় -- এটি সাধারণভাবে এই শ্রেণির আটকের ক্ষেত্রে প্রযোজ্য।", "D": "এটি প্রকৃত সীমাবদ্ধতা উল্টে দেয় -- ধারা ৪৯১ সাধারণভাবে রাষ্ট্রীয় আটক আচ্ছাদন করে; সুনির্দিষ্ট ব্যতিক্রমটি প্রতিরোধমূলক আটকের জন্য, রাষ্ট্রীয় পদক্ষেপের জন্য নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-HC-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-HC-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-22",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S491"],
+      "exam_focus": "The range of specific directions S.491 allows, beyond simple release.",
+      "source_basis": "Original question on the breadth of directions available.",
+      "mistake_tags": ["s491-directions-beyond-release"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-HABEASCORPUS-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "Besides ordering the release of an illegally detained person, which of the following is also a recognised direction a court may give under Section 491?",
+          "options": { "A": "Ordering the detaining authority to pay compensation to the detained person", "B": "Ordering the immediate dismissal of the detaining police officer", "C": "Ordering a retrial of any related criminal case on the merits", "D": "Directing that a prisoner be produced before the court to be examined as a witness in a pending matter" },
+          "explanation": "Among the directions Section 491 allows is producing a prisoner before the court so they may be examined as a witness in a matter pending or to be inquired into -- a purpose distinct from, and in addition to, ordering release from illegal detention.",
+          "why_other_options_are_wrong": { "A": "Compensation is not among the directions this section provides for.", "B": "Disciplinary dismissal of an officer is not a Section 491 remedy.", "C": "Ordering a retrial on the merits of an unrelated criminal case is outside what Section 491 empowers a court to do." }
+        },
+        "bn": {
+          "question": "অবৈধভাবে আটক ব্যক্তির মুক্তির নির্দেশ দেওয়া ছাড়াও, নিচের কোনটি ধারা ৪৯১-এর অধীনে আদালতের দেওয়া একটি স্বীকৃত নির্দেশ?",
+          "options": { "A": "আটককারী কর্তৃপক্ষকে আটক ব্যক্তিকে ক্ষতিপূরণ প্রদানের নির্দেশ", "B": "আটককারী পুলিশ কর্মকর্তার তাৎক্ষণিক বরখাস্তের নির্দেশ", "C": "কোনো সংশ্লিষ্ট ফৌজদারি মামলার গুণাগুণে পুনর্বিচারের নির্দেশ", "D": "কোনো বিচারাধীন বিষয়ে সাক্ষী হিসেবে পরীক্ষার জন্য একজন বন্দীকে আদালতে হাজির করার নির্দেশ" },
+          "explanation": "ধারা ৪৯১ যেসব নির্দেশ দেওয়ার অনুমতি দেয় তার মধ্যে রয়েছে কোনো বিচারাধীন বা তদন্তাধীন বিষয়ে সাক্ষী হিসেবে পরীক্ষার জন্য একজন বন্দীকে আদালতে হাজির করা -- অবৈধ আটক থেকে মুক্তির নির্দেশ দেওয়া থেকে ভিন্ন ও অতিরিক্ত একটি উদ্দেশ্য।",
+          "why_other_options_are_wrong": { "A": "ক্ষতিপূরণ এই ধারা যে নির্দেশগুলো প্রদান করে তার মধ্যে নেই।", "B": "কোনো কর্মকর্তার শাস্তিমূলক বরখাস্ত ধারা ৪৯১-এর প্রতিকার নয়।", "C": "একটি অসম্পর্কিত ফৌজদারি মামলার গুণাগুণে পুনর্বিচারের নির্দেশ ধারা ৪৯১ আদালতকে যা করার ক্ষমতা দেয় তার বাইরে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-HC-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-HC-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-22",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S491"],
+      "exam_focus": "Whether S.491 and Article 102 are the same remedy.",
+      "source_basis": "Original conceptual question distinguishing statutory and constitutional remedies.",
+      "mistake_tags": ["s491-vs-article-102-conflation"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-HABEASCORPUS-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "How should a candidate describe the relationship between Section 491, CrPC and Article 102 of the Constitution of Bangladesh (which also allows a court to order a detained person's production)?",
+          "options": { "A": "They are the exact same remedy under two different names, with no distinction worth noting", "B": "They are related remedies addressing similar concerns (unlawful detention) but rest on different legal bases -- one statutory, one constitutional -- with different scope and procedure", "C": "Article 102 has fully repealed and replaced Section 491, which no longer has any effect", "D": "Section 491 applies only to civil detention and Article 102 only to criminal detention" },
+          "explanation": "Section 491 (a statutory provision of the CrPC) and Article 102 (a constitutional remedy) both address unlawful detention but are legally distinct tools with their own scope and procedure -- describing them as simply identical, or treating one as having repealed the other, overstates the relationship in either direction.",
+          "why_other_options_are_wrong": { "A": "This collapses a real, examinable distinction between a statutory and a constitutional remedy.", "C": "There is no basis for treating Section 491 as repealed by Article 102 -- both are discussed as live, distinct provisions in the source material.", "D": "The civil/criminal distinction is not the actual basis for how these two provisions differ." }
+        },
+        "bn": {
+          "question": "একজন প্রার্থীর ফৌজদারি কার্যবিধির ধারা ৪৯১ ও বাংলাদেশের সংবিধানের ধারা ১০২ (যা আদালতকে আটক ব্যক্তির হাজিরার নির্দেশ দেওয়ার অনুমতিও দেয়)-এর মধ্যে সম্পর্ক কীভাবে বর্ণনা করা উচিত?",
+          "options": { "A": "এগুলো দুটি ভিন্ন নামে ঠিক একই প্রতিকার, উল্লেখযোগ্য কোনো পার্থক্য নেই", "B": "এগুলো একই ধরনের উদ্বেগ (অবৈধ আটক) সমাধানকারী সম্পর্কিত প্রতিকার, কিন্তু ভিন্ন আইনি ভিত্তির উপর নির্ভরশীল -- একটি সংবিধিবদ্ধ, অন্যটি সাংবিধানিক -- ভিন্ন পরিধি ও পদ্ধতিসহ", "C": "ধারা ১০২ ধারা ৪৯১-কে সম্পূর্ণরূপে বাতিল ও প্রতিস্থাপন করেছে, যার আর কোনো প্রভাব নেই", "D": "ধারা ৪৯১ কেবল দেওয়ানি আটকের ক্ষেত্রে এবং ধারা ১০২ কেবল ফৌজদারি আটকের ক্ষেত্রে প্রযোজ্য" },
+          "explanation": "ধারা ৪৯১ (ফৌজদারি কার্যবিধির একটি সংবিধিবদ্ধ বিধান) ও ধারা ১০২ (একটি সাংবিধানিক প্রতিকার) উভয়ই অবৈধ আটক নিয়ে কাজ করে কিন্তু নিজস্ব পরিধি ও পদ্ধতিসহ আইনগতভাবে ভিন্ন হাতিয়ার -- এগুলোকে সম্পূর্ণ অভিন্ন বর্ণনা করা, বা একটিকে অন্যটির দ্বারা বাতিল বলে মনে করা, উভয় দিক থেকেই সম্পর্কটি অতিরিক্ত বলে দেখায়।",
+          "why_other_options_are_wrong": { "A": "এটি একটি সংবিধিবদ্ধ ও সাংবিধানিক প্রতিকারের মধ্যে একটি বাস্তব, পরীক্ষাযোগ্য পার্থক্য মুছে ফেলে।", "C": "ধারা ১০২ দ্বারা ধারা ৪৯১ বাতিল হয়েছে মনে করার কোনো ভিত্তি নেই -- উভয়ই উৎস উপাদানে সক্রিয়, পৃথক বিধান হিসেবে আলোচিত।", "D": "দেওয়ানি/ফৌজদারি পার্থক্য এই দুটি বিধান কীভাবে ভিন্ন তার প্রকৃত ভিত্তি নয়।" }
+        }
+      }
+    }
+  ]
+}

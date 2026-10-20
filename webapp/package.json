@@ -11,17 +11,33 @@
     "db:migrate": "prisma migrate deploy",
     "db:studio": "prisma studio",
     "db:generate": "prisma generate",
-    "db:seed": "tsx prisma/seed.ts"
+    "db:seed": "tsx prisma/seed.ts",
+    "test": "tsx --test src/lib/credits.test.ts src/lib/fcm/fcm.test.ts src/lib/sms-otp.test.ts src/lib/sms-hybrid.test.ts src/lib/env-aliases.test.ts src/lib/find-lawyer/directory-rank.test.ts src/lib/packages-catalog.test.ts src/lib/permissions.test.ts src/lib/permissions-junior.test.ts src/lib/auth/webapp-next.test.ts src/lib/jurisdiction.test.ts src/lib/vendors/vendors.test.ts src/lib/master/lesson-packs.test.ts src/lib/habit.test.ts src/lib/rls.test.ts src/lib/career-flatten.test.ts src/lib/career-fs.test.ts src/lib/find-lawyer/review-policy.test.ts src/lib/auth/account-deletion.test.ts src/lib/identity.test.ts src/lib/mail/campaigns.test.ts src/lib/sync/sync-matrix.test.ts src/lib/zinipay.test.ts src/lib/v2-routes.test.ts src/lib/ga4.test.ts src/lib/tools/tools.test.ts",
+    "test:fcm": "tsx --test src/lib/fcm/fcm.test.ts",
+    "cron:fcm": "tsx scripts/run-fcm-cron.ts",
+    "ingest:career": "tsx scripts/ingest-career.ts",
+    "sync:career-fs": "tsx scripts/sync-career-fs.ts"
   },
   "dependencies": {
     "@prisma/client": "5.20.0",
+    "@radix-ui/react-avatar": "^1.2.6",
+    "@radix-ui/react-dialog": "^1.1.23",
+    "@radix-ui/react-dropdown-menu": "^2.1.24",
+    "@radix-ui/react-label": "^2.1.15",
+    "@radix-ui/react-separator": "^1.1.15",
+    "@radix-ui/react-slot": "^1.3.3",
     "bcryptjs": "2.4.3",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "firebase-admin": "12.7.0",
     "iconv-lite": "^0.7.3",
     "jsonwebtoken": "9.0.2",
+    "lucide-react": "^0.475.0",
     "next": "15.0.0",
     "pdfkit": "0.15.0",
     "react": "18.3.1",
     "react-dom": "18.3.1",
+    "tailwind-merge": "^3.7.0",
     "zod": "3.23.8"
   },
   "devDependencies": {
@@ -31,7 +47,10 @@
     "@types/pdfkit": "0.13.9",
     "@types/react": "^19.2.18",
     "@types/react-dom": "^19.2.4",
+    "autoprefixer": "^10.6.1",
+    "postcss": "^8.5.28",
     "prisma": "5.20.0",
+    "tailwindcss": "^3.4.17",
     "tsx": "^4.19.1",
     "typescript": "^5.6.3"
   }

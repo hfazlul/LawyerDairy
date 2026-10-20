@@ -1,0 +1,289 @@
+{
+  "batch_id": "BATCH-2026-08-007-SRA-SPECIFIC-PERFORMANCE",
+  "schema_version": "1.0",
+  "content_version": "2026.08.4",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Specific Relief Act was, alongside Professional Ethics, one of the two remaining zero-coverage subjects (user selected 'finish MCQ Prep' as the priority for this round). This lesson covers Specific Performance of Contracts (T-SRA-04), the Act's single most heavily tested topic. Unlike the five earlier lessons in this dataset, this one is grounded directly in VERBATIM primary-source text (Sections 12 and 21 fetched live from bdlaws.minlaw.gov.bd during this session) rather than paraphrased secondary sources -- so its core rule content carries VERIFIED status, a meaningfully higher confidence tier than the VERIFY_CURRENT_RULE carried by the other five lessons.",
+  "asset_count": 8,
+  "assets": [
+    {
+      "content_id": "BC-SRA-SPECIFICPERFORMANCE-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-SRA-SPECIFICPERFORMANCE-001",
+      "topic_id": "T-SRA-04",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Core rule content (Section 12's four grounds and Explanation; Section 21's eight bars) is paraphrased from the VERBATIM text of Sections 12 and 21 fetched directly from bdlaws.minlaw.gov.bd (SRC-BDLAWS-SRA1877-001) during this session -- the highest confidence tier available without a qualified advocate's sign-off. The general statement that specific performance remains discretionary under Section 22 reflects well-established, universal equitable-remedy doctrine and the section's own title as confirmed in the Act's table of contents, but this dataset has not directly read Section 22's full operative text, so that specific point is noted as resting on general doctrine rather than a verbatim read. Illustrations in this lesson are ORIGINAL, not copied from the Act's own illustrations, consistent with this dataset's copyright-paraphrase policy; the Act's own famous illustrations are referenced only in general, paraphrased terms. No case law cited, for the same reason given throughout this dataset.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 35,
+      "prerequisite_ids": [],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-SRA-SP-001", "BC-MCQ-SRA-SP-002", "BC-MCQ-SRA-SP-003", "BC-MCQ-SRA-SP-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- no authentic, source-verifiable previous Bar Council question on this topic was located and confirmed. See main README.",
+      "related_law_ids": ["LREF-SRA-S12", "LREF-SRA-S21", "LREF-SRA-S22"],
+      "related_case_ids": [],
+      "legal_reference_ids": ["LREF-SRA-S12", "LREF-SRA-S21", "LREF-SRA-S22"],
+      "important_case_law": [],
+      "source_ids": ["SRC-BDLAWS-SRA1877-001"],
+      "language_versions": {
+        "en": {
+          "title": "Specific Performance of Contracts",
+          "short_description": "The Specific Relief Act's most heavily tested remedy: Section 12 sets out when a court may order a party to actually perform a contract rather than just pay damages for breaking it, and Section 21 lists the specific categories of contract for which that remedy is never available, no matter how much the plaintiff wants it.",
+          "learning_objective": "By the end of this lesson you should be able to: state the four grounds in Section 12 on which specific performance may be ordered; explain the Explanation's presumption for immovable versus movable property and why it is rebuttable; list the categories of contract that Section 21 puts beyond the reach of specific performance altogether; and explain why specific performance remains discretionary even once Section 12 is satisfied.",
+          "explanation": "Specific performance compels a party to actually carry out what they promised, rather than simply pay money to compensate the other side for not getting it. Because ordering someone to perform can be a significant intrusion, the ordinary remedy for breach of contract is damages -- money -- and specific performance is available only in the situations the Specific Relief Act, 1877 marks out.\n\nSection 12 sets the affirmative case: the Court may, in its discretion, enforce specific performance when (a) the act agreed to be done is the whole or part performance of a trust; (b) there exists no standard for ascertaining the actual damage caused by non-performance; (c) the act agreed to be done is such that pecuniary compensation would not afford adequate relief; or (d) it is probable that pecuniary compensation cannot actually be obtained for the non-performance. An Explanation attached to the section gives the Court two starting presumptions, rebuttable on the facts: a contract to transfer immovable property is presumed NOT to be adequately relievable by money (favouring specific performance), while a contract to transfer movable property is presumed TO BE adequately relievable by money (favouring damages instead) -- unless the facts show otherwise, such as where the movable property is genuinely unique (the Act's own classic illustrations involve a rare painting and antique vases, and a limited block of shares not freely available on the market) rather than an ordinary article of commerce.\n\nSection 21 then closes the door on an entire list of contract types, regardless of how badly the promisee wants performance rather than money: (a) contracts for which money is an adequate remedy; (b) contracts that run into such minute or numerous detail, or depend so heavily on a party's personal qualifications or volition, that a court could not practically enforce their material terms -- the Act's own classic illustrations here are contracts for personal service and a contract merely to marry; (c) contracts whose terms the court cannot ascertain with reasonable certainty; (d) contracts that are by their nature revocable; (e) contracts made by trustees in excess of their powers or in breach of trust; (f) contracts made by or for a special-purpose corporation in excess of its powers; (g) contracts requiring performance of a continuous duty extending over a period longer than three years, which a court cannot practically supervise that long; and (h) contracts where a material part of the subject matter -- believed by both parties to exist -- had actually already ceased to exist before the contract was even made.\n\nEven where a contract clears Section 12's grounds and avoids every bar in Section 21, specific performance remains, under the general scheme of the Act (Section 22 is titled 'Discretion as to decreeing specific performance'), a matter for the Court's discretion rather than an automatic entitlement -- satisfying Section 12 only opens the door to that discretion, it does not by itself guarantee the remedy.",
+          "key_concepts": ["Specific performance as a discretionary equitable remedy", "Section 12's four affirmative grounds", "The Explanation's immovable/movable presumption (rebuttable)", "Section 21's closed list of never-enforceable contract types", "Section 22: discretion, not an automatic right"],
+          "important_rules": [
+            "S.12: specific performance may be ordered where (a) it is performance of a trust; (b) there is no standard for measuring actual damage; (c) money compensation would not give adequate relief; or (d) money compensation is unlikely to actually be obtained.",
+            "S.12 Explanation: immovable property is presumed NOT adequately relievable by money (favours specific performance); movable property is presumed adequately relievable by money (favours damages) -- both presumptions are rebuttable on the facts.",
+            "S.21: certain categories of contract -- adequate-money-remedy contracts, minutely-detailed/personal-skill-dependent contracts, uncertain-terms contracts, revocable contracts, ultra-vires trustee/corporate contracts, continuous-duty-over-3-years contracts, and contracts whose subject matter had already ceased to exist -- can never be specifically enforced."
+          ],
+          "definitions": [
+            { "term": "Specific performance", "definition": "An equitable remedy compelling a contracting party to actually carry out their contractual promise, ordered at the Court's discretion where money compensation would not do justice between the parties." },
+            { "term": "Adequate relief (in this context)", "definition": "Whether a sum of money can genuinely put the injured party in as good a position as actual performance would have -- the touchstone Sections 12 and 21 both turn on." }
+          ],
+          "examples": [
+            "A agrees to sell a specific, architecturally unique heritage building in Old Dhaka to B for a fixed price, then later refuses to complete the sale. Because the subject matter is immovable property, Section 12's Explanation presumes that money compensation would not adequately relieve B -- B may seek specific performance, compelling A to actually convey the building.",
+            "A agrees to perform as a singer at B's private event for a fee, then later refuses. Even though B has clearly suffered a loss, this is a personal-service contract -- Section 21(b)'s bar applies, since a court cannot practically supervise or compel this kind of personal performance. B's remedy is limited to damages, not an order compelling A to perform."
+          ],
+          "exam_focus": "Examiners like fact patterns testing the immovable/movable presumption under the Section 12 Explanation, and fact patterns that require identifying which specific Section 21 bar applies -- especially (b) personal-service/skill-dependent contracts and (g) the three-year continuous-duty bar -- rather than a vague assertion that 'this contract cannot be specifically enforced.'",
+          "common_traps": [
+            "Assuming specific performance is available simply because the plaintiff strongly prefers actual performance to money -- Section 21's bars apply regardless of how much the plaintiff wants performance.",
+            "Treating the Section 12 Explanation's presumptions as absolute rather than rebuttable -- genuinely unique movable property can still qualify for specific performance despite the general presumption favouring damages for movables.",
+            "Treating Section 12 alone as sufficient -- satisfying Section 12 only opens the door to the Court's discretion under Section 22; it does not guarantee the remedy.",
+            "Confusing the 3-year figure in Section 21(g) with an unrelated limitation period -- it is specifically about how long a continuous duty runs, not a time limit for filing suit."
+          ],
+          "quick_revision": [
+            "S.12 = when performance MAY be ordered: trust, no damage-standard, money-inadequate, money-unobtainable.",
+            "Explanation = immovable presumed money-inadequate (favours performance); movable presumed money-adequate (favours damages) -- rebuttable.",
+            "S.21 = closed list of NEVER-enforceable contract types: money-adequate, minute-detail/personal-skill, uncertain terms, revocable, ultra-vires trustee/corporate, 3+ year continuous duty, subject matter already gone.",
+            "S.22 = even if S.12 is met and S.21 is cleared, the remedy is still discretionary, not a right."
+          ],
+          "key_takeaways": [
+            "Specific performance is the exception, not the default, remedy for breach of contract -- money damages remain the ordinary rule.",
+            "The immovable/movable presumption in the Section 12 Explanation is a starting point for argument, not a fixed rule -- genuine uniqueness can flip the movable-property presumption.",
+            "Section 21's bars are absolute for the categories they cover -- no amount of the plaintiff's preference or hardship overrides them, though the disappointed party may still claim damages instead."
+          ]
+        },
+        "bn": {
+          "title": "চুক্তির নির্দিষ্ট পালন",
+          "short_description": "নির্দিষ্ট প্রতিকার আইনের সবচেয়ে বেশি পরীক্ষায় আসা প্রতিকার: ধারা ১২ নির্ধারণ করে কখন আদালত কোনো পক্ষকে চুক্তি ভঙ্গের জন্য কেবল ক্ষতিপূরণ না দিয়ে প্রকৃতপক্ষে চুক্তি পালনের নির্দেশ দিতে পারে, এবং ধারা ২১ এমন নির্দিষ্ট শ্রেণির চুক্তির তালিকা দেয় যেগুলোর জন্য এই প্রতিকার কখনোই পাওয়া যায় না, বাদী যতই তা চান না কেন।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ১২-এর চারটি ভিত্তি বলতে পারবেন যার উপর নির্দিষ্ট পালনের নির্দেশ দেওয়া যেতে পারে; স্থাবর বনাম অস্থাবর সম্পত্তির জন্য ব্যাখ্যার অনুমান এবং কেন তা খণ্ডনযোগ্য তা ব্যাখ্যা করতে পারবেন; ধারা ২১ অনুযায়ী কোন শ্রেণির চুক্তি নির্দিষ্ট পালনের নাগালের সম্পূর্ণ বাইরে তা তালিকাভুক্ত করতে পারবেন; এবং ধারা ১২ পূরণ হলেও কেন নির্দিষ্ট পালন এখনও বিবেচনাধীন থেকে যায় তা ব্যাখ্যা করতে পারবেন।",
+          "explanation": "নির্দিষ্ট পালন কোনো পক্ষকে যা প্রতিশ্রুতি দিয়েছিল তা প্রকৃতপক্ষে পালন করতে বাধ্য করে, কেবল অপর পক্ষকে তা না পাওয়ার জন্য অর্থ দিয়ে ক্ষতিপূরণ দেওয়ার পরিবর্তে। যেহেতু কাউকে পালন করতে বাধ্য করা একটি উল্লেখযোগ্য হস্তক্ষেপ হতে পারে, তাই চুক্তি ভঙ্গের সাধারণ প্রতিকার হলো ক্ষতিপূরণ -- অর্থ -- এবং নির্দিষ্ট পালন কেবল নির্দিষ্ট প্রতিকার আইন, ১৮৭৭ যেসব পরিস্থিতি চিহ্নিত করেছে সেখানেই পাওয়া যায়।\n\nধারা ১২ ইতিবাচক ক্ষেত্রটি নির্ধারণ করে: আদালত তার বিবেচনায় নির্দিষ্ট পালন কার্যকর করতে পারে যখন (ক) সম্পাদনযোগ্য কাজটি সম্পূর্ণ বা আংশিকভাবে একটি ট্রাস্ট পালন; (খ) অ-পালনের ফলে প্রকৃত ক্ষতি নির্ণয়ের কোনো মানদণ্ড না থাকে; (গ) সম্পাদনযোগ্য কাজটি এমন যে আর্থিক ক্ষতিপূরণ পর্যাপ্ত প্রতিকার দেবে না; অথবা (ঘ) সম্ভাবনা থাকে যে অ-পালনের জন্য আর্থিক ক্ষতিপূরণ প্রকৃতপক্ষে পাওয়া যাবে না। ধারার সাথে যুক্ত একটি ব্যাখ্যা আদালতকে দুটি প্রারম্ভিক অনুমান দেয়, যা ঘটনার ভিত্তিতে খণ্ডনযোগ্য: স্থাবর সম্পত্তি হস্তান্তরের চুক্তি ভঙ্গ অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য নয় বলে অনুমিত হয় (নির্দিষ্ট পালনের পক্ষে), যেখানে অস্থাবর সম্পত্তি হস্তান্তরের চুক্তি ভঙ্গ অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য বলে অনুমিত হয় (পরিবর্তে ক্ষতিপূরণের পক্ষে) -- যদি না ঘটনা অন্যথা প্রমাণ করে, যেমন যখন অস্থাবর সম্পত্তিটি প্রকৃতপক্ষে অনন্য হয় (আইনের নিজস্ব ধ্রুপদী দৃষ্টান্তে একটি বিরল চিত্রকর্ম ও প্রাচীন ফুলদানি, এবং বাজারে অবাধে পাওয়া যায় না এমন একটি সীমিত শেয়ারের ব্লক জড়িত) সাধারণ বাণিজ্যিক পণ্যের পরিবর্তে।\n\nধারা ২১ এরপর চুক্তির একটি সম্পূর্ণ তালিকার দরজা বন্ধ করে দেয়, প্রতিশ্রুতিপ্রাপ্ত ব্যক্তি ক্ষতিপূরণের পরিবর্তে পালন কতটা প্রবলভাবে চান তা নির্বিশেষে: (ক) যে চুক্তির জন্য অর্থ একটি পর্যাপ্ত প্রতিকার; (খ) এমন চুক্তি যা এত সূক্ষ্ম বা অসংখ্য বিবরণে পূর্ণ, বা কোনো পক্ষের ব্যক্তিগত যোগ্যতা বা ইচ্ছার উপর এতটাই নির্ভরশীল যে আদালত বাস্তবে এর মূল শর্তাবলি কার্যকর করতে পারে না -- এখানে আইনের নিজস্ব ধ্রুপদী দৃষ্টান্ত হলো ব্যক্তিগত সেবার চুক্তি এবং কেবল বিবাহের চুক্তি; (গ) যে চুক্তির শর্তাবলি আদালত যুক্তিসঙ্গত নিশ্চয়তার সাথে নির্ণয় করতে পারে না; (ঘ) যে চুক্তি প্রকৃতিগতভাবে প্রত্যাহারযোগ্য; (ঙ) ট্রাস্টিদের দ্বারা তাদের ক্ষমতার অতিরিক্ত বা ট্রাস্ট লঙ্ঘন করে সম্পাদিত চুক্তি; (চ) বিশেষ উদ্দেশ্যে গঠিত কোনো কর্পোরেশন কর্তৃক বা তার জন্য তার ক্ষমতার অতিরিক্ত সম্পাদিত চুক্তি; (ছ) তিন বছরের বেশি সময় ধরে বিস্তৃত ধারাবাহিক দায়িত্ব পালন প্রয়োজন এমন চুক্তি, যা আদালত বাস্তবে এত দীর্ঘ সময় তত্ত্বাবধান করতে পারে না; এবং (জ) যে চুক্তিতে বিষয়বস্তুর একটি গুরুত্বপূর্ণ অংশ -- উভয় পক্ষ বিশ্বাস করত যে তা বিদ্যমান -- চুক্তি সম্পাদনের আগেই প্রকৃতপক্ষে বিলুপ্ত হয়ে গিয়েছিল।\n\nএমনকি যখন কোনো চুক্তি ধারা ১২-এর ভিত্তি পূরণ করে এবং ধারা ২১-এর প্রতিটি বাধা এড়িয়ে যায়, তখনও আইনের সামগ্রিক কাঠামো অনুযায়ী (ধারা ২২-এর শিরোনাম 'নির্দিষ্ট পালনের ডিক্রি প্রদানের বিবেচনা'), নির্দিষ্ট পালন স্বয়ংক্রিয় অধিকার না হয়ে আদালতের বিবেচনার বিষয় থেকে যায় -- ধারা ১২ পূরণ করা কেবল সেই বিবেচনার দরজা খুলে দেয়, এটি নিজে থেকে প্রতিকারের নিশ্চয়তা দেয় না।",
+          "key_concepts": ["একটি বিবেচনাধীন ইকুইটেবল প্রতিকার হিসেবে নির্দিষ্ট পালন", "ধারা ১২-এর চারটি ইতিবাচক ভিত্তি", "ব্যাখ্যার স্থাবর/অস্থাবর অনুমান (খণ্ডনযোগ্য)", "ধারা ২১-এর কখনো-প্রয়োগযোগ্য-নয় চুক্তির বদ্ধ তালিকা", "ধারা ২২: বিবেচনা, স্বয়ংক্রিয় অধিকার নয়"],
+          "important_rules": [
+            "ধারা ১২: নির্দিষ্ট পালনের নির্দেশ দেওয়া যেতে পারে যখন (ক) তা একটি ট্রাস্ট পালন; (খ) প্রকৃত ক্ষতি পরিমাপের কোনো মানদণ্ড নেই; (গ) আর্থিক ক্ষতিপূরণ পর্যাপ্ত প্রতিকার দেবে না; অথবা (ঘ) আর্থিক ক্ষতিপূরণ প্রকৃতপক্ষে পাওয়া যাবে না বলে সম্ভাবনা থাকে।",
+            "ধারা ১২-এর ব্যাখ্যা: স্থাবর সম্পত্তি অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য নয় বলে অনুমিত (নির্দিষ্ট পালনের পক্ষে); অস্থাবর সম্পত্তি অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য বলে অনুমিত (ক্ষতিপূরণের পক্ষে) -- উভয় অনুমানই ঘটনার ভিত্তিতে খণ্ডনযোগ্য।",
+            "ধারা ২১: নির্দিষ্ট শ্রেণির চুক্তি -- অর্থ-পর্যাপ্ত-প্রতিকার চুক্তি, সূক্ষ্ম-বিবরণ/ব্যক্তিগত-দক্ষতা-নির্ভর চুক্তি, অনিশ্চিত-শর্ত চুক্তি, প্রত্যাহারযোগ্য চুক্তি, ক্ষমতা-অতিরিক্ত ট্রাস্টি/কর্পোরেট চুক্তি, ৩ বছরের বেশি ধারাবাহিক দায়িত্ব চুক্তি, এবং বিষয়বস্তু ইতিমধ্যে বিলুপ্ত চুক্তি -- কখনোই নির্দিষ্টভাবে প্রয়োগযোগ্য নয়।"
+          ],
+          "definitions": [
+            { "term": "নির্দিষ্ট পালন", "definition": "একটি ইকুইটেবল প্রতিকার যা কোনো চুক্তিবদ্ধ পক্ষকে তার চুক্তিগত প্রতিশ্রুতি প্রকৃতপক্ষে পালন করতে বাধ্য করে, আদালতের বিবেচনায় নির্দেশিত হয় যেখানে আর্থিক ক্ষতিপূরণ পক্ষগণের মধ্যে ন্যায়বিচার প্রতিষ্ঠা করবে না।" },
+            { "term": "পর্যাপ্ত প্রতিকার (এই প্রসঙ্গে)", "definition": "একটি অর্থের পরিমাণ প্রকৃতপক্ষে ক্ষতিগ্রস্ত পক্ষকে প্রকৃত পালনের মতো একই ভালো অবস্থানে রাখতে পারে কিনা -- যা ধারা ১২ ও ২১ উভয়ই নির্ভর করে এমন মূল মাপকাঠি।" }
+          ],
+          "examples": [
+            "ক পুরান ঢাকার একটি স্থাপত্যগতভাবে অনন্য ঐতিহ্যবাহী ভবন নির্দিষ্ট মূল্যে খ-এর কাছে বিক্রির জন্য চুক্তি করে, এরপর বিক্রয় সম্পন্ন করতে অস্বীকার করে। যেহেতু বিষয়বস্তুটি স্থাবর সম্পত্তি, ধারা ১২-এর ব্যাখ্যা অনুমান করে যে আর্থিক ক্ষতিপূরণ খ-কে পর্যাপ্তভাবে প্রতিকার দেবে না -- খ নির্দিষ্ট পালন চাইতে পারেন, যা ক-কে প্রকৃতপক্ষে ভবনটি হস্তান্তর করতে বাধ্য করবে।",
+            "ক একটি নির্দিষ্ট ফি-এর বিনিময়ে খ-এর ব্যক্তিগত অনুষ্ঠানে গায়ক হিসেবে পরিবেশন করার চুক্তি করে, এরপর অস্বীকার করে। খ স্পষ্টভাবে ক্ষতিগ্রস্ত হলেও, এটি একটি ব্যক্তিগত-সেবা চুক্তি -- ধারা ২১(খ)-এর বাধা প্রযোজ্য, কারণ আদালত এই ধরনের ব্যক্তিগত পরিবেশন বাস্তবে তত্ত্বাবধান বা বাধ্য করতে পারে না। খ-এর প্রতিকার ক্ষতিপূরণে সীমাবদ্ধ, ক-কে পরিবেশন করতে বাধ্য করার নির্দেশ নয়।"
+          ],
+          "exam_focus": "পরীক্ষকরা ধারা ১২-এর ব্যাখ্যার অধীনে স্থাবর/অস্থাবর অনুমান যাচাই করা ঘটনাপ্রবাহ পছন্দ করেন, এবং এমন ঘটনাপ্রবাহ যার জন্য ধারা ২১-এর কোন নির্দিষ্ট বাধা প্রযোজ্য তা চিহ্নিত করতে হয় -- বিশেষত (খ) ব্যক্তিগত-সেবা/দক্ষতা-নির্ভর চুক্তি এবং (ছ) তিন বছরের ধারাবাহিক-দায়িত্ব বাধা -- কেবল অস্পষ্টভাবে বলার পরিবর্তে যে 'এই চুক্তি নির্দিষ্টভাবে প্রয়োগ করা যায় না।'",
+          "common_traps": [
+            "মনে করা যে বাদী কেবল অর্থের চেয়ে প্রকৃত পালন প্রবলভাবে পছন্দ করেন বলেই নির্দিষ্ট পালন পাওয়া যায় -- বাদী পালন কতটা চান তা নির্বিশেষে ধারা ২১-এর বাধা প্রযোজ্য হয়।",
+            "ধারা ১২-এর ব্যাখ্যার অনুমানকে চূড়ান্ত মনে করা, খণ্ডনযোগ্য নয় -- প্রকৃতপক্ষে অনন্য অস্থাবর সম্পত্তি অস্থাবর সম্পত্তির জন্য ক্ষতিপূরণের সাধারণ অনুমান সত্ত্বেও নির্দিষ্ট পালনের যোগ্য হতে পারে।",
+            "ধারা ১২ একাই যথেষ্ট মনে করা -- ধারা ১২ পূরণ করা কেবল ধারা ২২-এর অধীনে আদালতের বিবেচনার দরজা খোলে; এটি প্রতিকারের নিশ্চয়তা দেয় না।",
+            "ধারা ২১(ছ)-এর ৩ বছরের সংখ্যাটিকে একটি অসম্পর্কিত তামাদির মেয়াদের সাথে গুলিয়ে ফেলা -- এটি সুনির্দিষ্টভাবে একটি ধারাবাহিক দায়িত্ব কতদিন চলে তা নিয়ে, মামলা দায়েরের সময়সীমা নয়।"
+          ],
+          "quick_revision": [
+            "ধারা ১২ = কখন পালনের নির্দেশ দেওয়া যেতে পারে: ট্রাস্ট, ক্ষতি-মানদণ্ড নেই, অর্থ-অপর্যাপ্ত, অর্থ-অপ্রাপ্য।",
+            "ব্যাখ্যা = স্থাবর অনুমিত অর্থ-অপর্যাপ্ত (পালনের পক্ষে); অস্থাবর অনুমিত অর্থ-পর্যাপ্ত (ক্ষতিপূরণের পক্ষে) -- খণ্ডনযোগ্য।",
+            "ধারা ২১ = কখনো-প্রয়োগযোগ্য-নয় চুক্তির বদ্ধ তালিকা: অর্থ-পর্যাপ্ত, সূক্ষ্ম-বিবরণ/ব্যক্তিগত-দক্ষতা, অনিশ্চিত শর্ত, প্রত্যাহারযোগ্য, ক্ষমতা-অতিরিক্ত ট্রাস্টি/কর্পোরেট, ৩+ বছর ধারাবাহিক দায়িত্ব, বিষয়বস্তু ইতিমধ্যে বিলুপ্ত।",
+            "ধারা ২২ = ধারা ১২ পূরণ ও ধারা ২১ পার হলেও, প্রতিকারটি এখনও বিবেচনাধীন, অধিকার নয়।"
+          ],
+          "key_takeaways": [
+            "নির্দিষ্ট পালন চুক্তি ভঙ্গের ব্যতিক্রম প্রতিকার, স্বাভাবিক প্রতিকার নয় -- আর্থিক ক্ষতিপূরণই সাধারণ নিয়ম থেকে যায়।",
+            "ধারা ১২-এর ব্যাখ্যার স্থাবর/অস্থাবর অনুমান যুক্তির একটি সূচনাবিন্দু, স্থির নিয়ম নয় -- প্রকৃত অনন্যতা অস্থাবর-সম্পত্তির অনুমান উল্টে দিতে পারে।",
+            "ধারা ২১-এর বাধাগুলো এর অন্তর্ভুক্ত শ্রেণির জন্য চূড়ান্ত -- বাদীর পছন্দ বা কষ্ট যতই হোক না কেন তা অতিক্রম করে না, যদিও হতাশ পক্ষ পরিবর্তে ক্ষতিপূরণ দাবি করতে পারেন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-SRA-S12",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Specific Relief Act, 1877",
+      "act_year": 1877,
+      "act_number": "Act No. I of 1877",
+      "section_or_order": "Section 12, including Explanation and illustrations",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-SRA1877-001"],
+      "note": "Verbatim text fetched directly from bdlaws.minlaw.gov.bd during this session. The lesson paraphrases this text rather than quoting it at length, per this dataset's copyright policy."
+    },
+    {
+      "content_id": "LREF-SRA-S21",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Specific Relief Act, 1877",
+      "act_year": 1877,
+      "act_number": "Act No. I of 1877",
+      "section_or_order": "Section 21, including illustrations",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-SRA1877-001"],
+      "note": "Verbatim text fetched directly from bdlaws.minlaw.gov.bd during this session. The lesson paraphrases this text rather than quoting it at length, per this dataset's copyright policy."
+    },
+    {
+      "content_id": "LREF-SRA-S22",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Specific Relief Act, 1877",
+      "act_year": 1877,
+      "act_number": "Act No. I of 1877",
+      "section_or_order": "Section 22 ('Discretion as to decreeing specific performance')",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-BDLAWS-SRA1877-001"],
+      "note": "Section title confirmed directly from the Act's table of contents on bdlaws.minlaw.gov.bd. This dataset has NOT read Section 22's full operative text -- the lesson's discussion of it reflects general, well-established equitable-remedy doctrine (specific performance is always discretionary) rather than a verbatim-verified reading of the section itself. Flagged accordingly, distinct from S.12/S.21 which were read in full."
+    },
+    {
+      "content_id": "BC-MCQ-SRA-SP-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-SRA-SP-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-SRA",
+      "topic_id": "T-SRA-04",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-SRA-S12"],
+      "exam_focus": "The Section 12 Explanation's immovable/movable presumption.",
+      "source_basis": "Original question drawn directly from the verbatim text of the Section 12 Explanation.",
+      "mistake_tags": ["s12-explanation-presumption-reversed"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-SRA-SPECIFICPERFORMANCE-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under the Explanation to Section 12 of the Specific Relief Act, 1877, unless the contrary is proved, the Court presumes that:",
+          "options": { "A": "Breach of a contract to transfer movable property cannot be adequately relieved by money, while breach of a contract to transfer immovable property can be", "B": "Breach of a contract to transfer immovable property cannot be adequately relieved by money, while breach of a contract to transfer movable property can be", "C": "Neither movable nor immovable property breaches can ever be adequately relieved by money", "D": "Both movable and immovable property breaches are always adequately relieved by money" },
+          "explanation": "The Explanation presumes that breach of a contract to transfer immovable property cannot be adequately relieved by money (favouring specific performance), and that breach of a contract to transfer movable property can be so relieved (favouring damages) -- the reverse of option A.",
+          "why_other_options_are_wrong": { "A": "This states the presumption exactly backwards.", "C": "This ignores that the section draws any presumption at all, and ignores that the presumption is rebuttable.", "D": "This also ignores the distinction the Explanation actually draws between the two categories." }
+        },
+        "bn": {
+          "question": "নির্দিষ্ট প্রতিকার আইন, ১৮৭৭-এর ধারা ১২-এর ব্যাখ্যা অনুযায়ী, বিপরীত প্রমাণিত না হওয়া পর্যন্ত, আদালত অনুমান করে যে:",
+          "options": { "A": "অস্থাবর সম্পত্তি হস্তান্তরের চুক্তি ভঙ্গ অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য নয়, যেখানে স্থাবর সম্পত্তি হস্তান্তরের চুক্তি ভঙ্গ পর্যাপ্তভাবে প্রতিকারযোগ্য", "B": "স্থাবর সম্পত্তি হস্তান্তরের চুক্তি ভঙ্গ অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য নয়, যেখানে অস্থাবর সম্পত্তি হস্তান্তরের চুক্তি ভঙ্গ পর্যাপ্তভাবে প্রতিকারযোগ্য", "C": "স্থাবর বা অস্থাবর কোনো সম্পত্তির ভঙ্গই কখনো অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য নয়", "D": "স্থাবর ও অস্থাবর উভয় সম্পত্তির ভঙ্গই সর্বদা অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য" },
+          "explanation": "ব্যাখ্যাটি অনুমান করে যে স্থাবর সম্পত্তি হস্তান্তরের চুক্তি ভঙ্গ অর্থ দ্বারা পর্যাপ্তভাবে প্রতিকারযোগ্য নয় (নির্দিষ্ট পালনের পক্ষে), এবং অস্থাবর সম্পত্তি হস্তান্তরের চুক্তি ভঙ্গ তা দ্বারা প্রতিকারযোগ্য (ক্ষতিপূরণের পক্ষে) -- বিকল্প A-এর সম্পূর্ণ বিপরীত।",
+          "why_other_options_are_wrong": { "A": "এটি অনুমানটি সম্পূর্ণ উল্টোভাবে বলে।", "C": "এটি উপেক্ষা করে যে ধারাটি আদৌ কোনো অনুমান করে, এবং অনুমানটি খণ্ডনযোগ্য তাও উপেক্ষা করে।", "D": "এটিও ব্যাখ্যাটি প্রকৃতপক্ষে দুই শ্রেণির মধ্যে যে পার্থক্য করে তা উপেক্ষা করে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-SRA-SP-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-SRA-SP-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-SRA",
+      "topic_id": "T-SRA-04",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-SRA-S21"],
+      "exam_focus": "Section 21(b) -- personal-service contracts.",
+      "source_basis": "Original fact pattern applying Section 21(b).",
+      "mistake_tags": ["s21b-personal-service"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-SRA-SPECIFICPERFORMANCE-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A agrees to work as B's personal chef for one year, then later refuses to work. Which provision most directly bars B from obtaining specific performance of this contract?",
+          "options": { "A": "Section 12(a) -- performance of a trust", "B": "Section 21(b) -- a contract dependent on personal qualifications that the Court cannot enforce", "C": "Section 21(g) -- a continuous duty extending beyond three years", "D": "Section 12(d) -- pecuniary compensation probably unobtainable" },
+          "explanation": "A personal-service contract is a classic illustration of Section 21(b): it depends on the personal qualifications and volition of the party, and a court cannot practically enforce or supervise this kind of performance.",
+          "why_other_options_are_wrong": { "A": "No trust is involved in this fact pattern.", "C": "Section 21(g) requires a duty extending beyond THREE years; this contract is only for one year.", "D": "Section 12(d) concerns whether money compensation can actually be obtained, which is a different question and does not fit this fact pattern." }
+        },
+        "bn": {
+          "question": "ক এক বছরের জন্য খ-এর ব্যক্তিগত রাঁধুনি হিসেবে কাজ করতে সম্মত হয়, এরপর কাজ করতে অস্বীকার করে। কোন বিধানটি সবচেয়ে সরাসরি খ-কে এই চুক্তির নির্দিষ্ট পালন পেতে বাধা দেয়?",
+          "options": { "A": "ধারা ১২(ক) -- একটি ট্রাস্ট পালন", "B": "ধারা ২১(খ) -- ব্যক্তিগত যোগ্যতার উপর নির্ভরশীল একটি চুক্তি যা আদালত কার্যকর করতে পারে না", "C": "ধারা ২১(ছ) -- তিন বছরের বেশি বিস্তৃত ধারাবাহিক দায়িত্ব", "D": "ধারা ১২(ঘ) -- আর্থিক ক্ষতিপূরণ সম্ভবত অপ্রাপ্য" },
+          "explanation": "একটি ব্যক্তিগত-সেবার চুক্তি ধারা ২১(খ)-এর একটি ধ্রুপদী দৃষ্টান্ত: এটি পক্ষের ব্যক্তিগত যোগ্যতা ও ইচ্ছার উপর নির্ভরশীল, এবং আদালত এই ধরনের পালন বাস্তবে কার্যকর বা তত্ত্বাবধান করতে পারে না।",
+          "why_other_options_are_wrong": { "A": "এই ঘটনাপ্রবাহে কোনো ট্রাস্ট জড়িত নয়।", "C": "ধারা ২১(ছ)-এর জন্য তিন বছরের বেশি বিস্তৃত দায়িত্ব প্রয়োজন; এই চুক্তি মাত্র এক বছরের জন্য।", "D": "ধারা ১২(ঘ) আর্থিক ক্ষতিপূরণ প্রকৃতপক্ষে পাওয়া যাবে কিনা তা নিয়ে, যা একটি ভিন্ন প্রশ্ন এবং এই ঘটনাপ্রবাহে খাপ খায় না।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-SRA-SP-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-SRA-SP-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-SRA",
+      "topic_id": "T-SRA-04",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-SRA-S21"],
+      "exam_focus": "The exact 3-year figure in Section 21(g).",
+      "source_basis": "Original question drawn directly from the verbatim text of Section 21(g).",
+      "mistake_tags": ["s21g-three-year-figure"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-SRA-SPECIFICPERFORMANCE-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 21(g) of the Specific Relief Act, 1877, a contract cannot be specifically enforced if it requires performance of a continuous duty extending over a period longer than:",
+          "options": { "A": "One year", "B": "Two years", "C": "Three years", "D": "Five years" },
+          "explanation": "Section 21(g) sets the threshold at longer than three years -- a continuous duty a court cannot practically supervise for that length of time.",
+          "why_other_options_are_wrong": { "A": "One year is not the statutory threshold.", "B": "Two years is not the statutory threshold.", "D": "Five years is not the statutory threshold -- this overstates the bar." }
+        },
+        "bn": {
+          "question": "নির্দিষ্ট প্রতিকার আইন, ১৮৭৭-এর ধারা ২১(ছ) অনুযায়ী, কোনো চুক্তি নির্দিষ্টভাবে প্রয়োগ করা যাবে না যদি তাতে এর বেশি সময় ধরে বিস্তৃত ধারাবাহিক দায়িত্ব পালন প্রয়োজন হয়:",
+          "options": { "A": "এক বছর", "B": "দুই বছর", "C": "তিন বছর", "D": "পাঁচ বছর" },
+          "explanation": "ধারা ২১(ছ) সীমা নির্ধারণ করে তিন বছরের বেশি -- একটি ধারাবাহিক দায়িত্ব যা আদালত এত দীর্ঘ সময় বাস্তবে তত্ত্বাবধান করতে পারে না।",
+          "why_other_options_are_wrong": { "A": "এক বছর সংবিধিবদ্ধ সীমা নয়।", "B": "দুই বছর সংবিধিবদ্ধ সীমা নয়।", "D": "পাঁচ বছর সংবিধিবদ্ধ সীমা নয় -- এটি বাধাটিকে অতিরিক্ত বলে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-SRA-SP-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-SRA-SP-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-SRA",
+      "topic_id": "T-SRA-04",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-SRA-S22"],
+      "exam_focus": "Specific performance as discretionary, not a right, even once Section 12 is satisfied.",
+      "source_basis": "Original question on general equitable-remedy doctrine as reflected in Section 22's title.",
+      "mistake_tags": ["s12-not-automatic-right"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-SRA-SPECIFICPERFORMANCE-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A contract satisfies all four grounds listed in Section 12 for specific performance and is not barred by any clause of Section 21. Does the plaintiff have an absolute right to a decree of specific performance?",
+          "options": { "A": "Yes, satisfying Section 12 and clearing Section 21 creates an absolute right to the remedy", "B": "No, specific performance remains a matter for the Court's discretion even then", "C": "Yes, but only if the contract concerns immovable property", "D": "No, specific performance is never available under the Specific Relief Act" },
+          "explanation": "Meeting Section 12's grounds and clearing Section 21's bars only makes the remedy available for the Court to consider -- the Act keeps the ultimate decision to decree specific performance a matter of judicial discretion (Section 22), not an automatic entitlement.",
+          "why_other_options_are_wrong": { "A": "This overstates the effect of Sections 12 and 21 -- neither creates an absolute right.", "C": "This wrongly ties the discretion point to property type; discretion applies regardless of whether the property is movable or immovable.", "D": "This is factually wrong -- specific performance is clearly available under the Act in the appropriate circumstances, just not automatically." }
+        },
+        "bn": {
+          "question": "একটি চুক্তি নির্দিষ্ট পালনের জন্য ধারা ১২-এ তালিকাভুক্ত সবগুলো ভিত্তি পূরণ করে এবং ধারা ২১-এর কোনো ধারা দ্বারা বাধাপ্রাপ্ত নয়। বাদীর কি নির্দিষ্ট পালনের ডিক্রি পাওয়ার নিরঙ্কুশ অধিকার আছে?",
+          "options": { "A": "হ্যাঁ, ধারা ১২ পূরণ ও ধারা ২১ পার হওয়া প্রতিকারের নিরঙ্কুশ অধিকার তৈরি করে", "B": "না, নির্দিষ্ট পালন তখনও আদালতের বিবেচনার বিষয় থেকে যায়", "C": "হ্যাঁ, তবে কেবল চুক্তিটি স্থাবর সম্পত্তি সম্পর্কিত হলে", "D": "না, নির্দিষ্ট প্রতিকার আইনের অধীনে নির্দিষ্ট পালন কখনোই পাওয়া যায় না" },
+          "explanation": "ধারা ১২-এর ভিত্তি পূরণ ও ধারা ২১-এর বাধা পার হওয়া কেবল আদালতের বিবেচনার জন্য প্রতিকারটি উপলব্ধ করে -- আইন নির্দিষ্ট পালনের ডিক্রি প্রদানের চূড়ান্ত সিদ্ধান্ত বিচারিক বিবেচনার (ধারা ২২) বিষয় হিসেবেই রাখে, স্বয়ংক্রিয় অধিকার নয়।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ১২ ও ২১-এর প্রভাব অতিরিক্ত বলে -- কোনোটিই নিরঙ্কুশ অধিকার তৈরি করে না।", "C": "এটি ভুলভাবে বিবেচনার বিষয়টি সম্পত্তির ধরনের সাথে যুক্ত করে; সম্পত্তি স্থাবর বা অস্থাবর যাই হোক না কেন বিবেচনা প্রযোজ্য।", "D": "এটি বাস্তবিকভাবে ভুল -- উপযুক্ত পরিস্থিতিতে আইনের অধীনে নির্দিষ্ট পালন স্পষ্টভাবে পাওয়া যায়, কেবল স্বয়ংক্রিয়ভাবে নয়।" }
+        }
+      }
+    }
+  ]
+}

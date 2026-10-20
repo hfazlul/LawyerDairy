@@ -1,0 +1,2656 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "HC_PERMISSION_DRAFTING_SYLLABUS_2026",
+  "status": "PENDING_REVIEW",
+  "official_past_papers": 0,
+  "official_notice_fetched": false,
+  "official_notice_note": "2026-09-15: barcouncil.gov.bd Cloudflare 403; supremecourt.gov.bd 200 judgments/cause lists, no Permission PDF; bar.teletalk.com.bd forms only; dpp.gov.bd gazette index; Wayback 2023-06 enrolment syllabus (no question papers).",
+  "note": "Interactive drafting+viva trainer from user 2026 outline + bdlaws. Fictional facts labelled মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়. Not fake past papers.",
+  "fetched": "2026-09-15",
+  "assets": [
+    {
+      "content_id": "HC-DRAFT-SYL-2026",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-SYL-2026",
+      "order": 20,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "user_paper_confirmed_marks_8_8_9"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "হাইকোর্ট পারমিশন সিলেবাস ২০২৬ (যাচাইকৃত রূপরেখা)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "ব্যবহারকারীর পেস্ট: লিখিত ২৫ + ভাইভা ২৫; পাস ১২ করে; মোট অন্তত ২৫ (এক পাশে ১২ হলে অন্য পাশে ১৩)। Group A দেওয়ানি: Memo of Appeal ও CPC ১১৫ রিভিশন। Group B ফৌজদারি: Memo of Appeal, CrPC ৫৬১এ, CrPC ৪৯১। Group C রিট: সংবিধান অনুচ্ছেদ ১০২-এর পাঁচ রিট (Mandamus, Certiorari, Habeas Corpus, Prohibition, Quo-Warranto)।\n\nঅ্যাপে আগে থেকেই SEC-DRAFT-এ এই যন্ত্রগুলো নামে আছে (DRAFT-001…005)। অফিসিয়াল Permission PDF নেই। ব্যবহারকারীর ২০২৪ (১০ মে) ও ২০২৫ (২৪ অক্টোবর) ছবিতে Full Marks 25, Time 3 Hours, এক Group থেকে একটি; ডান মার্জিন দেওয়ানি ৮ / ফৌজদারি ৮ / রিট ৯ — user-supplied পেপার, গেজেট নয়। পাস ১২+১২ এখনও সিলেবাস পেস্ট। HC MCQ ব্যাংক উদ্ভাবন করা হয়নি।",
+          "structure": [
+            "লিখিত ২৫ + ভাইভা ২৫ (ব্যবহারকারী সিলেবাস; অফিসিয়াল PDF নেই)",
+            "Group A / B / C ড্রাফটিং",
+            "৮/৮/৯ ও ৩ ঘণ্টা — ২০২৪ ও ২০২৫ user-supplied পেপার"
+          ],
+          "grounds": [
+            "৮/৮/৯ মার্ক: ব্যবহারকারীর ২০২৪ ও ২০২৫ ছবি; গেজেট নয়।",
+            "আইন: CPC 115, CrPC 410/561A/491, Constitution Art. 102।"
+          ],
+          "prayer": [
+            "সিলেবাস মডিউল + PREVQ-এ ২০২৪/২০২৫ লিখিত কার্ড।"
+          ],
+          "key_concepts": [
+            "লিখিত ২৫ + ভাইভা ২৫ (ব্যবহারকারী সিলেবাস; অফিসিয়াল PDF নেই)",
+            "Group A / B / C ড্রাফটিং",
+            "৮/৮/৯ ও ৩ ঘণ্টা — ২০২৪ ও ২০২৫ user-supplied পেপার"
+          ],
+          "important_rules": [
+            "৮/৮/৯ মার্ক: ব্যবহারকারীর ২০২৪ ও ২০২৫ ছবি; গেজেট নয়।",
+            "আইন: CPC 115, CrPC 410/561A/491, Constitution Art. 102।"
+          ],
+          "examples": [
+            "সিলেবাস মডিউল + PREVQ-এ ২০২৪/২০২৫ লিখিত কার্ড।"
+          ],
+          "common_traps": [
+            "কোচিং FAQ-কে অফিসিয়াল গেজেট মনে করা",
+            "নকল বিগত পেপার বানানো"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "HC Permission syllabus 2026 (verified outline)",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "User paste: Written 25 + Viva 25; pass 12 each; combined at least 25. Group A civil memo of appeal + CPC 115. Group B criminal memo of appeal + CrPC 561A + 491. Group C Art. 102 five writs. 15 Sep 2026: no official Permission PDF. User photos of 10 May 2024 and 24 Oct 2025 show Full Marks 25, 3 hours, one question per group; margin marks civil 8 / criminal 8 / writ 9 — confirmed on those papers, not a gazette PDF. Pass 12+12 still from the user syllabus paste. No invented HC MCQ bank (2019 notice announced MCQ; 2024–25 papers are written).",
+          "structure": [
+            "লিখিত ২৫ + ভাইভা ২৫ (ব্যবহারকারী সিলেবাস; অফিসিয়াল PDF নেই)",
+            "Group A / B / C ড্রাফটিং",
+            "৮/৮/৯ ও ৩ ঘণ্টা — ২০২৪ ও ২০২৫ user-supplied পেপার"
+          ],
+          "grounds": [
+            "৮/৮/৯ মার্ক: ব্যবহারকারীর ২০২৪ ও ২০২৫ ছবি; গেজেট নয়।",
+            "আইন: CPC 115, CrPC 410/561A/491, Constitution Art. 102।"
+          ],
+          "prayer": [
+            "সিলেবাস মডিউল + PREVQ-এ ২০২৪/২০২৫ লিখিত কার্ড।"
+          ],
+          "key_concepts": [
+            "লিখিত ২৫ + ভাইভা ২৫ (ব্যবহারকারী সিলেবাস; অফিসিয়াল PDF নেই)",
+            "Group A / B / C ড্রাফটিং",
+            "৮/৮/৯ ও ৩ ঘণ্টা — ২০২৪ ও ২০২৫ user-supplied পেপার"
+          ],
+          "important_rules": [
+            "৮/৮/৯ মার্ক: ব্যবহারকারীর ২০২৪ ও ২০২৫ ছবি; গেজেট নয়।",
+            "আইন: CPC 115, CrPC 410/561A/491, Constitution Art. 102।"
+          ],
+          "examples": [
+            "সিলেবাস মডিউল + PREVQ-এ ২০২৪/২০২৫ লিখিত কার্ড।"
+          ],
+          "common_traps": [
+            "কোচিং FAQ-কে অফিসিয়াল গেজেট মনে করা",
+            "নকল বিগত পেপার বানানো"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-CIVIL-APPEAL",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-CIVIL-APPEAL",
+      "order": 21,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group A — দেওয়ানি Memo of Appeal",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "দেওয়ানি আপিল সাধারণত CPC ১৯০৮-এর ধারা ৯৬ (প্রথম আপিল) ইত্যাদি সক্ষমকারী বিধান উল্লেখ করে অধস্তন আদালতের ডিক্রি/চূড়ান্ত আদেশ চ্যালেঞ্জ করে। আপিল তথ্য ও আইন উভয়ের ভুল ধরতে পারে; রিভিশন (ধারা ১১৫) তা করে না।",
+          "structure": [
+            "আদালতের নাম, আপিল নম্বর, cause title",
+            "নিম্ন আদালত, মামলা নম্বর, চ্যালেঞ্জকৃত ডিক্রির তারিখ",
+            "ঘটনার ক্রম",
+            "নম্বরযুক্ত grounds",
+            "প্রার্থনা, সত্যায়ন, স্বাক্ষর"
+          ],
+          "grounds": [
+            "নিম্ন আদালতের আইনি ভুল",
+            "প্রমাণ মূল্যায়নের ভুল (আপিলে)",
+            "ডিক্রি টিকবে না কেন — পয়েন্ট আকারে"
+          ],
+          "prayer": [
+            "ডিক্রি বাতিল/সংশোধন",
+            "খরচ",
+            "অন্তর্বর্তীকালীন আদেশ যদি চান"
+          ],
+          "key_concepts": [
+            "আদালতের নাম, আপিল নম্বর, cause title",
+            "নিম্ন আদালত, মামলা নম্বর, চ্যালেঞ্জকৃত ডিক্রির তারিখ",
+            "ঘটনার ক্রম",
+            "নম্বরযুক্ত grounds",
+            "প্রার্থনা, সত্যায়ন, স্বাক্ষর"
+          ],
+          "important_rules": [
+            "নিম্ন আদালতের আইনি ভুল",
+            "প্রমাণ মূল্যায়নের ভুল (আপিলে)",
+            "ডিক্রি টিকবে না কেন — পয়েন্ট আকারে"
+          ],
+          "examples": [
+            "ডিক্রি বাতিল/সংশোধন",
+            "খরচ",
+            "অন্তর্বর্তীকালীন আদেশ যদি চান"
+          ],
+          "common_traps": [
+            "আপিলকে রিভিশনের মতো শুধু এখতিয়ারগত ভুলে সীমাবদ্ধ করা"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group A — Civil memorandum of appeal",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "A civil first appeal commonly cites CPC 1908 s.96 (and related provisions) against a decree. Appeal may raise error of fact and of law; revision under s.115 does not re-try facts.",
+          "structure": [
+            "আদালতের নাম, আপিল নম্বর, cause title",
+            "নিম্ন আদালত, মামলা নম্বর, চ্যালেঞ্জকৃত ডিক্রির তারিখ",
+            "ঘটনার ক্রম",
+            "নম্বরযুক্ত grounds",
+            "প্রার্থনা, সত্যায়ন, স্বাক্ষর"
+          ],
+          "grounds": [
+            "নিম্ন আদালতের আইনি ভুল",
+            "প্রমাণ মূল্যায়নের ভুল (আপিলে)",
+            "ডিক্রি টিকবে না কেন — পয়েন্ট আকারে"
+          ],
+          "prayer": [
+            "ডিক্রি বাতিল/সংশোধন",
+            "খরচ",
+            "অন্তর্বর্তীকালীন আদেশ যদি চান"
+          ],
+          "key_concepts": [
+            "আদালতের নাম, আপিল নম্বর, cause title",
+            "নিম্ন আদালত, মামলা নম্বর, চ্যালেঞ্জকৃত ডিক্রির তারিখ",
+            "ঘটনার ক্রম",
+            "নম্বরযুক্ত grounds",
+            "প্রার্থনা, সত্যায়ন, স্বাক্ষর"
+          ],
+          "important_rules": [
+            "নিম্ন আদালতের আইনি ভুল",
+            "প্রমাণ মূল্যায়নের ভুল (আপিলে)",
+            "ডিক্রি টিকবে না কেন — পয়েন্ট আকারে"
+          ],
+          "examples": [
+            "ডিক্রি বাতিল/সংশোধন",
+            "খরচ",
+            "অন্তর্বর্তীকালীন আদেশ যদি চান"
+          ],
+          "common_traps": [
+            "আপিলকে রিভিশনের মতো শুধু এখতিয়ারগত ভুলে সীমাবদ্ধ করা"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-CIVIL-REV115",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-CIVIL-REV115",
+      "order": 22,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group A — দেওয়ানি রিভিশন (CPC ১১৫)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "CPC ধারা ১১৫: হাইকোর্ট বিভাগ অধস্তন আদালতের রেকর্ড তলব করতে পারে যদি (ক) আইনগত এখতিয়ার নেই এমন ক্ষমতা ব্যবহার হয়, (খ) অর্পিত এখতিয়ার প্রয়োগে ব্যর্থতা হয়, অথবা (গ) এখতিয়ার প্রয়োগে বেআইনিভাবে বা বস্তুগত অনিয়মে কাজ হয়। সাধারণ তথ্যগত আপিল নয়।",
+          "structure": [
+            "শিরোনামে s.115 CPC",
+            "চ্যালেঞ্জকৃত আদেশ",
+            "এখতিয়ারগত grounds",
+            "প্রার্থনা"
+          ],
+          "grounds": [
+            "Jurisdiction not vested",
+            "Failure to exercise jurisdiction",
+            "Illegality or material irregularity"
+          ],
+          "prayer": [
+            "আদেশ বাতিল/সংশোধন",
+            "মামলা পুনর্বিচারের নির্দেশ যদি প্রযোজ্য"
+          ],
+          "key_concepts": [
+            "শিরোনামে s.115 CPC",
+            "চ্যালেঞ্জকৃত আদেশ",
+            "এখতিয়ারগত grounds",
+            "প্রার্থনা"
+          ],
+          "important_rules": [
+            "Jurisdiction not vested",
+            "Failure to exercise jurisdiction",
+            "Illegality or material irregularity"
+          ],
+          "examples": [
+            "আদেশ বাতিল/সংশোধন",
+            "মামলা পুনর্বিচারের নির্দেশ যদি প্রযোজ্য"
+          ],
+          "common_traps": [
+            "শুধু “রায় ভুল” লেখা — ধারা ১১৫-এর তিন শাখা না মিলিয়ে"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group A — Civil revision (CPC s.115)",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "CPC s.115 revisional jurisdiction: exercise of jurisdiction not vested; failure to exercise jurisdiction vested; or illegality/material irregularity in exercising jurisdiction. Not a second appeal on facts.",
+          "structure": [
+            "শিরোনামে s.115 CPC",
+            "চ্যালেঞ্জকৃত আদেশ",
+            "এখতিয়ারগত grounds",
+            "প্রার্থনা"
+          ],
+          "grounds": [
+            "Jurisdiction not vested",
+            "Failure to exercise jurisdiction",
+            "Illegality or material irregularity"
+          ],
+          "prayer": [
+            "আদেশ বাতিল/সংশোধন",
+            "মামলা পুনর্বিচারের নির্দেশ যদি প্রযোজ্য"
+          ],
+          "key_concepts": [
+            "শিরোনামে s.115 CPC",
+            "চ্যালেঞ্জকৃত আদেশ",
+            "এখতিয়ারগত grounds",
+            "প্রার্থনা"
+          ],
+          "important_rules": [
+            "Jurisdiction not vested",
+            "Failure to exercise jurisdiction",
+            "Illegality or material irregularity"
+          ],
+          "examples": [
+            "আদেশ বাতিল/সংশোধন",
+            "মামলা পুনর্বিচারের নির্দেশ যদি প্রযোজ্য"
+          ],
+          "common_traps": [
+            "শুধু “রায় ভুল” লেখা — ধারা ১১৫-এর তিন শাখা না মিলিয়ে"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-CRIM-APPEAL",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-CRIM-APPEAL",
+      "order": 23,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group B — ফৌজদারি Memo of Appeal",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "দণ্ডাদেশ/সাজার বিরুদ্ধে ফৌজদারি আপিল সাধারণত CrPC ১৮৯৮-এর ধারা ৪১০ (এবং সংশ্লিষ্ট আপিল বিধান) উল্লেখ করে খসড়া হয়। সাক্ষ্য মূল্যায়ন ও আইনের ভুল আলাদা করে লিখুন। জামিন/জামিননামা প্রার্থনা আলাদা ধারায় চাইতে হয়।",
+          "structure": [
+            "Cause title ও s.410 (বা প্রযোজ্য আপিল ধারা)",
+            "দণ্ডাদেশের সার",
+            "grounds",
+            "প্রার্থনা (খালাস/সাজা হ্রাস/জামিন)"
+          ],
+          "grounds": [
+            "সাক্ষ্য যথেষ্ট নয়",
+            "আইনের ভুল নির্দেশ",
+            "সাজা অতিরিক্ত"
+          ],
+          "prayer": [
+            "দণ্ডাদেশ বাতিল",
+            "বিকল্প সাজা",
+            "জামিন যদি চান"
+          ],
+          "key_concepts": [
+            "Cause title ও s.410 (বা প্রযোজ্য আপিল ধারা)",
+            "দণ্ডাদেশের সার",
+            "grounds",
+            "প্রার্থনা (খালাস/সাজা হ্রাস/জামিন)"
+          ],
+          "important_rules": [
+            "সাক্ষ্য যথেষ্ট নয়",
+            "আইনের ভুল নির্দেশ",
+            "সাজা অতিরিক্ত"
+          ],
+          "examples": [
+            "দণ্ডাদেশ বাতিল",
+            "বিকল্প সাজা",
+            "জামিন যদি চান"
+          ],
+          "common_traps": [
+            "জামিন প্রার্থনা ছাড়াই শুধু আপিল",
+            "৫৬১এ-কে আপিল মনে করা"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group B — Criminal memorandum of appeal",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "Criminal appeals against conviction/sentence are commonly drafted under CrPC 1898 s.410 and related appeal provisions. Separate evidence-evaluation grounds from pure points of law. Bail, if sought, is a distinct prayer.",
+          "structure": [
+            "Cause title ও s.410 (বা প্রযোজ্য আপিল ধারা)",
+            "দণ্ডাদেশের সার",
+            "grounds",
+            "প্রার্থনা (খালাস/সাজা হ্রাস/জামিন)"
+          ],
+          "grounds": [
+            "সাক্ষ্য যথেষ্ট নয়",
+            "আইনের ভুল নির্দেশ",
+            "সাজা অতিরিক্ত"
+          ],
+          "prayer": [
+            "দণ্ডাদেশ বাতিল",
+            "বিকল্প সাজা",
+            "জামিন যদি চান"
+          ],
+          "key_concepts": [
+            "Cause title ও s.410 (বা প্রযোজ্য আপিল ধারা)",
+            "দণ্ডাদেশের সার",
+            "grounds",
+            "প্রার্থনা (খালাস/সাজা হ্রাস/জামিন)"
+          ],
+          "important_rules": [
+            "সাক্ষ্য যথেষ্ট নয়",
+            "আইনের ভুল নির্দেশ",
+            "সাজা অতিরিক্ত"
+          ],
+          "examples": [
+            "দণ্ডাদেশ বাতিল",
+            "বিকল্প সাজা",
+            "জামিন যদি চান"
+          ],
+          "common_traps": [
+            "জামিন প্রার্থনা ছাড়াই শুধু আপিল",
+            "৫৬১এ-কে আপিল মনে করা"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-561A",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-561A",
+      "order": 24,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group B — CrPC ৫৬১এ (quashment)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "ধারা ৫৬১এ হাইকোর্ট বিভাগের সহজাত ক্ষমতা: আদালতের প্রক্রিয়ার অপব্যবহার রোধ বা ন্যায়বিচার নিশ্চিত করা। এটি সাধারণ আপিল/রিভিশন নয়।",
+          "structure": [
+            "শিরোনামে s.561A",
+            "FIR/চার্জের ইতিহাস",
+            "কেন সাধারণ প্রতিকার অপর্যাপ্ত",
+            "প্রার্থনা: কার্যক্রম quash"
+          ],
+          "grounds": [
+            "Abuse of process",
+            "প্রাথমিক অপরাধ নেই",
+            "আইনগত বার",
+            "mala fide"
+          ],
+          "prayer": [
+            "কার্যক্রম বাতিল",
+            "অন্তর্বর্তী স্থগিতাদেশ"
+          ],
+          "key_concepts": [
+            "শিরোনামে s.561A",
+            "FIR/চার্জের ইতিহাস",
+            "কেন সাধারণ প্রতিকার অপর্যাপ্ত",
+            "প্রার্থনা: কার্যক্রম quash"
+          ],
+          "important_rules": [
+            "Abuse of process",
+            "প্রাথমিক অপরাধ নেই",
+            "আইনগত বার",
+            "mala fide"
+          ],
+          "examples": [
+            "কার্যক্রম বাতিল",
+            "অন্তর্বর্তী স্থগিতাদেশ"
+          ],
+          "common_traps": [
+            "এটিকে নিত্য আপিল হিসেবে খসড়া করা"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group B — CrPC s.561A",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "CrPC s.561A is inherent power to prevent abuse of process or secure the ends of justice. It is not a routine appeal.",
+          "structure": [
+            "শিরোনামে s.561A",
+            "FIR/চার্জের ইতিহাস",
+            "কেন সাধারণ প্রতিকার অপর্যাপ্ত",
+            "প্রার্থনা: কার্যক্রম quash"
+          ],
+          "grounds": [
+            "Abuse of process",
+            "প্রাথমিক অপরাধ নেই",
+            "আইনগত বার",
+            "mala fide"
+          ],
+          "prayer": [
+            "কার্যক্রম বাতিল",
+            "অন্তর্বর্তী স্থগিতাদেশ"
+          ],
+          "key_concepts": [
+            "শিরোনামে s.561A",
+            "FIR/চার্জের ইতিহাস",
+            "কেন সাধারণ প্রতিকার অপর্যাপ্ত",
+            "প্রার্থনা: কার্যক্রম quash"
+          ],
+          "important_rules": [
+            "Abuse of process",
+            "প্রাথমিক অপরাধ নেই",
+            "আইনগত বার",
+            "mala fide"
+          ],
+          "examples": [
+            "কার্যক্রম বাতিল",
+            "অন্তর্বর্তী স্থগিতাদেশ"
+          ],
+          "common_traps": [
+            "এটিকে নিত্য আপিল হিসেবে খসড়া করা"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-491",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-491",
+      "order": 25,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group B — CrPC ৪৯১ (হেবিয়াস কর্পাস)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "ধারা ৪৯১ বিধিবদ্ধ পথ: আটক ব্যক্তিকে আদালতে হাজির করানো। সংবিধান অনুচ্ছেদ ১০২(২)(খ)(i) সমান্তরাল সাংবিধানিক পথ — বিনিময়যোগ্য বলে চুপ করে না লিখে উভয়ের কথা জানুন।",
+          "structure": [
+            "s.491 এবং/বা Art. 102(2)(b)(i)",
+            "আটকের ঘটনা",
+            "অবৈধতার grounds",
+            "হাজিরা ও মুক্তির প্রার্থনা"
+          ],
+          "grounds": [
+            "আইনগত কর্তৃত্ব নেই",
+            "পদ্ধতি লঙ্ঘন",
+            "মৌলিক অধিকার"
+          ],
+          "prayer": [
+            "উত্পাদন (produce the body)",
+            "মুক্তি"
+          ],
+          "key_concepts": [
+            "s.491 এবং/বা Art. 102(2)(b)(i)",
+            "আটকের ঘটনা",
+            "অবৈধতার grounds",
+            "হাজিরা ও মুক্তির প্রার্থনা"
+          ],
+          "important_rules": [
+            "আইনগত কর্তৃত্ব নেই",
+            "পদ্ধতি লঙ্ঘন",
+            "মৌলিক অধিকার"
+          ],
+          "examples": [
+            "উত্পাদন (produce the body)",
+            "মুক্তি"
+          ],
+          "common_traps": [
+            "আটককারী কর্তৃপক্ষকে respondent না করা"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group B — CrPC s.491 habeas corpus",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "CrPC s.491 is the statutory habeas route. Constitution Art. 102(2)(b)(i) is a parallel constitutional route — a strong draft knows both.",
+          "structure": [
+            "s.491 এবং/বা Art. 102(2)(b)(i)",
+            "আটকের ঘটনা",
+            "অবৈধতার grounds",
+            "হাজিরা ও মুক্তির প্রার্থনা"
+          ],
+          "grounds": [
+            "আইনগত কর্তৃত্ব নেই",
+            "পদ্ধতি লঙ্ঘন",
+            "মৌলিক অধিকার"
+          ],
+          "prayer": [
+            "উত্পাদন (produce the body)",
+            "মুক্তি"
+          ],
+          "key_concepts": [
+            "s.491 এবং/বা Art. 102(2)(b)(i)",
+            "আটকের ঘটনা",
+            "অবৈধতার grounds",
+            "হাজিরা ও মুক্তির প্রার্থনা"
+          ],
+          "important_rules": [
+            "আইনগত কর্তৃত্ব নেই",
+            "পদ্ধতি লঙ্ঘন",
+            "মৌলিক অধিকার"
+          ],
+          "examples": [
+            "উত্পাদন (produce the body)",
+            "মুক্তি"
+          ],
+          "common_traps": [
+            "আটককারী কর্তৃপক্ষকে respondent না করা"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-WRIT-MANDAMUS",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-WRIT-MANDAMUS",
+      "order": 26,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group C — Mandamus (Art. 102)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "অনুচ্ছেদ ১০২(২)(ক): আইন অনুসারে যা করতে বাধ্য, তা করতে নির্দেশ; যা করতে আইন দেয় না, তা থেকে বিরত। ম্যান্ডামাসে আইনি অধিকার + কর্তৃপক্ষের আইনি কর্তব্য দেখাতে হয়।",
+          "structure": [
+            "রিট ফর্ম / cause title",
+            "অধিকার ও কর্তব্য",
+            "গ্রাউন্ডস",
+            "রুল নিসি ও প্রার্থনা"
+          ],
+          "grounds": [
+            "আইনি অধিকার",
+            "কর্তব্য পালনে ব্যর্থতা",
+            "বিকল্প প্রতিকার অপর্যাপ্ত (১০২(২) শর্ত)"
+          ],
+          "prayer": [
+            "দায়িত্ব পালনের নির্দেশ",
+            "রুল নিসি"
+          ],
+          "key_concepts": [
+            "রিট ফর্ম / cause title",
+            "অধিকার ও কর্তব্য",
+            "গ্রাউন্ডস",
+            "রুল নিসি ও প্রার্থনা"
+          ],
+          "important_rules": [
+            "আইনি অধিকার",
+            "কর্তব্য পালনে ব্যর্থতা",
+            "বিকল্প প্রতিকার অপর্যাপ্ত (১০২(২) শর্ত)"
+          ],
+          "examples": [
+            "দায়িত্ব পালনের নির্দেশ",
+            "রুল নিসি"
+          ],
+          "common_traps": [
+            "প্রাইভেট বিরোধকে রিট বানানো"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group C — Mandamus (Art. 102)",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "Art. 102(2)(a): order a public functionary to do what the law requires, or refrain from what the law forbids. Mandamus needs a legal right and a corresponding public duty.",
+          "structure": [
+            "রিট ফর্ম / cause title",
+            "অধিকার ও কর্তব্য",
+            "গ্রাউন্ডস",
+            "রুল নিসি ও প্রার্থনা"
+          ],
+          "grounds": [
+            "আইনি অধিকার",
+            "কর্তব্য পালনে ব্যর্থতা",
+            "বিকল্প প্রতিকার অপর্যাপ্ত (১০২(২) শর্ত)"
+          ],
+          "prayer": [
+            "দায়িত্ব পালনের নির্দেশ",
+            "রুল নিসি"
+          ],
+          "key_concepts": [
+            "রিট ফর্ম / cause title",
+            "অধিকার ও কর্তব্য",
+            "গ্রাউন্ডস",
+            "রুল নিসি ও প্রার্থনা"
+          ],
+          "important_rules": [
+            "আইনি অধিকার",
+            "কর্তব্য পালনে ব্যর্থতা",
+            "বিকল্প প্রতিকার অপর্যাপ্ত (১০২(২) শর্ত)"
+          ],
+          "examples": [
+            "দায়িত্ব পালনের নির্দেশ",
+            "রুল নিসি"
+          ],
+          "common_traps": [
+            "প্রাইভেট বিরোধকে রিট বানানো"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-WRIT-CERTIORARI",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-WRIT-CERTIORARI",
+      "order": 27,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group C — Certiorari (Art. 102)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "অনুচ্ছেদ ১০২(২)(ক)(ii): বেআইনি কর্তৃত্বে কৃত কাজ/কার্যক্রম বাতিল ঘোষণা — সার্টিওরারির প্রকৃতি। রেকর্ডে স্পষ্ট আইনি ভুল (error of law apparent on the face of the record) গুরুত্ব পায়।",
+          "structure": [
+            "চ্যালেঞ্জকৃত আদেশ সংযুক্ত",
+            "এখতিয়ার/আইনি ভুল",
+            "প্রার্থনা: বাতিল ঘোষণা"
+          ],
+          "grounds": [
+            "Without lawful authority",
+            "Error of law on the face of the record"
+          ],
+          "prayer": [
+            "আদেশ অবৈধ ও বাতিল",
+            "রুল নিসি"
+          ],
+          "key_concepts": [
+            "চ্যালেঞ্জকৃত আদেশ সংযুক্ত",
+            "এখতিয়ার/আইনি ভুল",
+            "প্রার্থনা: বাতিল ঘোষণা"
+          ],
+          "important_rules": [
+            "Without lawful authority",
+            "Error of law on the face of the record"
+          ],
+          "examples": [
+            "আদেশ অবৈধ ও বাতিল",
+            "রুল নিসি"
+          ],
+          "common_traps": [
+            "সার্টিওরারি বানান ও উপধারা ভুল"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group C — Certiorari (Art. 102)",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "Art. 102(2)(a)(ii) is the certiorari-type declaration that an act/proceeding is without lawful authority and of no legal effect.",
+          "structure": [
+            "চ্যালেঞ্জকৃত আদেশ সংযুক্ত",
+            "এখতিয়ার/আইনি ভুল",
+            "প্রার্থনা: বাতিল ঘোষণা"
+          ],
+          "grounds": [
+            "Without lawful authority",
+            "Error of law on the face of the record"
+          ],
+          "prayer": [
+            "আদেশ অবৈধ ও বাতিল",
+            "রুল নিসি"
+          ],
+          "key_concepts": [
+            "চ্যালেঞ্জকৃত আদেশ সংযুক্ত",
+            "এখতিয়ার/আইনি ভুল",
+            "প্রার্থনা: বাতিল ঘোষণা"
+          ],
+          "important_rules": [
+            "Without lawful authority",
+            "Error of law on the face of the record"
+          ],
+          "examples": [
+            "আদেশ অবৈধ ও বাতিল",
+            "রুল নিসি"
+          ],
+          "common_traps": [
+            "সার্টিওরারি বানান ও উপধারা ভুল"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-WRIT-HABEAS",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-WRIT-HABEAS",
+      "order": 28,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group C — Habeas Corpus (Art. 102)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "অনুচ্ছেদ ১০২(২)(খ)(i): কাস্টডিতে থাকা ব্যক্তিকে আদালতে হাজির করানো যাতে আটক বৈধ কি না দেখা যায়। CrPC ৪৯১ আলাদা বিধিবদ্ধ পথ।",
+          "structure": [
+            "Art. 102(2)(b)(i)",
+            "কাস্টডির তথ্য",
+            "অবৈধতা",
+            "প্রার্থনা"
+          ],
+          "grounds": [
+            "Without lawful authority",
+            "Unlawful manner of detention"
+          ],
+          "prayer": [
+            "Produce",
+            "Release"
+          ],
+          "key_concepts": [
+            "Art. 102(2)(b)(i)",
+            "কাস্টডির তথ্য",
+            "অবৈধতা",
+            "প্রার্থনা"
+          ],
+          "important_rules": [
+            "Without lawful authority",
+            "Unlawful manner of detention"
+          ],
+          "examples": [
+            "Produce",
+            "Release"
+          ],
+          "common_traps": [
+            "৪৯১ ও ১০২ গুলিয়ে একই খসড়ায় ব্যাখ্যা না করা"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group C — Habeas Corpus (Art. 102)",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "Art. 102(2)(b)(i): produce a person in custody so the Court may test the legality of detention. Distinct from CrPC s.491.",
+          "structure": [
+            "Art. 102(2)(b)(i)",
+            "কাস্টডির তথ্য",
+            "অবৈধতা",
+            "প্রার্থনা"
+          ],
+          "grounds": [
+            "Without lawful authority",
+            "Unlawful manner of detention"
+          ],
+          "prayer": [
+            "Produce",
+            "Release"
+          ],
+          "key_concepts": [
+            "Art. 102(2)(b)(i)",
+            "কাস্টডির তথ্য",
+            "অবৈধতা",
+            "প্রার্থনা"
+          ],
+          "important_rules": [
+            "Without lawful authority",
+            "Unlawful manner of detention"
+          ],
+          "examples": [
+            "Produce",
+            "Release"
+          ],
+          "common_traps": [
+            "৪৯১ ও ১০২ গুলিয়ে একই খসড়ায় ব্যাখ্যা না করা"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-WRIT-PROHIBITION",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-WRIT-PROHIBITION",
+      "order": 29,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group C — Prohibition (Art. 102)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "প্রোহিবিশন চলমান বেআইনি কার্যক্রম থামানোর নির্দেশের প্রকৃতি — অনুচ্ছেদ ১০২(২)(ক)-এর “refrain from doing that which he is not permitted by law to do” অংশের সাথে মিলে।",
+          "structure": [
+            "চলমান কার্যক্রম চিহ্নিত করুন",
+            "এখতিয়ারের বাইরে কেন",
+            "বিরত থাকার প্রার্থনা"
+          ],
+          "grounds": [
+            "Want of jurisdiction",
+            "Ultra vires proceeding still in motion"
+          ],
+          "prayer": [
+            "কার্যক্রম চালিয়ে যেতে নিষেধ",
+            "রুল নিসি"
+          ],
+          "key_concepts": [
+            "চলমান কার্যক্রম চিহ্নিত করুন",
+            "এখতিয়ারের বাইরে কেন",
+            "বিরত থাকার প্রার্থনা"
+          ],
+          "important_rules": [
+            "Want of jurisdiction",
+            "Ultra vires proceeding still in motion"
+          ],
+          "examples": [
+            "কার্যক্রম চালিয়ে যেতে নিষেধ",
+            "রুল নিসি"
+          ],
+          "common_traps": [
+            "ইতিমধ্যে শেষ হয়ে যাওয়া আদেশে প্রোহিবিশন (সেক্ষেত্রে সার্টিওরারি)"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group C — Prohibition (Art. 102)",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "Prohibition restrains ongoing action the authority is not permitted by law to take, mapping to the “refrain” limb of Art. 102(2)(a).",
+          "structure": [
+            "চলমান কার্যক্রম চিহ্নিত করুন",
+            "এখতিয়ারের বাইরে কেন",
+            "বিরত থাকার প্রার্থনা"
+          ],
+          "grounds": [
+            "Want of jurisdiction",
+            "Ultra vires proceeding still in motion"
+          ],
+          "prayer": [
+            "কার্যক্রম চালিয়ে যেতে নিষেধ",
+            "রুল নিসি"
+          ],
+          "key_concepts": [
+            "চলমান কার্যক্রম চিহ্নিত করুন",
+            "এখতিয়ারের বাইরে কেন",
+            "বিরত থাকার প্রার্থনা"
+          ],
+          "important_rules": [
+            "Want of jurisdiction",
+            "Ultra vires proceeding still in motion"
+          ],
+          "examples": [
+            "কার্যক্রম চালিয়ে যেতে নিষেধ",
+            "রুল নিসি"
+          ],
+          "common_traps": [
+            "ইতিমধ্যে শেষ হয়ে যাওয়া আদেশে প্রোহিবিশন (সেক্ষেত্রে সার্টিওরারি)"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-WRIT-QUOWARRANTO",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-WRIT-QUOWARRANTO",
+      "order": 30,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "Group C — Quo-Warranto (Art. 102)",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "অনুচ্ছেদ ১০২(২)(খ)(ii): পাবলিক অফিস দাবিদারকে কোন অধিকারে পদ ধরে আছেন তা দেখাতে বলা।",
+          "structure": [
+            "পদ ও ধারক",
+            "যোগ্যতা/নিয়োগ আইন",
+            "প্রার্থনা: পদ শূন্য/অবৈধ ঘোষণা"
+          ],
+          "grounds": [
+            "নিয়োগ আইন লঙ্ঘন",
+            "যোগ্যতা নেই",
+            "পদ পাবলিক অফিস"
+          ],
+          "prayer": [
+            "Show cause under what authority",
+            "ঘোষণা যে তিনি পদ ধরে রাখতে পারেন না"
+          ],
+          "key_concepts": [
+            "পদ ও ধারক",
+            "যোগ্যতা/নিয়োগ আইন",
+            "প্রার্থনা: পদ শূন্য/অবৈধ ঘোষণা"
+          ],
+          "important_rules": [
+            "নিয়োগ আইন লঙ্ঘন",
+            "যোগ্যতা নেই",
+            "পদ পাবলিক অফিস"
+          ],
+          "examples": [
+            "Show cause under what authority",
+            "ঘোষণা যে তিনি পদ ধরে রাখতে পারেন না"
+          ],
+          "common_traps": [
+            "প্রাইভেট কোম্পানি পদকে পাবলিক অফিস মনে করা"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Group C — Quo-Warranto (Art. 102)",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "Art. 102(2)(b)(ii): require a person holding or purporting to hold a public office to show the authority for that office.",
+          "structure": [
+            "পদ ও ধারক",
+            "যোগ্যতা/নিয়োগ আইন",
+            "প্রার্থনা: পদ শূন্য/অবৈধ ঘোষণা"
+          ],
+          "grounds": [
+            "নিয়োগ আইন লঙ্ঘন",
+            "যোগ্যতা নেই",
+            "পদ পাবলিক অফিস"
+          ],
+          "prayer": [
+            "Show cause under what authority",
+            "ঘোষণা যে তিনি পদ ধরে রাখতে পারেন না"
+          ],
+          "key_concepts": [
+            "পদ ও ধারক",
+            "যোগ্যতা/নিয়োগ আইন",
+            "প্রার্থনা: পদ শূন্য/অবৈধ ঘোষণা"
+          ],
+          "important_rules": [
+            "নিয়োগ আইন লঙ্ঘন",
+            "যোগ্যতা নেই",
+            "পদ পাবলিক অফিস"
+          ],
+          "examples": [
+            "Show cause under what authority",
+            "ঘোষণা যে তিনি পদ ধরে রাখতে পারেন না"
+          ],
+          "common_traps": [
+            "প্রাইভেট কোম্পানি পদকে পাবলিক অফিস মনে করা"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-COMPARE-APPEAL-REV",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-COMPARE-APPEAL-REV",
+      "order": 31,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "আপিল বনাম CPC ১১৫ রিভিশন",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "CPC ধারা ৯৬ (প্রথম আপিল) ডিক্রির বিরুদ্ধে তথ্য ও আইন উভয়ের ভুল তুলতে পারে। ধারা ১০০ দ্বিতীয় আপিল সাধারণত আইনের প্রশ্ন। ধারা ১১৫ রিভিশন তিন শাখা: এখতিয়ার নেই এমন ক্ষমতা; অর্পিত এখতিয়ার প্রয়োগে ব্যর্থতা; বেআইনি/বস্তুগত অনিয়ম। তথ্য পুনর্মূল্যায়ন রিভিশনের কাজ নয়। সূত্র: bdlaws CPC.",
+          "structure": [
+            "প্রথমে প্রতিকার বাছুন: আপিল না রিভিশন",
+            "সক্ষমকারী ধারা উল্লেখ",
+            "গ্রাউন্ডস সেই ধারার ভাষায়"
+          ],
+          "grounds": [
+            "আপিলে তথ্য+আইন",
+            "রিভিশনে শুধু এখতিয়ার/অনিয়ম"
+          ],
+          "prayer": [
+            "আপিলে ডিক্রি বাতিল",
+            "রিভিশনে আদেশ বাতিল/পুনর্বিচার"
+          ],
+          "key_concepts": [
+            "প্রথমে প্রতিকার বাছুন: আপিল না রিভিশন",
+            "সক্ষমকারী ধারা উল্লেখ",
+            "গ্রাউন্ডস সেই ধারার ভাষায়"
+          ],
+          "important_rules": [
+            "আপিলে তথ্য+আইন",
+            "রিভিশনে শুধু এখতিয়ার/অনিয়ম"
+          ],
+          "examples": [
+            "আপিলে ডিক্রি বাতিল",
+            "রিভিশনে আদেশ বাতিল/পুনর্বিচার"
+          ],
+          "common_traps": [
+            "“রায় ভুল” দিয়ে ১১৫ খসড়া"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Appeal versus CPC s.115 revision",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "CPC s.96 first appeal may raise error of fact and of law. s.100 second appeal is generally a question of law. s.115 revision is jurisdictional (not vested / failure to exercise / illegality or material irregularity). Not a retrial on facts. Source: bdlaws CPC.",
+          "structure": [
+            "প্রথমে প্রতিকার বাছুন: আপিল না রিভিশন",
+            "সক্ষমকারী ধারা উল্লেখ",
+            "গ্রাউন্ডস সেই ধারার ভাষায়"
+          ],
+          "grounds": [
+            "আপিলে তথ্য+আইন",
+            "রিভিশনে শুধু এখতিয়ার/অনিয়ম"
+          ],
+          "prayer": [
+            "আপিলে ডিক্রি বাতিল",
+            "রিভিশনে আদেশ বাতিল/পুনর্বিচার"
+          ],
+          "key_concepts": [
+            "প্রথমে প্রতিকার বাছুন: আপিল না রিভিশন",
+            "সক্ষমকারী ধারা উল্লেখ",
+            "গ্রাউন্ডস সেই ধারার ভাষায়"
+          ],
+          "important_rules": [
+            "আপিলে তথ্য+আইন",
+            "রিভিশনে শুধু এখতিয়ার/অনিয়ম"
+          ],
+          "examples": [
+            "আপিলে ডিক্রি বাতিল",
+            "রিভিশনে আদেশ বাতিল/পুনর্বিচার"
+          ],
+          "common_traps": [
+            "“রায় ভুল” দিয়ে ১১৫ খসড়া"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-COMPARE-HABEAS",
+      "asset_type": "LESSON",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "topic_id": "HC-DRAFT-COMPARE-HABEAS",
+      "order": 32,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [],
+      "language_versions": {
+        "bn": {
+          "title": "CrPC ৪৯১ বনাম অনুচ্ছেদ ১০২ হেবিয়াস",
+          "short_description": "হাইকোর্ট পারমিশন ড্রাফটিং সিলেবাস মডিউল — বিগত পেপার নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "CrPC ৪৯১ (bdlaws act-75/section-21977): হাইকোর্ট বিভাগ অবৈধ/অনুপযুক্ত কাস্টডি থেকে মুক্তির নির্দেশ দিতে পারে; উপধারা (৩) প্রতিরোধমূলক আটকে প্রযোজ্য নয়। অনুচ্ছেদ ১০২(২)(খ)(i) সাংবিধানিক পথ — “any person” আবেদন করতে পারে। খসড়ায় কোন পথ ব্যবহার করছেন তা স্পষ্ট লিখুন; দুটিকে এক করে ফেলবেন না।",
+          "structure": [
+            "পথ বাছুন: ৪৯১ না ১০২(২)(খ)(i)",
+            "আটককারী কর্তৃপক্ষকে respondent",
+            "produce + release প্রার্থনা"
+          ],
+          "grounds": [
+            "আইনগত কর্তৃত্ব নেই",
+            "পদ্ধতি লঙ্ঘন",
+            "৪৯১(৩) প্রতিরোধমূলক আটক বাদ"
+          ],
+          "prayer": [
+            "শরীর হাজির",
+            "মুক্তি"
+          ],
+          "key_concepts": [
+            "পথ বাছুন: ৪৯১ না ১০২(২)(খ)(i)",
+            "আটককারী কর্তৃপক্ষকে respondent",
+            "produce + release প্রার্থনা"
+          ],
+          "important_rules": [
+            "আইনগত কর্তৃত্ব নেই",
+            "পদ্ধতি লঙ্ঘন",
+            "৪৯১(৩) প্রতিরোধমূলক আটক বাদ"
+          ],
+          "examples": [
+            "শরীর হাজির",
+            "মুক্তি"
+          ],
+          "common_traps": [
+            "প্রতিরোধমূলক আটকে ৪৯১ ব্যবহার",
+            "আটককারীকে বাদ দেওয়া"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "CrPC s.491 versus Art. 102 habeas",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "CrPC s.491 is the statutory habeas route (not for preventive detention under 491(3)). Art. 102(2)(b)(i) is constitutional habeas; any person may apply. A draft must pick the path and not mash the two together.",
+          "structure": [
+            "পথ বাছুন: ৪৯১ না ১০২(২)(খ)(i)",
+            "আটককারী কর্তৃপক্ষকে respondent",
+            "produce + release প্রার্থনা"
+          ],
+          "grounds": [
+            "আইনগত কর্তৃত্ব নেই",
+            "পদ্ধতি লঙ্ঘন",
+            "৪৯১(৩) প্রতিরোধমূলক আটক বাদ"
+          ],
+          "prayer": [
+            "শরীর হাজির",
+            "মুক্তি"
+          ],
+          "key_concepts": [
+            "পথ বাছুন: ৪৯১ না ১০২(২)(খ)(i)",
+            "আটককারী কর্তৃপক্ষকে respondent",
+            "produce + release প্রার্থনা"
+          ],
+          "important_rules": [
+            "আইনগত কর্তৃত্ব নেই",
+            "পদ্ধতি লঙ্ঘন",
+            "৪৯১(৩) প্রতিরোধমূলক আটক বাদ"
+          ],
+          "examples": [
+            "শরীর হাজির",
+            "মুক্তি"
+          ],
+          "common_traps": [
+            "প্রতিরোধমূলক আটকে ৪৯১ ব্যবহার",
+            "আটককারীকে বাদ দেওয়া"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-PREVQ-HONEST",
+      "asset_type": "LESSON",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-DRAFT-PREVQ-HONEST",
+      "order": 10,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "official_past_papers_zero",
+        "user_supplied_written_2024_2025"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "HC বিগত পেপার: অফিসিয়াল ০; ব্যবহারকারী ২০২৪–২৫",
+          "short_description": "অফিসিয়াল PDF ০। ব্যবহারকারীর লিখিত ২০২৪ ও ২০২৫ আলাদা কার্ড।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "অফিসিয়াল HC Permission PDF এখনও ০ (বার কাউন্সিল Cloudflare; সুপ্রিম কোর্ট বিচার/কজলিস্ট; Teletalk ফর্ম; ডিপিপি গেজেট নয়)। ব্যবহারকারী ১৫ সেপ্টেম্বর ২০২৬-এ ২০২৪ (১০ মে) ও ২০২৫ (২৪ অক্টোবর) লিখিত পেপারের ছবি দিয়েছেন — হেডার+তারিখ+Group A/B/C যাচাই। সেগুলো PREVQ-এ user-supplied লিখিত কার্ড; অফিসিয়াল ডাউনলোড নয়; মডেল উত্তর নেই। অন্য সালের ছবি/PDF এই শিকারে পাওয়া যায়নি। ২০১৯-এ HC MCQ ঘোষণা ছিল; ২০২৪–২৫ পেপার লিখিত ২৫ নম্বর — MCQ ব্যাংক উদ্ভাবন করা হয়নি। Ain Prokash / Live MCQ / QuesBankBD কপি হয়নি। নিচের ফ্যাক্ট প্যাটার্ন এখনও কাল্পনিক মডেল।",
+          "structure": [
+            "অফিসিয়াল পেপার ০",
+            "user-supplied লিখিত ২০২৪ ও ২০২৫",
+            "মডেল ফ্যাক্ট আলাদা"
+          ],
+          "grounds": [
+            "প্রশ্নপত্র গেজেটে প্রকাশিত নয়",
+            "কোচিং ব্যাংক কপিরাইট"
+          ],
+          "prayer": [
+            "PREVQ সাল ফিল্টার: ২০২৪ / ২০২৫"
+          ],
+          "key_concepts": [
+            "অফিসিয়াল পেপার ০",
+            "user-supplied লিখিত ২০২৪ ও ২০২৫",
+            "মডেল ফ্যাক্ট আলাদা"
+          ],
+          "important_rules": [
+            "প্রশ্নপত্র গেজেটে প্রকাশিত নয়",
+            "কোচিং ব্যাংক কপিরাইট"
+          ],
+          "examples": [
+            "PREVQ সাল ফিল্টার: ২০২৪ / ২০২৫"
+          ],
+          "common_traps": [
+            "জাল “HC exam 2019” লেবেল",
+            "MCQ ব্যাংক উদ্ভাবন"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "HC past papers: official 0; user 2024–25",
+          "short_description": "Official PDF 0. User-supplied written 2024 and 2025 are separate cards.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "Official HC Permission PDF still 0. User photos (15 Sep 2026) of written 10 May 2024 and 24 Oct 2025 are in PREVQ as user-supplied cards — not an official download, no invented model answers. No other years found with a Bar Council header. A 2019 notice announced HC MCQ; 2024–25 papers are written 25 — no MCQ bank invented. Coaching banks not scraped. Fact patterns below remain fictional models.",
+          "structure": [
+            "অফিসিয়াল পেপার ০",
+            "user-supplied লিখিত ২০২৪ ও ২০২৫",
+            "মডেল ফ্যাক্ট আলাদা"
+          ],
+          "grounds": [
+            "প্রশ্নপত্র গেজেটে প্রকাশিত নয়",
+            "কোচিং ব্যাংক কপিরাইট"
+          ],
+          "prayer": [
+            "PREVQ সাল ফিল্টার: ২০২৪ / ২০২৫"
+          ],
+          "key_concepts": [
+            "অফিসিয়াল পেপার ০",
+            "user-supplied লিখিত ২০২৪ ও ২০২৫",
+            "মডেল ফ্যাক্ট আলাদা"
+          ],
+          "important_rules": [
+            "প্রশ্নপত্র গেজেটে প্রকাশিত নয়",
+            "কোচিং ব্যাংক কপিরাইট"
+          ],
+          "examples": [
+            "PREVQ সাল ফিল্টার: ২০২৪ / ২০২৫"
+          ],
+          "common_traps": [
+            "জাল “HC exam 2019” লেবেল",
+            "MCQ ব্যাংক উদ্ভাবন"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-FACT-CIVIL",
+      "asset_type": "LESSON",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-DRAFT-FACT-CIVIL",
+      "order": 40,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল ফ্যাক্ট — দেওয়ানি আপিল",
+          "short_description": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nকাল্পনিক: সহকারী জজ, ঢাকা, Title Suit No. 88/2024। বাদী রহিম দাবি করেন ১২ শতক জমি কবলামূলে ক্রয়; বিবাদী করিম দাবি করেন দখল ও রেকর্ড। ১২.০১.২০২৬ তারিখের ডিক্রিতে মামলা খারিজ — আদালত বলেছে বাদীর দলিল “সন্দেহজনক” কিন্তু প্রমাণ মূল্যায়ন সংক্ষিপ্ত। আপনি রহিমের পক্ষে হাইকোর্ট বিভাগে memo of appeal খসড়া করবেন (CPC s.96)। Cause title, তিন গ্রাউন্ড, প্রার্থনা।",
+          "structure": [
+            "Cause title + s.96",
+            "নিম্ন আদালত ও তারিখ",
+            "তিন গ্রাউন্ড",
+            "প্রার্থনা"
+          ],
+          "grounds": [
+            "প্রমাণ মূল্যায়নের ভুল (আপিলে)",
+            "দলিল অগ্রাহ্য করার আইনি ভুল",
+            "দখল-স্বত্ব মিলিয়ে না দেখা"
+          ],
+          "prayer": [
+            "ডিক্রি বাতিল",
+            "মামলা মঞ্জুর",
+            "খরচ"
+          ],
+          "key_concepts": [
+            "Cause title + s.96",
+            "নিম্ন আদালত ও তারিখ",
+            "তিন গ্রাউন্ড",
+            "প্রার্থনা"
+          ],
+          "important_rules": [
+            "প্রমাণ মূল্যায়নের ভুল (আপিলে)",
+            "দলিল অগ্রাহ্য করার আইনি ভুল",
+            "দখল-স্বত্ব মিলিয়ে না দেখা"
+          ],
+          "examples": [
+            "ডিক্রি বাতিল",
+            "মামলা মঞ্জুর",
+            "খরচ"
+          ],
+          "common_traps": [
+            "এটিকে ২০১৯ সালের পেপার লেবেল করা"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Model facts — civil appeal",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "MODEL PRACTICE — not a previous-year paper. Fictional Assistant Judge, Dhaka, Title Suit 88/2024 dismissed 12 Jan 2026. Draft a civil memo of appeal under CPC s.96.",
+          "structure": [
+            "Cause title + s.96",
+            "নিম্ন আদালত ও তারিখ",
+            "তিন গ্রাউন্ড",
+            "প্রার্থনা"
+          ],
+          "grounds": [
+            "প্রমাণ মূল্যায়নের ভুল (আপিলে)",
+            "দলিল অগ্রাহ্য করার আইনি ভুল",
+            "দখল-স্বত্ব মিলিয়ে না দেখা"
+          ],
+          "prayer": [
+            "ডিক্রি বাতিল",
+            "মামলা মঞ্জুর",
+            "খরচ"
+          ],
+          "key_concepts": [
+            "Cause title + s.96",
+            "নিম্ন আদালত ও তারিখ",
+            "তিন গ্রাউন্ড",
+            "প্রার্থনা"
+          ],
+          "important_rules": [
+            "প্রমাণ মূল্যায়নের ভুল (আপিলে)",
+            "দলিল অগ্রাহ্য করার আইনি ভুল",
+            "দখল-স্বত্ব মিলিয়ে না দেখা"
+          ],
+          "examples": [
+            "ডিক্রি বাতিল",
+            "মামলা মঞ্জুর",
+            "খরচ"
+          ],
+          "common_traps": [
+            "এটিকে ২০১৯ সালের পেপার লেবেল করা"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-FACT-115",
+      "asset_type": "LESSON",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-DRAFT-FACT-115",
+      "order": 41,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল ফ্যাক্ট — CPC ১১৫",
+          "short_description": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nকাল্পনিক: যুগ্ম জেলা জজ অস্থায়ী নিষেধাজ্ঞা (O.39) খারিজ করেছেন এই বলে যে “বাদীর মামলা দুর্বল”, কিন্তু এখতিয়ার/প্রথম নজরে মামলা/সুবিধার ভারসাম্য আলোচনা করেননি। আপিল চলে কি না সন্দেহ। CPC s.115-এর তিন শাখার একটি বেঁধে রিভিশন খসড়া করুন।",
+          "structure": [
+            "s.115 শিরোনাম",
+            "চ্যালেঞ্জকৃত আদেশ",
+            "এখতিয়ারগত গ্রাউন্ড",
+            "প্রার্থনা"
+          ],
+          "grounds": [
+            "Failure to exercise jurisdiction",
+            "Material irregularity"
+          ],
+          "prayer": [
+            "আদেশ বাতিল",
+            "নিষেধাজ্ঞা আবেদন পুনর্বিচার"
+          ],
+          "key_concepts": [
+            "s.115 শিরোনাম",
+            "চ্যালেঞ্জকৃত আদেশ",
+            "এখতিয়ারগত গ্রাউন্ড",
+            "প্রার্থনা"
+          ],
+          "important_rules": [
+            "Failure to exercise jurisdiction",
+            "Material irregularity"
+          ],
+          "examples": [
+            "আদেশ বাতিল",
+            "নিষেধাজ্ঞা আবেদন পুনর্বিচার"
+          ],
+          "common_traps": [
+            "শুধু “রায় ভুল”"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Model facts — CPC s.115",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "MODEL PRACTICE — not a previous-year paper. Fictional joint district judge dismissed a temporary injunction with no jurisdictional analysis. Draft s.115 revision.",
+          "structure": [
+            "s.115 শিরোনাম",
+            "চ্যালেঞ্জকৃত আদেশ",
+            "এখতিয়ারগত গ্রাউন্ড",
+            "প্রার্থনা"
+          ],
+          "grounds": [
+            "Failure to exercise jurisdiction",
+            "Material irregularity"
+          ],
+          "prayer": [
+            "আদেশ বাতিল",
+            "নিষেধাজ্ঞা আবেদন পুনর্বিচার"
+          ],
+          "key_concepts": [
+            "s.115 শিরোনাম",
+            "চ্যালেঞ্জকৃত আদেশ",
+            "এখতিয়ারগত গ্রাউন্ড",
+            "প্রার্থনা"
+          ],
+          "important_rules": [
+            "Failure to exercise jurisdiction",
+            "Material irregularity"
+          ],
+          "examples": [
+            "আদেশ বাতিল",
+            "নিষেধাজ্ঞা আবেদন পুনর্বিচার"
+          ],
+          "common_traps": [
+            "শুধু “রায় ভুল”"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-FACT-561A",
+      "asset_type": "LESSON",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-DRAFT-FACT-561A",
+      "order": 42,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল ফ্যাক্ট — ৫৬১এ",
+          "short_description": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nকাল্পনিক FIR: শ্বশুর-শাশুড়ি ও দেবরের বিরুদ্ধে ৪০৬/৪২০ — অভিযোগ শুধু এই যে যৌতুকের টাকা “ফেরত দেননি”; কোনো প্রতারণামূলক প্রলোভনের তারিখ নেই; তদন্তে দেওয়ানি দেনমোহর মামলা চলমান। s.561A-তে quashment খসড়া করুন। সূত্র: bdlaws CrPC s.561A — abuse of process / ends of justice.",
+          "structure": [
+            "s.561A",
+            "FIR সার",
+            "কেন প্রাথমিক অপরাধ নেই",
+            "quash প্রার্থনা"
+          ],
+          "grounds": [
+            "Abuse of process",
+            "দেওয়ানি বিরোধ",
+            "mala fide"
+          ],
+          "prayer": [
+            "কার্যক্রম বাতিল",
+            "অন্তর্বর্তী স্থগিত"
+          ],
+          "key_concepts": [
+            "s.561A",
+            "FIR সার",
+            "কেন প্রাথমিক অপরাধ নেই",
+            "quash প্রার্থনা"
+          ],
+          "important_rules": [
+            "Abuse of process",
+            "দেওয়ানি বিরোধ",
+            "mala fide"
+          ],
+          "examples": [
+            "কার্যক্রম বাতিল",
+            "অন্তর্বর্তী স্থগিত"
+          ],
+          "common_traps": [
+            "এটিকে সাধারণ আপিল খসড়া"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Model facts — s.561A",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "MODEL PRACTICE — not a previous-year paper. Fictional 406/420 FIR that is a civil dower dispute. Draft s.561A quashment.",
+          "structure": [
+            "s.561A",
+            "FIR সার",
+            "কেন প্রাথমিক অপরাধ নেই",
+            "quash প্রার্থনা"
+          ],
+          "grounds": [
+            "Abuse of process",
+            "দেওয়ানি বিরোধ",
+            "mala fide"
+          ],
+          "prayer": [
+            "কার্যক্রম বাতিল",
+            "অন্তর্বর্তী স্থগিত"
+          ],
+          "key_concepts": [
+            "s.561A",
+            "FIR সার",
+            "কেন প্রাথমিক অপরাধ নেই",
+            "quash প্রার্থনা"
+          ],
+          "important_rules": [
+            "Abuse of process",
+            "দেওয়ানি বিরোধ",
+            "mala fide"
+          ],
+          "examples": [
+            "কার্যক্রম বাতিল",
+            "অন্তর্বর্তী স্থগিত"
+          ],
+          "common_traps": [
+            "এটিকে সাধারণ আপিল খসড়া"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-FACT-WRIT",
+      "asset_type": "LESSON",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-DRAFT-FACT-WRIT",
+      "order": 43,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল ফ্যাক্ট — পাঁচ রিট বাছুন",
+          "short_description": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়।",
+          "learning_objective": "কাঠামো, গ্রাউন্ডস ও প্রার্থনা আলাদা করে খসড়া করতে পারা।",
+          "explanation": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nতিন কাল্পনিক ঘটনা থেকে রিট বাছুন (Art. 102):\n(১) সিটি কর্পোরেশন বৈধ ট্রেড লাইসেন্স নবায়ন না করে।\n(২) একটি ট্রাইব্যুনাল এখতিয়ারের বাইরে জরিমানা আরোপ করেছে (আদেশ হয়ে গেছে)।\n(৩) এক ব্যক্তি সরকারি কলেজের অধ্যক্ষ পদে বসে আছেন, নিয়োগবিধি অনুসারে যোগ্যতা নেই।\nপ্রতিটিতে ম্যান্ডামাস / সার্টিওরারি / প্রোহিবিশন / হেবিয়াস / কো-ওয়ারেন্টো — কোনটি ও কেন।",
+          "structure": [
+            "ঘটনা → রিট",
+            "Art. 102 উপধারা",
+            "বিকল্প প্রতিকার"
+          ],
+          "grounds": [
+            "(১) Mandamus",
+            "(২) Certiorari",
+            "(৩) Quo-warranto"
+          ],
+          "prayer": [
+            "রুল নিসি + নির্দিষ্ট প্রার্থনা"
+          ],
+          "key_concepts": [
+            "ঘটনা → রিট",
+            "Art. 102 উপধারা",
+            "বিকল্প প্রতিকার"
+          ],
+          "important_rules": [
+            "(১) Mandamus",
+            "(২) Certiorari",
+            "(৩) Quo-warranto"
+          ],
+          "examples": [
+            "রুল নিসি + নির্দিষ্ট প্রার্থনা"
+          ],
+          "common_traps": [
+            "শেষ হয়ে যাওয়া আদেশে প্রোহিবিশন"
+          ],
+          "exam_focus": "ইন্টারঅ্যাকটিভ সিলেবাস কার্ড। কোনো নকল HC বিগত পেপার নয়।",
+          "key_takeaways": [
+            "কাঠামো → গ্রাউন্ডস → প্রার্থনা।",
+            "কোচিং সাইট ainprokash.com থেকে কিছু কপি করা হয়নি।"
+          ]
+        },
+        "en": {
+          "title": "Model facts — pick a writ",
+          "short_description": "HC Permission drafting syllabus module — not a past paper.",
+          "learning_objective": "Separate structure, grounds, and prayer when drafting.",
+          "explanation": "MODEL PRACTICE — not a previous-year paper. Three fictional facts: licence non-renewal; tribunal ultra vires order already made; ineligible public-office holder. Pick the writ.",
+          "structure": [
+            "ঘটনা → রিট",
+            "Art. 102 উপধারা",
+            "বিকল্প প্রতিকার"
+          ],
+          "grounds": [
+            "(১) Mandamus",
+            "(২) Certiorari",
+            "(৩) Quo-warranto"
+          ],
+          "prayer": [
+            "রুল নিসি + নির্দিষ্ট প্রার্থনা"
+          ],
+          "key_concepts": [
+            "ঘটনা → রিট",
+            "Art. 102 উপধারা",
+            "বিকল্প প্রতিকার"
+          ],
+          "important_rules": [
+            "(১) Mandamus",
+            "(২) Certiorari",
+            "(৩) Quo-warranto"
+          ],
+          "examples": [
+            "রুল নিসি + নির্দিষ্ট প্রার্থনা"
+          ],
+          "common_traps": [
+            "শেষ হয়ে যাওয়া আদেশে প্রোহিবিশন"
+          ],
+          "exam_focus": "Interactive syllabus card. Not a fake HC past paper.",
+          "key_takeaways": [
+            "Structure → grounds → prayer.",
+            "Nothing copied from ainprokash.com."
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-CIVIL-APPEAL",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "order": 0,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "স্ব-পরীক্ষা: দেওয়ানি আপিল খসড়া",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nএকটি কাল্পনিক সহকারী জজের ডিক্রির বিরুদ্ধে দেওয়ানি memo of appeal-এর কাঠামো, তিনটি গ্রাউন্ড এবং প্রার্থনা লিখুন। নমুনা উত্তর দেওয়া হয়নি।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "স্ব-পরীক্ষা: দেওয়ানি আপিল খসড়া",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nএকটি কাল্পনিক সহকারী জজের ডিক্রির বিরুদ্ধে দেওয়ানি memo of appeal-এর কাঠামো, তিনটি গ্রাউন্ড এবং প্রার্থনা লিখুন। নমুনা উত্তর দেওয়া হয়নি।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-115",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "order": 0,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "স্ব-পরীক্ষা: CPC ১১৫",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nধারা ১১৫-এর তিন শাখার একটির সাথে বেঁধে রিভিশন গ্রাউন্ড ও প্রার্থনা লিখুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "স্ব-পরীক্ষা: CPC ১১৫",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nধারা ১১৫-এর তিন শাখার একটির সাথে বেঁধে রিভিশন গ্রাউন্ড ও প্রার্থনা লিখুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-561A",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "order": 0,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "স্ব-পরীক্ষা: ৫৬১এ",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nএকটি কাল্পনিক FIR quash করতে s.561A খসড়ার কাঠামো-গ্রাউন্ড-প্রার্থনা লিখুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "স্ব-পরীক্ষা: ৫৬১এ",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nএকটি কাল্পনিক FIR quash করতে s.561A খসড়ার কাঠামো-গ্রাউন্ড-প্রার্থনা লিখুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-WRIT",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-DRAFT",
+      "module_id": "MOD-DRAFT",
+      "order": 0,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "স্ব-পরীক্ষা: Art. 102 রিট বেছে নিন",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nএকটি সরকারি কর্তৃপক্ষের নিষ্ক্রিয়তার ঘটনায় কোন রিট (ম্যান্ডামাস/সার্টিওরারি/প্রোহিবিশন/হেবিয়াস/কো-ওয়ারেন্টো) এবং কেন — কাঠামো ও প্রার্থনা লিখুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "স্ব-পরীক্ষা: Art. 102 রিট বেছে নিন",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nএকটি সরকারি কর্তৃপক্ষের নিষ্ক্রিয়তার ঘটনায় কোন রিট (ম্যান্ডামাস/সার্টিওরারি/প্রোহিবিশন/হেবিয়াস/কো-ওয়ারেন্টো) এবং কেন — কাঠামো ও প্রার্থনা লিখুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-FACT-CIVIL",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "order": 50,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল অনুশীলন — দেওয়ানি আপিল ফ্যাক্ট",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nTitle Suit 88/2024 (কাল্পনিক) খারিজ। CPC s.96 memo of appeal: cause title, ঘটনার ক্রম, তিন গ্রাউন্ড, প্রার্থনা। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "মডেল অনুশীলন — দেওয়ানি আপিল ফ্যাক্ট",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nTitle Suit 88/2024 (কাল্পনিক) খারিজ। CPC s.96 memo of appeal: cause title, ঘটনার ক্রম, তিন গ্রাউন্ড, প্রার্থনা। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-FACT-115",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "order": 51,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল অনুশীলন — ১১৫ ফ্যাক্ট",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nকাল্পনিক O.39 খারিজ আদেশে এখতিয়ার আলোচনা নেই। s.115 খসড়া লিখুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "মডেল অনুশীলন — ১১৫ ফ্যাক্ট",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nকাল্পনিক O.39 খারিজ আদেশে এখতিয়ার আলোচনা নেই। s.115 খসড়া লিখুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-FACT-561A",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "order": 52,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল অনুশীলন — ৫৬১এ ফ্যাক্ট",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nকাল্পনিক ৪০৬/৪২০ FIR (দেওয়ানি দেনমোহর)। s.561A quashment খসড়া। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "মডেল অনুশীলন — ৫৬১এ ফ্যাক্ট",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nকাল্পনিক ৪০৬/৪২০ FIR (দেওয়ানি দেনমোহর)। s.561A quashment খসড়া। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-FACT-491",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "order": 53,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল অনুশীলন — ৪৯১ ফ্যাক্ট",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nকাল্পনিক: থানায় ৭২ ঘণ্টার বেশি আটক, ম্যাজিস্ট্রেটের সামনে হাজিরা নেই। CrPC ৪৯১ খসড়া — ৪৯১(৩) প্রতিরোধমূলক আটক নয় বলে উল্লেখ করুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "মডেল অনুশীলন — ৪৯১ ফ্যাক্ট",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nকাল্পনিক: থানায় ৭২ ঘণ্টার বেশি আটক, ম্যাজিস্ট্রেটের সামনে হাজিরা নেই। CrPC ৪৯১ খসড়া — ৪৯১(৩) প্রতিরোধমূলক আটক নয় বলে উল্লেখ করুন। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-DRAFT-FACT-WRIT",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-WRITPREP",
+      "module_id": "SEC-WRITPREP",
+      "order": 54,
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "answer_type": "NONE",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল অনুশীলন — রিট ফ্যাক্ট",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nকাল্পনিক লাইসেন্স নবায়ন না হওয়া। Mandamus খসড়া: অধিকার, কর্তব্য, demand, প্রার্থনা। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "কাঠামো",
+            "গ্রাউন্ডস",
+            "প্রার্থনা"
+          ],
+          "marking_points": [
+            "Cause title ঠিক",
+            "গ্রাউন্ডস আইনি পয়েন্ট",
+            "প্রার্থনা সুনির্দিষ্ট"
+          ],
+          "model_answer": ""
+        },
+        "en": {
+          "title": "মডেল অনুশীলন — রিট ফ্যাক্ট",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nকাল্পনিক লাইসেন্স নবায়ন না হওয়া। Mandamus খসড়া: অধিকার, কর্তব্য, demand, প্রার্থনা। নমুনা উত্তর নেই।",
+          "answer_outline": [
+            "Structure",
+            "Grounds",
+            "Prayer"
+          ],
+          "marking_points": [
+            "Correct cause title",
+            "Legal grounds",
+            "Specific prayer"
+          ],
+          "model_answer": ""
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-VIVA-01",
+      "asset_type": "VIVA_QUESTION",
+      "viva_question_id": "HC-DRAFT-VIVA-01",
+      "section_id": "SEC-VIVA",
+      "module_id": "SEC-VIVA",
+      "topic_id": "HC-DRAFT-VIVA-01",
+      "order": 60,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "দেওয়ানি আপিল ও CPC ১১৫ রিভিশনের পার্থক্য কী?",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nদেওয়ানি আপিল ও CPC ১১৫ রিভিশনের পার্থক্য কী?",
+          "ideal_answer": "আপিল (s.96) তথ্য ও আইন; রিভিশন শুধু এখতিয়ার/অনিয়ম। রিভিশন দ্বিতীয় আপিল নয়। গ্রাউন্ডস ধারা ১১৫-এর তিন শাখার ভাষায়।",
+          "key_points": [
+            "আপিল (s.96) তথ্য ও আইন; রিভিশন শুধু এখতিয়ার/অনিয়ম।",
+            "রিভিশন দ্বিতীয় আপিল নয়।",
+            "গ্রাউন্ডস ধারা ১১৫-এর তিন শাখার ভাষায়।"
+          ],
+          "follow_up_questions": [
+            "দ্বিতীয় আপিল কখন চলে?",
+            "O.39 আদেশে আপিল না রিভিশন?"
+          ]
+        },
+        "en": {
+          "title": "Difference between a civil appeal and CPC s.115 revision?",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nDifference between a civil appeal and CPC s.115 revision?",
+          "ideal_answer": "Appeal may retry facts and law; revision is jurisdictional. Revision is not a second appeal. Grounds must track the three limbs of s.115.",
+          "key_points": [
+            "Appeal may retry facts and law; revision is jurisdictional.",
+            "Revision is not a second appeal.",
+            "Grounds must track the three limbs of s.115."
+          ],
+          "follow_up_questions": [
+            "When does a second appeal lie?",
+            "Appeal or revision against an O.39 order?"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-VIVA-02",
+      "asset_type": "VIVA_QUESTION",
+      "viva_question_id": "HC-DRAFT-VIVA-02",
+      "section_id": "SEC-VIVA",
+      "module_id": "SEC-VIVA",
+      "topic_id": "HC-DRAFT-VIVA-02",
+      "order": 61,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "CrPC ৫৬১এ কখন ব্যবহার করবেন, আপিল নয় কেন?",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nCrPC ৫৬১এ কখন ব্যবহার করবেন, আপিল নয় কেন?",
+          "ideal_answer": "সহজাত ক্ষমতা: abuse of process বা ends of justice। সাধারণ সাক্ষ্য পুনর্মূল্যায়ন নয়। bdlaws act-75/section-22145।",
+          "key_points": [
+            "সহজাত ক্ষমতা: abuse of process বা ends of justice।",
+            "সাধারণ সাক্ষ্য পুনর্মূল্যায়ন নয়।",
+            "bdlaws act-75/section-22145।"
+          ],
+          "follow_up_questions": [
+            "৪০২/৪০৬ দেওয়ানি বিরোধে quash?",
+            "চার্জ গঠনের পর ৫৬১এ?"
+          ]
+        },
+        "en": {
+          "title": "When is CrPC s.561A used instead of an appeal?",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nWhen is CrPC s.561A used instead of an appeal?",
+          "ideal_answer": "Inherent power to stop abuse of process or secure justice. Not a routine evidence appeal. bdlaws CrPC s.561A.",
+          "key_points": [
+            "Inherent power to stop abuse of process or secure justice.",
+            "Not a routine evidence appeal.",
+            "bdlaws CrPC s.561A."
+          ],
+          "follow_up_questions": [
+            "Quash a civil dispute dressed as 406/420?",
+            "561A after charge?"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-VIVA-03",
+      "asset_type": "VIVA_QUESTION",
+      "viva_question_id": "HC-DRAFT-VIVA-03",
+      "section_id": "SEC-VIVA",
+      "module_id": "SEC-VIVA",
+      "topic_id": "HC-DRAFT-VIVA-03",
+      "order": 62,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "৪৯১ ও অনুচ্ছেদ ১০২ হেবিয়াস — পার্থক্য?",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\n৪৯১ ও অনুচ্ছেদ ১০২ হেবিয়াস — পার্থক্য?",
+          "ideal_answer": "৪৯১ বিধিবদ্ধ; ১০২(২)(খ)(i) সাংবিধানিক। ৪৯১(৩) প্রতিরোধমূলক আটক বাদ। ১০২-এ “any person” আবেদন করতে পারে।",
+          "key_points": [
+            "৪৯১ বিধিবদ্ধ; ১০২(২)(খ)(i) সাংবিধানিক।",
+            "৪৯১(৩) প্রতিরোধমূলক আটক বাদ।",
+            "১০২-এ “any person” আবেদন করতে পারে।"
+          ],
+          "follow_up_questions": [
+            "কাস্টডি প্রাইভেট হলে?",
+            "রুল নিসির প্রার্থনা?"
+          ]
+        },
+        "en": {
+          "title": "s.491 versus Art. 102 habeas?",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\ns.491 versus Art. 102 habeas?",
+          "ideal_answer": "491 statutory; 102(2)(b)(i) constitutional. 491(3) excludes preventive detention. Art. 102 habeas may be moved by any person.",
+          "key_points": [
+            "491 statutory; 102(2)(b)(i) constitutional.",
+            "491(3) excludes preventive detention.",
+            "Art. 102 habeas may be moved by any person."
+          ],
+          "follow_up_questions": [
+            "Private custody?",
+            "Do you pray for a rule nisi?"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-VIVA-04",
+      "asset_type": "VIVA_QUESTION",
+      "viva_question_id": "HC-DRAFT-VIVA-04",
+      "section_id": "SEC-VIVA",
+      "module_id": "SEC-VIVA",
+      "topic_id": "HC-DRAFT-VIVA-04",
+      "order": 63,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "পাঁচ রিট সংক্ষেপে বলুন (Art. 102)।",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nপাঁচ রিট সংক্ষেপে বলুন (Art. 102)।",
+          "ideal_answer": "Mandamus — কর্তব্য পালন/বিরত। Certiorari — বেআইনি আদেশ বাতিল। Prohibition — চলমান বেআইনি কার্যক্রম থামানো। Habeas — কাস্টডি পরীক্ষা। Quo-warranto — পাবলিক পদের কর্তৃত্ব।",
+          "key_points": [
+            "Mandamus — কর্তব্য পালন/বিরত।",
+            "Certiorari — বেআইনি আদেশ বাতিল।",
+            "Prohibition — চলমান বেআইনি কার্যক্রম থামানো।",
+            "Habeas — কাস্টডি পরীক্ষা।",
+            "Quo-warranto — পাবলিক পদের কর্তৃত্ব।"
+          ],
+          "follow_up_questions": [
+            "১০২(২) “equally efficacious remedy”?",
+            "অন্তর্বর্তী আদেশে অ্যাটর্নি জেনারেল নোটিশ?"
+          ]
+        },
+        "en": {
+          "title": "Name the five writs under Art. 102.",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nName the five writs under Art. 102.",
+          "ideal_answer": "Mandamus — do or refrain. Certiorari — quash without lawful authority. Prohibition — stop an ongoing ultra vires act. Habeas — test custody. Quo-warranto — title to public office.",
+          "key_points": [
+            "Mandamus — do or refrain.",
+            "Certiorari — quash without lawful authority.",
+            "Prohibition — stop an ongoing ultra vires act.",
+            "Habeas — test custody.",
+            "Quo-warranto — title to public office."
+          ],
+          "follow_up_questions": [
+            "Equally efficacious remedy under 102(2)?",
+            "Attorney-General notice for interim orders?"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-VIVA-05",
+      "asset_type": "VIVA_QUESTION",
+      "viva_question_id": "HC-DRAFT-VIVA-05",
+      "section_id": "SEC-VIVA",
+      "module_id": "SEC-VIVA",
+      "topic_id": "HC-DRAFT-VIVA-05",
+      "order": 64,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "হাইকোর্ট পারমিশনের পাস মার্ক কী বলেছেন? অফিসিয়াল PDF আছে কি?",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nহাইকোর্ট পারমিশনের পাস মার্ক কী বলেছেন? অফিসিয়াল PDF আছে কি?",
+          "ideal_answer": "ব্যবহারকারী: লিখিত ২৫ + ভাইভা ২৫; পাস ১২ করে; মোট ২৫। ৮/৮/৯ ও ৩ ঘণ্টা — কোচিং, অফিসিয়াল নোটিশ এই পাসে নেই। অফিসিয়াল বিগত পেপার ০।",
+          "key_points": [
+            "ব্যবহারকারী: লিখিত ২৫ + ভাইভা ২৫; পাস ১২ করে; মোট ২৫।",
+            "৮/৮/৯ ও ৩ ঘণ্টা — কোচিং, অফিসিয়াল নোটিশ এই পাসে নেই।",
+            "অফিসিয়াল বিগত পেপার ০।"
+          ],
+          "follow_up_questions": [
+            "দুই বছর সাবঅর্ডিনেট প্র্যাকটিস কোন আর্টিকেল?",
+            "অব্যাহতি Rule 65A?"
+          ]
+        },
+        "en": {
+          "title": "What pass mark did we record, and is there an official PDF?",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nWhat pass mark did we record, and is there an official PDF?",
+          "ideal_answer": "User paste: 25+25, pass 12 each, combined 25. 8/8/9 and 3 hours remain unverified coaching figures. Official past papers 0.",
+          "key_points": [
+            "User paste: 25+25, pass 12 each, combined 25.",
+            "8/8/9 and 3 hours remain unverified coaching figures.",
+            "Official past papers 0."
+          ],
+          "follow_up_questions": [
+            "Two years’ subordinate practice — which article?",
+            "Exemption under Rule 65A?"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-VIVA-06",
+      "asset_type": "VIVA_QUESTION",
+      "viva_question_id": "HC-DRAFT-VIVA-06",
+      "section_id": "SEC-VIVA",
+      "module_id": "SEC-VIVA",
+      "topic_id": "HC-DRAFT-VIVA-06",
+      "order": 65,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "অনুচ্ছেদ ২১ বার কাউন্সিল অর্ডার — হাইকোর্ট পারমিশনের শর্ত?",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nঅনুচ্ছেদ ২১ বার কাউন্সিল অর্ডার — হাইকোর্ট পারমিশনের শর্ত?",
+          "ideal_answer": "Art. 21: সাবঅর্ডিনেট কোর্টে দুই বছর, বা গেজেটভুক্ত বিদেশি হাইকোর্ট, বা নির্ধারিত অব্যাহতি। ফি Art. 22। এনরোলমেন্ট পরীক্ষা (MCQ/লিখিত/ভাইভা) আলাদা — পারমিশন পরীক্ষা মেশাবেন না।",
+          "key_points": [
+            "Art. 21: সাবঅর্ডিনেট কোর্টে দুই বছর, বা গেজেটভুক্ত বিদেশি হাইকোর্ট, বা নির্ধারিত অব্যাহতি।",
+            "ফি Art. 22।",
+            "এনরোলমেন্ট পরীক্ষা (MCQ/লিখিত/ভাইভা) আলাদা — পারমিশন পরীক্ষা মেশাবেন না।"
+          ],
+          "follow_up_questions": [
+            "সাবেক বিচারক অব্যাহতি?",
+            "পারমিশন ফর্ম কোথায় (teletalk)?"
+          ]
+        },
+        "en": {
+          "title": "Bar Council Order Art. 21 — conditions for High Court practice?",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nBar Council Order Art. 21 — conditions for High Court practice?",
+          "ideal_answer": "Art. 21: two years in subordinate courts, or notified foreign High Court, or prescribed exemption. Fee under Art. 22. Enrolment exams are a separate track from Permission drafting.",
+          "key_points": [
+            "Art. 21: two years in subordinate courts, or notified foreign High Court, or prescribed exemption.",
+            "Fee under Art. 22.",
+            "Enrolment exams are a separate track from Permission drafting."
+          ],
+          "follow_up_questions": [
+            "Exemption for former judicial officers?",
+            "Where is the Permission form (Teletalk)?"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-VIVA-07",
+      "asset_type": "VIVA_QUESTION",
+      "viva_question_id": "HC-DRAFT-VIVA-07",
+      "section_id": "SEC-HCPRAC",
+      "module_id": "SEC-HCPRAC",
+      "topic_id": "HC-DRAFT-VIVA-07",
+      "order": 66,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "খসড়ায় List of Dates কেন দেবেন?",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nখসড়ায় List of Dates কেন দেবেন?",
+          "ideal_answer": "বিচারকের জন্য ঘটনার ক্রম। গ্রাউন্ডস থেকে আলাদা রাখুন। মার্কিং স্কিম অফিসিয়াল PDF-এ নেই — কাঠামোই নম্বর বাঁচায়।",
+          "key_points": [
+            "বিচারকের জন্য ঘটনার ক্রম।",
+            "গ্রাউন্ডস থেকে আলাদা রাখুন।",
+            "মার্কিং স্কিম অফিসিয়াল PDF-এ নেই — কাঠামোই নম্বর বাঁচায়।"
+          ],
+          "follow_up_questions": [
+            "Affidavit কি বাধ্যতামূলক?",
+            "Interim-এ Art. 102(4)?"
+          ]
+        },
+        "en": {
+          "title": "Why include a List of Dates?",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nWhy include a List of Dates?",
+          "ideal_answer": "Helps the judge follow chronology. Keep dates out of the legal grounds. No official marking PDF this pass — structure still saves marks.",
+          "key_points": [
+            "Helps the judge follow chronology.",
+            "Keep dates out of the legal grounds.",
+            "No official marking PDF this pass — structure still saves marks."
+          ],
+          "follow_up_questions": [
+            "Is an affidavit mandatory?",
+            "Art. 102(4) on interim orders?"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-VIVA-08",
+      "asset_type": "VIVA_QUESTION",
+      "viva_question_id": "HC-DRAFT-VIVA-08",
+      "section_id": "SEC-VIVA",
+      "module_id": "SEC-VIVA",
+      "topic_id": "HC-DRAFT-VIVA-08",
+      "order": 67,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "আপিল বিভাগ ও হাইকোর্ট পারমিশন এক পরীক্ষা নয় কেন?",
+          "question": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়।\n\nআপিল বিভাগ ও হাইকোর্ট পারমিশন এক পরীক্ষা নয় কেন?",
+          "ideal_answer": "অনুচ্ছেদ ৯৪: দুই বিভাগ। পারমিশন = হাইকোর্ট বিভাগে প্র্যাকটিস। আপিল বিভাগ আলাদা এখতিয়ার (Art. 103)। অ্যাপে SEC-AD মিশে না।",
+          "key_points": [
+            "অনুচ্ছেদ ৯৪: দুই বিভাগ। পারমিশন = হাইকোর্ট বিভাগে প্র্যাকটিস।",
+            "আপিল বিভাগ আলাদা এখতিয়ার (Art. 103)। অ্যাপে SEC-AD মিশে না।"
+          ],
+          "follow_up_questions": [
+            "Art. 103 leave?",
+            "P4-18 নিয়ম?"
+          ]
+        },
+        "en": {
+          "title": "Why is the Appellate Division not the Permission exam?",
+          "question": "MODEL PRACTICE — not a previous-year HC paper.\n\nWhy is the Appellate Division not the Permission exam?",
+          "ideal_answer": "Art. 94: two divisions. Permission is HCD practice. AD jurisdiction is Art. 103. The app never merges SEC-AD into Permission.",
+          "key_points": [
+            "Art. 94: two divisions. Permission is HCD practice.",
+            "AD jurisdiction is Art. 103. The app never merges SEC-AD into Permission."
+          ],
+          "follow_up_questions": [
+            "Art. 103 leave?",
+            "P4-18 never-merge rule?"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRAFT-MTEST-2026",
+      "asset_type": "MODEL_TEST",
+      "section_id": "SEC-MTEST",
+      "module_id": "SEC-MTEST",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "content_source": "user-supplied-syllabus-2026",
+      "status": "PENDING_REVIEW",
+      "flags": [
+        "model_practice_not_past_paper"
+      ],
+      "duration_minutes": 180,
+      "question_ids": [
+        "HC-WQ-DRAFT-FACT-CIVIL",
+        "HC-WQ-DRAFT-FACT-561A",
+        "HC-WQ-DRAFT-FACT-WRIT"
+      ],
+      "language_versions": {
+        "bn": {
+          "title": "মডেল অনুশীলন — তিন খসড়া (বিগত পেপার নয়)",
+          "instructions": "মডেল অনুশীলন — বিগত সালের প্রশ্ন নয়। কোনো সালের HC পারমিশন পেপার নয়। তিনটি কাল্পনিক খসড়া: দেওয়ানি আপিল, ৫৬১এ, ম্যান্ডামাস। অফিসিয়াল ৩-ঘণ্টা দাবি যাচাই হয়নি। নমুনা উত্তর নেই।"
+        },
+        "en": {
+          "title": "Model practice — three drafts (not a past paper)",
+          "instructions": "MODEL PRACTICE — not a previous-year paper. Three fictional drafts. Official 3-hour claim unverified. No model answers."
+        }
+      }
+    }
+  ]
+}

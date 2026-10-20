@@ -1,0 +1,4417 @@
+{
+  "batch_id": "BATCH-2026-09-042-MCQ-2025-USER",
+  "schema_version": "1.0",
+  "content_version": "2026.09.15",
+  "created_at": "2026-09-15T00:00:00Z",
+  "source": "user-supplied",
+  "content_source": "user-supplied",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "User-supplied Bar Council MCQ 2025 Q1–100 (prelim 25 Apr 2025).",
+  "official_past_papers": 0,
+  "asset_count": 100,
+  "assets": [
+    {
+      "content_id": "BC-MCQ-US-2025-001",
+      "question_id": "BC-MCQ-US-2025-001",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 1",
+          "question": "দলিল যথাযথ হেফাজত থেকে আদালতে দাখিল হলে তা যথাবিহিতরূপে সম্পাদিত বলে অনুমান করা যাবে_____ পুরাতন হলে।",
+          "options": {
+            "A": "১৪ বছর",
+            "B": "২০ বছর",
+            "C": "৭ বছর",
+            "D": "৩০ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. সাক্ষ্য আইন রেঃ সেকশন ৯০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q1",
+          "question": "দলিল যথাযথ হেফাজত থেকে আদালতে দাখিল হলে তা যথাবিহিতরূপে সম্পাদিত বলে অনুমান করা যাবে_____ পুরাতন হলে।",
+          "options": {
+            "A": "১৪ বছর",
+            "B": "২০ বছর",
+            "C": "৭ বছর",
+            "D": "৩০ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. সাক্ষ্য আইন রেঃ সেকশন ৯০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-002",
+      "question_id": "BC-MCQ-US-2025-002",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 2",
+          "question": "বিচারিক ও দাপ্তরিক কার্যাবলী নিয়মিতভাবে সম্পন্ন হয়েছে মর্মে অনুমানের ক্ষমতা আদালতকে প্রদান করা হয়েছে The Evidence Act, 1872 এর _____ ধারায়।",
+          "options": {
+            "A": "১১৪",
+            "B": "৫৮",
+            "C": "৫৬",
+            "D": "১০৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ১১৪(E)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q2",
+          "question": "বিচারিক ও দাপ্তরিক কার্যাবলী নিয়মিতভাবে সম্পন্ন হয়েছে মর্মে অনুমানের ক্ষমতা আদালতকে প্রদান করা হয়েছে The Evidence Act, 1872 এর _____ ধারায়।",
+          "options": {
+            "A": "১১৪",
+            "B": "৫৮",
+            "C": "৫৬",
+            "D": "১০৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ১১৪(E)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-003",
+      "question_id": "BC-MCQ-US-2025-003",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 3",
+          "question": "‘মামলার কোনো বিষয় প্রমাণের জন্য নির্দিষ্ট সংখ্যক সাক্ষীর প্রয়োজন হবে না’-এটি The Evidence Act, 1872 এর কোন ধারার বিধান?",
+          "options": {
+            "A": "১৪৫",
+            "B": "১৩৫",
+            "C": "১৩৪",
+            "D": "১৩৩"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q3",
+          "question": "‘মামলার কোনো বিষয় প্রমাণের জন্য নির্দিষ্ট সংখ্যক সাক্ষীর প্রয়োজন হবে না’-এটি The Evidence Act, 1872 এর কোন ধারার বিধান?",
+          "options": {
+            "A": "১৪৫",
+            "B": "১৩৫",
+            "C": "১৩৪",
+            "D": "১৩৩"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-004",
+      "question_id": "BC-MCQ-US-2025-004",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 4",
+          "question": "কোন সাক্ষীকে মামলার উভয়পক্ষ জেরা করতে পারে?",
+          "options": {
+            "A": "১৬৪ ধারায় জবানবন্দী রেকর্ডকারী সাক্ষী",
+            "B": "পুনরায় তলবকৃত সাক্ষী",
+            "C": "চিকিৎসক সাক্ষী",
+            "D": "বৈরী ঘোষিত সাক্ষী"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. সাক্ষ্য আইন ১৫৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q4",
+          "question": "কোন সাক্ষীকে মামলার উভয়পক্ষ জেরা করতে পারে?",
+          "options": {
+            "A": "১৬৪ ধারায় জবানবন্দী রেকর্ডকারী সাক্ষী",
+            "B": "পুনরায় তলবকৃত সাক্ষী",
+            "C": "চিকিৎসক সাক্ষী",
+            "D": "বৈরী ঘোষিত সাক্ষী"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. সাক্ষ্য আইন ১৫৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-005",
+      "question_id": "BC-MCQ-US-2025-005",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 5",
+          "question": "একই কার্যের অংশ হিসেবে থাকা ঘটনাসমূহের প্রাসঙ্গিকতা সংক্রান্ত বিধান The Evidence Act, 1872 এর কোন ধারায় বর্ণিত হয়েছে?",
+          "options": {
+            "A": "৮",
+            "B": "৫",
+            "C": "৭",
+            "D": "৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. সাক্ষ্য আইন ৬\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q5",
+          "question": "একই কার্যের অংশ হিসেবে থাকা ঘটনাসমূহের প্রাসঙ্গিকতা সংক্রান্ত বিধান The Evidence Act, 1872 এর কোন ধারায় বর্ণিত হয়েছে?",
+          "options": {
+            "A": "৮",
+            "B": "৫",
+            "C": "৭",
+            "D": "৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. সাক্ষ্য আইন ৬\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-006",
+      "question_id": "BC-MCQ-US-2025-006",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 6",
+          "question": "The Evidence Act, 1872 এর ৬৫ ধারানুযায়ী দলিলের অস্তিত্ব, অবস্থা বা বিষয়বস্তু সম্পর্কে কয়টি ক্ষেত্রে মাধ্যমিক সাক্ষ্য গ্রহণযোগ্য করা হয়েছে?",
+          "options": {
+            "A": "৯ টি",
+            "B": "৫ টি",
+            "C": "৭ টি",
+            "D": "৩ টি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন ৬৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q6",
+          "question": "The Evidence Act, 1872 এর ৬৫ ধারানুযায়ী দলিলের অস্তিত্ব, অবস্থা বা বিষয়বস্তু সম্পর্কে কয়টি ক্ষেত্রে মাধ্যমিক সাক্ষ্য গ্রহণযোগ্য করা হয়েছে?",
+          "options": {
+            "A": "৯ টি",
+            "B": "৫ টি",
+            "C": "৭ টি",
+            "D": "৩ টি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন ৬৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-007",
+      "question_id": "BC-MCQ-US-2025-007",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 7",
+          "question": "পূর্ববর্তী দণ্ডাদেশ খারাপ চরিত্রের সাক্ষ্য হিসেবে প্রাসঙ্গিক The Evidence Act, 1872 এর কোন ধারানুযায়ী?",
+          "options": {
+            "A": "৫৫",
+            "B": "১৫৫",
+            "C": "৫৪",
+            "D": "১৫১"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন ৫৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q7",
+          "question": "পূর্ববর্তী দণ্ডাদেশ খারাপ চরিত্রের সাক্ষ্য হিসেবে প্রাসঙ্গিক The Evidence Act, 1872 এর কোন ধারানুযায়ী?",
+          "options": {
+            "A": "৫৫",
+            "B": "১৫৫",
+            "C": "৫৪",
+            "D": "১৫১"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন ৫৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-008",
+      "question_id": "BC-MCQ-US-2025-008",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 8",
+          "question": "The Evidence Act, 1872 এর ১৪ ধারাটি নিচের কোন মানসিক অবস্থার সাথে সম্পৃক্ত নয়?",
+          "options": {
+            "A": "উদ্দেশ্য (Motive)",
+            "B": "অভিপ্রায় (Intention)",
+            "C": "সদ্বিশ্বাস (Good faith)",
+            "D": "জ্ঞান (Knowledge)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ১৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q8",
+          "question": "The Evidence Act, 1872 এর ১৪ ধারাটি নিচের কোন মানসিক অবস্থার সাথে সম্পৃক্ত নয়?",
+          "options": {
+            "A": "উদ্দেশ্য (Motive)",
+            "B": "অভিপ্রায় (Intention)",
+            "C": "সদ্বিশ্বাস (Good faith)",
+            "D": "জ্ঞান (Knowledge)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ১৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-009",
+      "question_id": "BC-MCQ-US-2025-009",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 9",
+          "question": "‘Fraud vitiates everything’-নীতিটি The Evidence Act, 1872 এর কোন ধারায় প্রতিফলিত হয়েছে?",
+          "options": {
+            "A": "৪১",
+            "B": "৪৩",
+            "C": "৪২",
+            "D": "৪৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. সাক্ষ্য আইন ৪৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q9",
+          "question": "‘Fraud vitiates everything’-নীতিটি The Evidence Act, 1872 এর কোন ধারায় প্রতিফলিত হয়েছে?",
+          "options": {
+            "A": "৪১",
+            "B": "৪৩",
+            "C": "৪২",
+            "D": "৪৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. সাক্ষ্য আইন ৪৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-010",
+      "question_id": "BC-MCQ-US-2025-010",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 10",
+          "question": "‘Presumption of ownership arises from possession’- সংক্রান্ত ধারণা পাওয়া যায় The Evidence Act, 1872 এর কোন ধারায়?",
+          "options": {
+            "A": "১১০",
+            "B": "১০৯",
+            "C": "১১১",
+            "D": "১০৮"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ১১০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q10",
+          "question": "‘Presumption of ownership arises from possession’- সংক্রান্ত ধারণা পাওয়া যায় The Evidence Act, 1872 এর কোন ধারায়?",
+          "options": {
+            "A": "১১০",
+            "B": "১০৯",
+            "C": "১১১",
+            "D": "১০৮"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ১১০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-011",
+      "question_id": "BC-MCQ-US-2025-011",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 11",
+          "question": "The Evidence Act, 1872 এর ৬০ ধারানুযায়ী ‘Oral evidence must be",
+          "options": {
+            "A": "Direct",
+            "B": "Indirect",
+            "C": "Circumstantial",
+            "D": "উপরের সবগুলো"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ৬০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q11",
+          "question": "The Evidence Act, 1872 এর ৬০ ধারানুযায়ী ‘Oral evidence must be",
+          "options": {
+            "A": "Direct",
+            "B": "Indirect",
+            "C": "Circumstantial",
+            "D": "উপরের সবগুলো"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ৬০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-012",
+      "question_id": "BC-MCQ-US-2025-012",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 12",
+          "question": "The Evidence Act, 1872 এর কোন ধারা মতে টিপসহি সনাক্তকরণের বিষয়ে বিশেষজ্ঞের অভিমত প্রাসঙ্গিক?",
+          "options": {
+            "A": "47",
+            "B": "50",
+            "C": "45",
+            "D": "48"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন ৪৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q12",
+          "question": "The Evidence Act, 1872 এর কোন ধারা মতে টিপসহি সনাক্তকরণের বিষয়ে বিশেষজ্ঞের অভিমত প্রাসঙ্গিক?",
+          "options": {
+            "A": "47",
+            "B": "50",
+            "C": "45",
+            "D": "48"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন ৪৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-013",
+      "question_id": "BC-MCQ-US-2025-013",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 13",
+          "question": "বিচারক কর্তৃক সাক্ষীকে জিজ্ঞাসিত প্রশ্নের বিষয়ে জেরা",
+          "options": {
+            "A": "করা যায় না",
+            "B": "অপরপক্ষের অনুমতিক্রমে করা যায়",
+            "C": "আদালতের অনুমতিক্রমে করা যায়",
+            "D": "করা যায়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন ১৬৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q13",
+          "question": "বিচারক কর্তৃক সাক্ষীকে জিজ্ঞাসিত প্রশ্নের বিষয়ে জেরা",
+          "options": {
+            "A": "করা যায় না",
+            "B": "অপরপক্ষের অনুমতিক্রমে করা যায়",
+            "C": "আদালতের অনুমতিক্রমে করা যায়",
+            "D": "করা যায়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. সাক্ষ্য আইন ১৬৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-014",
+      "question_id": "BC-MCQ-US-2025-014",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 14",
+          "question": "নিচের কোনটি Public Document নয়?",
+          "options": {
+            "A": "মোকদ্দমার Pleadings",
+            "B": "বিভাগীয় তদন্তে রেকর্ডকৃত জবানবন্দী",
+            "C": "জন্ম সনদ",
+            "D": "টিকা সনদ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. সাক্ষ্য আইন\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q14",
+          "question": "নিচের কোনটি Public Document নয়?",
+          "options": {
+            "A": "মোকদ্দমার Pleadings",
+            "B": "বিভাগীয় তদন্তে রেকর্ডকৃত জবানবন্দী",
+            "C": "জন্ম সনদ",
+            "D": "টিকা সনদ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. সাক্ষ্য আইন\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-015",
+      "question_id": "BC-MCQ-US-2025-015",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 15",
+          "question": "মেট্রোরেলে বিনা টিকিটে ভ্রমণের দায়ে X অভিযুক্ত হল। তার নিকট টিকিট ছিল তা প্রমাণের দায়িত্ব",
+          "options": {
+            "A": "অভিযুক্তের",
+            "B": "মেট্রোরেল কর্তৃপক্ষের",
+            "C": "কর্তব্যরত পুলিশের",
+            "D": "কর্তব্যরত আনসারের"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ১০৬\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q15",
+          "question": "মেট্রোরেলে বিনা টিকিটে ভ্রমণের দায়ে X অভিযুক্ত হল। তার নিকট টিকিট ছিল তা প্রমাণের দায়িত্ব",
+          "options": {
+            "A": "অভিযুক্তের",
+            "B": "মেট্রোরেল কর্তৃপক্ষের",
+            "C": "কর্তব্যরত পুলিশের",
+            "D": "কর্তব্যরত আনসারের"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. সাক্ষ্য আইন ১০৬\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-016",
+      "question_id": "BC-MCQ-US-2025-016",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 16",
+          "question": "বিনা জারীতে সমন ফেরত আসার কত দিনের মধ্যে বাদী পুনরায় সমন জারীর আবেদন করতে ব্যর্থ হলে মামলা খারিজ হবে?",
+          "options": {
+            "A": "২৮ দিন",
+            "B": "২১ দিন",
+            "C": "৩০ দিন",
+            "D": "১৪ দিন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ৯ বিধি ৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q16",
+          "question": "বিনা জারীতে সমন ফেরত আসার কত দিনের মধ্যে বাদী পুনরায় সমন জারীর আবেদন করতে ব্যর্থ হলে মামলা খারিজ হবে?",
+          "options": {
+            "A": "২৮ দিন",
+            "B": "২১ দিন",
+            "C": "৩০ দিন",
+            "D": "১৪ দিন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ৯ বিধি ৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-017",
+      "question_id": "BC-MCQ-US-2025-017",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 17",
+          "question": "The Code of Civil Procedure, 1908 অনুযায়ী নিচের কোনটি আপীল আদালতের এখতিয়ার?",
+          "options": {
+            "A": "মামলা চূড়ান্তভাবে নিষ্পত্তি করা",
+            "B": "অধিকতর সাক্ষ্য গ্রহণ করা",
+            "C": "ইস্যু গঠন ও বিচারের জন্য প্রেরণ করা",
+            "D": "উপরের সবকটি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC ১০৭\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q17",
+          "question": "The Code of Civil Procedure, 1908 অনুযায়ী নিচের কোনটি আপীল আদালতের এখতিয়ার?",
+          "options": {
+            "A": "মামলা চূড়ান্তভাবে নিষ্পত্তি করা",
+            "B": "অধিকতর সাক্ষ্য গ্রহণ করা",
+            "C": "ইস্যু গঠন ও বিচারের জন্য প্রেরণ করা",
+            "D": "উপরের সবকটি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC ১০৭\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-018",
+      "question_id": "BC-MCQ-US-2025-018",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 18",
+          "question": "The Code of Civil Procedure, 1908 এর আদেশ ১ এর কোন বিধি অনুযায়ী আদালত মোকদ্দমার পক্ষসমূহকে বাদ দিতে বা যোগ করতে পারে?",
+          "options": {
+            "A": "৯",
+            "B": "১",
+            "C": "১০(২)",
+            "D": "১০(১)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ১ বিধি ১০(২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q18",
+          "question": "The Code of Civil Procedure, 1908 এর আদেশ ১ এর কোন বিধি অনুযায়ী আদালত মোকদ্দমার পক্ষসমূহকে বাদ দিতে বা যোগ করতে পারে?",
+          "options": {
+            "A": "৯",
+            "B": "১",
+            "C": "১০(২)",
+            "D": "১০(১)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ১ বিধি ১০(২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-019",
+      "question_id": "BC-MCQ-US-2025-019",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 19",
+          "question": "অপর্যাপ্ত স্ট্যাম্পযুক্ত কাগজে আরজি দাখিলের ত্রুটি দূরীকরণে আদালত সর্বোচ্চ কত সময় মঞ্জুর করতে পারে?",
+          "options": {
+            "A": "২১ দিন",
+            "B": "১০ দিন",
+            "C": "১৪ দিন",
+            "D": "৭ দিন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CPC আদেশ ৭ বিধি ১১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q19",
+          "question": "অপর্যাপ্ত স্ট্যাম্পযুক্ত কাগজে আরজি দাখিলের ত্রুটি দূরীকরণে আদালত সর্বোচ্চ কত সময় মঞ্জুর করতে পারে?",
+          "options": {
+            "A": "২১ দিন",
+            "B": "১০ দিন",
+            "C": "১৪ দিন",
+            "D": "৭ দিন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CPC আদেশ ৭ বিধি ১১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-020",
+      "question_id": "BC-MCQ-US-2025-020",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 20",
+          "question": "চূড়ান্ত শুনানীর তারিখ নির্ধারিত হওয়ার____ এর মধ্যে আদালত দেওয়ানী মোকদ্দমার শুনানী সমাপ্ত করবে।",
+          "options": {
+            "A": "১২০ কার্যদিবস",
+            "B": "৮০ দিন",
+            "C": "১২০ দিন",
+            "D": "৮০ কার্য দিবস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CPC আদেশ ১৪ বিধি ১৯(২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q20",
+          "question": "চূড়ান্ত শুনানীর তারিখ নির্ধারিত হওয়ার____ এর মধ্যে আদালত দেওয়ানী মোকদ্দমার শুনানী সমাপ্ত করবে।",
+          "options": {
+            "A": "১২০ কার্যদিবস",
+            "B": "৮০ দিন",
+            "C": "১২০ দিন",
+            "D": "৮০ কার্য দিবস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CPC আদেশ ১৪ বিধি ১৯(২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-021",
+      "question_id": "BC-MCQ-US-2025-021",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 21",
+          "question": "নিচের কোনটি Pleadings এর উপাদান নয়?",
+          "options": {
+            "A": "গুরুত্বপূর্ণ তথ্য",
+            "B": "স্বাক্ষর",
+            "C": "সত্যতা প্রতিপাদন",
+            "D": "গুরুত্বপূর্ণ সাক্ষ্য"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৬ বিধি ২ ১৪ ১৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q21",
+          "question": "নিচের কোনটি Pleadings এর উপাদান নয়?",
+          "options": {
+            "A": "গুরুত্বপূর্ণ তথ্য",
+            "B": "স্বাক্ষর",
+            "C": "সত্যতা প্রতিপাদন",
+            "D": "গুরুত্বপূর্ণ সাক্ষ্য"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৬ বিধি ২ ১৪ ১৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-022",
+      "question_id": "BC-MCQ-US-2025-022",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 22",
+          "question": "৩০ ধারানুযায়ী সমন পেয়েও সাক্ষ্য দিতে না এলে সাক্ষীকে সর্বোচ্চ কত টাকা জরিমানা করা যায়?",
+          "options": {
+            "A": "অনধিক ২০০ টাকা",
+            "B": "অনধিক ১০০ টাকা",
+            "C": "অনধিক ১০০০ টাকা",
+            "D": "অনধিক ৫০০ টাকা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC ৩২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q22",
+          "question": "৩০ ধারানুযায়ী সমন পেয়েও সাক্ষ্য দিতে না এলে সাক্ষীকে সর্বোচ্চ কত টাকা জরিমানা করা যায়?",
+          "options": {
+            "A": "অনধিক ২০০ টাকা",
+            "B": "অনধিক ১০০ টাকা",
+            "C": "অনধিক ১০০০ টাকা",
+            "D": "অনধিক ৫০০ টাকা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC ৩২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-023",
+      "question_id": "BC-MCQ-US-2025-023",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 23",
+          "question": "গুরুতর অসুস্থতার কারণে দায়িককে দেওয়ানী কারাগার থেকে মুক্তির বিধান আছে কোন ধারায়?",
+          "options": {
+            "A": "৫৬",
+            "B": "৫৯",
+            "C": "৫৮",
+            "D": "৫৭"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CPC ৫৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q23",
+          "question": "গুরুতর অসুস্থতার কারণে দায়িককে দেওয়ানী কারাগার থেকে মুক্তির বিধান আছে কোন ধারায়?",
+          "options": {
+            "A": "৫৬",
+            "B": "৫৯",
+            "C": "৫৮",
+            "D": "৫৭"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CPC ৫৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-024",
+      "question_id": "BC-MCQ-US-2025-024",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 24",
+          "question": "আদেশ ৭ বিধি ১১ এ আরজি প্রত্যাখ্যানের কয়টি কারণ উল্লেখ আছে?",
+          "options": {
+            "A": "৩",
+            "B": "৬",
+            "C": "৪",
+            "D": "৫"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ৭ বিধি ১১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q24",
+          "question": "আদেশ ৭ বিধি ১১ এ আরজি প্রত্যাখ্যানের কয়টি কারণ উল্লেখ আছে?",
+          "options": {
+            "A": "৩",
+            "B": "৬",
+            "C": "৪",
+            "D": "৫"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ৭ বিধি ১১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-025",
+      "question_id": "BC-MCQ-US-2025-025",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 25",
+          "question": "নিচের কোন কারণে ডিক্রী প্রদানকারী আদালতে রিভিউ আবেদন করা যাবে?",
+          "options": {
+            "A": "কোনো গুরুত্বপূর্ণ বিষয় আবিষ্কার হলে",
+            "B": "কোনো গুরুত্বপূর্ণ সাক্ষ্য আবিষ্কার হলে",
+            "C": "নথীদৃষ্টে কোনো ভুল বা ভ্রান্তি প্রতীয়মান হলে",
+            "D": "উপরের সবগুলো"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৪৭ বিধি ১ ধারা ১১৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q25",
+          "question": "নিচের কোন কারণে ডিক্রী প্রদানকারী আদালতে রিভিউ আবেদন করা যাবে?",
+          "options": {
+            "A": "কোনো গুরুত্বপূর্ণ বিষয় আবিষ্কার হলে",
+            "B": "কোনো গুরুত্বপূর্ণ সাক্ষ্য আবিষ্কার হলে",
+            "C": "নথীদৃষ্টে কোনো ভুল বা ভ্রান্তি প্রতীয়মান হলে",
+            "D": "উপরের সবগুলো"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৪৭ বিধি ১ ধারা ১১৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-026",
+      "question_id": "BC-MCQ-US-2025-026",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 26",
+          "question": "নাবালকের পক্ষে মোকদ্দমা দায়ের করবে____",
+          "options": {
+            "A": "আদালত কর্তৃক নিযুক্ত আইনজীবী",
+            "B": "আইনী অভিভাবক",
+            "C": "আদালত কর্তৃক নিযুক্ত অভিভাবক",
+            "D": "পরবর্তী বন্ধু"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৩২ বিধি ১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q26",
+          "question": "নাবালকের পক্ষে মোকদ্দমা দায়ের করবে____",
+          "options": {
+            "A": "আদালত কর্তৃক নিযুক্ত আইনজীবী",
+            "B": "আইনী অভিভাবক",
+            "C": "আদালত কর্তৃক নিযুক্ত অভিভাবক",
+            "D": "পরবর্তী বন্ধু"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৩২ বিধি ১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-027",
+      "question_id": "BC-MCQ-US-2025-027",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 27",
+          "question": "স্থাবর সম্পত্তি নিলাম বিক্রিতে ক্রেতা হিসাবে ঘোষণার অব্যবহিত পরেই ক্রেতাকে ক্রয়মূল্যের____ টাকা জমা দিতে হবে।",
+          "options": {
+            "A": "৫০%",
+            "B": "৭৫%",
+            "C": "২৫%",
+            "D": "৩০%"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ২১ বিধি ৮৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q27",
+          "question": "স্থাবর সম্পত্তি নিলাম বিক্রিতে ক্রেতা হিসাবে ঘোষণার অব্যবহিত পরেই ক্রেতাকে ক্রয়মূল্যের____ টাকা জমা দিতে হবে।",
+          "options": {
+            "A": "৫০%",
+            "B": "৭৫%",
+            "C": "২৫%",
+            "D": "৩০%"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ২১ বিধি ৮৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-028",
+      "question_id": "BC-MCQ-US-2025-028",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 28",
+          "question": "দেওয়ানী মোকদ্দমায় শাসনতান্ত্রিক ব্যাখ্যা সংক্রান্ত প্রশ্ন জড়িত থাকলে আদালত কাকে নোটিশ দিবে?",
+          "options": {
+            "A": "সুপ্রীম কোর্ট",
+            "B": "আইন মন্ত্রণালয়",
+            "C": "অ্যাটর্নি-জেনারেল",
+            "D": "রাষ্ট্রপতি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ২৭(ক) বিধি ১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q28",
+          "question": "দেওয়ানী মোকদ্দমায় শাসনতান্ত্রিক ব্যাখ্যা সংক্রান্ত প্রশ্ন জড়িত থাকলে আদালত কাকে নোটিশ দিবে?",
+          "options": {
+            "A": "সুপ্রীম কোর্ট",
+            "B": "আইন মন্ত্রণালয়",
+            "C": "অ্যাটর্নি-জেনারেল",
+            "D": "রাষ্ট্রপতি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ২৭(ক) বিধি ১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-029",
+      "question_id": "BC-MCQ-US-2025-029",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 29",
+          "question": "স্থানীয় তদন্তের কমিশন প্রাপ্ত ব্যক্তি রিপোর্ট দাখিলের জন্য সময় পাবে____",
+          "options": {
+            "A": "৪ মাস",
+            "B": "১ মাস",
+            "C": "৩ মাস",
+            "D": "২ মাস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ২৬ বিধি ৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q29",
+          "question": "স্থানীয় তদন্তের কমিশন প্রাপ্ত ব্যক্তি রিপোর্ট দাখিলের জন্য সময় পাবে____",
+          "options": {
+            "A": "৪ মাস",
+            "B": "১ মাস",
+            "C": "৩ মাস",
+            "D": "২ মাস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CPC আদেশ ২৬ বিধি ৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-030",
+      "question_id": "BC-MCQ-US-2025-030",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 30",
+          "question": "যথাযথভাবে মোকদ্দমা দায়েরের কত দিনের মধ্যে বিবাদীর প্রতি সমন ইস্যু করতে হবে?",
+          "options": {
+            "A": "অব্যবহিত পরেই",
+            "B": "৫ কার্যদিবস",
+            "C": "৭ কার্যদিবস",
+            "D": "১০ কার্যদিবস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CPC আদেশ ৫বিধি ১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q30",
+          "question": "যথাযথভাবে মোকদ্দমা দায়েরের কত দিনের মধ্যে বিবাদীর প্রতি সমন ইস্যু করতে হবে?",
+          "options": {
+            "A": "অব্যবহিত পরেই",
+            "B": "৫ কার্যদিবস",
+            "C": "৭ কার্যদিবস",
+            "D": "১০ কার্যদিবস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CPC আদেশ ৫বিধি ১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-031",
+      "question_id": "BC-MCQ-US-2025-031",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 31",
+          "question": "রায় অনুযায়ী প্রণীত ডিক্রীতে স্বাক্ষর করবেন কে?",
+          "options": {
+            "A": "প্রশাসনিক কর্মকর্তা",
+            "B": "সেরেস্তাদার",
+            "C": "সেরেস্তা সহকারী",
+            "D": "বিচারক"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ২০ বিধি ৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q31",
+          "question": "রায় অনুযায়ী প্রণীত ডিক্রীতে স্বাক্ষর করবেন কে?",
+          "options": {
+            "A": "প্রশাসনিক কর্মকর্তা",
+            "B": "সেরেস্তাদার",
+            "C": "সেরেস্তা সহকারী",
+            "D": "বিচারক"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ২০ বিধি ৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-032",
+      "question_id": "BC-MCQ-US-2025-032",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 32",
+          "question": "89A ধারার অধীন ঘোষণাকৃত আদেশ বা ডিক্রীর বিরুদ্ধে নিচের কোন প্রতিকার গ্রহণ করা যাবে?",
+          "options": {
+            "A": "আপীল",
+            "B": "রিভিশন",
+            "C": "উভয়ই",
+            "D": "কোনোটিই নয়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC ধারা ৮৯ক(১২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q32",
+          "question": "89A ধারার অধীন ঘোষণাকৃত আদেশ বা ডিক্রীর বিরুদ্ধে নিচের কোন প্রতিকার গ্রহণ করা যাবে?",
+          "options": {
+            "A": "আপীল",
+            "B": "রিভিশন",
+            "C": "উভয়ই",
+            "D": "কোনোটিই নয়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC ধারা ৮৯ক(১২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-033",
+      "question_id": "BC-MCQ-US-2025-033",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 33",
+          "question": "The Code of Civil Procedure, 1908 এর আদেশ ৩৯ এর কোন বিধি অনুযায়ী সরকারী উন্নয়ন প্রকল্পে হস্তক্ষেপের সামিল এমন একতরফা নিষেধাজ্ঞার আদেশ বারিত?",
+          "options": {
+            "A": "Rule 3A",
+            "B": "Rule 5",
+            "C": "Rule 3",
+            "D": "Rule 5A"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৩৯ বিধি ৫ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q33",
+          "question": "The Code of Civil Procedure, 1908 এর আদেশ ৩৯ এর কোন বিধি অনুযায়ী সরকারী উন্নয়ন প্রকল্পে হস্তক্ষেপের সামিল এমন একতরফা নিষেধাজ্ঞার আদেশ বারিত?",
+          "options": {
+            "A": "Rule 3A",
+            "B": "Rule 5",
+            "C": "Rule 3",
+            "D": "Rule 5A"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৩৯ বিধি ৫ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-034",
+      "question_id": "BC-MCQ-US-2025-034",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 34",
+          "question": "নিচের কোন বিধি অনুযায়ী প্রদত্ত আদেশের বিরুদ্ধে আপীল চলে না?",
+          "options": {
+            "A": "আদেশ ১১ বিধি ২১",
+            "B": "আদেশ ৩৯ বিধি ১",
+            "C": "আদেশ ৭ বিধি ১০",
+            "D": "আদেশ ৯ বিধি ৩"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৯ বিধি ৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q34",
+          "question": "নিচের কোন বিধি অনুযায়ী প্রদত্ত আদেশের বিরুদ্ধে আপীল চলে না?",
+          "options": {
+            "A": "আদেশ ১১ বিধি ২১",
+            "B": "আদেশ ৩৯ বিধি ১",
+            "C": "আদেশ ৭ বিধি ১০",
+            "D": "আদেশ ৯ বিধি ৩"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৯ বিধি ৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-035",
+      "question_id": "BC-MCQ-US-2025-035",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 35",
+          "question": "ডিক্রী প্রদানকারী আদালত কর্তৃক ডিক্রী জারী স্থগিত রাখার বিধান আছে The Code of Civil Procedure, 1908 এর কোন আদেশে?",
+          "options": {
+            "A": "৪৪",
+            "B": "৪২",
+            "C": "৪৩",
+            "D": "৪১"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৪১ বিধি ৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q35",
+          "question": "ডিক্রী প্রদানকারী আদালত কর্তৃক ডিক্রী জারী স্থগিত রাখার বিধান আছে The Code of Civil Procedure, 1908 এর কোন আদেশে?",
+          "options": {
+            "A": "৪৪",
+            "B": "৪২",
+            "C": "৪৩",
+            "D": "৪১"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CPC আদেশ ৪১ বিধি ৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-036",
+      "question_id": "BC-MCQ-US-2025-036",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 36",
+          "question": "নিম্নলিখিত কোন ক্ষেত্রে তামাদির মেয়াদ বর্ধিতকরণ সংক্রান্ত ৫ ধারার বিধান প্রযোজ্য নয়?",
+          "options": {
+            "A": "আপীল",
+            "B": "রিভিউ",
+            "C": "রিভিশন",
+            "D": "মূল মোকদ্দমা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. তামাদি আইন ধারা ৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q36",
+          "question": "নিম্নলিখিত কোন ক্ষেত্রে তামাদির মেয়াদ বর্ধিতকরণ সংক্রান্ত ৫ ধারার বিধান প্রযোজ্য নয়?",
+          "options": {
+            "A": "আপীল",
+            "B": "রিভিউ",
+            "C": "রিভিশন",
+            "D": "মূল মোকদ্দমা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. তামাদি আইন ধারা ৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-037",
+      "question_id": "BC-MCQ-US-2025-037",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 37",
+          "question": "সরকারী সম্পত্তিতে সুখাধিকার (Easements) অর্জিত হয় অব্যাহতভাবে কত বছর ব্যবহার করলে?",
+          "options": {
+            "A": "৬০ বছর",
+            "B": "২০ বছর",
+            "C": "৩০ বছর",
+            "D": "৪০ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন ধারা ২৬(২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q37",
+          "question": "সরকারী সম্পত্তিতে সুখাধিকার (Easements) অর্জিত হয় অব্যাহতভাবে কত বছর ব্যবহার করলে?",
+          "options": {
+            "A": "৬০ বছর",
+            "B": "২০ বছর",
+            "C": "৩০ বছর",
+            "D": "৪০ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন ধারা ২৬(২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-038",
+      "question_id": "BC-MCQ-US-2025-038",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 38",
+          "question": "স্থাবর সম্পত্তির দখল লাভের জন্য আনীত মামলার তামাদির মেয়াদ ১২ বছর। কোন অনুচ্ছেদে এটি উল্লেখ রয়েছে?",
+          "options": {
+            "A": "১৪৫",
+            "B": "১৪১",
+            "C": "১৪৪",
+            "D": "১৪৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. তামাদি আইন অনু ১৪৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q38",
+          "question": "স্থাবর সম্পত্তির দখল লাভের জন্য আনীত মামলার তামাদির মেয়াদ ১২ বছর। কোন অনুচ্ছেদে এটি উল্লেখ রয়েছে?",
+          "options": {
+            "A": "১৪৫",
+            "B": "১৪১",
+            "C": "১৪৪",
+            "D": "১৪৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. তামাদি আইন অনু ১৪৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-039",
+      "question_id": "BC-MCQ-US-2025-039",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 39",
+          "question": "স্থাবর সম্পত্তিতে অনধিকার প্রবেশে ক্ষতিপূরণের মামলার তামাদিকাল কত?",
+          "options": {
+            "A": "৩ বছর",
+            "B": "১ বছর",
+            "C": "৬ বছর",
+            "D": "২ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন অনু ৩৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q39",
+          "question": "স্থাবর সম্পত্তিতে অনধিকার প্রবেশে ক্ষতিপূরণের মামলার তামাদিকাল কত?",
+          "options": {
+            "A": "৩ বছর",
+            "B": "১ বছর",
+            "C": "৬ বছর",
+            "D": "২ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন অনু ৩৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-040",
+      "question_id": "BC-MCQ-US-2025-040",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 40",
+          "question": "The Code of Criminal Procedure, 1898 অনুসারে খালাসের আদেশের বিরুদ্ধে আপীলের তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "৬ মাস",
+            "B": "২০ দিন",
+            "C": "৩ মাস",
+            "D": "৩০ দিন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন অনুচ্ছেদ ১৫৭\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q40",
+          "question": "The Code of Criminal Procedure, 1898 অনুসারে খালাসের আদেশের বিরুদ্ধে আপীলের তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "৬ মাস",
+            "B": "২০ দিন",
+            "C": "৩ মাস",
+            "D": "৩০ দিন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন অনুচ্ছেদ ১৫৭\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-041",
+      "question_id": "BC-MCQ-US-2025-041",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 41",
+          "question": "সহকারী জজের ডিক্রীর বিরুদ্ধে জেলা জজের নিকট আপীল দায়েরের জন্য তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "২০দিন",
+            "B": "১৫ দিন",
+            "C": "৭ দিন",
+            "D": "৩০ দিন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. তামাদি আইন অনু ১৫২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q41",
+          "question": "সহকারী জজের ডিক্রীর বিরুদ্ধে জেলা জজের নিকট আপীল দায়েরের জন্য তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "২০দিন",
+            "B": "১৫ দিন",
+            "C": "৭ দিন",
+            "D": "৩০ দিন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. তামাদি আইন অনু ১৫২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-042",
+      "question_id": "BC-MCQ-US-2025-042",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 42",
+          "question": "বংশগত পদ দখল করার মামলার তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "৬০ বছর",
+            "B": "৩ বছর",
+            "C": "১২ বছর",
+            "D": "৬ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. তামাদি আইন অনু ১২৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q42",
+          "question": "বংশগত পদ দখল করার মামলার তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "৬০ বছর",
+            "B": "৩ বছর",
+            "C": "১২ বছর",
+            "D": "৬ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. তামাদি আইন অনু ১২৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-043",
+      "question_id": "BC-MCQ-US-2025-043",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 43",
+          "question": "তামাদি মেয়াদান্তে দাখিলকৃত মোকদ্দমায় বিবাদী কর্তৃক তামাদির বিষয়ে আপত্তি উত্থাপন করা হয় নি। এক্ষেত্রে মামলাটি",
+          "options": {
+            "A": "খারিজ হবে",
+            "B": "চলবে",
+            "C": "স্থগিত থাকবে",
+            "D": "উপরের কোনটিই নয়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন ধারা ৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q43",
+          "question": "তামাদি মেয়াদান্তে দাখিলকৃত মোকদ্দমায় বিবাদী কর্তৃক তামাদির বিষয়ে আপত্তি উত্থাপন করা হয় নি। এক্ষেত্রে মামলাটি",
+          "options": {
+            "A": "খারিজ হবে",
+            "B": "চলবে",
+            "C": "স্থগিত থাকবে",
+            "D": "উপরের কোনটিই নয়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন ধারা ৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-044",
+      "question_id": "BC-MCQ-US-2025-044",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 44",
+          "question": "বিলম্বিত দেনমোহরানা আদায়ের মামলার তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "৩ বছর",
+            "B": "১ বছর",
+            "C": "৬ বছর",
+            "D": "২ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন অনু ১০৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q44",
+          "question": "বিলম্বিত দেনমোহরানা আদায়ের মামলার তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "৩ বছর",
+            "B": "১ বছর",
+            "C": "৬ বছর",
+            "D": "২ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. তামাদি আইন অনু ১০৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-045",
+      "question_id": "BC-MCQ-US-2025-045",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 45",
+          "question": "স্থাবর সম্পত্তির বন্ধকগ্রহীতার বিরুদ্ধে রেহেনমুক্ত বা দখলমুক্ত করার মামলার তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "৬ বছর",
+            "B": "৬০ বছর",
+            "C": "৩ বছর",
+            "D": "১২ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. তামাদি আইন অনু ১৪৮\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q45",
+          "question": "স্থাবর সম্পত্তির বন্ধকগ্রহীতার বিরুদ্ধে রেহেনমুক্ত বা দখলমুক্ত করার মামলার তামাদির মেয়াদ কত?",
+          "options": {
+            "A": "৬ বছর",
+            "B": "৬০ বছর",
+            "C": "৩ বছর",
+            "D": "১২ বছর"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. তামাদি আইন অনু ১৪৮\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-046",
+      "question_id": "BC-MCQ-US-2025-046",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 46",
+          "question": "মৃত্যুদণ্ডাদেশ নিম্নোক্ত কোন আদালতের Confirmation ব্যতীত কার্যকর হয় না?",
+          "options": {
+            "A": "আপীল বিভাগ",
+            "B": "দায়রা আদালত",
+            "C": "হাইকোর্ট বিভাগ",
+            "D": "সুপ্রীম জুডিসিয়াল কাউন্সিল"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CRPC ৩৭৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q46",
+          "question": "মৃত্যুদণ্ডাদেশ নিম্নোক্ত কোন আদালতের Confirmation ব্যতীত কার্যকর হয় না?",
+          "options": {
+            "A": "আপীল বিভাগ",
+            "B": "দায়রা আদালত",
+            "C": "হাইকোর্ট বিভাগ",
+            "D": "সুপ্রীম জুডিসিয়াল কাউন্সিল"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CRPC ৩৭৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-047",
+      "question_id": "BC-MCQ-US-2025-047",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 47",
+          "question": "The Code of Criminal Procedure, 1898 এর 200(aa) ধারা মতে নালিশকারীকে শপথপূর্বক পরীক্ষা করা_______",
+          "options": {
+            "A": "আবশ্যক নয়",
+            "B": "নালিশকারীর ইচ্ছাধীন",
+            "C": "আদালতের স্বেচ্ছাধীন",
+            "D": "আবশ্যক"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CRPC ২০০ ক ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q47",
+          "question": "The Code of Criminal Procedure, 1898 এর 200(aa) ধারা মতে নালিশকারীকে শপথপূর্বক পরীক্ষা করা_______",
+          "options": {
+            "A": "আবশ্যক নয়",
+            "B": "নালিশকারীর ইচ্ছাধীন",
+            "C": "আদালতের স্বেচ্ছাধীন",
+            "D": "আবশ্যক"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CRPC ২০০ ক ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-048",
+      "question_id": "BC-MCQ-US-2025-048",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 48",
+          "question": "মেট্রোপলিটন ম্যাজিস্ট্রেট এর সর্বোচ্চ কারাদণ্ডাদেশ প্রদানের ক্ষমতা___ বছর।",
+          "options": {
+            "A": "৩",
+            "B": "৫",
+            "C": "৭",
+            "D": "১০"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CRPC ৩২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q48",
+          "question": "মেট্রোপলিটন ম্যাজিস্ট্রেট এর সর্বোচ্চ কারাদণ্ডাদেশ প্রদানের ক্ষমতা___ বছর।",
+          "options": {
+            "A": "৩",
+            "B": "৫",
+            "C": "৭",
+            "D": "১০"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CRPC ৩২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-049",
+      "question_id": "BC-MCQ-US-2025-049",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 49",
+          "question": "যুগ্ম দায়রা জজ কর্তৃক প্রদত্ত ৫ বছরের অধিক কারাদণ্ডাদেশের বিরুদ্ধে আপীল হবে",
+          "options": {
+            "A": "হাইকোর্ট বিভাগে",
+            "B": "দায়রা জজ আদালতে",
+            "C": "অতিরিক্ত দায়রা জজ আদালতে",
+            "D": "আপীল বিভাগে"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CRPC ৪০৮ ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q49",
+          "question": "যুগ্ম দায়রা জজ কর্তৃক প্রদত্ত ৫ বছরের অধিক কারাদণ্ডাদেশের বিরুদ্ধে আপীল হবে",
+          "options": {
+            "A": "হাইকোর্ট বিভাগে",
+            "B": "দায়রা জজ আদালতে",
+            "C": "অতিরিক্ত দায়রা জজ আদালতে",
+            "D": "আপীল বিভাগে"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CRPC ৪০৮ ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-050",
+      "question_id": "BC-MCQ-US-2025-050",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 50",
+          "question": "ম্যাজিস্ট্রেট কর্তৃক বিচারাধীন মামলায় যুক্তিতর্ক শুনানীর বিধান উল্লেখ রয়েছে The Code of Criminal Procedure, 1898 এর কোন ধারায়?",
+          "options": {
+            "A": "২৪১",
+            "B": "২৪৪",
+            "C": "২৪৫",
+            "D": "কোনোটিই নয়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CRPC চ্যাপ্টার ২০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q50",
+          "question": "ম্যাজিস্ট্রেট কর্তৃক বিচারাধীন মামলায় যুক্তিতর্ক শুনানীর বিধান উল্লেখ রয়েছে The Code of Criminal Procedure, 1898 এর কোন ধারায়?",
+          "options": {
+            "A": "২৪১",
+            "B": "২৪৪",
+            "C": "২৪৫",
+            "D": "কোনোটিই নয়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CRPC চ্যাপ্টার ২০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-051",
+      "question_id": "BC-MCQ-US-2025-051",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 51",
+          "question": "The Code of Criminal Procedure, 1898 এর কোন ধারা মতে অভিযোগ পরিবর্তন (Alteration of charge) করা হয়?",
+          "options": {
+            "A": "২২৭",
+            "B": "২২৬",
+            "C": "২২৮",
+            "D": "২২৫"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CRPC 227\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q51",
+          "question": "The Code of Criminal Procedure, 1898 এর কোন ধারা মতে অভিযোগ পরিবর্তন (Alteration of charge) করা হয়?",
+          "options": {
+            "A": "২২৭",
+            "B": "২২৬",
+            "C": "২২৮",
+            "D": "২২৫"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. CRPC 227\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-052",
+      "question_id": "BC-MCQ-US-2025-052",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 52",
+          "question": "The Code of Criminal Procedure, 1898 এর ৫৪ ধারা অনুযায়ী পুলিশ কয়টি ক্ষেত্রে বিনা পরোয়ানায় গ্রেফতার করতে পারে?",
+          "options": {
+            "A": "৮",
+            "B": "১০",
+            "C": "১১",
+            "D": "৯"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q52",
+          "question": "The Code of Criminal Procedure, 1898 এর ৫৪ ধারা অনুযায়ী পুলিশ কয়টি ক্ষেত্রে বিনা পরোয়ানায় গ্রেফতার করতে পারে?",
+          "options": {
+            "A": "৮",
+            "B": "১০",
+            "C": "১১",
+            "D": "৯"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-053",
+      "question_id": "BC-MCQ-US-2025-053",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [
+        "messy_options"
+      ],
+      "flag_note": "messy_options: 2025 Q53 options গ/ঘ both print s.530 on the paste. User key B (s.529) kept. Not treated as a key conflict.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 53",
+          "question": "The Code of Criminal Procedure, 1898 এর কোন ধারা মতে কিছু অনিয়ম সত্ত্বেও মামলার কার্যক্রম বাতিল হয় না?",
+          "options": {
+            "A": "৫৬১",
+            "B": "৫২৯",
+            "C": "৫৩০",
+            "D": "৫৩০"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।\nmessy_options: 2025 Q53 options গ/ঘ both print s.530 on the paste. User key B (s.529) kept. Not treated as a key conflict."
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q53",
+          "question": "The Code of Criminal Procedure, 1898 এর কোন ধারা মতে কিছু অনিয়ম সত্ত্বেও মামলার কার্যক্রম বাতিল হয় না?",
+          "options": {
+            "A": "৫৬১",
+            "B": "৫২৯",
+            "C": "৫৩০",
+            "D": "৫৩০"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।\nmessy_options: 2025 Q53 options গ/ঘ both print s.530 on the paste. User key B (s.529) kept. Not treated as a key conflict."
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-054",
+      "question_id": "BC-MCQ-US-2025-054",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 54",
+          "question": "হাইকোর্ট বিভাগের সহজাত ক্ষমতা (Inherent power) আছে The Code of Criminal Procedure, 1898 এর কোন ধারায়?",
+          "options": {
+            "A": "560",
+            "B": "561",
+            "C": "564",
+            "D": "561A"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q54",
+          "question": "হাইকোর্ট বিভাগের সহজাত ক্ষমতা (Inherent power) আছে The Code of Criminal Procedure, 1898 এর কোন ধারায়?",
+          "options": {
+            "A": "560",
+            "B": "561",
+            "C": "564",
+            "D": "561A"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-055",
+      "question_id": "BC-MCQ-US-2025-055",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 55",
+          "question": "The Code of Criminal Procedure, 1898 এর কোন ধারার বিধান মতে ম্যাজিস্ট্রেট তার নিজস্ব জ্ঞান মতে অপরাধ আমলে নিতে পারেন?",
+          "options": {
+            "A": "190(1) (c)",
+            "B": "190 (1) (b) ) (c)",
+            "C": "190(1)(d)",
+            "D": "190(1)(a)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q55",
+          "question": "The Code of Criminal Procedure, 1898 এর কোন ধারার বিধান মতে ম্যাজিস্ট্রেট তার নিজস্ব জ্ঞান মতে অপরাধ আমলে নিতে পারেন?",
+          "options": {
+            "A": "190(1) (c)",
+            "B": "190 (1) (b) ) (c)",
+            "C": "190(1)(d)",
+            "D": "190(1)(a)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-056",
+      "question_id": "BC-MCQ-US-2025-056",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 56",
+          "question": "ফেনী হতে বাসযোগে চট্টগ্রাম হয়ে কক্সবাজার ভ্রমণকালে একটি ফৌজদারী অপরাধ সংঘটিত হলে নিম্নের কোন জেলার আদালতের অপরাধটি বিচারের এখতিয়ার রয়েছে?",
+          "options": {
+            "A": "ফেনী",
+            "B": "ফেনী ও কক্সবাজার",
+            "C": "চট্টগ্রাম",
+            "D": "ফেনী, চট্টগ্রাম ও কক্সবাজার"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CRPC ১৮৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q56",
+          "question": "ফেনী হতে বাসযোগে চট্টগ্রাম হয়ে কক্সবাজার ভ্রমণকালে একটি ফৌজদারী অপরাধ সংঘটিত হলে নিম্নের কোন জেলার আদালতের অপরাধটি বিচারের এখতিয়ার রয়েছে?",
+          "options": {
+            "A": "ফেনী",
+            "B": "ফেনী ও কক্সবাজার",
+            "C": "চট্টগ্রাম",
+            "D": "ফেনী, চট্টগ্রাম ও কক্সবাজার"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CRPC ১৮৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-057",
+      "question_id": "BC-MCQ-US-2025-057",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 57",
+          "question": "জুডিসিয়াল ম্যাজিস্ট্রেট কর্তৃক প্রদত্ত খালাসের আদেশের বিরুদ্ধে Complainant আপীল করবে ______ আদালতে।",
+          "options": {
+            "A": "চীফ জুডিসিয়াল ম্যাজিস্ট্রেট",
+            "B": "চীফ মেট্রোপলিটন ম্যাজিস্ট্রেট",
+            "C": "হাইকোর্ট বিভাগ",
+            "D": "দায়রা জজ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CRPC ৪১৭(২)খ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q57",
+          "question": "জুডিসিয়াল ম্যাজিস্ট্রেট কর্তৃক প্রদত্ত খালাসের আদেশের বিরুদ্ধে Complainant আপীল করবে ______ আদালতে।",
+          "options": {
+            "A": "চীফ জুডিসিয়াল ম্যাজিস্ট্রেট",
+            "B": "চীফ মেট্রোপলিটন ম্যাজিস্ট্রেট",
+            "C": "হাইকোর্ট বিভাগ",
+            "D": "দায়রা জজ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CRPC ৪১৭(২)খ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-058",
+      "question_id": "BC-MCQ-US-2025-058",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 58",
+          "question": "ম্যাজিস্ট্রেট আসামীকে ব্যক্তিগত হাজিরা থেকে অব্যাহতি দিতে পারে The Code of Criminal Procedure, 1898 এর কোন ধারায়?",
+          "options": {
+            "A": "২০৫",
+            "B": "২০৩",
+            "C": "২০২",
+            "D": "২০৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q58",
+          "question": "ম্যাজিস্ট্রেট আসামীকে ব্যক্তিগত হাজিরা থেকে অব্যাহতি দিতে পারে The Code of Criminal Procedure, 1898 এর কোন ধারায়?",
+          "options": {
+            "A": "২০৫",
+            "B": "২০৩",
+            "C": "২০২",
+            "D": "২০৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-059",
+      "question_id": "BC-MCQ-US-2025-059",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 59",
+          "question": "অপরাধ আমলে নেওয়ার ক্ষেত্রে The Code of Criminal Procedure, 1898 এর নিম্নোক্ত কোন ধারায় শর্ত আরোপ করা হয়েছে?",
+          "options": {
+            "A": "১৯৩",
+            "B": "১৯৫",
+            "C": "১৯২",
+            "D": "১৯৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q59",
+          "question": "অপরাধ আমলে নেওয়ার ক্ষেত্রে The Code of Criminal Procedure, 1898 এর নিম্নোক্ত কোন ধারায় শর্ত আরোপ করা হয়েছে?",
+          "options": {
+            "A": "১৯৩",
+            "B": "১৯৫",
+            "C": "১৯২",
+            "D": "১৯৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-060",
+      "question_id": "BC-MCQ-US-2025-060",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 60",
+          "question": "Process fees না দেওয়ার কারণে Complaint খারিজ করা হয় The Code of Criminal Procedure, 1898 এর কোন ধারায়?",
+          "options": {
+            "A": "২০৪(২)",
+            "B": "২০৪(৩)",
+            "C": "২০৪(১)",
+            "D": "২০৪(৪)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q60",
+          "question": "Process fees না দেওয়ার কারণে Complaint খারিজ করা হয় The Code of Criminal Procedure, 1898 এর কোন ধারায়?",
+          "options": {
+            "A": "২০৪(২)",
+            "B": "২০৪(৩)",
+            "C": "২০৪(১)",
+            "D": "২০৪(৪)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-061",
+      "question_id": "BC-MCQ-US-2025-061",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 61",
+          "question": "The Code of Criminal Procedure, 1898 এর ২৪৯ ধারা মতে মামলার কার্যক্রম বন্ধ (Stop) নিম্নোক্ত কোন মামলার ক্ষেত্রে প্রযোজ্য নয়?",
+          "options": {
+            "A": "GR",
+            "B": "CR",
+            "C": "Non-GR",
+            "D": "উপরের সবগুলো"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CRPC ২৪৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q61",
+          "question": "The Code of Criminal Procedure, 1898 এর ২৪৯ ধারা মতে মামলার কার্যক্রম বন্ধ (Stop) নিম্নোক্ত কোন মামলার ক্ষেত্রে প্রযোজ্য নয়?",
+          "options": {
+            "A": "GR",
+            "B": "CR",
+            "C": "Non-GR",
+            "D": "উপরের সবগুলো"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CRPC ২৪৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-062",
+      "question_id": "BC-MCQ-US-2025-062",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 62",
+          "question": "The Code of Criminal Procedure, 1898 এর ১৪৪ ধারার বিধান মতে প্রদত্ত আদেশের মেয়াদ থাকে অনধিক",
+          "options": {
+            "A": "৩ মাস",
+            "B": "২ মাস",
+            "C": "৪ মাস",
+            "D": "১ মাস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CRPC ১৪৪(৬)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q62",
+          "question": "The Code of Criminal Procedure, 1898 এর ১৪৪ ধারার বিধান মতে প্রদত্ত আদেশের মেয়াদ থাকে অনধিক",
+          "options": {
+            "A": "৩ মাস",
+            "B": "২ মাস",
+            "C": "৪ মাস",
+            "D": "১ মাস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. CRPC ১৪৪(৬)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-063",
+      "question_id": "BC-MCQ-US-2025-063",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 63",
+          "question": "পলাতক আসামীর উপস্থিতির জন্য বিজ্ঞাপন দিতে হয়",
+          "options": {
+            "A": "দুইটি সাপ্তাহিক পত্রিকায়",
+            "B": "আদালতের নির্দেশ মোতাবেক",
+            "C": "দুইটি বাংলা জাতীয় দৈনিক পত্রিকায়",
+            "D": "একটি বাংলা ও একটি ইংরেজি জাতীয় দৈনিক পত্রিকায়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CRPC ধারা ৩৩৯খ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q63",
+          "question": "পলাতক আসামীর উপস্থিতির জন্য বিজ্ঞাপন দিতে হয়",
+          "options": {
+            "A": "দুইটি সাপ্তাহিক পত্রিকায়",
+            "B": "আদালতের নির্দেশ মোতাবেক",
+            "C": "দুইটি বাংলা জাতীয় দৈনিক পত্রিকায়",
+            "D": "একটি বাংলা ও একটি ইংরেজি জাতীয় দৈনিক পত্রিকায়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. CRPC ধারা ৩৩৯খ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-064",
+      "question_id": "BC-MCQ-US-2025-064",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 64",
+          "question": "The Code of Criminal Procedure, 1898 এর 339C(2) ধারার বিধান মতে দায়রা আদালত কর্তৃক মামলা নিষ্পত্তির সময়সীমা কত দিন?",
+          "options": {
+            "A": "২৬০",
+            "B": "১৮০",
+            "C": "৩২০",
+            "D": "৩৬০"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CRPC ৩৩৯গ(২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q64",
+          "question": "The Code of Criminal Procedure, 1898 এর 339C(2) ধারার বিধান মতে দায়রা আদালত কর্তৃক মামলা নিষ্পত্তির সময়সীমা কত দিন?",
+          "options": {
+            "A": "২৬০",
+            "B": "১৮০",
+            "C": "৩২০",
+            "D": "৩৬০"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. CRPC ৩৩৯গ(২)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-065",
+      "question_id": "BC-MCQ-US-2025-065",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 65",
+          "question": "দায়রা আদালত আসামীকে The Code of Criminal Procedure. 1898 এর ____ ধারায় অব্যাহতি প্রদান করতে পারেন।",
+          "options": {
+            "A": "265D",
+            "B": "265C",
+            "C": "241A",
+            "D": "241"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q65",
+          "question": "দায়রা আদালত আসামীকে The Code of Criminal Procedure. 1898 এর ____ ধারায় অব্যাহতি প্রদান করতে পারেন।",
+          "options": {
+            "A": "265D",
+            "B": "265C",
+            "C": "241A",
+            "D": "241"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B.\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-066",
+      "question_id": "BC-MCQ-US-2025-066",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 66",
+          "question": "স্থাবর সম্পত্তি বিক্রয়ের চুক্তি বলবৎকরণের জন্য আনীত মামলায় চুক্তিতে উল্লেখিত টাকা আদালতে জমা দিতে হবে কখন?",
+          "options": {
+            "A": "মামলা দায়েরের আগে",
+            "B": "মামলা দায়েরের পরে",
+            "C": "মামলা দায়েরের সময়",
+            "D": "রায়ের আগে"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. SR ২২১ ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q66",
+          "question": "স্থাবর সম্পত্তি বিক্রয়ের চুক্তি বলবৎকরণের জন্য আনীত মামলায় চুক্তিতে উল্লেখিত টাকা আদালতে জমা দিতে হবে কখন?",
+          "options": {
+            "A": "মামলা দায়েরের আগে",
+            "B": "মামলা দায়েরের পরে",
+            "C": "মামলা দায়েরের সময়",
+            "D": "রায়ের আগে"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. SR ২২১ ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-067",
+      "question_id": "BC-MCQ-US-2025-067",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 67",
+          "question": "মামলা চলাকালীন নিয়োগপ্রাপ্ত রিসিভারের দায়দায়িত্ব নিয়ন্ত্রিত হয়____ দ্বারা।",
+          "options": {
+            "A": "The direction of the court",
+            "B": "The Specific Relief Act, 1877",
+            "C": "The Code of Civil Procedure, 1908",
+            "D": "The Limitation Act, 1908"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. SR ধারা ৪৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q67",
+          "question": "মামলা চলাকালীন নিয়োগপ্রাপ্ত রিসিভারের দায়দায়িত্ব নিয়ন্ত্রিত হয়____ দ্বারা।",
+          "options": {
+            "A": "The direction of the court",
+            "B": "The Specific Relief Act, 1877",
+            "C": "The Code of Civil Procedure, 1908",
+            "D": "The Limitation Act, 1908"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. SR ধারা ৪৪\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-068",
+      "question_id": "BC-MCQ-US-2025-068",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 68",
+          "question": "জাহাজের মালিক A তার জাহাজ প্রতারণামূলকভাবে সমুদ্র যাত্রার উপযুক্ত উল্লেখে B এর সাথে বীমার চুক্তি করে। এক্ষেত্রে B চুক্তিটি করতে পারবে।",
+          "options": {
+            "A": "বাতিল (Cancel)",
+            "B": "রদ (Rescind)",
+            "C": "পরিবর্তন (Alter)",
+            "D": "সংশোধন (Rectify)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. SR ধারা ৩৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q68",
+          "question": "জাহাজের মালিক A তার জাহাজ প্রতারণামূলকভাবে সমুদ্র যাত্রার উপযুক্ত উল্লেখে B এর সাথে বীমার চুক্তি করে। এক্ষেত্রে B চুক্তিটি করতে পারবে।",
+          "options": {
+            "A": "বাতিল (Cancel)",
+            "B": "রদ (Rescind)",
+            "C": "পরিবর্তন (Alter)",
+            "D": "সংশোধন (Rectify)"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. SR ধারা ৩৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-069",
+      "question_id": "BC-MCQ-US-2025-069",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 69",
+          "question": "অস্থাবর সম্পত্তির মালিক নয় কিন্তু দখলকারী ব্যক্তিকে কয়টি ক্ষেত্রে সুনির্দিষ্টভাবে আশু দখলের অধিকারী ব্যক্তির নিকট তা অর্পণ করার জন্য বাধ্য করা যাবে?",
+          "options": {
+            "A": "৫টি",
+            "B": "৩টি",
+            "C": "৪টি",
+            "D": "৬টি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. SR ধারা ১১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q69",
+          "question": "অস্থাবর সম্পত্তির মালিক নয় কিন্তু দখলকারী ব্যক্তিকে কয়টি ক্ষেত্রে সুনির্দিষ্টভাবে আশু দখলের অধিকারী ব্যক্তির নিকট তা অর্পণ করার জন্য বাধ্য করা যাবে?",
+          "options": {
+            "A": "৫টি",
+            "B": "৩টি",
+            "C": "৪টি",
+            "D": "৬টি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. SR ধারা ১১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-070",
+      "question_id": "BC-MCQ-US-2025-070",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 70",
+          "question": "A ও B এর মধ্যে সম্পাদিত চুক্তির শর্ত ভঙ্গের জন্য B কর্তৃক আনীত মামলায় আদালত চুক্তির শর্তাবলী যুক্তিসঙ্গত নিশ্চয়তার সাথে নির্ণয় করতে পারে না এক্ষেত্রে আদালত____",
+          "options": {
+            "A": "সুনির্দিষ্ট কার্যসম্পাদন ও ক্ষতিপূরণের আদেশ দিবেন",
+            "B": "ক্ষতিপূরণের আদেশ দিবেন",
+            "C": "সুনির্দিষ্ট কার্যসম্পাদনের আদেশ দিবেন",
+            "D": "ক্ষতিপূরণের আদেশ দিবেন না"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. SR ধারা ২১(গ)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q70",
+          "question": "A ও B এর মধ্যে সম্পাদিত চুক্তির শর্ত ভঙ্গের জন্য B কর্তৃক আনীত মামলায় আদালত চুক্তির শর্তাবলী যুক্তিসঙ্গত নিশ্চয়তার সাথে নির্ণয় করতে পারে না এক্ষেত্রে আদালত____",
+          "options": {
+            "A": "সুনির্দিষ্ট কার্যসম্পাদন ও ক্ষতিপূরণের আদেশ দিবেন",
+            "B": "ক্ষতিপূরণের আদেশ দিবেন",
+            "C": "সুনির্দিষ্ট কার্যসম্পাদনের আদেশ দিবেন",
+            "D": "ক্ষতিপূরণের আদেশ দিবেন না"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. SR ধারা ২১(গ)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-071",
+      "question_id": "BC-MCQ-US-2025-071",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-SRA",
+      "topic_id": "T-SRA-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 71",
+          "question": "Presumption as to intent of parties’- সংক্রান্ত বিধান উল্লেখিত হয়েছে The Specific Relief Act, 1877 এর ধারায়।",
+          "options": {
+            "A": "৩৪",
+            "B": "৩৬",
+            "C": "৩৮",
+            "D": "৩২"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. SR\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q71",
+          "question": "Presumption as to intent of parties’- সংক্রান্ত বিধান উল্লেখিত হয়েছে The Specific Relief Act, 1877 এর ধারায়।",
+          "options": {
+            "A": "৩৪",
+            "B": "৩৬",
+            "C": "৩৮",
+            "D": "৩২"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. SR\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-072",
+      "question_id": "BC-MCQ-US-2025-072",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 72",
+          "question": "বাদী একটি ফৌজদারী বিষয়ে কার্যধারা স্থগিত রাখার জন্য নিষেধাজ্ঞার আবেদন করেন। এক্ষেত্রে আদালত নিষেধাজ্ঞার আবেদন____",
+          "options": {
+            "A": "নামঞ্জুর করবেন",
+            "B": "স্থগিত রাখবেন",
+            "C": "মঞ্জুর করবেন",
+            "D": "আংশিক মঞ্জুর করবেন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. SR ধারা ৫৬ ঙ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q72",
+          "question": "বাদী একটি ফৌজদারী বিষয়ে কার্যধারা স্থগিত রাখার জন্য নিষেধাজ্ঞার আবেদন করেন। এক্ষেত্রে আদালত নিষেধাজ্ঞার আবেদন____",
+          "options": {
+            "A": "নামঞ্জুর করবেন",
+            "B": "স্থগিত রাখবেন",
+            "C": "মঞ্জুর করবেন",
+            "D": "আংশিক মঞ্জুর করবেন"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. SR ধারা ৫৬ ঙ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-073",
+      "question_id": "BC-MCQ-US-2025-073",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-SRA",
+      "topic_id": "T-SRA-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 73",
+          "question": "A কর্তৃক নির্মিত বাড়ীর ছাদের প্রান্ত B এর জমির উপর বিস্তৃত হয়েছে। এক্ষেত্রে The Specific Relief Act, 1877 এর অধীন B এর প্রতিকার কী?",
+          "options": {
+            "A": "রিসিভার নিয়োগ",
+            "B": "অস্থায়ী নিষেধাজ্ঞা",
+            "C": "আদেশমূলক নিষেধাজ্ঞা",
+            "D": "চিরস্থায়ী নিষেধাজ্ঞা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. SR ধারা ৫৫ উদা ২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q73",
+          "question": "A কর্তৃক নির্মিত বাড়ীর ছাদের প্রান্ত B এর জমির উপর বিস্তৃত হয়েছে। এক্ষেত্রে The Specific Relief Act, 1877 এর অধীন B এর প্রতিকার কী?",
+          "options": {
+            "A": "রিসিভার নিয়োগ",
+            "B": "অস্থায়ী নিষেধাজ্ঞা",
+            "C": "আদেশমূলক নিষেধাজ্ঞা",
+            "D": "চিরস্থায়ী নিষেধাজ্ঞা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. SR ধারা ৫৫ উদা ২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-074",
+      "question_id": "BC-MCQ-US-2025-074",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 74",
+          "question": "জীবনস্বত্বে একটি জমির অধিকারী ব্যক্তি A উক্ত জমি B বরাবর হস্তান্তর করে ভাবী উত্তরাধিকারী হিসেবে C, A ও B এর বিরুদ্ধে কোন মামলা করবে?",
+          "options": {
+            "A": "নিষেধাজ্ঞা",
+            "B": "দলিল সংশোধন",
+            "C": "দখল পুনরুদ্ধার",
+            "D": "ঘোষণামূলক"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. SR ধারা ৪২ উদা ঙ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q74",
+          "question": "জীবনস্বত্বে একটি জমির অধিকারী ব্যক্তি A উক্ত জমি B বরাবর হস্তান্তর করে ভাবী উত্তরাধিকারী হিসেবে C, A ও B এর বিরুদ্ধে কোন মামলা করবে?",
+          "options": {
+            "A": "নিষেধাজ্ঞা",
+            "B": "দলিল সংশোধন",
+            "C": "দখল পুনরুদ্ধার",
+            "D": "ঘোষণামূলক"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. SR ধারা ৪২ উদা ঙ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-075",
+      "question_id": "BC-MCQ-US-2025-075",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 75",
+          "question": "সুনির্দিষ্ট কার্যসম্পাদনের মামলা খারিজ হলে বাদীর ক্ষেত্রে কোনটি সঠিক?",
+          "options": {
+            "A": "পুনরায় সুনির্দিষ্ট প্রতিকারের মামলা করতে পারবে",
+            "B": "ক্ষতিপূরণের মামলা করতে পারবে",
+            "C": "নিষেধাজ্ঞার মামলা করতে পারবে",
+            "D": "ক্ষতিপূরণের মামলা করতে পারবে না"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. SR ২৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q75",
+          "question": "সুনির্দিষ্ট কার্যসম্পাদনের মামলা খারিজ হলে বাদীর ক্ষেত্রে কোনটি সঠিক?",
+          "options": {
+            "A": "পুনরায় সুনির্দিষ্ট প্রতিকারের মামলা করতে পারবে",
+            "B": "ক্ষতিপূরণের মামলা করতে পারবে",
+            "C": "নিষেধাজ্ঞার মামলা করতে পারবে",
+            "D": "ক্ষতিপূরণের মামলা করতে পারবে না"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. SR ২৯\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-076",
+      "question_id": "BC-MCQ-US-2025-076",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 76",
+          "question": "অপরাধমূলক অনধিকার প্রবেশের শাস্তি The Penal Code, 1860 এর কোন ধারায় বর্ণিত হয়েছে?",
+          "options": {
+            "A": "৪৪৮",
+            "B": "৪৪৭",
+            "C": "৪৪৯",
+            "D": "৪৪৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q76",
+          "question": "অপরাধমূলক অনধিকার প্রবেশের শাস্তি The Penal Code, 1860 এর কোন ধারায় বর্ণিত হয়েছে?",
+          "options": {
+            "A": "৪৪৮",
+            "B": "৪৪৭",
+            "C": "৪৪৯",
+            "D": "৪৪৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-077",
+      "question_id": "BC-MCQ-US-2025-077",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 77",
+          "question": "A, B কে একটি দেয়াল ঘেরা স্থানে প্রবেশ করতে বাধ্য করে এবং B কে সেখানে তালাবদ্ধ করে রাখে। A কোন অপরাধটি করেছে?",
+          "options": {
+            "A": "অবৈধ আটক",
+            "B": "अपहरण",
+            "C": "মনুষ্যহরণ",
+            "D": "অবৈধ বাধা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code ৩৪০ উদা ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q77",
+          "question": "A, B কে একটি দেয়াল ঘেরা স্থানে প্রবেশ করতে বাধ্য করে এবং B কে সেখানে তালাবদ্ধ করে রাখে। A কোন অপরাধটি করেছে?",
+          "options": {
+            "A": "অবৈধ আটক",
+            "B": "अपहरण",
+            "C": "মনুষ্যহরণ",
+            "D": "অবৈধ বাধা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code ৩৪০ উদা ক\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-078",
+      "question_id": "BC-MCQ-US-2025-078",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 78",
+          "question": "X, Y এর স্বর্ণের আংটিটি Y এর সম্মতি ছাড়া এই উদ্দেশ্যে নিয়ে যায় যে, Y বিনিময়ে কিছু টাকা না দেয়া পর্যন্ত আংটিটি X নিজ দখলে রাখবে। X এর অপরাধ কী?",
+          "options": {
+            "A": "প্রতারণা",
+            "B": "চুরি",
+            "C": "অপরাধমূলক সম্পত্তি আত্মসাৎকরণ",
+            "D": "অপরাধমূলক বিশ্বাসভঙ্গ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ৩৭৮ উদা ঠ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q78",
+          "question": "X, Y এর স্বর্ণের আংটিটি Y এর সম্মতি ছাড়া এই উদ্দেশ্যে নিয়ে যায় যে, Y বিনিময়ে কিছু টাকা না দেয়া পর্যন্ত আংটিটি X নিজ দখলে রাখবে। X এর অপরাধ কী?",
+          "options": {
+            "A": "প্রতারণা",
+            "B": "চুরি",
+            "C": "অপরাধমূলক সম্পত্তি আত্মসাৎকরণ",
+            "D": "অপরাধমূলক বিশ্বাসভঙ্গ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ৩৭৮ উদা ঠ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-079",
+      "question_id": "BC-MCQ-US-2025-079",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 79",
+          "question": "নিচের কোনটি চোরাই মাল সংক্রান্ত বিধানে বর্ণিত অপরাধ নয়?",
+          "options": {
+            "A": "প্রতারণা",
+            "B": "জোরপূর্বক আদায়",
+            "C": "চুরি",
+            "D": "দস্যুতা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code ধারা ৪১০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q79",
+          "question": "নিচের কোনটি চোরাই মাল সংক্রান্ত বিধানে বর্ণিত অপরাধ নয়?",
+          "options": {
+            "A": "প্রতারণা",
+            "B": "জোরপূর্বক আদায়",
+            "C": "চুরি",
+            "D": "দস্যুতা"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code ধারা ৪১০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-080",
+      "question_id": "BC-MCQ-US-2025-080",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 80",
+          "question": "The Penal Code, 1860 অনুযায়ী ______ শিশুর কৃত কোন কার্য অপরাধ হবে না।",
+          "options": {
+            "A": "৯ বছরের কম বয়স্ক",
+            "B": "১২ বছরের কম বয়স্ক",
+            "C": "৭ বছরের কম বয়স্ক",
+            "D": "৮ বছরের কম বয়স্ক"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code ৮২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q80",
+          "question": "The Penal Code, 1860 অনুযায়ী ______ শিশুর কৃত কোন কার্য অপরাধ হবে না।",
+          "options": {
+            "A": "৯ বছরের কম বয়স্ক",
+            "B": "১২ বছরের কম বয়স্ক",
+            "C": "৭ বছরের কম বয়স্ক",
+            "D": "৮ বছরের কম বয়স্ক"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code ৮২\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-081",
+      "question_id": "BC-MCQ-US-2025-081",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 81",
+          "question": "A, B কে একটি দেওয়ানী মোকদ্দমা পরিচালনা হতে বিরত করার উদ্দেশ্যে B এর ঘর পুড়িয়ে দেয়ার ভয় দেখায়। উক্ত অপরাধ The Penal Code, 1860 এর কোন ধারাকে আকৃষ্ট করে?",
+          "options": {
+            "A": "৫০১",
+            "B": "৫০২",
+            "C": "৫০৩",
+            "D": "৫০৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. Penal Code উদা ১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q81",
+          "question": "A, B কে একটি দেওয়ানী মোকদ্দমা পরিচালনা হতে বিরত করার উদ্দেশ্যে B এর ঘর পুড়িয়ে দেয়ার ভয় দেখায়। উক্ত অপরাধ The Penal Code, 1860 এর কোন ধারাকে আকৃষ্ট করে?",
+          "options": {
+            "A": "৫০১",
+            "B": "৫০২",
+            "C": "৫০৩",
+            "D": "৫০৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. Penal Code উদা ১\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-082",
+      "question_id": "BC-MCQ-US-2025-082",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 82",
+          "question": "অপরাধমূলক ষড়যন্ত্র সংঘটনের জন্য সর্বনিম্ন কতজন ব্যক্তির অংশগ্রহণ প্রয়োজন?",
+          "options": {
+            "A": "১",
+            "B": "৫",
+            "C": "২",
+            "D": "৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. Penal Code ধারা ১২০(ক)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q82",
+          "question": "অপরাধমূলক ষড়যন্ত্র সংঘটনের জন্য সর্বনিম্ন কতজন ব্যক্তির অংশগ্রহণ প্রয়োজন?",
+          "options": {
+            "A": "১",
+            "B": "৫",
+            "C": "২",
+            "D": "৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. Penal Code ধারা ১২০(ক)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-083",
+      "question_id": "BC-MCQ-US-2025-083",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 83",
+          "question": "The Penal Code, 1860 এর কোন ধারায় ‘অপরাধ’ (Offence) এর সংজ্ঞা দেয়া হয়েছে?",
+          "options": {
+            "A": "৩৮",
+            "B": "৪৪",
+            "C": "৪৩",
+            "D": "৪০"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q83",
+          "question": "The Penal Code, 1860 এর কোন ধারায় ‘অপরাধ’ (Offence) এর সংজ্ঞা দেয়া হয়েছে?",
+          "options": {
+            "A": "৩৮",
+            "B": "৪৪",
+            "C": "৪৩",
+            "D": "৪০"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-084",
+      "question_id": "BC-MCQ-US-2025-084",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 84",
+          "question": "নিচের কোন ক্ষেত্রে চুরি দস্যুতা মর্মে গণ্য হবে?",
+          "options": {
+            "A": "যখন দুই বা ততোধিক তবে পাঁচ জনের কম ব্যক্তি দ্বারা ঘটে",
+            "B": "যখন পাঁচ বা ততোধিক ব্যক্তি দ্বারা সংঘটিত হয়",
+            "C": "যখন তাৎক্ষণিক মৃত্যুর ভয় থাকে",
+            "D": "যখন একই সাথে বলপ্রয়োগ করা হয়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. Penal Code ৩৯০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q84",
+          "question": "নিচের কোন ক্ষেত্রে চুরি দস্যুতা মর্মে গণ্য হবে?",
+          "options": {
+            "A": "যখন দুই বা ততোধিক তবে পাঁচ জনের কম ব্যক্তি দ্বারা ঘটে",
+            "B": "যখন পাঁচ বা ততোধিক ব্যক্তি দ্বারা সংঘটিত হয়",
+            "C": "যখন তাৎক্ষণিক মৃত্যুর ভয় থাকে",
+            "D": "যখন একই সাথে বলপ্রয়োগ করা হয়"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. Penal Code ৩৯০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-085",
+      "question_id": "BC-MCQ-US-2025-085",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 85",
+          "question": "X, Z কে খুন করার জন্য Y কে প্ররোচিত করে। Y উক্ত প্ররোচনা অনুসারে Z কে ছুরিকাঘাত করে। Z জখম হতে আরোগ্য লাভ করে। X কি অপরাধ করেছে?",
+          "options": {
+            "A": "খুন",
+            "B": "খুনের প্ররোচনা",
+            "C": "গুরুতর জখমের প্ররোচনা",
+            "D": "কোনো অপরাধ করে নাই"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ১০৮ উদা খ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q85",
+          "question": "X, Z কে খুন করার জন্য Y কে প্ররোচিত করে। Y উক্ত প্ররোচনা অনুসারে Z কে ছুরিকাঘাত করে। Z জখম হতে আরোগ্য লাভ করে। X কি অপরাধ করেছে?",
+          "options": {
+            "A": "খুন",
+            "B": "খুনের প্ররোচনা",
+            "C": "গুরুতর জখমের প্ররোচনা",
+            "D": "কোনো অপরাধ করে নাই"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ১০৮ উদা খ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-086",
+      "question_id": "BC-MCQ-US-2025-086",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 86",
+          "question": "অসাধুভাবে তথ্য গোপনকরণ নিম্নের অনৈতিক প্রভাব কোন বিষয়টির সাথে সম্পর্কিত?",
+          "options": {
+            "A": "অনৈতিক প্রভাব",
+            "B": "প্রতারণা",
+            "C": "অসাধুভাবে সম্পত্তি আত্মসাৎকরণ",
+            "D": "অপরাধমূলক বিশ্বাসভঙ্গ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ৪১৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q86",
+          "question": "অসাধুভাবে তথ্য গোপনকরণ নিম্নের অনৈতিক প্রভাব কোন বিষয়টির সাথে সম্পর্কিত?",
+          "options": {
+            "A": "অনৈতিক প্রভাব",
+            "B": "প্রতারণা",
+            "C": "অসাধুভাবে সম্পত্তি আত্মসাৎকরণ",
+            "D": "অপরাধমূলক বিশ্বাসভঙ্গ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ৪১৫\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-087",
+      "question_id": "BC-MCQ-US-2025-087",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 87",
+          "question": "দাঁতের বিচ্যুতি (Dislocation) একটি ______",
+          "options": {
+            "A": "মারাত্মক অস্ত্রের মাধ্যমে আঘাত",
+            "B": "গুরুতর আঘাত",
+            "C": "সাধারণ আঘাত",
+            "D": "আক্রমণ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ৩২০(৭)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q87",
+          "question": "দাঁতের বিচ্যুতি (Dislocation) একটি ______",
+          "options": {
+            "A": "মারাত্মক অস্ত্রের মাধ্যমে আঘাত",
+            "B": "গুরুতর আঘাত",
+            "C": "সাধারণ আঘাত",
+            "D": "আক্রমণ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ৩২০(৭)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-088",
+      "question_id": "BC-MCQ-US-2025-088",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 88",
+          "question": "The Penal Code, 1860 এর _____ ধারায় খুনসহ ডাকাতি (Dacoity with murder) এর সংজ্ঞা রয়েছে।",
+          "options": {
+            "A": "৩৯৪",
+            "B": "৩৯৫",
+            "C": "৩৯৭",
+            "D": "৩৯৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q88",
+          "question": "The Penal Code, 1860 এর _____ ধারায় খুনসহ ডাকাতি (Dacoity with murder) এর সংজ্ঞা রয়েছে।",
+          "options": {
+            "A": "৩৯৪",
+            "B": "৩৯৫",
+            "C": "৩৯৭",
+            "D": "৩৯৬"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-089",
+      "question_id": "BC-MCQ-US-2025-089",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 89",
+          "question": "The Penal Code, 1860 এর কোন ধারানুযায়ী সাধারণ উদ্দেশ্য বাস্তবায়নে সংঘটিত অপরাধের জন্য বেআইনী সমাবেশের প্রত্যেক সদস্য দায়ী হবে?",
+          "options": {
+            "A": "৩৪",
+            "B": "১৪৯",
+            "C": "১৫২",
+            "D": "১৪২"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q89",
+          "question": "The Penal Code, 1860 এর কোন ধারানুযায়ী সাধারণ উদ্দেশ্য বাস্তবায়নে সংঘটিত অপরাধের জন্য বেআইনী সমাবেশের প্রত্যেক সদস্য দায়ী হবে?",
+          "options": {
+            "A": "৩৪",
+            "B": "১৪৯",
+            "C": "১৫২",
+            "D": "১৪২"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-090",
+      "question_id": "BC-MCQ-US-2025-090",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 90",
+          "question": "The Penal Code, 1860 এর 500 ধারানুযায়ী মানহানি (Defamation) এর সর্বোচ্চ শাস্তি______",
+          "options": {
+            "A": "২ বছর সশ্রম কারাদণ্ড",
+            "B": "২ বছর বিনাশ্রম কারাদণ্ড",
+            "C": "১ বছর বিনাশ্রম কারাদণ্ড",
+            "D": "১ বছর সশ্রম কারাদণ্ড"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ৫০০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q90",
+          "question": "The Penal Code, 1860 এর 500 ধারানুযায়ী মানহানি (Defamation) এর সর্বোচ্চ শাস্তি______",
+          "options": {
+            "A": "২ বছর সশ্রম কারাদণ্ড",
+            "B": "২ বছর বিনাশ্রম কারাদণ্ড",
+            "C": "১ বছর বিনাশ্রম কারাদণ্ড",
+            "D": "১ বছর সশ্রম কারাদণ্ড"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ৫০০\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-091",
+      "question_id": "BC-MCQ-US-2025-091",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 91",
+          "question": "The Penal Code, 1860 এর কোন অধ্যায়ে সর্বসাধারণের শান্তি পরিপন্থী অপরাধ সংক্রান্ত বিধান রয়েছে?",
+          "options": {
+            "A": "পঞ্চম",
+            "B": "সপ্তম",
+            "C": "ষষ্ঠ",
+            "D": "অষ্টম"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q91",
+          "question": "The Penal Code, 1860 এর কোন অধ্যায়ে সর্বসাধারণের শান্তি পরিপন্থী অপরাধ সংক্রান্ত বিধান রয়েছে?",
+          "options": {
+            "A": "পঞ্চম",
+            "B": "সপ্তম",
+            "C": "ষষ্ঠ",
+            "D": "অষ্টম"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-092",
+      "question_id": "BC-MCQ-US-2025-092",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 92",
+          "question": "আইনবলে বাধ্য বা ভুল ধারণাবশত নিজেকে আইনবলে বাধ্য বলে বিশ্বাসকারী ব্যক্তি কর্তৃক সম্পাদিত কাজ The Penal Code, 1860 এর কোন ধারানুযায়ী অপরাধ নয়?",
+          "options": {
+            "A": "৭৬",
+            "B": "৭৯",
+            "C": "৭৭",
+            "D": "৭৮"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q92",
+          "question": "আইনবলে বাধ্য বা ভুল ধারণাবশত নিজেকে আইনবলে বাধ্য বলে বিশ্বাসকারী ব্যক্তি কর্তৃক সম্পাদিত কাজ The Penal Code, 1860 এর কোন ধারানুযায়ী অপরাধ নয়?",
+          "options": {
+            "A": "৭৬",
+            "B": "৭৯",
+            "C": "৭৭",
+            "D": "৭৮"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-093",
+      "question_id": "BC-MCQ-US-2025-093",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 93",
+          "question": "X একটি অতি অল্প বয়স্ক শিশুর মৃত্যু ঘটানোর অভিপ্রায়ে তাকে একটি মরুভূমিতে রেখে আসলেও শিশুটির মৃত্যু হয়নি। X কোন অপরাধ করেছে?",
+          "options": {
+            "A": "অবহেলার মাধ্যমে মৃত্যু ঘটানোর চেষ্টা",
+            "B": "খুনের চেষ্টা",
+            "C": "দণ্ডনীয় নরহত্যার চেষ্টা",
+            "D": "শিশুর আত্মহত্যায় সহায়তাকরণ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. PENAL CODE ৩০৭ আ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q93",
+          "question": "X একটি অতি অল্প বয়স্ক শিশুর মৃত্যু ঘটানোর অভিপ্রায়ে তাকে একটি মরুভূমিতে রেখে আসলেও শিশুটির মৃত্যু হয়নি। X কোন অপরাধ করেছে?",
+          "options": {
+            "A": "অবহেলার মাধ্যমে মৃত্যু ঘটানোর চেষ্টা",
+            "B": "খুনের চেষ্টা",
+            "C": "দণ্ডনীয় নরহত্যার চেষ্টা",
+            "D": "শিশুর আত্মহত্যায় সহায়তাকরণ"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. PENAL CODE ৩০৭ আ\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-094",
+      "question_id": "BC-MCQ-US-2025-094",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 94",
+          "question": "কেবল অর্থদণ্ডে দণ্ডনীয় অপরাধের ক্ষেত্রে অর্থদণ্ডের পরিমাণ ১০০ টাকা হলে উহা অনাদায়ে সর্বোচ্চ কত মেয়াদের কারাদণ্ড হতে পারে?",
+          "options": {
+            "A": "৪ মাস",
+            "B": "৩ মাস",
+            "C": "২ মাস",
+            "D": "৬ মাস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code ৬৭\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q94",
+          "question": "কেবল অর্থদণ্ডে দণ্ডনীয় অপরাধের ক্ষেত্রে অর্থদণ্ডের পরিমাণ ১০০ টাকা হলে উহা অনাদায়ে সর্বোচ্চ কত মেয়াদের কারাদণ্ড হতে পারে?",
+          "options": {
+            "A": "৪ মাস",
+            "B": "৩ মাস",
+            "C": "২ মাস",
+            "D": "৬ মাস"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. Penal Code ৬৭\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-095",
+      "question_id": "BC-MCQ-US-2025-095",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 95",
+          "question": "দুষ্কর্ম সহায়ত (Abetment) কয়টি উপায়ে সংঘটিত হতে পারে?",
+          "options": {
+            "A": "৫",
+            "B": "৩",
+            "C": "২",
+            "D": "৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ১০৭\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q95",
+          "question": "দুষ্কর্ম সহায়ত (Abetment) কয়টি উপায়ে সংঘটিত হতে পারে?",
+          "options": {
+            "A": "৫",
+            "B": "৩",
+            "C": "২",
+            "D": "৪"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. Penal Code ধারা ১০৭\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-096",
+      "question_id": "BC-MCQ-US-2025-096",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-ETHICS",
+      "topic_id": "T-ETH-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "C",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 96",
+          "question": "বার কাউন্সিল _____ জন সদস্যের সমন্বয়ে গঠিত।",
+          "options": {
+            "A": "৭",
+            "B": "১০",
+            "C": "১৫",
+            "D": "১২"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. BBC অনু ৫(১)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q96",
+          "question": "বার কাউন্সিল _____ জন সদস্যের সমন্বয়ে গঠিত।",
+          "options": {
+            "A": "৭",
+            "B": "১০",
+            "C": "১৫",
+            "D": "১২"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: C. BBC অনু ৫(১)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-097",
+      "question_id": "BC-MCQ-US-2025-097",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-ETHICS",
+      "topic_id": "T-ETH-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "D",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 97",
+          "question": "বার কাউন্সিল ট্রাইব্যুনাল _____জন ব্যক্তি সমন্বয়ে গঠিত।",
+          "options": {
+            "A": "৯",
+            "B": "৫",
+            "C": "৭",
+            "D": "৩"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. BBC অনু ৩৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q97",
+          "question": "বার কাউন্সিল ট্রাইব্যুনাল _____জন ব্যক্তি সমন্বয়ে গঠিত।",
+          "options": {
+            "A": "৯",
+            "B": "৫",
+            "C": "৭",
+            "D": "৩"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: D. BBC অনু ৩৩\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-098",
+      "question_id": "BC-MCQ-US-2025-098",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-ETHICS",
+      "topic_id": "T-ETH-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 98",
+          "question": "একজন আইনজীবী সাধারণতঃ অন্য কোনো পেশা বা ব্যবসা পরিচালনা করবেন না- এটি কার প্রতি আইনজীবীর দায়িত্ব?",
+          "options": {
+            "A": "অন্যান্য আইনজীবী",
+            "B": "সাধারণ জনগণ",
+            "C": "আদালত",
+            "D": "মক্কেল"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. BBC canons chapter 4 rule 8\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q98",
+          "question": "একজন আইনজীবী সাধারণতঃ অন্য কোনো পেশা বা ব্যবসা পরিচালনা করবেন না- এটি কার প্রতি আইনজীবীর দায়িত্ব?",
+          "options": {
+            "A": "অন্যান্য আইনজীবী",
+            "B": "সাধারণ জনগণ",
+            "C": "আদালত",
+            "D": "মক্কেল"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. BBC canons chapter 4 rule 8\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-099",
+      "question_id": "BC-MCQ-US-2025-099",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-ETHICS",
+      "topic_id": "T-ETH-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "B",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 99",
+          "question": "আইনজীবীর বিরুদ্ধে বার কাউন্সিলে দাখিলি অভিযোগের সাথে কত টাকার ফি জমা দিতে হয়?",
+          "options": {
+            "A": "৫০০",
+            "B": "১০০০",
+            "C": "১৫০০",
+            "D": "কোনো ফি লাগবে না"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. BBC rules 41A\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q99",
+          "question": "আইনজীবীর বিরুদ্ধে বার কাউন্সিলে দাখিলি অভিযোগের সাথে কত টাকার ফি জমা দিতে হয়?",
+          "options": {
+            "A": "৫০০",
+            "B": "১০০০",
+            "C": "১৫০০",
+            "D": "কোনো ফি লাগবে না"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: B. BBC rules 41A\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-US-2025-100",
+      "question_id": "BC-MCQ-US-2025-100",
+      "asset_type": "MCQ",
+      "question_type": "MCQ",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_stage": "MCQ",
+      "subject_module_id": "BC-MOD-ETHICS",
+      "topic_id": "T-ETH-01",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "correct_answer": "A",
+      "flags": [],
+      "flag_note": null,
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল MCQ 2025 — প্রশ্ন 100",
+          "question": "পদাধিকারবলে বার কাউন্সিলের চেয়ারম্যান কে?",
+          "options": {
+            "A": "বাংলাদেশের অ্যাটর্নি-জেনারেল",
+            "B": "আপীল বিভাগের জ্যেষ্ঠ বিচারপতি",
+            "C": "হাইকোর্ট বিভাগের জ্যেষ্ঠ বিচারপতি",
+            "D": "বাংলাদেশের প্রধান বিচারপতি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. ref: bbc order article 6(2)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        },
+        "en": {
+          "title": "Bar Council MCQ 2025 — Q100",
+          "question": "পদাধিকারবলে বার কাউন্সিলের চেয়ারম্যান কে?",
+          "options": {
+            "A": "বাংলাদেশের অ্যাটর্নি-জেনারেল",
+            "B": "আপীল বিভাগের জ্যেষ্ঠ বিচারপতি",
+            "C": "হাইকোর্ট বিভাগের জ্যেষ্ঠ বিচারপতি",
+            "D": "বাংলাদেশের প্রধান বিচারপতি"
+          },
+          "explanation": "ব্যবহারকারীর চাবি: A. ref: bbc order article 6(2)\nসূত্র: user-supplied। অফিসিয়াল বার কাউন্সিল PDF নয়।"
+        }
+      }
+    }
+  ]
+}

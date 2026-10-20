@@ -1,0 +1,265 @@
+{
+  "batch_id": "BATCH-2026-08-019-CRPC-REVISION",
+  "schema_version": "1.0",
+  "content_version": "2026.08.8",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Second topic in this depth round. Covers CrPC Revision (T-CRPC-20, Sections 435-442) -- chosen specifically to test whether the same narrowing this dataset found in CPC's Section 115 (batch 012) also happened to CrPC's revisional powers. It did not: CrPC Section 439 retains broad, appellate-style powers, making this a genuine point of contrast worth teaching explicitly rather than assuming parity across the two Codes.",
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "BC-CRPC-REVISION-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CRPC-REVISION-001",
+      "topic_id": "T-CRPC-20",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 439 (all relevant subsections) and the chapter table of contents (confirming Sections 437, 438, and 441 stand omitted) were obtained as VERBATIM text via search-indexed content of bdlaws.minlaw.gov.bd during this session. Section 435's own operative text was described only at a general level from context rather than independently verbatim-confirmed in this pass. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "HARD",
+      "estimated_minutes": 30,
+      "prerequisite_ids": ["T-CPC-15"],
+      "related_lesson_ids": ["BC-CPC-REVISION-001"],
+      "related_question_ids": ["BC-MCQ-CRPC-REV-001", "BC-MCQ-CRPC-REV-002", "BC-MCQ-CRPC-REV-003", "BC-MCQ-CRPC-REV-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CRPC-S439"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CRPC-S439"],
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "language_versions": {
+        "en": {
+          "title": "Revision under the CrPC (and why it is NOT as narrow as CPC's)",
+          "short_description": "Unlike CPC Section 115, which was substituted into a narrow 'error of law' test, CrPC Section 439 retains genuinely broad revisional powers -- essentially the same powers as an appellate court -- subject to two important safeguards: it cannot turn an acquittal into a conviction, and it is barred where a party who could have appealed simply chose not to.",
+          "learning_objective": "By the end of this lesson you should be able to: state the breadth of the High Court Division's powers under Section 439; explain the two key limits on those powers (no conversion of acquittal to conviction; no revision where an available appeal was not taken); and correctly avoid assuming CrPC revision mirrors CPC's narrower current test.",
+          "explanation": "Section 435 gives the High Court Division and the Sessions Judge the power to call for and examine the record of proceedings before any inferior criminal court, to satisfy themselves as to the correctness, legality, or propriety of any finding, sentence, or order. Once a record has been called for, Section 439 sets out what the High Court Division may actually do with it: it may, in its discretion, exercise any of the powers conferred on a Court of Appeal by the relevant appeal provisions, and may even enhance the sentence. This is a materially broader power than the CPC's current Section 115 test (covered in the CPC Revision lesson), which was narrowed by amendment to a strict 'error of law occasioning failure of justice' standard -- CrPC revision was not narrowed in the same way, and continues to resemble a genuinely appellate-style power in substance.\n\nThat breadth comes with two important safeguards. First, Section 439(4) expressly provides that nothing in the section authorises the High Court Division to convert a finding of acquittal into one of conviction -- revision cannot be used as a backdoor route to overturn an acquittal the way a proper appeal against acquittal might. Second, Section 439(5) provides that where an appeal lies under the Code and no appeal is brought, no revision proceedings shall be entertained at the instance of the party who could have appealed -- a bar that, notably, is phrased around the party who could have appealed specifically, rather than an absolute bar on revision for any decision from which an appeal happens to lie. Before exercising these powers to the accused's prejudice, Section 439(2) also requires that the accused be given an opportunity to be heard, personally or by pleader.\n\nSeparately, Section 436 gives the High Court Division or Sessions Judge power to direct further inquiry into a complaint dismissed under Section 203, or into the case of a discharged accused -- though a proviso requires that the discharged person first be given a chance to show cause against such a direction. Sections 437, 438, and 441 stand omitted from the current Code.",
+          "key_concepts": ["S.435: power to call for records to check correctness/legality/propriety", "S.439: broad, essentially appellate-style powers once a record is called for, including sentence enhancement", "S.439(4): cannot convert acquittal into conviction via revision", "S.439(5): revision barred at the instance of a party who could have appealed but did not", "Contrast with CPC's narrower, substituted Section 115"],
+          "important_rules": [
+            "S.435: the High Court Division or Sessions Judge may call for the record of any inferior criminal court's proceedings to examine correctness, legality, or propriety.",
+            "S.439: the High Court Division may exercise appellate-court-equivalent powers over the called-for record, and may enhance the sentence.",
+            "S.439(4): revision cannot be used to convert an acquittal into a conviction.",
+            "S.439(5): where an appeal lies and none is brought, revision is barred at the instance of the party who could have appealed."
+          ],
+          "definitions": [
+            { "term": "Revision (CrPC sense)", "definition": "The High Court Division's or Sessions Judge's power, under Sections 435 and 439, to call for and examine the record of an inferior criminal court's proceedings and exercise broad, appellate-style corrective powers over it, subject to specific safeguards." },
+            { "term": "Acquittal-to-conviction bar (S.439(4))", "definition": "The rule that revisional powers, however broad, cannot be used to turn a finding of acquittal into a conviction -- that outcome is reserved for a proper appeal against acquittal, not revision." }
+          ],
+          "examples": [
+            "A Magistrate convicts and sentences B, and the sentence appears unduly lenient given the facts on record. On examining the record under Section 435, the High Court Division may, under Section 439, enhance the sentence -- a power considerably broader than what CPC's current Section 115 would allow in an analogous civil context.",
+            "B was acquitted at trial. The complainant asks the High Court Division to use its revisional powers under Section 439 to convert that acquittal into a conviction. Section 439(4) expressly forecloses this -- revision cannot be used for that purpose, whatever else its scope allows."
+          ],
+          "exam_focus": "Examiners like to test whether candidates assume CrPC revision was narrowed the same way CPC revision was -- it was not, and describing CrPC Section 439 using CPC Section 115's 'error of law, no appeal lies' language would be a genuine, testable error. A second common test is the acquittal-to-conviction bar, since students sometimes assume any 'broad' power includes this.",
+          "common_traps": [
+            "Assuming CrPC's Section 439 was narrowed by amendment the same way CPC's Section 115 was -- it was not, and retains materially broader, appellate-style powers.",
+            "Assuming the High Court Division's broad revisional powers include converting an acquittal into a conviction -- Section 439(4) expressly excludes this.",
+            "Forgetting that revision under Section 439(5) is specifically barred at the instance of the party who could have appealed but did not -- not an absolute bar on revision wherever an appeal happens to be theoretically available to anyone."
+          ],
+          "quick_revision": [
+            "S.435 = call for the record to check correctness/legality/propriety.",
+            "S.439 = broad, appellate-court-equivalent powers, INCLUDING sentence enhancement -- NOT narrowed like CPC S.115.",
+            "S.439(4) = cannot convert acquittal -> conviction via revision.",
+            "S.439(5) = barred at the instance of a party who could have appealed but didn't.",
+            "S.437, 438, 441 = omitted from the current Code."
+          ],
+          "key_takeaways": [
+            "Do not assume parity between CPC and CrPC revision -- researching this topic specifically to check that assumption revealed they diverged: CPC's power was narrowed by amendment, CrPC's was not.",
+            "Breadth of power and absence of safeguards are not the same thing -- CrPC revision is broad, but the acquittal-to-conviction bar and the 'could have appealed' bar are real, testable limits.",
+            "Comparing this lesson to the CPC Revision lesson is a genuinely useful study technique for this pair of topics -- the contrast is the point."
+          ]
+        },
+        "bn": {
+          "title": "ফৌজদারি কার্যবিধির অধীনে রিভিশন (এবং কেন এটি দেওয়ানি কার্যবিধির মতো সংকীর্ণ নয়)",
+          "short_description": "দেওয়ানি কার্যবিধির ধারা ১১৫-এর বিপরীতে, যা একটি সংকীর্ণ 'আইনগত ত্রুটি' পরীক্ষায় প্রতিস্থাপিত হয়েছিল, ফৌজদারি কার্যবিধির ধারা ৪৩৯ প্রকৃতপক্ষে বিস্তৃত রিভিশনাল ক্ষমতা ধরে রাখে -- মূলত একটি আপিল আদালতের সমান ক্ষমতা -- দুটি গুরুত্বপূর্ণ সুরক্ষাসাপেক্ষে: এটি খালাসকে দোষী সাব্যস্ততে রূপান্তরিত করতে পারে না, এবং এটি বাধাপ্রাপ্ত হয় যেখানে একজন পক্ষ যিনি আপিল করতে পারতেন তা কেবল না করার সিদ্ধান্ত নিয়েছেন।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৪৩৯-এর অধীনে হাইকোর্ট বিভাগের ক্ষমতার বিস্তৃতি বলতে পারবেন; সেই ক্ষমতার উপর দুটি মূল সীমা ব্যাখ্যা করতে পারবেন (খালাসকে দোষী সাব্যস্ততে রূপান্তর নেই; উপলব্ধ আপিল না নেওয়া হলে রিভিশন নেই); এবং ফৌজদারি কার্যবিধির রিভিশন দেওয়ানি কার্যবিধির সংকীর্ণ বর্তমান পরীক্ষার প্রতিফলন করে এমন অনুমান সঠিকভাবে এড়াতে পারবেন।",
+          "explanation": "ধারা ৪৩৫ হাইকোর্ট বিভাগ ও দায়রা জজকে যেকোনো অধস্তন ফৌজদারি আদালতের কার্যধারার নথি তলব ও পরীক্ষা করার ক্ষমতা দেয়, কোনো সিদ্ধান্ত, সাজা, বা আদেশের সঠিকতা, বৈধতা, বা যথার্থতা সম্পর্কে নিজেদের সন্তুষ্ট করতে। একবার একটি নথি তলব করা হলে, ধারা ৪৩৯ নির্ধারণ করে হাইকোর্ট বিভাগ প্রকৃতপক্ষে তা নিয়ে কী করতে পারে: এটি তার বিবেচনায় প্রাসঙ্গিক আপিল বিধান দ্বারা একটি আপিল আদালতকে প্রদত্ত যেকোনো ক্ষমতা প্রয়োগ করতে পারে, এবং এমনকি সাজা বৃদ্ধিও করতে পারে। এটি দেওয়ানি কার্যবিধির বর্তমান ধারা ১১৫ পরীক্ষার (দেওয়ানি কার্যবিধি রিভিশন পাঠে আলোচিত) চেয়ে বস্তুগতভাবে বিস্তৃত একটি ক্ষমতা, যা সংশোধনী দ্বারা একটি কঠোর 'ন্যায়বিচারের ব্যর্থতা ঘটানো আইনগত ত্রুটি' মানদণ্ডে সংকুচিত হয়েছিল -- ফৌজদারি কার্যবিধির রিভিশন একইভাবে সংকুচিত হয়নি, এবং সারবস্তুতে প্রকৃতপক্ষে একটি আপিলীয়-শৈলীর ক্ষমতার মতোই থেকে যায়।\n\nএই বিস্তৃতির সাথে দুটি গুরুত্বপূর্ণ সুরক্ষা আসে। প্রথমত, ধারা ৪৩৯(৪) স্পষ্টভাবে প্রদান করে যে এই ধারার কোনো কিছুই হাইকোর্ট বিভাগকে খালাসের সিদ্ধান্তকে দোষী সাব্যস্ততে রূপান্তরিত করার অনুমোদন দেয় না -- একটি সঠিক খালাসের বিরুদ্ধে আপিল যেভাবে করতে পারে সেভাবে রিভিশন খালাস উল্টে দেওয়ার একটি পেছনের পথ হিসেবে ব্যবহার করা যায় না। দ্বিতীয়ত, ধারা ৪৩৯(৫) প্রদান করে যে যেখানে বিধির অধীনে একটি আপিল করা যায় এবং কোনো আপিল আনা হয়নি, সেখানে যে পক্ষ আপিল করতে পারতেন তার অনুরোধে কোনো রিভিশন কার্যধারা গ্রহণ করা যাবে না -- একটি বাধা যা, লক্ষণীয়ভাবে, সুনির্দিষ্টভাবে যে পক্ষ আপিল করতে পারতেন তার চারপাশে বাক্যবদ্ধ, কোনো সিদ্ধান্তের জন্য যার থেকে কারো জন্য আপিল করা যেত তার উপর একটি নিরঙ্কুশ বাধা নয়। অভিযুক্তের ক্ষতির জন্য এই ক্ষমতা প্রয়োগের আগে, ধারা ৪৩৯(২) এটিও প্রয়োজন করে যে অভিযুক্তকে ব্যক্তিগতভাবে বা আইনজীবীর মাধ্যমে শুনানির সুযোগ দিতে হবে।\n\nপৃথকভাবে, ধারা ৪৩৬ হাইকোর্ট বিভাগ বা দায়রা জজকে ধারা ২০৩-এর অধীনে খারিজ হওয়া একটি অভিযোগে, বা একজন অব্যাহতিপ্রাপ্ত অভিযুক্তের মামলায় আরও তদন্তের নির্দেশ দেওয়ার ক্ষমতা দেয় -- যদিও একটি শর্ত প্রয়োজন করে যে অব্যাহতিপ্রাপ্ত ব্যক্তিকে প্রথমে এমন নির্দেশের বিরুদ্ধে কারণ দেখানোর সুযোগ দিতে হবে। ধারা ৪৩৭, ৪৩৮, ও ৪৪১ বর্তমান বিধি থেকে বাদ দেওয়া অবস্থায় রয়েছে।",
+          "key_concepts": ["ধারা ৪৩৫: সঠিকতা/বৈধতা/যথার্থতা যাচাই করতে নথি তলবের ক্ষমতা", "ধারা ৪৩৯: নথি তলব হওয়ার পর বিস্তৃত, মূলত আপিলীয়-শৈলীর ক্ষমতা, সাজা বৃদ্ধিসহ", "ধারা ৪৩৯(৪): রিভিশনের মাধ্যমে খালাসকে দোষী সাব্যস্ততে রূপান্তর করা যায় না", "ধারা ৪৩৯(৫): যে পক্ষ আপিল করতে পারতেন কিন্তু করেননি তার অনুরোধে রিভিশন বাধাপ্রাপ্ত", "দেওয়ানি কার্যবিধির সংকীর্ণ, প্রতিস্থাপিত ধারা ১১৫-এর সাথে বৈসাদৃশ্য"],
+          "important_rules": [
+            "ধারা ৪৩৫: হাইকোর্ট বিভাগ বা দায়রা জজ সঠিকতা, বৈধতা, বা যথার্থতা পরীক্ষা করতে যেকোনো অধস্তন ফৌজদারি আদালতের কার্যধারার নথি তলব করতে পারে।",
+            "ধারা ৪৩৯: হাইকোর্ট বিভাগ তলবকৃত নথির উপর আপিল-আদালত-সমতুল্য ক্ষমতা প্রয়োগ করতে পারে, এবং সাজা বৃদ্ধি করতে পারে।",
+            "ধারা ৪৩৯(৪): রিভিশন খালাসকে দোষী সাব্যস্ততে রূপান্তর করতে ব্যবহার করা যায় না।",
+            "ধারা ৪৩৯(৫): যেখানে একটি আপিল করা যায় এবং কোনোটি আনা হয়নি, সেখানে যে পক্ষ আপিল করতে পারতেন তার অনুরোধে রিভিশন বাধাপ্রাপ্ত।"
+          ],
+          "definitions": [
+            { "term": "রিভিশন (ফৌজদারি কার্যবিধি অর্থে)", "definition": "হাইকোর্ট বিভাগ বা দায়রা জজের, ধারা ৪৩৫ ও ৪৩৯-এর অধীনে, একটি অধস্তন ফৌজদারি আদালতের কার্যধারার নথি তলব ও পরীক্ষা করার এবং সুনির্দিষ্ট সুরক্ষাসাপেক্ষে তার উপর বিস্তৃত, আপিলীয়-শৈলীর সংশোধনমূলক ক্ষমতা প্রয়োগ করার ক্ষমতা।" },
+            { "term": "খালাস-থেকে-দোষী সাব্যস্ততে বাধা (ধারা ৪৩৯(৪))", "definition": "এই নিয়ম যে রিভিশনাল ক্ষমতা, যতই বিস্তৃত হোক, খালাসের সিদ্ধান্তকে দোষী সাব্যস্ততে পরিণত করতে ব্যবহার করা যায় না -- সেই ফলাফল খালাসের বিরুদ্ধে একটি সঠিক আপিলের জন্য সংরক্ষিত, রিভিশনের জন্য নয়।" }
+          ],
+          "examples": [
+            "একজন ম্যাজিস্ট্রেট খ-কে দোষী সাব্যস্ত ও সাজা দেন, এবং রেকর্ডে থাকা তথ্যের নিরিখে সাজাটি অন্যায্যভাবে হালকা বলে মনে হয়। ধারা ৪৩৫-এর অধীনে নথি পরীক্ষা করে, হাইকোর্ট বিভাগ ধারা ৪৩৯-এর অধীনে সাজা বৃদ্ধি করতে পারে -- একটি ক্ষমতা যা দেওয়ানি কার্যবিধির বর্তমান ধারা ১১৫ একটি অনুরূপ দেওয়ানি প্রসঙ্গে যা অনুমতি দেবে তার চেয়ে যথেষ্ট বিস্তৃত।",
+            "বিচারে খ খালাস পান। বাদী হাইকোর্ট বিভাগকে ধারা ৪৩৯-এর অধীনে তার রিভিশনাল ক্ষমতা ব্যবহার করে সেই খালাসকে দোষী সাব্যস্ততে রূপান্তর করতে বলেন। ধারা ৪৩৯(৪) স্পষ্টভাবে এটি বন্ধ করে দেয় -- এর পরিধি অন্য যা অনুমতি দেয় তা যাই হোক না কেন, রিভিশন সেই উদ্দেশ্যে ব্যবহার করা যায় না।"
+          ],
+          "exam_focus": "পরীক্ষকরা প্রার্থীরা মনে করেন কিনা যে ফৌজদারি কার্যবিধির রিভিশন দেওয়ানি কার্যবিধির রিভিশনের মতো একইভাবে সংকুচিত হয়েছিল তা যাচাই করতে পছন্দ করেন -- এটি হয়নি, এবং ফৌজদারি কার্যবিধির ধারা ৪৩৯ কে দেওয়ানি কার্যবিধির ধারা ১১৫-এর 'আইনগত ত্রুটি, কোনো আপিল নেই' ভাষা ব্যবহার করে বর্ণনা করা একটি প্রকৃত, পরীক্ষাযোগ্য ভুল হবে। দ্বিতীয় একটি সাধারণ পরীক্ষা হলো খালাস-থেকে-দোষী সাব্যস্ততে বাধা, কারণ শিক্ষার্থীরা কখনো কখনো মনে করেন যেকোনো 'বিস্তৃত' ক্ষমতা এটি অন্তর্ভুক্ত করে।",
+          "common_traps": [
+            "মনে করা যে ফৌজদারি কার্যবিধির ধারা ৪৩৯ দেওয়ানি কার্যবিধির ধারা ১১৫-এর মতো একইভাবে সংশোধনী দ্বারা সংকুচিত হয়েছিল -- এটি হয়নি, এবং বস্তুগতভাবে বিস্তৃত, আপিলীয়-শৈলীর ক্ষমতা ধরে রাখে।",
+            "মনে করা যে হাইকোর্ট বিভাগের বিস্তৃত রিভিশনাল ক্ষমতায় খালাসকে দোষী সাব্যস্ততে রূপান্তর অন্তর্ভুক্ত -- ধারা ৪৩৯(৪) স্পষ্টভাবে এটি বাদ দেয়।",
+            "ভুলে যাওয়া যে ধারা ৪৩৯(৫)-এর অধীনে রিভিশন সুনির্দিষ্টভাবে যে পক্ষ আপিল করতে পারতেন কিন্তু করেননি তার অনুরোধে বাধাপ্রাপ্ত -- যেকোনো সিদ্ধান্তের জন্য যেখানে তাত্ত্বিকভাবে কারো জন্য আপিল উপলব্ধ তার উপর একটি নিরঙ্কুশ বাধা নয়।"
+          ],
+          "quick_revision": [
+            "ধারা ৪৩৫ = সঠিকতা/বৈধতা/যথার্থতা যাচাই করতে নথি তলব।",
+            "ধারা ৪৩৯ = বিস্তৃত, আপিল-আদালত-সমতুল্য ক্ষমতা, সাজা বৃদ্ধিসহ -- দেওয়ানি কার্যবিধির ধারা ১১৫-এর মতো সংকুচিত নয়।",
+            "ধারা ৪৩৯(৪) = রিভিশনের মাধ্যমে খালাস -> দোষী সাব্যস্ততে রূপান্তর করা যায় না।",
+            "ধারা ৪৩৯(৫) = যে পক্ষ আপিল করতে পারতেন কিন্তু করেননি তার অনুরোধে বাধাপ্রাপ্ত।",
+            "ধারা ৪৩৭, ৪৩৮, ৪৪১ = বর্তমান বিধি থেকে বাদ দেওয়া।"
+          ],
+          "key_takeaways": [
+            "দেওয়ানি ও ফৌজদারি কার্যবিধির রিভিশনের মধ্যে সমতা ধরে নেবেন না -- এই ধারণাটি যাচাই করার জন্য সুনির্দিষ্টভাবে এই বিষয়টি গবেষণা করে দেখা গেছে তারা ভিন্ন হয়েছে: দেওয়ানি কার্যবিধির ক্ষমতা সংশোধনী দ্বারা সংকুচিত হয়েছিল, ফৌজদারি কার্যবিধির হয়নি।",
+            "ক্ষমতার বিস্তৃতি ও সুরক্ষার অনুপস্থিতি একই জিনিস নয় -- ফৌজদারি কার্যবিধির রিভিশন বিস্তৃত, কিন্তু খালাস-থেকে-দোষী সাব্যস্ততে বাধা ও 'আপিল করতে পারতেন' বাধা প্রকৃত, পরীক্ষাযোগ্য সীমা।",
+            "এই পাঠকে দেওয়ানি কার্যবিধি রিভিশন পাঠের সাথে তুলনা করা এই জোড়া বিষয়ের জন্য একটি প্রকৃতপক্ষে দরকারী অধ্যয়ন কৌশল -- বৈসাদৃশ্যটিই মূল বিষয়।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CRPC-S439",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Section 439 (High Court Division's powers of revision), plus Section 435 and the chapter table of contents",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "note": "Verbatim text of Section 439 (subsections 1, 2, 4, 5, 6) obtained via search-indexed content of the primary source page during this session, plus the chapter table of contents confirming Sections 437, 438, and 441 stand omitted. Section 435's own operative text was described only generally, not independently verbatim-confirmed in this pass."
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-REV-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-REV-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-20",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S439"],
+      "exam_focus": "The core comparative point: CrPC revision was NOT narrowed like CPC's.",
+      "source_basis": "Original question drawn directly from verbatim S.439 text, contrasted with the CPC Revision lesson's findings.",
+      "mistake_tags": ["crpc-revision-not-narrowed-like-cpc"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-REVISION-001", "BC-CPC-REVISION-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "How does the scope of the High Court Division's powers under CrPC Section 439 compare to the current scope of CPC Section 115?",
+          "options": { "A": "They are identical -- both were narrowed by amendment to an 'error of law occasioning failure of justice' test", "B": "CrPC Section 439 is narrower than CPC Section 115", "C": "CrPC Section 439 is broader, retaining essentially appellate-style powers including sentence enhancement, unlike CPC Section 115's narrower, amended test", "D": "Neither section grants any discretionary power to the reviewing court" },
+          "explanation": "Unlike CPC's Section 115, which was substituted into a narrower 'error of law' test, CrPC's Section 439 was not similarly narrowed and retains broad, appellate-court-equivalent powers, including the power to enhance a sentence.",
+          "why_other_options_are_wrong": { "A": "This wrongly assumes both provisions underwent the same narrowing amendment -- only CPC's did.", "B": "This reverses the actual comparison -- CrPC's power is the broader one.", "D": "Both sections do grant discretionary corrective power to the respective court; the comparison is about scope, not absence of power." }
+        },
+        "bn": {
+          "question": "ফৌজদারি কার্যবিধির ধারা ৪৩৯-এর অধীনে হাইকোর্ট বিভাগের ক্ষমতার পরিধি দেওয়ানি কার্যবিধির ধারা ১১৫-এর বর্তমান পরিধির সাথে কীভাবে তুলনীয়?",
+          "options": { "A": "এগুলো অভিন্ন -- উভয়ই সংশোধনী দ্বারা একটি 'ন্যায়বিচারের ব্যর্থতা ঘটানো আইনগত ত্রুটি' পরীক্ষায় সংকুচিত হয়েছিল", "B": "ফৌজদারি কার্যবিধির ধারা ৪৩৯ দেওয়ানি কার্যবিধির ধারা ১১৫-এর চেয়ে সংকীর্ণ", "C": "ফৌজদারি কার্যবিধির ধারা ৪৩৯ বিস্তৃত, মূলত আপিলীয়-শৈলীর ক্ষমতা ধরে রাখে সাজা বৃদ্ধিসহ, দেওয়ানি কার্যবিধির ধারা ১১৫-এর সংকীর্ণ, সংশোধিত পরীক্ষার বিপরীতে", "D": "কোনো ধারাই পর্যালোচনাকারী আদালতকে কোনো বিবেচনাধীন ক্ষমতা দেয় না" },
+          "explanation": "দেওয়ানি কার্যবিধির ধারা ১১৫-এর বিপরীতে, যা একটি সংকীর্ণ 'আইনগত ত্রুটি' পরীক্ষায় প্রতিস্থাপিত হয়েছিল, ফৌজদারি কার্যবিধির ধারা ৪৩৯ একইভাবে সংকুচিত হয়নি এবং সাজা বৃদ্ধির ক্ষমতাসহ বিস্তৃত, আপিল-আদালত-সমতুল্য ক্ষমতা ধরে রাখে।",
+          "why_other_options_are_wrong": { "A": "এটি ভুলভাবে ধরে নেয় উভয় বিধানই একই সংকোচন সংশোধনীর মধ্য দিয়ে গেছে -- কেবল দেওয়ানি কার্যবিধিরটিই গেছে।", "B": "এটি প্রকৃত তুলনা উল্টে দেয় -- ফৌজদারি কার্যবিধির ক্ষমতাই বিস্তৃত।", "D": "উভয় ধারাই সংশ্লিষ্ট আদালতকে বিবেচনাধীন সংশোধনমূলক ক্ষমতা দেয়; তুলনাটি পরিধি নিয়ে, ক্ষমতার অনুপস্থিতি নিয়ে নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-REV-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-REV-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-20",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S439"],
+      "exam_focus": "The acquittal-to-conviction bar.",
+      "source_basis": "Original question drawn directly from verbatim S.439(4) text.",
+      "mistake_tags": ["s439-4-acquittal-conviction-bar"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-REVISION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Can the High Court Division use its revisional powers under Section 439 to convert a finding of acquittal into a conviction?",
+          "options": { "A": "Yes, this is precisely what Section 439's broad powers are designed to do", "B": "No, Section 439(4) expressly excludes this outcome from the scope of revisional powers", "C": "Yes, but only with the Attorney-General's written consent", "D": "Yes, provided the original trial court itself requests it" },
+          "explanation": "Section 439(4) expressly states that nothing in the section authorises converting an acquittal into a conviction -- this outcome remains outside the scope of revision, however broad the section's other powers are.",
+          "why_other_options_are_wrong": { "A": "This directly contradicts the express exclusion in Section 439(4).", "C": "No Attorney-General consent mechanism creates an exception to Section 439(4)'s bar.", "D": "A request from the original trial court does not override this express statutory exclusion." }
+        },
+        "bn": {
+          "question": "হাইকোর্ট বিভাগ কি ধারা ৪৩৯-এর অধীনে তার রিভিশনাল ক্ষমতা ব্যবহার করে খালাসের একটি সিদ্ধান্তকে দোষী সাব্যস্ততে রূপান্তর করতে পারে?",
+          "options": { "A": "হ্যাঁ, এটিই ঠিক যা ধারা ৪৩৯-এর বিস্তৃত ক্ষমতা করার জন্য ডিজাইন করা হয়েছে", "B": "না, ধারা ৪৩৯(৪) স্পষ্টভাবে রিভিশনাল ক্ষমতার পরিধি থেকে এই ফলাফল বাদ দেয়", "C": "হ্যাঁ, তবে কেবল অ্যাটর্নি জেনারেলের লিখিত সম্মতিসহ", "D": "হ্যাঁ, যদি মূল বিচারিক আদালত নিজেই তা অনুরোধ করে" },
+          "explanation": "ধারা ৪৩৯(৪) স্পষ্টভাবে বলে যে ধারায় কোনো কিছুই খালাসকে দোষী সাব্যস্ততে রূপান্তর করার অনুমোদন দেয় না -- এই ফলাফল রিভিশনের পরিধির বাইরেই থেকে যায়, ধারার অন্যান্য ক্ষমতা যতই বিস্তৃত হোক না কেন।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ৪৩৯(৪)-এর স্পষ্ট বর্জনের সরাসরি বিপরীত।", "C": "কোনো অ্যাটর্নি জেনারেলের সম্মতি ব্যবস্থা ধারা ৪৩৯(৪)-এর বাধায় একটি ব্যতিক্রম তৈরি করে না।", "D": "মূল বিচারিক আদালতের একটি অনুরোধ এই স্পষ্ট সংবিধিবদ্ধ বর্জন অতিক্রম করে না।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-REV-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-REV-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-20",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S439"],
+      "exam_focus": "S.439(5)'s precise phrasing -- barred at the instance of the party who could have appealed.",
+      "source_basis": "Original question drawn directly from verbatim S.439(5) text.",
+      "mistake_tags": ["s439-5-precise-phrasing"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-REVISION-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 439(5), where an appeal lies under the Code and no appeal is brought, revision is barred:",
+          "options": { "A": "At the instance of the party who could have appealed", "B": "For all parties to the proceeding, regardless of who could have appealed", "C": "Only if the appeal period has not yet expired", "D": "Only in cases involving offences against the State" },
+          "explanation": "Section 439(5) is specifically phrased around the party who could have appealed -- it bars that specific party from using revision as a substitute for an appeal they chose not to bring.",
+          "why_other_options_are_wrong": { "B": "This overstates the bar's reach beyond the specific party the subsection names.", "C": "The bar is not conditioned on whether the appeal period has technically expired.", "D": "Section 439(5) is of general application, not confined to offences against the State." }
+        },
+        "bn": {
+          "question": "ধারা ৪৩৯(৫)-এর অধীনে, যেখানে বিধির অধীনে একটি আপিল করা যায় এবং কোনো আপিল আনা হয়নি, সেখানে রিভিশন বাধাপ্রাপ্ত:",
+          "options": { "A": "যে পক্ষ আপিল করতে পারতেন তার অনুরোধে", "B": "কার্যধারার সকল পক্ষের জন্য, কে আপিল করতে পারতেন তা নির্বিশেষে", "C": "কেবল যদি আপিলের মেয়াদ এখনও শেষ না হয়ে থাকে", "D": "কেবল রাষ্ট্রের বিরুদ্ধে অপরাধ জড়িত মামলায়" },
+          "explanation": "ধারা ৪৩৯(৫) সুনির্দিষ্টভাবে যে পক্ষ আপিল করতে পারতেন তার চারপাশে বাক্যবদ্ধ -- এটি সেই নির্দিষ্ট পক্ষকে তাদের না আনার সিদ্ধান্ত নেওয়া একটি আপিলের বিকল্প হিসেবে রিভিশন ব্যবহার করা থেকে বাধা দেয়।",
+          "why_other_options_are_wrong": { "B": "এটি উপধারা যে নির্দিষ্ট পক্ষের নাম করে তার বাইরে বাধার নাগাল অতিরিক্ত বলে।", "C": "বাধাটি আপিলের মেয়াদ প্রযুক্তিগতভাবে শেষ হয়েছে কিনা তার উপর শর্তসাপেক্ষ নয়।", "D": "ধারা ৪৩৯(৫) সাধারণ প্রয়োগের, রাষ্ট্রের বিরুদ্ধে অপরাধে সীমাবদ্ধ নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-REV-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-REV-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-20",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S439"],
+      "exam_focus": "The procedural safeguard before prejudicing the accused.",
+      "source_basis": "Original question drawn directly from verbatim S.439(2) text.",
+      "mistake_tags": ["s439-2-hearing-before-prejudice"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-REVISION-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 439(2), before making an order to the prejudice of the accused in revision, what must first happen?",
+          "options": { "A": "The complainant must post a security deposit", "B": "The case must be referred to a three-judge bench", "C": "The accused must have an opportunity of being heard, personally or by pleader", "D": "The police must file a supplementary report" },
+          "explanation": "Section 439(2) requires that no order to the prejudice of the accused be made under this section unless the accused has had an opportunity of being heard, personally or by pleader, in their own defence.",
+          "why_other_options_are_wrong": { "A": "No security-deposit requirement is attached to this specific safeguard.", "B": "A three-judge bench referral is not the mechanism Section 439(2) establishes.", "D": "A supplementary police report is not a precondition under Section 439(2)." }
+        },
+        "bn": {
+          "question": "ধারা ৪৩৯(২)-এর অধীনে, রিভিশনে অভিযুক্তের ক্ষতির জন্য একটি আদেশ দেওয়ার আগে, প্রথমে কী ঘটতে হবে?",
+          "options": { "A": "বাদীকে একটি জামানত জমা দিতে হবে", "B": "মামলাটি একটি তিন-বিচারকের বেঞ্চে পাঠাতে হবে", "C": "অভিযুক্তকে ব্যক্তিগতভাবে বা আইনজীবীর মাধ্যমে শুনানির সুযোগ দিতে হবে", "D": "পুলিশকে একটি সম্পূরক প্রতিবেদন দাখিল করতে হবে" },
+          "explanation": "ধারা ৪৩৯(২)-এর জন্য প্রয়োজন যে এই ধারার অধীনে অভিযুক্তের ক্ষতির জন্য কোনো আদেশ দেওয়া যাবে না যদি না অভিযুক্তকে তার নিজস্ব প্রতিরক্ষায় ব্যক্তিগতভাবে বা আইনজীবীর মাধ্যমে শুনানির সুযোগ দেওয়া হয়।",
+          "why_other_options_are_wrong": { "A": "এই নির্দিষ্ট সুরক্ষার সাথে কোনো জামানত-প্রয়োজনীয়তা যুক্ত নেই।", "B": "একটি তিন-বিচারকের বেঞ্চে পাঠানো ধারা ৪৩৯(২) প্রতিষ্ঠিত পদ্ধতি নয়।", "D": "একটি সম্পূরক পুলিশ প্রতিবেদন ধারা ৪৩৯(২)-এর অধীনে একটি পূর্বশর্ত নয়।" }
+        }
+      }
+    }
+  ]
+}

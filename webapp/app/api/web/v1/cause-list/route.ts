@@ -1,22 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { prisma } from '@/lib/prisma'
-import { requireAuth, hasCauseListAccess } from '@/lib/auth-middleware'
+import { requireAuth } from '@/lib/auth-middleware'
+import { newId } from '@/lib/crypto-tokens'
 
-/** Cause-list — STARTER / PRO / PRO_ADVANCE / CHAMBER. */
 export async function GET(req: NextRequest) {
   const user = await requireAuth(req)
-  if (!user) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
-  if (!hasCauseListAccess(user.chamber.plan, user.chamber.subscriptionEndsAt)) {
-    return NextResponse.json(
-      { message: 'STARTER or higher required for cause-list', code: 'PREMIUM_REQUIRED' },
-      { status: 403 },
-    )
-  }
+  if (!user?.activeMembership) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
 
   const date = req.nextUrl.searchParams.get('date')
   const where = {
-    chamberId: user.chamberId,
+    workspaceId: user.activeMembership.workspaceId,
     deletedAt: null,
     ...(date
       ? {
@@ -38,7 +32,8 @@ export async function GET(req: NextRequest) {
 
 const createSchema = z.object({
   date: z.string().datetime(),
-  courtName: z.string().optional(),
+  courtNameFree: z.string().optional(),
+  courtUid: z.string().optional(),
   serialNo: z.string().optional(),
   partyName: z.string().optional(),
   purpose: z.string().optional(),
@@ -48,12 +43,9 @@ const createSchema = z.object({
 
 export async function POST(req: NextRequest) {
   const user = await requireAuth(req)
-  if (!user) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
-  if (!hasCauseListAccess(user.chamber.plan, user.chamber.subscriptionEndsAt)) {
-    return NextResponse.json(
-      { message: 'STARTER or higher required for cause-list' },
-      { status: 403 },
-    )
+  if (!user?.activeMembership) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
+  if (!user.activeMembership.permissions.has('cause_list.update')) {
+    return NextResponse.json({ message: 'Forbidden' }, { status: 403 })
   }
 
   let body: z.infer<typeof createSchema>
@@ -65,14 +57,18 @@ export async function POST(req: NextRequest) {
 
   const entry = await prisma.causeListEntry.create({
     data: {
-      chamberId: user.chamberId,
+      id: newId(),
+      workspaceId: user.activeMembership.workspaceId,
       date: new Date(body.date),
-      courtName: body.courtName,
+      courtNameFree: body.courtNameFree,
+      courtUid: body.courtUid,
       serialNo: body.serialNo,
       partyName: body.partyName,
       purpose: body.purpose,
       caseId: body.caseId,
       rawText: body.rawText,
+      source: 'manual',
+      updatedByUserId: user.id,
     },
   })
   return NextResponse.json({ entry }, { status: 201 })

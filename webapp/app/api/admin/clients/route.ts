@@ -28,8 +28,10 @@ export async function GET(req: NextRequest) {
       email: true,
       phone: true,
       createdAt: true,
-      chamber: {
-        select: { id: true, name: true, plan: true, subscriptionEndsAt: true },
+      memberships: {
+        where: { role: 'OWNER' },
+        select: { workspace: { select: { id: true, name: true, plan: true, planExpiresAt: true } } },
+        take: 1,
       },
     },
     orderBy: { createdAt: 'desc' },

@@ -1,135 +1,36 @@
 import Link from 'next/link'
-import {
-  guideVideoEmbedUrl,
-  playStoreUrl,
-  JURISDICTION_META,
-  type JurisdictionCode,
-} from '@/lib/jurisdiction'
+import Image from 'next/image'
+import { cookies } from 'next/headers'
+import { ArrowDown, ArrowRight, ArrowUpRight, BookOpen, CalendarDays, Calculator, Check, ChevronDown, FileText, GraduationCap, MapPin, Mic, Search, ShieldCheck, Sparkles, Users } from 'lucide-react'
+import { getCms, youtubeOrDirectEmbed } from '@/lib/cms'
+import { SiteFooter, SiteHeader } from '@/ui/site-chrome'
+import { AudienceExplorer, DownloadLink, MotionSurface, ProductShowcase } from '@/ui/marketing-motion'
+import { PACKAGE_DEFS } from '@/lib/plans'
 
-const DEFAULT_JURISDICTION: JurisdictionCode = 'BD'
+export const dynamic = 'force-dynamic'
+export const metadata = { title: 'MAMLAQ — আইনজীবীর ডায়েরি, প্রস্তুতি ও সংযোগ', description: 'আইনজীবী, জুনিয়র ও আইন শিক্ষার্থীদের জন্য মামলা ডায়েরি, Bar Council ও BJS প্রস্তুতির সহায়ক এবং আইনজীবী খোঁজার জায়গা। MAMLAQ ঘুরে দেখুন।' }
 
-export default async function Home({
-  searchParams,
-}: {
-  searchParams: Promise<{ j?: string }>
-}) {
-  const sp = await searchParams
-  const jParam = (sp?.j || '').toUpperCase()
-  const jurisdiction: JurisdictionCode =
-    jParam === 'PK' || jParam === 'IN' || jParam === 'BD' ? jParam : DEFAULT_JURISDICTION
-  const meta = JURISDICTION_META[jurisdiction]
-  const embed = guideVideoEmbedUrl(jurisdiction)
-  const playUrl = playStoreUrl()
-
-  return (
-    <>
-      <nav className="nav">
-        <span className="brand">Lawyer Diary</span>
-        <Link href="/packages">Packages</Link>
-        <Link href="/login">Login</Link>
-        <Link href="/signup">Signup</Link>
-        <Link href="/dashboard">Dashboard</Link>
-        <Link href="/admin">Admin</Link>
-      </nav>
-
-      <main>
-        <section className="landing-hero">
-          <div className="landing-hero-inner">
-            <p className="landing-eyebrow">
-              {meta.flag} {meta.nameEn} · content pack
-            </p>
-            <h1 className="landing-brand">Lawyer Diary</h1>
-            <p className="landing-tagline">
-              Offline-first diary for advocates — sync entitlement across phone and web.
-            </p>
-
-            <div className="store-cards">
-              <a
-                className="store-card store-card-android"
-                href={playUrl}
-                target="_blank"
-                rel="noreferrer"
-              >
-                <div className="store-logo" aria-hidden>
-                  LD
-                </div>
-                <div>
-                  <strong>Android app</strong>
-                  <p>Go to Play Store</p>
-                </div>
-              </a>
-              <div className="store-card store-card-ios" aria-disabled>
-                <div className="store-logo store-logo-muted" aria-hidden>
-                  iOS
-                </div>
-                <div>
-                  <strong>iPhone</strong>
-                  <p>Coming Soon</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="jurisdiction-switch">
-              <span className="muted">Law pack:</span>
-              {(['BD', 'IN', 'PK'] as const).map((code) => (
-                <Link
-                  key={code}
-                  href={code === 'BD' ? '/' : `/?j=${code}`}
-                  className={code === jurisdiction ? 'chip on' : 'chip'}
-                >
-                  {JURISDICTION_META[code].flag} {code}
-                </Link>
-              ))}
-            </div>
-          </div>
-        </section>
-
-        <section className="landing-section">
-          <h2>Why lawyers use it</h2>
-          <p className="muted">One job per outcome — less missed dates, cleaner fees, lower risk.</p>
-          <div className="benefits-grid">
-            <div>
-              <h3>Time</h3>
-              <p>Today’s board + reminders so hearings and limitation clocks stay visible.</p>
-            </div>
-            <div>
-              <h3>Money</h3>
-              <p>Fee ledger and payment visuals without juggling spreadsheets in court.</p>
-            </div>
-            <div>
-              <h3>Risk</h3>
-              <p>Limitation calculators and checklists reduce deadline and filing misses.</p>
-            </div>
-          </div>
-        </section>
-
-        <section className="landing-section">
-          <h2>Guide video</h2>
-          <p className="muted">
-            {meta.guideVideoKey}
-            {meta.guideMayMentionWebPay
-              ? ' · may soft-mention web packages (BD)'
-              : ' · no web-pay steering (IN/PK)'}
-          </p>
-          <div className="video-frame">
-            <iframe
-              title={`Guide ${jurisdiction}`}
-              src={embed}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
-        </section>
-
-        <section className="landing-section landing-cta">
-          <Link className="btn" href="/signup">
-            Create web account
-          </Link>
-          <Link className="btn ghost" href="/packages">
-            View packages
-          </Link>
-        </section>
-      </main>
-    </>
-  )
+export default async function Home() {
+  const [cms, jar] = await Promise.all([getCms(), cookies()])
+  const authed = Boolean(jar.get('ldb_access')?.value)
+  const embed = youtubeOrDirectEmbed(cms.homeVideoUrl)
+  const starter = PACKAGE_DEFS.find(p => p.code === 'STARTER')
+  return <div className="marketing-shell"><SiteHeader authed={authed} /><MotionSurface><main id="main-content">
+    <section className="mamlaq-hero">
+      <div className="hero-aurora" aria-hidden="true" /><div className="hero-lines" aria-hidden="true" />
+      <div className="marketing-container hero-grid"><div className="hero-copy"><p className="hero-eyebrow"><span /> পেশা, প্রস্তুতি ও সম্ভাবনার এক ঠিকানা</p><h1>আপনার আইনি জীবনে<br /><em>এক ধাপ এগিয়ে।</em></h1><p className="hero-description">চেম্বারের ব্যস্ত দিন থেকে আগামী পরীক্ষার প্রস্তুতি।<br className="desktop-break" /> দরকারি সবকিছু গুছিয়ে, নিজের সেরাটা দিন।</p><div className="hero-actions"><DownloadLink url={cms.playStoreUrl} source="hero" /><a href="#for-you" className="hero-explore">নিজের জায়গা খুঁজুন<ArrowDown size={17} /></a></div><div className="hero-paths"><Link href="/diary"><CalendarDays size={18} /><span>লইয়ার ডায়েরি</span><ArrowUpRight size={14} /></Link><Link href="/career"><GraduationCap size={19} /><span>লিগ্যাল ক্যারিয়ার</span><ArrowUpRight size={14} /></Link><Link href="/find-lawyer"><Users size={18} /><span>আইনজীবী খুঁজুন</span><ArrowUpRight size={14} /></Link></div><p className="hero-footnote">বাংলায় সহজ ব্যবহার <span>·</span> Android অ্যাপ <span>·</span> একই MAMLAQ অ্যাকাউন্ট</p></div><ProductShowcase /></div>
+      <div className="hero-bottom-line marketing-container"><span lang="en">BUILT FOR YOUR LEGAL JOURNEY</span><span>পড়া থেকে পেশা, পাশে থাকুক প্রযুক্তি।</span><ArrowDown size={17} /></div>
+    </section>
+    <div className="value-strip"><div className="marketing-container"><span><CalendarDays size={18} /> গোছানো মামলা ডায়েরি</span><span><Calculator size={18} /> দরকারি আইনি হিসাব</span><span><BookOpen size={18} /> বুঝে পড়ার প্রস্তুতি</span><span><Users size={18} /> পেশাগত সংযোগ</span></div></div>
+    <AudienceExplorer />
+    <section className="practice-section marketing-container" data-reveal><div className="practice-board"><div className="board-top"><span lang="en">THE EVERYDAY WORKSPACE</span><span className="board-status"><i /> সবকিছু এক জায়গায়</span></div><h3>সকালের প্রস্তুতি।<br />সারাদিনের স্বস্তি।</h3><div className="workflow-line">{[{ icon: Users, label: 'মক্কেল' }, { icon: FileText, label: 'মামলা' }, { icon: CalendarDays, label: 'শুনানি' }].map(({ icon: Icon, label }) => <div key={label}><span><Icon size={23} /></span><b>{label}</b></div>)}</div><div className="board-note"><Check size={17} /><span>প্রয়োজনের সময় তথ্য থাকুক হাতের কাছে।</span></div><p>মোবাইল অ্যাপের কাজের প্রবাহের চিত্র</p></div><div className="section-intro"><p className="marketing-eyebrow">LAWYER DIARY</p><h2>ফাইলের ভিড়ে,<br />কাজ থাকুক পরিষ্কার।</h2><p>মক্কেলের তথ্য, মামলার বিবরণ ও পরবর্তী শুনানি—বারবার খোঁজার বদলে একসঙ্গে দেখুন। প্রয়োজনীয় নোট নিয়ে আদালতে যান প্রস্তুত হয়ে।</p><ul className="benefit-list"><li><Check />মোবাইলে মামলা, মক্কেল ও নোট পরিচালনা</li><li><Check />ইন্টারনেট ছাড়া ডায়েরিতে কাজের সুবিধা</li><li><Check />ওয়েবে synced তথ্য ও প্যাকেজ পরিচালনা</li></ul><Link className="text-link" href="/diary">আপনার ডিজিটাল চেম্বার<ArrowRight size={18} /></Link></div></section>
+    <section className="learning-section"><div className="learning-glow" aria-hidden="true" /><div className="marketing-container"><div className="learning-header" data-reveal><div><p className="marketing-eyebrow">LEGAL CAREER</p><h2>মুখস্থের বাইরে,<br /><em>বোঝার আনন্দে।</em></h2></div><div><p>আগে পথটা চিনুন। তারপর একটি ছোট পাঠ, কিছু অনুশীলন, আর ভুলে যাওয়ার আগে আবার ফিরে দেখা। প্রস্তুতি শুরু হোক আপনার গতিতে।</p><Link href="/career" className="text-link">আপনার প্রস্তুতির পথ<ArrowRight size={18} /></Link></div></div><div className="learning-road" data-reveal>{[{ n: '01', icon: BookOpen, title: 'বুঝে পড়ি', sub: 'বিষয় ধরে ছোট পাঠ' }, { n: '02', icon: Sparkles, title: 'মনে করি', sub: 'নিজের ভাষায় মূল কথা' }, { n: '03', icon: Check, title: 'যাচাই করি', sub: 'MCQ ও ব্যাখ্যা' }, { n: '04', icon: Mic, title: 'আবার এগোই', sub: 'রিভিশন ও ভাইভা' }].map(({ n, icon: Icon, title, sub }) => <div key={n}><span className="road-number">{n}</span><div className="road-node"><Icon size={26} /></div><h3>{title}</h3><p>{sub}</p></div>)}</div><div className="track-links"><Link href="/career/bar-council"><span><small>আইনজীবী হওয়ার প্রস্তুতি</small><b>বার কাউন্সিল</b></span><ArrowUpRight size={23} /></Link><Link href="/career/bjs"><span><small>যৌথ আইন পাঠ ও প্রস্তুতির পরিচিতি</small><b>বিজেএস</b></span><ArrowUpRight size={23} /></Link></div></div></section>
+    <section className="resources-section marketing-container" data-reveal><div className="section-heading"><div><p className="marketing-eyebrow">আপনার কাজের সহায়ক</p><h2>ছোট কাজগুলো<br />আরও সহজ হোক।</h2></div><Link href="/tools" className="text-link">সব ওয়েব ক্যালকুলেটর<ArrowRight size={18} /></Link></div><div className="resource-grid">{[{ icon: Calculator, title: 'কোর্ট ফি', desc: 'প্রযোজ্য ধরন বেছে হিসাব দেখুন।', href: '/tools/court-fee', n: '01' }, { icon: CalendarDays, title: 'তামাদি', desc: 'তারিখ ও প্রয়োজনীয় তথ্য দিয়ে শুরু।', href: '/tools/limitation', n: '02' }, { icon: FileText, title: 'স্ট্যাম্প ও নিবন্ধন', desc: 'দলিলের ধরন অনুযায়ী হিসাব।', href: '/tools/stamp', n: '03' }].map(({ icon: Icon, title, desc, href, n }) => <Link href={href} className="resource-card" key={href}><div><Icon size={25} /><span>{n}</span></div><h3>{title}</h3><p>{desc}</p><span className="resource-action">ব্যবহার করুন<ArrowUpRight size={18} /></span></Link>)}</div><p className="resource-footnote">ওয়েবে ৯টি ক্যালকুলেটর। আরও টুল, খসড়া ও রেফারেন্স পাবেন অ্যাপে। ফল ব্যবহারের আগে প্রযোজ্য আইন ও তথ্য মিলিয়ে নিন।</p></section>
+    <section className="find-section marketing-container" data-reveal><div className="find-art" aria-hidden="true"><div className="connection-ring ring-a" /><div className="connection-ring ring-b" /><div className="connection-ring ring-c" /><div className="connection-core"><Users size={35} /></div><span className="connection-point point-a"><MapPin size={18} /></span><span className="connection-point point-b"><FileText size={18} /></span><span className="connection-point point-c"><ShieldCheck size={18} /></span><span className="find-art-caption">প্রয়োজন থেকে পেশাগত সংযোগ</span></div><div className="section-intro"><p className="marketing-eyebrow">FIND LAWYER</p><h2>সঠিক পরিচয়।<br />যোগাযোগের সহজ পথ।</h2><p>আইনজীবীর প্রোফাইল ও কাজের তথ্য দেখে যোগাযোগের সিদ্ধান্ত নিন। খুঁজতে পারবেন ওয়েব থেকেই।</p><form action="/find-lawyer" className="find-quick-form"><label className="sr-only" htmlFor="home-lawyer-search">আইনজীবীর নাম খুঁজুন</label><Search size={18} aria-hidden="true" /><input id="home-lawyer-search" name="q" placeholder="আইনজীবীর নাম লিখুন" maxLength={100} /><button type="submit" aria-label="আইনজীবী খুঁজুন"><ArrowRight size={20} /></button></form><Link href="/find-lawyer" className="text-link">সব প্রোফাইল দেখুন<ArrowRight size={18} /></Link></div></section>
+    <section className="brand-story marketing-container" data-reveal><Image src="/brand/mamlaq-banner.png" width={1983} height={793} sizes="(max-width: 768px) 100vw, 1200px" alt="MAMLAQ — আইনজীবীর ডায়েরি; আদালত, আইন ও পেশার অনুপ্রেরণা" /><div><p className="marketing-eyebrow">একটি পেশা। অনেক সম্ভাবনা।</p><h2>আজকের প্রস্তুতিই<br />আগামীর আত্মবিশ্বাস।</h2><p>প্রথম দিন থেকে প্রতিদিন—MAMLAQ থাকুক আপনার সঙ্গে।</p></div></section>
+    {embed.kind !== 'none' && <section className="marketing-container video-section" data-reveal><div className="section-heading"><div><p className="marketing-eyebrow">একটু দেখে নিন</p><h2>{cms.homeVideoTitle || 'MAMLAQ পরিচিতি'}</h2></div></div>{embed.kind === 'youtube' ? <iframe title={cms.homeVideoTitle || 'MAMLAQ পরিচিতি'} src={embed.src.replace('autoplay=1', 'autoplay=0')} loading="lazy" allow="encrypted-media; picture-in-picture" allowFullScreen /> : <video src={embed.src} controls playsInline preload="metadata" />}</section>}
+    <section className="membership-section marketing-container" data-reveal><div><p className="marketing-eyebrow">আপনার প্রয়োজন অনুযায়ী</p><h2>শুরু করুন।<br />বাড়ুক কাজের পরিসর।</h2><p>অ্যাপের ফ্রি সুবিধা দিয়ে পরিচিত হোন। প্রয়োজন হলে ওয়েবসাইট থেকে নিজের উপযোগী প্যাকেজ বেছে নিন।</p><Link href="/package" className="text-link">প্যাকেজ ও বিস্তারিত তুলনা<ArrowRight size={18} /></Link></div><div className="membership-card"><span>পেইড প্যাকেজ শুরু</span><p className="membership-price">৳{(starter?.priceBdt ?? 49).toLocaleString('bn-BD')}<small>/ মাস</small></p><ul><li><Check size={16} />বিজ্ঞাপন ছাড়া ব্যবহার</li><li><Check size={16} />সীমাহীন ডায়েরি</li><li><Check size={16} />উপলব্ধ ক্যারিয়ার কনটেন্টে পূর্ণ অ্যাক্সেস</li></ul><Link href="/package" className="marketing-button-secondary">সব সুবিধা দেখুন<ArrowRight size={16} /></Link></div></section>
+    <section className="faq-section marketing-container" data-reveal><div><p className="marketing-eyebrow">জেনে শুরু করুন</p><h2>কিছু সাধারণ প্রশ্ন।</h2></div><div>{[{ q: 'আমি শিক্ষার্থী। MAMLAQ কি আমার জন্যও?', a: 'হ্যাঁ। Legal Career-এ বার কাউন্সিল ও বিজেএস প্রস্তুতির পরিচিতি, উপলব্ধ আইন পাঠ, MCQ ও ভাইভা অনুশীলন পাবেন। বিজেএসের বর্তমান পাঠ মূলত যৌথ আইন বিষয়ভিত্তিক; পূর্ণ সিলেবাস কভারেজ হিসেবে দেখবেন না।' }, { q: 'ওয়েবসাইট ও অ্যাপে কি একই অ্যাকাউন্ট?', a: 'হ্যাঁ। একই MAMLAQ অ্যাকাউন্ট ব্যবহার করুন। ওয়েব থেকে প্যাকেজ ও অ্যাকাউন্ট পরিচালনা এবং synced ডায়েরির তথ্য দেখা যায়। মামলা ও মক্কেল যোগ বা সম্পাদনা করুন মোবাইল অ্যাপে।' }, { q: 'লিখিত পরীক্ষার প্রস্তুতিতে কী পাব?', a: 'লিখিতের জন্য বই পড়ার নির্দেশনা, রেফারেন্স ও অ্যাপে reading log পাবেন। লিখিত lesson course নেই। MCQ ও ভাইভায় অ্যাপের অনুশীলন ব্যবহার করতে পারবেন।' }, { q: 'অ্যাপ ইনস্টল ছাড়াই কী ব্যবহার করতে পারি?', a: 'ওয়েবের ক্যালকুলেটর, ক্যারিয়ারের পরিচিতি এবং আইনজীবীর প্রকাশ্য প্রোফাইল দেখতে পারবেন। যোগাযোগের অনুরোধ পাঠাতে লগইন প্রয়োজন।' }].map(({ q, a }) => <details key={q}><summary>{q}<ChevronDown size={18} /></summary><p>{a}</p></details>)}</div></section>
+    <section className="download-section" id="download"><div className="marketing-container" data-reveal><Image src="/brand/mamlaq-icon.png" alt="" width={70} height={70} /><p className="marketing-eyebrow">আপনার পরের পদক্ষেপ</p><h2>আইনি জীবনটা<br /><em>আরেকটু গুছিয়ে নিন।</em></h2><p>আপনার চেম্বার, আপনার প্রস্তুতি, আপনার MAMLAQ।</p><DownloadLink url={cms.playStoreUrl} source="footer" /><Link href={authed ? '/user' : '/user/signup'}>{authed ? 'ওয়েব অ্যাকাউন্টে যান' : 'ওয়েবে অ্যাকাউন্ট খুলুন'}<ArrowRight size={15} /></Link><small>বর্তমানে Android-এর জন্য উপলব্ধ</small></div></section>
+  </main></MotionSurface><SiteFooter blurb={cms.footerBlurb} email={cms.contactEmail} phone={cms.contactPhone} whatsapp={cms.contactWhatsapp} /></div>
 }

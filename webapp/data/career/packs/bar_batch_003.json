@@ -1,0 +1,281 @@
+{
+  "batch_id": "BATCH-2026-08-003-EVIDENCE-ADMISSION-CONFESSION",
+  "schema_version": "1.0",
+  "content_version": "2026.08.1",
+  "created_at": "2026-08-23T00:00:00Z",
+  "source": "claude-research-pass-2026-08-23",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "A second, deliberately LIGHTER worked example (lesson + 4 MCQs only, no written/viva pair) in a different subject -- Evidence Act rather than CPC -- to demonstrate that the content pattern generalizes across subjects rather than being specific to the flagship topic in batch 002. Written and viva assets for this topic are left for a later batch rather than padded out here.",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-EVIDENCE-ADMISSION-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-EVIDENCE-ADMISSION-001",
+      "topic_id": "T-EVID-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "verification_note": "Reflects the long-standing, essentially unamended structure of Evidence Act 1872 Sections 17-31 as taught uniformly across South Asian jurisdictions that inherited this Act. Not re-transcribed against a certified current Bangladesh bare act in this pass. No case law cited, for the same reason given in the CPC flagship lesson.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": [],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-EVID-ADM-001", "BC-MCQ-EVID-ADM-002", "BC-MCQ-EVID-ADM-003", "BC-MCQ-EVID-ADM-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_law_ids": ["LREF-EVID-S17-23", "LREF-EVID-S24-30"],
+      "related_case_ids": [],
+      "legal_reference_ids": ["LREF-EVID-S17-23", "LREF-EVID-S24-30"],
+      "important_case_law": [],
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "language_versions": {
+        "en": {
+          "title": "Admission and Confession",
+          "short_description": "Sections 17-31 of the Evidence Act, 1872 govern out-of-court statements that work against the person who made them -- 'admission' is the broad civil-and-criminal category, 'confession' is a narrower, criminal-only subset with much stricter rules on when it can be used.",
+          "learning_objective": "By the end of this lesson you should be able to: define 'admission' and identify who can make one that binds a party; define 'confession' and place it correctly as a species of admission; state when a confession is irrelevant because of inducement, threat, promise, or being made to police / while in police custody; and explain the special 'discovery' rule in Section 27.",
+          "explanation": "An admission, under Section 17, is a statement -- oral, documentary, or in electronic form -- that suggests an inference about a fact in issue or a relevant fact, made by specified categories of persons in specified circumstances (a party to the proceeding, their agent, a person with a proprietary or pecuniary interest in the subject matter, and certain others). Admissions matter in both civil and criminal proceedings, and Section 21 makes them provable against the person who made them.\n\nA confession is best understood as a species of admission, but one that is (a) made by a person accused of an offence and (b) either states or substantially admits the fact of guilt in a criminal matter. Because a confession can send a person to prison, the Act surrounds it with protective rules not applied to admissions generally.\n\nSection 24 makes a confession irrelevant in a criminal proceeding if it appears to the court to have been caused by inducement, threat, or promise, proceeding from a person in authority, and relating to the charge, such that it would give the accused reasonable grounds for supposing they would gain an advantage or avoid an evil by confessing. Section 25 goes further: a confession made to a police officer can never be proved against the accused, regardless of whether any inducement was involved. Section 26 extends this: a confession made by a person while in police custody cannot be proved against them unless it was made in the immediate presence of a Magistrate.\n\nSection 27 carves out a narrow, much-tested exception: when a fact is discovered in consequence of information received from a person accused of an offence while in police custody, so much of that information as distinctly relates to the fact thereby discovered may be proved -- even though the rest of the statement remains inadmissible. This is often called the 'discovery' rule, and its narrowness (only the part 'distinctly relating' to what was found) is exactly what examiners test.",
+          "key_concepts": ["Admission (S.17)", "Confession as a species of admission", "Inducement, threat or promise (S.24)", "Confession to police officer (S.25)", "Confession while in police custody (S.26)", "The discovery rule (S.27)", "Admissions are not conclusive proof but may work as estoppel (S.31)"],
+          "important_rules": [
+            "S.17: an admission is a statement (oral, documentary, or electronic) suggesting an inference about a fact in issue or relevant fact, made by specified persons.",
+            "S.24: a confession is irrelevant in a criminal proceeding if caused by inducement/threat/promise from a person in authority, relating to the charge, sufficient to give the accused grounds to expect an advantage or avoid an evil.",
+            "S.25: a confession made to a police officer is never provable against the accused.",
+            "S.26: a confession made while in police custody is not provable against the accused unless made in the immediate presence of a Magistrate.",
+            "S.27: where a fact is discovered as a consequence of information from an accused in police custody, only the part of that information distinctly relating to the fact discovered may be proved."
+          ],
+          "definitions": [
+            { "term": "Admission", "definition": "A statement, oral, documentary, or in electronic form, which suggests an inference as to a fact in issue or relevant fact, made by a party or certain other specified persons." },
+            { "term": "Confession", "definition": "A species of admission made by a person accused of an offence, stating or substantially admitting the fact of their guilt." },
+            { "term": "The discovery rule", "definition": "The Section 27 exception allowing proof of the specific part of a police-custody statement that distinctly relates to a fact thereby discovered, notwithstanding the general bar on custodial confessions in Section 26." }
+          ],
+          "examples": [
+            "During a civil suit for recovery of a loan, the defendant's authorised agent tells a witness, before the suit is filed, that the defendant 'still owes that money.' This is an admission under S.17-20 and may be proved against the defendant even though the defendant personally never said it.",
+            "An accused, while in police custody and without any Magistrate present, tells the investigating officer where a stolen item is hidden, and the item is recovered from that spot. Under S.26 the confession itself is generally not provable, but under S.27, the specific part of the statement that led to finding the item -- e.g., 'it is buried behind my house' -- may be proved, even though a broader accompanying admission of guilt in the same statement would not be."
+          ],
+          "exam_focus": "Examiners frequently test the layered bar: S.24 (inducement generally) -> S.25 (police officer, absolute bar) -> S.26 (police custody, absolute bar unless before a Magistrate) -> S.27 (narrow carve-out for the discovered fact only). MCQs often present a fact pattern and ask which section, if any, makes the statement provable.",
+          "common_traps": [
+            "Treating 'confession' and 'admission' as unrelated concepts rather than confession being a narrower species within the broader category of admission.",
+            "Assuming Section 27 revives the whole statement once a fact is discovered -- it revives only the part distinctly relating to the fact discovered, not the accompanying narrative of guilt.",
+            "Forgetting that Section 25's bar on confessions to a police officer applies regardless of custody status or absence of any inducement -- it is an absolute rule, not conditional on threat/promise."
+          ],
+          "quick_revision": [
+            "Admission = broad (civil + criminal); Confession = narrow (criminal guilt only) subset of admission.",
+            "S.24 = irrelevant if induced/threatened/promised by a person in authority.",
+            "S.25 = to a POLICE OFFICER -> never provable, full stop.",
+            "S.26 = in POLICE CUSTODY -> not provable, UNLESS before a Magistrate.",
+            "S.27 = discovery exception -> only the part distinctly leading to what was found."
+          ],
+          "key_takeaways": [
+            "All confessions are admissions, but not all admissions are confessions.",
+            "The Evidence Act builds a deliberately layered set of protections around confessions specifically because of the risk of coerced or unreliable statements extracting guilt from a suspect.",
+            "Section 27's discovery exception is narrow by design -- it protects the reliability rationale (an object was actually found where stated) without reopening the door to the whole custodial statement."
+          ]
+        },
+        "bn": {
+          "title": "স্বীকৃতি ও দোষ স্বীকারোক্তি",
+          "short_description": "সাক্ষ্য আইন, ১৮৭২-এর ধারা ১৭-৩১ আদালতের বাইরে প্রদত্ত এমন বিবৃতি নিয়ন্ত্রণ করে যা তা প্রদানকারী ব্যক্তির বিরুদ্ধে কাজ করে -- 'স্বীকৃতি' (অ্যাডমিশন) দেওয়ানি ও ফৌজদারি উভয় ক্ষেত্রে প্রযোজ্য একটি বিস্তৃত শ্রেণি, আর 'দোষ স্বীকারোক্তি' (কনফেশন) একটি সংকীর্ণ, কেবল ফৌজদারি বিষয়ে প্রযোজ্য উপশ্রেণি যার ব্যবহারের ক্ষেত্রে অনেক কঠোর নিয়ম রয়েছে।",
+          "learning_objective": "এই পাঠ শেষে আপনি: 'স্বীকৃতি'-র সংজ্ঞা দিতে ও কারা এমন স্বীকৃতি দিতে পারেন যা কোনো পক্ষের উপর বাধ্যকর তা শনাক্ত করতে পারবেন; 'দোষ স্বীকারোক্তি'-র সংজ্ঞা দিতে ও তাকে স্বীকৃতির একটি প্রকারভেদ হিসেবে সঠিকভাবে স্থাপন করতে পারবেন; প্ররোচনা, ভীতিপ্রদর্শন, প্রতিশ্রুতি, অথবা পুলিশের কাছে/পুলিশ হেফাজতে প্রদত্ত হওয়ার কারণে কখন একটি দোষ স্বীকারোক্তি অপ্রাসঙ্গিক হয় তা বলতে পারবেন; এবং ধারা ২৭-এর বিশেষ 'আবিষ্কার' নিয়মটি ব্যাখ্যা করতে পারবেন।",
+          "explanation": "ধারা ১৭ অনুযায়ী, স্বীকৃতি হলো এমন একটি বিবৃতি -- মৌখিক, দালিলিক, বা ইলেকট্রনিক আকারে -- যা কোনো বিচার্য বিষয় বা প্রাসঙ্গিক বিষয় সম্পর্কে অনুমান প্রদান করে, এবং যা নির্দিষ্ট শ্রেণির ব্যক্তিদের দ্বারা নির্দিষ্ট পরিস্থিতিতে প্রদত্ত হয় (কার্যধারার একটি পক্ষ, তার প্রতিনিধি, বিষয়বস্তুতে স্বত্বগত বা আর্থিক স্বার্থসম্পন্ন কোনো ব্যক্তি, এবং আরও কিছু নির্দিষ্ট ব্যক্তি)। স্বীকৃতি দেওয়ানি ও ফৌজদারি উভয় কার্যধারায় গুরুত্বপূর্ণ, এবং ধারা ২১ অনুযায়ী তা যিনি প্রদান করেছেন তার বিরুদ্ধে প্রমাণযোগ্য।\n\nদোষ স্বীকারোক্তিকে সবচেয়ে ভালোভাবে স্বীকৃতির একটি প্রকারভেদ হিসেবে বোঝা যায়, তবে এমন একটি প্রকারভেদ যা (ক) কোনো অপরাধে অভিযুক্ত ব্যক্তি দ্বারা প্রদত্ত এবং (খ) ফৌজদারি বিষয়ে দোষের তথ্য উল্লেখ করে বা মূলত স্বীকার করে। যেহেতু দোষ স্বীকারোক্তি কোনো ব্যক্তিকে কারাগারে পাঠাতে পারে, তাই আইন এর চারপাশে এমন সুরক্ষামূলক নিয়ম স্থাপন করেছে যা সাধারণ স্বীকৃতির ক্ষেত্রে প্রযোজ্য হয় না।\n\nধারা ২৪ অনুযায়ী, কোনো ফৌজদারি কার্যধারায় দোষ স্বীকারোক্তি অপ্রাসঙ্গিক হবে যদি আদালতের কাছে মনে হয় যে তা কোনো কর্তৃত্বসম্পন্ন ব্যক্তির পক্ষ থেকে অভিযোগ সম্পর্কিত প্ররোচনা, ভীতিপ্রদর্শন বা প্রতিশ্রুতির কারণে ঘটেছে, যা অভিযুক্তকে এই বিশ্বাস করার যুক্তিসঙ্গত কারণ দিতে পারে যে স্বীকারোক্তি দিলে তিনি কোনো সুবিধা পাবেন বা কোনো ক্ষতি এড়াতে পারবেন। ধারা ২৫ আরও এগিয়ে যায়: পুলিশ কর্মকর্তার কাছে প্রদত্ত দোষ স্বীকারোক্তি কখনোই অভিযুক্তের বিরুদ্ধে প্রমাণ করা যাবে না, কোনো প্ররোচনা জড়িত থাক বা না থাক। ধারা ২৬ এটি আরও সম্প্রসারিত করে: পুলিশ হেফাজতে থাকা অবস্থায় কোনো ব্যক্তির প্রদত্ত দোষ স্বীকারোক্তি তার বিরুদ্ধে প্রমাণ করা যাবে না, যদি না তা কোনো ম্যাজিস্ট্রেটের প্রত্যক্ষ উপস্থিতিতে প্রদত্ত হয়।\n\nধারা ২৭ একটি সংকীর্ণ, প্রায়শই পরীক্ষায় আসা ব্যতিক্রম তৈরি করে: যখন পুলিশ হেফাজতে থাকা কোনো অপরাধে অভিযুক্ত ব্যক্তির কাছ থেকে প্রাপ্ত তথ্যের ফলস্বরূপ কোনো তথ্য (বস্তু/স্থান) আবিষ্কৃত হয়, তখন সেই তথ্যের যে অংশটুকু আবিষ্কৃত বিষয়ের সাথে সুনির্দিষ্টভাবে সম্পর্কিত তা প্রমাণ করা যেতে পারে -- যদিও বিবৃতির বাকি অংশ অগ্রহণযোগ্যই থেকে যায়। এটি প্রায়ই 'আবিষ্কার নিয়ম' (ডিসকভারি রুল) নামে পরিচিত, এবং এর সংকীর্ণতা (কেবল যা আবিষ্কৃত হয়েছে তার সাথে 'সুনির্দিষ্টভাবে সম্পর্কিত' অংশটুকু) পরীক্ষায় ঠিক যা যাচাই করা হয়।",
+          "key_concepts": ["স্বীকৃতি (ধারা ১৭)", "দোষ স্বীকারোক্তি স্বীকৃতির একটি প্রকারভেদ", "প্ররোচনা, ভীতিপ্রদর্শন বা প্রতিশ্রুতি (ধারা ২৪)", "পুলিশ কর্মকর্তার কাছে দোষ স্বীকারোক্তি (ধারা ২৫)", "পুলিশ হেফাজতে দোষ স্বীকারোক্তি (ধারা ২৬)", "আবিষ্কার নিয়ম (ধারা ২৭)", "স্বীকৃতি চূড়ান্ত প্রমাণ নয়, তবে এস্টোপেল হিসেবে কাজ করতে পারে (ধারা ৩১)"],
+          "important_rules": [
+            "ধারা ১৭: স্বীকৃতি হলো এমন একটি বিবৃতি (মৌখিক, দালিলিক, বা ইলেকট্রনিক) যা কোনো বিচার্য বা প্রাসঙ্গিক বিষয় সম্পর্কে অনুমান প্রদান করে, নির্দিষ্ট ব্যক্তিদের দ্বারা প্রদত্ত।",
+            "ধারা ২৪: কর্তৃত্বসম্পন্ন ব্যক্তির পক্ষ থেকে প্ররোচনা/ভীতিপ্রদর্শন/প্রতিশ্রুতির কারণে ঘটিত এবং অভিযোগ সম্পর্কিত দোষ স্বীকারোক্তি, যা অভিযুক্তকে সুবিধা পাওয়া বা ক্ষতি এড়ানোর যুক্তিসঙ্গত কারণ দেয়, তা ফৌজদারি কার্যধারায় অপ্রাসঙ্গিক।",
+            "ধারা ২৫: পুলিশ কর্মকর্তার কাছে প্রদত্ত দোষ স্বীকারোক্তি অভিযুক্তের বিরুদ্ধে কখনো প্রমাণযোগ্য নয়।",
+            "ধারা ২৬: পুলিশ হেফাজতে প্রদত্ত দোষ স্বীকারোক্তি অভিযুক্তের বিরুদ্ধে প্রমাণযোগ্য নয়, যদি না তা কোনো ম্যাজিস্ট্রেটের প্রত্যক্ষ উপস্থিতিতে প্রদত্ত হয়।",
+            "ধারা ২৭: পুলিশ হেফাজতে থাকা অভিযুক্তের তথ্যের ফলস্বরূপ কোনো বিষয় আবিষ্কৃত হলে, সেই তথ্যের কেবল আবিষ্কৃত বিষয়ের সাথে সুনির্দিষ্টভাবে সম্পর্কিত অংশটুকু প্রমাণ করা যেতে পারে।"
+          ],
+          "definitions": [
+            { "term": "স্বীকৃতি (অ্যাডমিশন)", "definition": "একটি বিবৃতি, মৌখিক, দালিলিক, বা ইলেকট্রনিক আকারে, যা কোনো বিচার্য বিষয় বা প্রাসঙ্গিক বিষয় সম্পর্কে অনুমান প্রদান করে, কোনো পক্ষ বা নির্দিষ্ট অন্যান্য ব্যক্তি দ্বারা প্রদত্ত।" },
+            { "term": "দোষ স্বীকারোক্তি (কনফেশন)", "definition": "কোনো অপরাধে অভিযুক্ত ব্যক্তি কর্তৃক প্রদত্ত স্বীকৃতির একটি প্রকারভেদ, যা তার দোষের তথ্য উল্লেখ করে বা মূলত স্বীকার করে।" },
+            { "term": "আবিষ্কার নিয়ম", "definition": "ধারা ২৭-এর ব্যতিক্রম, যা ধারা ২৬-এর সাধারণ হেফাজতি-স্বীকারোক্তি নিষেধাজ্ঞা সত্ত্বেও, পুলিশ-হেফাজতি বিবৃতির যে সুনির্দিষ্ট অংশ আবিষ্কৃত বিষয়ের সাথে সম্পর্কিত তা প্রমাণের অনুমতি দেয়।" }
+          ],
+          "examples": [
+            "একটি ঋণ আদায়ের দেওয়ানি মামলায়, বিবাদীর অনুমোদিত প্রতিনিধি, মামলা দায়েরের আগে, একজন সাক্ষীকে বলেন যে বিবাদী 'এখনও সেই টাকা পাওনা রয়েছে'। এটি ধারা ১৭-২০-এর অধীনে একটি স্বীকৃতি এবং বিবাদী নিজে তা না বললেও তার বিরুদ্ধে প্রমাণ করা যেতে পারে।",
+            "একজন অভিযুক্ত, পুলিশ হেফাজতে থাকা অবস্থায় এবং কোনো ম্যাজিস্ট্রেট উপস্থিত না থেকে, তদন্তকারী কর্মকর্তাকে বলেন চোরাই জিনিসটি কোথায় লুকানো আছে, এবং সেই স্থান থেকে জিনিসটি উদ্ধার হয়। ধারা ২৬-এর অধীনে দোষ স্বীকারোক্তিটি সাধারণত প্রমাণযোগ্য নয়, কিন্তু ধারা ২৭-এর অধীনে, বিবৃতির যে সুনির্দিষ্ট অংশ জিনিসটি খুঁজে পেতে সাহায্য করেছে -- যেমন 'এটি আমার বাড়ির পেছনে পোঁতা আছে' -- তা প্রমাণ করা যেতে পারে, যদিও একই বিবৃতিতে থাকা দোষের বিস্তৃত স্বীকৃতি প্রমাণযোগ্য হবে না।"
+          ],
+          "exam_focus": "পরীক্ষকরা প্রায়ই স্তরীভূত বাধাটি যাচাই করেন: ধারা ২৪ (সাধারণভাবে প্ররোচনা) -> ধারা ২৫ (পুলিশ কর্মকর্তা, সম্পূর্ণ নিষেধাজ্ঞা) -> ধারা ২৬ (পুলিশ হেফাজত, ম্যাজিস্ট্রেটের সামনে না হলে সম্পূর্ণ নিষেধাজ্ঞা) -> ধারা ২৭ (কেবল আবিষ্কৃত বিষয়ের জন্য সংকীর্ণ ব্যতিক্রম)। এমসিকিউ প্রায়ই একটি ঘটনাপ্রবাহ উপস্থাপন করে জিজ্ঞাসা করে কোন ধারা, যদি থাকে, বিবৃতিটি প্রমাণযোগ্য করে তোলে।",
+          "common_traps": [
+            "'দোষ স্বীকারোক্তি' ও 'স্বীকৃতি'-কে সম্পর্কহীন ধারণা মনে করা, অথচ দোষ স্বীকারোক্তি প্রকৃতপক্ষে বৃহত্তর স্বীকৃতি শ্রেণির একটি সংকীর্ণ উপশ্রেণি।",
+            "মনে করা যে কোনো বিষয় আবিষ্কৃত হলে ধারা ২৭ সম্পূর্ণ বিবৃতিটিকে পুনরুজ্জীবিত করে -- এটি কেবল আবিষ্কৃত বিষয়ের সাথে সুনির্দিষ্টভাবে সম্পর্কিত অংশটুকু পুনরুজ্জীবিত করে, দোষের সাথে সংশ্লিষ্ট বিবরণ নয়।",
+            "ভুলে যাওয়া যে ধারা ২৫-এর পুলিশ কর্মকর্তার কাছে দোষ স্বীকারোক্তির নিষেধাজ্ঞা হেফাজতের অবস্থা বা কোনো প্ররোচনার অনুপস্থিতি নির্বিশেষে প্রযোজ্য -- এটি একটি নিরঙ্কুশ নিয়ম, প্ররোচনা/প্রতিশ্রুতির উপর শর্তসাপেক্ষ নয়।"
+          ],
+          "quick_revision": [
+            "স্বীকৃতি = বিস্তৃত (দেওয়ানি + ফৌজদারি); দোষ স্বীকারোক্তি = সংকীর্ণ (কেবল ফৌজদারি দোষ) উপশ্রেণি।",
+            "ধারা ২৪ = কর্তৃত্বসম্পন্ন ব্যক্তির প্ররোচনা/ভীতিপ্রদর্শন/প্রতিশ্রুতিতে ঘটলে অপ্রাসঙ্গিক।",
+            "ধারা ২৫ = পুলিশ কর্মকর্তার কাছে -> কখনোই প্রমাণযোগ্য নয়, সম্পূর্ণরূপে।",
+            "ধারা ২৬ = পুলিশ হেফাজতে -> প্রমাণযোগ্য নয়, তবে ম্যাজিস্ট্রেটের সামনে হলে ব্যতিক্রম।",
+            "ধারা ২৭ = আবিষ্কার ব্যতিক্রম -> কেবল যা খুঁজে পেতে সরাসরি সাহায্য করেছে সেই অংশ।"
+          ],
+          "key_takeaways": [
+            "সব দোষ স্বীকারোক্তিই স্বীকৃতি, কিন্তু সব স্বীকৃতিই দোষ স্বীকারোক্তি নয়।",
+            "সাক্ষ্য আইন দোষ স্বীকারোক্তির চারপাশে ইচ্ছাকৃতভাবে স্তরীভূত সুরক্ষা তৈরি করেছে, কারণ জবরদস্তিমূলক বা অবিশ্বাস্য বিবৃতির মাধ্যমে সন্দেহভাজনের কাছ থেকে দোষ আদায়ের ঝুঁকি রয়েছে।",
+            "ধারা ২৭-এর আবিষ্কার ব্যতিক্রমটি ইচ্ছাকৃতভাবে সংকীর্ণ -- এটি নির্ভরযোগ্যতার যুক্তি রক্ষা করে (একটি বস্তু প্রকৃতপক্ষে বলা স্থানে পাওয়া গেছে) সম্পূর্ণ হেফাজতি বিবৃতির দরজা পুনরায় না খুলে।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-EVID-S17-23",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Evidence Act, 1872",
+      "act_year": 1872,
+      "act_number": "Act No. I of 1872",
+      "section_or_order": "Sections 17-23 (Admission)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "note": "Paraphrased in the lesson, not verbatim-transcribed against a certified current bare act."
+    },
+    {
+      "content_id": "LREF-EVID-S24-30",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Evidence Act, 1872",
+      "act_year": 1872,
+      "act_number": "Act No. I of 1872",
+      "section_or_order": "Sections 24-30 (Confession)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "note": "Paraphrased in the lesson, not verbatim-transcribed against a certified current bare act. Note also that S.17's reference to statements 'in electronic form' reflects an ICT-era amendment pattern seen across the region -- flagged for confirmation that Bangladesh's current text matches, rather than assumed."
+    },
+    {
+      "content_id": "BC-MCQ-EVID-ADM-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-EVID-ADM-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-EVID-S24-30"],
+      "exam_focus": "The absolute nature of the Section 25 bar.",
+      "source_basis": "Original question on S.25.",
+      "mistake_tags": ["s25-absolute-bar"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-EVIDENCE-ADMISSION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 25 of the Evidence Act, 1872, a confession made by an accused person to a police officer is:",
+          "options": { "A": "Provable if no inducement, threat or promise was involved", "B": "Never provable against the accused", "C": "Provable only with the permission of a Magistrate", "D": "Provable if independently corroborated by other evidence" },
+          "explanation": "Section 25 creates an absolute bar: a confession to a police officer cannot be proved against the accused, full stop -- it does not matter whether any inducement, threat or promise was present.",
+          "why_other_options_are_wrong": { "A": "This confuses S.25 with S.24; S.25's bar does not depend on inducement being present or absent.", "C": "No such permission mechanism exists under S.25 -- the bar is absolute, not curable by permission.", "D": "Corroboration by other evidence does not revive a statement barred under S.25." }
+        },
+        "bn": {
+          "question": "সাক্ষ্য আইন, ১৮৭২-এর ধারা ২৫ অনুযায়ী, কোনো অভিযুক্ত ব্যক্তির পুলিশ কর্মকর্তার কাছে প্রদত্ত দোষ স্বীকারোক্তি:",
+          "options": { "A": "কোনো প্ররোচনা, ভীতিপ্রদর্শন বা প্রতিশ্রুতি না থাকলে প্রমাণযোগ্য", "B": "অভিযুক্তের বিরুদ্ধে কখনোই প্রমাণযোগ্য নয়", "C": "কেবল ম্যাজিস্ট্রেটের অনুমতি সাপেক্ষে প্রমাণযোগ্য", "D": "অন্য সাক্ষ্য দ্বারা স্বাধীনভাবে সমর্থিত হলে প্রমাণযোগ্য" },
+          "explanation": "ধারা ২৫ একটি নিরঙ্কুশ নিষেধাজ্ঞা তৈরি করে: পুলিশ কর্মকর্তার কাছে প্রদত্ত দোষ স্বীকারোক্তি অভিযুক্তের বিরুদ্ধে প্রমাণ করা যাবে না, সম্পূর্ণরূপে -- কোনো প্ররোচনা, ভীতিপ্রদর্শন বা প্রতিশ্রুতি ছিল কিনা তা গুরুত্বপূর্ণ নয়।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ২৫-কে ধারা ২৪-এর সাথে গুলিয়ে ফেলে; ধারা ২৫-এর নিষেধাজ্ঞা প্ররোচনা থাকা বা না থাকার উপর নির্ভরশীল নয়।", "C": "ধারা ২৫-এর অধীনে এমন কোনো অনুমতি ব্যবস্থা নেই -- নিষেধাজ্ঞাটি নিরঙ্কুশ, অনুমতি দ্বারা প্রতিকারযোগ্য নয়।", "D": "অন্য সাক্ষ্য দ্বারা সমর্থন ধারা ২৫-এর অধীনে নিষিদ্ধ বিবৃতিকে পুনরুজ্জীবিত করে না।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-EVID-ADM-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-EVID-ADM-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-EVID-S24-30"],
+      "exam_focus": "S.26's Magistrate exception.",
+      "source_basis": "Original question on S.26.",
+      "mistake_tags": ["s26-magistrate-exception"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-EVIDENCE-ADMISSION-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 26 of the Evidence Act, 1872, a confession made by a person while in the custody of a police officer can be proved against that person only if it was made:",
+          "options": { "A": "In writing, signed by the accused", "B": "In the presence of the investigating officer's superior", "C": "In the immediate presence of a Magistrate", "D": "After the accused was granted bail" },
+          "explanation": "Section 26's sole stated exception to the custodial-confession bar is that the confession was made in the immediate presence of a Magistrate.",
+          "why_other_options_are_wrong": { "A": "Being in writing and signed is not, by itself, the statutory exception under S.26.", "B": "A superior police officer's presence does not satisfy S.26 -- it specifically requires a Magistrate.", "D": "Bail status is unrelated to the S.26 exception." }
+        },
+        "bn": {
+          "question": "সাক্ষ্য আইন, ১৮৭২-এর ধারা ২৬ অনুযায়ী, পুলিশ হেফাজতে থাকা অবস্থায় কোনো ব্যক্তির প্রদত্ত দোষ স্বীকারোক্তি কেবল তখনই তার বিরুদ্ধে প্রমাণ করা যাবে যদি তা প্রদত্ত হয়:",
+          "options": { "A": "লিখিতভাবে, অভিযুক্তের স্বাক্ষরসহ", "B": "তদন্তকারী কর্মকর্তার ঊর্ধ্বতনের উপস্থিতিতে", "C": "কোনো ম্যাজিস্ট্রেটের প্রত্যক্ষ উপস্থিতিতে", "D": "অভিযুক্ত জামিন পাওয়ার পর" },
+          "explanation": "ধারা ২৬-এর হেফাজতি-স্বীকারোক্তি নিষেধাজ্ঞার একমাত্র উল্লিখিত ব্যতিক্রম হলো দোষ স্বীকারোক্তিটি কোনো ম্যাজিস্ট্রেটের প্রত্যক্ষ উপস্থিতিতে প্রদত্ত হওয়া।",
+          "why_other_options_are_wrong": { "A": "লিখিত ও স্বাক্ষরিত হওয়া, নিজে থেকে, ধারা ২৬-এর সংবিধিবদ্ধ ব্যতিক্রম নয়।", "B": "একজন ঊর্ধ্বতন পুলিশ কর্মকর্তার উপস্থিতি ধারা ২৬-এর শর্ত পূরণ করে না -- এটি নির্দিষ্টভাবে একজন ম্যাজিস্ট্রেট প্রয়োজন করে।", "D": "জামিনের অবস্থা ধারা ২৬-এর ব্যতিক্রমের সাথে সম্পর্কিত নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-EVID-ADM-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-EVID-ADM-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-EVID-S24-30"],
+      "exam_focus": "The narrow scope of the Section 27 discovery exception.",
+      "source_basis": "Original question on S.27.",
+      "mistake_tags": ["s27-narrow-scope"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-EVIDENCE-ADMISSION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "While in police custody, an accused states, 'I killed him and hid the knife under the bridge,' and a knife is recovered from under the bridge as a result. Under Section 27 of the Evidence Act, 1872, which part of the statement may be proved?",
+          "options": { "A": "The entire statement, including 'I killed him'", "B": "Only the part distinctly relating to the fact discovered, i.e. that the knife was hidden under the bridge", "C": "Nothing, because it was made in police custody", "D": "Only the words spoken after the knife was actually found" },
+          "explanation": "Section 27 permits proof only of the part of the information that distinctly relates to the fact discovered -- here, the location of the knife. The separate admission of guilt ('I killed him') remains barred by Section 26; it does not become provable merely because it was said in the same breath as the discovery-related information.",
+          "why_other_options_are_wrong": { "A": "This overstates S.27 -- it does not revive the guilt admission, only the discovery-linked portion.", "C": "S.27 is precisely the exception that allows part of a custodial statement to be proved -- it is not a blanket bar.", "D": "S.27 is about which part of the statement led to the discovery, not about timing relative to when the object was found." }
+        },
+        "bn": {
+          "question": "পুলিশ হেফাজতে থাকা অবস্থায়, একজন অভিযুক্ত বলেন, 'আমি তাকে হত্যা করেছি এবং ছুরিটি সেতুর নিচে লুকিয়ে রেখেছি,' এবং এর ফলস্বরূপ সেতুর নিচ থেকে একটি ছুরি উদ্ধার হয়। সাক্ষ্য আইন, ১৮৭২-এর ধারা ২৭ অনুযায়ী, বিবৃতির কোন অংশটি প্রমাণ করা যেতে পারে?",
+          "options": { "A": "সম্পূর্ণ বিবৃতিটি, 'আমি তাকে হত্যা করেছি' সহ", "B": "কেবল আবিষ্কৃত বিষয়ের সাথে সুনির্দিষ্টভাবে সম্পর্কিত অংশটুকু, অর্থাৎ ছুরিটি সেতুর নিচে লুকানো ছিল এই অংশ", "C": "কিছুই না, কারণ এটি পুলিশ হেফাজতে প্রদত্ত হয়েছিল", "D": "কেবল ছুরিটি প্রকৃতপক্ষে পাওয়ার পর বলা শব্দগুলো" },
+          "explanation": "ধারা ২৭ কেবল সেই তথ্যের অংশটুকু প্রমাণের অনুমতি দেয় যা আবিষ্কৃত বিষয়ের সাথে সুনির্দিষ্টভাবে সম্পর্কিত -- এখানে, ছুরির অবস্থান। দোষের পৃথক স্বীকৃতি ('আমি তাকে হত্যা করেছি') ধারা ২৬ দ্বারা নিষিদ্ধই থাকে; আবিষ্কার-সম্পর্কিত তথ্যের সাথে একই নিঃশ্বাসে বলা হয়েছে বলেই তা প্রমাণযোগ্য হয়ে যায় না।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ২৭-কে অতিরিক্ত ব্যাখ্যা করে -- এটি দোষের স্বীকৃতি পুনরুজ্জীবিত করে না, কেবল আবিষ্কার-সম্পর্কিত অংশটুকু।", "C": "ধারা ২৭ ঠিক সেই ব্যতিক্রম যা হেফাজতি বিবৃতির একটি অংশ প্রমাণের অনুমতি দেয় -- এটি একটি সার্বিক নিষেধাজ্ঞা নয়।", "D": "ধারা ২৭ বিবৃতির কোন অংশ আবিষ্কারের দিকে পরিচালিত করেছে তা নিয়ে, বস্তুটি পাওয়ার সময়ের সাপেক্ষে নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-EVID-ADM-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-EVID-ADM-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-EVID-S17-23"],
+      "exam_focus": "Confession as a subset of admission.",
+      "source_basis": "Original conceptual question.",
+      "mistake_tags": ["admission-confession-relationship"],
+      "revision_priority": "LOW",
+      "related_lesson_ids": ["BC-EVIDENCE-ADMISSION-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Which statement best describes the relationship between 'admission' and 'confession' under the Evidence Act, 1872?",
+          "options": { "A": "Every confession is a kind of admission, but not every admission is a confession", "B": "Every admission is a kind of confession, but not every confession is an admission", "C": "Admission and confession are entirely unrelated concepts", "D": "Admission applies only in criminal cases and confession only in civil cases" },
+          "explanation": "A confession is a narrower category within the broader concept of admission -- specifically, an admission of guilt made by a person accused of an offence. All confessions are therefore admissions, but most admissions (e.g. a civil-suit admission about a debt) are not confessions.",
+          "why_other_options_are_wrong": { "B": "This reverses the correct relationship -- confession is the narrower, not the broader, category.", "C": "The Act itself treats confession as arising within the law of admissions (Chapter II, 'Of the Relevancy of Facts', covers both together).", "D": "This is the reverse of reality: admission applies in both civil and criminal matters, while confession is a criminal-only concept." }
+        },
+        "bn": {
+          "question": "সাক্ষ্য আইন, ১৮৭২-এর অধীনে 'স্বীকৃতি' ও 'দোষ স্বীকারোক্তি'-র মধ্যে সম্পর্ক সবচেয়ে ভালোভাবে কোনটি বর্ণনা করে?",
+          "options": { "A": "প্রতিটি দোষ স্বীকারোক্তি এক ধরনের স্বীকৃতি, কিন্তু প্রতিটি স্বীকৃতি দোষ স্বীকারোক্তি নয়", "B": "প্রতিটি স্বীকৃতি এক ধরনের দোষ স্বীকারোক্তি, কিন্তু প্রতিটি দোষ স্বীকারোক্তি স্বীকৃতি নয়", "C": "স্বীকৃতি ও দোষ স্বীকারোক্তি সম্পূর্ণ সম্পর্কহীন ধারণা", "D": "স্বীকৃতি কেবল ফৌজদারি মামলায় প্রযোজ্য এবং দোষ স্বীকারোক্তি কেবল দেওয়ানি মামলায়" },
+          "explanation": "দোষ স্বীকারোক্তি স্বীকৃতির বৃহত্তর ধারণার মধ্যে একটি সংকীর্ণ শ্রেণি -- সুনির্দিষ্টভাবে, কোনো অপরাধে অভিযুক্ত ব্যক্তির দোষের স্বীকৃতি। তাই সব দোষ স্বীকারোক্তিই স্বীকৃতি, কিন্তু অধিকাংশ স্বীকৃতি (যেমন, দেওয়ানি মামলায় ঋণ সম্পর্কে স্বীকৃতি) দোষ স্বীকারোক্তি নয়।",
+          "why_other_options_are_wrong": { "B": "এটি সঠিক সম্পর্কটি উল্টে দেয় -- দোষ স্বীকারোক্তি সংকীর্ণ শ্রেণি, বৃহত্তর নয়।", "C": "আইনটি নিজেই দোষ স্বীকারোক্তিকে স্বীকৃতি সংক্রান্ত আইনের মধ্যে স্থাপন করে (দ্বিতীয় অধ্যায়, 'তথ্যের প্রাসঙ্গিকতা সম্পর্কে', উভয়কে একত্রে আচ্ছাদন করে)।", "D": "এটি বাস্তবতার বিপরীত: স্বীকৃতি দেওয়ানি ও ফৌজদারি উভয় বিষয়ে প্রযোজ্য, যেখানে দোষ স্বীকারোক্তি কেবল ফৌজদারি ধারণা।" }
+        }
+      }
+    }
+  ]
+}

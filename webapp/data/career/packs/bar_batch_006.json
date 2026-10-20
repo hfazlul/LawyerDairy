@@ -1,0 +1,288 @@
+{
+  "batch_id": "BATCH-2026-08-006-LIMITATION-BAR-AND-EXTENSION",
+  "schema_version": "1.0",
+  "content_version": "2026.08.3",
+  "created_at": "2026-08-23T00:00:00Z",
+  "source": "claude-research-pass-2026-08-23",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Limitation Act had zero lesson coverage. This batch (lighter format: lesson + 4 MCQs, no written/viva) covers the practical core of T-LIM-03 -- Sections 3, 4 and 5 -- the bar of limitation, the court-closed-day exception, and the 'sufficient cause' extension for appeals/applications. This trio is chosen deliberately because the boundary between them (especially that S.5 never rescues a time-barred SUIT) is the single most classic trap in Limitation Act exam questions across the region. Specific Relief Act and Professional Ethics remain at zero coverage after this batch and are the next logical additions.",
+  "asset_count": 8,
+  "assets": [
+    {
+      "content_id": "BC-LIM-BARANDEXTENSION-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-LIM-BARANDEXTENSION-001",
+      "topic_id": "T-LIM-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "verification_note": "Reflects the long-standing, essentially unamended structure of Limitation Act 1908 Sections 3-5, taught uniformly across jurisdictions that inherited this Act. Not re-transcribed against a certified current bare act in this pass. No case law cited -- the 'sufficient cause' examples given are illustrative general categories (genuine incapacity vs. negligence/deliberate delay), not attributed to any specific reported judgment, for the same reason case law is avoided throughout this dataset.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": [],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-LIM-BE-001", "BC-MCQ-LIM-BE-002", "BC-MCQ-LIM-BE-003", "BC-MCQ-LIM-BE-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_law_ids": ["LREF-LIM-S3", "LREF-LIM-S4", "LREF-LIM-S5"],
+      "related_case_ids": [],
+      "legal_reference_ids": ["LREF-LIM-S3", "LREF-LIM-S4", "LREF-LIM-S5"],
+      "important_case_law": [],
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "language_versions": {
+        "en": {
+          "title": "Bar of Limitation and Extension for Sufficient Cause",
+          "short_description": "Sections 3-5 of the Limitation Act, 1908 set the basic machinery of limitation law: a suit, appeal, or application filed late is barred automatically (Section 3), a narrow calendar fix exists for when the court itself is closed (Section 4), and a genuine, fact-specific excuse can save a late appeal or application -- but never a late suit (Section 5).",
+          "learning_objective": "By the end of this lesson you should be able to: state the effect of Section 3 and explain why limitation need not be pleaded as a defence to apply; state the narrow scope of Section 4; and state exactly which proceedings Section 5 can and cannot rescue, including why 'sufficient cause' can save a late appeal but never a time-barred suit.",
+          "explanation": "Section 3 is the engine of the whole Act: subject to Sections 4 to 25, every suit instituted, appeal preferred, and application made after the period of limitation prescribed for it in the First Schedule SHALL be dismissed -- even though limitation has not been set up as a defence by the opposing side. This is a critical structural point: limitation under this Act is not merely a defence that a party can choose to raise or waive; it is a bar the court itself must apply once it notices the period has expired, regardless of what either side argues.\n\nSection 4 supplies a narrow, purely calendar-driven fix: where the prescribed period expires on a day when the court is closed, the suit, appeal, or application may still be instituted, preferred, or made on the day the court reopens. This has nothing to do with the merits of any delay -- it only bridges the gap created by the court's own closure on the last permissible day.\n\nSection 5 is where most of the exam nuance lives. It allows an appeal, an application for review of judgment, an application for leave to appeal, or another application to which the section is made applicable by some other enactment, to be admitted after the limitation period has expired, if the appellant or applicant satisfies the court that they had sufficient cause for not filing within time. Two things about Section 5 are essential and frequently tested. First, what counts as 'sufficient cause' is not a fixed checklist -- it is a fact-specific judgment left to the court, generally distinguishing a genuine, bona fide incapacity (illness, being wrongly advised through no fault of one's own, an unavoidable delay in obtaining a certified copy needed to file) from mere negligence, inattention, or a deliberate tactical delay. Second, and most importantly for exam purposes, Section 5 by its own terms does NOT extend to suits -- it rescues only appeals and the specified categories of applications. A plaintiff who simply files a suit too late has no Section 5 lifeline at all; only Sections 4 to 25 taken together (of which Section 5 is just one) can ever save a suit, an appeal, or an application from the Section 3 bar, and Section 5's own wording confines its own reach to appeals/applications, not suits.",
+          "key_concepts": ["Section 3's automatic bar (no need to plead limitation as a defence)", "Section 4's court-closed-day exception", "Section 5's 'sufficient cause' extension", "Section 5 applies to appeals and specified applications only -- never to suits", "Genuine incapacity vs. negligence/deliberate delay as 'sufficient cause'"],
+          "important_rules": [
+            "S.3: every suit, appeal, or application filed after the prescribed limitation period SHALL be dismissed, even if limitation was never raised as a defence -- the court must apply the bar itself.",
+            "S.4: where the prescribed period expires on a day the court is closed, the suit/appeal/application may be filed on the day the court reopens.",
+            "S.5: an appeal, an application for review of judgment, an application for leave to appeal, or another application to which the section is made applicable, may be admitted after the limitation period on proof of sufficient cause for the delay -- but Section 5 does NOT apply to suits."
+          ],
+          "definitions": [
+            { "term": "Bar of limitation (S.3)", "definition": "The automatic, mandatory dismissal of a suit, appeal, or application filed after its prescribed limitation period, applied by the court on its own regardless of whether the opposing party pleads limitation." },
+            { "term": "Sufficient cause (S.5)", "definition": "A genuine, bona fide reason, assessed by the court on the facts, for an appellant's or applicant's failure to file an appeal or specified application within the prescribed period -- distinct from mere negligence or deliberate delay, and available only for appeals/specified applications, never for suits." }
+          ],
+          "examples": [
+            "A files a suit after the limitation period for that type of claim has expired. B, the defendant, does not raise limitation anywhere in the written statement or at trial. Despite B's silence, the court must dismiss A's suit under Section 3 once it notices the period has expired -- the bar does not depend on B pleading it.",
+            "C wants to file an appeal, and the limitation period happens to expire on a public holiday when the court is closed. Under Section 4, C may file the appeal on the day the court reopens and it will be treated as filed in time.",
+            "D was hospitalised for a substantial part of the limitation period and could not instruct counsel to file an appeal in time. D applies under Section 5 for admission of the appeal on the ground of sufficient cause -- the court will assess whether the hospitalisation genuinely prevented timely filing. If D had instead simply let a SUIT go time-barred for the same reason, Section 5 would give D no recourse at all, because it does not extend to suits."
+          ],
+          "exam_focus": "The single most tested point in this topic is the suit/appeal-and-application boundary of Section 5 -- MCQ and written setters alike enjoy a fact pattern about a time-barred SUIT and asking whether Section 5 can save it (it cannot). A close second is the automatic, un-waivable nature of the Section 3 bar.",
+          "common_traps": [
+            "Believing Section 5's 'sufficient cause' can rescue a time-barred suit -- it cannot; Section 5's own text limits it to appeals and specified applications.",
+            "Assuming a defendant's failure to plead limitation means the court will simply proceed with a time-barred suit -- Section 3 requires the court to apply the bar itself.",
+            "Treating any excuse at all as 'sufficient cause' under Section 5 -- ordinary negligence, inattention, or tactical delay is generally not accepted; the court looks for a genuine, bona fide reason."
+          ],
+          "quick_revision": [
+            "S.3 = automatic bar, applies even if never pleaded.",
+            "S.4 = court closed on the deadline day -> file on reopening day.",
+            "S.5 = 'sufficient cause' -> saves APPEALS and specified APPLICATIONS only, NEVER suits.",
+            "Genuine incapacity can be sufficient cause; negligence or deliberate delay generally is not."
+          ],
+          "key_takeaways": [
+            "Limitation under this Act operates as a mandatory bar the court itself enforces, not an optional defence a party can waive by silence.",
+            "Section 4's fix is narrow and purely calendar-based; it has nothing to do with the reasonableness of any delay.",
+            "Section 5 is a real but bounded lifeline -- powerful for appeals and applications, entirely unavailable for suits, which is exactly why examiners test it so often."
+          ]
+        },
+        "bn": {
+          "title": "তামাদির বাধা ও পর্যাপ্ত কারণে মেয়াদ বৃদ্ধি",
+          "short_description": "তামাদি আইন, ১৯০৮-এর ৩-৫ ধারা তামাদি আইনের মূল কাঠামো স্থাপন করে: বিলম্বে দায়েরকৃত মামলা, আপিল, বা দরখাস্ত স্বয়ংক্রিয়ভাবে বাধাগ্রস্ত হয় (ধারা ৩), আদালত নিজেই বন্ধ থাকলে একটি সংকীর্ণ ক্যালেন্ডার-ভিত্তিক সমাধান রয়েছে (ধারা ৪), এবং একটি প্রকৃত, ঘটনাভিত্তিক অজুহাত বিলম্বিত আপিল বা দরখাস্ত রক্ষা করতে পারে -- কিন্তু কখনো বিলম্বিত মামলা নয় (ধারা ৫)।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৩-এর প্রভাব বলতে পারবেন এবং কেন তামাদি প্রতিরক্ষা হিসেবে উত্থাপন করা আবশ্যক নয় তা প্রযোজ্য হতে ব্যাখ্যা করতে পারবেন; ধারা ৪-এর সংকীর্ণ পরিধি বলতে পারবেন; এবং ধারা ৫ ঠিক কোন কার্যধারা রক্ষা করতে পারে ও পারে না তা বলতে পারবেন, যার মধ্যে কেন 'পর্যাপ্ত কারণ' একটি বিলম্বিত আপিল রক্ষা করতে পারে কিন্তু কখনো তামাদি-বাধাগ্রস্ত মামলা নয় তাও অন্তর্ভুক্ত।",
+          "explanation": "ধারা ৩ পুরো আইনের চালিকাশক্তি: ধারা ৪ থেকে ২৫ সাপেক্ষে, প্রথম তফসিলে নির্ধারিত তামাদির মেয়াদ অতিক্রান্ত হওয়ার পর দায়েরকৃত প্রতিটি মামলা, পছন্দকৃত আপিল, ও দরখাস্ত খারিজ হবে (SHALL) -- এমনকি বিরোধী পক্ষ তামাদিকে প্রতিরক্ষা হিসেবে উত্থাপন না করলেও। এটি একটি গুরুত্বপূর্ণ কাঠামোগত বিষয়: এই আইনের অধীনে তামাদি কেবল একটি প্রতিরক্ষা নয় যা কোনো পক্ষ উত্থাপন করতে বা মওকুফ করতে বেছে নিতে পারে; এটি এমন একটি বাধা যা আদালত নিজেই প্রয়োগ করতে বাধ্য একবার মেয়াদ অতিক্রান্ত হয়েছে তা লক্ষ্য করলে, উভয় পক্ষ যাই যুক্তি দিক না কেন।\n\nধারা ৪ একটি সংকীর্ণ, সম্পূর্ণভাবে ক্যালেন্ডার-চালিত সমাধান প্রদান করে: যেখানে নির্ধারিত মেয়াদ এমন একদিনে অতিক্রান্ত হয় যেদিন আদালত বন্ধ থাকে, সেখানে মামলা, আপিল, বা দরখাস্ত আদালত পুনরায় খোলার দিনেও দায়ের করা যেতে পারে। এর সাথে যেকোনো বিলম্বের মেধার কোনো সম্পর্ক নেই -- এটি কেবল শেষ অনুমোদিত দিনে আদালতের নিজস্ব বন্ধ থাকার কারণে সৃষ্ট ব্যবধান পূরণ করে।\n\nধারা ৫ যেখানে বেশিরভাগ পরীক্ষার সূক্ষ্মতা বিদ্যমান। এটি একটি আপিল, রায়ের পুনর্বিবেচনার দরখাস্ত, আপিলের অনুমতির দরখাস্ত, অথবা অন্য কোনো আইন দ্বারা এই ধারা প্রযোজ্য করা অন্য কোনো দরখাস্তকে তামাদির মেয়াদ অতিক্রান্ত হওয়ার পরেও গ্রহণ করার অনুমতি দেয়, যদি আপিলকারী বা দরখাস্তকারী আদালতকে সন্তুষ্ট করতে পারেন যে সময়মতো দায়ের না করার জন্য তার পর্যাপ্ত কারণ ছিল। ধারা ৫ সম্পর্কে দুটি বিষয় অপরিহার্য ও প্রায়ই পরীক্ষায় আসে। প্রথমত, 'পর্যাপ্ত কারণ' কী তা কোনো নির্দিষ্ট তালিকা নয় -- এটি আদালতের কাছে ছেড়ে দেওয়া একটি ঘটনাভিত্তিক বিচার, যা সাধারণত একটি প্রকৃত, সরল বিশ্বাসী অক্ষমতা (অসুস্থতা, নিজের দোষ ছাড়া ভুল পরামর্শ পাওয়া, দায়েরের জন্য প্রয়োজনীয় প্রত্যয়িত অনুলিপি পেতে অনিবার্য বিলম্ব) কে নিছক অবহেলা, অমনোযোগিতা, বা ইচ্ছাকৃত কৌশলগত বিলম্ব থেকে আলাদা করে। দ্বিতীয়ত, এবং পরীক্ষার উদ্দেশ্যে সবচেয়ে গুরুত্বপূর্ণ, ধারা ৫ তার নিজস্ব শর্তাবলি অনুযায়ী মামলার ক্ষেত্রে প্রসারিত হয় না -- এটি কেবল আপিল ও নির্দিষ্ট শ্রেণির দরখাস্ত রক্ষা করে। যে বাদী কেবল দেরিতে মামলা দায়ের করেন তার জন্য ধারা ৫-এর কোনো সহায়তা নেই; কেবল ধারা ৪ থেকে ২৫ একসাথে (যার মধ্যে ধারা ৫ একটি মাত্র) কখনো একটি মামলা, আপিল, বা দরখাস্তকে ধারা ৩-এর বাধা থেকে রক্ষা করতে পারে, এবং ধারা ৫-এর নিজস্ব শব্দচয়ন এর নিজস্ব পরিধিকে আপিল/দরখাস্তে সীমাবদ্ধ করে, মামলায় নয়।",
+          "key_concepts": ["ধারা ৩-এর স্বয়ংক্রিয় বাধা (তামাদিকে প্রতিরক্ষা হিসেবে উত্থাপনের প্রয়োজন নেই)", "ধারা ৪-এর আদালত-বন্ধ-দিনের ব্যতিক্রম", "ধারা ৫-এর 'পর্যাপ্ত কারণ' মেয়াদ বৃদ্ধি", "ধারা ৫ কেবল আপিল ও নির্দিষ্ট দরখাস্তে প্রযোজ্য -- মামলায় কখনো নয়", "'পর্যাপ্ত কারণ' হিসেবে প্রকৃত অক্ষমতা বনাম অবহেলা/ইচ্ছাকৃত বিলম্ব"],
+          "important_rules": [
+            "ধারা ৩: নির্ধারিত তামাদির মেয়াদ অতিক্রান্ত হওয়ার পর দায়েরকৃত প্রতিটি মামলা, আপিল, বা দরখাস্ত খারিজ হবে, এমনকি তামাদি কখনো প্রতিরক্ষা হিসেবে উত্থাপিত না হলেও -- আদালতকে নিজেই বাধাটি প্রয়োগ করতে হবে।",
+            "ধারা ৪: যেখানে নির্ধারিত মেয়াদ এমন একদিনে অতিক্রান্ত হয় যেদিন আদালত বন্ধ থাকে, সেখানে মামলা/আপিল/দরখাস্ত আদালত পুনরায় খোলার দিনে দায়ের করা যেতে পারে।",
+            "ধারা ৫: একটি আপিল, রায়ের পুনর্বিবেচনার দরখাস্ত, আপিলের অনুমতির দরখাস্ত, অথবা এই ধারা প্রযোজ্য করা অন্য কোনো দরখাস্ত, বিলম্বের পর্যাপ্ত কারণ প্রমাণিত হলে তামাদির মেয়াদ অতিক্রান্ত হওয়ার পরেও গ্রহণ করা যেতে পারে -- কিন্তু ধারা ৫ মামলায় প্রযোজ্য নয়।"
+          ],
+          "definitions": [
+            { "term": "তামাদির বাধা (ধারা ৩)", "definition": "নির্ধারিত তামাদির মেয়াদ অতিক্রান্ত হওয়ার পর দায়েরকৃত মামলা, আপিল, বা দরখাস্তের স্বয়ংক্রিয়, বাধ্যতামূলক খারিজ, যা আদালত নিজেই প্রয়োগ করে, বিরোধী পক্ষ তামাদি উত্থাপন করুক বা না করুক তা নির্বিশেষে।" },
+            { "term": "পর্যাপ্ত কারণ (ধারা ৫)", "definition": "একটি আপিলকারী বা দরখাস্তকারীর নির্ধারিত মেয়াদের মধ্যে আপিল বা নির্দিষ্ট দরখাস্ত দায়ের করতে ব্যর্থতার জন্য একটি প্রকৃত, সরল বিশ্বাসী কারণ, যা আদালত ঘটনার ভিত্তিতে মূল্যায়ন করে -- নিছক অবহেলা বা ইচ্ছাকৃত বিলম্ব থেকে ভিন্ন, এবং কেবল আপিল/নির্দিষ্ট দরখাস্তের জন্য উপলব্ধ, মামলার জন্য কখনো নয়।" }
+          ],
+          "examples": [
+            "ক সেই ধরনের দাবির তামাদির মেয়াদ অতিক্রান্ত হওয়ার পর একটি মামলা দায়ের করেন। বিবাদী খ লিখিত জবাবে বা বিচারে কোথাও তামাদি উত্থাপন করেন না। খ-এর নীরবতা সত্ত্বেও, মেয়াদ অতিক্রান্ত হয়েছে তা লক্ষ্য করলে আদালতকে ধারা ৩-এর অধীনে ক-এর মামলা খারিজ করতে হবে -- বাধাটি খ উত্থাপন করেছেন কিনা তার উপর নির্ভর করে না।",
+            "গ একটি আপিল দায়ের করতে চান, এবং তামাদির মেয়াদ এমন একটি সরকারি ছুটির দিনে অতিক্রান্ত হয় যেদিন আদালত বন্ধ থাকে। ধারা ৪-এর অধীনে, গ আদালত পুনরায় খোলার দিনে আপিল দায়ের করতে পারেন এবং এটি সময়মতো দায়ের হয়েছে বলে গণ্য হবে।",
+            "ঘ তামাদির মেয়াদের একটি উল্লেখযোগ্য অংশে হাসপাতালে ভর্তি ছিলেন এবং সময়মতো আপিল দায়েরের জন্য আইনজীবীকে নির্দেশ দিতে পারেননি। ঘ পর্যাপ্ত কারণের ভিত্তিতে আপিল গ্রহণের জন্য ধারা ৫-এর অধীনে আবেদন করেন -- আদালত মূল্যায়ন করবে হাসপাতালে ভর্তি হওয়া প্রকৃতপক্ষে সময়মতো দায়েরে বাধা দিয়েছিল কিনা। যদি ঘ একই কারণে একটি মামলাকে তামাদি-বাধাগ্রস্ত হতে দিতেন, তাহলে ধারা ৫ ঘ-কে কোনো সহায়তাই দিতো না, কারণ এটি মামলায় প্রসারিত হয় না।"
+          ],
+          "exam_focus": "এই টপিকের সবচেয়ে বেশি পরীক্ষিত বিষয় হলো ধারা ৫-এর মামলা/আপিল-ও-দরখাস্ত সীমারেখা -- এমসিকিউ ও লিখিত প্রশ্নকর্তা উভয়েই একটি তামাদি-বাধাগ্রস্ত মামলা সম্পর্কে ঘটনাপ্রবাহ দিয়ে জিজ্ঞাসা করতে পছন্দ করেন ধারা ৫ তা রক্ষা করতে পারে কিনা (পারে না)। দ্বিতীয় সবচেয়ে গুরুত্বপূর্ণ বিষয় হলো ধারা ৩-এর বাধার স্বয়ংক্রিয়, অমোচনীয় প্রকৃতি।",
+          "common_traps": [
+            "মনে করা যে ধারা ৫-এর 'পর্যাপ্ত কারণ' একটি তামাদি-বাধাগ্রস্ত মামলা রক্ষা করতে পারে -- পারে না; ধারা ৫-এর নিজস্ব পাঠ্য এটিকে আপিল ও নির্দিষ্ট দরখাস্তে সীমাবদ্ধ করে।",
+            "মনে করা যে বিবাদীর তামাদি উত্থাপন করতে ব্যর্থতার অর্থ আদালত কেবল একটি তামাদি-বাধাগ্রস্ত মামলা এগিয়ে নেবে -- ধারা ৩ আদালতকে নিজেই বাধাটি প্রয়োগ করতে বাধ্য করে।",
+            "ধারা ৫-এর অধীনে যেকোনো অজুহাতকেই 'পর্যাপ্ত কারণ' হিসেবে গণ্য করা -- সাধারণ অবহেলা, অমনোযোগিতা, বা কৌশলগত বিলম্ব সাধারণত গ্রহণযোগ্য নয়; আদালত একটি প্রকৃত, সরল বিশ্বাসী কারণ খোঁজে।"
+          ],
+          "quick_revision": [
+            "ধারা ৩ = স্বয়ংক্রিয় বাধা, কখনো উত্থাপিত না হলেও প্রযোজ্য।",
+            "ধারা ৪ = নির্ধারিত দিনে আদালত বন্ধ -> পুনরায় খোলার দিনে দায়ের করুন।",
+            "ধারা ৫ = 'পর্যাপ্ত কারণ' -> কেবল আপিল ও নির্দিষ্ট দরখাস্ত রক্ষা করে, মামলা কখনো নয়।",
+            "প্রকৃত অক্ষমতা পর্যাপ্ত কারণ হতে পারে; অবহেলা বা ইচ্ছাকৃত বিলম্ব সাধারণত নয়।"
+          ],
+          "key_takeaways": [
+            "এই আইনের অধীনে তামাদি একটি বাধ্যতামূলক বাধা হিসেবে কাজ করে যা আদালত নিজেই প্রয়োগ করে, কোনো পক্ষ নীরবতার মাধ্যমে মওকুফ করতে পারে এমন একটি ঐচ্ছিক প্রতিরক্ষা নয়।",
+            "ধারা ৪-এর সমাধান সংকীর্ণ ও সম্পূর্ণভাবে ক্যালেন্ডার-ভিত্তিক; কোনো বিলম্বের যুক্তিসঙ্গততার সাথে এর কোনো সম্পর্ক নেই।",
+            "ধারা ৫ একটি প্রকৃত কিন্তু সীমাবদ্ধ জীবনরেখা -- আপিল ও দরখাস্তের জন্য শক্তিশালী, মামলার জন্য সম্পূর্ণরূপে অনুপলব্ধ, যে কারণে পরীক্ষকরা এটি এত ঘন ঘন যাচাই করেন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-LIM-S3",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Limitation Act, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. IX of 1908",
+      "section_or_order": "Section 3",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "note": "Paraphrased in the lesson, not verbatim-transcribed against a certified current bare act."
+    },
+    {
+      "content_id": "LREF-LIM-S4",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Limitation Act, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. IX of 1908",
+      "section_or_order": "Section 4",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "note": "Same caveat as S.3."
+    },
+    {
+      "content_id": "LREF-LIM-S5",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Limitation Act, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. IX of 1908",
+      "section_or_order": "Section 5",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "note": "Same caveat as S.3. The precise current list of enactments that 'make Section 5 applicable' to specific application types should be checked against a certified bare act."
+    },
+    {
+      "content_id": "BC-MCQ-LIM-BE-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-LIM-BE-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-LIM-S3"],
+      "exam_focus": "The automatic, un-waivable nature of the S.3 bar.",
+      "source_basis": "Original question on S.3.",
+      "mistake_tags": ["s3-automatic-bar"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-LIM-BARANDEXTENSION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 3 of the Limitation Act, 1908, a suit filed after the prescribed period of limitation:",
+          "options": { "A": "Will proceed normally unless the defendant specifically objects on grounds of limitation", "B": "Must be dismissed by the court, even if limitation was not raised as a defence", "C": "Can only be dismissed if the plaintiff admits it is time-barred", "D": "Is automatically treated as an application under Section 5" },
+          "explanation": "Section 3 requires dismissal of a time-barred suit even where limitation was never pleaded as a defence -- the bar is applied by the court itself, not left to the parties to raise or waive.",
+          "why_other_options_are_wrong": { "A": "This treats limitation as an optional, waivable defence, which is the opposite of how Section 3 operates.", "C": "The plaintiff's admission is not required; the court applies the bar once it notices the period has expired.", "D": "A time-barred suit is not automatically converted into anything under Section 5, which in any case does not apply to suits at all." }
+        },
+        "bn": {
+          "question": "তামাদি আইন, ১৯০৮-এর ধারা ৩ অনুযায়ী, নির্ধারিত তামাদির মেয়াদ অতিক্রান্ত হওয়ার পর দায়েরকৃত একটি মামলা:",
+          "options": { "A": "বিবাদী নির্দিষ্টভাবে তামাদির ভিত্তিতে আপত্তি না করলে স্বাভাবিকভাবে চলবে", "B": "আদালত কর্তৃক খারিজ হতে হবে, এমনকি তামাদি প্রতিরক্ষা হিসেবে উত্থাপিত না হলেও", "C": "কেবল তখনই খারিজ করা যেতে পারে যদি বাদী স্বীকার করেন এটি তামাদি-বাধাগ্রস্ত", "D": "স্বয়ংক্রিয়ভাবে ধারা ৫-এর অধীনে একটি দরখাস্তে রূপান্তরিত হয়" },
+          "explanation": "ধারা ৩ তামাদি কখনো প্রতিরক্ষা হিসেবে উত্থাপিত না হলেও একটি তামাদি-বাধাগ্রস্ত মামলা খারিজের প্রয়োজন করে -- বাধাটি আদালত নিজেই প্রয়োগ করে, পক্ষদের উত্থাপন বা মওকুফের উপর ছাড়া নয়।",
+          "why_other_options_are_wrong": { "A": "এটি তামাদিকে একটি ঐচ্ছিক, মওকুফযোগ্য প্রতিরক্ষা হিসেবে গণ্য করে, যা ধারা ৩ যেভাবে কাজ করে তার বিপরীত।", "C": "বাদীর স্বীকৃতি প্রয়োজন নেই; মেয়াদ অতিক্রান্ত হয়েছে তা লক্ষ্য করলে আদালত বাধাটি প্রয়োগ করে।", "D": "একটি তামাদি-বাধাগ্রস্ত মামলা ধারা ৫-এর অধীনে স্বয়ংক্রিয়ভাবে কিছুতে রূপান্তরিত হয় না, যা যেকোনো ক্ষেত্রে মামলায় আদৌ প্রযোজ্য নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-LIM-BE-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-LIM-BE-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-LIM-S5"],
+      "exam_focus": "The single most classic trap: S.5 never saves a suit.",
+      "source_basis": "Original question isolating S.5's scope.",
+      "mistake_tags": ["s5-suits-excluded"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-LIM-BARANDEXTENSION-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Section 5 of the Limitation Act, 1908 (extension of period for sufficient cause) applies to:",
+          "options": { "A": "Suits, appeals, and applications equally", "B": "Suits only", "C": "Appeals and specified applications, but NOT suits", "D": "Only applications for review of judgment, and nothing else" },
+          "explanation": "Section 5's own text confines it to appeals, applications for review of judgment, applications for leave to appeal, and other applications to which the section is made applicable -- it explicitly does not extend to suits, no matter how sufficient the cause for delay.",
+          "why_other_options_are_wrong": { "A": "Suits are specifically excluded; Section 5 does not apply 'equally' to all three.", "B": "This is the reverse of the correct position -- Section 5 does NOT apply to suits at all.", "D": "Section 5 covers more than just review applications; it also covers appeals, leave-to-appeal applications, and other specified applications." }
+        },
+        "bn": {
+          "question": "তামাদি আইন, ১৯০৮-এর ধারা ৫ (পর্যাপ্ত কারণে মেয়াদ বৃদ্ধি) কোন ক্ষেত্রে প্রযোজ্য?",
+          "options": { "A": "মামলা, আপিল, ও দরখাস্ত সমানভাবে", "B": "কেবল মামলায়", "C": "আপিল ও নির্দিষ্ট দরখাস্তে, কিন্তু মামলায় নয়", "D": "কেবল রায়ের পুনর্বিবেচনার দরখাস্তে, আর কিছুতে নয়" },
+          "explanation": "ধারা ৫-এর নিজস্ব পাঠ্য এটিকে আপিল, রায়ের পুনর্বিবেচনার দরখাস্ত, আপিলের অনুমতির দরখাস্ত, এবং এই ধারা প্রযোজ্য করা অন্য দরখাস্তে সীমাবদ্ধ করে -- বিলম্বের কারণ যতই পর্যাপ্ত হোক না কেন এটি স্পষ্টভাবে মামলায় প্রসারিত হয় না।",
+          "why_other_options_are_wrong": { "A": "মামলা সুনির্দিষ্টভাবে বাদ দেওয়া হয়েছে; ধারা ৫ তিনটিতেই 'সমানভাবে' প্রযোজ্য নয়।", "B": "এটি সঠিক অবস্থানের বিপরীত -- ধারা ৫ মামলায় আদৌ প্রযোজ্য নয়।", "D": "ধারা ৫ কেবল পুনর্বিবেচনা দরখাস্তের চেয়ে বেশি আচ্ছাদন করে; এটি আপিল, আপিলের অনুমতির দরখাস্ত, এবং অন্যান্য নির্দিষ্ট দরখাস্তও আচ্ছাদন করে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-LIM-BE-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-LIM-BE-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-LIM-S4"],
+      "exam_focus": "The narrow, calendar-only scope of S.4.",
+      "source_basis": "Original question on S.4.",
+      "mistake_tags": ["s4-scope"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-LIM-BARANDEXTENSION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 4, where the prescribed period of limitation expires on a day when the court is closed, the suit, appeal, or application may be:",
+          "options": { "A": "Never filed, as the right is permanently lost", "B": "Filed on the day the court reopens", "C": "Filed only with special permission from the High Court Division", "D": "Filed up to 30 days after the court reopens" },
+          "explanation": "Section 4 simply allows filing on the day the court reopens -- it is a narrow, calendar-driven fix, not a general grace period and not something requiring special permission.",
+          "why_other_options_are_wrong": { "A": "Section 4 exists precisely to prevent this outcome when the closure is not the litigant's fault.", "C": "No special High Court Division permission is required under Section 4.", "D": "Section 4 does not create a 30-day window; it only extends to the day the court reopens." }
+        },
+        "bn": {
+          "question": "ধারা ৪-এর অধীনে, যেখানে নির্ধারিত তামাদির মেয়াদ এমন একদিনে অতিক্রান্ত হয় যেদিন আদালত বন্ধ থাকে, সেখানে মামলা, আপিল, বা দরখাস্ত:",
+          "options": { "A": "কখনো দায়ের করা যাবে না, কারণ অধিকারটি স্থায়ীভাবে হারিয়ে যায়", "B": "আদালত পুনরায় খোলার দিনে দায়ের করা যেতে পারে", "C": "কেবল হাইকোর্ট বিভাগের বিশেষ অনুমতিতে দায়ের করা যেতে পারে", "D": "আদালত পুনরায় খোলার ৩০ দিন পর্যন্ত দায়ের করা যেতে পারে" },
+          "explanation": "ধারা ৪ কেবল আদালত পুনরায় খোলার দিনে দায়েরের অনুমতি দেয় -- এটি একটি সংকীর্ণ, ক্যালেন্ডার-চালিত সমাধান, একটি সাধারণ অনুগ্রহ সময় নয় এবং বিশেষ অনুমতি প্রয়োজনীয় কিছু নয়।",
+          "why_other_options_are_wrong": { "A": "বন্ধ থাকাটি মামলাকারীর দোষ না হলে এই পরিণতি প্রতিরোধ করার জন্যই ধারা ৪ বিদ্যমান।", "C": "ধারা ৪-এর অধীনে হাইকোর্ট বিভাগের বিশেষ অনুমতির প্রয়োজন নেই।", "D": "ধারা ৪ ৩০ দিনের কোনো উইন্ডো তৈরি করে না; এটি কেবল আদালত পুনরায় খোলার দিন পর্যন্ত বিস্তৃত।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-LIM-BE-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-LIM-BE-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-03",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-LIM-S5"],
+      "exam_focus": "What kind of reason typically qualifies as 'sufficient cause'.",
+      "source_basis": "Original conceptual question distinguishing genuine incapacity from negligence.",
+      "mistake_tags": ["sufficient-cause-quality"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-LIM-BARANDEXTENSION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Which of the following is most likely to be accepted by a court as 'sufficient cause' for delay under Section 5?",
+          "options": { "A": "The appellant's counsel simply forgot to file within time due to a heavy workload", "B": "The appellant was hospitalised and unable to instruct counsel during a significant part of the limitation period", "C": "The appellant believed, without checking, that the limitation period was longer than it actually was", "D": "The appellant deliberately delayed filing in order to gather additional, unnecessary evidence" },
+          "explanation": "Courts assessing 'sufficient cause' generally look for a genuine, bona fide reason beyond the appellant's control, such as a period of hospitalisation preventing timely instructions -- as opposed to ordinary professional oversight, an unchecked assumption about the law, or a deliberate tactical choice to delay.",
+          "why_other_options_are_wrong": { "A": "A busy schedule causing an oversight is typically treated as ordinary negligence, not sufficient cause.", "C": "An unchecked mistaken belief about the law is generally not treated as sufficient cause -- diligence in ascertaining the correct period is expected.", "D": "A deliberate, tactical delay is the opposite of an excusable cause -- it reflects choice, not incapacity." }
+        },
+        "bn": {
+          "question": "নিচের কোনটি ধারা ৫-এর অধীনে বিলম্বের জন্য আদালত কর্তৃক 'পর্যাপ্ত কারণ' হিসেবে গ্রহণযোগ্য হওয়ার সম্ভাবনা সবচেয়ে বেশি?",
+          "options": { "A": "আপিলকারীর আইনজীবী কর্মভারের কারণে কেবল সময়মতো দায়ের করতে ভুলে গেছেন", "B": "আপিলকারী তামাদির মেয়াদের একটি উল্লেখযোগ্য অংশে হাসপাতালে ভর্তি ছিলেন এবং আইনজীবীকে নির্দেশ দিতে অক্ষম ছিলেন", "C": "আপিলকারী যাচাই না করেই বিশ্বাস করেছিলেন যে তামাদির মেয়াদ প্রকৃতপক্ষে যা ছিল তার চেয়ে দীর্ঘ", "D": "আপিলকারী অতিরিক্ত, অপ্রয়োজনীয় সাক্ষ্যপ্রমাণ সংগ্রহের জন্য ইচ্ছাকৃতভাবে দায়ের বিলম্বিত করেছেন" },
+          "explanation": "'পর্যাপ্ত কারণ' মূল্যায়নকারী আদালতগুলো সাধারণত আপিলকারীর নিয়ন্ত্রণের বাইরে একটি প্রকৃত, সরল বিশ্বাসী কারণ খোঁজে, যেমন হাসপাতালে ভর্তি থাকার একটি সময়কাল যা সময়মতো নির্দেশনা প্রতিরোধ করেছে -- সাধারণ পেশাগত অবহেলা, আইন সম্পর্কে যাচাই না করা অনুমান, বা বিলম্বের ইচ্ছাকৃত কৌশলগত সিদ্ধান্তের বিপরীতে।",
+          "why_other_options_are_wrong": { "A": "ব্যস্ত সময়সূচির কারণে ভুলে যাওয়া সাধারণত সাধারণ অবহেলা হিসেবে গণ্য হয়, পর্যাপ্ত কারণ নয়।", "C": "আইন সম্পর্কে যাচাই না করা ভুল বিশ্বাস সাধারণত পর্যাপ্ত কারণ হিসেবে গণ্য হয় না -- সঠিক মেয়াদ নির্ণয়ে যত্নশীলতা প্রত্যাশিত।", "D": "একটি ইচ্ছাকৃত, কৌশলগত বিলম্ব ক্ষমাযোগ্য কারণের বিপরীত -- এটি পছন্দ প্রতিফলিত করে, অক্ষমতা নয়।" }
+        }
+      }
+    }
+  ]
+}

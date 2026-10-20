@@ -1,0 +1,261 @@
+{
+  "batch_id": "BATCH-2026-08-012-CPC-REVISION",
+  "schema_version": "1.0",
+  "content_version": "2026.08.6",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "User chose to continue going deeper into CPC/CrPC/Penal Code. This batch covers CPC Revision (T-CPC-15, Section 115) -- chosen deliberately to follow directly from batch 009's Appeal lesson, since Revision is exactly the remedy that lesson named as remaining available where the (Bangladesh-specific) absence of 'second appeal' leaves a gap. Researching this topic surfaced a second major Bangladesh-specific divergence: Section 115 was substituted by the Code of Civil Procedure (Third Amendment) Act and is now considerably narrower than the classical three-ground revisional test (jurisdiction not vested / jurisdiction not exercised / material irregularity) that general CPC knowledge typically assumes still applies.",
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "BC-CPC-REVISION-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CPC-REVISION-001",
+      "topic_id": "T-CPC-15",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "The current, substituted text of Section 115 (all quoted operative language) was fetched as VERBATIM primary-source text directly from bdlaws.minlaw.gov.bd during this session, including the annotation confirming it was substituted by the Code of Civil Procedure (Third Amendment) Act. The exact Act number/year of that amendment was seen referenced elsewhere in this research pass as 'Act No. XL of 2003' but was not re-confirmed attached to this specific S.115 annotation in the same fetch -- flagged as a minor VERIFY_CURRENT_RULE point within an otherwise VERIFIED lesson. No case law cited (several real DLR/BLD citations on revisional jurisdiction surfaced during research and were deliberately excluded), consistent with this dataset's policy throughout.",
+      "difficulty": "HARD",
+      "estimated_minutes": 30,
+      "prerequisite_ids": ["T-CPC-12"],
+      "related_lesson_ids": ["BC-CPC-APPEAL-001"],
+      "related_question_ids": ["BC-MCQ-CPC-REV-001", "BC-MCQ-CPC-REV-002", "BC-MCQ-CPC-REV-003", "BC-MCQ-CPC-REV-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CPC-S115"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CPC-S115"],
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "language_versions": {
+        "en": {
+          "title": "Revision (and why the current test is narrower than you may expect)",
+          "short_description": "Section 115 lets the High Court Division correct certain errors made by subordinate courts -- but Bangladesh substituted this section some time ago, and the current test is considerably narrower than the classical three-ground formulation most general CPC knowledge still assumes applies.",
+          "learning_objective": "By the end of this lesson you should be able to: state the current, amended test for revision under Section 115; identify the specific threshold condition (no appeal lies) that must be satisfied before revision is even considered; and explain the additional leave requirement that applies to revision of certain orders under subsection (4).",
+          "explanation": "Many general treatments of 'Section 115 CPC' describe a classical three-ground test: revision was traditionally available where a subordinate court (a) exercised jurisdiction not vested in it by law, (b) failed to exercise jurisdiction so vested, or (c) acted illegally or with material irregularity in the exercise of its jurisdiction. That formulation is still exactly what India's own Section 115 provides. Bangladesh's Section 115, however, was substituted -- the current text, in force now, is materially different and narrower.\n\nUnder the current Bangladesh text, the High Court Division may, on the application of an aggrieved party, call for the record of a suit or proceeding in which a decree or order was passed by a Court of District Judge or Additional District Judge (or a decree passed by a Court of Joint District Judge, Senior Assistant Judge, or Assistant Judge) -- but only where no appeal lies from that decree or order. This 'no appeal lies' condition is a threshold gate: if an appeal is available, revision under this section is not the route. If that threshold is met, the High Court Division may revise the decree or order where the subordinate court appears to have committed an error of law resulting in an error in the decree or order that has occasioned a failure of justice.\n\nSubsection (4) adds a further, specific restriction for applications concerning orders of a District Judge or Additional District Judge made under subsections (2) or (3): such an application only lies where the High Court Division grants leave for revision, and leave is granted only on an error of an important question of law resulting in an erroneous decision occasioning a failure of justice. This leave requirement is an extra procedural gate that does not exist in the classical formulation many students carry over from general South Asian legal education.\n\nA savings clause (subsection 5) makes clear that proceedings already commenced and pending under the old Section 115 before this substitution continue to be disposed of as if the old section still applied to them -- the new, narrower test governs new applications going forward, not pending ones caught mid-stream.",
+          "key_concepts": ["The classical three-ground test (jurisdiction not vested / not exercised / material irregularity) -- NOT the current Bangladesh test", "The current test: error of law occasioning failure of justice, in a decree/order from which NO APPEAL LIES", "The 'no appeal lies' threshold gate", "The leave requirement under subsection (4) for certain District/Additional District Judge orders", "Savings clause for proceedings pending under the pre-substitution text"],
+          "important_rules": [
+            "S.115(1): the High Court Division may call for and revise the record of a suit/proceeding in which a District Judge, Additional District Judge, Joint District Judge, Senior Assistant Judge, or Assistant Judge has passed a decree or order FROM WHICH NO APPEAL LIES, where that court committed an error of law resulting in an error occasioning a failure of justice.",
+            "S.115(4): revision of certain District/Additional District Judge orders requires the High Court Division to first GRANT LEAVE, on an error of an important question of law resulting in an erroneous decision occasioning failure of justice.",
+            "This current text replaced an earlier, broader three-ground formulation -- do not describe Bangladesh's current Section 115 using the classical 'jurisdiction not vested / not exercised / material irregularity' language without flagging that this is the pre-substitution position."
+          ],
+          "definitions": [
+            { "term": "Revision (current Bangladesh sense)", "definition": "A discretionary power of the High Court Division to correct an error of law occasioning a failure of justice in a decree or order of specified subordinate courts, available only where no appeal lies from that decree or order." },
+            { "term": "Leave for revision (S.115(4))", "definition": "A specific procedural permission the High Court Division must grant before it will even consider revising certain District/Additional District Judge orders -- an extra gate beyond the general Section 115(1) test." }
+          ],
+          "examples": [
+            "A Joint District Judge passes a decree from which no appeal is available under the CPC's appeal provisions. If the losing party can show the Joint District Judge committed an error of law that resulted in an error in the decree occasioning a failure of justice, Section 115(1) may allow the High Court Division to call for the record and revise it.",
+            "A party wishes to challenge an order of a District Judge made under Section 115(2) or (3). Before the High Court Division will even revise that order, the party must first obtain the Court's leave, which is granted only where the case shows an error of an important question of law resulting in an erroneous decision occasioning a failure of justice -- a more demanding threshold than simply showing 'an error of law' generally."
+          ],
+          "exam_focus": "This is a prime spot for examiners to test whether a candidate is relying on outdated or India-derived knowledge of Section 115: expect fact patterns and direct questions probing the 'no appeal lies' threshold and the leave requirement specifically, rather than the classical three grounds.",
+          "common_traps": [
+            "Reciting the classical three-ground test (jurisdiction not vested / not exercised / material irregularity) as if it were Bangladesh's current law -- it described the pre-substitution position, not the current one.",
+            "Forgetting the 'no appeal lies' threshold -- revision under Section 115 is not an alternative route to challenge a decree or order from which an appeal is actually available.",
+            "Missing the separate leave requirement under subsection (4) for the specific category of orders it covers, and treating every revision application as governed by the same single test."
+          ],
+          "quick_revision": [
+            "Bangladesh's S.115 was SUBSTITUTED -- do not assume the classical 3-ground test still applies here.",
+            "Current test: no appeal lies + error of law + error in decree/order + failure of justice.",
+            "S.115(4): revision of certain orders needs LEAVE first, on an error of an IMPORTANT question of law.",
+            "Savings clause: old pending proceedings finish under the OLD text, not this one."
+          ],
+          "key_takeaways": [
+            "Section 115 is the natural next remedy to consider precisely where Bangladesh's CPC omission of 'second appeal' (see the Appeal lesson) leaves a gap -- but it is a narrower, more conditional remedy than either the old S.115 or India's still-standing equivalent.",
+            "The 'no appeal lies' threshold means revision and appeal are not alternative routes to the same relief -- they are sequenced, mutually exclusive options depending on what remedy is actually available.",
+            "Always check whether a fact pattern is testing the general S.115(1) test or the more specific, leave-gated S.115(4) category before answering."
+          ]
+        },
+        "bn": {
+          "title": "রিভিশন (এবং কেন বর্তমান পরীক্ষাটি প্রত্যাশার চেয়ে সংকীর্ণ)",
+          "short_description": "ধারা ১১৫ হাইকোর্ট বিভাগকে অধস্তন আদালতের কিছু ত্রুটি সংশোধনের অনুমতি দেয় -- কিন্তু বাংলাদেশ কিছুকাল আগে এই ধারাটি প্রতিস্থাপন করেছে, এবং বর্তমান পরীক্ষাটি সাধারণ দেওয়ানি কার্যবিধির জ্ঞান এখনও যে ধ্রুপদী তিন-ভিত্তিক সূত্র প্রযোজ্য বলে মনে করে তার চেয়ে যথেষ্ট সংকীর্ণ।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ১১৫-এর অধীনে রিভিশনের বর্তমান, সংশোধিত পরীক্ষাটি বলতে পারবেন; রিভিশন বিবেচনা করার আগে যে সুনির্দিষ্ট প্রান্তিক শর্ত (কোনো আপিল না থাকা) পূরণ করতে হবে তা চিহ্নিত করতে পারবেন; এবং উপধারা (৪)-এর অধীনে নির্দিষ্ট আদেশের ক্ষেত্রে প্রযোজ্য অতিরিক্ত অনুমতির প্রয়োজনীয়তা ব্যাখ্যা করতে পারবেন।",
+          "explanation": "'ধারা ১১৫ দেওয়ানি কার্যবিধি' সম্পর্কে অনেক সাধারণ আলোচনা একটি ধ্রুপদী তিন-ভিত্তিক পরীক্ষা বর্ণনা করে: ঐতিহ্যগতভাবে রিভিশন পাওয়া যেত যেখানে একটি অধস্তন আদালত (ক) আইন দ্বারা তার উপর ন্যস্ত নয় এমন এখতিয়ার প্রয়োগ করেছে, (খ) তার উপর ন্যস্ত এখতিয়ার প্রয়োগ করতে ব্যর্থ হয়েছে, অথবা (গ) তার এখতিয়ার প্রয়োগে অবৈধভাবে বা বস্তুগত অনিয়মের সাথে কাজ করেছে। এই সূত্রটি এখনও ঠিক যা ভারতের নিজস্ব ধারা ১১৫ প্রদান করে। তবে, বাংলাদেশের ধারা ১১৫ প্রতিস্থাপিত হয়েছে -- বর্তমান পাঠ্য, যা এখন কার্যকর, উল্লেখযোগ্যভাবে ভিন্ন ও সংকীর্ণ।\n\nবর্তমান বাংলাদেশি পাঠ্যের অধীনে, হাইকোর্ট বিভাগ, কোনো ক্ষতিগ্রস্ত পক্ষের আবেদনে, এমন কোনো মামলা বা কার্যধারার নথি তলব করতে পারে যেখানে একজন জেলা জজ বা অতিরিক্ত জেলা জজের আদালত (বা যুগ্ম জেলা জজ, সিনিয়র সহকারী জজ, বা সহকারী জজের আদালত কর্তৃক পাস করা ডিক্রি) একটি ডিক্রি বা আদেশ পাস করেছে -- কিন্তু কেবল সেখানে যেখানে সেই ডিক্রি বা আদেশের বিরুদ্ধে কোনো আপিল করা যায় না। এই 'কোনো আপিল নেই' শর্তটি একটি প্রান্তিক দরজা: যদি আপিল উপলব্ধ থাকে, তাহলে এই ধারার অধীনে রিভিশন সঠিক পথ নয়। এই প্রান্তিক শর্ত পূরণ হলে, হাইকোর্ট বিভাগ ডিক্রি বা আদেশ সংশোধন করতে পারে যেখানে অধস্তন আদালত একটি আইনগত ত্রুটি করেছে বলে মনে হয় যা ডিক্রি বা আদেশে একটি ত্রুটি সৃষ্টি করেছে যা ন্যায়বিচারের ব্যর্থতা ঘটিয়েছে।\n\nউপধারা (৪) জেলা জজ বা অতিরিক্ত জেলা জজের উপধারা (২) বা (৩)-এর অধীনে প্রদত্ত আদেশ সংক্রান্ত আবেদনের জন্য একটি অতিরিক্ত, সুনির্দিষ্ট বিধিনিষেধ যোগ করে: এমন একটি আবেদন কেবল তখনই করা যায় যখন হাইকোর্ট বিভাগ রিভিশনের জন্য অনুমতি প্রদান করে, এবং অনুমতি কেবল তখনই প্রদান করা হয় যখন একটি গুরুত্বপূর্ণ আইনগত প্রশ্নে ত্রুটি হয়েছে যা একটি ভুল সিদ্ধান্তের কারণ হয়েছে যা ন্যায়বিচারের ব্যর্থতা ঘটিয়েছে। এই অনুমতির প্রয়োজনীয়তা একটি অতিরিক্ত প্রক্রিয়াগত দরজা যা অনেক শিক্ষার্থী সাধারণ দক্ষিণ এশীয় আইনি শিক্ষা থেকে বহন করা ধ্রুপদী সূত্রে বিদ্যমান নেই।\n\nএকটি রক্ষণাবেক্ষণ ধারা (উপধারা ৫) স্পষ্ট করে যে এই প্রতিস্থাপনের আগে পুরানো ধারা ১১৫-এর অধীনে ইতিমধ্যে শুরু হওয়া ও বিচারাধীন কার্যধারা এমনভাবে নিষ্পত্তি হতে থাকবে যেন পুরানো ধারাটি এখনও তাদের ক্ষেত্রে প্রযোজ্য -- নতুন, সংকীর্ণ পরীক্ষাটি ভবিষ্যতে নতুন আবেদনের ক্ষেত্রে প্রযোজ্য, মাঝপথে আটকে থাকা বিচারাধীন আবেদনের ক্ষেত্রে নয়।",
+          "key_concepts": ["ধ্রুপদী তিন-ভিত্তিক পরীক্ষা (এখতিয়ার ন্যস্ত নয় / প্রয়োগ করা হয়নি / বস্তুগত অনিয়ম) -- বাংলাদেশের বর্তমান পরীক্ষা নয়", "বর্তমান পরীক্ষা: ন্যায়বিচারের ব্যর্থতা ঘটানো আইনগত ত্রুটি, এমন ডিক্রি/আদেশে যার বিরুদ্ধে কোনো আপিল নেই", "'কোনো আপিল নেই' প্রান্তিক দরজা", "নির্দিষ্ট জেলা/অতিরিক্ত জেলা জজের আদেশের জন্য উপধারা (৪)-এর অধীনে অনুমতির প্রয়োজনীয়তা", "প্রতিস্থাপন-পূর্ব পাঠ্যের অধীনে বিচারাধীন কার্যধারার জন্য রক্ষণাবেক্ষণ ধারা"],
+          "important_rules": [
+            "ধারা ১১৫(১): হাইকোর্ট বিভাগ এমন মামলা/কার্যধারার নথি তলব ও সংশোধন করতে পারে যেখানে একজন জেলা জজ, অতিরিক্ত জেলা জজ, যুগ্ম জেলা জজ, সিনিয়র সহকারী জজ, বা সহকারী জজ এমন একটি ডিক্রি বা আদেশ পাস করেছেন যার বিরুদ্ধে কোনো আপিল করা যায় না, যেখানে সেই আদালত একটি আইনগত ত্রুটি করেছে যা একটি ত্রুটি সৃষ্টি করেছে যা ন্যায়বিচারের ব্যর্থতা ঘটিয়েছে।",
+            "ধারা ১১৫(৪): নির্দিষ্ট জেলা/অতিরিক্ত জেলা জজের আদেশের রিভিশনের জন্য হাইকোর্ট বিভাগকে প্রথমে অনুমতি প্রদান করতে হবে, একটি গুরুত্বপূর্ণ আইনগত প্রশ্নে ত্রুটির ভিত্তিতে যা একটি ভুল সিদ্ধান্তের কারণ হয়েছে যা ন্যায়বিচারের ব্যর্থতা ঘটিয়েছে।",
+            "এই বর্তমান পাঠ্য একটি পূর্বের, বিস্তৃত তিন-ভিত্তিক সূত্র প্রতিস্থাপন করেছে -- বাংলাদেশের বর্তমান ধারা ১১৫-কে এই প্রতিস্থাপন-পূর্ব অবস্থান ফ্ল্যাগ না করে ধ্রুপদী 'এখতিয়ার ন্যস্ত নয় / প্রয়োগ করা হয়নি / বস্তুগত অনিয়ম' ভাষায় বর্ণনা করবেন না।"
+          ],
+          "definitions": [
+            { "term": "রিভিশন (বর্তমান বাংলাদেশি অর্থে)", "definition": "নির্দিষ্ট অধস্তন আদালতের ডিক্রি বা আদেশে ন্যায়বিচারের ব্যর্থতা ঘটানো একটি আইনগত ত্রুটি সংশোধনের হাইকোর্ট বিভাগের একটি বিবেচনাধীন ক্ষমতা, কেবল সেখানে উপলব্ধ যেখানে সেই ডিক্রি বা আদেশের বিরুদ্ধে কোনো আপিল নেই।" },
+            { "term": "রিভিশনের জন্য অনুমতি (ধারা ১১৫(৪))", "definition": "নির্দিষ্ট জেলা/অতিরিক্ত জেলা জজের আদেশ সংশোধন বিবেচনা করার আগে হাইকোর্ট বিভাগকে অবশ্যই প্রদান করতে হবে এমন একটি সুনির্দিষ্ট প্রক্রিয়াগত অনুমতি -- সাধারণ ধারা ১১৫(১) পরীক্ষার বাইরে একটি অতিরিক্ত দরজা।" }
+          ],
+          "examples": [
+            "একজন যুগ্ম জেলা জজ এমন একটি ডিক্রি পাস করেন যার বিরুদ্ধে দেওয়ানি কার্যবিধির আপিল বিধানের অধীনে কোনো আপিল উপলব্ধ নেই। যদি পরাজিত পক্ষ দেখাতে পারেন যে যুগ্ম জেলা জজ একটি আইনগত ত্রুটি করেছেন যা ডিক্রিতে একটি ত্রুটি সৃষ্টি করেছে যা ন্যায়বিচারের ব্যর্থতা ঘটিয়েছে, তাহলে ধারা ১১৫(১) হাইকোর্ট বিভাগকে নথি তলব করে তা সংশোধন করার অনুমতি দিতে পারে।",
+            "একজন পক্ষ ধারা ১১৫(২) বা (৩)-এর অধীনে প্রদত্ত একজন জেলা জজের আদেশ চ্যালেঞ্জ করতে চান। হাইকোর্ট বিভাগ সেই আদেশ সংশোধন বিবেচনা করার আগেও, পক্ষটিকে প্রথমে আদালতের অনুমতি পেতে হবে, যা কেবল তখনই প্রদান করা হয় যখন মামলাটি একটি গুরুত্বপূর্ণ আইনগত প্রশ্নে ত্রুটি দেখায় যা একটি ভুল সিদ্ধান্তের কারণ হয়েছে যা ন্যায়বিচারের ব্যর্থতা ঘটিয়েছে -- সাধারণভাবে কেবল 'একটি আইনগত ত্রুটি' দেখানোর চেয়ে অধিক দাবিদার প্রান্তিক শর্ত।"
+          ],
+          "exam_focus": "এটি পরীক্ষকদের জন্য একটি প্রধান স্থান যাচাই করার জন্য একজন প্রার্থী ধারা ১১৫-এর পুরানো বা ভারত-উদ্ভূত জ্ঞানের উপর নির্ভর করছেন কিনা: ধ্রুপদী তিনটি ভিত্তির পরিবর্তে বিশেষভাবে 'কোনো আপিল নেই' প্রান্তিক শর্ত ও অনুমতির প্রয়োজনীয়তা যাচাই করা ঘটনাপ্রবাহ ও সরাসরি প্রশ্ন আশা করুন।",
+          "common_traps": [
+            "ধ্রুপদী তিন-ভিত্তিক পরীক্ষা (এখতিয়ার ন্যস্ত নয় / প্রয়োগ করা হয়নি / বস্তুগত অনিয়ম) এমনভাবে আবৃত্তি করা যেন এটি বাংলাদেশের বর্তমান আইন -- এটি প্রতিস্থাপন-পূর্ব অবস্থান বর্ণনা করেছিল, বর্তমানটি নয়।",
+            "'কোনো আপিল নেই' প্রান্তিক শর্ত ভুলে যাওয়া -- ধারা ১১৫-এর অধীনে রিভিশন এমন কোনো ডিক্রি বা আদেশ চ্যালেঞ্জ করার বিকল্প পথ নয় যার বিরুদ্ধে প্রকৃতপক্ষে আপিল উপলব্ধ।",
+            "উপধারা (৪)-এর অধীনে আওতাভুক্ত নির্দিষ্ট শ্রেণির আদেশের জন্য পৃথক অনুমতির প্রয়োজনীয়তা মিস করা, এবং প্রতিটি রিভিশন আবেদনকে একই একক পরীক্ষা দ্বারা নিয়ন্ত্রিত মনে করা।"
+          ],
+          "quick_revision": [
+            "বাংলাদেশের ধারা ১১৫ প্রতিস্থাপিত হয়েছে -- ধ্রুপদী ৩-ভিত্তিক পরীক্ষা এখনও প্রযোজ্য মনে করবেন না।",
+            "বর্তমান পরীক্ষা: কোনো আপিল নেই + আইনগত ত্রুটি + ডিক্রি/আদেশে ত্রুটি + ন্যায়বিচারের ব্যর্থতা।",
+            "ধারা ১১৫(৪): নির্দিষ্ট আদেশের রিভিশনের জন্য প্রথমে অনুমতি প্রয়োজন, একটি গুরুত্বপূর্ণ আইনগত প্রশ্নের ত্রুটিতে।",
+            "রক্ষণাবেক্ষণ ধারা: পুরানো বিচারাধীন কার্যধারা পুরানো পাঠ্যের অধীনে সম্পন্ন হয়, এটির অধীনে নয়।"
+          ],
+          "key_takeaways": [
+            "ধারা ১১৫ ঠিক সেই পরবর্তী প্রতিকার বিবেচনা করার স্বাভাবিক পথ যেখানে বাংলাদেশের দেওয়ানি কার্যবিধির 'দ্বিতীয় আপিল' বাদ দেওয়া (আপিল পাঠ দেখুন) একটি ফাঁক রেখে যায় -- কিন্তু এটি পুরানো ধারা ১১৫ বা ভারতের এখনও বহাল সমতুল্যের চেয়ে সংকীর্ণ, অধিক শর্তসাপেক্ষ প্রতিকার।",
+            "'কোনো আপিল নেই' প্রান্তিক শর্তের অর্থ হলো রিভিশন ও আপিল একই প্রতিকারের বিকল্প পথ নয় -- এগুলো ক্রমানুসারে, পারস্পরিকভাবে একচেটিয়া বিকল্প যা প্রকৃতপক্ষে কোন প্রতিকার উপলব্ধ তার উপর নির্ভর করে।",
+            "উত্তর দেওয়ার আগে সবসময় পরীক্ষা করুন একটি ঘটনাপ্রবাহ সাধারণ ধারা ১১৫(১) পরীক্ষা যাচাই করছে নাকি অধিক নির্দিষ্ট, অনুমতি-নিয়ন্ত্রিত ধারা ১১৫(৪) শ্রেণি।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CPC-S115",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Section 115 (Revision), as substituted",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "Verbatim text of subsections (1), (4), and (5) of the CURRENT, substituted Section 115 obtained via search-indexed content of the primary source page during this session. Subsections (2) and (3) were referenced by subsection (4) but their own full text was not independently confirmed in this pass."
+    },
+    {
+      "content_id": "BC-MCQ-CPC-REV-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-REV-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-15",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S115"],
+      "exam_focus": "The signature fact: the classical three-ground test is NOT Bangladesh's current law.",
+      "source_basis": "Original question drawn directly from the primary source's substitution annotation and current text.",
+      "mistake_tags": ["s115-classical-test-outdated"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-REVISION-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Which statement correctly describes the CURRENT test for revision under Section 115 of Bangladesh's Code of Civil Procedure, 1908?",
+          "options": { "A": "A subordinate court exercised jurisdiction not vested in it, failed to exercise jurisdiction vested in it, or acted illegally or with material irregularity", "B": "Any error of fact or law made by a subordinate court, regardless of whether an appeal is available", "C": "An error of law occasioning a failure of justice, in a decree or order of a specified subordinate court from which no appeal lies", "D": "Any decision the High Court Division personally disagrees with on the merits" },
+          "explanation": "Bangladesh's Section 115 was substituted, and the current test requires an error of law occasioning a failure of justice, in a decree or order from which no appeal lies -- not the classical three-ground formulation in option A, which describes the pre-substitution position (and India's still-standing equivalent).",
+          "why_other_options_are_wrong": { "A": "This is the classical, pre-substitution formulation -- it is not Bangladesh's current text.", "B": "This ignores the essential 'no appeal lies' threshold that the current section requires.", "D": "Revision is not a general merits-review power -- it is confined to error of law occasioning failure of justice, under specific conditions." }
+        },
+        "bn": {
+          "question": "বাংলাদেশের দেওয়ানি কার্যবিধি, ১৯০৮-এর ধারা ১১৫-এর অধীনে রিভিশনের বর্তমান পরীক্ষাটি কোন বিবৃতিটি সঠিকভাবে বর্ণনা করে?",
+          "options": { "A": "একটি অধস্তন আদালত এমন এখতিয়ার প্রয়োগ করেছে যা তার উপর ন্যস্ত ছিল না, তার উপর ন্যস্ত এখতিয়ার প্রয়োগ করতে ব্যর্থ হয়েছে, অথবা অবৈধভাবে বা বস্তুগত অনিয়মের সাথে কাজ করেছে", "B": "একটি অধস্তন আদালতের করা যেকোনো তথ্যগত বা আইনগত ত্রুটি, আপিল উপলব্ধ থাকুক বা না থাকুক", "C": "একটি নির্দিষ্ট অধস্তন আদালতের ডিক্রি বা আদেশে ন্যায়বিচারের ব্যর্থতা ঘটানো একটি আইনগত ত্রুটি, যার বিরুদ্ধে কোনো আপিল নেই", "D": "হাইকোর্ট বিভাগ ব্যক্তিগতভাবে গুণাগুণে দ্বিমত পোষণ করে এমন যেকোনো সিদ্ধান্ত" },
+          "explanation": "বাংলাদেশের ধারা ১১৫ প্রতিস্থাপিত হয়েছে, এবং বর্তমান পরীক্ষার জন্য প্রয়োজন এমন ডিক্রি বা আদেশে ন্যায়বিচারের ব্যর্থতা ঘটানো একটি আইনগত ত্রুটি যার বিরুদ্ধে কোনো আপিল নেই -- বিকল্প A-এর ধ্রুপদী তিন-ভিত্তিক সূত্র নয়, যা প্রতিস্থাপন-পূর্ব অবস্থান (এবং ভারতের এখনও বহাল সমতুল্য) বর্ণনা করে।",
+          "why_other_options_are_wrong": { "A": "এটি ধ্রুপদী, প্রতিস্থাপন-পূর্ব সূত্র -- এটি বাংলাদেশের বর্তমান পাঠ্য নয়।", "B": "এটি বর্তমান ধারা যে অপরিহার্য 'কোনো আপিল নেই' প্রান্তিক শর্ত প্রয়োজন তা উপেক্ষা করে।", "D": "রিভিশন একটি সাধারণ গুণাগুণ-পর্যালোচনা ক্ষমতা নয় -- এটি নির্দিষ্ট শর্তাধীনে ন্যায়বিচারের ব্যর্থতা ঘটানো আইনগত ত্রুটির মধ্যে সীমাবদ্ধ।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-REV-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-REV-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-15",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S115"],
+      "exam_focus": "The 'no appeal lies' threshold as a gate, not an alternative.",
+      "source_basis": "Original question on the threshold condition.",
+      "mistake_tags": ["s115-no-appeal-lies-threshold"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-REVISION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A decree is passed against A by a court whose decree is expressly appealable under the CPC. Can A instead choose to file a Section 115 revision application against this decree?",
+          "options": { "A": "Yes, A may freely choose between appeal and revision for the same decree", "B": "No, Section 115 only applies where no appeal lies from the decree or order in question", "C": "Yes, but only with the permission of the trial court", "D": "Yes, provided A files within 90 days" },
+          "explanation": "Section 115's current text is expressly limited to decrees or orders from which no appeal lies. Where an appeal is available, revision under this section is not an alternative route.", 
+          "why_other_options_are_wrong": { "A": "This ignores the express 'no appeal lies' condition -- the two remedies are not freely interchangeable for the same decree.", "C": "No such trial-court permission mechanism is part of Section 115's own text.", "D": "A filing deadline does not overcome the more fundamental problem that revision is unavailable at all where an appeal lies." }
+        },
+        "bn": {
+          "question": "একটি আদালত ক-এর বিরুদ্ধে একটি ডিক্রি পাস করে যার ডিক্রি দেওয়ানি কার্যবিধির অধীনে স্পষ্টভাবে আপিলযোগ্য। ক কি পরিবর্তে এই ডিক্রির বিরুদ্ধে একটি ধারা ১১৫ রিভিশন আবেদন দায়ের করতে বেছে নিতে পারেন?",
+          "options": { "A": "হ্যাঁ, ক একই ডিক্রির জন্য আপিল ও রিভিশনের মধ্যে অবাধে বেছে নিতে পারেন", "B": "না, ধারা ১১৫ কেবল সেখানে প্রযোজ্য যেখানে প্রশ্নবিদ্ধ ডিক্রি বা আদেশের বিরুদ্ধে কোনো আপিল নেই", "C": "হ্যাঁ, তবে কেবল বিচারিক আদালতের অনুমতি সাপেক্ষে", "D": "হ্যাঁ, যদি ক ৯০ দিনের মধ্যে দায়ের করেন" },
+          "explanation": "ধারা ১১৫-এর বর্তমান পাঠ্য স্পষ্টভাবে এমন ডিক্রি বা আদেশে সীমাবদ্ধ যার বিরুদ্ধে কোনো আপিল নেই। যেখানে আপিল উপলব্ধ, সেখানে এই ধারার অধীনে রিভিশন বিকল্প পথ নয়।",
+          "why_other_options_are_wrong": { "A": "এটি স্পষ্ট 'কোনো আপিল নেই' শর্ত উপেক্ষা করে -- একই ডিক্রির জন্য দুটি প্রতিকার অবাধে বিনিময়যোগ্য নয়।", "C": "ধারা ১১৫-এর নিজস্ব পাঠ্যের অংশ হিসেবে এমন কোনো বিচারিক আদালতের অনুমতি ব্যবস্থা নেই।", "D": "দায়েরের সময়সীমা এই আরও মৌলিক সমস্যা কাটিয়ে ওঠে না যে আপিল উপলব্ধ থাকলে রিভিশন আদৌ উপলব্ধ নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-REV-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-REV-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-15",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S115"],
+      "exam_focus": "The subsection (4) leave requirement.",
+      "source_basis": "Original question drawn directly from verbatim subsection (4) text.",
+      "mistake_tags": ["s115-4-leave-requirement"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-REVISION-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 115(4), an application to revise certain orders of a District Judge or Additional District Judge (made under subsections (2) or (3)) will only proceed if:",
+          "options": { "A": "The application is filed by a licensed advocate", "B": "The original suit involved a value above a prescribed threshold", "C": "The Attorney-General consents to the application", "D": "The High Court Division first grants leave, on an error of an important question of law resulting in an erroneous decision occasioning failure of justice" },
+          "explanation": "Subsection (4) requires the High Court Division to grant leave before such an application proceeds, and leave is granted only on the specific ground of an error of an important question of law resulting in an erroneous decision occasioning failure of justice.",
+          "why_other_options_are_wrong": { "A": "Representation by an advocate is not the specific gate Section 115(4) creates.", "B": "A pecuniary value threshold is not the condition Section 115(4) sets.", "C": "The Attorney-General's consent plays no role in this provision." }
+        },
+        "bn": {
+          "question": "ধারা ১১৫(৪)-এর অধীনে, একজন জেলা জজ বা অতিরিক্ত জেলা জজের (উপধারা (২) বা (৩)-এর অধীনে প্রদত্ত) নির্দিষ্ট আদেশ সংশোধনের আবেদন কেবল তখনই এগিয়ে যাবে যদি:",
+          "options": { "A": "আবেদনটি একজন লাইসেন্সপ্রাপ্ত অ্যাডভোকেট কর্তৃক দায়ের করা হয়", "B": "মূল মামলাটি একটি নির্ধারিত সীমার উপরে মূল্য জড়িত ছিল", "C": "অ্যাটর্নি জেনারেল আবেদনে সম্মতি দেন", "D": "হাইকোর্ট বিভাগ প্রথমে অনুমতি প্রদান করে, একটি গুরুত্বপূর্ণ আইনগত প্রশ্নে ত্রুটির ভিত্তিতে যা একটি ভুল সিদ্ধান্তের কারণ হয়েছে যা ন্যায়বিচারের ব্যর্থতা ঘটিয়েছে" },
+          "explanation": "উপধারা (৪)-এর জন্য প্রয়োজন যে এমন একটি আবেদন এগিয়ে যাওয়ার আগে হাইকোর্ট বিভাগ অনুমতি প্রদান করে, এবং অনুমতি কেবল একটি গুরুত্বপূর্ণ আইনগত প্রশ্নে ত্রুটির নির্দিষ্ট ভিত্তিতে প্রদান করা হয় যা একটি ভুল সিদ্ধান্তের কারণ হয়েছে যা ন্যায়বিচারের ব্যর্থতা ঘটিয়েছে।",
+          "why_other_options_are_wrong": { "A": "একজন অ্যাডভোকেট কর্তৃক প্রতিনিধিত্ব ধারা ১১৫(৪) যে নির্দিষ্ট দরজা তৈরি করে তা নয়।", "B": "একটি আর্থিক মূল্যের সীমা ধারা ১১৫(৪) যে শর্ত নির্ধারণ করে তা নয়।", "C": "অ্যাটর্নি জেনারেলের সম্মতি এই বিধানে কোনো ভূমিকা পালন করে না।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-REV-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-REV-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-15",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S115"],
+      "exam_focus": "The savings clause for pending proceedings.",
+      "source_basis": "Original question drawn directly from verbatim subsection (5) text.",
+      "mistake_tags": ["s115-savings-clause"],
+      "revision_priority": "LOW",
+      "related_lesson_ids": ["BC-CPC-REVISION-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "A revision proceeding was already pending under the old Section 115 at the moment the substitution took effect. Under Section 115(5), how should this pending proceeding be disposed of?",
+          "options": { "A": "As if Section 115 had not been substituted -- i.e., under the old provision", "B": "Automatically dismissed for want of a valid cause of action under the new text", "C": "Converted automatically into an appeal instead", "D": "Transferred to the Appellate Division for fresh consideration" },
+          "explanation": "Subsection (5) is a savings clause: proceedings commenced and pending under the old Section 115 before the substitution are disposed of as if that substitution had not happened -- the old provision continues to govern them.",
+          "why_other_options_are_wrong": { "B": "The savings clause preserves, rather than dismisses, proceedings caught mid-stream.", "C": "There is no automatic conversion of a pending revision into an appeal.", "D": "No such automatic transfer to the Appellate Division is created by this savings clause." }
+        },
+        "bn": {
+          "question": "প্রতিস্থাপন কার্যকর হওয়ার মুহূর্তে পুরানো ধারা ১১৫-এর অধীনে একটি রিভিশন কার্যধারা ইতিমধ্যে বিচারাধীন ছিল। ধারা ১১৫(৫)-এর অধীনে, এই বিচারাধীন কার্যধারাটি কীভাবে নিষ্পত্তি হওয়া উচিত?",
+          "options": { "A": "যেন ধারা ১১৫ প্রতিস্থাপিত হয়নি -- অর্থাৎ, পুরানো বিধানের অধীনে", "B": "নতুন পাঠ্যের অধীনে বৈধ বাদ-হেতুর অভাবে স্বয়ংক্রিয়ভাবে খারিজ", "C": "পরিবর্তে স্বয়ংক্রিয়ভাবে একটি আপিলে রূপান্তরিত", "D": "নতুন বিবেচনার জন্য আপিল বিভাগে স্থানান্তরিত" },
+          "explanation": "উপধারা (৫) একটি রক্ষণাবেক্ষণ ধারা: প্রতিস্থাপনের আগে পুরানো ধারা ১১৫-এর অধীনে শুরু হওয়া ও বিচারাধীন কার্যধারা এমনভাবে নিষ্পত্তি হয় যেন সেই প্রতিস্থাপন ঘটেনি -- পুরানো বিধানটি তাদের ক্ষেত্রে প্রযোজ্য থাকতে থাকে।",
+          "why_other_options_are_wrong": { "B": "রক্ষণাবেক্ষণ ধারা মাঝপথে আটকে থাকা কার্যধারা খারিজ না করে সংরক্ষণ করে।", "C": "বিচারাধীন রিভিশনের কোনো স্বয়ংক্রিয় আপিলে রূপান্তর নেই।", "D": "এই রক্ষণাবেক্ষণ ধারা দ্বারা আপিল বিভাগে এমন কোনো স্বয়ংক্রিয় স্থানান্তর তৈরি হয় না।" }
+        }
+      }
+    }
+  ]
+}

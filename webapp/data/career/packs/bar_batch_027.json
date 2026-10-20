@@ -1,0 +1,305 @@
+{
+  "batch_id": "BATCH-2026-09-027-OFFICIAL-CPC",
+  "schema_version": "1.0",
+  "content_version": "2026.09.14",
+  "created_at": "2026-09-14T00:00:00Z",
+  "source": "bdlaws.minlaw.gov.bd-official-html",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Official bdlaws English extracts for remaining CPC syllabus topics. Interactive lesson player. No invented MCQ. Not lawyer-verified.",
+  "asset_count": 4,
+  "assets": [
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-04",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-04",
+      "topic_id": "T-CPC-04",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.9",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Meaning of suits of a civil nature",
+          "short_description": "Official bdlaws extract for S.9 (Meaning of suits of a civil nature). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.9 on bdlaws and map it to the syllabus topic \"Meaning of suits of a civil nature\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Meaning of suits of a civil nature (S.9).\n\nSection 9.\nThe Courts shall (subject to the provisions herein contained) have jurisdiction to try all suits of a civil nature excepting suits of which their cognizance is either expressly or impliedly barred.\n\nExplanation.-A suit in which the right to property or to an office is contested is a suit of a civil nature, notwithstanding that such right may depend entirely on the decision of questions as to religious rites or ceremonies.\n\nStay of suit.",
+          "key_concepts": [
+            "S.9",
+            "Meaning of suits of a civil nature",
+            "S.9",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.9: The Courts shall (subject to the provisions herein contained) have jurisdiction to try all suits of a civil nature excepting suits of which their cognizance is either expressly or impliedly barred."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.9. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.9"
+          ]
+        },
+        "bn": {
+          "title": "দেওয়ানি প্রকৃতির মামলার অর্থ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.9 (দেওয়ানি প্রকৃতির মামলার অর্থ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.9 পড়ে সিলেবাস টপিক \"দেওয়ানি প্রকৃতির মামলার অর্থ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: দেওয়ানি প্রকৃতির মামলার অর্থ (S.9)।\n\nSection 9.\nThe Courts shall (subject to the provisions herein contained) have jurisdiction to try all suits of a civil nature excepting suits of which their cognizance is either expressly or impliedly barred.\n\nExplanation.-A suit in which the right to property or to an office is contested is a suit of a civil nature, notwithstanding that such right may depend entirely on the decision of questions as to religious rites or ceremonies.\n\nStay of suit.",
+          "key_concepts": [
+            "S.9",
+            "দেওয়ানি প্রকৃতির মামলার অর্থ",
+            "S.9",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.9: The Courts shall (subject to the provisions herein contained) have jurisdiction to try all suits of a civil nature excepting suits of which their cognizance is either expressly or impliedly barred."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.9-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.9"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-06",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-06",
+      "topic_id": "T-CPC-06",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.15",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Place of suing",
+          "short_description": "Official bdlaws extract for S.15 (Place of suing). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.15 on bdlaws and map it to the syllabus topic \"Place of suing\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Place of suing (S.15).\n\nSection 15.\nEvery suit shall be instituted in the Court of the lowest grade competent to try it.\n\nSuits to be instituted where subject-matter situate.",
+          "key_concepts": [
+            "S.15",
+            "Place of suing",
+            "S.15",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.15: Every suit shall be instituted in the Court of the lowest grade competent to try it."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.15. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.15"
+          ]
+        },
+        "bn": {
+          "title": "মামলা দায়েরের স্থান",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.15 (মামলা দায়েরের স্থান)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.15 পড়ে সিলেবাস টপিক \"মামলা দায়েরের স্থান\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: মামলা দায়েরের স্থান (S.15)।\n\nSection 15.\nEvery suit shall be instituted in the Court of the lowest grade competent to try it.\n\nSuits to be instituted where subject-matter situate.",
+          "key_concepts": [
+            "S.15",
+            "মামলা দায়েরের স্থান",
+            "S.15",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.15: Every suit shall be instituted in the Court of the lowest grade competent to try it."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.15-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.15"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-07",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-07",
+      "topic_id": "T-CPC-07",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.15-20, 26; Order IV",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Institution of suits and proceedings",
+          "short_description": "Official bdlaws extract for S.15-20, 26; Order IV (Institution of suits and proceedings). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.15, S.16, S.17, S.18, S.19, S.20 on bdlaws and map it to the syllabus topic \"Institution of suits and proceedings\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Institution of suits and proceedings (S.15-20, 26; Order IV).\n\nSection 15.\nEvery suit shall be instituted in the Court of the lowest grade competent to try it.\n\nSuits to be instituted where subject-matter situate.\n\nSection 16.\nSubject to the pecuniary or other limitations prescribed by any law, suits-\n\n(a) for the recovery of immovable property with or without rent or profits,\n\n(b) for the partition of immovable property,\n\n(c) for foreclosure, sale or redemption in the case of a mortgage of or charge upon immovable property,\n\n(d) for the determination of any other right to or interest in immovable property,\n\n(e) for compensation for wrong to immovable property,\n\n(f) for the recovery of movable property actually under distraint or attachment,\n\nshall be instituted in the Court within the local limits of whose jurisdiction the property is situate, or, in the case of suits referred to in clause (c), at the place where the cause of action has wholly or partly arisen:\n\nProvided that a suit to obtain relief respecting, or compensation for wrong to, immovable property held by or on behalf of the defendant may, where the relief sought can be entirely obtained through his personal obedience, be instituted either in the Court within the local limits of whose jurisdiction the property is situate, or, in the case of suits referred to in clause (c), at the place where the cause of action has wholly or partly arisen, or in the Court within the local limits of whose jurisdiction the defendant actually and voluntarily resides, or carries on business, or personally works for gain.\n\nExplanation.-In this section \"property' means property situate in Bangladesh.\n\nSuits for immovable property situate within jurisdiction of different Courts.\n\nSection 17.\nWhere a suit is to obtain relief respecting, or compensation for wrong to, immovable property situate within the jurisdiction of different Courts, the suit may be instituted in any Court within the local limits of whose jurisdiction any portion of the property is situate:\n\nProvided that, in respect of the value of the subject-matter of the suit, the entire claim is cognizable by such Court\n\nPlace of institution of suit where local limits of jurisdiction of Courts are uncertain.\n\nSection 18.\n(1) Where it is alleged to be uncertain within the local limits of the jurisdiction of which of two or more Courts any immovable property is situate, any one of those Courts may, if satisfied that there is ground for the alleged uncertainly, record a statement to that effect and thereupon proceed to entertain and dispose of any suit relating to that property, and its decree in the suit shall have the same effect as if the property were situate within the local limits of its jurisdiction:\n\nProvided that the suit is one with respect to which the Court is competent as regards the nature and value of the suit to exercise jurisdiction.\n\n(2) Where a statement has not been recorded under sub-section (1), and an objection is taken before an appellate or revisional Court that a decree or order in a suit relating to such property was made by a Court not having jurisdiction where the property is situate, the appellate or revisional Court shall not allow the objection unless in its opinion there was, at the time of the institution of the suit, no reasonable ground for uncertainly as to the Court having jurisdiction with respect thereto and there has been a consequent failure of justice.\n\nSuits for compensation for wrongs to person or movables.\n\nSection 19.\nWhere a suit is for compensation for wrong done to the person or to movable property, if the wrong was done within the local limits of the jurisdiction of one Court and the defendant resides, or carries on business, or personally works for gain, within the local limits of the jurisdiction of another Court, the suit may be instituted at the option of the plantiff in either of the said Courts.\n\nIllustrations\n\n(a) A, residing in 1 [Chittagong] beats B in Dhaka.\n\nB may sue A either in Dhaka or in 2 [Chittagong].\n\n(b) A, residing in 3 [Chittagong] publishes in Dhaka statements defamatory of B. B may sue A either in Dhaka, or in 4 [Chittagong].\n\nOthers suits to be instituted where defendants reside or cause of action arises.\n\nSection 20.\nSubject to the limitations aforesaid, every suit shall be instituted in a Court within the local limits of whose jurisdiction.\n\n(a) the defendant, or each of the defendants where there are more than one, at the time of the commencement of the suit, actually or voluntarily resides, or carries on business, or personally works for gain; or\n\n(b) any of the defendants, where there are more than one, at the time of the commencement of the suit, actually or voluntarily resides, or carries on business, or personally works for gain, provided that in such case either the leave of the Court is given, or the defendants who do not reside, or carry on business, or personally work for gain, as aforesaid, acquiesce in such institution; or\n\n(c) the cause of action, wholly or in part, arises.\n\nExplanation I.-Where a person has a permanent dwelling at one place and also a temporary residence at another place, he shall be deemed to reside at both places in respect of any cause of action arising at the place where he has such temporary residence.\n\nExplanation II.-A Corporation shall be deemed to carry on business at its sole or principal office in Bangladesh or, in respect of any cause of action arising at any place where it has also a subordinate office, at such place.\n\nIllustrations\n\n(a) A is a tradesman in Dhaka. B carries on business in 5 [Chittagong]. B, by his agent in Dhaka, buys goods of A and requests A to deliver them to the 6 [Bangladesh Biman]. A delivers the goods accordingly in Dhaka. A may sue B for the price of the goods either in Dhaka, where the cause of action has arisen, or in 7 [Chittagong], where B carries on business.\n\n(b) A resides at 8 [Cox's Bazar], B at Dhaka and C at 9 [Chittagong]. A, B and C being together at 10 [Khulna], B and C make a joint promissiory note payable on demand, and deliver it to A. A may sue B and C 11 [at Khulna], where the cause of action arose. He may also sue them at Dhaka, where B resides, or at 12 [Chittagong], where C resides; but in each of these cases, if the non-resident defendant objects, the suit cannot proceed without the leave of the Court.\n\nObjections to jurisdiction.",
+          "key_concepts": [
+            "S.15-20, 26; Order IV",
+            "Institution of suits and proceedings",
+            "S.15, S.16, S.17, S.18, S.19, S.20",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.15: Every suit shall be instituted in the Court of the lowest grade competent to try it.",
+            "S.16: Subject to the pecuniary or other limitations prescribed by any law, suits-\n\n(a) for the recovery of immovable property with or without rent or profits,\n\n(b) for the partition of immovable property,\n\n(c) for foreclosure, sale or redemption in the case of a mortgage of or charge upon immovable property,\n\n(d) for the determination of any other right to or interest in immovable property,\n\n(e) for compensation for wrong to immovable property,\n\n(f) for the recovery of movable property actually under distraint or attachment,\n\nshall be instituted in the Court within the local limits of whose jurisdiction the property is situate, or, in the case of suits referred to in clause (c), at the place where the cause of action has wholly or partly arisen:\n\nProvided that a suit to obtain relief respecting, or compensation for wrong to, immovable property held by or on behalf of the defendant may, where the relief sought can be entirely obtained through his personal obedience, be instituted either in the Court within the local limits of whose jurisdiction the property is situate, or, in the case of suits referred to in clause (c), at the place where the cause of action has wholly or partly arisen, or in the Court within the local limits of whose jurisdiction the defendant actually and voluntarily resides, or carries on business, or personally works for gain.",
+            "S.17: Where a suit is to obtain relief respecting, or compensation for wrong to, immovable property situate within the jurisdiction of different Courts, the suit may be instituted in any Court within the local limits of whose jurisdiction any portion of the property is situate:\n\nProvided that, in respect of the value of the subject-matter of the suit, the entire claim is cognizable by such Court\n\nPlace of institution of suit where local limits of jurisdiction of Courts are uncertain.",
+            "S.18: (1) Where it is alleged to be uncertain within the local limits of the jurisdiction of which of two or more Courts any immovable property is situate, any one of those Courts may, if satisfied that there is ground for the alleged uncertainly, record a statement to that effect and thereupon proceed to entertain and dispose of any suit relating to that property, and its decree in the suit shall have the same effect as if the property were situate within the local limits of its jurisdiction:\n\nProvided that the suit is one with respect to which the Court is competent as regards the nature and value of the suit to exercise jurisdiction.",
+            "S.19: Where a suit is for compensation for wrong done to the person or to movable property, if the wrong was done within the local limits of the jurisdiction of one Court and the defendant resides, or carries on business, or personally works for gain, within the local limits of the jurisdiction of another Court, the suit may be instituted at the option of the plantiff in either of the said Courts.",
+            "S.20: Subject to the limitations aforesaid, every suit shall be instituted in a Court within the local limits of whose jurisdiction.\n\n(a) the defendant, or each of the defendants where there are more than one, at the time of the commencement of the suit, actually or voluntarily resides, or carries on business, or personally works for gain; or\n\n(b) any of the defendants, where there are more than one, at the time of the commencement of the suit, actually or voluntarily resides, or carries on business, or personally works for gain, provided that in such case either the leave of the Court is given, or the defendants who do not reside, or carry on business, or personally work for gain, as aforesaid, acquiesce in such institution; or\n\n(c) the cause of action, wholly or in part, arises."
+          ],
+          "examples": [
+            "(a) A, residing in 1 [Chittagong] beats B in Dhaka.\n\nB may sue A either in Dhaka or in 2 [Chittagong].",
+            "(b) A, residing in 3 [Chittagong] publishes in Dhaka statements defamatory of B. B may sue A either in Dhaka, or in 4 [Chittagong].",
+            "(a) A is a tradesman in Dhaka. B carries on business in 5 [Chittagong]. B, by his agent in Dhaka, buys goods of A and requests A to deliver them to the 6 [Bangladesh Biman]. A delivers the goods accordingly in Dhaka. A may sue B for the price of the goods either in Dhaka, where the cause of action has arisen, or in 7 [Chittagong], where B carries on business.",
+            "(b) A resides at 8 [Cox's Bazar], B at Dhaka and C at 9 [Chittagong]. A, B and C being together at 10 [Khulna], B and C make a joint promissiory note payable on demand, and deliver it to A. A may sue B and C 11 [at Khulna], where the cause of action arose. He may also sue them at Dhaka, where B resides, or at 12 [Chittagong], where C resides; but in each of these cases, if the non-resident defendant objects, the suit cannot proceed without the leave of the Court."
+          ],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.15, S.16, S.17, S.18, S.19, S.20. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.15, S.16, S.17, S.18, S.19, S.20"
+          ]
+        },
+        "bn": {
+          "title": "মামলা ও কার্যধারা দায়ের",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.15-20, 26; Order IV (মামলা ও কার্যধারা দায়ের)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.15, S.16, S.17, S.18, S.19, S.20 পড়ে সিলেবাস টপিক \"মামলা ও কার্যধারা দায়ের\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: মামলা ও কার্যধারা দায়ের (S.15-20, 26; Order IV)।\n\nSection 15.\nEvery suit shall be instituted in the Court of the lowest grade competent to try it.\n\nSuits to be instituted where subject-matter situate.\n\nSection 16.\nSubject to the pecuniary or other limitations prescribed by any law, suits-\n\n(a) for the recovery of immovable property with or without rent or profits,\n\n(b) for the partition of immovable property,\n\n(c) for foreclosure, sale or redemption in the case of a mortgage of or charge upon immovable property,\n\n(d) for the determination of any other right to or interest in immovable property,\n\n(e) for compensation for wrong to immovable property,\n\n(f) for the recovery of movable property actually under distraint or attachment,\n\nshall be instituted in the Court within the local limits of whose jurisdiction the property is situate, or, in the case of suits referred to in clause (c), at the place where the cause of action has wholly or partly arisen:\n\nProvided that a suit to obtain relief respecting, or compensation for wrong to, immovable property held by or on behalf of the defendant may, where the relief sought can be entirely obtained through his personal obedience, be instituted either in the Court within the local limits of whose jurisdiction the property is situate, or, in the case of suits referred to in clause (c), at the place where the cause of action has wholly or partly arisen, or in the Court within the local limits of whose jurisdiction the defendant actually and voluntarily resides, or carries on business, or personally works for gain.\n\nExplanation.-In this section \"property' means property situate in Bangladesh.\n\nSuits for immovable property situate within jurisdiction of different Courts.\n\nSection 17.\nWhere a suit is to obtain relief respecting, or compensation for wrong to, immovable property situate within the jurisdiction of different Courts, the suit may be instituted in any Court within the local limits of whose jurisdiction any portion of the property is situate:\n\nProvided that, in respect of the value of the subject-matter of the suit, the entire claim is cognizable by such Court\n\nPlace of institution of suit where local limits of jurisdiction of Courts are uncertain.\n\nSection 18.\n(1) Where it is alleged to be uncertain within the local limits of the jurisdiction of which of two or more Courts any immovable property is situate, any one of those Courts may, if satisfied that there is ground for the alleged uncertainly, record a statement to that effect and thereupon proceed to entertain and dispose of any suit relating to that property, and its decree in the suit shall have the same effect as if the property were situate within the local limits of its jurisdiction:\n\nProvided that the suit is one with respect to which the Court is competent as regards the nature and value of the suit to exercise jurisdiction.\n\n(2) Where a statement has not been recorded under sub-section (1), and an objection is taken before an appellate or revisional Court that a decree or order in a suit relating to such property was made by a Court not having jurisdiction where the property is situate, the appellate or revisional Court shall not allow the objection unless in its opinion there was, at the time of the institution of the suit, no reasonable ground for uncertainly as to the Court having jurisdiction with respect thereto and there has been a consequent failure of justice.\n\nSuits for compensation for wrongs to person or movables.\n\nSection 19.\nWhere a suit is for compensation for wrong done to the person or to movable property, if the wrong was done within the local limits of the jurisdiction of one Court and the defendant resides, or carries on business, or personally works for gain, within the local limits of the jurisdiction of another Court, the suit may be instituted at the option of the plantiff in either of the said Courts.\n\nIllustrations\n\n(a) A, residing in 1 [Chittagong] beats B in Dhaka.\n\nB may sue A either in Dhaka or in 2 [Chittagong].\n\n(b) A, residing in 3 [Chittagong] publishes in Dhaka statements defamatory of B. B may sue A either in Dhaka, or in 4 [Chittagong].\n\nOthers suits to be instituted where defendants reside or cause of action arises.\n\nSection 20.\nSubject to the limitations aforesaid, every suit shall be instituted in a Court within the local limits of whose jurisdiction.\n\n(a) the defendant, or each of the defendants where there are more than one, at the time of the commencement of the suit, actually or voluntarily resides, or carries on business, or personally works for gain; or\n\n(b) any of the defendants, where there are more than one, at the time of the commencement of the suit, actually or voluntarily resides, or carries on business, or personally works for gain, provided that in such case either the leave of the Court is given, or the defendants who do not reside, or carry on business, or personally work for gain, as aforesaid, acquiesce in such institution; or\n\n(c) the cause of action, wholly or in part, arises.\n\nExplanation I.-Where a person has a permanent dwelling at one place and also a temporary residence at another place, he shall be deemed to reside at both places in respect of any cause of action arising at the place where he has such temporary residence.\n\nExplanation II.-A Corporation shall be deemed to carry on business at its sole or principal office in Bangladesh or, in respect of any cause of action arising at any place where it has also a subordinate office, at such place.\n\nIllustrations\n\n(a) A is a tradesman in Dhaka. B carries on business in 5 [Chittagong]. B, by his agent in Dhaka, buys goods of A and requests A to deliver them to the 6 [Bangladesh Biman]. A delivers the goods accordingly in Dhaka. A may sue B for the price of the goods either in Dhaka, where the cause of action has arisen, or in 7 [Chittagong], where B carries on business.\n\n(b) A resides at 8 [Cox's Bazar], B at Dhaka and C at 9 [Chittagong]. A, B and C being together at 10 [Khulna], B and C make a joint promissiory note payable on demand, and deliver it to A. A may sue B and C 11 [at Khulna], where the cause of action arose. He may also sue them at Dhaka, where B resides, or at 12 [Chittagong], where C resides; but in each of these cases, if the non-resident defendant objects, the suit cannot proceed without the leave of the Court.\n\nObjections to jurisdiction.",
+          "key_concepts": [
+            "S.15-20, 26; Order IV",
+            "মামলা ও কার্যধারা দায়ের",
+            "S.15, S.16, S.17, S.18, S.19, S.20",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.15: Every suit shall be instituted in the Court of the lowest grade competent to try it.",
+            "S.16: Subject to the pecuniary or other limitations prescribed by any law, suits-\n\n(a) for the recovery of immovable property with or without rent or profits,\n\n(b) for the partition of immovable property,\n\n(c) for foreclosure, sale or redemption in the case of a mortgage of or charge upon immovable property,\n\n(d) for the determination of any other right to or interest in immovable property,\n\n(e) for compensation for wrong to immovable property,\n\n(f) for the recovery of movable property actually under distraint or attachment,\n\nshall be instituted in the Court within the local limits of whose jurisdiction the property is situate, or, in the case of suits referred to in clause (c), at the place where the cause of action has wholly or partly arisen:\n\nProvided that a suit to obtain relief respecting, or compensation for wrong to, immovable property held by or on behalf of the defendant may, where the relief sought can be entirely obtained through his personal obedience, be instituted either in the Court within the local limits of whose jurisdiction the property is situate, or, in the case of suits referred to in clause (c), at the place where the cause of action has wholly or partly arisen, or in the Court within the local limits of whose jurisdiction the defendant actually and voluntarily resides, or carries on business, or personally works for gain.",
+            "S.17: Where a suit is to obtain relief respecting, or compensation for wrong to, immovable property situate within the jurisdiction of different Courts, the suit may be instituted in any Court within the local limits of whose jurisdiction any portion of the property is situate:\n\nProvided that, in respect of the value of the subject-matter of the suit, the entire claim is cognizable by such Court\n\nPlace of institution of suit where local limits of jurisdiction of Courts are uncertain.",
+            "S.18: (1) Where it is alleged to be uncertain within the local limits of the jurisdiction of which of two or more Courts any immovable property is situate, any one of those Courts may, if satisfied that there is ground for the alleged uncertainly, record a statement to that effect and thereupon proceed to entertain and dispose of any suit relating to that property, and its decree in the suit shall have the same effect as if the property were situate within the local limits of its jurisdiction:\n\nProvided that the suit is one with respect to which the Court is competent as regards the nature and value of the suit to exercise jurisdiction.",
+            "S.19: Where a suit is for compensation for wrong done to the person or to movable property, if the wrong was done within the local limits of the jurisdiction of one Court and the defendant resides, or carries on business, or personally works for gain, within the local limits of the jurisdiction of another Court, the suit may be instituted at the option of the plantiff in either of the said Courts.",
+            "S.20: Subject to the limitations aforesaid, every suit shall be instituted in a Court within the local limits of whose jurisdiction.\n\n(a) the defendant, or each of the defendants where there are more than one, at the time of the commencement of the suit, actually or voluntarily resides, or carries on business, or personally works for gain; or\n\n(b) any of the defendants, where there are more than one, at the time of the commencement of the suit, actually or voluntarily resides, or carries on business, or personally works for gain, provided that in such case either the leave of the Court is given, or the defendants who do not reside, or carry on business, or personally work for gain, as aforesaid, acquiesce in such institution; or\n\n(c) the cause of action, wholly or in part, arises."
+          ],
+          "examples": [
+            "(a) A, residing in 1 [Chittagong] beats B in Dhaka.\n\nB may sue A either in Dhaka or in 2 [Chittagong].",
+            "(b) A, residing in 3 [Chittagong] publishes in Dhaka statements defamatory of B. B may sue A either in Dhaka, or in 4 [Chittagong].",
+            "(a) A is a tradesman in Dhaka. B carries on business in 5 [Chittagong]. B, by his agent in Dhaka, buys goods of A and requests A to deliver them to the 6 [Bangladesh Biman]. A delivers the goods accordingly in Dhaka. A may sue B for the price of the goods either in Dhaka, where the cause of action has arisen, or in 7 [Chittagong], where B carries on business.",
+            "(b) A resides at 8 [Cox's Bazar], B at Dhaka and C at 9 [Chittagong]. A, B and C being together at 10 [Khulna], B and C make a joint promissiory note payable on demand, and deliver it to A. A may sue B and C 11 [at Khulna], where the cause of action arose. He may also sue them at Dhaka, where B resides, or at 12 [Chittagong], where C resides; but in each of these cases, if the non-resident defendant objects, the suit cannot proceed without the leave of the Court."
+          ],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.15, S.16, S.17, S.18, S.19, S.20-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.15, S.16, S.17, S.18, S.19, S.20"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-08",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-08",
+      "topic_id": "T-CPC-08",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "S.22-24",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Transfer of suits",
+          "short_description": "Official bdlaws extract for S.22-24 (Transfer of suits). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.22, S.23, S.24 on bdlaws and map it to the syllabus topic \"Transfer of suits\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Transfer of suits (S.22-24).\n\nSection 22.\nWhere a suit may be instituted in any one of two or 22. Where a suit may be instituted in any one of two or more Courts and is instituted in one of such Courts, any defendant, after notice to the other parties, may, at the earliest possible opportunity and in all cases where issues are settled at or before such settlement, apply to have the suit transferred to another Court, and the Court to which such application is made, after considering the objections of the other parties (if any), shall determine in which of the several Courts having jurisdiction the suit shall proceed.\n\nTo what Court application lies.\n\nSection 23.\n(1) Where the several Courts having jurisdiction are subordinate to the same Appellate Court, an application under section 22 shall be made to the Appellate Court.\n\n(2) Where such Courts are subordinate to different Appellate Courts 13 [* * *], the application shall be made to the 14 [* * *] High Court Division.\n\n(3) [Omitted by section 3 and 2nd Schedule of the Bangladesh Laws (Revision And Declaration) Act, 1973(Act No. VIII of 1973).]\n\nGeneral power of transfer and withdrawal.\n\nSection 24.\n(1) On the application of any of the parties and after notice to the parties and after hearing such of them as desire to be heard, or of its own motion without such notice, the High Court Division or the District Court may at any stage-\n\n(a) transfer any suit, appeal or other proceeding pending before it for trial or disposal to any Court subordinate to it and competent to try or dispose of the same, or\n\n(b) withdraw any suit, appeal or other proceeding pending in any Court subordinate to it, and\n\n(i) try or dispose of the same; or\n\n(ii) transfer the same for trial or disposal to any Court subordinate to it and competent to try or dispose of the same; or\n\n(iii) retransfer the same for trial or disposal to the Court from which it was withdrawn.\n\n(2) Where any suit or proceeding has been transferred or withdrawn under sub-section (1), the Court which thereafter tries such suit may, subject to any special directions in the case of any order of transfer, either retry it or proceed from the point at which it was transferred or withdrawn.\n\n(3) For the purposes of this section, Courts of Additional and Assistant Judges shall be deemed to be subordinate to the District Court.\n\n(4) The Court trying any suit transferred or withdrawn under this section from a Court of Small Causes shall, for the purposes of such suit, be deemed to be a Court of Small Causes.\n\nAppearance of parties on transfer of suit, etc.\n\n15 [24A.(1) Where any suit is transferred under section 22, or any suit, appeal or other proceeding is transferred or withdrawn under sub-section (1) of section 24 on the application of a party, the Court ordering the transfer or withdrawal shall fix a date for the appearance of the parties before itself, if the suit, appeal or other proceeding is to be tried or disposed of by itself, or before the Court to which the case is so transferred.\n\n(2) Where any suit, appeal or other proceeding is transferred from one Court to another, otherwise than on the application of a party, the parties thereto shall appear before the Court from which the suit, appeal or other proceedings is to be transferred, on the day already fixed for their appearance before that Court, and such Court shall then communicate the order of transfer to such parties and direct them to appear before the Court to which the suit, appeal or other proceeding is to be transferred, either on the same day, or on such earliest day as may be reasonable having regard to the distance at which the other Court is located.]\n\n[Omitted]",
+          "key_concepts": [
+            "S.22-24",
+            "Transfer of suits",
+            "S.22, S.23, S.24",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.22: Where a suit may be instituted in any one of two or 22.",
+            "S.23: (1) Where the several Courts having jurisdiction are subordinate to the same Appellate Court, an application under section 22 shall be made to the Appellate Court.",
+            "S.24: (1) On the application of any of the parties and after notice to the parties and after hearing such of them as desire to be heard, or of its own motion without such notice, the High Court Division or the District Court may at any stage-\n\n(a) transfer any suit, appeal or other proceeding pending before it for trial or disposal to any Court subordinate to it and competent to try or dispose of the same, or\n\n(b) withdraw any suit, appeal or other proceeding pending in any Court subordinate to it, and\n\n(i) try or dispose of the same; or\n\n(ii) transfer the same for trial or disposal to any Court subordinate to it and competent to try or dispose of the same; or\n\n(iii) retransfer the same for trial or disposal to the Court from which it was withdrawn."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and note the ingredients of S.22, S.23, S.24. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: S.22, S.23, S.24"
+          ]
+        },
+        "bn": {
+          "title": "মামলা স্থানান্তর",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.22-24 (মামলা স্থানান্তর)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.22, S.23, S.24 পড়ে সিলেবাস টপিক \"মামলা স্থানান্তর\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: মামলা স্থানান্তর (S.22-24)।\n\nSection 22.\nWhere a suit may be instituted in any one of two or 22. Where a suit may be instituted in any one of two or more Courts and is instituted in one of such Courts, any defendant, after notice to the other parties, may, at the earliest possible opportunity and in all cases where issues are settled at or before such settlement, apply to have the suit transferred to another Court, and the Court to which such application is made, after considering the objections of the other parties (if any), shall determine in which of the several Courts having jurisdiction the suit shall proceed.\n\nTo what Court application lies.\n\nSection 23.\n(1) Where the several Courts having jurisdiction are subordinate to the same Appellate Court, an application under section 22 shall be made to the Appellate Court.\n\n(2) Where such Courts are subordinate to different Appellate Courts 13 [* * *], the application shall be made to the 14 [* * *] High Court Division.\n\n(3) [Omitted by section 3 and 2nd Schedule of the Bangladesh Laws (Revision And Declaration) Act, 1973(Act No. VIII of 1973).]\n\nGeneral power of transfer and withdrawal.\n\nSection 24.\n(1) On the application of any of the parties and after notice to the parties and after hearing such of them as desire to be heard, or of its own motion without such notice, the High Court Division or the District Court may at any stage-\n\n(a) transfer any suit, appeal or other proceeding pending before it for trial or disposal to any Court subordinate to it and competent to try or dispose of the same, or\n\n(b) withdraw any suit, appeal or other proceeding pending in any Court subordinate to it, and\n\n(i) try or dispose of the same; or\n\n(ii) transfer the same for trial or disposal to any Court subordinate to it and competent to try or dispose of the same; or\n\n(iii) retransfer the same for trial or disposal to the Court from which it was withdrawn.\n\n(2) Where any suit or proceeding has been transferred or withdrawn under sub-section (1), the Court which thereafter tries such suit may, subject to any special directions in the case of any order of transfer, either retry it or proceed from the point at which it was transferred or withdrawn.\n\n(3) For the purposes of this section, Courts of Additional and Assistant Judges shall be deemed to be subordinate to the District Court.\n\n(4) The Court trying any suit transferred or withdrawn under this section from a Court of Small Causes shall, for the purposes of such suit, be deemed to be a Court of Small Causes.\n\nAppearance of parties on transfer of suit, etc.\n\n15 [24A.(1) Where any suit is transferred under section 22, or any suit, appeal or other proceeding is transferred or withdrawn under sub-section (1) of section 24 on the application of a party, the Court ordering the transfer or withdrawal shall fix a date for the appearance of the parties before itself, if the suit, appeal or other proceeding is to be tried or disposed of by itself, or before the Court to which the case is so transferred.\n\n(2) Where any suit, appeal or other proceeding is transferred from one Court to another, otherwise than on the application of a party, the parties thereto shall appear before the Court from which the suit, appeal or other proceedings is to be transferred, on the day already fixed for their appearance before that Court, and such Court shall then communicate the order of transfer to such parties and direct them to appear before the Court to which the suit, appeal or other proceeding is to be transferred, either on the same day, or on such earliest day as may be reasonable having regard to the distance at which the other Court is located.]\n\n[Omitted]",
+          "key_concepts": [
+            "S.22-24",
+            "মামলা স্থানান্তর",
+            "S.22, S.23, S.24",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.22: Where a suit may be instituted in any one of two or 22.",
+            "S.23: (1) Where the several Courts having jurisdiction are subordinate to the same Appellate Court, an application under section 22 shall be made to the Appellate Court.",
+            "S.24: (1) On the application of any of the parties and after notice to the parties and after hearing such of them as desire to be heard, or of its own motion without such notice, the High Court Division or the District Court may at any stage-\n\n(a) transfer any suit, appeal or other proceeding pending before it for trial or disposal to any Court subordinate to it and competent to try or dispose of the same, or\n\n(b) withdraw any suit, appeal or other proceeding pending in any Court subordinate to it, and\n\n(i) try or dispose of the same; or\n\n(ii) transfer the same for trial or disposal to any Court subordinate to it and competent to try or dispose of the same; or\n\n(iii) retransfer the same for trial or disposal to the Court from which it was withdrawn."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে S.22, S.23, S.24-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: S.22, S.23, S.24"
+          ]
+        }
+      }
+    }
+  ]
+}

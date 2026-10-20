@@ -1,0 +1,86 @@
+{
+  "batch_id": "BATCH-2026-09-034-OFFICIAL-CPC",
+  "schema_version": "1.0",
+  "content_version": "2026.09.14",
+  "created_at": "2026-09-14T12:00:00Z",
+  "source": "bdlaws.minlaw.gov.bd-official-html",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Official extracts for remaining CPC shells. Interactive lesson player. No invented MCQ. Not lawyer-verified.",
+  "asset_count": 1,
+  "assets": [
+    {
+      "content_id": "BC-OFFICIAL-T-CPC-32",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-CPC-32",
+      "topic_id": "T-CPC-32",
+      "module_id": "BC-MOD-CPC",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Official extract retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-86.html",
+      "section_or_order": "Order XXIII",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Withdrawal and compromise of suits",
+          "short_description": "Official extract for Order XXIII (Withdrawal and compromise of suits). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording cited as Order XXIII and map it to \"Withdrawal and compromise of suits\". This card quotes official text; it is not commentary and is not verified.",
+          "explanation": "First Schedule / Orders quoted from official CPC HTML where present.\n\nOfficial English from https://bdlaws.minlaw.gov.bd/act-details-86.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full instrument.\n\nSyllabus: Withdrawal and compromise of suits (Order XXIII).\n\nOrder XXIII of the Code. Explanation-(1) \"Mediation\" under this section shall mean flexible, informal, non-binding, confidential, non-adversarial and consensual dispute resolution process in which the mediator shall facilitate compromise of disputes in the suit between the parties without directing or dictating the terms of such compromise. (2) \"Compromise\" under this section shall include also compromise in part of the disputes in the suit. Arbitration 89B.(1) If the parties to a suit, at any stage of the proceeding, apply to the Court for withdrawal of the suit on ground that they will refer the dispute or disputes in the suit to arbitration for settlement, the Court shall allow the application and permit the suit to be withdrawn; and the dispute or disputes, thereafter, shall be settled in accordance with Salish Ain, 2001 (Act No. 1 of 2001) so far as may be applicable: Provided that, if, for any reason, the arbitration proceeding referred to above does not take place or an arbitral award is not given, the parties shall be entitled to re-institute the suit permitted to be withdrawn under this sub-section. (2) An application under sub-section (1) shall be deemed to be an arbitration agreement under section 9 of the Salish Ain, 2001 (Act No. 1 of 2001).] Mediation in Appeal. 75[89C.(1) An Appellate Court 76[shall] mediate in an appeal or refer the appeal for mediation in order to settle the dispute or disputes in that appeal, if the appeal is an appeal from original decree under Order XLI, and is between the same parties who contested in the original suit or the parties who have been substituted for the original contesting parties. 77[(2) In mediation under sub-section (1), the provisions of section 89A shall be followed with necessary changes (mutatis mutandis) as may be expedient.]] Special provisions for mediation 78[89D. The Contesting parties to a suit or of an appeal, pending in any Court before the commencement of the Code of Civil Procedure (Amendment) Act, 2012, may by filing an application stating their willingness to settle the dispute through mediation, such suit or appeal shall be disposed of in accordance with the provision of section 89A or 89C. Application and commencement of the provisions of sections 89A and 89C 89E. (1) The provision of section 89A or 89C shall be, applied to such area, and commenced on such date, as the government may, by notification in the official Gazette, fix. (2) Where any mediation process for settlement of dispute in respect of any suit or appeal is pending under section 89A or 89C before the commencement of the Code of Civil Procedure (Amendment) Act, 2012, such mediation shall continue as if the provision of section 89A or 89C were not amended by the Code of Civil Procedure (Amendment) Act, 2012.] Special Case Power to state case for opinion of Court. 90. Where any persons agree in writing to state a case for the opinion of the Court, then the Court shall try and determine the same in the manner prescribed. Suits relating to Public Matters Public nuisances 91.(1) In the case of a public nuisance the 79[Attorney General], or two or more persons having obtained the consent in writing of the 80[Attorney General], may institute a suit, though no special damage has been caused, for a declaration and injunction or for such other relief as may be appropriate to the circumstances of the case. (2) Nothing in this section shall be deemed to limit or otherwise affect any right of suit which may exist independently of its provisions. Public charities 92.(1) In the case of any alleged breach of any express or constructive trust created for public purposes of a charitable or religious nature, or where the direction of the Court is deemed necessary for the administration of any such trust, the 81[Attorney General], or two or more persons having an interest in the trust and having obtained the consent in writing of the 82[Attorney General], may institute a suit, whether contentious or not, in the principal Civil Court of original jurisdiction or in any other Court empowered in that behalf by the Government within the local limits of whose jurisdiction the whole or any part of the subject-matter of the trust is situate, to obtain a decree- (a) removing any trustee; (b) appointing a new trustee; (c) vesting any property in a trustee; (d) directing accounts and inquiries; (e) declaring what proportion of the trust-property or of the interest therein shall be allocated to any particular obj",
+          "key_concepts": [
+            "Order XXIII",
+            "Withdrawal and compromise of suits",
+            "Order XXIII",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "Order XXIII of the Code.",
+            "Explanation-(1) \"Mediation\" under this section shall mean flexible, informal, non-binding, confidential, non-adversarial and consensual dispute resolution process in which the mediator shall facilitate compromise of disputes in the suit between the parties without directing or dictating the terms of such compromise.",
+            "(2) \"Compromise\" under this section shall include also compromise in part of the disputes in the suit.",
+            "Arbitration 89B.(1) If the parties to a suit, at any stage of the proceeding, apply to the Court for withdrawal of the suit on ground that they will refer the dispute or disputes in the suit to arbitration for settlement, the Court shall allow the application and permit the suit to be withdrawn; and the dispute or disputes, thereafter, shall be settled in accordance with Salish Ain, 2001 (Act No."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-86.html and read Order XXIII. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming omitted rules, schedules, or Bangla authentic text are fully in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "Quoted: Order XXIII"
+          ]
+        },
+        "bn": {
+          "title": "মামলা প্রত্যাহার ও আপোষ নিষ্পত্তি",
+          "short_description": "অফিসিয়াল উদ্ধৃতি — Order XXIII (মামলা প্রত্যাহার ও আপোষ নিষ্পত্তি)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "অফিসিয়াল পাঠ Order XXIII পড়ে সিলেবাস \"মামলা প্রত্যাহার ও আপোষ নিষ্পত্তি\"-এর সাথে মিলান। ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "First Schedule / Orders quoted from official CPC HTML where present.\n\nঅফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-86.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সূত্রে। এখানে বাংলা অনুবাদ উদ্ভাবন করা হয়নি।\n\nসিলেবাস: মামলা প্রত্যাহার ও আপোষ নিষ্পত্তি (Order XXIII)।\n\nOrder XXIII of the Code. Explanation-(1) \"Mediation\" under this section shall mean flexible, informal, non-binding, confidential, non-adversarial and consensual dispute resolution process in which the mediator shall facilitate compromise of disputes in the suit between the parties without directing or dictating the terms of such compromise. (2) \"Compromise\" under this section shall include also compromise in part of the disputes in the suit. Arbitration 89B.(1) If the parties to a suit, at any stage of the proceeding, apply to the Court for withdrawal of the suit on ground that they will refer the dispute or disputes in the suit to arbitration for settlement, the Court shall allow the application and permit the suit to be withdrawn; and the dispute or disputes, thereafter, shall be settled in accordance with Salish Ain, 2001 (Act No. 1 of 2001) so far as may be applicable: Provided that, if, for any reason, the arbitration proceeding referred to above does not take place or an arbitral award is not given, the parties shall be entitled to re-institute the suit permitted to be withdrawn under this sub-section. (2) An application under sub-section (1) shall be deemed to be an arbitration agreement under section 9 of the Salish Ain, 2001 (Act No. 1 of 2001).] Mediation in Appeal. 75[89C.(1) An Appellate Court 76[shall] mediate in an appeal or refer the appeal for mediation in order to settle the dispute or disputes in that appeal, if the appeal is an appeal from original decree under Order XLI, and is between the same parties who contested in the original suit or the parties who have been substituted for the original contesting parties. 77[(2) In mediation under sub-section (1), the provisions of section 89A shall be followed with necessary changes (mutatis mutandis) as may be expedient.]] Special provisions for mediation 78[89D. The Contesting parties to a suit or of an appeal, pending in any Court before the commencement of the Code of Civil Procedure (Amendment) Act, 2012, may by filing an application stating their willingness to settle the dispute through mediation, such suit or appeal shall be disposed of in accordance with the provision of section 89A or 89C. Application and commencement of the provisions of sections 89A and 89C 89E. (1) The provision of section 89A or 89C shall be, applied to such area, and commenced on such date, as the government may, by notification in the official Gazette, fix. (2) Where any mediation process for settlement of dispute in respect of any suit or appeal is pending under section 89A or 89C before the commencement of the Code of Civil Procedure (Amendment) Act, 2012, such mediation shall continue as if the provision of section 89A or 89C were not amended by the Code of Civil Procedure (Amendment) Act, 2012.] Special Case Power to state case for opinion of Court. 90. Where any persons agree in writing to state a case for the opinion of the Court, then the Court shall try and determine the same in the manner prescribed. Suits relating to Public Matters Public nuisances 91.(1) In the case of a public nuisance the 79[Attorney General], or two or more persons having obtained the consent in writing of the 80[Attorney General], may institute a suit, though no special damage has been caused, for a declaration and injunction or for such other relief as may be appropriate to the circumstances of the case. (2) Nothing in this section shall be deemed to limit or otherwise affect any right of suit which may exist independently of its provisions. Public charities 92.(1) In the case of any alleged breach of any express or constructive trust created for public purposes of a charitable or religious nature, or where the direction of the Court is deemed necessary for the administration of any such trust, the 81[Attorney General], or two or more persons having an interest in the trust and having obtained the consent in writing of the 82[Attorney General], may institute a suit, whether contentious or not, in the principal Civil Court of original jurisdiction or in any other Court empowered in that behalf by the Government within the local limits of whose jurisdiction the whole or any part of the subject-matter of the trust is situate, to obtain a decree- (a) removing any trustee; (b) appointing a new trustee; (c) vesting any property in a trustee; (d) directing accounts and inquiries; (e) declaring what proportion of the trust-property or of the interest therein shall be allocated to any particular obj",
+          "key_concepts": [
+            "Order XXIII",
+            "মামলা প্রত্যাহার ও আপোষ নিষ্পত্তি",
+            "Order XXIII",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "Order XXIII of the Code.",
+            "Explanation-(1) \"Mediation\" under this section shall mean flexible, informal, non-binding, confidential, non-adversarial and consensual dispute resolution process in which the mediator shall facilitate compromise of disputes in the suit between the parties without directing or dictating the terms of such compromise.",
+            "(2) \"Compromise\" under this section shall include also compromise in part of the disputes in the suit.",
+            "Arbitration 89B.(1) If the parties to a suit, at any stage of the proceeding, apply to the Court for withdrawal of the suit on ground that they will refer the dispute or disputes in the suit to arbitration for settlement, the Court shall allow the application and permit the suit to be withdrawn; and the dispute or disputes, thereafter, shall be settled in accordance with Salish Ain, 2001 (Act No."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-86.html খুলে Order XXIII নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "বাদ পড়া বিধি/তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-86.html",
+            "উদ্ধৃত: Order XXIII"
+          ]
+        }
+      }
+    }
+  ]
+}

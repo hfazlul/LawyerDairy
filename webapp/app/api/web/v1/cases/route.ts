@@ -1,61 +1,33 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { z } from 'zod'
-import { prisma } from '@/lib/prisma'
-import { requireAuth, hasCaseManageAccess } from '@/lib/auth-middleware'
+import { requireAuth, planOf, planExpires } from '@/lib/auth-middleware'
+import { hasWebDiaryView } from '@/lib/entitlement-gates'
+import { withWorkspaceTx } from '@/lib/rls'
 
-/** Pro-Advance web case list (parity scaffold with mobile). */
 export async function GET(req: NextRequest) {
   const user = await requireAuth(req)
-  if (!user) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
-  if (!hasCaseManageAccess(user.chamber.plan, user.chamber.subscriptionEndsAt)) {
+  if (!user?.activeMembership) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
+  if (!hasWebDiaryView(planOf(user), planExpires(user), user.createdAt, user.webTrialEndsAt)) {
     return NextResponse.json(
-      { message: 'PRO_ADVANCE required for web case management', code: 'PREMIUM_REQUIRED' },
+      { message: '৭ দিনের ট্রায়াল শেষ। সেভড কেস দেখতে প্যাকেজ নিন।', code: 'UPGRADE_REQUIRED' },
       { status: 403 },
     )
   }
 
-  const cases = await prisma.case.findMany({
-    where: { chamberId: user.chamberId, deletedAt: null },
-    orderBy: { updatedAt: 'desc' },
-    take: 200,
-  })
+  const wsId = user.activeMembership.workspaceId
+  const cases = await withWorkspaceTx(wsId, (tx) =>
+    tx.case.findMany({
+      where: { workspaceId: wsId, deletedAt: null },
+      orderBy: { updatedAt: 'desc' },
+      take: 200,
+      include: { parties: { where: { deletedAt: null }, take: 4 } },
+    }),
+  )
   return NextResponse.json({ cases })
 }
 
-const createSchema = z.object({
-  caseNo: z.string().min(1),
-  caseType: z.string().min(1),
-  court: z.string().min(1),
-  courtName: z.string().optional(),
-  nextDate: z.string().datetime().optional(),
-})
-
-export async function POST(req: NextRequest) {
-  const user = await requireAuth(req)
-  if (!user) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
-  if (!hasCaseManageAccess(user.chamber.plan, user.chamber.subscriptionEndsAt)) {
-    return NextResponse.json(
-      { message: 'PRO_ADVANCE required for web case management' },
-      { status: 403 },
-    )
-  }
-
-  let body: z.infer<typeof createSchema>
-  try {
-    body = createSchema.parse(await req.json())
-  } catch {
-    return NextResponse.json({ message: 'Invalid input' }, { status: 400 })
-  }
-
-  const created = await prisma.case.create({
-    data: {
-      chamberId: user.chamberId,
-      caseNo: body.caseNo,
-      caseType: body.caseType,
-      court: body.court,
-      courtName: body.courtName,
-      nextDate: body.nextDate ? new Date(body.nextDate) : null,
-    },
-  })
-  return NextResponse.json({ case: created }, { status: 201 })
+export async function POST() {
+  return NextResponse.json(
+    { message: 'কেস যোগ করতে মোবাইল অ্যাপ ব্যবহার করুন.', code: 'MOBILE_ONLY' },
+    { status: 405 },
+  )
 }

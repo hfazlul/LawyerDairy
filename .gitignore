@@ -55,12 +55,35 @@ backend/.env
 backend/dist/
 backend/build/
 backend/logs/
+
+# Next.js
+webapp/.next/
+webapp/node_modules/
+webapp/.env
+webapp/.env.local
+webapp/.env.*.local
+webapp/out/
+
+firebase/functions/node_modules/
+firebase/functions/package-lock.json
+
+
 *.env
 .env.local
 .env.*.local
+
+# Firebase service accounts — never commit
+**/*firebase-adminsdk*.json
+**/firebase-service-account.json
+**/serviceAccountKey.json
 
 # Misc
 *.orig.*
 .pub-cache/
 .pub/
 /build/
+
+# Official PDF/HTML scratch — do not commit
+tmp_official/
+tmp-official/
+webapp/scripts/official-cache/

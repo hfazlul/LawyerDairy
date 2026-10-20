@@ -1,0 +1,274 @@
+{
+  "batch_id": "BATCH-2026-08-017-PENAL-CRIMINAL-CONSPIRACY",
+  "schema_version": "1.0",
+  "content_version": "2026.08.7",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Third and final topic in this depth round. Covers Penal Code Criminal Conspiracy (T-PENAL-08, Sections 120A-120B), chosen specifically to build on batch 014's Abetment lesson: conspiracy-based abetment (Section 107, Secondly) and standalone criminal conspiracy (Section 120A) are commonly confused, and this lesson exists partly to draw that distinction precisely.",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-PENAL-CONSPIRACY-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-PENAL-CONSPIRACY-001",
+      "topic_id": "T-PENAL-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 120A (definition, proviso, and Explanation) and Section 120B (punishment provision) were fetched as VERBATIM text directly from bdlaws.minlaw.gov.bd during this session. A related CrPC cognizance-restriction provision (Section 196A) was also confirmed verbatim and is mentioned briefly. No case law cited, consistent with this dataset's policy throughout -- though this research did surface that the historically significant 'Agartala Conspiracy Case' was charged under the pre-independence Pakistan Penal Code's equivalent provisions rather than Bangladesh's own post-1971 law, which is exactly the kind of jurisdiction/era distinction this dataset is careful not to blur, and the case itself is not cited as authority for any current legal proposition here.",
+      "difficulty": "HARD",
+      "estimated_minutes": 30,
+      "prerequisite_ids": ["T-PENAL-07"],
+      "related_lesson_ids": ["BC-PENAL-ABETMENT-001"],
+      "related_question_ids": ["BC-MCQ-PENAL-CONSP-001", "BC-MCQ-PENAL-CONSP-002", "BC-MCQ-PENAL-CONSP-003", "BC-MCQ-PENAL-CONSP-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-PENAL-S120A", "LREF-PENAL-S120B"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-PENAL-S120A", "LREF-PENAL-S120B"],
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "language_versions": {
+        "en": {
+          "title": "Criminal Conspiracy (Sections 120A-120B)",
+          "short_description": "A standalone offence for the agreement itself -- and the single detail examiners test most: if what was agreed is an offence, the conspiracy is complete the moment the agreement is made, with no further act required; for anything less than an offence, an actual act in pursuance of the agreement is required.",
+          "learning_objective": "By the end of this lesson you should be able to: state Section 120A's definition of criminal conspiracy and its proviso; correctly identify when an overt act is required for conspiracy liability and when it is not, based on what was agreed; state Section 120B's punishment rule; and distinguish standalone criminal conspiracy from conspiracy as a route to abetment under Section 107.",
+          "explanation": "Section 120A defines criminal conspiracy as arising when two or more persons agree to do, or cause to be done, an illegal act, or a legal act by illegal means. An Explanation makes clear it is immaterial whether the illegal act is the ultimate object of the agreement or merely incidental to it.\n\nThe single most important, most tested feature of Section 120A is its proviso: no agreement, except an agreement to commit an offence, amounts to criminal conspiracy unless some act besides the agreement is done by one or more of the parties in pursuance of it. Read carefully, this creates two different tracks. Where the object agreed upon is itself an offence, the bare agreement is enough -- criminal conspiracy is complete the moment the agreement is made, with no need for any further act. Where the object agreed upon is something less than an offence (an illegal act that is not itself punishable as an offence, or a legal act pursued by illegal means), the agreement alone is not enough -- an actual act must be done by at least one party in pursuance of that agreement before criminal conspiracy arises.\n\nSection 120B supplies the punishment: a party to a criminal conspiracy to commit an offence punishable with death, imprisonment for life, or rigorous imprisonment for two years or upwards is punishable, where the Code makes no express provision for punishing that particular conspiracy, in the same manner as if they had abetted that offence.\n\nThis Section 120A track (agreement to commit an offence = complete on agreement alone) is easy to confuse with conspiracy-based abetment under Section 107's Secondly limb, covered in the Abetment lesson -- but the two are analytically different. Section 107's Secondly limb makes conspiracy one of three routes into abetment liability, and it always requires an act or illegal omission to have taken place in pursuance of the conspiracy, regardless of whether the ultimate object was an offence. Section 120A, by contrast, is a standalone offence in its own right, and its own proviso specifically dispenses with any act requirement precisely where the agreed object is an offence. A single set of facts can sometimes support both an abetment charge and a separate criminal-conspiracy charge, but the tests that get you there are not identical, and a candidate should not assume the two provisions always require the same proof.",
+          "key_concepts": ["S.120A: agreement (2+ persons) to do an illegal act, or a legal act by illegal means", "The proviso's two tracks: agreement to commit an OFFENCE = complete on agreement alone; anything less = needs an overt act", "S.120B: punished as if abetted, for conspiracies to commit offences carrying death/life/2+ years RI, absent express provision", "Standalone criminal conspiracy (S.120A) vs. conspiracy as a route to abetment (S.107 Secondly) -- related but analytically distinct"],
+          "important_rules": [
+            "S.120A: criminal conspiracy arises when two or more persons agree to do, or cause to be done, an illegal act, or a legal act by illegal means.",
+            "Proviso to S.120A: no agreement amounts to criminal conspiracy unless an act besides the agreement is done in pursuance of it -- UNLESS the agreement itself is to commit an offence, in which case the agreement alone suffices.",
+            "S.120B: a party to a conspiracy to commit an offence punishable with death, life imprisonment, or rigorous imprisonment of two years or more is punished as if they had abetted that offence, where no express provision covers that specific conspiracy."
+          ],
+          "definitions": [
+            { "term": "Criminal conspiracy", "definition": "An agreement between two or more persons to do, or cause to be done, an illegal act, or a legal act by illegal means, as defined in Section 120A -- complete on agreement alone where the object is an offence, otherwise requiring a further act in pursuance." },
+            { "term": "Overt act (in this context)", "definition": "An actual act, beyond the bare agreement itself, done by at least one conspirator in pursuance of the conspiracy -- required for conspiracy liability whenever the agreed object is not itself an offence." }
+          ],
+          "examples": [
+            "A and B agree to murder C, and are arrested the same day before either of them takes any further step. Because the agreed object -- murder -- is itself an offence, the proviso to Section 120A is satisfied by the agreement alone; A and B may be liable for criminal conspiracy even though no further act toward the murder was ever taken.",
+            "A and B agree to pursue a legal business objective by bribing a third party (a legal act pursued by illegal means, rather than an agreement to commit a specific offence as such). Under the proviso, this agreement alone does not amount to criminal conspiracy -- some further act in pursuance of the agreement, by at least one of them, is required before liability arises."
+          ],
+          "exam_focus": "Examiners test the proviso's two-track structure directly: a fact pattern will often present a bare agreement with no further act, and ask whether criminal conspiracy has arisen -- the answer turns entirely on whether the agreed object was itself an offence. A second common test is distinguishing standalone conspiracy (Section 120A) from conspiracy-based abetment (Section 107, Secondly), since candidates often assume the two share an identical act requirement.",
+          "common_traps": [
+            "Assuming an overt act is always required for criminal conspiracy -- the proviso specifically dispenses with this where the agreed object is itself an offence.",
+            "Assuming the bare agreement is always enough -- for anything short of an agreement to commit an offence, an actual act in pursuance is required.",
+            "Treating Section 120A (standalone conspiracy) and Section 107 Secondly (conspiracy-based abetment) as requiring identical proof -- Section 107's conspiracy route always needs an act in pursuance, regardless of what was agreed, while Section 120A's act requirement depends specifically on whether the object was an offence."
+          ],
+          "quick_revision": [
+            "S.120A = agreement (2+) to do illegal act, or legal act by illegal means.",
+            "Proviso: object = an OFFENCE -> agreement ALONE is enough. Object = anything less -> needs an ACT in pursuance too.",
+            "S.120B = punished as if abetted, for conspiracies to commit offences with death/life/2+ yrs RI, no express provision.",
+            "S.120A (standalone) != S.107 Secondly (conspiracy-based abetment) -- different act requirements, don't conflate."
+          ],
+          "key_takeaways": [
+            "The proviso's two-track structure is the single most important thing to internalise about this topic -- always ask first whether the agreed object was itself an offence.",
+            "Criminal conspiracy can attach the moment agreement is reached, without waiting for any further step, when the target is an offence -- this is precisely why conspiracy charges can arise even where the planned crime was never actually attempted.",
+            "Standalone conspiracy and conspiracy-based abetment overlap conceptually but are not the same legal test -- keep their act requirements separate."
+          ]
+        },
+        "bn": {
+          "title": "অপরাধমূলক ষড়যন্ত্র (ধারা ১২০ক-১২০খ)",
+          "short_description": "সমঝোতা নিজের জন্য একটি স্বতন্ত্র অপরাধ -- এবং পরীক্ষকরা সবচেয়ে বেশি যাচাই করেন এমন একটি বিষয়: যদি যা সমঝোতা করা হয়েছে তা একটি অপরাধ হয়, তাহলে সমঝোতা সম্পন্ন হওয়ার মুহূর্তেই ষড়যন্ত্র সম্পূর্ণ হয়, আর কোনো কাজের প্রয়োজন নেই; অপরাধের চেয়ে কম কিছুর জন্য, সমঝোতা অনুসরণে একটি প্রকৃত কাজ প্রয়োজন।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ১২০ক-এর অপরাধমূলক ষড়যন্ত্রের সংজ্ঞা ও তার শর্ত বলতে পারবেন; কী সমঝোতা করা হয়েছে তার ভিত্তিতে ষড়যন্ত্রের দায়ের জন্য কখন একটি প্রকৃত কাজ প্রয়োজন এবং কখন নয় তা সঠিকভাবে চিহ্নিত করতে পারবেন; ধারা ১২০খ-এর শাস্তির নিয়ম বলতে পারবেন; এবং স্বতন্ত্র অপরাধমূলক ষড়যন্ত্রকে ধারা ১০৭-এর অধীনে প্ররোচনার একটি পথ হিসেবে ষড়যন্ত্র থেকে পৃথক করতে পারবেন।",
+          "explanation": "ধারা ১২০ক অপরাধমূলক ষড়যন্ত্রকে সংজ্ঞায়িত করে যখন দুই বা ততোধিক ব্যক্তি একটি অবৈধ কাজ, বা অবৈধ উপায়ে একটি বৈধ কাজ করতে, বা করাতে সম্মত হন। একটি ব্যাখ্যা স্পষ্ট করে যে অবৈধ কাজটি সমঝোতার চূড়ান্ত উদ্দেশ্য নাকি কেবল তার আনুষঙ্গিক তা গুরুত্বহীন।\n\nধারা ১২০ক-এর সবচেয়ে গুরুত্বপূর্ণ, সবচেয়ে বেশি পরীক্ষায় আসা বৈশিষ্ট্যটি হলো এর শর্ত: কোনো সমঝোতা, একটি অপরাধ সংঘটনের সমঝোতা ব্যতীত, অপরাধমূলক ষড়যন্ত্রের সমান হয় না যদি না সমঝোতার পাশাপাশি এক বা একাধিক পক্ষ দ্বারা তা অনুসরণে কোনো কাজ করা হয়। সাবধানে পড়লে, এটি দুটি ভিন্ন পথ তৈরি করে। যেখানে সম্মত উদ্দেশ্যটি নিজেই একটি অপরাধ, সেখানে নিছক সমঝোতাই যথেষ্ট -- সমঝোতা সম্পন্ন হওয়ার মুহূর্তেই অপরাধমূলক ষড়যন্ত্র সম্পূর্ণ হয়, আর কোনো কাজের প্রয়োজন নেই। যেখানে সম্মত উদ্দেশ্যটি একটি অপরাধের চেয়ে কম কিছু (একটি অবৈধ কাজ যা নিজেই অপরাধ হিসেবে দণ্ডনীয় নয়, বা অবৈধ উপায়ে অনুসরণ করা একটি বৈধ কাজ), সেখানে কেবল সমঝোতাই যথেষ্ট নয় -- অপরাধমূলক ষড়যন্ত্র উদ্ভূত হওয়ার আগে সেই সমঝোতা অনুসরণে অন্তত একটি পক্ষ দ্বারা একটি প্রকৃত কাজ করতে হবে।\n\nধারা ১২০খ শাস্তি নির্ধারণ করে: মৃত্যুদণ্ড, যাবজ্জীবন কারাদণ্ড, বা দুই বছর বা তার বেশি সময়ের সশ্রম কারাদণ্ডে দণ্ডনীয় একটি অপরাধ সংঘটনের অপরাধমূলক ষড়যন্ত্রের একটি পক্ষ, যেখানে বিধিতে সেই নির্দিষ্ট ষড়যন্ত্রের শাস্তির জন্য কোনো সুস্পষ্ট বিধান নেই, তিনি যেন সেই অপরাধে প্ররোচনা দিয়েছেন এমনভাবে দণ্ডনীয়।\n\nধারা ১২০ক-এর এই পথটি (অপরাধ সংঘটনের সমঝোতা = কেবল সমঝোতাতেই সম্পূর্ণ) প্ররোচনা পাঠে আলোচিত ধারা ১০৭-এর দ্বিতীয়ত অংশের অধীনে ষড়যন্ত্র-ভিত্তিক প্ররোচনার সাথে গুলিয়ে ফেলা সহজ -- কিন্তু দুটি বিশ্লেষণাত্মকভাবে ভিন্ন। ধারা ১০৭-এর দ্বিতীয়ত অংশ ষড়যন্ত্রকে প্ররোচনার দায়ের তিনটি পথের একটি করে তোলে, এবং এর জন্য সবসময় সমঝোতা অনুসরণে একটি কাজ বা অবৈধ বিরতি ঘটতে হবে, চূড়ান্ত উদ্দেশ্যটি একটি অপরাধ ছিল কিনা তা নির্বিশেষে। বিপরীতে, ধারা ১২০ক নিজস্ব অধিকারে একটি স্বতন্ত্র অপরাধ, এবং এর নিজস্ব শর্ত ঠিক সেখানেই কোনো কাজের প্রয়োজনীয়তা বাতিল করে যেখানে সম্মত উদ্দেশ্যটি একটি অপরাধ। একই ঘটনা কখনো কখনো একটি প্ররোচনার অভিযোগ ও একটি পৃথক অপরাধমূলক-ষড়যন্ত্রের অভিযোগ উভয়ই সমর্থন করতে পারে, কিন্তু সেখানে পৌঁছানোর পরীক্ষাগুলো অভিন্ন নয়, এবং একজন প্রার্থীর ধরে নেওয়া উচিত নয় যে দুটি বিধান সবসময় একই প্রমাণ প্রয়োজন করে।",
+          "key_concepts": ["ধারা ১২০ক: অবৈধ কাজ, বা অবৈধ উপায়ে বৈধ কাজ করতে (২+ ব্যক্তির) সমঝোতা", "শর্তের দুটি পথ: উদ্দেশ্য = একটি অপরাধ -> কেবল সমঝোতাই যথেষ্ট। উদ্দেশ্য = তার চেয়ে কম -> অনুসরণে একটি কাজও প্রয়োজন", "ধারা ১২০খ: প্ররোচনার মতো দণ্ডনীয়, মৃত্যু/যাবজ্জীবন/২+ বছর সশ্রম কারাদণ্ডযোগ্য অপরাধ সংঘটনের ষড়যন্ত্রের জন্য, সুস্পষ্ট বিধান না থাকলে", "স্বতন্ত্র অপরাধমূলক ষড়যন্ত্র (ধারা ১২০ক) বনাম প্ররোচনার পথ হিসেবে ষড়যন্ত্র (ধারা ১০৭ দ্বিতীয়ত) -- সম্পর্কিত কিন্তু বিশ্লেষণাত্মকভাবে ভিন্ন"],
+          "important_rules": [
+            "ধারা ১২০ক: অপরাধমূলক ষড়যন্ত্র উদ্ভূত হয় যখন দুই বা ততোধিক ব্যক্তি একটি অবৈধ কাজ, বা অবৈধ উপায়ে একটি বৈধ কাজ, করতে বা করাতে সম্মত হন।",
+            "ধারা ১২০ক-এর শর্ত: কোনো সমঝোতা অপরাধমূলক ষড়যন্ত্রের সমান হয় না যদি না সমঝোতার পাশাপাশি তা অনুসরণে একটি কাজ করা হয় -- যদি না সমঝোতাটি নিজেই একটি অপরাধ সংঘটনের হয়, যে ক্ষেত্রে কেবল সমঝোতাই যথেষ্ট।",
+            "ধারা ১২০খ: মৃত্যু, যাবজ্জীবন কারাদণ্ড, বা দুই বা তার বেশি বছরের সশ্রম কারাদণ্ডে দণ্ডনীয় অপরাধ সংঘটনের ষড়যন্ত্রের একটি পক্ষ, যেন তিনি সেই অপরাধে প্ররোচনা দিয়েছেন এমনভাবে দণ্ডনীয়, যেখানে সেই নির্দিষ্ট ষড়যন্ত্র কোনো সুস্পষ্ট বিধান আচ্ছাদন করে না।"
+          ],
+          "definitions": [
+            { "term": "অপরাধমূলক ষড়যন্ত্র", "definition": "দুই বা ততোধিক ব্যক্তির মধ্যে একটি অবৈধ কাজ, বা অবৈধ উপায়ে একটি বৈধ কাজ, করতে বা করাতে সমঝোতা, ধারা ১২০ক-এ সংজ্ঞায়িত -- উদ্দেশ্যটি একটি অপরাধ হলে কেবল সমঝোতাতেই সম্পূর্ণ, অন্যথায় অনুসরণে আরেকটি কাজ প্রয়োজন।" },
+            { "term": "প্রকৃত কাজ (এই প্রসঙ্গে)", "definition": "নিছক সমঝোতার বাইরে, ষড়যন্ত্র অনুসরণে অন্তত একজন ষড়যন্ত্রকারী দ্বারা সম্পাদিত একটি প্রকৃত কাজ -- সম্মত উদ্দেশ্যটি নিজেই একটি অপরাধ না হলে ষড়যন্ত্রের দায়ের জন্য প্রয়োজন।" }
+          ],
+          "examples": [
+            "ক ও খ গ-কে হত্যা করতে সম্মত হয়, এবং তাদের কেউ আর কোনো পদক্ষেপ নেওয়ার আগেই একই দিনে গ্রেপ্তার হয়। যেহেতু সম্মত উদ্দেশ্য -- হত্যা -- নিজেই একটি অপরাধ, ধারা ১২০ক-এর শর্ত কেবল সমঝোতা দ্বারাই পূরণ হয়; ক ও খ অপরাধমূলক ষড়যন্ত্রের জন্য দায়ী হতে পারেন যদিও হত্যার দিকে আর কোনো কাজ কখনো নেওয়া হয়নি।",
+            "ক ও খ একটি তৃতীয় পক্ষকে ঘুষ দিয়ে একটি বৈধ ব্যবসায়িক উদ্দেশ্য অনুসরণ করতে সম্মত হয় (একটি নির্দিষ্ট অপরাধ সংঘটনের সমঝোতার পরিবর্তে অবৈধ উপায়ে অনুসরণ করা একটি বৈধ কাজ)। শর্ত অনুযায়ী, এই সমঝোতা একাই অপরাধমূলক ষড়যন্ত্রের সমান নয় -- দায় উদ্ভূত হওয়ার আগে তাদের অন্তত একজন দ্বারা সমঝোতা অনুসরণে আরও কিছু কাজ প্রয়োজন।"
+          ],
+          "exam_focus": "পরীক্ষকরা সরাসরি শর্তের দুই-পথের কাঠামো যাচাই করেন: একটি ঘটনাপ্রবাহ প্রায়ই আর কোনো কাজ ছাড়া একটি নিছক সমঝোতা উপস্থাপন করবে, এবং জিজ্ঞাসা করবে অপরাধমূলক ষড়যন্ত্র উদ্ভূত হয়েছে কিনা -- উত্তরটি সম্পূর্ণরূপে সম্মত উদ্দেশ্যটি নিজেই একটি অপরাধ ছিল কিনা তার উপর নির্ভর করে। দ্বিতীয় একটি সাধারণ পরীক্ষা হলো স্বতন্ত্র ষড়যন্ত্র (ধারা ১২০ক) থেকে ষড়যন্ত্র-ভিত্তিক প্ররোচনা (ধারা ১০৭, দ্বিতীয়ত) পৃথক করা, কারণ প্রার্থীরা প্রায়ই ধরে নেন দুটির অভিন্ন কাজের প্রয়োজনীয়তা রয়েছে।",
+          "common_traps": [
+            "মনে করা যে অপরাধমূলক ষড়যন্ত্রের জন্য সবসময় একটি প্রকৃত কাজ প্রয়োজন -- শর্তটি সুনির্দিষ্টভাবে এটি বাতিল করে যেখানে সম্মত উদ্দেশ্যটি নিজেই একটি অপরাধ।",
+            "মনে করা যে নিছক সমঝোতাই সবসময় যথেষ্ট -- একটি অপরাধ সংঘটনের সমঝোতার চেয়ে কম যেকোনো কিছুর জন্য, অনুসরণে একটি প্রকৃত কাজ প্রয়োজন।",
+            "ধারা ১২০ক (স্বতন্ত্র ষড়যন্ত্র) ও ধারা ১০৭ দ্বিতীয়ত (ষড়যন্ত্র-ভিত্তিক প্ররোচনা)-কে অভিন্ন প্রমাণ প্রয়োজন মনে করা -- ধারা ১০৭-এর ষড়যন্ত্র পথের জন্য সবসময় অনুসরণে একটি কাজ প্রয়োজন, উদ্দেশ্য যাই হোক না কেন, যেখানে ধারা ১২০ক-এর কাজের প্রয়োজনীয়তা সুনির্দিষ্টভাবে উদ্দেশ্যটি একটি অপরাধ ছিল কিনা তার উপর নির্ভর করে।"
+          ],
+          "quick_revision": [
+            "ধারা ১২০ক = (২+) অবৈধ কাজ, বা অবৈধ উপায়ে বৈধ কাজ করতে সমঝোতা।",
+            "শর্ত: উদ্দেশ্য = একটি অপরাধ -> কেবল সমঝোতাই যথেষ্ট। উদ্দেশ্য = তার চেয়ে কম -> অনুসরণে একটি কাজও প্রয়োজন।",
+            "ধারা ১২০খ = প্ররোচনার মতো দণ্ডনীয়, মৃত্যু/যাবজ্জীবন/২+ বছর সশ্রম কারাদণ্ডযোগ্য অপরাধের ষড়যন্ত্রের জন্য, সুস্পষ্ট বিধান না থাকলে।",
+            "ধারা ১২০ক (স্বতন্ত্র) != ধারা ১০৭ দ্বিতীয়ত (ষড়যন্ত্র-ভিত্তিক প্ররোচনা) -- ভিন্ন কাজের প্রয়োজনীয়তা, গুলিয়ে ফেলবেন না।"
+          ],
+          "key_takeaways": [
+            "শর্তের দুই-পথের কাঠামো এই বিষয় সম্পর্কে অন্তর্নিহিত করার সবচেয়ে গুরুত্বপূর্ণ বিষয় -- সবসময় প্রথমে জিজ্ঞাসা করুন সম্মত উদ্দেশ্যটি নিজেই একটি অপরাধ ছিল কিনা।",
+            "লক্ষ্যটি একটি অপরাধ হলে, সমঝোতা পৌঁছানোর মুহূর্তেই অপরাধমূলক ষড়যন্ত্র সংযুক্ত হতে পারে, আরও কোনো পদক্ষেপের জন্য অপেক্ষা না করেই -- এটিই ঠিক কেন পরিকল্পিত অপরাধ কখনো প্রকৃতপক্ষে চেষ্টা না করা হলেও ষড়যন্ত্রের অভিযোগ উদ্ভূত হতে পারে।",
+            "স্বতন্ত্র ষড়যন্ত্র ও ষড়যন্ত্র-ভিত্তিক প্ররোচনা ধারণাগতভাবে ওভারল্যাপ করে কিন্তু একই আইনি পরীক্ষা নয় -- তাদের কাজের প্রয়োজনীয়তা পৃথক রাখুন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-PENAL-S120A",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Section 120A (Definition of criminal conspiracy), including proviso and Explanation",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Verbatim text obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "LREF-PENAL-S120B",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Section 120B (Punishment of criminal conspiracy)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Verbatim text of subsection (1) obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-CONSP-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-CONSP-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S120A"],
+      "exam_focus": "The proviso's core distinction -- agreement to commit an offence needs no further act.",
+      "source_basis": "Original question drawn directly from the verbatim S.120A proviso.",
+      "mistake_tags": ["s120a-proviso-offence-vs-lesser"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-CONSPIRACY-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A and B agree to commit a robbery (an offence under the Penal Code) but are arrested the same day, before either takes any further step toward it. Under Section 120A's proviso, has criminal conspiracy arisen?",
+          "options": { "A": "No, because no overt act toward the robbery was ever taken", "B": "Yes, because the agreed object was itself an offence, so the agreement alone satisfies the proviso", "C": "No, criminal conspiracy requires the offence to actually be attempted", "D": "Yes, but only once one of them purchases a tool to be used in the robbery" },
+          "explanation": "The proviso to Section 120A dispenses with any further-act requirement precisely where the agreement is to commit an offence -- here, robbery. The bare agreement is enough.",
+          "why_other_options_are_wrong": { "A": "This misapplies the general further-act rule to a case the proviso specifically exempts from it.", "C": "Criminal conspiracy under Section 120A does not require the underlying offence to actually be attempted, let alone completed.", "D": "This wrongly imports an act requirement into a case where the proviso's offence-exception already applies without one." }
+        },
+        "bn": {
+          "question": "ক ও খ একটি ডাকাতি (দণ্ডবিধির অধীনে একটি অপরাধ) করতে সম্মত হয় কিন্তু কেউ তার দিকে আর কোনো পদক্ষেপ নেওয়ার আগেই একই দিনে গ্রেপ্তার হয়। ধারা ১২০ক-এর শর্ত অনুযায়ী, অপরাধমূলক ষড়যন্ত্র কি উদ্ভূত হয়েছে?",
+          "options": { "A": "না, কারণ ডাকাতির দিকে কোনো প্রকৃত কাজ কখনো নেওয়া হয়নি", "B": "হ্যাঁ, কারণ সম্মত উদ্দেশ্যটি নিজেই একটি অপরাধ ছিল, তাই কেবল সমঝোতাই শর্ত পূরণ করে", "C": "না, অপরাধমূলক ষড়যন্ত্রের জন্য অপরাধটি প্রকৃতপক্ষে চেষ্টা করতে হবে", "D": "হ্যাঁ, তবে কেবল একবার তাদের একজন ডাকাতিতে ব্যবহারের জন্য একটি সরঞ্জাম ক্রয় করলে" },
+          "explanation": "ধারা ১২০ক-এর শর্ত ঠিক সেখানে আরও কাজের প্রয়োজনীয়তা বাতিল করে যেখানে সমঝোতাটি একটি অপরাধ সংঘটনের -- এখানে, ডাকাতি। নিছক সমঝোতাই যথেষ্ট।",
+          "why_other_options_are_wrong": { "A": "এটি সাধারণ আরও-কাজের নিয়ম এমন একটি মামলায় ভুলভাবে প্রয়োগ করে যা শর্তটি সুনির্দিষ্টভাবে তা থেকে মুক্ত করে।", "C": "ধারা ১২০ক-এর অধীনে অপরাধমূলক ষড়যন্ত্রের জন্য অন্তর্নিহিত অপরাধটি প্রকৃতপক্ষে চেষ্টা করার প্রয়োজন নেই, সম্পন্ন হওয়া তো দূরের কথা।", "D": "এটি ভুলভাবে একটি মামলায় একটি কাজের প্রয়োজনীয়তা আমদানি করে যেখানে শর্তের অপরাধ-ব্যতিক্রম ইতিমধ্যে তা ছাড়াই প্রযোজ্য।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-CONSP-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-CONSP-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S120A"],
+      "exam_focus": "The other side of the proviso -- legal act by illegal means needs an overt act.",
+      "source_basis": "Original question drawn directly from the verbatim S.120A proviso, mirroring the prior question's opposite scenario.",
+      "mistake_tags": ["s120a-proviso-lesser-object-needs-act"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-CONSPIRACY-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "A and B agree to achieve a lawful business outcome by bribing a third party -- a legal act pursued by illegal means, rather than an agreement to commit a specific offence as such. No further act is ever taken beyond the agreement itself. Has criminal conspiracy arisen under Section 120A?",
+          "options": { "A": "Yes, the agreement alone is always sufficient under Section 120A", "B": "Yes, because bribery is inherently criminal regardless of the proviso", "C": "No, because the proviso requires an act beyond the bare agreement where the object is not itself an offence", "D": "No, Section 120A never applies to business-related agreements" },
+          "explanation": "Because the agreed object here is a legal act pursued by illegal means -- not, as such, an agreement to commit a specific offence -- the proviso requires some act beyond the agreement itself before criminal conspiracy arises. On these facts, no such act has occurred.",
+          "why_other_options_are_wrong": { "A": "This overstates the rule -- the proviso specifically withholds this 'agreement alone' effect except where the object is itself an offence.", "B": "This bypasses the proviso's analytical structure rather than applying it to the facts as agreed.", "D": "Section 120A is not categorically inapplicable to business contexts -- the analysis turns on the proviso, not the subject matter of the agreement." }
+        },
+        "bn": {
+          "question": "ক ও খ একটি তৃতীয় পক্ষকে ঘুষ দিয়ে একটি বৈধ ব্যবসায়িক ফলাফল অর্জন করতে সম্মত হয় -- একটি নির্দিষ্ট অপরাধ সংঘটনের সমঝোতার পরিবর্তে অবৈধ উপায়ে অনুসরণ করা একটি বৈধ কাজ। সমঝোতার বাইরে আর কোনো কাজ কখনো নেওয়া হয় না। ধারা ১২০ক-এর অধীনে অপরাধমূলক ষড়যন্ত্র কি উদ্ভূত হয়েছে?",
+          "options": { "A": "হ্যাঁ, ধারা ১২০ক-এর অধীনে কেবল সমঝোতাই সবসময় যথেষ্ট", "B": "হ্যাঁ, কারণ ঘুষ শর্ত নির্বিশেষে সহজাতভাবে ফৌজদারি", "C": "না, কারণ উদ্দেশ্যটি নিজেই একটি অপরাধ না হলে শর্তের জন্য নিছক সমঝোতার বাইরে একটি কাজ প্রয়োজন", "D": "না, ধারা ১২০ক কখনো ব্যবসা-সম্পর্কিত সমঝোতায় প্রযোজ্য হয় না" },
+          "explanation": "যেহেতু এখানে সম্মত উদ্দেশ্যটি অবৈধ উপায়ে অনুসরণ করা একটি বৈধ কাজ -- যেমন, একটি নির্দিষ্ট অপরাধ সংঘটনের সমঝোতা নয় -- অপরাধমূলক ষড়যন্ত্র উদ্ভূত হওয়ার আগে শর্তের জন্য সমঝোতার বাইরে কিছু কাজ প্রয়োজন। এই ঘটনায়, এমন কোনো কাজ ঘটেনি।",
+          "why_other_options_are_wrong": { "A": "এটি নিয়মটি অতিরিক্ত বলে -- শর্তটি সুনির্দিষ্টভাবে এই 'কেবল সমঝোতা' প্রভাব আটকে রাখে যেখানে উদ্দেশ্যটি নিজেই একটি অপরাধ নয়।", "B": "এটি শর্তের বিশ্লেষণাত্মক কাঠামো এড়িয়ে যায়, সম্মত ঘটনায় তা প্রয়োগ করার পরিবর্তে।", "D": "ধারা ১২০ক শ্রেণিগতভাবে ব্যবসায়িক প্রসঙ্গে অপ্রযোজ্য নয় -- বিশ্লেষণটি শর্তের উপর নির্ভর করে, সমঝোতার বিষয়বস্তুর উপর নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-CONSP-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-CONSP-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S120B"],
+      "exam_focus": "S.120B's punishment threshold.",
+      "source_basis": "Original question drawn directly from verbatim S.120B text.",
+      "mistake_tags": ["s120b-punishment-threshold"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-PENAL-CONSPIRACY-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 120B(1), the 'punished as if abetted' rule applies to conspiracies to commit offences punishable with:",
+          "options": { "A": "Any term of imprisonment, however short", "B": "Death, imprisonment for life, or rigorous imprisonment of two years or upwards", "C": "Only offences punishable by death", "D": "Only offences under Chapter VI (Offences Against the State)" },
+          "explanation": "Section 120B(1) sets the threshold at offences punishable with death, life imprisonment, or rigorous imprisonment of two years or more -- not any and all offences, and not confined to a single chapter of the Code.",
+          "why_other_options_are_wrong": { "A": "This overstates the threshold -- minor offences with short terms fall outside this specific rule.", "C": "This understates the threshold -- life imprisonment and 2+ years' rigorous imprisonment also qualify, not death alone.", "D": "Section 120B(1) is of general application across the Code, not limited to Chapter VI." }
+        },
+        "bn": {
+          "question": "ধারা ১২০খ(১)-এর অধীনে, 'প্ররোচনার মতো দণ্ডনীয়' নিয়মটি এমন অপরাধের ষড়যন্ত্রে প্রযোজ্য যা দণ্ডনীয়:",
+          "options": { "A": "যেকোনো মেয়াদের কারাদণ্ডে, তা যতই সংক্ষিপ্ত হোক", "B": "মৃত্যু, যাবজ্জীবন কারাদণ্ড, বা দুই বা তার বেশি বছরের সশ্রম কারাদণ্ডে", "C": "কেবল মৃত্যুদণ্ডে দণ্ডনীয় অপরাধে", "D": "কেবল ষষ্ঠ অধ্যায়ের (রাষ্ট্রের বিরুদ্ধে অপরাধ) অধীনে অপরাধে" },
+          "explanation": "ধারা ১২০খ(১) সীমা নির্ধারণ করে মৃত্যু, যাবজ্জীবন কারাদণ্ড, বা দুই বা তার বেশি বছরের সশ্রম কারাদণ্ডে দণ্ডনীয় অপরাধে -- সব অপরাধে নয়, এবং বিধির একটি অধ্যায়ে সীমাবদ্ধ নয়।",
+          "why_other_options_are_wrong": { "A": "এটি সীমাটি অতিরিক্ত বলে -- সংক্ষিপ্ত মেয়াদের ছোটখাটো অপরাধ এই নির্দিষ্ট নিয়মের বাইরে পড়ে।", "C": "এটি সীমাটি কম বলে -- যাবজ্জীবন কারাদণ্ড ও ২+ বছরের সশ্রম কারাদণ্ডও যোগ্য, কেবল মৃত্যুদণ্ড নয়।", "D": "ধারা ১২০খ(১) বিধি জুড়ে সাধারণ প্রয়োগের, ষষ্ঠ অধ্যায়ে সীমাবদ্ধ নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-CONSP-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-CONSP-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S120A"],
+      "exam_focus": "Distinguishing standalone conspiracy (S.120A) from conspiracy-based abetment (S.107 Secondly).",
+      "source_basis": "Original conceptual question connecting this lesson to batch 014's Abetment lesson.",
+      "mistake_tags": ["s120a-vs-s107-secondly"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-CONSPIRACY-001", "BC-PENAL-ABETMENT-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "How does the act requirement for conspiracy-based abetment under Section 107's Secondly limb compare to the act requirement for standalone criminal conspiracy under Section 120A?",
+          "options": { "A": "They are identical in every respect -- both always require an act in pursuance of the agreement", "B": "They are identical in every respect -- neither ever requires an act in pursuance of the agreement", "C": "Section 107 Secondly always requires an act in pursuance regardless of the object agreed upon; Section 120A only requires an act where the agreed object is not itself an offence", "D": "Section 120A always requires an act in pursuance regardless of the object; Section 107 Secondly never does" },
+          "explanation": "Section 107's Secondly limb (conspiracy as a route to abetment) always requires an act or illegal omission in pursuance of the conspiracy, whatever the ultimate object. Section 120A's own proviso, by contrast, dispenses with any act requirement specifically where the agreed object is itself an offence -- the two provisions' act requirements are not the same test.",
+          "why_other_options_are_wrong": { "A": "This is incorrect for Section 120A, whose proviso specifically removes the act requirement when the object is an offence.", "B": "This is incorrect for Section 107 Secondly, which always requires an act in pursuance regardless of the object.", "D": "This reverses the actual positions of the two provisions." }
+        },
+        "bn": {
+          "question": "ধারা ১০৭-এর দ্বিতীয়ত অংশের অধীনে ষড়যন্ত্র-ভিত্তিক প্ররোচনার কাজের প্রয়োজনীয়তা ধারা ১২০ক-এর অধীনে স্বতন্ত্র অপরাধমূলক ষড়যন্ত্রের কাজের প্রয়োজনীয়তার সাথে কীভাবে তুলনীয়?",
+          "options": { "A": "উভয়ই প্রতিটি দিক থেকে অভিন্ন -- উভয়েরই সবসময় সমঝোতা অনুসরণে একটি কাজ প্রয়োজন", "B": "উভয়ই প্রতিটি দিক থেকে অভিন্ন -- কোনোটিরই কখনো সমঝোতা অনুসরণে একটি কাজ প্রয়োজন নেই", "C": "ধারা ১০৭ দ্বিতীয়ত-এর সবসময় সম্মত উদ্দেশ্য নির্বিশেষে অনুসরণে একটি কাজ প্রয়োজন; ধারা ১২০ক-এর কেবল তখনই একটি কাজ প্রয়োজন যখন সম্মত উদ্দেশ্যটি নিজেই একটি অপরাধ নয়", "D": "ধারা ১২০ক-এর সবসময় উদ্দেশ্য নির্বিশেষে অনুসরণে একটি কাজ প্রয়োজন; ধারা ১০৭ দ্বিতীয়ত-এর কখনোই নয়" },
+          "explanation": "ধারা ১০৭-এর দ্বিতীয়ত অংশ (প্ররোচনার একটি পথ হিসেবে ষড়যন্ত্র) সবসময় ষড়যন্ত্র অনুসরণে একটি কাজ বা অবৈধ বিরতি প্রয়োজন করে, চূড়ান্ত উদ্দেশ্য যাই হোক না কেন। বিপরীতে, ধারা ১২০ক-এর নিজস্ব শর্ত ঠিক সেখানেই যেকোনো কাজের প্রয়োজনীয়তা বাতিল করে যেখানে সম্মত উদ্দেশ্যটি নিজেই একটি অপরাধ -- দুটি বিধানের কাজের প্রয়োজনীয়তা একই পরীক্ষা নয়।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ১২০ক-এর জন্য ভুল, যার শর্ত সুনির্দিষ্টভাবে উদ্দেশ্যটি একটি অপরাধ হলে কাজের প্রয়োজনীয়তা সরিয়ে দেয়।", "B": "এটি ধারা ১০৭ দ্বিতীয়ত-এর জন্য ভুল, যার জন্য উদ্দেশ্য নির্বিশেষে সবসময় অনুসরণে একটি কাজ প্রয়োজন।", "D": "এটি দুটি বিধানের প্রকৃত অবস্থান উল্টে দেয়।" }
+        }
+      }
+    }
+  ]
+}

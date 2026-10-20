@@ -4,6 +4,7 @@ import { canSendWithinDailyLimit, getDailySendStats } from './daily-limit'
 import { sendEmail } from './send'
 import { personalizeHtml, renderCampaignTemplate } from './templates'
 import type { CampaignAudience, CampaignTemplate } from './types'
+import type { Prisma } from '@prisma/client'
 
 export type RunCampaignOpts = {
   subject?: string
@@ -13,6 +14,37 @@ export type RunCampaignOpts = {
   couponCode?: string
   dealTitle?: string
   createdById?: string
+}
+
+/** Workspace-based audience (Chamber 1:1 is gone). Personal FREE rows do not mark everyone inactive. */
+export function campaignAudienceWhere(
+  audience: CampaignAudience,
+  now: Date,
+  in7: Date,
+): Prisma.UserWhereInput {
+  if (audience === 'inactive') {
+    return {
+      ownedWorkspaces: {
+        none: {
+          deletedAt: null,
+          plan: { not: 'FREE' as const },
+          OR: [{ planExpiresAt: null }, { planExpiresAt: { gte: now } }],
+        },
+      },
+    }
+  }
+  if (audience === 'expiring') {
+    return {
+      ownedWorkspaces: {
+        some: {
+          deletedAt: null,
+          plan: { not: 'FREE' as const },
+          planExpiresAt: { gte: now, lte: in7 },
+        },
+      },
+    }
+  }
+  return {}
 }
 
 /**
@@ -28,17 +60,8 @@ export async function runSubscriptionCampaign(opts: RunCampaignOpts) {
     where: {
       email: { not: null },
       appRole: 'USER',
-      ...(opts.audience === 'inactive'
-        ? { chamber: { OR: [{ plan: 'FREE' }, { subscriptionEndsAt: { lt: now } }] } }
-        : {}),
-      ...(opts.audience === 'expiring'
-        ? {
-            chamber: {
-              subscriptionEndsAt: { gte: now, lte: in7 },
-              plan: { not: 'FREE' },
-            },
-          }
-        : {}),
+      deletedAt: null,
+      ...campaignAudienceWhere(opts.audience, now, in7),
     },
     select: { id: true, email: true, name: true, phone: true },
   })

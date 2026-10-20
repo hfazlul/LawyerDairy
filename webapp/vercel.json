@@ -1,0 +1,16 @@
+{
+  "crons": [
+    {
+      "path": "/api/mobile/v1/cron/fcm-reminders",
+      "schedule": "15 4 * * *"
+    },
+    {
+      "path": "/api/mobile/v1/cron/sms-hearings",
+      "schedule": "0 4 * * *"
+    },
+    {
+      "path": "/api/mobile/v1/cron/subscription-reminders",
+      "schedule": "0 4 * * *"
+    }
+  ]
+}

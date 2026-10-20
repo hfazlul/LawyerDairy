@@ -1,0 +1,276 @@
+{
+  "batch_id": "BATCH-2026-08-023-PENAL-CRIMINAL-BREACH-OF-TRUST",
+  "schema_version": "1.0",
+  "content_version": "2026.08.9",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Third and final topic in this depth round. Covers Penal Code Criminal Breach of Trust (T-PENAL-18B, Sections 405-406) -- deliberately chosen as the natural comparison point to last round's Theft lesson. Both are property offences frequently confused with each other; the lesson exists partly to draw the distinction precisely (theft is taking without consent from the start; criminal breach of trust is misappropriating property one was lawfully entrusted with).",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-PENAL-CRIMINALBREACHOFTRUST-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-PENAL-CRIMINALBREACHOFTRUST-001",
+      "topic_id": "T-PENAL-18B",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 405 (full definition with all six of the Act's own illustrations) and Section 406 (punishment) were fetched as VERBATIM Bangladesh-specific text directly from bdlaws.minlaw.gov.bd during this session -- confirmed as genuinely Bangladesh's own current text via footnotes showing 'Bangladesh' and 'Taka' substituted for 'Pakistan'/'rupees', and 'Chittagong' substituted for 'Lahore' in one illustration, consistent with post-independence textual updates. An India-specific 'Explanation 1' referencing an Indian Provident Funds statute was deliberately NOT included in this lesson, since it does not appear in Bangladesh's own verbatim text and would have been a genuine jurisdiction-blending error to import. Illustrations described in this lesson's 'examples' field are ORIGINAL, not copied from the Act's own illustrations, consistent with this dataset's copyright-paraphrase policy. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": ["T-PENAL-18"],
+      "related_lesson_ids": ["BC-PENAL-THEFT-001"],
+      "related_question_ids": ["BC-MCQ-PENAL-CBT-001", "BC-MCQ-PENAL-CBT-002", "BC-MCQ-PENAL-CBT-003", "BC-MCQ-PENAL-CBT-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-PENAL-S405", "LREF-PENAL-S406"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-PENAL-S405", "LREF-PENAL-S406"],
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "language_versions": {
+        "en": {
+          "title": "Criminal Breach of Trust (Sections 405-406) -- and how it differs from Theft",
+          "short_description": "Where theft is taking property without consent from the very start, criminal breach of trust begins the opposite way: the offender is lawfully entrusted with the property, or with dominion over it, and only later dishonestly misappropriates or misuses it -- a starting point that changes everything about how the offence is proved.",
+          "learning_objective": "By the end of this lesson you should be able to: state Section 405's definition of criminal breach of trust; identify the four ways the offence can be committed once entrustment is established; explain why good faith negates the dishonesty this offence requires; and correctly distinguish criminal breach of trust from theft based on how possession of the property began.",
+          "explanation": "Section 405 defines criminal breach of trust as arising where a person, being in any manner entrusted with property, or with any dominion over property, dishonestly misappropriates or converts that property to their own use, or dishonestly uses or disposes of it in violation of any direction of law prescribing how that trust is to be discharged, or of any legal contract express or implied made by them touching that discharge, or wilfully suffers another person to do so.\n\nThe defining structural feature, and the clearest way to distinguish this offence from theft, is how possession begins. In theft, the offender takes property out of someone's possession without their consent -- possession was never lawfully handed over. In criminal breach of trust, the offender already lawfully holds the property, or has been given dominion over it, through some relationship of trust (as an agent, an executor, a warehouse-keeper, an employee handling funds, and so on), and the offence arises only later, when that trust is dishonestly betrayed.\n\nBecause the offence turns on dishonest betrayal of trust, good faith is a genuine defence in a way that sharpens the offence's boundaries: if a person entrusted with property acts in what they honestly believe is the best interest of the person who trusted them -- even if that belief turns out to be mistaken, and even if it causes loss -- this does not amount to criminal breach of trust, because the dishonest intention the offence requires is simply absent. An honest error of judgment in managing entrusted property is not the same as a dishonest betrayal of the trust reposed.\n\nSection 406 sets the basic punishment: imprisonment of either description for a term which may extend to three years, or fine, or both -- the same basic maximum as ordinary theft under Section 379, though later sections in this same chapter (406 through 409) provide enhanced punishments for criminal breach of trust committed by particular categories of person, such as carriers, clerks and servants, and public servants, bankers, merchants, or agents.",
+          "key_concepts": ["S.405: entrustment (with property or dominion over it) followed by dishonest misappropriation, conversion, misuse, or wilfully permitting another to do so", "The structural distinction from theft: lawful entrustment first, dishonest betrayal later -- versus taking without consent from the outset", "Good faith negates the dishonesty this offence requires, even where the entrusted person's judgment turns out to be mistaken and causes loss", "S.406: basic punishment up to 3 years, or fine, or both -- with enhanced punishments for specific categories of person in later sections"],
+          "important_rules": [
+            "S.405: criminal breach of trust requires (a) entrustment with property or dominion over it, and (b) dishonest misappropriation, conversion to own use, dishonest use or disposal in violation of a legal direction or contract governing the trust, or wilfully permitting another to do so.",
+            "The offence presupposes lawful entrustment -- it does not arise from an unlawful initial taking, which is theft's domain instead.",
+            "Acting in good faith, honestly believing one's conduct serves the interest of the person who extended the trust, negates the dishonest intention this offence requires, even if the belief was mistaken and caused loss.",
+            "S.406: basic criminal breach of trust is punishable with imprisonment up to 3 years, or fine, or both."
+          ],
+          "definitions": [
+            { "term": "Criminal breach of trust", "definition": "Dishonest misappropriation, conversion, or misuse of property (or dominion over property) with which the offender was lawfully entrusted, as defined in Section 405 -- distinguished from theft by the lawful origin of the offender's possession." },
+            { "term": "Entrustment (in this context)", "definition": "The lawful handing over of property, or of dominion over property, to a person under some relationship of trust -- an agency, employment, custodianship, or similar arrangement -- which is the necessary starting point for this specific offence." }
+          ],
+          "examples": [
+            "A is appointed as the executor of B's estate and is thereby entrusted with B's property for distribution according to the will. A instead dishonestly appropriates part of that property for A's own personal use, contrary to the terms of the will. This is criminal breach of trust: A's possession of the property began lawfully, through the entrustment of the executorship, and the offence arose only when A later dishonestly misused it.",
+            "A is entrusted by B with funds to invest on B's behalf, with express instructions to invest only in a specific category of low-risk asset. Genuinely believing, in good faith, that a different investment would actually serve B's interests better, A invests the funds there instead, and the investment loses money. Because A acted in good faith and not dishonestly, this does not amount to criminal breach of trust, even though A departed from the specific instructions given and caused B a loss -- an honest misjudgement is not a dishonest betrayal of trust."
+          ],
+          "exam_focus": "Examiners very frequently test the theft/criminal-breach-of-trust distinction directly, using fact patterns that differ only in how the offender's possession of the property began -- unlawfully taken (theft) versus lawfully entrusted and later misused (criminal breach of trust). The good-faith defence is a second common test point, since students sometimes assume any departure from instructions is automatically dishonest.",
+          "common_traps": [
+            "Confusing criminal breach of trust with theft by focusing only on the fact that property ended up wrongfully with the offender, without checking how the offender's possession began.",
+            "Assuming any deviation from the terms of an entrustment is automatically dishonest -- a genuinely good-faith departure, even a mistaken one that causes loss, does not satisfy the dishonesty this offence requires.",
+            "Assuming criminal breach of trust requires the entrusted person to have physically taken anything from someone else -- the property was already lawfully in their hands; the offence is about betrayal of that trust, not a taking."
+          ],
+          "quick_revision": [
+            "S.405 = entrusted WITH property/dominion, then dishonestly misappropriates/converts/misuses it, or lets another do so.",
+            "Theft = unlawful taking from the START. Criminal breach of trust = lawful possession FIRST, dishonest betrayal LATER.",
+            "Good faith (even if mistaken, even if it causes loss) = NOT criminal breach of trust -- dishonesty is missing.",
+            "S.406 = basic punishment, up to 3 years -- same ceiling as basic theft (S.379); enhanced versions exist for specific categories of person."
+          ],
+          "key_takeaways": [
+            "The single most important analytical move for this topic is asking how the offender's possession of the property began -- that answer alone often resolves whether you're looking at theft or criminal breach of trust.",
+            "This offence protects the integrity of entrusted relationships specifically -- agents, executors, employees, custodians -- rather than protecting possession generally the way theft does.",
+            "Good faith is a real, substantive limit on this offence's reach, not a technicality -- honest mistakes in managing someone else's property are not criminalised by Section 405."
+          ]
+        },
+        "bn": {
+          "title": "অপরাধমূলক বিশ্বাসভঙ্গ (ধারা ৪০৫-৪০৬) -- এবং এটি চুরি থেকে কীভাবে ভিন্ন",
+          "short_description": "চুরি যেখানে একেবারে শুরু থেকেই সম্মতি ছাড়া সম্পত্তি গ্রহণ, অপরাধমূলক বিশ্বাসভঙ্গ সেখানে বিপরীতভাবে শুরু হয়: অপরাধীকে বৈধভাবে সম্পত্তি, বা তার উপর কর্তৃত্ব অর্পণ করা হয়, এবং কেবল পরে তিনি অসৎভাবে তা আত্মসাৎ বা অপব্যবহার করেন -- একটি সূচনাবিন্দু যা অপরাধটি কীভাবে প্রমাণিত হয় তার সবকিছু পরিবর্তন করে।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৪০৫-এর অপরাধমূলক বিশ্বাসভঙ্গের সংজ্ঞা বলতে পারবেন; অর্পণ প্রতিষ্ঠিত হওয়ার পর অপরাধটি সংঘটনের চারটি উপায় চিহ্নিত করতে পারবেন; কেন সরল বিশ্বাস এই অপরাধের জন্য প্রয়োজনীয় অসততা নাকচ করে তা ব্যাখ্যা করতে পারবেন; এবং সম্পত্তির দখল কীভাবে শুরু হয়েছিল তার ভিত্তিতে অপরাধমূলক বিশ্বাসভঙ্গকে চুরি থেকে সঠিকভাবে পৃথক করতে পারবেন।",
+          "explanation": "ধারা ৪০৫ অপরাধমূলক বিশ্বাসভঙ্গকে সংজ্ঞায়িত করে এমন পরিস্থিতিতে যেখানে একজন ব্যক্তি, কোনোভাবে সম্পত্তি, বা সম্পত্তির উপর কর্তৃত্ব অর্পিত হয়ে, সেই সম্পত্তি অসৎভাবে আত্মসাৎ করেন বা নিজের ব্যবহারের জন্য রূপান্তরিত করেন, অথবা সেই বিশ্বাস কীভাবে পালন করতে হবে তা নির্ধারণকারী আইনের কোনো নির্দেশনা লঙ্ঘন করে, বা সেই পালন সম্পর্কিত তার দ্বারা সম্পাদিত কোনো সুস্পষ্ট বা অন্তর্নিহিত আইনি চুক্তি লঙ্ঘন করে অসৎভাবে তা ব্যবহার বা নিষ্পত্তি করেন, অথবা ইচ্ছাকৃতভাবে অন্য কোনো ব্যক্তিকে তা করতে দেন।\n\nনির্ধারক কাঠামোগত বৈশিষ্ট্য, এবং এই অপরাধকে চুরি থেকে আলাদা করার সবচেয়ে স্পষ্ট উপায়, হলো দখল কীভাবে শুরু হয়। চুরিতে, অপরাধী কারও দখল থেকে তার সম্মতি ছাড়া সম্পত্তি নেয় -- দখল কখনোই বৈধভাবে হস্তান্তরিত হয়নি। অপরাধমূলক বিশ্বাসভঙ্গে, অপরাধী ইতিমধ্যে বৈধভাবে সম্পত্তি ধারণ করেন, অথবা তার উপর কর্তৃত্ব প্রদান করা হয়েছে, কোনো বিশ্বাসের সম্পর্কের মাধ্যমে (একজন প্রতিনিধি, একজন উইল-নির্বাহক, একজন গুদাম-রক্ষক, তহবিল পরিচালনাকারী একজন কর্মচারী, ইত্যাদি হিসেবে), এবং অপরাধটি কেবল পরে উদ্ভূত হয়, যখন সেই বিশ্বাস অসৎভাবে বিশ্বাসঘাতকতা করা হয়।\n\nযেহেতু অপরাধটি বিশ্বাসের অসৎ বিশ্বাসঘাতকতার উপর নির্ভর করে, সরল বিশ্বাস একটি প্রকৃত প্রতিরক্ষা যা অপরাধটির সীমা তীক্ষ্ণ করে: যদি সম্পত্তি অর্পিত একজন ব্যক্তি তার সততার সাথে বিশ্বাস করা যা তাকে বিশ্বাসকারী ব্যক্তির সর্বোত্তম স্বার্থে তা করেন -- এমনকি যদি সেই বিশ্বাস ভুল প্রমাণিত হয়, এবং এমনকি যদি এটি ক্ষতি ঘটায় -- এটি অপরাধমূলক বিশ্বাসভঙ্গের সমান নয়, কারণ অপরাধটির জন্য প্রয়োজনীয় অসৎ উদ্দেশ্য কেবল অনুপস্থিত। অর্পিত সম্পত্তি পরিচালনায় একটি সৎ বিচারগত ত্রুটি অর্পিত বিশ্বাসের একটি অসৎ বিশ্বাসঘাতকতার মতো একই নয়।\n\nধারা ৪০৬ মূল শাস্তি নির্ধারণ করে: যেকোনো বিবরণের কারাদণ্ড যা তিন বছর পর্যন্ত বিস্তৃত হতে পারে, অথবা জরিমানা, অথবা উভয়ই -- সাধারণ চুরির ধারা ৩৭৯-এর অধীনে একই মূল সর্বোচ্চ সীমা, যদিও এই একই অধ্যায়ের পরবর্তী ধারাগুলো (৪০৬ থেকে ৪০৯) নির্দিষ্ট শ্রেণির ব্যক্তি দ্বারা সংঘটিত অপরাধমূলক বিশ্বাসভঙ্গের জন্য বর্ধিত শাস্তি প্রদান করে, যেমন বাহক, কেরানি ও ভৃত্য, এবং সরকারি কর্মচারী, ব্যাংকার, ব্যবসায়ী, বা প্রতিনিধি।",
+          "key_concepts": ["ধারা ৪০৫: অর্পণ (সম্পত্তি বা তার উপর কর্তৃত্বসহ) এরপর অসৎ আত্মসাৎ, রূপান্তর, অপব্যবহার, বা অন্যকে তা করতে দেওয়া", "চুরি থেকে কাঠামোগত পার্থক্য: প্রথমে বৈধ অর্পণ, পরে অসৎ বিশ্বাসঘাতকতা -- শুরু থেকেই সম্মতি ছাড়া গ্রহণের বিপরীতে", "সরল বিশ্বাস এই অপরাধের জন্য প্রয়োজনীয় অসততা নাকচ করে, এমনকি যদি অর্পিত ব্যক্তির বিচার ভুল প্রমাণিত হয় ও ক্ষতি ঘটায়", "ধারা ৪০৬: মূল শাস্তি ৩ বছর পর্যন্ত, অথবা জরিমানা, অথবা উভয়ই -- পরবর্তী ধারায় নির্দিষ্ট শ্রেণির ব্যক্তির জন্য বর্ধিত শাস্তিসহ"],
+          "important_rules": [
+            "ধারা ৪০৫: অপরাধমূলক বিশ্বাসভঙ্গের জন্য প্রয়োজন (ক) সম্পত্তি বা তার উপর কর্তৃত্বসহ অর্পণ, এবং (খ) অসৎ আত্মসাৎ, নিজের ব্যবহারের জন্য রূপান্তর, বিশ্বাস নিয়ন্ত্রণকারী আইনি নির্দেশনা বা চুক্তি লঙ্ঘন করে অসৎ ব্যবহার বা নিষ্পত্তি, অথবা ইচ্ছাকৃতভাবে অন্যকে তা করতে দেওয়া।",
+            "অপরাধটি বৈধ অর্পণ পূর্বানুমান করে -- এটি একটি অবৈধ প্রাথমিক গ্রহণ থেকে উদ্ভূত হয় না, যা পরিবর্তে চুরির ক্ষেত্র।",
+            "সরল বিশ্বাসে কাজ করা, সততার সাথে বিশ্বাস করা যে নিজের আচরণ বিশ্বাস প্রদানকারী ব্যক্তির স্বার্থ পূরণ করে, এই অপরাধের জন্য প্রয়োজনীয় অসৎ উদ্দেশ্য নাকচ করে, এমনকি যদি বিশ্বাসটি ভুল প্রমাণিত হয় ও ক্ষতি ঘটায়।",
+            "ধারা ৪০৬: মূল অপরাধমূলক বিশ্বাসভঙ্গ ৩ বছর পর্যন্ত কারাদণ্ড, অথবা জরিমানা, অথবা উভয় দ্বারা দণ্ডনীয়।"
+          ],
+          "definitions": [
+            { "term": "অপরাধমূলক বিশ্বাসভঙ্গ", "definition": "অপরাধী যে সম্পত্তি (বা সম্পত্তির উপর কর্তৃত্ব) বৈধভাবে অর্পিত হয়েছিলেন তার অসৎ আত্মসাৎ, রূপান্তর, বা অপব্যবহার, ধারা ৪০৫-এ সংজ্ঞায়িত -- অপরাধীর দখলের বৈধ উৎস দ্বারা চুরি থেকে পৃথক।" },
+            { "term": "অর্পণ (এই প্রসঙ্গে)", "definition": "কোনো বিশ্বাসের সম্পর্কের অধীনে একজন ব্যক্তিকে সম্পত্তি, বা সম্পত্তির উপর কর্তৃত্ব, বৈধভাবে হস্তান্তর -- একটি প্রতিনিধিত্ব, চাকরি, হেফাজত, বা অনুরূপ ব্যবস্থা -- যা এই নির্দিষ্ট অপরাধের জন্য প্রয়োজনীয় সূচনাবিন্দু।" }
+          ],
+          "examples": [
+            "ক-কে খ-এর সম্পত্তির উইল-নির্বাহক নিয়োগ করা হয় এবং এভাবে উইল অনুযায়ী বণ্টনের জন্য খ-এর সম্পত্তি অর্পিত হয়। ক পরিবর্তে সেই সম্পত্তির একটি অংশ অসৎভাবে নিজের ব্যক্তিগত ব্যবহারের জন্য আত্মসাৎ করেন, উইলের শর্তাবলির বিপরীতে। এটি অপরাধমূলক বিশ্বাসভঙ্গ: ক-এর সম্পত্তির দখল বৈধভাবে শুরু হয়েছিল, নির্বাহকত্বের অর্পণের মাধ্যমে, এবং অপরাধটি কেবল তখনই উদ্ভূত হয়েছিল যখন ক পরে তা অসৎভাবে অপব্যবহার করেন।",
+            "ক-কে খ-এর পক্ষে বিনিয়োগের জন্য তহবিল অর্পণ করা হয়, কেবল একটি নির্দিষ্ট শ্রেণির স্বল্প-ঝুঁকির সম্পদে বিনিয়োগের সুস্পষ্ট নির্দেশসহ। প্রকৃতপক্ষে সরল বিশ্বাসে বিশ্বাস করে যে একটি ভিন্ন বিনিয়োগ প্রকৃতপক্ষে খ-এর স্বার্থ ভালোভাবে পূরণ করবে, ক পরিবর্তে সেখানে তহবিল বিনিয়োগ করেন, এবং বিনিয়োগটি অর্থ হারায়। যেহেতু ক সরল বিশ্বাসে কাজ করেছেন, অসৎভাবে নয়, এটি অপরাধমূলক বিশ্বাসভঙ্গের সমান নয়, যদিও ক প্রদত্ত নির্দিষ্ট নির্দেশ থেকে বিচ্যুত হয়েছেন এবং খ-এর ক্ষতি ঘটিয়েছেন -- একটি সৎ ভুল বিচার বিশ্বাসের একটি অসৎ বিশ্বাসঘাতকতা নয়।"
+          ],
+          "exam_focus": "পরীক্ষকরা প্রায়ই সরাসরি চুরি/অপরাধমূলক-বিশ্বাসভঙ্গের পার্থক্য যাচাই করেন, এমন ঘটনাপ্রবাহ ব্যবহার করে যা কেবল অপরাধীর সম্পত্তির দখল কীভাবে শুরু হয়েছিল তাতে ভিন্ন -- অবৈধভাবে গৃহীত (চুরি) বনাম বৈধভাবে অর্পিত ও পরে অপব্যবহৃত (অপরাধমূলক বিশ্বাসভঙ্গ)। সরল-বিশ্বাস প্রতিরক্ষা দ্বিতীয় একটি সাধারণ পরীক্ষার বিষয়, কারণ শিক্ষার্থীরা কখনো কখনো মনে করেন নির্দেশ থেকে যেকোনো বিচ্যুতিই স্বয়ংক্রিয়ভাবে অসৎ।",
+          "common_traps": [
+            "কেবল সম্পত্তি অপরাধীর কাছে অন্যায্যভাবে শেষ হয়েছে এই সত্যের উপর মনোযোগ দিয়ে অপরাধমূলক বিশ্বাসভঙ্গকে চুরির সাথে গুলিয়ে ফেলা, অপরাধীর দখল কীভাবে শুরু হয়েছিল তা যাচাই না করে।",
+            "মনে করা যে অর্পণের শর্তাবলি থেকে যেকোনো বিচ্যুতি স্বয়ংক্রিয়ভাবে অসৎ -- একটি প্রকৃতপক্ষে সরল-বিশ্বাস বিচ্যুতি, এমনকি একটি ভুল যা ক্ষতি ঘটায়, এই অপরাধের জন্য প্রয়োজনীয় অসততা পূরণ করে না।",
+            "মনে করা যে অপরাধমূলক বিশ্বাসভঙ্গের জন্য অর্পিত ব্যক্তির অন্য কারও কাছ থেকে কিছু শারীরিকভাবে নেওয়া প্রয়োজন -- সম্পত্তিটি ইতিমধ্যে বৈধভাবে তাদের হাতে ছিল; অপরাধটি সেই বিশ্বাসের বিশ্বাসঘাতকতা নিয়ে, একটি গ্রহণ নিয়ে নয়।"
+          ],
+          "quick_revision": [
+            "ধারা ৪০৫ = সম্পত্তি/কর্তৃত্ব অর্পিত, এরপর অসৎভাবে আত্মসাৎ/রূপান্তর/অপব্যবহার, অথবা অন্যকে তা করতে দেওয়া।",
+            "চুরি = শুরু থেকেই অবৈধ গ্রহণ। অপরাধমূলক বিশ্বাসভঙ্গ = প্রথমে বৈধ দখল, পরে অসৎ বিশ্বাসঘাতকতা।",
+            "সরল বিশ্বাস (এমনকি ভুল হলেও, এমনকি ক্ষতি ঘটালেও) = অপরাধমূলক বিশ্বাসভঙ্গ নয় -- অসততা অনুপস্থিত।",
+            "ধারা ৪০৬ = মূল শাস্তি, ৩ বছর পর্যন্ত -- মূল চুরির (ধারা ৩৭৯) সমান সিলিং; নির্দিষ্ট শ্রেণির ব্যক্তির জন্য বর্ধিত সংস্করণ বিদ্যমান।"
+          ],
+          "key_takeaways": [
+            "এই বিষয়ের জন্য সবচেয়ে গুরুত্বপূর্ণ বিশ্লেষণাত্মক পদক্ষেপ হলো জিজ্ঞাসা করা অপরাধীর সম্পত্তির দখল কীভাবে শুরু হয়েছিল -- সেই উত্তরটিই প্রায়ই নির্ধারণ করে আপনি চুরি নাকি অপরাধমূলক বিশ্বাসভঙ্গ দেখছেন।",
+            "এই অপরাধ সুনির্দিষ্টভাবে অর্পিত সম্পর্কের অখণ্ডতা রক্ষা করে -- প্রতিনিধি, নির্বাহক, কর্মচারী, হেফাজতকারী -- চুরি যেভাবে সাধারণভাবে দখল রক্ষা করে তার পরিবর্তে।",
+            "সরল বিশ্বাস এই অপরাধের নাগালের উপর একটি প্রকৃত, বস্তুগত সীমা, একটি প্রযুক্তিগত বিষয় নয় -- অন্যের সম্পত্তি পরিচালনায় সৎ ভুল ধারা ৪০৫ দ্বারা অপরাধযোগ্য নয়।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-PENAL-S405",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Section 405 (Criminal breach of trust), including all six illustrations",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Full verbatim Bangladesh-specific text obtained via direct fetch of the primary source page during this session, confirmed genuinely Bangladeshi (not Indian) via footnotes documenting post-independence textual substitutions ('Bangladesh'/'Taka' for 'Pakistan'/'rupees'; 'Chittagong' for 'Lahore' in one illustration). An India-specific Explanation regarding provident funds, found in an Indian source during research, does NOT appear in this Bangladesh text and was correctly excluded."
+    },
+    {
+      "content_id": "LREF-PENAL-S406",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Section 406 (Punishment for criminal breach of trust)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Full verbatim Bangladesh-specific text obtained via direct fetch of the primary source page during this session."
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-CBT-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-CBT-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-18B",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S405"],
+      "exam_focus": "The core structural distinction from Theft -- how possession began.",
+      "source_basis": "Original question drawn directly from the S.405/S.378 structural contrast.",
+      "mistake_tags": ["cbt-vs-theft-possession-origin"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-CRIMINALBREACHOFTRUST-001", "BC-PENAL-THEFT-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "What is the key structural feature that distinguishes criminal breach of trust from theft?",
+          "options": { "A": "Criminal breach of trust always involves a larger sum of money than theft", "B": "In theft, possession is taken unlawfully from the start; in criminal breach of trust, the offender was lawfully entrusted with the property and later betrays that trust", "C": "Criminal breach of trust can only be committed by public servants, while theft can be committed by anyone", "D": "There is no meaningful structural distinction -- the two offences are simply alternative names for the same conduct" },
+          "explanation": "The defining structural difference is how the offender's possession of the property began: theft involves an unlawful taking from the outset, while criminal breach of trust presupposes lawful entrustment followed by a later dishonest betrayal of that trust.",
+          "why_other_options_are_wrong": { "A": "The distinction does not turn on the amount of money or value involved.", "C": "Criminal breach of trust is not limited to public servants -- enhanced punishment exists for specific categories under later sections, but the base offence under Section 405 applies generally.", "D": "The two offences have genuinely different elements and are not interchangeable labels for the same conduct." }
+        },
+        "bn": {
+          "question": "অপরাধমূলক বিশ্বাসভঙ্গকে চুরি থেকে পৃথক করে এমন মূল কাঠামোগত বৈশিষ্ট্য কী?",
+          "options": { "A": "অপরাধমূলক বিশ্বাসভঙ্গে সবসময় চুরির চেয়ে বড় অঙ্কের অর্থ জড়িত", "B": "চুরিতে, দখল শুরু থেকেই অবৈধভাবে নেওয়া হয়; অপরাধমূলক বিশ্বাসভঙ্গে, অপরাধীকে বৈধভাবে সম্পত্তি অর্পণ করা হয়েছিল এবং তিনি পরে সেই বিশ্বাসের বিশ্বাসঘাতকতা করেন", "C": "অপরাধমূলক বিশ্বাসভঙ্গ কেবল সরকারি কর্মচারীদের দ্বারা সংঘটিত হতে পারে, যেখানে চুরি যে কেউ সংঘটিত করতে পারে", "D": "কোনো অর্থপূর্ণ কাঠামোগত পার্থক্য নেই -- দুটি অপরাধ কেবল একই আচরণের বিকল্প নাম" },
+          "explanation": "নির্ধারক কাঠামোগত পার্থক্যটি হলো অপরাধীর সম্পত্তির দখল কীভাবে শুরু হয়েছিল: চুরিতে শুরু থেকেই একটি অবৈধ গ্রহণ জড়িত, যেখানে অপরাধমূলক বিশ্বাসভঙ্গ বৈধ অর্পণ পূর্বানুমান করে যা পরে সেই বিশ্বাসের একটি অসৎ বিশ্বাসঘাতকতা দ্বারা অনুসরণ করা হয়।",
+          "why_other_options_are_wrong": { "A": "পার্থক্যটি জড়িত অর্থ বা মূল্যের পরিমাণের উপর নির্ভর করে না।", "C": "অপরাধমূলক বিশ্বাসভঙ্গ সরকারি কর্মচারীদের মধ্যে সীমাবদ্ধ নয় -- পরবর্তী ধারায় নির্দিষ্ট শ্রেণির জন্য বর্ধিত শাস্তি বিদ্যমান, কিন্তু ধারা ৪০৫-এর অধীনে মূল অপরাধ সাধারণভাবে প্রযোজ্য।", "D": "দুটি অপরাধের প্রকৃতপক্ষে ভিন্ন উপাদান রয়েছে এবং একই আচরণের জন্য বিনিময়যোগ্য লেবেল নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-CBT-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-CBT-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-18B",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S405"],
+      "exam_focus": "Good faith as a genuine limit on the offence.",
+      "source_basis": "Original fact pattern testing the good-faith point.",
+      "mistake_tags": ["cbt-good-faith-negates-dishonesty"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-CRIMINALBREACHOFTRUST-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "A is entrusted with funds and instructed to invest them in a specific way. Genuinely believing, in good faith, that a different approach would better serve the interests of the person who trusted A, A invests the funds differently, and the investment loses money. Has A committed criminal breach of trust?",
+          "options": { "A": "Yes, any departure from the specific instructions given automatically satisfies Section 405", "B": "Yes, because the investment resulted in a financial loss", "C": "No, A's good faith belief that the departure served the trusting party's interest negates the dishonest intention Section 405 requires, even though the belief proved mistaken and caused loss", "D": "No, because criminal breach of trust can never apply to investment decisions" },
+          "explanation": "Because A genuinely, in good faith, believed the departure served the interests of the person who extended the trust, the dishonest intention Section 405 requires is absent -- an honest error of judgment, even one causing loss, does not amount to criminal breach of trust.",
+          "why_other_options_are_wrong": { "A": "This overstates the offence -- a genuinely good-faith departure does not automatically satisfy Section 405's dishonesty requirement.", "B": "Financial loss alone, without dishonest intention, is not sufficient for this offence.", "D": "This overstates the exclusion -- criminal breach of trust CAN apply to investment-related entrustments; the specific reason it doesn't apply here is the presence of good faith, not the subject matter." }
+        },
+        "bn": {
+          "question": "ক-কে তহবিল অর্পণ করা হয় এবং একটি নির্দিষ্ট উপায়ে তা বিনিয়োগের নির্দেশ দেওয়া হয়। প্রকৃতপক্ষে সরল বিশ্বাসে বিশ্বাস করে যে একটি ভিন্ন পদ্ধতি ক-কে যিনি বিশ্বাস করেছিলেন তার স্বার্থ ভালোভাবে পূরণ করবে, ক তহবিলটি ভিন্নভাবে বিনিয়োগ করেন, এবং বিনিয়োগটি অর্থ হারায়। ক কি অপরাধমূলক বিশ্বাসভঙ্গ করেছেন?",
+          "options": { "A": "হ্যাঁ, প্রদত্ত নির্দিষ্ট নির্দেশ থেকে যেকোনো বিচ্যুতি স্বয়ংক্রিয়ভাবে ধারা ৪০৫ পূরণ করে", "B": "হ্যাঁ, কারণ বিনিয়োগের ফলে আর্থিক ক্ষতি হয়েছে", "C": "না, বিচ্যুতিটি বিশ্বাসকারী পক্ষের স্বার্থ পূরণ করেছে এই ক-এর সরল বিশ্বাস ধারা ৪০৫ প্রয়োজনীয় অসৎ উদ্দেশ্য নাকচ করে, যদিও বিশ্বাসটি ভুল প্রমাণিত হয় ও ক্ষতি ঘটায়", "D": "না, কারণ অপরাধমূলক বিশ্বাসভঙ্গ কখনো বিনিয়োগ সিদ্ধান্তে প্রযোজ্য হতে পারে না" },
+          "explanation": "যেহেতু ক প্রকৃতপক্ষে, সরল বিশ্বাসে, বিশ্বাস করেছিলেন যে বিচ্যুতিটি বিশ্বাস প্রদানকারী ব্যক্তির স্বার্থ পূরণ করেছে, ধারা ৪০৫ প্রয়োজনীয় অসৎ উদ্দেশ্য অনুপস্থিত -- একটি সৎ বিচার ত্রুটি, এমনকি একটি যা ক্ষতি ঘটায়, অপরাধমূলক বিশ্বাসভঙ্গের সমান নয়।",
+          "why_other_options_are_wrong": { "A": "এটি অপরাধটি অতিরিক্ত বলে -- একটি প্রকৃতপক্ষে সরল-বিশ্বাস বিচ্যুতি স্বয়ংক্রিয়ভাবে ধারা ৪০৫-এর অসততার প্রয়োজনীয়তা পূরণ করে না।", "B": "কেবল আর্থিক ক্ষতি, অসৎ উদ্দেশ্য ছাড়া, এই অপরাধের জন্য যথেষ্ট নয়।", "D": "এটি বর্জনটি অতিরিক্ত বলে -- অপরাধমূলক বিশ্বাসভঙ্গ বিনিয়োগ-সম্পর্কিত অর্পণে প্রযোজ্য হতে পারে; এখানে এটি প্রযোজ্য না হওয়ার নির্দিষ্ট কারণ সরল বিশ্বাসের উপস্থিতি, বিষয়বস্তু নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-CBT-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-CBT-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-18B",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S405"],
+      "exam_focus": "The core elements of S.405 -- entrustment plus dishonest misappropriation.",
+      "source_basis": "Original question drawn directly from verbatim S.405 text.",
+      "mistake_tags": ["s405-core-elements"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-PENAL-CRIMINALBREACHOFTRUST-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Which combination of elements is required for criminal breach of trust under Section 405?",
+          "options": { "A": "Entrustment with property or dominion over it, PLUS dishonest misappropriation, conversion, or misuse of it, or wilfully permitting another to do so", "B": "Entrustment with property alone, regardless of what the entrusted person subsequently does with it", "C": "Dishonest misappropriation of property alone, regardless of how the offender originally came to possess it", "D": "A written contract of agency, without which the offence cannot arise" },
+          "explanation": "Section 405 requires both elements together: lawful entrustment with property or dominion over it, AND a subsequent dishonest misappropriation, conversion, misuse, or wilfully permitting another to do so.",
+          "why_other_options_are_wrong": { "B": "Entrustment alone, without any subsequent dishonest act, does not complete the offence.", "C": "Dishonest misappropriation alone, without lawful entrustment as the starting point, more closely resembles theft's fact pattern, not criminal breach of trust's.", "D": "Section 405 does not require a written contract of agency specifically -- entrustment can arise through various relationships, and the section itself refers to legal contracts 'express or implied'." }
+        },
+        "bn": {
+          "question": "ধারা ৪০৫-এর অধীনে অপরাধমূলক বিশ্বাসভঙ্গের জন্য কোন উপাদানের সমন্বয় প্রয়োজন?",
+          "options": { "A": "সম্পত্তি বা তার উপর কর্তৃত্বসহ অর্পণ, প্লাস তার অসৎ আত্মসাৎ, রূপান্তর, বা অপব্যবহার, অথবা ইচ্ছাকৃতভাবে অন্যকে তা করতে দেওয়া", "B": "কেবল সম্পত্তিসহ অর্পণ, অর্পিত ব্যক্তি পরবর্তীতে তা নিয়ে কী করেন তা নির্বিশেষে", "C": "কেবল সম্পত্তির অসৎ আত্মসাৎ, অপরাধী মূলত কীভাবে তা দখলে পেয়েছিলেন তা নির্বিশেষে", "D": "প্রতিনিধিত্বের একটি লিখিত চুক্তি, যা ছাড়া অপরাধটি উদ্ভূত হতে পারে না" },
+          "explanation": "ধারা ৪০৫-এর জন্য উভয় উপাদান একসাথে প্রয়োজন: সম্পত্তি বা তার উপর কর্তৃত্বসহ বৈধ অর্পণ, এবং তার পরবর্তী অসৎ আত্মসাৎ, রূপান্তর, অপব্যবহার, বা ইচ্ছাকৃতভাবে অন্যকে তা করতে দেওয়া।",
+          "why_other_options_are_wrong": { "B": "কোনো পরবর্তী অসৎ কাজ ছাড়া কেবল অর্পণ অপরাধটি সম্পূর্ণ করে না।", "C": "শুরুর বিন্দু হিসেবে বৈধ অর্পণ ছাড়া কেবল অসৎ আত্মসাৎ চুরির ঘটনাপ্রবাহের সাথে বেশি মিল রাখে, অপরাধমূলক বিশ্বাসভঙ্গের নয়।", "D": "ধারা ৪০৫-এর জন্য সুনির্দিষ্টভাবে প্রতিনিধিত্বের একটি লিখিত চুক্তি প্রয়োজন নেই -- অর্পণ বিভিন্ন সম্পর্কের মাধ্যমে উদ্ভূত হতে পারে, এবং ধারাটি নিজেই 'সুস্পষ্ট বা অন্তর্নিহিত' আইনি চুক্তির কথা উল্লেখ করে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-CBT-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-CBT-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-18B",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S406"],
+      "exam_focus": "S.406's basic punishment ceiling.",
+      "source_basis": "Original question drawn directly from verbatim S.406 text.",
+      "mistake_tags": ["s406-basic-punishment-ceiling"],
+      "revision_priority": "LOW",
+      "related_lesson_ids": ["BC-PENAL-CRIMINALBREACHOFTRUST-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 406, what is the basic maximum punishment for criminal breach of trust (before considering any enhanced-punishment provisions for specific categories of offender in later sections)?",
+          "options": { "A": "Imprisonment up to 1 year, or fine, or both", "B": "Imprisonment up to 3 years, or fine, or both", "C": "Imprisonment up to 10 years only, with no fine option", "D": "A mandatory fine only, with no possibility of imprisonment" },
+          "explanation": "Section 406 sets the basic maximum at imprisonment of either description for a term which may extend to three years, or fine, or both.",
+          "why_other_options_are_wrong": { "A": "One year understates the actual statutory maximum under Section 406.", "C": "Ten years overstates the basic Section 406 maximum, and the section does include a fine option, not just imprisonment.", "D": "Section 406 provides for imprisonment as an available punishment, not only a fine." }
+        },
+        "bn": {
+          "question": "ধারা ৪০৬-এর অধীনে, অপরাধমূলক বিশ্বাসভঙ্গের জন্য মূল সর্বোচ্চ শাস্তি কী (পরবর্তী ধারায় নির্দিষ্ট শ্রেণির অপরাধীর জন্য কোনো বর্ধিত-শাস্তি বিধান বিবেচনা করার আগে)?",
+          "options": { "A": "১ বছর পর্যন্ত কারাদণ্ড, অথবা জরিমানা, অথবা উভয়ই", "B": "৩ বছর পর্যন্ত কারাদণ্ড, অথবা জরিমানা, অথবা উভয়ই", "C": "কেবল ১০ বছর পর্যন্ত কারাদণ্ড, জরিমানার বিকল্প ছাড়া", "D": "কেবল একটি বাধ্যতামূলক জরিমানা, কারাদণ্ডের কোনো সম্ভাবনা ছাড়া" },
+          "explanation": "ধারা ৪০৬ মূল সর্বোচ্চ সীমা নির্ধারণ করে যেকোনো বিবরণের কারাদণ্ড যা তিন বছর পর্যন্ত বিস্তৃত হতে পারে, অথবা জরিমানা, অথবা উভয়ই।",
+          "why_other_options_are_wrong": { "A": "এক বছর ধারা ৪০৬-এর প্রকৃত সংবিধিবদ্ধ সর্বোচ্চ সীমা কম বলে দেখায়।", "C": "দশ বছর মূল ধারা ৪০৬ সর্বোচ্চ সীমা অতিরিক্ত বলে দেখায়, এবং ধারাটিতে একটি জরিমানার বিকল্পও অন্তর্ভুক্ত, কেবল কারাদণ্ড নয়।", "D": "ধারা ৪০৬ একটি উপলব্ধ শাস্তি হিসেবে কারাদণ্ড প্রদান করে, কেবল জরিমানা নয়।" }
+        }
+      }
+    }
+  ]
+}

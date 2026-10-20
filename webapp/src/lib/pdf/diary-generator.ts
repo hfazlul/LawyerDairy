@@ -1,5 +1,5 @@
 // Bangla-safe PDF generator using react-pdf or puppeteer
-// Uses Hind Siliguri font for correct যুক্তাক্ষর rendering.
+// Uses Noto Sans Bengali for correct যুক্তাক্ষর rendering (same family as the web UI).
 
 import PDFDocument from 'pdfkit'
 

@@ -1,0 +1,413 @@
+{
+  "batch_id": "BATCH-2026-09-HC-WRITTEN-2023-DOCX",
+  "schema_version": "1.0",
+  "content_version": "2026.09.16",
+  "created_at": "2026-09-16T00:00:00Z",
+  "source": "docx",
+  "content_source": "docx",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "User Word photos: HC Permission written 2023 (header Date: 04 March, 2023; Full Marks 25; 3 Hours; Groups A/B/C). Cover page not in the photos (starts page 2). No HC MCQ invented. No model answers.",
+  "official_past_papers": 0,
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "HC-WQ-US-2023-01",
+      "written_question_id": "HC-WQ-US-2023-01",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "docx",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_sitting": null,
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "paper_label": "HC Permission written · 04 March 2023",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "user-supplied",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "ocr_unverified, user-supplied, reproduction_prohibited_not_official_download",
+      "language_versions": {
+        "bn": {
+          "title": "বার/HC লিখিত 2023 — প্রশ্ন 1 (HC Permission written · 04 March 2023 · Group A · 8)",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nপরীক্ষা: 2023 · HC Permission written · 04 March 2023 · A · 8 নম্বর।\n\nGROUP A (CIVIL). The plaintiff filed an application in a civil suit pending before the Assistant Judge Court, Sadar, Noakhali to ascertain as to which C.S. Plots are attracted by his kabala dated 14th September, 1980 and accordingly an Advocate Commissioner was appointed, who submitted the report on 12/05/2018. The learned Assistant Judge accepted the report on 20/09/2018. Thereafter, the defendants on 23/03/2021 filed an application under section 151 of the Code of Civil Procedure, 1908 for vacating the order dated 20/09/2018 accepting the Advocate Commissioner's report of the local investigation, stating inter alia that they did not know anything about the order for local investigation, submission of the local investigation report and its acceptance by the Court and they had knowledge of the report for the first time on 18/03/2021. Learned Assistant Judge rejected the application filed under section 151 of the Code of Civil Procedure, 1908 holding the view that the order dated 20/09/2018 accepting the Advocate Commissioner's report of the local investigation being an appealable order, the application is not maintainable. The learned District Judge, Noakhali also upheld the order of the learned Assistant Judge.\n\nWhat is the remedy for the defendants? Advise the defendants as to the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. [8]",
+          "answer_outline": [
+            "কমিশন রিপোর্ট গৃহীত ২০১৮; ১৫১ দিয়ে ২০২১-এ রদ নয়",
+            "রিভিশন/পর্যালোচনা সীমিত"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "আদেশ ২৬ কমিশন; রিপোর্ট গ্রহণ মধ্যবর্তী। দুই বছর পর ১৫১-এ “জানতাম না” — যেখানে r.9 আপত্তির বিধি ছিল, ১৫১ অপব্যবহার। সহকারী জজ যদি রদ করেন সে আদেশ রিভিশনযোগ্য; যদি নামঞ্জুর করেন বিবাদীর রিভিশন দুর্বল।\nপরামর্শ বাদী: ১৫১ আবেদন খারিজ চাই — বিলম্ব, ত্রুটি ধারা ৫ নয়, কমিশনে অংশ না নিলেও গ্রহণের পর নতুন সাক্ষ্যে লড়ুন। খসড়া আপত্তি: বিধি আছে বলে ১৫১ নয়, ২৩/০৩/২০২১ তামাদি/গাফিলতি।",
+          "prep_outline": [
+            "কমিশন রিপোর্ট গৃহীত ২০১৮; ১৫১ দিয়ে ২০২১-এ রদ নয়",
+            "রিভিশন/পর্যালোচনা সীমিত"
+          ]
+        },
+        "en": {
+          "title": "Written 2023 — Q1",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nExam: 2023 · HC Permission written · 04 March 2023.\n\nGROUP A (CIVIL). The plaintiff filed an application in a civil suit pending before the Assistant Judge Court, Sadar, Noakhali to ascertain as to which C.S. Plots are attracted by his kabala dated 14th September, 1980 and accordingly an Advocate Commissioner was appointed, who submitted the report on 12/05/2018. The learned Assistant Judge accepted the report on 20/09/2018. Thereafter, the defendants on 23/03/2021 filed an application under section 151 of the Code of Civil Procedure, 1908 for vacating the order dated 20/09/2018 accepting the Advocate Commissioner's report of the local investigation, stating inter alia that they did not know anything about the order for local investigation, submission of the local investigation report and its acceptance by the Court and they had knowledge of the report for the first time on 18/03/2021. Learned Assistant Judge rejected the application filed under section 151 of the Code of Civil Procedure, 1908 holding the view that the order dated 20/09/2018 accepting the Advocate Commissioner's report of the local investigation being an appealable order, the application is not maintainable. The learned District Judge, Noakhali also upheld the order of the learned Assistant Judge.\n\nWhat is the remedy for the defendants? Advise the defendants as to the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. [8]",
+          "answer_outline": [
+            "কমিশন রিপোর্ট গৃহীত ২০১৮; ১৫১ দিয়ে ২০২১-এ রদ নয়",
+            "রিভিশন/পর্যালোচনা সীমিত"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "আদেশ ২৬ কমিশন; রিপোর্ট গ্রহণ মধ্যবর্তী। দুই বছর পর ১৫১-এ “জানতাম না” — যেখানে r.9 আপত্তির বিধি ছিল, ১৫১ অপব্যবহার। সহকারী জজ যদি রদ করেন সে আদেশ রিভিশনযোগ্য; যদি নামঞ্জুর করেন বিবাদীর রিভিশন দুর্বল।\nপরামর্শ বাদী: ১৫১ আবেদন খারিজ চাই — বিলম্ব, ত্রুটি ধারা ৫ নয়, কমিশনে অংশ না নিলেও গ্রহণের পর নতুন সাক্ষ্যে লড়ুন। খসড়া আপত্তি: বিধি আছে বলে ১৫১ নয়, ২৩/০৩/২০২১ তামাদি/গাফিলতি।"
+        }
+      },
+      "exam_date": "4 March 2023"
+    },
+    {
+      "content_id": "HC-WQ-US-2023-02",
+      "written_question_id": "HC-WQ-US-2023-02",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BJS-MOD-CONST",
+      "topic_id": "T-CONST-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "docx",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_sitting": null,
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "paper_label": "HC Permission written · 04 March 2023",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "user-supplied",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "ocr_unverified, user-supplied, reproduction_prohibited_not_official_download",
+      "language_versions": {
+        "bn": {
+          "title": "বার/HC লিখিত 2023 — প্রশ্ন 2 (HC Permission written · 04 March 2023 · Group A · 8)",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nপরীক্ষা: 2023 · HC Permission written · 04 March 2023 · A · 8 নম্বর।\n\nGROUP A (CIVIL) OR. Mr. 'X' filed a suit valued Tk. 10 Crore on 20/02/2022 in the Court of Joint District Judge, Dhaka for partition of the scheduled property along with a declaration that the judgment and decree passed in 2010 in a Partition Suit being no. 20/2008 is forged, fraudulent, collusive, void and not binding upon the plaintiff on the averments, inter alia, that the plaintiff did not contest the suit no. 20/2008 though he was shown present in the suit with false personation. The plaintiff also alleged that he had no knowledge about the decree before 20/01/2022 when the defendant threatened him to vacate the suit property. The defendant, before submitting written statement, filed an application under Order VII rule 11 of the Code of Civil Procedure, 1908 for rejection of the plaint on the grounds of limitation and res judicata. By order dated 22/02/2023 the learned Joint District Judge allowed the petition and rejected the plaint accepting the grounds described in the application and also observed that when the ultimate result of the suit is as clear as day light, such a suit should be buried at its inception so that no further time is consumed in fruitless litigation.\n\nAdvise Mr. 'X' as to the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. What would be your arguments in seeking such remedy? [8]",
+          "answer_outline": [
+            "জাল ডিক্রি ঘোষণা — পৃথক মোকদ্দমা চলে",
+            "O.7 r.11 তখনই যদি স্পষ্ট বাধা"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "১০ কোটির বাটোয়ারা+২০১০ ডিক্রি জাল/কলাসিভ ঘোষণা। বিবাদী লিখিত বর্ণনার আগে r.11। জাল ডিক্রি সত্ত্বেও প্রতারণা প্রমাণে পৃথক মোকদ্দমা চলে; r.11-এ তথ্য মেনে খারিজ নয় যদি প্রতারণার বিবরণ থাকে। মিথ্যা ব্যক্তিত্ব — ডিক্রি শূন্য।\nপরামর্শ: r.11 নামঞ্জুর; বিকল্পে প্রতারণা বিশেষভাবে আদেশ ৬ বিধি ৪। আপিল/রিভিশন যদি খারিজ হয়।",
+          "prep_outline": [
+            "জাল ডিক্রি ঘোষণা — পৃথক মোকদ্দমা চলে",
+            "O.7 r.11 তখনই যদি স্পষ্ট বাধা"
+          ]
+        },
+        "en": {
+          "title": "Written 2023 — Q2",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nExam: 2023 · HC Permission written · 04 March 2023.\n\nGROUP A (CIVIL) OR. Mr. 'X' filed a suit valued Tk. 10 Crore on 20/02/2022 in the Court of Joint District Judge, Dhaka for partition of the scheduled property along with a declaration that the judgment and decree passed in 2010 in a Partition Suit being no. 20/2008 is forged, fraudulent, collusive, void and not binding upon the plaintiff on the averments, inter alia, that the plaintiff did not contest the suit no. 20/2008 though he was shown present in the suit with false personation. The plaintiff also alleged that he had no knowledge about the decree before 20/01/2022 when the defendant threatened him to vacate the suit property. The defendant, before submitting written statement, filed an application under Order VII rule 11 of the Code of Civil Procedure, 1908 for rejection of the plaint on the grounds of limitation and res judicata. By order dated 22/02/2023 the learned Joint District Judge allowed the petition and rejected the plaint accepting the grounds described in the application and also observed that when the ultimate result of the suit is as clear as day light, such a suit should be buried at its inception so that no further time is consumed in fruitless litigation.\n\nAdvise Mr. 'X' as to the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. What would be your arguments in seeking such remedy? [8]",
+          "answer_outline": [
+            "জাল ডিক্রি ঘোষণা — পৃথক মোকদ্দমা চলে",
+            "O.7 r.11 তখনই যদি স্পষ্ট বাধা"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "১০ কোটির বাটোয়ারা+২০১০ ডিক্রি জাল/কলাসিভ ঘোষণা। বিবাদী লিখিত বর্ণনার আগে r.11। জাল ডিক্রি সত্ত্বেও প্রতারণা প্রমাণে পৃথক মোকদ্দমা চলে; r.11-এ তথ্য মেনে খারিজ নয় যদি প্রতারণার বিবরণ থাকে। মিথ্যা ব্যক্তিত্ব — ডিক্রি শূন্য।\nপরামর্শ: r.11 নামঞ্জুর; বিকল্পে প্রতারণা বিশেষভাবে আদেশ ৬ বিধি ৪। আপিল/রিভিশন যদি খারিজ হয়।"
+        }
+      },
+      "exam_date": "4 March 2023"
+    },
+    {
+      "content_id": "HC-WQ-US-2023-03",
+      "written_question_id": "HC-WQ-US-2023-03",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "docx",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_sitting": null,
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "paper_label": "HC Permission written · 04 March 2023",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "user-supplied",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "ocr_unverified, user-supplied, reproduction_prohibited_not_official_download",
+      "language_versions": {
+        "bn": {
+          "title": "বার/HC লিখিত 2023 — প্রশ্ন 3 (HC Permission written · 04 March 2023 · Group B · 8)",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nপরীক্ষা: 2023 · HC Permission written · 04 March 2023 · B · 8 নম্বর।\n\nGROUP B (CRIMINAL). Mr. 'X' lodged missing information with Shaymnagar Police Station alleging that on the night following 05/02/2022 his brother Mr. 'Y' was at the shop from where he was missing. This fact was entered as GD no. 420 dated 06/02/2022 and Sub Inspector of Police Mr. 'P' was deputed to work out the GD. The Sub Inspector of Police arrested Mr. 'A', 'B' and 'C' during inquiry on the basis of secret information that the arrestees were with Mr. 'Y' on the same date and time. 'A', 'B' and 'C' confessed their guilt and on the basis of their confession the dead body of 'Y' was recovered at their showing in presence of witnesses. Thereafter, the Sub Inspector of Police Mr. 'P' lodged the First Information Report on the allegation as aforesaid against accused 'A', 'B' and 'C'. The case was then investigated and police submitted 'charge-sheet' against 'A', 'B' and 'C' under sections 302/201/34 of the Penal Code, 1860. Thereafter, on an application filed by Mr. 'X' the learned Magistrate included Mr. 'Z' as an accused and accepted the 'charge-sheet' and sent them to the Court of Sessions to face trial. Mr. 'Z' filed an application before the learned Additional Sessions Judge for discharging him from the case. The learned Judge rejected the petitioner's prayer of discharge.\n\nSuggest Mr. 'Z' as to the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. [8]",
+          "answer_outline": [
+            "জিডি থেকে গ্রেপ্তার ও কনফেশনে মরদেহ",
+            "তদন্তকারী নিজে এফআইআর — সতর্কতা",
+            "১৬৪/২৭"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "নিখোঁজ জিডি, গোপন খবর, A,B,C গ্রেপ্তার, স্বীকারোক্তিতে মরদেহ। পরে একই এসআই এফআইআর — তদন্তের নিরপেক্ষতা প্রশ্ন। ১৬৪ ম্যাজিস্ট্রেটের কাছে স্বীকারোক্তি ও ২৭ সাক্ষ্য আইন (আবিষ্কার) গুরুত্বপূর্ণ; পুলিশের কাছে কনফেশন ২৫–২৬ বার।\nখসড়া (প্রতিরক্ষা/রাষ্ট্র দুই হতে পারে): চার্জ ৩০২/৩৪/১২০খ; জামিন কঠিন। প্রতিরক্ষা: জিডি পর্যায়ে গ্রেপ্তার ৫৪ সীমা, নির্যাতন, এফআইআর দেরি। রাষ্ট্র: ২৭+মরদেহ কর্পাস ডেলিক্টি।",
+          "prep_outline": [
+            "জিডি থেকে গ্রেপ্তার ও কনফেশনে মরদেহ",
+            "তদন্তকারী নিজে এফআইআর — সতর্কতা",
+            "১৬৪/২৭"
+          ]
+        },
+        "en": {
+          "title": "Written 2023 — Q3",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nExam: 2023 · HC Permission written · 04 March 2023.\n\nGROUP B (CRIMINAL). Mr. 'X' lodged missing information with Shaymnagar Police Station alleging that on the night following 05/02/2022 his brother Mr. 'Y' was at the shop from where he was missing. This fact was entered as GD no. 420 dated 06/02/2022 and Sub Inspector of Police Mr. 'P' was deputed to work out the GD. The Sub Inspector of Police arrested Mr. 'A', 'B' and 'C' during inquiry on the basis of secret information that the arrestees were with Mr. 'Y' on the same date and time. 'A', 'B' and 'C' confessed their guilt and on the basis of their confession the dead body of 'Y' was recovered at their showing in presence of witnesses. Thereafter, the Sub Inspector of Police Mr. 'P' lodged the First Information Report on the allegation as aforesaid against accused 'A', 'B' and 'C'. The case was then investigated and police submitted 'charge-sheet' against 'A', 'B' and 'C' under sections 302/201/34 of the Penal Code, 1860. Thereafter, on an application filed by Mr. 'X' the learned Magistrate included Mr. 'Z' as an accused and accepted the 'charge-sheet' and sent them to the Court of Sessions to face trial. Mr. 'Z' filed an application before the learned Additional Sessions Judge for discharging him from the case. The learned Judge rejected the petitioner's prayer of discharge.\n\nSuggest Mr. 'Z' as to the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. [8]",
+          "answer_outline": [
+            "জিডি থেকে গ্রেপ্তার ও কনফেশনে মরদেহ",
+            "তদন্তকারী নিজে এফআইআর — সতর্কতা",
+            "১৬৪/২৭"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "নিখোঁজ জিডি, গোপন খবর, A,B,C গ্রেপ্তার, স্বীকারোক্তিতে মরদেহ। পরে একই এসআই এফআইআর — তদন্তের নিরপেক্ষতা প্রশ্ন। ১৬৪ ম্যাজিস্ট্রেটের কাছে স্বীকারোক্তি ও ২৭ সাক্ষ্য আইন (আবিষ্কার) গুরুত্বপূর্ণ; পুলিশের কাছে কনফেশন ২৫–২৬ বার।\nখসড়া (প্রতিরক্ষা/রাষ্ট্র দুই হতে পারে): চার্জ ৩০২/৩৪/১২০খ; জামিন কঠিন। প্রতিরক্ষা: জিডি পর্যায়ে গ্রেপ্তার ৫৪ সীমা, নির্যাতন, এফআইআর দেরি। রাষ্ট্র: ২৭+মরদেহ কর্পাস ডেলিক্টি।"
+        }
+      },
+      "exam_date": "4 March 2023"
+    },
+    {
+      "content_id": "HC-WQ-US-2023-04",
+      "written_question_id": "HC-WQ-US-2023-04",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "docx",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_sitting": null,
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "paper_label": "HC Permission written · 04 March 2023",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "user-supplied",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "ocr_unverified, user-supplied, reproduction_prohibited_not_official_download",
+      "language_versions": {
+        "bn": {
+          "title": "বার/HC লিখিত 2023 — প্রশ্ন 4 (HC Permission written · 04 March 2023 · Group B · 8)",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nপরীক্ষা: 2023 · HC Permission written · 04 March 2023 · B · 8 নম্বর।\n\nGROUP B (CRIMINAL) OR. On 17/01/2022 'X', a businessman, went to a Saw Mill with some wood for splitting while 'Y' wanted to take the barks of the wood for using them as fuel in a picnic party. 'X' did not agree, whereupon 'Y' tried to take away the barks by force but became unsuccessful. After a few minutes, 'Y', 'Z' and 'A' along with 3 or 4 more persons, being armed with lathis, iron rods, knives came back to the Saw Mill and fell upon 'X'. Then 'Y' struck 'X' on his chest with an iron rod, 'Z' struck him on his chin with a knife, while 'A' caught hold of 'X'. Receiving these injuries 'X' fell down and died within a few minutes. The elder brother of 'X' lodged an Ejahar with the Police Station concerned. After investigation, police submitted 'charge-sheet' against 'Y', 'Z', 'A' and 3 more persons under sections 302/34 of the Penal Code, 1860. The Medical Officer, who held autopsy on the dead body, found 3 injuries—one incised wound on the right of the chin, one swelling with echymosis on the left side of the chest and one lacerated wound on the right side of the forehead scalp deep. In his opinion, death resulted from injury no.2 as it fractured and displaced the left 4th rib and injured the left lung. The defence case was that the death of 'X' was caused in the course of a fight between two rival groups of young persons in which they were not involved. The learned Additional Sessions Judge, upon consideration of the evidence of witnesses, rejected the defence plea and held 'Y', 'Z' and 'A' guilty of murder and convicted them under sections 302/34 of the Penal Code, 1860 and acquitted all other accused persons. He sentenced 'Y' and 'Z' to death and 'A' to imprisonment for life.\n\nSuggest 'Y', 'Z' and 'A' as to the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. [8]",
+          "answer_outline": [
+            "দলবদ্ধ আক্রমণে মৃত্যু ৩০২/৩৪/১৪৯",
+            "অস্ত্র: রড-ছুরি"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "কাঠের বাকল নিয়ে ঝগড়া, পরে Y,Z,A ও অন্যরা অস্ত্র নিয়ে ফিরে X-এর বুকে রড, চিবুকে ছুরি — পূর্বপরিকল্পনা, ৩০০। ৩৪ ও ১৪৯ দুই-ই চার্জযোগ্য। হত্যা ৩০২; ছুরি ৩২৬ সহায়ক।\nরাষ্ট্রীয় অভিমত: সাজা ৩০২/৩৪। প্রতিরক্ষা: আকস্মিক ঝগড়া ব্যতিক্রম ৪ — কিন্তু অস্ত্র নিয়ে ফিরে আসা সে দাবি কাটে।",
+          "prep_outline": [
+            "দলবদ্ধ আক্রমণে মৃত্যু ৩০২/৩৪/১৪৯",
+            "অস্ত্র: রড-ছুরি"
+          ]
+        },
+        "en": {
+          "title": "Written 2023 — Q4",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nExam: 2023 · HC Permission written · 04 March 2023.\n\nGROUP B (CRIMINAL) OR. On 17/01/2022 'X', a businessman, went to a Saw Mill with some wood for splitting while 'Y' wanted to take the barks of the wood for using them as fuel in a picnic party. 'X' did not agree, whereupon 'Y' tried to take away the barks by force but became unsuccessful. After a few minutes, 'Y', 'Z' and 'A' along with 3 or 4 more persons, being armed with lathis, iron rods, knives came back to the Saw Mill and fell upon 'X'. Then 'Y' struck 'X' on his chest with an iron rod, 'Z' struck him on his chin with a knife, while 'A' caught hold of 'X'. Receiving these injuries 'X' fell down and died within a few minutes. The elder brother of 'X' lodged an Ejahar with the Police Station concerned. After investigation, police submitted 'charge-sheet' against 'Y', 'Z', 'A' and 3 more persons under sections 302/34 of the Penal Code, 1860. The Medical Officer, who held autopsy on the dead body, found 3 injuries—one incised wound on the right of the chin, one swelling with echymosis on the left side of the chest and one lacerated wound on the right side of the forehead scalp deep. In his opinion, death resulted from injury no.2 as it fractured and displaced the left 4th rib and injured the left lung. The defence case was that the death of 'X' was caused in the course of a fight between two rival groups of young persons in which they were not involved. The learned Additional Sessions Judge, upon consideration of the evidence of witnesses, rejected the defence plea and held 'Y', 'Z' and 'A' guilty of murder and convicted them under sections 302/34 of the Penal Code, 1860 and acquitted all other accused persons. He sentenced 'Y' and 'Z' to death and 'A' to imprisonment for life.\n\nSuggest 'Y', 'Z' and 'A' as to the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. [8]",
+          "answer_outline": [
+            "দলবদ্ধ আক্রমণে মৃত্যু ৩০২/৩৪/১৪৯",
+            "অস্ত্র: রড-ছুরি"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "কাঠের বাকল নিয়ে ঝগড়া, পরে Y,Z,A ও অন্যরা অস্ত্র নিয়ে ফিরে X-এর বুকে রড, চিবুকে ছুরি — পূর্বপরিকল্পনা, ৩০০। ৩৪ ও ১৪৯ দুই-ই চার্জযোগ্য। হত্যা ৩০২; ছুরি ৩২৬ সহায়ক।\nরাষ্ট্রীয় অভিমত: সাজা ৩০২/৩৪। প্রতিরক্ষা: আকস্মিক ঝগড়া ব্যতিক্রম ৪ — কিন্তু অস্ত্র নিয়ে ফিরে আসা সে দাবি কাটে।"
+        }
+      },
+      "exam_date": "4 March 2023"
+    },
+    {
+      "content_id": "HC-WQ-US-2023-05",
+      "written_question_id": "HC-WQ-US-2023-05",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BJS-MOD-CONST",
+      "topic_id": "T-CONST-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "docx",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_sitting": null,
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "paper_label": "HC Permission written · 04 March 2023",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "user-supplied",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "ocr_unverified, user-supplied, reproduction_prohibited_not_official_download",
+      "language_versions": {
+        "bn": {
+          "title": "বার/HC লিখিত 2023 — প্রশ্ন 5 (HC Permission written · 04 March 2023 · Group C · 9)",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nপরীক্ষা: 2023 · HC Permission written · 04 March 2023 · C · 9 নম্বর।\n\nGROUP C (WRIT). Recently Global Adult Tobacco Survey (GATS) conducted by World Health Organisation (WHO), which has published its report in National Dailies on tobacco consume prevalence in Bangladesh, shows that \"35.3% (37.8 million) of adults over 15 years in Bangladesh currently use tobacco. Tobacco is the direct cause of over 1,26,000 deaths every year in Bangladesh (35.5% of all deaths from any cause). In 2020, total death was recorded as 1,61,253. Smoking-attributable health expenditure in Bangladesh is estimated to be BDT 83.9 billion annually, 76% of which was paid by tobacco users' households and 24% was financed through the public health sector budget, representing nearly 9% of total Government health expenditure in the fiscal year 2020-21.\" In view of the report Campaign for Tobacco-free Bangladesh (CTFB), a well recognised anti-tobacco NGO issued notice demanding justice to the Ministry of Health, Ministry of Commerce and Ministry of Law for complying with the obligation of Bangladesh Government to ensure constitutional right to life and public health and to observe the provisions of the WHO Framework Convention on Tobacco Control (FCTC) of which Bangladesh is a signatory and which has been ratified by the National Parliament. In a joint reply to the Notice all of these Ministries have placed counter argument that despite the fact that Bangladesh is a signatory to the WHO FCTC, the same International Instrument is not mandatory to follow for the Government of the People's Republic of Bangladesh. The Ministries have also stated that the tobacco companies are operating their business under domestic laws and regulations. Being dissatisfied with the reply of the Ministries, Campaign for Tobacco-free Bangladesh (CTFB) has approached you to take legal action under the Constitution of the People's Republic of Bangladesh.\n\nIn what manner and how will you give legal remedy? [9]",
+          "answer_outline": [
+            "তামাক জনস্বার্থ রিট",
+            "আর্ট. ১৮, ৩২, WHO"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "GATS তথ্য: তামাকে মৃত্যু ও ব্যয়। জনস্বার্থ রিট (আর্ট. ১০২) — স্বাস্থ্য ১৮, জীবন ৩২, শিশু ২৮। প্রার্থনা: সতর্কচিত্র/বিজ্ঞাপন নিয়ন্ত্রণ প্রয়োগ, পাবলিক প্লেস নিষেধ, কর/লাইসেন্স নীতি, ধূমপান ও তামাকজাত দ্রব্য ব্যবহার (নিয়ন্ত্রণ) আইন প্রয়োগের ম্যান্ডামাস। আদালত নীতিনির্ধারণীতে সতর্ক, কিন্তু আইন অমান্য হলে নির্দেশ দেয়।",
+          "prep_outline": [
+            "তামাক জনস্বার্থ রিট",
+            "আর্ট. ১৮, ৩২, WHO"
+          ]
+        },
+        "en": {
+          "title": "Written 2023 — Q5",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nExam: 2023 · HC Permission written · 04 March 2023.\n\nGROUP C (WRIT). Recently Global Adult Tobacco Survey (GATS) conducted by World Health Organisation (WHO), which has published its report in National Dailies on tobacco consume prevalence in Bangladesh, shows that \"35.3% (37.8 million) of adults over 15 years in Bangladesh currently use tobacco. Tobacco is the direct cause of over 1,26,000 deaths every year in Bangladesh (35.5% of all deaths from any cause). In 2020, total death was recorded as 1,61,253. Smoking-attributable health expenditure in Bangladesh is estimated to be BDT 83.9 billion annually, 76% of which was paid by tobacco users' households and 24% was financed through the public health sector budget, representing nearly 9% of total Government health expenditure in the fiscal year 2020-21.\" In view of the report Campaign for Tobacco-free Bangladesh (CTFB), a well recognised anti-tobacco NGO issued notice demanding justice to the Ministry of Health, Ministry of Commerce and Ministry of Law for complying with the obligation of Bangladesh Government to ensure constitutional right to life and public health and to observe the provisions of the WHO Framework Convention on Tobacco Control (FCTC) of which Bangladesh is a signatory and which has been ratified by the National Parliament. In a joint reply to the Notice all of these Ministries have placed counter argument that despite the fact that Bangladesh is a signatory to the WHO FCTC, the same International Instrument is not mandatory to follow for the Government of the People's Republic of Bangladesh. The Ministries have also stated that the tobacco companies are operating their business under domestic laws and regulations. Being dissatisfied with the reply of the Ministries, Campaign for Tobacco-free Bangladesh (CTFB) has approached you to take legal action under the Constitution of the People's Republic of Bangladesh.\n\nIn what manner and how will you give legal remedy? [9]",
+          "answer_outline": [
+            "তামাক জনস্বার্থ রিট",
+            "আর্ট. ১৮, ৩২, WHO"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "GATS তথ্য: তামাকে মৃত্যু ও ব্যয়। জনস্বার্থ রিট (আর্ট. ১০২) — স্বাস্থ্য ১৮, জীবন ৩২, শিশু ২৮। প্রার্থনা: সতর্কচিত্র/বিজ্ঞাপন নিয়ন্ত্রণ প্রয়োগ, পাবলিক প্লেস নিষেধ, কর/লাইসেন্স নীতি, ধূমপান ও তামাকজাত দ্রব্য ব্যবহার (নিয়ন্ত্রণ) আইন প্রয়োগের ম্যান্ডামাস। আদালত নীতিনির্ধারণীতে সতর্ক, কিন্তু আইন অমান্য হলে নির্দেশ দেয়।"
+        }
+      },
+      "exam_date": "4 March 2023"
+    },
+    {
+      "content_id": "HC-WQ-US-2023-06",
+      "written_question_id": "HC-WQ-US-2023-06",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "docx",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_sitting": null,
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "paper_label": "HC Permission written · 04 March 2023",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "user-supplied",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "ocr_unverified, user-supplied, reproduction_prohibited_not_official_download",
+      "language_versions": {
+        "bn": {
+          "title": "বার/HC লিখিত 2023 — প্রশ্ন 6 (HC Permission written · 04 March 2023 · Group C · 9)",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nপরীক্ষা: 2023 · HC Permission written · 04 March 2023 · C · 9 নম্বর।\n\nGROUP C (WRIT) OR. Mr. 'X', Mr. 'Y' and Mr. 'Z' with their respective symbols were participating in the election of 'C' Union Parishad which was held peacefully in all centres on 01/12/2021 except in the centres in 'A' Primary School and 'B' High School where Mr. 'X' with his followers took away ballot papers as well as seals and put the seals in Mr. 'X's ballot symbol 'pineapple'. Thus the election was seriously rigged and there was disturbance and the Presiding Officer stopped the poll as per the rules concerned. On 01/01/2022 fresh poll was held in the aforesaid two centres. Unfortunately, Mr. 'X' again caused rigging and the Police could not hold election. The Presiding Officer in collusion with Mr. 'X' counted the votes, prepared statement without taking signature of the polling agents of 'Y'. After counting the ballot papers, Mr. 'X' was declared elected Chairman by the Returning Officer. Before publication of the result Mr. 'Y' challenged the declaration of the Returning Officer declaring Mr. 'X' as an elected Chairman in the concerned Election Tribunal. The Tribunal rejected his ('Y') application and the Appellate Tribunal confirmed the order passed by the Tribunal. In both the forums Mr. 'Y' raised the question of recounting the ballot papers by way of submitting application, but in vain. Since the law concerned provides the finality of the decision of the Appellate Tribunal, Mr. 'Y' approached you to seek constitutional remedy, if any.\n\nHow do you deal with 'Y's right? Prepare a brief to be presented in the appropriate forum as per provisions of the relevant laws in this regard. [9]",
+          "answer_outline": [
+            "ইউপি নির্বাচন: ট্রাইব্যুনাল প্রথমে",
+            "রিট সীমিত — রিগিং/রিটার্নিং অফিসার"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "দুই কেন্দ্রে ব্যালট ছিনতাই, পুনর্ভোট, আবার রিগিং। স্থানীয় সরকার (ইউনিয়ন পরিষদ) আইনে নির্বাচনী ট্রাইব্যুনালই মূল ফোরাম; রিট তখনই যখন কর্তৃপক্ষ আইনবহির্ভূত/কোলাপস।\nপরামর্শ: ট্রাইব্যুনালে নির্বাচন বাতিল+পুনর্ভোট; প্রেসিডিং অফিসারের কোলাপস প্রমাণ। রিট: রিটার্নিং অফিসার/কমিশনের নিষ্ক্রিয়তায় ম্যান্ডামাস, নির্বাচন স্থগিত রাখার অন্তর্বর্তী।",
+          "prep_outline": [
+            "ইউপি নির্বাচন: ট্রাইব্যুনাল প্রথমে",
+            "রিট সীমিত — রিগিং/রিটার্নিং অফিসার"
+          ]
+        },
+        "en": {
+          "title": "Written 2023 — Q6",
+          "question": "সূত্র: ব্যবহারকারীর Word ফাইল OCR/টেক্সট (docx)। অফিসিয়াল বার কাউন্সিল/BJSC ডাউনলোড নয়। মডেল উত্তর নেই যদি না চাবি ফাইলে ছিল।\nExam: 2023 · HC Permission written · 04 March 2023.\n\nGROUP C (WRIT) OR. Mr. 'X', Mr. 'Y' and Mr. 'Z' with their respective symbols were participating in the election of 'C' Union Parishad which was held peacefully in all centres on 01/12/2021 except in the centres in 'A' Primary School and 'B' High School where Mr. 'X' with his followers took away ballot papers as well as seals and put the seals in Mr. 'X's ballot symbol 'pineapple'. Thus the election was seriously rigged and there was disturbance and the Presiding Officer stopped the poll as per the rules concerned. On 01/01/2022 fresh poll was held in the aforesaid two centres. Unfortunately, Mr. 'X' again caused rigging and the Police could not hold election. The Presiding Officer in collusion with Mr. 'X' counted the votes, prepared statement without taking signature of the polling agents of 'Y'. After counting the ballot papers, Mr. 'X' was declared elected Chairman by the Returning Officer. Before publication of the result Mr. 'Y' challenged the declaration of the Returning Officer declaring Mr. 'X' as an elected Chairman in the concerned Election Tribunal. The Tribunal rejected his ('Y') application and the Appellate Tribunal confirmed the order passed by the Tribunal. In both the forums Mr. 'Y' raised the question of recounting the ballot papers by way of submitting application, but in vain. Since the law concerned provides the finality of the decision of the Appellate Tribunal, Mr. 'Y' approached you to seek constitutional remedy, if any.\n\nHow do you deal with 'Y's right? Prepare a brief to be presented in the appropriate forum as per provisions of the relevant laws in this regard. [9]",
+          "answer_outline": [
+            "ইউপি নির্বাচন: ট্রাইব্যুনাল প্রথমে",
+            "রিট সীমিত — রিগিং/রিটার্নিং অফিসার"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "দুই কেন্দ্রে ব্যালট ছিনতাই, পুনর্ভোট, আবার রিগিং। স্থানীয় সরকার (ইউনিয়ন পরিষদ) আইনে নির্বাচনী ট্রাইব্যুনালই মূল ফোরাম; রিট তখনই যখন কর্তৃপক্ষ আইনবহির্ভূত/কোলাপস।\nপরামর্শ: ট্রাইব্যুনালে নির্বাচন বাতিল+পুনর্ভোট; প্রেসিডিং অফিসারের কোলাপস প্রমাণ। রিট: রিটার্নিং অফিসার/কমিশনের নিষ্ক্রিয়তায় ম্যান্ডামাস, নির্বাচন স্থগিত রাখার অন্তর্বর্তী।"
+        }
+      },
+      "exam_date": "4 March 2023"
+    }
+  ],
+  "exam_years": [
+    "2023"
+  ],
+  "exam_date": "2023-03-04",
+  "hc_mcq_invented": false
+}

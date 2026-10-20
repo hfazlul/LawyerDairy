@@ -1,0 +1,1086 @@
+{
+  "batch_id": "BATCH-2026-09-032-OFFICIAL-PENAL",
+  "schema_version": "1.0",
+  "content_version": "2026.09.14",
+  "created_at": "2026-09-14T00:00:00Z",
+  "source": "bdlaws.minlaw.gov.bd-official-html",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Official bdlaws English extracts for remaining PENAL syllabus topics. Interactive lesson player. No invented MCQ. Not lawyer-verified.",
+  "asset_count": 15,
+  "assets": [
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-02",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-02",
+      "topic_id": "T-PENAL-02",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.6-52A",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "General explanations",
+          "short_description": "Official bdlaws extract for S.6-52A (General explanations). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.35 on bdlaws and map it to the syllabus topic \"General explanations\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: General explanations (S.6-52A).\n\nSection 35.\nWhen such an act is criminal by reason of its being done with a criminal knowledge or intention",
+          "key_concepts": [
+            "S.6-52A",
+            "General explanations",
+            "S.35",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.35: When such an act is criminal by reason of its being done with a criminal knowledge or intention"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.35. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.35"
+          ]
+        },
+        "bn": {
+          "title": "সাধারণ ব্যাখ্যা",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.6-52A (সাধারণ ব্যাখ্যা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.35 পড়ে সিলেবাস টপিক \"সাধারণ ব্যাখ্যা\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: সাধারণ ব্যাখ্যা (S.6-52A)।\n\nSection 35.\nWhen such an act is criminal by reason of its being done with a criminal knowledge or intention",
+          "key_concepts": [
+            "S.6-52A",
+            "সাধারণ ব্যাখ্যা",
+            "S.35",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.35: When such an act is criminal by reason of its being done with a criminal knowledge or intention"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.35-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.35"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-03",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-03",
+      "topic_id": "T-PENAL-03",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.34-38",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Acts done by several persons",
+          "short_description": "Official bdlaws extract for S.34-38 (Acts done by several persons). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.35 on bdlaws and map it to the syllabus topic \"Acts done by several persons\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Acts done by several persons (S.34-38).\n\nSection 35.\nWhen such an act is criminal by reason of its being done with a criminal knowledge or intention",
+          "key_concepts": [
+            "S.34-38",
+            "Acts done by several persons",
+            "S.35",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.35: When such an act is criminal by reason of its being done with a criminal knowledge or intention"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.35. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.35"
+          ]
+        },
+        "bn": {
+          "title": "একাধিক ব্যক্তি কর্তৃক সংঘটিত কাজ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.34-38 (একাধিক ব্যক্তি কর্তৃক সংঘটিত কাজ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.35 পড়ে সিলেবাস টপিক \"একাধিক ব্যক্তি কর্তৃক সংঘটিত কাজ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: একাধিক ব্যক্তি কর্তৃক সংঘটিত কাজ (S.34-38)।\n\nSection 35.\nWhen such an act is criminal by reason of its being done with a criminal knowledge or intention",
+          "key_concepts": [
+            "S.34-38",
+            "একাধিক ব্যক্তি কর্তৃক সংঘটিত কাজ",
+            "S.35",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.35: When such an act is criminal by reason of its being done with a criminal knowledge or intention"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.35-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.35"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-05",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-05",
+      "topic_id": "T-PENAL-05",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.76-106",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "General exceptions",
+          "short_description": "Official bdlaws extract for S.76-106 (General exceptions). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.76, S.79, S.81, S.85, S.86, S.87, S.88, S.89, S.90, S.99 on bdlaws and map it to the syllabus topic \"General exceptions\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: General exceptions (S.76-106).\n\nSection 76.\nAct done by a person bound, or by mistake of fact believing himself bound, by law\n\nSection 79.\nAct done by a person justified, or by mistake of fact believing himself justified, by law\n\nSection 81.\nAct likely to cause harm, but done without criminal intent and to prevent other harm\n\nSection 85.\nAct of a person incapable of judgment by reason of intoxication caused against his will\n\nSection 86.\nOffence requiring a particular intent or knowledge committed by one who is intoxicated\n\nSection 87.\nAct not intended and not known to be likely to cause death or grievous hurt, done by consent\n\nSection 88.\nAct not intended to cause death, done by consent in good faith for person \u0019s benefit\n\nSection 89.\nAct done in good faith for benefit of child or insane person, by or by consent of guardian\n\nSection 90.\nConsent known to be given under fear or misconception\n\n Consent of insane person\n\n Consent of child\n\nSection 99.\nActs against which there is no right private defence\n\n Extent to which the right may be exercised",
+          "key_concepts": [
+            "S.76-106",
+            "General exceptions",
+            "S.76, S.79, S.81, S.85, S.86, S.87, S.88, S.89, S.90, S.99",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.76: Act done by a person bound, or by mistake of fact believing himself bound, by law",
+            "S.79: Act done by a person justified, or by mistake of fact believing himself justified, by law",
+            "S.81: Act likely to cause harm, but done without criminal intent and to prevent other harm",
+            "S.85: Act of a person incapable of judgment by reason of intoxication caused against his will",
+            "S.86: Offence requiring a particular intent or knowledge committed by one who is intoxicated",
+            "S.87: Act not intended and not known to be likely to cause death or grievous hurt, done by consent"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.76, S.79, S.81, S.85, S.86, S.87, S.88, S.89, S.90, S.99. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.76, S.79, S.81, S.85, S.86, S.87, S.88, S.89, S.90, S.99"
+          ]
+        },
+        "bn": {
+          "title": "সাধারণ ব্যতিক্রম",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.76-106 (সাধারণ ব্যতিক্রম)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.76, S.79, S.81, S.85, S.86, S.87, S.88, S.89, S.90, S.99 পড়ে সিলেবাস টপিক \"সাধারণ ব্যতিক্রম\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: সাধারণ ব্যতিক্রম (S.76-106)।\n\nSection 76.\nAct done by a person bound, or by mistake of fact believing himself bound, by law\n\nSection 79.\nAct done by a person justified, or by mistake of fact believing himself justified, by law\n\nSection 81.\nAct likely to cause harm, but done without criminal intent and to prevent other harm\n\nSection 85.\nAct of a person incapable of judgment by reason of intoxication caused against his will\n\nSection 86.\nOffence requiring a particular intent or knowledge committed by one who is intoxicated\n\nSection 87.\nAct not intended and not known to be likely to cause death or grievous hurt, done by consent\n\nSection 88.\nAct not intended to cause death, done by consent in good faith for person \u0019s benefit\n\nSection 89.\nAct done in good faith for benefit of child or insane person, by or by consent of guardian\n\nSection 90.\nConsent known to be given under fear or misconception\n\n Consent of insane person\n\n Consent of child\n\nSection 99.\nActs against which there is no right private defence\n\n Extent to which the right may be exercised",
+          "key_concepts": [
+            "S.76-106",
+            "সাধারণ ব্যতিক্রম",
+            "S.76, S.79, S.81, S.85, S.86, S.87, S.88, S.89, S.90, S.99",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.76: Act done by a person bound, or by mistake of fact believing himself bound, by law",
+            "S.79: Act done by a person justified, or by mistake of fact believing himself justified, by law",
+            "S.81: Act likely to cause harm, but done without criminal intent and to prevent other harm",
+            "S.85: Act of a person incapable of judgment by reason of intoxication caused against his will",
+            "S.86: Offence requiring a particular intent or knowledge committed by one who is intoxicated",
+            "S.87: Act not intended and not known to be likely to cause death or grievous hurt, done by consent"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.76, S.79, S.81, S.85, S.86, S.87, S.88, S.89, S.90, S.99-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.76, S.79, S.81, S.85, S.86, S.87, S.88, S.89, S.90, S.99"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-09",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-09",
+      "topic_id": "T-PENAL-09",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.121-130",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Offences against the State",
+          "short_description": "Official bdlaws extract for S.121-130 (Offences against the State). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.124, S.127, S.130 on bdlaws and map it to the syllabus topic \"Offences against the State\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Offences against the State (S.121-130).\n\nSection 124.\nAssaulting President, The Government, etc., with intent to compel or restrain the exercise of any lawful power\n\nSection 127.\nReceiving property taken by war or depredation mentioned in sections 125 and 126\n\nSection 130.\nAiding escape of, rescuing or harbouring such prisoner\n\n Chapter VII\n\n OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+          "key_concepts": [
+            "S.121-130",
+            "Offences against the State",
+            "S.124, S.127, S.130",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.124: Assaulting President, The Government, etc., with intent to compel or restrain the exercise of any lawful power",
+            "S.127: Receiving property taken by war or depredation mentioned in sections 125 and 126",
+            "S.130: Aiding escape of, rescuing or harbouring such prisoner\n\n Chapter VII\n\n OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.124, S.127, S.130. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.124, S.127, S.130"
+          ]
+        },
+        "bn": {
+          "title": "রাষ্ট্রের বিরুদ্ধে অপরাধ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.121-130 (রাষ্ট্রের বিরুদ্ধে অপরাধ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.124, S.127, S.130 পড়ে সিলেবাস টপিক \"রাষ্ট্রের বিরুদ্ধে অপরাধ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: রাষ্ট্রের বিরুদ্ধে অপরাধ (S.121-130)।\n\nSection 124.\nAssaulting President, The Government, etc., with intent to compel or restrain the exercise of any lawful power\n\nSection 127.\nReceiving property taken by war or depredation mentioned in sections 125 and 126\n\nSection 130.\nAiding escape of, rescuing or harbouring such prisoner\n\n Chapter VII\n\n OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE",
+          "key_concepts": [
+            "S.121-130",
+            "রাষ্ট্রের বিরুদ্ধে অপরাধ",
+            "S.124, S.127, S.130",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.124: Assaulting President, The Government, etc., with intent to compel or restrain the exercise of any lawful power",
+            "S.127: Receiving property taken by war or depredation mentioned in sections 125 and 126",
+            "S.130: Aiding escape of, rescuing or harbouring such prisoner\n\n Chapter VII\n\n OF OFFENCES RELATING TO THE ARMY, NAVY AND AIR FORCE"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.124, S.127, S.130-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.124, S.127, S.130"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-10",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-10",
+      "topic_id": "T-PENAL-10",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.141-160",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Offences against the public tranquility",
+          "short_description": "Official bdlaws extract for S.141-160 (Offences against the public tranquility). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.145, S.149, S.151, S.153, S.160 on bdlaws and map it to the syllabus topic \"Offences against the public tranquility\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Offences against the public tranquility (S.141-160).\n\nSection 145.\nJoining or continuing in unlawful assembly, knowing it has been commanding to disperse\n\nSection 149.\nEvery member of unlawful assembly guilty of offence committed in prosecution of common object\n\nSection 151.\nKnowingly joining or continuing in assembly of five or more persons after it has been commanded to disperse\n\nSection 153.\nWantonly giving provocation with intent to cause riot- if rioting be committed; if not committed\n\nSection 160.\nPunishment for committing affray\n\n Chapter IX\n\n OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+          "key_concepts": [
+            "S.141-160",
+            "Offences against the public tranquility",
+            "S.145, S.149, S.151, S.153, S.160",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.145: Joining or continuing in unlawful assembly, knowing it has been commanding to disperse",
+            "S.149: Every member of unlawful assembly guilty of offence committed in prosecution of common object",
+            "S.151: Knowingly joining or continuing in assembly of five or more persons after it has been commanded to disperse",
+            "S.153: Wantonly giving provocation with intent to cause riot- if rioting be committed; if not committed",
+            "S.160: Punishment for committing affray\n\n Chapter IX\n\n OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.145, S.149, S.151, S.153, S.160. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.145, S.149, S.151, S.153, S.160"
+          ]
+        },
+        "bn": {
+          "title": "জনশান্তির বিরুদ্ধে অপরাধ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.141-160 (জনশান্তির বিরুদ্ধে অপরাধ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.145, S.149, S.151, S.153, S.160 পড়ে সিলেবাস টপিক \"জনশান্তির বিরুদ্ধে অপরাধ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: জনশান্তির বিরুদ্ধে অপরাধ (S.141-160)।\n\nSection 145.\nJoining or continuing in unlawful assembly, knowing it has been commanding to disperse\n\nSection 149.\nEvery member of unlawful assembly guilty of offence committed in prosecution of common object\n\nSection 151.\nKnowingly joining or continuing in assembly of five or more persons after it has been commanded to disperse\n\nSection 153.\nWantonly giving provocation with intent to cause riot- if rioting be committed; if not committed\n\nSection 160.\nPunishment for committing affray\n\n Chapter IX\n\n OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS",
+          "key_concepts": [
+            "S.141-160",
+            "জনশান্তির বিরুদ্ধে অপরাধ",
+            "S.145, S.149, S.151, S.153, S.160",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.145: Joining or continuing in unlawful assembly, knowing it has been commanding to disperse",
+            "S.149: Every member of unlawful assembly guilty of offence committed in prosecution of common object",
+            "S.151: Knowingly joining or continuing in assembly of five or more persons after it has been commanded to disperse",
+            "S.153: Wantonly giving provocation with intent to cause riot- if rioting be committed; if not committed",
+            "S.160: Punishment for committing affray\n\n Chapter IX\n\n OF OFFENCES BY OR RELATING TO PUBLIC SERVANTS"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.145, S.149, S.151, S.153, S.160-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.145, S.149, S.151, S.153, S.160"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-11",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-11",
+      "topic_id": "T-PENAL-11",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.161-171",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Offence by or relating to public servants",
+          "short_description": "Official bdlaws extract for S.161-171 (Offence by or relating to public servants). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.161, S.162, S.164, S.165, S.171 on bdlaws and map it to the syllabus topic \"Offence by or relating to public servants\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Offence by or relating to public servants (S.161-171).\n\nSection 161.\nPublic servant taking gratification other than legal remuneration in respect of an official ac\n\nSection 162.\nTaking gratification, in order, by corrupt or illegal means, to influence public servant\n\nSection 164.\nPunishment for abetment by public servant of offences defined in section 162 or 163\n\nSection 165.\nPublic servant obtaining valuable thing, without consideration, from person concerned in proceeding or business transacted by such public servant\n\nSection 171.\nWearing garb or carrying token used by public servant with fraudulent intent\n\n 3 Chapter IXA\n\n OF OFFENCES RELATING TO ELECTIONS",
+          "key_concepts": [
+            "S.161-171",
+            "Offence by or relating to public servants",
+            "S.161, S.162, S.164, S.165, S.171",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.161: Public servant taking gratification other than legal remuneration in respect of an official ac",
+            "S.162: Taking gratification, in order, by corrupt or illegal means, to influence public servant",
+            "S.164: Punishment for abetment by public servant of offences defined in section 162 or 163",
+            "S.165: Public servant obtaining valuable thing, without consideration, from person concerned in proceeding or business transacted by such public servant",
+            "S.171: Wearing garb or carrying token used by public servant with fraudulent intent\n\n 3 Chapter IXA\n\n OF OFFENCES RELATING TO ELECTIONS"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.161, S.162, S.164, S.165, S.171. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.161, S.162, S.164, S.165, S.171"
+          ]
+        },
+        "bn": {
+          "title": "সরকারি কর্মচারী কর্তৃক বা সম্পর্কিত অপরাধ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.161-171 (সরকারি কর্মচারী কর্তৃক বা সম্পর্কিত অপরাধ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.161, S.162, S.164, S.165, S.171 পড়ে সিলেবাস টপিক \"সরকারি কর্মচারী কর্তৃক বা সম্পর্কিত অপরাধ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: সরকারি কর্মচারী কর্তৃক বা সম্পর্কিত অপরাধ (S.161-171)।\n\nSection 161.\nPublic servant taking gratification other than legal remuneration in respect of an official ac\n\nSection 162.\nTaking gratification, in order, by corrupt or illegal means, to influence public servant\n\nSection 164.\nPunishment for abetment by public servant of offences defined in section 162 or 163\n\nSection 165.\nPublic servant obtaining valuable thing, without consideration, from person concerned in proceeding or business transacted by such public servant\n\nSection 171.\nWearing garb or carrying token used by public servant with fraudulent intent\n\n 3 Chapter IXA\n\n OF OFFENCES RELATING TO ELECTIONS",
+          "key_concepts": [
+            "S.161-171",
+            "সরকারি কর্মচারী কর্তৃক বা সম্পর্কিত অপরাধ",
+            "S.161, S.162, S.164, S.165, S.171",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.161: Public servant taking gratification other than legal remuneration in respect of an official ac",
+            "S.162: Taking gratification, in order, by corrupt or illegal means, to influence public servant",
+            "S.164: Punishment for abetment by public servant of offences defined in section 162 or 163",
+            "S.165: Public servant obtaining valuable thing, without consideration, from person concerned in proceeding or business transacted by such public servant",
+            "S.171: Wearing garb or carrying token used by public servant with fraudulent intent\n\n 3 Chapter IXA\n\n OF OFFENCES RELATING TO ELECTIONS"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.161, S.162, S.164, S.165, S.171-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.161, S.162, S.164, S.165, S.171"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-12",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-12",
+      "topic_id": "T-PENAL-12",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.172-190",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Contempt of the lawful authority of public servants",
+          "short_description": "Official bdlaws extract for S.172-190 (Contempt of the lawful authority of public servants). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.173, S.175, S.176, S.181, S.182, S.183, S.185, S.190 on bdlaws and map it to the syllabus topic \"Contempt of the lawful authority of public servants\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Contempt of the lawful authority of public servants (S.172-190).\n\nSection 173.\nPreventing service of summons or other proceeding or preventing publication thereof\n\nSection 175.\nOmission to produce document to public servant by person legally bound to produce it\n\nSection 176.\nOmission to give notice or information to public servant by person legally bound to give it\n\nSection 181.\nFalse statement on oath or affirmation to public servant or person authorized to administer an oath or affirmation\n\nSection 182.\nFalse information with intent to cause public servant to use his lawful power to the injury of another person\n\nSection 183.\nResistance to the taking of property by the lawful authority of a public servant\n\nSection 185.\nIllegal purchase or bid for property offered for sale by authority of public servant\n\nSection 190.\nThreat of injury to induce person to refrain from applying for protection to public servant\n\n Chapter XI\n\n OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "key_concepts": [
+            "S.172-190",
+            "Contempt of the lawful authority of public servants",
+            "S.173, S.175, S.176, S.181, S.182, S.183, S.185, S.190",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.173: Preventing service of summons or other proceeding or preventing publication thereof",
+            "S.175: Omission to produce document to public servant by person legally bound to produce it",
+            "S.176: Omission to give notice or information to public servant by person legally bound to give it",
+            "S.181: False statement on oath or affirmation to public servant or person authorized to administer an oath or affirmation",
+            "S.182: False information with intent to cause public servant to use his lawful power to the injury of another person",
+            "S.183: Resistance to the taking of property by the lawful authority of a public servant"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.173, S.175, S.176, S.181, S.182, S.183, S.185, S.190. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.173, S.175, S.176, S.181, S.182, S.183, S.185, S.190"
+          ]
+        },
+        "bn": {
+          "title": "সরকারি কর্মচারীর বৈধ কর্তৃত্ব অবমাননা",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.172-190 (সরকারি কর্মচারীর বৈধ কর্তৃত্ব অবমাননা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.173, S.175, S.176, S.181, S.182, S.183, S.185, S.190 পড়ে সিলেবাস টপিক \"সরকারি কর্মচারীর বৈধ কর্তৃত্ব অবমাননা\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: সরকারি কর্মচারীর বৈধ কর্তৃত্ব অবমাননা (S.172-190)।\n\nSection 173.\nPreventing service of summons or other proceeding or preventing publication thereof\n\nSection 175.\nOmission to produce document to public servant by person legally bound to produce it\n\nSection 176.\nOmission to give notice or information to public servant by person legally bound to give it\n\nSection 181.\nFalse statement on oath or affirmation to public servant or person authorized to administer an oath or affirmation\n\nSection 182.\nFalse information with intent to cause public servant to use his lawful power to the injury of another person\n\nSection 183.\nResistance to the taking of property by the lawful authority of a public servant\n\nSection 185.\nIllegal purchase or bid for property offered for sale by authority of public servant\n\nSection 190.\nThreat of injury to induce person to refrain from applying for protection to public servant\n\n Chapter XI\n\n OF FALSE EVIDENCE AND OFFENCES AGAINST PUBLIC JUSTICE",
+          "key_concepts": [
+            "S.172-190",
+            "সরকারি কর্মচারীর বৈধ কর্তৃত্ব অবমাননা",
+            "S.173, S.175, S.176, S.181, S.182, S.183, S.185, S.190",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.173: Preventing service of summons or other proceeding or preventing publication thereof",
+            "S.175: Omission to produce document to public servant by person legally bound to produce it",
+            "S.176: Omission to give notice or information to public servant by person legally bound to give it",
+            "S.181: False statement on oath or affirmation to public servant or person authorized to administer an oath or affirmation",
+            "S.182: False information with intent to cause public servant to use his lawful power to the injury of another person",
+            "S.183: Resistance to the taking of property by the lawful authority of a public servant"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.173, S.175, S.176, S.181, S.182, S.183, S.185, S.190-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.173, S.175, S.176, S.181, S.182, S.183, S.185, S.190"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-13",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-13",
+      "topic_id": "T-PENAL-13",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.191-229",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "False evidence and offences against public justice",
+          "short_description": "Official bdlaws extract for S.191-229 (False evidence and offences against public justice). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.194, S.195, S.201, S.206, S.207, S.212, S.213, S.214, S.216, S.217 on bdlaws and map it to the syllabus topic \"False evidence and offences against public justice\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: False evidence and offences against public justice (S.191-229).\n\nSection 194.\nGiving or fabricating false evidence with intent to procure conviction of capital offence;\n\nif innocent person be thereby convicted and executed\n\nSection 195.\nGiving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment\n\nSection 201.\nCausing disappearance of evidence of offence, or giving false information to screen offender-\tif a capital offence;\tif punishable with imprisonment for life;\tif punishable with less than ten years \u0019 imprisonment\n\nSection 206.\nFraudulent removal or concealment of property to prevent its seizure as forfeited or in execution\n\nSection 207.\nFraudulent claim to property to prevent its seizure as forfeited or in execution\n\nSection 212.\nHarbouring offender if a capital offence; if punishable with imprisonment for life, or with imprisonment\n\nSection 213.\nTaking gift, etc., to screen an offender from punishment- if a capital offence; if punishable with imprisonment for life, or with imprisonment\n\nSection 214.\nOffering gift or restoration of property in consideration of screening offender- if a capital offence; if punishable with imprisonment for life, or with imprisonment\n\nSection 216.\nHarbouring offender who has escaped from custody or whose apprehension has been ordered- if a capital offence; if punishable with imprisonment for life, or with imprisonment\n\nSection 217.\nPublic servant disobeying direction of law with intent to save person from punishment or property from forfeiture",
+          "key_concepts": [
+            "S.191-229",
+            "False evidence and offences against public justice",
+            "S.194, S.195, S.201, S.206, S.207, S.212, S.213, S.214, S.216, S.217",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.194: Giving or fabricating false evidence with intent to procure conviction of capital offence;\n\nif innocent person be thereby convicted and executed",
+            "S.195: Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment",
+            "S.201: Causing disappearance of evidence of offence, or giving false information to screen offender-\tif a capital offence;\tif punishable with imprisonment for life;\tif punishable with less than ten years \u0019 imprisonment",
+            "S.206: Fraudulent removal or concealment of property to prevent its seizure as forfeited or in execution",
+            "S.207: Fraudulent claim to property to prevent its seizure as forfeited or in execution",
+            "S.212: Harbouring offender if a capital offence; if punishable with imprisonment for life, or with imprisonment"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.194, S.195, S.201, S.206, S.207, S.212, S.213, S.214, S.216, S.217. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.194, S.195, S.201, S.206, S.207, S.212, S.213, S.214, S.216, S.217"
+          ]
+        },
+        "bn": {
+          "title": "মিথ্যা সাক্ষ্য ও জনন্যায়ের বিরুদ্ধে অপরাধ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.191-229 (মিথ্যা সাক্ষ্য ও জনন্যায়ের বিরুদ্ধে অপরাধ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.194, S.195, S.201, S.206, S.207, S.212, S.213, S.214, S.216, S.217 পড়ে সিলেবাস টপিক \"মিথ্যা সাক্ষ্য ও জনন্যায়ের বিরুদ্ধে অপরাধ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: মিথ্যা সাক্ষ্য ও জনন্যায়ের বিরুদ্ধে অপরাধ (S.191-229)।\n\nSection 194.\nGiving or fabricating false evidence with intent to procure conviction of capital offence;\n\nif innocent person be thereby convicted and executed\n\nSection 195.\nGiving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment\n\nSection 201.\nCausing disappearance of evidence of offence, or giving false information to screen offender-\tif a capital offence;\tif punishable with imprisonment for life;\tif punishable with less than ten years \u0019 imprisonment\n\nSection 206.\nFraudulent removal or concealment of property to prevent its seizure as forfeited or in execution\n\nSection 207.\nFraudulent claim to property to prevent its seizure as forfeited or in execution\n\nSection 212.\nHarbouring offender if a capital offence; if punishable with imprisonment for life, or with imprisonment\n\nSection 213.\nTaking gift, etc., to screen an offender from punishment- if a capital offence; if punishable with imprisonment for life, or with imprisonment\n\nSection 214.\nOffering gift or restoration of property in consideration of screening offender- if a capital offence; if punishable with imprisonment for life, or with imprisonment\n\nSection 216.\nHarbouring offender who has escaped from custody or whose apprehension has been ordered- if a capital offence; if punishable with imprisonment for life, or with imprisonment\n\nSection 217.\nPublic servant disobeying direction of law with intent to save person from punishment or property from forfeiture",
+          "key_concepts": [
+            "S.191-229",
+            "মিথ্যা সাক্ষ্য ও জনন্যায়ের বিরুদ্ধে অপরাধ",
+            "S.194, S.195, S.201, S.206, S.207, S.212, S.213, S.214, S.216, S.217",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.194: Giving or fabricating false evidence with intent to procure conviction of capital offence;\n\nif innocent person be thereby convicted and executed",
+            "S.195: Giving or fabricating false evidence with intent to procure conviction of offence punishable with imprisonment for life or imprisonment",
+            "S.201: Causing disappearance of evidence of offence, or giving false information to screen offender-\tif a capital offence;\tif punishable with imprisonment for life;\tif punishable with less than ten years \u0019 imprisonment",
+            "S.206: Fraudulent removal or concealment of property to prevent its seizure as forfeited or in execution",
+            "S.207: Fraudulent claim to property to prevent its seizure as forfeited or in execution",
+            "S.212: Harbouring offender if a capital offence; if punishable with imprisonment for life, or with imprisonment"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.194, S.195, S.201, S.206, S.207, S.212, S.213, S.214, S.216, S.217-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.194, S.195, S.201, S.206, S.207, S.212, S.213, S.214, S.216, S.217"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-14",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-14",
+      "topic_id": "T-PENAL-14",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.230-263A",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Offences relating to coin and government stamps",
+          "short_description": "Official bdlaws extract for S.230-263A (Offences relating to coin and government stamps). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.235, S.241, S.242, S.243, S.244, S.247, S.248, S.249, S.252, S.253 on bdlaws and map it to the syllabus topic \"Offences relating to coin and government stamps\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Offences relating to coin and government stamps (S.230-263A).\n\nSection 235.\nPossession of instrument or material for the purpose of using the same for counterfeiting coin; if Bangladesh coin\n\nSection 241.\nDelivery of coin as genuine, which, when first possessed, the deliverer did not know to be counterfeit\n\nSection 242.\nPossession of counterfeit coin by person who knew it to be counterfeit when he became possessed thereof\n\nSection 243.\nPossession of Bangladesh coin by person who knew it to be counterfeit when he became possessed thereof\n\nSection 244.\nPerson employed in mint causing coin to be of different weight or composition from that fixed by law\n\nSection 247.\nFraudulently or dishonestly diminishing weight or altering composition of Bangladesh coin\n\nSection 248.\nAltering appearance of coin with intent that it shall pass as coin of different description\n\nSection 249.\nAltering appearance of Bangladesh coin, with intent that it shall pass as coin of different description\n\nSection 252.\nPossession of coin by person who knew it to be altered when he became possessed thereof\n\nSection 253.\nPossession of Bangladesh coin by person who knew it to be altered when he became possessed thereof",
+          "key_concepts": [
+            "S.230-263A",
+            "Offences relating to coin and government stamps",
+            "S.235, S.241, S.242, S.243, S.244, S.247, S.248, S.249, S.252, S.253",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.235: Possession of instrument or material for the purpose of using the same for counterfeiting coin; if Bangladesh coin",
+            "S.241: Delivery of coin as genuine, which, when first possessed, the deliverer did not know to be counterfeit",
+            "S.242: Possession of counterfeit coin by person who knew it to be counterfeit when he became possessed thereof",
+            "S.243: Possession of Bangladesh coin by person who knew it to be counterfeit when he became possessed thereof",
+            "S.244: Person employed in mint causing coin to be of different weight or composition from that fixed by law",
+            "S.247: Fraudulently or dishonestly diminishing weight or altering composition of Bangladesh coin"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.235, S.241, S.242, S.243, S.244, S.247, S.248, S.249, S.252, S.253. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.235, S.241, S.242, S.243, S.244, S.247, S.248, S.249, S.252, S.253"
+          ]
+        },
+        "bn": {
+          "title": "মুদ্রা ও সরকারি স্ট্যাম্প সংক্রান্ত অপরাধ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.230-263A (মুদ্রা ও সরকারি স্ট্যাম্প সংক্রান্ত অপরাধ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.235, S.241, S.242, S.243, S.244, S.247, S.248, S.249, S.252, S.253 পড়ে সিলেবাস টপিক \"মুদ্রা ও সরকারি স্ট্যাম্প সংক্রান্ত অপরাধ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: মুদ্রা ও সরকারি স্ট্যাম্প সংক্রান্ত অপরাধ (S.230-263A)।\n\nSection 235.\nPossession of instrument or material for the purpose of using the same for counterfeiting coin; if Bangladesh coin\n\nSection 241.\nDelivery of coin as genuine, which, when first possessed, the deliverer did not know to be counterfeit\n\nSection 242.\nPossession of counterfeit coin by person who knew it to be counterfeit when he became possessed thereof\n\nSection 243.\nPossession of Bangladesh coin by person who knew it to be counterfeit when he became possessed thereof\n\nSection 244.\nPerson employed in mint causing coin to be of different weight or composition from that fixed by law\n\nSection 247.\nFraudulently or dishonestly diminishing weight or altering composition of Bangladesh coin\n\nSection 248.\nAltering appearance of coin with intent that it shall pass as coin of different description\n\nSection 249.\nAltering appearance of Bangladesh coin, with intent that it shall pass as coin of different description\n\nSection 252.\nPossession of coin by person who knew it to be altered when he became possessed thereof\n\nSection 253.\nPossession of Bangladesh coin by person who knew it to be altered when he became possessed thereof",
+          "key_concepts": [
+            "S.230-263A",
+            "মুদ্রা ও সরকারি স্ট্যাম্প সংক্রান্ত অপরাধ",
+            "S.235, S.241, S.242, S.243, S.244, S.247, S.248, S.249, S.252, S.253",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.235: Possession of instrument or material for the purpose of using the same for counterfeiting coin; if Bangladesh coin",
+            "S.241: Delivery of coin as genuine, which, when first possessed, the deliverer did not know to be counterfeit",
+            "S.242: Possession of counterfeit coin by person who knew it to be counterfeit when he became possessed thereof",
+            "S.243: Possession of Bangladesh coin by person who knew it to be counterfeit when he became possessed thereof",
+            "S.244: Person employed in mint causing coin to be of different weight or composition from that fixed by law",
+            "S.247: Fraudulently or dishonestly diminishing weight or altering composition of Bangladesh coin"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.235, S.241, S.242, S.243, S.244, S.247, S.248, S.249, S.252, S.253-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.235, S.241, S.242, S.243, S.244, S.247, S.248, S.249, S.252, S.253"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-15",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-15",
+      "topic_id": "T-PENAL-15",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.264-267",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Offences relating to weights and measures",
+          "short_description": "Official bdlaws extract for S.264-267 (Offences relating to weights and measures). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.267 on bdlaws and map it to the syllabus topic \"Offences relating to weights and measures\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Offences relating to weights and measures (S.264-267).\n\nSection 267.\nMaking or selling false weight or measure\n\n Chapter XIV\n\n OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE, DECENCY AND MORALS",
+          "key_concepts": [
+            "S.264-267",
+            "Offences relating to weights and measures",
+            "S.267",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.267: Making or selling false weight or measure\n\n Chapter XIV\n\n OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE, DECENCY AND MORALS"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.267. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.267"
+          ]
+        },
+        "bn": {
+          "title": "ওজন ও পরিমাপ সংক্রান্ত অপরাধ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.264-267 (ওজন ও পরিমাপ সংক্রান্ত অপরাধ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.267 পড়ে সিলেবাস টপিক \"ওজন ও পরিমাপ সংক্রান্ত অপরাধ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: ওজন ও পরিমাপ সংক্রান্ত অপরাধ (S.264-267)।\n\nSection 267.\nMaking or selling false weight or measure\n\n Chapter XIV\n\n OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE, DECENCY AND MORALS",
+          "key_concepts": [
+            "S.264-267",
+            "ওজন ও পরিমাপ সংক্রান্ত অপরাধ",
+            "S.267",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.267: Making or selling false weight or measure\n\n Chapter XIV\n\n OF OFFENCES AFFECTING THE PUBLIC HEALTH, SAFETY, CONVENIENCE, DECENCY AND MORALS"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.267-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.267"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-19",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-19",
+      "topic_id": "T-PENAL-19",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.478-489",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Offences relating to documents and to trade or property marks",
+          "short_description": "Official bdlaws extract for S.478-489 (Offences relating to documents and to trade or property marks). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.485 on bdlaws and map it to the syllabus topic \"Offences relating to documents and to trade or property marks\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Offences relating to documents and to trade or property marks (S.478-489).\n\nSection 485.\nMaking or possession of any instrument for counterfeiting a trade mark or property mark",
+          "key_concepts": [
+            "S.478-489",
+            "Offences relating to documents and to trade or property marks",
+            "S.485",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.485: Making or possession of any instrument for counterfeiting a trade mark or property mark"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.485. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.485"
+          ]
+        },
+        "bn": {
+          "title": "দলিল ও সম্পত্তি/বাণিজ্য চিহ্ন সংক্রান্ত অপরাধ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.478-489 (দলিল ও সম্পত্তি/বাণিজ্য চিহ্ন সংক্রান্ত অপরাধ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.485 পড়ে সিলেবাস টপিক \"দলিল ও সম্পত্তি/বাণিজ্য চিহ্ন সংক্রান্ত অপরাধ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: দলিল ও সম্পত্তি/বাণিজ্য চিহ্ন সংক্রান্ত অপরাধ (S.478-489)।\n\nSection 485.\nMaking or possession of any instrument for counterfeiting a trade mark or property mark",
+          "key_concepts": [
+            "S.478-489",
+            "দলিল ও সম্পত্তি/বাণিজ্য চিহ্ন সংক্রান্ত অপরাধ",
+            "S.485",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.485: Making or possession of any instrument for counterfeiting a trade mark or property mark"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.485-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.485"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-20",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-20",
+      "topic_id": "T-PENAL-20",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.493-498",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Offences relating to marriage",
+          "short_description": "Official bdlaws extract for S.493-498 (Offences relating to marriage). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.495, S.498 on bdlaws and map it to the syllabus topic \"Offences relating to marriage\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Offences relating to marriage (S.493-498).\n\nSection 495.\nSame offence with concealment of former marriage from person with whom subsequent marriage is contracted\n\nSection 498.\nEnticing or taking away or detaining with criminal intent a married woman\n\n Chapter XXI\n\n OF DEFAMATION\n\n Imputation of truth which public good requires to be made or published",
+          "key_concepts": [
+            "S.493-498",
+            "Offences relating to marriage",
+            "S.495, S.498",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.495: Same offence with concealment of former marriage from person with whom subsequent marriage is contracted",
+            "S.498: Enticing or taking away or detaining with criminal intent a married woman\n\n Chapter XXI\n\n OF DEFAMATION\n\n Imputation of truth which public good requires to be made or published"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.495, S.498. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.495, S.498"
+          ]
+        },
+        "bn": {
+          "title": "বিবাহ সংক্রান্ত অপরাধ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.493-498 (বিবাহ সংক্রান্ত অপরাধ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.495, S.498 পড়ে সিলেবাস টপিক \"বিবাহ সংক্রান্ত অপরাধ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: বিবাহ সংক্রান্ত অপরাধ (S.493-498)।\n\nSection 495.\nSame offence with concealment of former marriage from person with whom subsequent marriage is contracted\n\nSection 498.\nEnticing or taking away or detaining with criminal intent a married woman\n\n Chapter XXI\n\n OF DEFAMATION\n\n Imputation of truth which public good requires to be made or published",
+          "key_concepts": [
+            "S.493-498",
+            "বিবাহ সংক্রান্ত অপরাধ",
+            "S.495, S.498",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.495: Same offence with concealment of former marriage from person with whom subsequent marriage is contracted",
+            "S.498: Enticing or taking away or detaining with criminal intent a married woman\n\n Chapter XXI\n\n OF DEFAMATION\n\n Imputation of truth which public good requires to be made or published"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.495, S.498-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.495, S.498"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-21",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-21",
+      "topic_id": "T-PENAL-21",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.499-502",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Defamation",
+          "short_description": "Official bdlaws extract for S.499-502 (Defamation). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.499, S.502 on bdlaws and map it to the syllabus topic \"Defamation\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Defamation (S.499-502).\n\nSection 499.\nDefamation\n\n Public conduct of public servants\n\n Conduct of any person touching any public question\n\n Publication of reports of proceedings of Courts\n\n\tAccusation preferred in good faith to authorized person\n\n\tCaution intended for good of person to whom conveyed or for public good\n\n Merits of case decided in Court, or conduct of witnesses and others concerned\n\n Merits of public performance\n\n Censure passed in good faith by person having lawful authority over another\n\n Imputation made in good faith by person for protection of his or other \u0019s interests\n\nSection 502.\nSale of printed or engraved substance containing defamatory matter\n\n Chapter XXII\n\n 4 OF CRIMINAL INTIMIDATION, INSULT, PREJUDICIAL ACT AND ANNOYANCE",
+          "key_concepts": [
+            "S.499-502",
+            "Defamation",
+            "S.499, S.502",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.499: Defamation\n\n Public conduct of public servants\n\n Conduct of any person touching any public question\n\n Publication of reports of proceedings of Courts\n\n\tAccusation preferred in good faith to authorized person\n\n\tCaution intended for good of person to whom conveyed or for public good\n\n Merits of case decided in Court, or conduct of witnesses and others concerned\n\n Merits of public performance\n\n Censure passed in good faith by person having lawful authority over another\n\n Imputation made in good faith by person for protection of his or other \u0019s interests",
+            "S.502: Sale of printed or engraved substance containing defamatory matter\n\n Chapter XXII\n\n 4 OF CRIMINAL INTIMIDATION, INSULT, PREJUDICIAL ACT AND ANNOYANCE"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.499, S.502. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.499, S.502"
+          ]
+        },
+        "bn": {
+          "title": "মানহানি",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.499-502 (মানহানি)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.499, S.502 পড়ে সিলেবাস টপিক \"মানহানি\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: মানহানি (S.499-502)।\n\nSection 499.\nDefamation\n\n Public conduct of public servants\n\n Conduct of any person touching any public question\n\n Publication of reports of proceedings of Courts\n\n\tAccusation preferred in good faith to authorized person\n\n\tCaution intended for good of person to whom conveyed or for public good\n\n Merits of case decided in Court, or conduct of witnesses and others concerned\n\n Merits of public performance\n\n Censure passed in good faith by person having lawful authority over another\n\n Imputation made in good faith by person for protection of his or other \u0019s interests\n\nSection 502.\nSale of printed or engraved substance containing defamatory matter\n\n Chapter XXII\n\n 4 OF CRIMINAL INTIMIDATION, INSULT, PREJUDICIAL ACT AND ANNOYANCE",
+          "key_concepts": [
+            "S.499-502",
+            "মানহানি",
+            "S.499, S.502",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.499: Defamation\n\n Public conduct of public servants\n\n Conduct of any person touching any public question\n\n Publication of reports of proceedings of Courts\n\n\tAccusation preferred in good faith to authorized person\n\n\tCaution intended for good of person to whom conveyed or for public good\n\n Merits of case decided in Court, or conduct of witnesses and others concerned\n\n Merits of public performance\n\n Censure passed in good faith by person having lawful authority over another\n\n Imputation made in good faith by person for protection of his or other \u0019s interests",
+            "S.502: Sale of printed or engraved substance containing defamatory matter\n\n Chapter XXII\n\n 4 OF CRIMINAL INTIMIDATION, INSULT, PREJUDICIAL ACT AND ANNOYANCE"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.499, S.502-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.499, S.502"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-22",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-22",
+      "topic_id": "T-PENAL-22",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.503-510",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Criminal intimidation",
+          "short_description": "Official bdlaws extract for S.503-510 (Criminal intimidation). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.506, S.508, S.510 on bdlaws and map it to the syllabus topic \"Criminal intimidation\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Criminal intimidation (S.503-510).\n\nSection 506.\nPunishment for criminal intimidation\n\n\tIf threat be to cause death or grievous hurt, etc.\n\nSection 508.\nAct caused by inducing person to believe that he will be rendered an object of the Divine displeasure\n\nSection 510.\nMisconduct in public by a drunken person\n\n Chapter XXIII\n\n OF ATTEMPTS TO COMMIT OFFENCES",
+          "key_concepts": [
+            "S.503-510",
+            "Criminal intimidation",
+            "S.506, S.508, S.510",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.506: Punishment for criminal intimidation\n\n\tIf threat be to cause death or grievous hurt, etc.",
+            "S.508: Act caused by inducing person to believe that he will be rendered an object of the Divine displeasure",
+            "S.510: Misconduct in public by a drunken person\n\n Chapter XXIII\n\n OF ATTEMPTS TO COMMIT OFFENCES"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.506, S.508, S.510. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.506, S.508, S.510"
+          ]
+        },
+        "bn": {
+          "title": "ফৌজদারি ভীতিপ্রদর্শন",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.503-510 (ফৌজদারি ভীতিপ্রদর্শন)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.506, S.508, S.510 পড়ে সিলেবাস টপিক \"ফৌজদারি ভীতিপ্রদর্শন\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: ফৌজদারি ভীতিপ্রদর্শন (S.503-510)।\n\nSection 506.\nPunishment for criminal intimidation\n\n\tIf threat be to cause death or grievous hurt, etc.\n\nSection 508.\nAct caused by inducing person to believe that he will be rendered an object of the Divine displeasure\n\nSection 510.\nMisconduct in public by a drunken person\n\n Chapter XXIII\n\n OF ATTEMPTS TO COMMIT OFFENCES",
+          "key_concepts": [
+            "S.503-510",
+            "ফৌজদারি ভীতিপ্রদর্শন",
+            "S.506, S.508, S.510",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.506: Punishment for criminal intimidation\n\n\tIf threat be to cause death or grievous hurt, etc.",
+            "S.508: Act caused by inducing person to believe that he will be rendered an object of the Divine displeasure",
+            "S.510: Misconduct in public by a drunken person\n\n Chapter XXIII\n\n OF ATTEMPTS TO COMMIT OFFENCES"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.506, S.508, S.510-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.506, S.508, S.510"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-PENAL-23",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-PENAL-23",
+      "topic_id": "T-PENAL-23",
+      "module_id": "BC-MOD-PENAL",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-11.html",
+      "section_or_order": "S.511",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Attempt to commit offences",
+          "short_description": "Official bdlaws extract for S.511 (Attempt to commit offences). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.511 on bdlaws and map it to the syllabus topic \"Attempt to commit offences\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-11.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Attempt to commit offences (S.511).\n\nSection 511.\nPunishment for attempting to commit offences punishable with imprisonment for life or imprisonment\n\n function onSubmit(token) {\n\n document.getElementById(\"recaptchaForm\").submit();\n\n }\n\n $(document).ready(function() {\n\n $('.test-tooltip').tooltip();\n\n // find tags and remove\n\n // remove empty p tag\n\n $('p').each(function () {\n\n var $this = $(this);\n\n if ($this.html().replace(/\\s| /g, '').length == 0)\n\n $this.remove();\n\n });\n\n $(document).on('click','.advancedSearch',function (event) {\n\n console.log(event);\n\n $('.advancedSearchForm').toggle(\"slow\");\n\n })\n\n $('[data-toggle=\"tooltip\"]').tooltip();\n\n String.prototype.bn_number = function(){\n\n var b = String (this);\n\n var c = b.replace(/0/g,'\t�')\n\n .replace(/1/g,'\t�')\n\n .replace(/2/g,'\t�')\n\n .replace(/3/g,'\t�')\n\n .replace(/4/g,'\t�')\n\n .replace(/5/g,'\t�')\n\n .replace(/6/g,'\t�')\n\n .replace(/7/g,'\t�')\n\n .replace(/8/g,'\t�')\n\n .replace(/9/g,'\t�');\n\n //console.log(c);\n\n return c;\n\n }\n\n String.prototype.en_number = function(){\n\n var b = String (this);\n\n var c = b.replace(/\t�/g,'0')\n\n .replace(/\t�/g,'1')\n\n .replace(/\t�/g,'2')\n\n .replace(/\t�/g,'3')\n\n .replace(/\t�/g,'4')\n\n .replace(/\t�/g,'5')\n\n .replace(/\t�/g,'6')\n\n .replace(/\t�/g,'7')\n\n .replace(/\t�/g,'8')\n\n .replace(/\t�/g,'9');\n\n //console.log(c);\n\n return c;\n\n }\n\n $(document).on(\"keyup\",\"[data-td-index]\",function () {\n\n var table = $(\".table-search\");\n\n var filter = [];\n\n $(this).parents(\"form\").find(\"[data-td-index]\").each(function (index){\n\n if ($(this).val().trim()!=\"\" && $(this).val()!=null){\n\n filter.push(\n\n {\n\n \"bn\": $(this).val().trim().toUpperCase().bn_number(),\n\n \"en\": $(this).val().trim().toUpperCase().en_number(),\n\n \"td\": $(this).data(\"td-index\")\n\n }\n\n )\n\n }\n\n })\n\n var trs = table.find(\"tbody tr\");\n\n $.each(trs, function (index, tr) {\n\n var rowShow = true;\n\n $.each(filter, function (ind, val){\n\n console.log(val);\n\n var td = $(tr).find(\"td\").get(val[\"td\"]);\n\n var text = $(td).text();\n\n if (text.toUpperCase().indexOf(val[\"en\"]) > -1\n\n || text.toUpperCase().indexOf(val[\"bn\"]) > -1){\n\n rowShow = rowShow && true;\n\n }else{\n\n rowShow = false;\n\n }\n\n })\n\n if (rowShow==true){\n\n $(tr).show();\n\n }else{\n\n $(tr).hide();\n\n }\n\n } )\n\n })\n\n $(document).on(\"keyup\",\"[data-search]\",function () {\n\n var searchContent = $(this).data(\"search\");\n\n var filter1 = $(this).val().trim().toUpperCase().bn_number();\n\n var filter2 = $(this).val().trim().toUpperCase().en_number();\n\n var rows = $(document).find(searchContent);\n\n // Loop through all table rows, and hide those who don't match the search query\n\n for (i = 0; i -1\n\n ||$(row).text().toUpperCase().indexOf(filter2) > -1\n\n ) {\n\n $(row).show();\n\n } else {\n\n $(row).hide();\n\n }\n\n }\n\n }\n\n })\n\n $(document).find(\".removableRowTable\").each(function (index) {\n\n console.log($(this).find(\"tbody tr\").length);\n\n $(this).find(\"tbody\").each(function () {\n\n if ($(this).find(\"tr\").length<=1){\n\n $(this).remove();\n\n }\n\n })\n\n })\n\n $(document).on(\"reset\",\"form\",function () {\n\n var table = $(\".table-search\");\n\n var tr = table.find(\"tbody tr\");\n\n // Loop through all table rows, and hide those who don't match the search query\n\n for (i = 0; i < tr.length; i++) {\n\n tr[i].style.display = \"\";\n\n }\n\n })\n\n });\n\n $(document).ready(function($) {\n\n $('body').scrollToTop({\n\n distance: 200,\n\n speed: 1000,\n\n easing: 'linear',\n\n animation: 'fade', // fade, slide, none\n\n animationSpeed: 500,\n\n mobile: {\n\n width: 768,\n\n distance: 100,\n\n speed: 1000,\n\n easing: 'easeInOutElastic',\n\n animation: 'slide',\n\n animationSpeed: 200\n\n },\n\n trigger: null, // Set a custom triggering element. Can be an HTML string or jQuery object\n\n target: null, // Set a custom target element for scrolling to. Can be element or number\n\n text: ' Top', // Text for element, can contain HTML\n\n skin: null,\n\n throttle: 250,\n\n namespace: 'scrollToTop'\n\n });\n\n });\n\n function validateForm(){\n\n var name=document.contactUsForm.name.value;\n\n var message=document.contactUsForm.message.value;\n\n var email=document.contactUsForm.email.value;\n\n if (name==null || name==\"\"){\n\n alert(\"Name can't be blank\");\n\n return false;\n\n }else if(email==null || email==\"\"){\n\n alert(\"Email can't be blank\");\n\n return false;\n\n }\n\n else if(message==null || message==\"\"){\n\n alert(\"Message can't be blank\");\n\n return false;\n\n }\n\n }\n\n /* $(document).ready(function(){\n\n loopcounter('first-counter');\n\n loopcounter('second-counter');\n\n });*/\n\n Related Links\n\n Bangladesh Government Official Web Site\n\n Legislative and Parliamentary Affairs Division\n\n Parliament Secretariat\n\n Law Commission\n\n National Human Right",
+          "key_concepts": [
+            "S.511",
+            "Attempt to commit offences",
+            "S.511",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.511: Punishment for attempting to commit offences punishable with imprisonment for life or imprisonment\n\n function onSubmit(token) {\n\n document.getElementById(\"recaptchaForm\").submit();\n\n }\n\n $(document).ready(function() {\n\n $('.test-tooltip').tooltip();\n\n // find tags and remove\n\n // remove empty p tag\n\n $('p').each(function () {\n\n var $this = $(this);\n\n if ($this.html().replace(/\\s| /g, '').length == 0)\n\n $this.remove();\n\n });\n\n $(document).on('click','.advancedSearch',function (event) {\n\n console.log(event);\n\n $('.advancedSearchForm').toggle(\"slow\");\n\n })\n\n $('[data-toggle=\"tooltip\"]').tooltip();\n\n String.prototype.bn_number = function(){\n\n var b = String (this);\n\n var c = b.replace(/0/g,'\t�')\n\n .replace(/1/g,'\t�')\n\n .replace(/2/g,'\t�')\n\n .replace(/3/g,'\t�')\n\n .replace(/4/g,'\t�')\n\n .replace(/5/g,'\t�')\n\n .replace(/6/g,'\t�')\n\n .replace(/7/g,'\t�')\n\n .replace(/8/g,'\t�')\n\n .replace(/9/g,'\t�');\n\n //console.log(c);\n\n return c;\n\n }\n\n String.prototype.en_number = function(){\n\n var b = String (this);\n\n var c = b.replace(/\t�/g,'0')\n\n .replace(/\t�/g,'1')\n\n .replace(/\t�/g,'2')\n\n .replace(/\t�/g,'3')\n\n .replace(/\t�/g,'4')\n\n .replace(/\t�/g,'5')\n\n .replace(/\t�/g,'6')\n\n .replace(/\t�/g,'7')\n\n .replace(/\t�/g,'8')\n\n .replace(/\t�/g,'9');\n\n //console.log(c);\n\n return c;\n\n }\n\n $(document).on(\"keyup\",\"[data-td-index]\",function () {\n\n var table = $(\".table-search\");\n\n var filter = [];\n\n $(this).parents(\"form\").find(\"[data-td-index]\").each(function (index){\n\n if ($(this).val().trim()!=\"\" && $(this).val()!=null){\n\n filter.push(\n\n {\n\n \"bn\": $(this).val().trim().toUpperCase().bn_number(),\n\n \"en\": $(this).val().trim().toUpperCase().en_number(),\n\n \"td\": $(this).data(\"td-index\")\n\n }\n\n )\n\n }\n\n })\n\n var trs = table.find(\"tbody tr\");\n\n $.each(trs, function (index, tr) {\n\n var rowShow = true;\n\n $.each(filter, function (ind, val){\n\n console.log(val);\n\n var td = $(tr).find(\"td\").get(val[\"td\"]);\n\n var text = $(td).text();\n\n if (text.toUpperCase().indexOf(val[\"en\"]) > -1\n\n || text.toUpperCase().indexOf(val[\"bn\"]) > -1){\n\n rowShow = rowShow && true;\n\n }else{\n\n rowShow = false;\n\n }\n\n })\n\n if (rowShow==true){\n\n $(tr).show();\n\n }else{\n\n $(tr).hide();\n\n }\n\n } )\n\n })\n\n $(document).on(\"keyup\",\"[data-search]\",function () {\n\n var searchContent = $(this).data(\"search\");\n\n var filter1 = $(this).val().trim().toUpperCase().bn_number();\n\n var filter2 = $(this).val().trim().toUpperCase().en_number();\n\n var rows = $(document).find(searchContent);\n\n // Loop through all table rows, and hide those who don't match the search query\n\n for (i = 0; i -1\n\n ||$(row).text().toUpperCase().indexOf(filter2) > -1\n\n ) {\n\n $(row).show();\n\n } else {\n\n $(row).hide();\n\n }\n\n }\n\n }\n\n })\n\n $(document).find(\".removableRowTable\").each(function (index) {\n\n console.log($(this).find(\"tbody tr\").length);\n\n $(this).find(\"tbody\").each(function () {\n\n if ($(this).find(\"tr\").length<=1){\n\n $(this).remove();\n\n }\n\n })\n\n })\n\n $(document).on(\"reset\",\"form\",function () {\n\n var table = $(\".table-search\");\n\n var tr = table.find(\"tbody tr\");\n\n // Loop through all table rows, and hide those who don't match the search query\n\n for (i = 0; i < tr.length; i++) {\n\n tr[i].style.display = \"\";\n\n }\n\n })\n\n });\n\n $(document).ready(function($) {\n\n $('body').scrollToTop({\n\n distance: 200,\n\n speed: 1000,\n\n easing: 'linear',\n\n animation: 'fade', // fade, slide, none\n\n animationSpeed: 500,\n\n mobile: {\n\n width: 768,\n\n distance: 100,\n\n speed: 1000,\n\n easing: 'easeInOutElastic',\n\n animation: 'slide',\n\n animationSpeed: 200\n\n },\n\n trigger: null, // Set a custom triggering element."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-11.html and note the ingredients of S.511. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "Quoted: S.511"
+          ]
+        },
+        "bn": {
+          "title": "অপরাধ সংঘটনের চেষ্টা",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.511 (অপরাধ সংঘটনের চেষ্টা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.511 পড়ে সিলেবাস টপিক \"অপরাধ সংঘটনের চেষ্টা\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-11.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: অপরাধ সংঘটনের চেষ্টা (S.511)।\n\nSection 511.\nPunishment for attempting to commit offences punishable with imprisonment for life or imprisonment\n\n function onSubmit(token) {\n\n document.getElementById(\"recaptchaForm\").submit();\n\n }\n\n $(document).ready(function() {\n\n $('.test-tooltip').tooltip();\n\n // find tags and remove\n\n // remove empty p tag\n\n $('p').each(function () {\n\n var $this = $(this);\n\n if ($this.html().replace(/\\s| /g, '').length == 0)\n\n $this.remove();\n\n });\n\n $(document).on('click','.advancedSearch',function (event) {\n\n console.log(event);\n\n $('.advancedSearchForm').toggle(\"slow\");\n\n })\n\n $('[data-toggle=\"tooltip\"]').tooltip();\n\n String.prototype.bn_number = function(){\n\n var b = String (this);\n\n var c = b.replace(/0/g,'\t�')\n\n .replace(/1/g,'\t�')\n\n .replace(/2/g,'\t�')\n\n .replace(/3/g,'\t�')\n\n .replace(/4/g,'\t�')\n\n .replace(/5/g,'\t�')\n\n .replace(/6/g,'\t�')\n\n .replace(/7/g,'\t�')\n\n .replace(/8/g,'\t�')\n\n .replace(/9/g,'\t�');\n\n //console.log(c);\n\n return c;\n\n }\n\n String.prototype.en_number = function(){\n\n var b = String (this);\n\n var c = b.replace(/\t�/g,'0')\n\n .replace(/\t�/g,'1')\n\n .replace(/\t�/g,'2')\n\n .replace(/\t�/g,'3')\n\n .replace(/\t�/g,'4')\n\n .replace(/\t�/g,'5')\n\n .replace(/\t�/g,'6')\n\n .replace(/\t�/g,'7')\n\n .replace(/\t�/g,'8')\n\n .replace(/\t�/g,'9');\n\n //console.log(c);\n\n return c;\n\n }\n\n $(document).on(\"keyup\",\"[data-td-index]\",function () {\n\n var table = $(\".table-search\");\n\n var filter = [];\n\n $(this).parents(\"form\").find(\"[data-td-index]\").each(function (index){\n\n if ($(this).val().trim()!=\"\" && $(this).val()!=null){\n\n filter.push(\n\n {\n\n \"bn\": $(this).val().trim().toUpperCase().bn_number(),\n\n \"en\": $(this).val().trim().toUpperCase().en_number(),\n\n \"td\": $(this).data(\"td-index\")\n\n }\n\n )\n\n }\n\n })\n\n var trs = table.find(\"tbody tr\");\n\n $.each(trs, function (index, tr) {\n\n var rowShow = true;\n\n $.each(filter, function (ind, val){\n\n console.log(val);\n\n var td = $(tr).find(\"td\").get(val[\"td\"]);\n\n var text = $(td).text();\n\n if (text.toUpperCase().indexOf(val[\"en\"]) > -1\n\n || text.toUpperCase().indexOf(val[\"bn\"]) > -1){\n\n rowShow = rowShow && true;\n\n }else{\n\n rowShow = false;\n\n }\n\n })\n\n if (rowShow==true){\n\n $(tr).show();\n\n }else{\n\n $(tr).hide();\n\n }\n\n } )\n\n })\n\n $(document).on(\"keyup\",\"[data-search]\",function () {\n\n var searchContent = $(this).data(\"search\");\n\n var filter1 = $(this).val().trim().toUpperCase().bn_number();\n\n var filter2 = $(this).val().trim().toUpperCase().en_number();\n\n var rows = $(document).find(searchContent);\n\n // Loop through all table rows, and hide those who don't match the search query\n\n for (i = 0; i -1\n\n ||$(row).text().toUpperCase().indexOf(filter2) > -1\n\n ) {\n\n $(row).show();\n\n } else {\n\n $(row).hide();\n\n }\n\n }\n\n }\n\n })\n\n $(document).find(\".removableRowTable\").each(function (index) {\n\n console.log($(this).find(\"tbody tr\").length);\n\n $(this).find(\"tbody\").each(function () {\n\n if ($(this).find(\"tr\").length<=1){\n\n $(this).remove();\n\n }\n\n })\n\n })\n\n $(document).on(\"reset\",\"form\",function () {\n\n var table = $(\".table-search\");\n\n var tr = table.find(\"tbody tr\");\n\n // Loop through all table rows, and hide those who don't match the search query\n\n for (i = 0; i < tr.length; i++) {\n\n tr[i].style.display = \"\";\n\n }\n\n })\n\n });\n\n $(document).ready(function($) {\n\n $('body').scrollToTop({\n\n distance: 200,\n\n speed: 1000,\n\n easing: 'linear',\n\n animation: 'fade', // fade, slide, none\n\n animationSpeed: 500,\n\n mobile: {\n\n width: 768,\n\n distance: 100,\n\n speed: 1000,\n\n easing: 'easeInOutElastic',\n\n animation: 'slide',\n\n animationSpeed: 200\n\n },\n\n trigger: null, // Set a custom triggering element. Can be an HTML string or jQuery object\n\n target: null, // Set a custom target element for scrolling to. Can be element or number\n\n text: ' Top', // Text for element, can contain HTML\n\n skin: null,\n\n throttle: 250,\n\n namespace: 'scrollToTop'\n\n });\n\n });\n\n function validateForm(){\n\n var name=document.contactUsForm.name.value;\n\n var message=document.contactUsForm.message.value;\n\n var email=document.contactUsForm.email.value;\n\n if (name==null || name==\"\"){\n\n alert(\"Name can't be blank\");\n\n return false;\n\n }else if(email==null || email==\"\"){\n\n alert(\"Email can't be blank\");\n\n return false;\n\n }\n\n else if(message==null || message==\"\"){\n\n alert(\"Message can't be blank\");\n\n return false;\n\n }\n\n }\n\n /* $(document).ready(function(){\n\n loopcounter('first-counter');\n\n loopcounter('second-counter');\n\n });*/\n\n Related Links\n\n Bangladesh Government Official Web Site\n\n Legislative and Parliamentary Affairs Division\n\n Parliament Secretariat\n\n Law Commission\n\n National Human Right",
+          "key_concepts": [
+            "S.511",
+            "অপরাধ সংঘটনের চেষ্টা",
+            "S.511",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.511: Punishment for attempting to commit offences punishable with imprisonment for life or imprisonment\n\n function onSubmit(token) {\n\n document.getElementById(\"recaptchaForm\").submit();\n\n }\n\n $(document).ready(function() {\n\n $('.test-tooltip').tooltip();\n\n // find tags and remove\n\n // remove empty p tag\n\n $('p').each(function () {\n\n var $this = $(this);\n\n if ($this.html().replace(/\\s| /g, '').length == 0)\n\n $this.remove();\n\n });\n\n $(document).on('click','.advancedSearch',function (event) {\n\n console.log(event);\n\n $('.advancedSearchForm').toggle(\"slow\");\n\n })\n\n $('[data-toggle=\"tooltip\"]').tooltip();\n\n String.prototype.bn_number = function(){\n\n var b = String (this);\n\n var c = b.replace(/0/g,'\t�')\n\n .replace(/1/g,'\t�')\n\n .replace(/2/g,'\t�')\n\n .replace(/3/g,'\t�')\n\n .replace(/4/g,'\t�')\n\n .replace(/5/g,'\t�')\n\n .replace(/6/g,'\t�')\n\n .replace(/7/g,'\t�')\n\n .replace(/8/g,'\t�')\n\n .replace(/9/g,'\t�');\n\n //console.log(c);\n\n return c;\n\n }\n\n String.prototype.en_number = function(){\n\n var b = String (this);\n\n var c = b.replace(/\t�/g,'0')\n\n .replace(/\t�/g,'1')\n\n .replace(/\t�/g,'2')\n\n .replace(/\t�/g,'3')\n\n .replace(/\t�/g,'4')\n\n .replace(/\t�/g,'5')\n\n .replace(/\t�/g,'6')\n\n .replace(/\t�/g,'7')\n\n .replace(/\t�/g,'8')\n\n .replace(/\t�/g,'9');\n\n //console.log(c);\n\n return c;\n\n }\n\n $(document).on(\"keyup\",\"[data-td-index]\",function () {\n\n var table = $(\".table-search\");\n\n var filter = [];\n\n $(this).parents(\"form\").find(\"[data-td-index]\").each(function (index){\n\n if ($(this).val().trim()!=\"\" && $(this).val()!=null){\n\n filter.push(\n\n {\n\n \"bn\": $(this).val().trim().toUpperCase().bn_number(),\n\n \"en\": $(this).val().trim().toUpperCase().en_number(),\n\n \"td\": $(this).data(\"td-index\")\n\n }\n\n )\n\n }\n\n })\n\n var trs = table.find(\"tbody tr\");\n\n $.each(trs, function (index, tr) {\n\n var rowShow = true;\n\n $.each(filter, function (ind, val){\n\n console.log(val);\n\n var td = $(tr).find(\"td\").get(val[\"td\"]);\n\n var text = $(td).text();\n\n if (text.toUpperCase().indexOf(val[\"en\"]) > -1\n\n || text.toUpperCase().indexOf(val[\"bn\"]) > -1){\n\n rowShow = rowShow && true;\n\n }else{\n\n rowShow = false;\n\n }\n\n })\n\n if (rowShow==true){\n\n $(tr).show();\n\n }else{\n\n $(tr).hide();\n\n }\n\n } )\n\n })\n\n $(document).on(\"keyup\",\"[data-search]\",function () {\n\n var searchContent = $(this).data(\"search\");\n\n var filter1 = $(this).val().trim().toUpperCase().bn_number();\n\n var filter2 = $(this).val().trim().toUpperCase().en_number();\n\n var rows = $(document).find(searchContent);\n\n // Loop through all table rows, and hide those who don't match the search query\n\n for (i = 0; i -1\n\n ||$(row).text().toUpperCase().indexOf(filter2) > -1\n\n ) {\n\n $(row).show();\n\n } else {\n\n $(row).hide();\n\n }\n\n }\n\n }\n\n })\n\n $(document).find(\".removableRowTable\").each(function (index) {\n\n console.log($(this).find(\"tbody tr\").length);\n\n $(this).find(\"tbody\").each(function () {\n\n if ($(this).find(\"tr\").length<=1){\n\n $(this).remove();\n\n }\n\n })\n\n })\n\n $(document).on(\"reset\",\"form\",function () {\n\n var table = $(\".table-search\");\n\n var tr = table.find(\"tbody tr\");\n\n // Loop through all table rows, and hide those who don't match the search query\n\n for (i = 0; i < tr.length; i++) {\n\n tr[i].style.display = \"\";\n\n }\n\n })\n\n });\n\n $(document).ready(function($) {\n\n $('body').scrollToTop({\n\n distance: 200,\n\n speed: 1000,\n\n easing: 'linear',\n\n animation: 'fade', // fade, slide, none\n\n animationSpeed: 500,\n\n mobile: {\n\n width: 768,\n\n distance: 100,\n\n speed: 1000,\n\n easing: 'easeInOutElastic',\n\n animation: 'slide',\n\n animationSpeed: 200\n\n },\n\n trigger: null, // Set a custom triggering element."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-11.html খুলে S.511-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-11.html",
+            "উদ্ধৃত: S.511"
+          ]
+        }
+      }
+    }
+  ]
+}

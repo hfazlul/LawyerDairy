@@ -2,15 +2,14 @@ import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { prisma } from '@/lib/prisma'
 import { requireAuth } from '@/lib/auth-middleware'
-import { isJurisdiction, isUiLanguage, JURISDICTION_META } from '@/lib/jurisdiction'
+import { isUiLanguage, JURISDICTION_META } from '@/lib/jurisdiction'
 
 const schema = z.object({
-  jurisdiction: z.enum(['BD', 'PK', 'IN']).optional(),
-  uiLanguage: z.enum(['bn', 'en', 'ur']).optional(),
-  confirmJurisdiction: z.boolean().optional(),
+  uiLanguage: z.enum(['bn', 'en']).optional(),
 })
 
-/** Update chamber jurisdiction + user UI language (user must confirm; no silent switch). */
+const BD_META = JURISDICTION_META['BD']
+
 export async function PATCH(req: NextRequest) {
   const user = await requireAuth(req)
   if (!user) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
@@ -22,22 +21,8 @@ export async function PATCH(req: NextRequest) {
     return NextResponse.json({ message: 'Invalid input' }, { status: 400 })
   }
 
-  if (body.jurisdiction && !isJurisdiction(body.jurisdiction)) {
-    return NextResponse.json({ message: 'Invalid jurisdiction' }, { status: 400 })
-  }
   if (body.uiLanguage && !isUiLanguage(body.uiLanguage)) {
     return NextResponse.json({ message: 'Invalid language' }, { status: 400 })
-  }
-
-  if (body.jurisdiction || body.confirmJurisdiction) {
-    await prisma.chamber.update({
-      where: { id: user.chamberId },
-      data: {
-        ...(body.jurisdiction ? { jurisdiction: body.jurisdiction } : {}),
-        jurisdictionConfirmed:
-          body.confirmJurisdiction === true || Boolean(body.jurisdiction),
-      },
-    })
   }
 
   if (body.uiLanguage) {
@@ -47,31 +32,22 @@ export async function PATCH(req: NextRequest) {
     })
   }
 
-  const refreshed = await prisma.user.findUnique({
-    where: { id: user.id },
-    include: { chamber: true },
-  })
-  const j = refreshed!.chamber.jurisdiction
-  const meta = JURISDICTION_META[j]
-
+  const refreshed = await prisma.user.findUnique({ where: { id: user.id } })
   return NextResponse.json({
-    jurisdiction: j,
-    jurisdictionConfirmed: refreshed!.chamber.jurisdictionConfirmed,
+    jurisdiction: 'BD',
     uiLanguage: refreshed!.uiLanguage,
-    country: { name: meta.nameEn, flag: meta.flag },
-    paymentRail: meta.paymentRail,
+    country: { name: BD_META.nameEn, flag: BD_META.flag },
+    paymentRail: 'zinipay_web',
   })
 }
 
 export async function GET(req: NextRequest) {
   const user = await requireAuth(req)
   if (!user) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
-  const meta = JURISDICTION_META[user.chamber.jurisdiction]
   return NextResponse.json({
-    jurisdiction: user.chamber.jurisdiction,
-    jurisdictionConfirmed: user.chamber.jurisdictionConfirmed,
+    jurisdiction: 'BD',
     uiLanguage: user.uiLanguage,
-    country: { name: meta.nameEn, flag: meta.flag },
-    paymentRail: meta.paymentRail,
+    country: { name: BD_META.nameEn, flag: BD_META.flag },
+    paymentRail: 'zinipay_web',
   })
 }

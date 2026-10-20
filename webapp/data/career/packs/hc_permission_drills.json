@@ -1,0 +1,699 @@
+{
+  "schema_version": "1.0",
+  "dataset_id": "HC_PERMISSION_OFFICIAL_DRILLS",
+  "status": "PENDING_REVIEW",
+  "official_past_papers": 0,
+  "practice_items": 16,
+  "note": "অফিসিয়াল বিগত পেপার 0; ইন্টারঅ্যাকটিভ প্রশ্নব্যাংক = user JSON Bar items + these statute drills. Not Exam 2012.",
+  "fetched": "2026-09-14",
+  "assets": [
+    {
+      "content_id": "HC-DRILL-ART94",
+      "asset_type": "LESSON",
+      "section_id": "SEC-START",
+      "module_id": "SEC-START",
+      "topic_id": "HC-DRILL-ART94",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "source": "bdlaws.minlaw.gov.bd",
+      "fetched": "2026-09-14",
+      "language_versions": {
+        "en": {
+          "title": "Constitution Art. 94 — Supreme Court structure",
+          "short_description": "Official extract Constitution Art. 94. Practice drill — not a past paper.",
+          "learning_objective": "Read the official wording of Constitution Art. 94 and map it to High Court Permission practice.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en (retrieved 2026-09-14). Not lawyer-verified.\n\n94. (1) There shall be a Supreme Court for Bangladesh (to be known as the Supreme Court of Bangladesh) comprising the Appellate Division and the High Court Division. (2) The Supreme Court shall consist of the Chief Justice, to be known as the Chief Justice of Bangladesh, and such number of other Judges as the President may deem it necessary to appoint to each division. (3) The Chief Justice, and the Judges appointed to the Appellate Division, shall sit only in that division, and the other Judges shall sit only in the High Court Division. (4) Subject to the provisions of this Constitution the Chief Justice and the other Judges shall be independent in the exercise of their judicial functions. Appointment of Judges",
+          "key_concepts": [
+            "Constitution Art. 94",
+            "High Court Division",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "Art. 94(1): one Supreme Court comprising Appellate Division and High Court Division.",
+            "Judges of each division sit only in that division."
+          ],
+          "exam_focus": "Anushilon drill from official statute text. Not labelled as any exam year.",
+          "key_takeaways": [
+            "This card quotes official public law. It is not a 2012–2025 question paper.",
+            "Lawyer review still required before relying on it in court."
+          ]
+        },
+        "bn": {
+          "title": "সংবিধান অনুচ্ছেদ ৯৪ — সুপ্রিম কোর্ট কাঠামো",
+          "short_description": "অফিসিয়াল উদ্ধৃতি Constitution Art. 94। অনুশীলন — বিগত সালের পেপার নয়।",
+          "learning_objective": "Constitution Art. 94-এর অফিসিয়াল পাঠ পড়ে হাইকোর্ট পারমিশন অনুশীলনে মিলান।",
+          "explanation": "অফিসিয়াল ইংরেজি উদ্ধৃতি https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en (সংগ্রহ 2026-09-14)। আইনজীবী যাচাই হয়নি। বাংলা ধারা উদ্ভাবন করা হয়নি।\n\n94. (1) There shall be a Supreme Court for Bangladesh (to be known as the Supreme Court of Bangladesh) comprising the Appellate Division and the High Court Division. (2) The Supreme Court shall consist of the Chief Justice, to be known as the Chief Justice of Bangladesh, and such number of other Judges as the President may deem it necessary to appoint to each division. (3) The Chief Justice, and the Judges appointed to the Appellate Division, shall sit only in that division, and the other Judges shall sit only in the High Court Division. (4) Subject to the provisions of this Constitution the Chief Justice and the other Judges shall be independent in the exercise of their judicial functions. Appointment of Judges",
+          "key_concepts": [
+            "Constitution Art. 94",
+            "হাইকোর্ট বিভাগ",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "অনুচ্ছেদ ৯৪(১): একটি সুপ্রিম কোর্ট — আপিল বিভাগ ও হাইকোর্ট বিভাগ।",
+            "প্রতি বিভাগের বিচারক শুধু সেই বিভাগে বসেন।"
+          ],
+          "exam_focus": "অফিসিয়াল আইন থেকে অনুশীলন। কোনো সালের পেপার নয়।",
+          "key_takeaways": [
+            "এই কার্ড সরকারি আইনের উদ্ধৃতি। ২০১২–২০২৫ পেপার নয়।",
+            "আদালতে ব্যবহারের আগে আইনজীবী যাচাই প্রয়োজন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRILL-ART102",
+      "asset_type": "LESSON",
+      "section_id": "SEC-SYLL",
+      "module_id": "SEC-SYLL",
+      "topic_id": "HC-DRILL-ART102",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "source": "bdlaws.minlaw.gov.bd",
+      "fetched": "2026-09-14",
+      "language_versions": {
+        "en": {
+          "title": "Constitution Art. 102 — High Court writ jurisdiction",
+          "short_description": "Official extract Constitution Art. 102. Practice drill — not a past paper.",
+          "learning_objective": "Read the official wording of Constitution Art. 102 and map it to High Court Permission practice.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en (retrieved 2026-09-14). Not lawyer-verified.\n\n102. (1) The High Court Division on the application of any person aggrieved, may give such directions or orders to any person or authority, including any person performing any function in connection with the affairs of the Republic, as may be appropriate for the enforcement of any of the fundamental rights conferred by Part III of this Constitution. (2) The High Court Division may, if satisfied that no other equally efficacious remedy is provided by law \u0013 (a) on the application of any person aggrieved, make an order- (i) directing a person performing any functions in connec-tion with the affairs of the Republic or of a local authority, to refrain from doing that which he is not permitted by law to do or to do that which he is required by law to do ; or (ii) declaring that any act done or proceeding taken by a person performing functions in connection with the affairs of the Republic or of a local authority, has been done or taken without lawful authority and is of no legal effect ; or (b) on the application of any person, make an order- (i) directing that a person in custody be brought before it so that it may satisfy itself that he is not being held in custody without lawful authority or in an unlawful manner ; or (ii) requiring a person holding or purporting to hold a public office to show under what authority he claims to hold that office. (3) Notwithstanding anything contained in the forgoing clauses, the High Court Division shall have no power under this article to pass any interim or other order in relation to any law to which article 47 applies. (4) Whereon an application made under clause (1) or sub-clause (a) of clause (2), an interim order is prayed for and such interim order is likely to have the effect of- (a) prejudicing or interfering with any measure designed to implement any development programme, or any development work ; or (b) being otherwise harmful to the public interest, the High Court Division shall not make an interim order unless the Attorney-General has heen given reasonable notice of the application and he (or an advocate authorised by him in that behalf) has been given an opportunity of being heard, and the High Court Division is sati",
+          "key_concepts": [
+            "Constitution Art. 102",
+            "High Court Division",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "Art. 102 is the writ machinery of the High Court Division.",
+            "Permission written exam often tests drafting a writ — confirm the live Bar Council notice."
+          ],
+          "exam_focus": "Anushilon drill from official statute text. Not labelled as any exam year.",
+          "key_takeaways": [
+            "This card quotes official public law. It is not a 2012–2025 question paper.",
+            "Lawyer review still required before relying on it in court."
+          ]
+        },
+        "bn": {
+          "title": "সংবিধান অনুচ্ছেদ ১০২ — হাইকোর্ট রিট এখতিয়ার",
+          "short_description": "অফিসিয়াল উদ্ধৃতি Constitution Art. 102। অনুশীলন — বিগত সালের পেপার নয়।",
+          "learning_objective": "Constitution Art. 102-এর অফিসিয়াল পাঠ পড়ে হাইকোর্ট পারমিশন অনুশীলনে মিলান।",
+          "explanation": "অফিসিয়াল ইংরেজি উদ্ধৃতি। বাংলা ধারা উদ্ভাবন করা হয়নি।\n\n102. (1) The High Court Division on the application of any person aggrieved, may give such directions or orders to any person or authority, including any person performing any function in connection with the affairs of the Republic, as may be appropriate for the enforcement of any of the fundamental rights conferred by Part III of this Constitution. (2) The High Court Division may, if satisfied that no other equally efficacious remedy is provided by law \u0013 (a) on the application of any person aggrieved, make an order- (i) directing a person performing any functions in connec-tion with the affairs of the Republic or of a local authority, to refrain from doing that which he is not permitted by law to do or to do that which he is required by law to do ; or (ii) declaring that any act done or proceeding taken by a person performing functions in connection with the affairs of the Republic or of a local authority, has been done or taken without lawful authority and is of no legal effect ; or (b) on the application of any person, make an order- (i) directing that a person in custody be brought before it so that it may satisfy itself that he is not being held in custody without lawful authority or in an unlawful manner ; or (ii) requiring a person holding or purporting to hold a public office to show under what authority he claims to hold that office. (3) Notwithstanding anything contained in the forgoing clauses, the High Court Division shall have no power under this article to pass any interim or other order in relation to any law to which article 47 applies. (4) Whereon an application made under clause (1) or sub-clause (a) of clause (2), an interim order is prayed for and such interim order is likely to have the effect of- (a) prejudicing or interfering with any measure designed to implement any development programme, or any development work ; or (b) being otherwise harmful to the public interest, the High Court Division shall not make an interim order unless the Attorney-General has heen given reasonable notice of the application and he (or an advocate authorised by him in that behalf) has been given an opportunity of being heard, and the High Court Division is sati",
+          "key_concepts": [
+            "Constitution Art. 102",
+            "হাইকোর্ট বিভাগ",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "অনুচ্ছেদ ১০২ হাইকোর্ট বিভাগের রিট প্রক্রিয়া।",
+            "পারমিশন লিখিত পরীক্ষা প্রায়ই রিট খসড়া চায় — চলতি নোটিশ দেখুন।"
+          ],
+          "exam_focus": "অফিসিয়াল আইন থেকে অনুশীলন। কোনো সালের পেপার নয়।",
+          "key_takeaways": [
+            "এই কার্ড সরকারি আইনের উদ্ধৃতি। ২০১২–২০২৫ পেপার নয়।",
+            "আদালতে ব্যবহারের আগে আইনজীবী যাচাই প্রয়োজন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRILL-ART103",
+      "asset_type": "LESSON",
+      "section_id": "SEC-AD",
+      "module_id": "SEC-AD",
+      "topic_id": "HC-DRILL-ART103",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "source": "bdlaws.minlaw.gov.bd",
+      "fetched": "2026-09-14",
+      "language_versions": {
+        "en": {
+          "title": "Constitution Art. 103 — Appellate Division appeals",
+          "short_description": "Official extract Constitution Art. 103. Practice drill — not a past paper.",
+          "learning_objective": "Read the official wording of Constitution Art. 103 and map it to High Court Permission practice.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en (retrieved 2026-09-14). AD enrolment is separate from HC Permission.\n\n103. (1) The Appellate Division shall have jurisdiction to hear and determine appeals from judgments, decrees, orders or sentences of the High Court Division. (2) An appeal to the Appellate Division from a judgment, decree, order or sentence of the High Court Division shall lie as of right where the High Court Division \u0013 (a) certifies that the case involves a substantial question of law as to the interpretation of this Constitution ; or (b) has confirmed a sentence of death or sentenced a person to death or to imprisonment for life ; or (c) has imposed punishment on a person for contempt of that division ; and in such other cases as may be provided for by Act of Parliament. (3) An appeal to the Appellate Division from a judgment, decree, order or sentence of the High Court Division in a case to which clause (2) does not apply shall lie only if the Appellate Division grants leave to appeal. (4) Parliament may by law declare that the provisions of this article shall apply in relation to any other court or tribunal as they apply in relation to the High Court Division. Issue and execution of processes of Appellate Division 104. The Appellate Division shall have power to issue such directions, orders, decrees or writs as may be necessary for doing complete justice in any cause or matter pending before it, including orders for the purpose of securing the attendance of any person or the discovery or production of any document. Review of judgments or orders by Appellate Division 105. The Appellate Division shall have power, subject to the provisions of any Act of Parliament and of any rules made by that division to review any judgment pronounced or order made by it. Advisory jurisdiction of Supreme Court 106. If at any time it appears to the President that a question of law has arisen, or is likely to arise, which is of such a nature and of such public importance that it is expedient to obtain the opinion of the Supreme Court upon it, he may refer the question to the Appellate Division for consideration and the division may, after such hearing as it thinks fit, report its opinion thereon to the President. Rule-making power of the Supreme Court",
+          "key_concepts": [
+            "Constitution Art. 103",
+            "High Court Division",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "Art. 103(1): AD hears appeals from HCD judgments, decrees, orders or sentences.",
+            "Never merge AD enrolment with the HC Permission drafting paper."
+          ],
+          "exam_focus": "Anushilon drill from official statute text. Not labelled as any exam year.",
+          "key_takeaways": [
+            "This card quotes official public law. It is not a 2012–2025 question paper.",
+            "Lawyer review still required before relying on it in court."
+          ]
+        },
+        "bn": {
+          "title": "সংবিধান অনুচ্ছেদ ১০৩ — আপিল বিভাগে আপিল",
+          "short_description": "অফিসিয়াল উদ্ধৃতি Constitution Art. 103। অনুশীলন — বিগত সালের পেপার নয়।",
+          "learning_objective": "Constitution Art. 103-এর অফিসিয়াল পাঠ পড়ে হাইকোর্ট পারমিশন অনুশীলনে মিলান।",
+          "explanation": "আপিল বিভাগ এনরোলমেন্ট হাইকোর্ট পারমিশন থেকে আলাদা।\n\n103. (1) The Appellate Division shall have jurisdiction to hear and determine appeals from judgments, decrees, orders or sentences of the High Court Division. (2) An appeal to the Appellate Division from a judgment, decree, order or sentence of the High Court Division shall lie as of right where the High Court Division \u0013 (a) certifies that the case involves a substantial question of law as to the interpretation of this Constitution ; or (b) has confirmed a sentence of death or sentenced a person to death or to imprisonment for life ; or (c) has imposed punishment on a person for contempt of that division ; and in such other cases as may be provided for by Act of Parliament. (3) An appeal to the Appellate Division from a judgment, decree, order or sentence of the High Court Division in a case to which clause (2) does not apply shall lie only if the Appellate Division grants leave to appeal. (4) Parliament may by law declare that the provisions of this article shall apply in relation to any other court or tribunal as they apply in relation to the High Court Division. Issue and execution of processes of Appellate Division 104. The Appellate Division shall have power to issue such directions, orders, decrees or writs as may be necessary for doing complete justice in any cause or matter pending before it, including orders for the purpose of securing the attendance of any person or the discovery or production of any document. Review of judgments or orders by Appellate Division 105. The Appellate Division shall have power, subject to the provisions of any Act of Parliament and of any rules made by that division to review any judgment pronounced or order made by it. Advisory jurisdiction of Supreme Court 106. If at any time it appears to the President that a question of law has arisen, or is likely to arise, which is of such a nature and of such public importance that it is expedient to obtain the opinion of the Supreme Court upon it, he may refer the question to the Appellate Division for consideration and the division may, after such hearing as it thinks fit, report its opinion thereon to the President. Rule-making power of the Supreme Court",
+          "key_concepts": [
+            "Constitution Art. 103",
+            "হাইকোর্ট বিভাগ",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "অনুচ্ছেদ ১০৩(১): আপিল বিভাগ হাইকোর্ট বিভাগের রায়/ডিক্রি/আদেশ/দণ্ডের আপিল শোনে।",
+            "আপিল বিভাগ এনরোলমেন্ট ও হাইকোর্ট পারমিশন মিশাবেন না।"
+          ],
+          "exam_focus": "অফিসিয়াল আইন থেকে অনুশীলন। কোনো সালের পেপার নয়।",
+          "key_takeaways": [
+            "এই কার্ড সরকারি আইনের উদ্ধৃতি। ২০১২–২০২৫ পেপার নয়।",
+            "আদালতে ব্যবহারের আগে আইনজীবী যাচাই প্রয়োজন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRILL-ART107",
+      "asset_type": "LESSON",
+      "section_id": "SEC-HCPRAC",
+      "module_id": "SEC-HCPRAC",
+      "topic_id": "HC-DRILL-ART107",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "source": "bdlaws.minlaw.gov.bd",
+      "fetched": "2026-09-14",
+      "language_versions": {
+        "en": {
+          "title": "Constitution Art. 107 — Supreme Court rule-making",
+          "short_description": "Official extract Constitution Art. 107. Practice drill — not a past paper.",
+          "learning_objective": "Read the official wording of Constitution Art. 107 and map it to High Court Permission practice.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en (retrieved 2026-09-14). Practice directions sit under this power.\n\n107. (1) Subject to any law made by Parliament the Supreme Court may, with the approval of the President, make rules for regulating the practice and procedure of each division of the Supreme Court and of any court subordinate to it. (2) The Supreme Court may delegate any of its functions under clause (1) and article 113 and 116 to a division of that Court or to one or more judges. (3) Subject to any rules made under this article the Chief Justice shall determine which judges are to constitute any Bench of a division of the Supreme Court and which judges are to sit for any purpose. (4) The Chief Justice may authorise the next most senior judge of either division of the Supreme Court to exercise in that division any of the powers conferred by clause (3) or by rules made under this article. Supreme Court as court of record 108. The Supreme Court shall be a court of record and shall have all the powers of such a court including the power subject to law to make an order for the investigation of or punishment for any contempt of itself. Superintendence and control over courts 109. The High Court Division shall have superintendence and control over all courts and tribunals subordinate to it. Transfer of cases from subordinate courts to High Court Division 110. If the High Court Division is satisfied that a case pending in a court subordinate to it involves a substantial question of law as to the interpretation of this Constitution, or on a point of general public importance, the determination of which is necessary for the disposal of the case, it shall withdraw the case from that court and may \u0013 (a) either dispose of the case itself ; or (b) determine the question of law and return the case to the court from which it has been so withdrawn (or transfer it to another subordinate court) together with a copy of the judgment of the division on such question, and the court to which the case is so returned or transferred shall, on receipt thereof, proceed to dispose of the case in conformity with such judgment. Binding effect of Supreme Court judgments 111. The law declared by the Appellate Division shall be binding on the High Court Division and the law declared by either di",
+          "key_concepts": [
+            "Constitution Art. 107",
+            "High Court Division",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "Art. 107(1): Supreme Court may make rules for practice and procedure of each division, with President’s approval, subject to Parliament.",
+            "The High Court Division Rules are not a downloadable past-paper bank."
+          ],
+          "exam_focus": "Anushilon drill from official statute text. Not labelled as any exam year.",
+          "key_takeaways": [
+            "This card quotes official public law. It is not a 2012–2025 question paper.",
+            "Lawyer review still required before relying on it in court."
+          ]
+        },
+        "bn": {
+          "title": "সংবিধান অনুচ্ছেদ ১০৭ — সুপ্রিম কোর্টের রুল প্রণয়ন",
+          "short_description": "অফিসিয়াল উদ্ধৃতি Constitution Art. 107। অনুশীলন — বিগত সালের পেপার নয়।",
+          "learning_objective": "Constitution Art. 107-এর অফিসিয়াল পাঠ পড়ে হাইকোর্ট পারমিশন অনুশীলনে মিলান।",
+          "explanation": "প্র্যাকটিস ডিরেকশন এই ক্ষমতার অধীনে। বাংলা ধারা উদ্ভাবন করা হয়নি।\n\n107. (1) Subject to any law made by Parliament the Supreme Court may, with the approval of the President, make rules for regulating the practice and procedure of each division of the Supreme Court and of any court subordinate to it. (2) The Supreme Court may delegate any of its functions under clause (1) and article 113 and 116 to a division of that Court or to one or more judges. (3) Subject to any rules made under this article the Chief Justice shall determine which judges are to constitute any Bench of a division of the Supreme Court and which judges are to sit for any purpose. (4) The Chief Justice may authorise the next most senior judge of either division of the Supreme Court to exercise in that division any of the powers conferred by clause (3) or by rules made under this article. Supreme Court as court of record 108. The Supreme Court shall be a court of record and shall have all the powers of such a court including the power subject to law to make an order for the investigation of or punishment for any contempt of itself. Superintendence and control over courts 109. The High Court Division shall have superintendence and control over all courts and tribunals subordinate to it. Transfer of cases from subordinate courts to High Court Division 110. If the High Court Division is satisfied that a case pending in a court subordinate to it involves a substantial question of law as to the interpretation of this Constitution, or on a point of general public importance, the determination of which is necessary for the disposal of the case, it shall withdraw the case from that court and may \u0013 (a) either dispose of the case itself ; or (b) determine the question of law and return the case to the court from which it has been so withdrawn (or transfer it to another subordinate court) together with a copy of the judgment of the division on such question, and the court to which the case is so returned or transferred shall, on receipt thereof, proceed to dispose of the case in conformity with such judgment. Binding effect of Supreme Court judgments 111. The law declared by the Appellate Division shall be binding on the High Court Division and the law declared by either di",
+          "key_concepts": [
+            "Constitution Art. 107",
+            "হাইকোর্ট বিভাগ",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "অনুচ্ছেদ ১০৭(১): সুপ্রিম কোর্ট প্রতি বিভাগের কার্যপ্রণালী রুল করতে পারে।",
+            "হাইকোর্ট রুলস কোনো বিগত প্রশ্নপত্র ব্যাংক নয়।"
+          ],
+          "exam_focus": "অফিসিয়াল আইন থেকে অনুশীলন। কোনো সালের পেপার নয়।",
+          "key_takeaways": [
+            "এই কার্ড সরকারি আইনের উদ্ধৃতি। ২০১২–২০২৫ পেপার নয়।",
+            "আদালতে ব্যবহারের আগে আইনজীবী যাচাই প্রয়োজন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRILL-PREVQ-HONEST",
+      "asset_type": "LESSON",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-DRILL-PREVQ-HONEST",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "official_url": "https://www.barcouncil.gov.bd/enrolment-examination-syllabus/",
+      "source": "bdlaws.minlaw.gov.bd",
+      "fetched": "2026-09-14",
+      "language_versions": {
+        "en": {
+          "title": "Previous papers: official bank is empty — practice drills",
+          "short_description": "Official extract barcouncil.gov.bd / supremecourt.gov.bd. Practice drill — not a past paper.",
+          "learning_objective": "Read the official wording of barcouncil.gov.bd / supremecourt.gov.bd and map it to High Court Permission practice.",
+          "explanation": "Searched 14 Sep 2026: barcouncil.gov.bd (home, syllabus, notices, Order & Rules), supremecourt.gov.bd, dpp.gov.bd gazettes. No downloadable 2012–2025 enrolment or HC Permission question-paper PDF. Ain Prokash / Live MCQ / QuesBankBD were not scraped (copyright). This module is অনুশীলন: statute drills + unique items already in the user’s JSON. Never labelled Exam 2012 unless the file is that paper.",
+          "key_concepts": [
+            "barcouncil.gov.bd / supremecourt.gov.bd",
+            "High Court Division",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "Official past papers in this app: 0.",
+            "Interactive practice bank uses user JSON + official-rule drills."
+          ],
+          "exam_focus": "Anushilon drill from official statute text. Not labelled as any exam year.",
+          "key_takeaways": [
+            "This card quotes official public law. It is not a 2012–2025 question paper.",
+            "Lawyer review still required before relying on it in court."
+          ]
+        },
+        "bn": {
+          "title": "বিগত পেপার: অফিসিয়াল ব্যাংক খালি — অনুশীলন ড্রিল",
+          "short_description": "অফিসিয়াল উদ্ধৃতি barcouncil.gov.bd / supremecourt.gov.bd। অনুশীলন — বিগত সালের পেপার নয়।",
+          "learning_objective": "barcouncil.gov.bd / supremecourt.gov.bd-এর অফিসিয়াল পাঠ পড়ে হাইকোর্ট পারমিশন অনুশীলনে মিলান।",
+          "explanation": "১৪ সেপ্টেম্বর ২০২৬ অনুসন্ধান: barcouncil.gov.bd, supremecourt.gov.bd, dpp.gov.bd গেজেট। ২০১২–২০২৫ অফিসিয়াল প্রশ্নপত্র PDF পাওয়া যায়নি। Ain Prokash / Live MCQ / QuesBankBD স্ক্র্যাপ করা হয়নি (কপিরাইট)। এই মডিউল অনুশীলন: আইন-ড্রিল + ব্যবহারকারীর JSON-এর ইউনিক আইটেম। ফাইল সেই পেপার না হলে “পরীক্ষা ২০১২” লেখা হয়নি।",
+          "key_concepts": [
+            "barcouncil.gov.bd / supremecourt.gov.bd",
+            "হাইকোর্ট বিভাগ",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "অ্যাপে অফিসিয়াল বিগত পেপার: ০।",
+            "ইন্টারঅ্যাকটিভ অনুশীলন = ব্যবহারকারীর JSON + অফিসিয়াল রুল ড্রিল।"
+          ],
+          "exam_focus": "অফিসিয়াল আইন থেকে অনুশীলন। কোনো সালের পেপার নয়।",
+          "key_takeaways": [
+            "এই কার্ড সরকারি আইনের উদ্ধৃতি। ২০১২–২০২৫ পেপার নয়।",
+            "আদালতে ব্যবহারের আগে আইনজীবী যাচাই প্রয়োজন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-DRILL-PROGRESS",
+      "asset_type": "LESSON",
+      "section_id": "SEC-PROGRESS",
+      "module_id": "SEC-PROGRESS",
+      "topic_id": "HC-DRILL-PROGRESS",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "official_url": "https://www.barcouncil.gov.bd/",
+      "source": "bdlaws.minlaw.gov.bd",
+      "fetched": "2026-09-14",
+      "language_versions": {
+        "en": {
+          "title": "How My Progress is counted",
+          "short_description": "Official extract in-app progress. Practice drill — not a past paper.",
+          "learning_objective": "Read the official wording of in-app progress and map it to High Court Permission practice.",
+          "explanation": "Progress records MCQ submits and opened lessons on this phone (XP, streak, answers). It tracks অনুশীলন items — including these official-rule drills — not pirated past papers. No leaderboard in v1.",
+          "key_concepts": [
+            "in-app progress",
+            "High Court Division",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "Local stats work offline. Signed-in sync is extra, not required to see numbers."
+          ],
+          "exam_focus": "Anushilon drill from official statute text. Not labelled as any exam year.",
+          "key_takeaways": [
+            "This card quotes official public law. It is not a 2012–2025 question paper.",
+            "Lawyer review still required before relying on it in court."
+          ]
+        },
+        "bn": {
+          "title": "আমার অগ্রগতি কীভাবে গণনা হয়",
+          "short_description": "অফিসিয়াল উদ্ধৃতি in-app progress। অনুশীলন — বিগত সালের পেপার নয়।",
+          "learning_objective": "in-app progress-এর অফিসিয়াল পাঠ পড়ে হাইকোর্ট পারমিশন অনুশীলনে মিলান।",
+          "explanation": "অগ্রগতি এই ফোনে MCQ জমা ও খোলা পাঠ গণনা করে (XP, স্ট্রিক, উত্তর)। এটি অনুশীলন আইটেম ট্র্যাক করে — চুরি করা বিগত পেপার নয়। v1-এ লিডারবোর্ড নেই।",
+          "key_concepts": [
+            "in-app progress",
+            "হাইকোর্ট বিভাগ",
+            "অনুশীলন"
+          ],
+          "important_rules": [
+            "লোকাল পরিসংখ্যান অফলাইনে কাজ করে। লগইন সিঙ্ক অতিরিক্ত।"
+          ],
+          "exam_focus": "অফিসিয়াল আইন থেকে অনুশীলন। কোনো সালের পেপার নয়।",
+          "key_takeaways": [
+            "এই কার্ড সরকারি আইনের উদ্ধৃতি। ২০১২–২০২৫ পেপার নয়।",
+            "আদালতে ব্যবহারের আগে আইনজীবী যাচাই প্রয়োজন।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-1",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "B",
+      "related_lesson": "LSN-ELIG-HCD-002",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "Under Rule 65A, how many marks is each drafting question worth?",
+          "options": {
+            "A": "20",
+            "B": "25",
+            "C": "30",
+            "D": "50"
+          },
+          "explanation": "25 marks per question, across 5 criteria of 5 marks each. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "বিধি ৬৫এ-এর অধীনে, প্রতিটি খসড়া প্রশ্ন কত নম্বরের?",
+          "options": {
+            "A": "২০",
+            "B": "২৫",
+            "C": "৩০",
+            "D": "৫০"
+          },
+          "explanation": "৫টি মানদণ্ডে, প্রতিটি ৫ নম্বর করে, প্রশ্নপ্রতি ২৫ নম্বর। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "B"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-2",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "C",
+      "related_lesson": "LSN-ELIG-HCD-002",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "How many marking criteria make up each drafting question's score?",
+          "options": {
+            "A": "3",
+            "B": "4",
+            "C": "5",
+            "D": "6"
+          },
+          "explanation": "Format, facts, prayer, language & style, law & grounds — 5 marks each. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "প্রতিটি খসড়া প্রশ্নের নম্বর কতটি মানদণ্ড দিয়ে গঠিত?",
+          "options": {
+            "A": "৩",
+            "B": "৪",
+            "C": "৫",
+            "D": "৬"
+          },
+          "explanation": "ফরম্যাট, ঘটনা, প্রার্থনা, ভাষা ও শৈলী, আইন ও যুক্তি— প্রতিটি ৫ নম্বর। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "C"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-3",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "B",
+      "related_lesson": "LSN-ELIG-HCD-002",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "What are the minimum qualifying marks on the written paper alone?",
+          "options": {
+            "A": "10/25",
+            "B": "12/25",
+            "C": "15/25",
+            "D": "18/25"
+          },
+          "explanation": "12/25 written + 12/25 oral, combined minimum 25. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "শুধুমাত্র লিখিত পত্রে ন্যূনতম উত্তীর্ণ নম্বর কত?",
+          "options": {
+            "A": "১০/২৫",
+            "B": "১২/২৫",
+            "C": "১৫/২৫",
+            "D": "১৮/২৫"
+          },
+          "explanation": "লিখিত ১২/২৫ + মৌখিক ১২/২৫, সম্মিলিত সর্বনিম্ন ২৫। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "B"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-4",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "D",
+      "related_lesson": "LSN-PROFKNOW-CONST-001",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "Which Article of the Constitution provides the High Court Division's writ jurisdiction?",
+          "options": {
+            "A": "Article 44",
+            "B": "Article 94",
+            "C": "Article 101",
+            "D": "Article 102"
+          },
+          "explanation": "Article 44 is the right to move the HCD; Article 102 is the writ machinery itself. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "সংবিধানের কোন অনুচ্ছেদ হাইকোর্ট বিভাগের রিট এখতিয়ার প্রদান করে?",
+          "options": {
+            "A": "অনুচ্ছেদ ৪৪",
+            "B": "অনুচ্ছেদ ৯৪",
+            "C": "অনুচ্ছেদ ১০১",
+            "D": "অনুচ্ছেদ ১০২"
+          },
+          "explanation": "অনুচ্ছেদ ৪৪ হলো HCD-তে যাওয়ার অধিকার; অনুচ্ছেদ ১০২ হলো রিট প্রক্রিয়া নিজেই। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "D"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-5",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "C",
+      "related_lesson": "DRAFT-002",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "Which sub-clause of Article 102 provides a habeas-corpus-type direction?",
+          "options": {
+            "A": "102(2)(a)(i)",
+            "B": "102(2)(a)(ii)",
+            "C": "102(2)(b)(i)",
+            "D": "102(2)(b)(ii)"
+          },
+          "explanation": "102(2)(b)(ii) is quo warranto; 102(2)(a) covers the mandamus/certiorari-type limb. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "অনুচ্ছেদ ১০২-এর কোন উপ-ধারা হেবিয়াস-কর্পাস-প্রকৃতির নির্দেশ প্রদান করে?",
+          "options": {
+            "A": "১০২(২)(ক)(i)",
+            "B": "১০২(২)(ক)(ii)",
+            "C": "১০২(২)(খ)(i)",
+            "D": "১০২(২)(খ)(ii)"
+          },
+          "explanation": "১০২(২)(খ)(ii) হলো কো-ওয়ারেন্টো; ১০২(২)(ক) ম্যান্ডামাস/সার্টিওরারি-প্রকৃতির অংশ কভার করে। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "C"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-6",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "C",
+      "related_lesson": "DRAFT-003",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "Which CrPC section provides the HCD's inherent power, commonly used to quash proceedings?",
+          "options": {
+            "A": "s.401",
+            "B": "s.491",
+            "C": "s.561A",
+            "D": "s.109"
+          },
+          "explanation": "s.491 is the statutory habeas-corpus route; s.561A is the inherent power. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "কোন CrPC ধারা HCD-এর সহজাত ক্ষমতা প্রদান করে, যা সাধারণত কার্যক্রম বাতিলে ব্যবহৃত হয়?",
+          "options": {
+            "A": "ধারা ৪০১",
+            "B": "ধারা ৪৯১",
+            "C": "ধারা ৫৬১এ",
+            "D": "ধারা ১০৯"
+          },
+          "explanation": "ধারা ৪৯১ বিধিবদ্ধ হেবিয়াস কর্পাস পথ; ধারা ৫৬১এ সহজাত ক্ষমতা। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "C"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-7",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "D",
+      "related_lesson": "DRAFT-004",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "Which CPC section governs the HCD's revisional jurisdiction?",
+          "options": {
+            "A": "s.96",
+            "B": "s.100",
+            "C": "s.109",
+            "D": "s.115"
+          },
+          "explanation": "s.96 is ordinary first appeal; s.109 routes appeals to the Appellate Division; s.115 is revision. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "কোন CPC ধারা HCD-এর রিভিশন এখতিয়ার নিয়ন্ত্রণ করে?",
+          "options": {
+            "A": "ধারা ৯৬",
+            "B": "ধারা ১০০",
+            "C": "ধারা ১০৯",
+            "D": "ধারা ১১৫"
+          },
+          "explanation": "ধারা ৯৬ সাধারণ প্রথম আপিল; ধারা ১০৯ আপিল বিভাগে আপিল পাঠায়; ধারা ১১৫ রিভিশন। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "D"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-8",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "B",
+      "related_lesson": "LSN-ELIG-HCD-001",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "After how many years' subordinate-court practice does the standard route to High Court Permission eligibility open?",
+          "options": {
+            "A": "1 year",
+            "B": "2 years",
+            "C": "3 years",
+            "D": "5 years"
+          },
+          "explanation": "Confirmed directly against the Bar Council Order's own text. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "অধস্তন আদালতে কত বছর অনুশীলনের পর হাইকোর্ট পারমিশন যোগ্যতার সাধারণ পথ খোলে?",
+          "options": {
+            "A": "১ বছর",
+            "B": "২ বছর",
+            "C": "৩ বছর",
+            "D": "৫ বছর"
+          },
+          "explanation": "বার কাউন্সিল অর্ডারের নিজস্ব পাঠ্য থেকে সরাসরি নিশ্চিত। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "B"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-9",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "B",
+      "related_lesson": "LSN-ELIG-AD-001",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "Reportedly, after how many years' HCD practice may an advocate apply to the Chief Justice for Appellate Division enrolment?",
+          "options": {
+            "A": "2 years",
+            "B": "5 years",
+            "C": "7 years",
+            "D": "10 years"
+          },
+          "explanation": "From reputable secondary sources, not a directly-quoted primary rule — still flagged VERIFY_CURRENT_RULE. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "কথিতভাবে কত বছর HCD অনুশীলনের পর একজন আইনজীবী প্রধান বিচারপতির কাছে আপিল বিভাগ তালিকাভুক্তির আবেদন করতে পারেন?",
+          "options": {
+            "A": "২ বছর",
+            "B": "৫ বছর",
+            "C": "৭ বছর",
+            "D": "১০ বছর"
+          },
+          "explanation": "নির্ভরযোগ্য গৌণ সূত্র থেকে, সরাসরি উদ্ধৃত মূল বিধি থেকে নয়— এখনো VERIFY_CURRENT_RULE হিসেবে চিহ্নিত। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "B"
+        }
+      }
+    },
+    {
+      "content_id": "HC-PREVQ-RT-RT-10",
+      "asset_type": "MCQ",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-PREVQ-BANK",
+      "status": "PENDING_REVIEW",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "question_type": "MCQ",
+      "correct_answer": "D",
+      "related_lesson": "LSN-PROFKNOW-APPELLATE-001",
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html?lang=en",
+      "language_versions": {
+        "en": {
+          "question": "Under Article 103, which of these is NOT a category where an AD appeal lies as of right?",
+          "options": {
+            "A": "A certified substantial constitutional question",
+            "B": "A death or life sentence",
+            "C": "A contempt finding by the HCD",
+            "D": "Any case above a set monetary value"
+          },
+          "explanation": "There is no general monetary-value as-of-right category — only the 3 confirmed on the Supreme Court's own site. — অনুশীলন (সূত্র: verified HC dataset + Constitution). Not an official past paper."
+        },
+        "bn": {
+          "question": "অনুচ্ছেদ ১০৩-এর অধীনে, নিচের কোনটি AD আপিল অধিকারবলে হওয়ার শ্রেণী নয়?",
+          "options": {
+            "A": "একটি সনদপ্রাপ্ত গুরুত্বপূর্ণ সাংবিধানিক প্রশ্ন",
+            "B": "মৃত্যু বা যাবজ্জীবন দণ্ড",
+            "C": "HCD-এর অবমাননার সিদ্ধান্ত",
+            "D": "একটি নির্দিষ্ট আর্থিক মূল্যের ঊর্ধ্বে যেকোনো মামলা"
+          },
+          "explanation": "কোনো সাধারণ আর্থিক-মূল্য অধিকারবলে-শ্রেণী নেই— শুধুমাত্র সুপ্রীম কোর্টের নিজস্ব সাইটে নিশ্চিত ৩টি শ্রেণী রয়েছে। — অনুশীলন। অফিসিয়াল বিগত পেপার নয়।",
+          "correct_answer_note": "D"
+        }
+      }
+    }
+  ]
+}

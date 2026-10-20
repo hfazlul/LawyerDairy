@@ -1,0 +1,293 @@
+{
+  "batch_id": "BATCH-2026-09-040-OFFICIAL-ETH",
+  "schema_version": "1.0",
+  "content_version": "2026.09.14",
+  "created_at": "2026-09-14T18:00:00Z",
+  "source": "bdlaws.minlaw.gov.bd-official-html",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Official extracts for remaining ethics shells (Constitution Art.102 + Legal Aid Act 2000; Evidence ss.126–129; Order Art.10(c)/44(g); Constitution Art.111). Canons body not quoted. No invented MCQ. Not lawyer-verified.",
+  "asset_count": 4,
+  "assets": [
+    {
+      "content_id": "BC-OFFICIAL-T-ETH-02",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-ETH-02",
+      "topic_id": "T-ETH-02",
+      "module_id": "BC-MOD-ETHICS",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Official extract retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-367/section-24659.html",
+      "section_or_order": "Constitution Art.102; Legal Aid Act 2000",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Lawyers and public interest",
+          "short_description": "Official extract for Constitution Art.102; Legal Aid Act 2000 (Lawyers and public interest). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording cited as Constitution Art.102(4); Legal Aid Act 2000 ss.2, 7, 15 and map it to \"Lawyers and public interest\". This card quotes official text; it is not commentary and is not verified.",
+          "explanation": "Official numbered text nearest to the syllabus heading “lawyers and public interest”. Constitution Art.102(4) uses “public interest” and “advocate authorised by” the Attorney-General (bdlaws English HTML, retrieved 2026-09-14, including the site’s own spellings). Legal Aid Act 2000 Bangla HTML (act-print-834) defines panel advocates and legal aid to insolvent litigants. This is not Bar Council Canons commentary. The Canons body is not in bdlaws; https://www.barcouncil.gov.bd/canons-of-professional-conduct-and-etiquette/ was Cloudflare-blocked this pass and was not quoted. No invented Canons, no MCQ.\n\nOfficial English from https://bdlaws.minlaw.gov.bd/act-367/section-24659.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full instrument.\n\nSyllabus: Lawyers and public interest (Constitution Art.102; Legal Aid Act 2000).\n\n102. (1) The High Court Division on the application of any person aggrieved, may give such directions or orders to any person or authority, including any person performing any function in connection with the affairs of the Republic, as may be appropriate for the enforcement of any of the fundamental rights conferred by Part III of this Constitution.\n\n(4) Whereon an application made under clause (1) or sub-clause (a) of clause (2), an interim order is prayed for and such interim order is likely to have the effect of-\n\n(a) prejudicing or interfering with any measure designed to implement any development programme, or any development work ; or\n\n(b) being otherwise harmful to the public interest, the High Court Division shall not make an interim order unless the Attorney-General has heen given reasonable notice of the application and he (or an advocate authorised by him in that behalf) has been given an opportunity of being heard, and the High Court Division is satisfied that the interim order would not have the effect referred to in sub-clause (a) or sub-caluse (b).\n\n---\n\nআইনগত সহায়তা প্রদান আইন, ২০০০ (২০০০ সনের ৬ নং আইন)\n\nআর্থিকভাবে অসচ্ছল, সহায়-সম্বলহীন এবং নানাবিধ আর্থ-সামাজিক কারণে বিচার প্রাপ্তিতে অসমর্থ বিচারপ্রার্থী জনগণকে আইনগত সহায়তা এবং অধিকতর জনমুখী বিচার ব্যবস্থা প্রতিষ্ঠায় বিচারপ্রার্থী জনগণকে স্বল্প সময়ে কম খরচে বিকল্প বিরোধ নিষ্পত্তি সেবা প্রদানকল্পে প্রণীত আইন।\n\n২। (ঝ) “প্যানেল আইনজীবী” অর্থ ধারা ১৫ এর অধীন তালিকাভুক্ত আইনজীবী;\n\n৭। (১) অধিদপ্তরের দায়িত্ব ও কার্যাবলি হইবে নিম্নরূপ, যথা:-\n(ক) অসচ্ছল, সহায়-সম্বলহীন এবং নানাবিধ আর্থ-সামাজিক কারণে বিচার প্রাপ্তিতে অসমর্থ বিচারপ্রার্থী জনগণকে সরকারি খরচে আইনগত সহায়তা প্রদান ও সময় সময় আইনগত সহায়তা প্রার্থীর যোগ্যতা নির্ধারণ;\n(থ) আইনের অধীন দায়িত্বপ্রাপ্ত চীফ লিগ্যাল এইড অফিসার, লিগ্যাল এইড অফিসার, প্যানেল আইনজীবী এবং স্পেশাল মেডিয়েটরগণের কার্যাবলি তত্ত্বাবধান;\n\n১৫। (১) সুপ্রীমকোর্ট কমিটি এই আইনের আওতায় প্রদত্ত আইনগত সহায়তার অধীনে বাংলাদেশ সুপ্রীমকোর্টে দায়েরযোগ্য বা দায়েরকৃত মামলার পরামর্শ প্রদান ও মামলা পরিচালনার জন্য সুপ্রীমকোর্টের মামলা পরিচালনায় অন্যুন ৫ (পাঁচ) বত্সরের অভিজ্ঞতাসম্পন্ন আইনজীবীগণের মধ্য হইতে একটি তালিকা প্রণয়ন করিবে।\n\n(৪) কোন বিচারপ্রার্থীর আবেদন বা দরখাস্ত বিবেচনাক্রমে যদি কোন ক্ষেত্রে, আইনগত সহায়তা প্রদানের সিদ্ধান্ত গৃহীত হয়, তাহা হইলে সুপ্রীম কোর্ট কমিটি বা, ক্ষেত্রমত, জেলা কমিটি, মহানগর কমিটি বা বিশেষ কমিটি কর্তৃক অনুমোদিত তালিকা হইতে সংশ্লিষ্ট চীফ লিগ্যাল এইড অফিসার বা, ক্ষেত্রমত, লিগ্যাল এইড অফিসার কোনো আইনজীবীকে এতদুদ্দেশ্যে নিযুক্ত করিবে:\nতবে শর্ত থাকে যে, এইরূপ নিযুক্তির ক্ষেত্রে বিচারপ্রার্থীর পছন্দ, যতদূর সম্ভব, বিবেচনা করা হইবে।",
+          "key_concepts": [
+            "Constitution Art.102; Legal Aid Act 2000",
+            "Lawyers and public interest",
+            "Constitution Art.102(4); Legal Aid Act 2000 ss.2, 7, 15",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "(1) The High Court Division on the application of any person aggrieved, may give such directions or orders to any person or authority, including any person performing any function in connection with the affairs of the Republic, as may be appropriate for the enforcement of any of the fundamental rights conferred by Part III of this Constitution.",
+            "(4) Whereon an application made under clause (1) or sub-clause (a) of clause (2), an interim order is prayed for and such interim order is likely to have the effect of-\n\n(a) prejudicing or interfering with any measure designed to implement any development programme, or any development work ; or\n\n(b) being otherwise harmful to the public interest, the High Court Division shall not make an interim order unless the Attorney-General has heen given reasonable notice of the application and he (or an advocate authorised by him in that behalf) has been given an opportunity of being heard, and the High Court Division is satisfied that the interim order would not have the effect referred to in sub-clause (a) or sub-caluse (b).",
+            "---\n\nআইনগত সহায়তা প্রদান আইন, ২০০০ (২০০০ সনের ৬ নং আইন)\n\nআর্থিকভাবে অসচ্ছল, সহায়-সম্বলহীন এবং নানাবিধ আর্থ-সামাজিক কারণে বিচার প্রাপ্তিতে অসমর্থ বিচারপ্রার্থী জনগণকে আইনগত সহায়তা এবং অধিকতর জনমুখী বিচার ব্যবস্থা প্রতিষ্ঠায় বিচারপ্রার্থী জনগণকে স্বল্প সময়ে কম খরচে বিকল্প বিরোধ নিষ্পত্তি সেবা প্রদানকল্পে প্রণীত আইন।\n\n২। (ঝ) “প্যানেল আইনজীবী” অর্থ ধারা ১৫ এর অধীন তালিকাভুক্ত আইনজীবী;\n\n৭। (১) অধিদপ্তরের দায়িত্ব ও কার্যাবলি হইবে নিম্নরূপ, যথা:-\n(ক) অসচ্ছল, সহায়-সম্বলহীন এবং নানাবিধ আর্থ-সামাজিক কারণে বিচার প্রাপ্তিতে অসমর্থ বিচারপ্রার্থী জনগণকে সরকারি খরচে আইনগত সহায়তা প্রদান ও সময় সময় আইনগত সহায়তা প্রার্থীর যোগ্যতা নির্ধারণ;\n(থ) আইনের অধীন দায়িত্বপ্রাপ্ত চীফ লিগ্যাল এইড অফিসার, লিগ্যাল এইড অফিসার, প্যানেল আইনজীবী এবং স্পেশাল মেডিয়েটরগণের কার্যাবলি তত্ত্বাবধান;\n\n১৫। (১) সুপ্রীমকোর্ট কমিটি এই আইনের আওতায় প্রদত্ত আইনগত সহায়তার অধীনে বাংলাদেশ সুপ্রীমকোর্টে দায়েরযোগ্য বা দায়েরকৃত মামলার পরামর্শ প্রদান ও মামলা পরিচালনার জন্য সুপ্রীমকোর্টের মামলা পরিচালনায় অন্যুন ৫ (পাঁচ) বত্সরের অভিজ্ঞতাসম্পন্ন আইনজীবীগণের মধ্য হইতে একটি তালিকা প্রণয়ন করিবে।\n\n(৪) কোন বিচারপ্রার্থীর আবেদন বা দরখাস্ত বিবেচনাক্রমে যদি কোন ক্ষেত্রে, আইনগত সহায়তা প্রদানের সিদ্ধান্ত গৃহীত হয়, তাহা হইলে সুপ্রীম কোর্ট কমিটি বা, ক্ষেত্রমত, জেলা কমিটি, মহানগর কমিটি বা বিশেষ কমিটি কর্তৃক অনুমোদিত তালিকা হইতে সংশ্লিষ্ট চীফ লিগ্যাল এইড অফিসার বা, ক্ষেত্রমত, লিগ্যাল এইড অফিসার কোনো আইনজীবীকে এতদুদ্দেশ্যে নিযুক্ত করিবে:\nতবে শর্ত থাকে যে, এইরূপ নিযুক্তির ক্ষেত্রে বিচারপ্রার্থীর পছন্দ, যতদূর সম্ভব, বিবেচনা করা হইবে।"
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-367/section-24659.html and read Constitution Art.102(4); Legal Aid Act 2000 ss.2, 7, 15. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming omitted rules, schedules, or Bangla authentic text are fully in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-367/section-24659.html",
+            "Quoted: Constitution Art.102(4); Legal Aid Act 2000 ss.2, 7, 15"
+          ]
+        },
+        "bn": {
+          "title": "আইনজীবী ও জনস্বার্থ",
+          "short_description": "অফিসিয়াল উদ্ধৃতি — Constitution Art.102; Legal Aid Act 2000 (আইনজীবী ও জনস্বার্থ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "অফিসিয়াল পাঠ Constitution Art.102(4); Legal Aid Act 2000 ss.2, 7, 15 পড়ে সিলেবাস \"আইনজীবী ও জনস্বার্থ\"-এর সাথে মিলান। ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "Official numbered text nearest to the syllabus heading “lawyers and public interest”. Constitution Art.102(4) uses “public interest” and “advocate authorised by” the Attorney-General (bdlaws English HTML, retrieved 2026-09-14, including the site’s own spellings). Legal Aid Act 2000 Bangla HTML (act-print-834) defines panel advocates and legal aid to insolvent litigants. This is not Bar Council Canons commentary. The Canons body is not in bdlaws; https://www.barcouncil.gov.bd/canons-of-professional-conduct-and-etiquette/ was Cloudflare-blocked this pass and was not quoted. No invented Canons, no MCQ.\n\nঅফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-367/section-24659.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সূত্রে। এখানে বাংলা অনুবাদ উদ্ভাবন করা হয়নি।\n\nসিলেবাস: আইনজীবী ও জনস্বার্থ (Constitution Art.102; Legal Aid Act 2000)।\n\n102. (1) The High Court Division on the application of any person aggrieved, may give such directions or orders to any person or authority, including any person performing any function in connection with the affairs of the Republic, as may be appropriate for the enforcement of any of the fundamental rights conferred by Part III of this Constitution.\n\n(4) Whereon an application made under clause (1) or sub-clause (a) of clause (2), an interim order is prayed for and such interim order is likely to have the effect of-\n\n(a) prejudicing or interfering with any measure designed to implement any development programme, or any development work ; or\n\n(b) being otherwise harmful to the public interest, the High Court Division shall not make an interim order unless the Attorney-General has heen given reasonable notice of the application and he (or an advocate authorised by him in that behalf) has been given an opportunity of being heard, and the High Court Division is satisfied that the interim order would not have the effect referred to in sub-clause (a) or sub-caluse (b).\n\n---\n\nআইনগত সহায়তা প্রদান আইন, ২০০০ (২০০০ সনের ৬ নং আইন)\n\nআর্থিকভাবে অসচ্ছল, সহায়-সম্বলহীন এবং নানাবিধ আর্থ-সামাজিক কারণে বিচার প্রাপ্তিতে অসমর্থ বিচারপ্রার্থী জনগণকে আইনগত সহায়তা এবং অধিকতর জনমুখী বিচার ব্যবস্থা প্রতিষ্ঠায় বিচারপ্রার্থী জনগণকে স্বল্প সময়ে কম খরচে বিকল্প বিরোধ নিষ্পত্তি সেবা প্রদানকল্পে প্রণীত আইন।\n\n২। (ঝ) “প্যানেল আইনজীবী” অর্থ ধারা ১৫ এর অধীন তালিকাভুক্ত আইনজীবী;\n\n৭। (১) অধিদপ্তরের দায়িত্ব ও কার্যাবলি হইবে নিম্নরূপ, যথা:-\n(ক) অসচ্ছল, সহায়-সম্বলহীন এবং নানাবিধ আর্থ-সামাজিক কারণে বিচার প্রাপ্তিতে অসমর্থ বিচারপ্রার্থী জনগণকে সরকারি খরচে আইনগত সহায়তা প্রদান ও সময় সময় আইনগত সহায়তা প্রার্থীর যোগ্যতা নির্ধারণ;\n(থ) আইনের অধীন দায়িত্বপ্রাপ্ত চীফ লিগ্যাল এইড অফিসার, লিগ্যাল এইড অফিসার, প্যানেল আইনজীবী এবং স্পেশাল মেডিয়েটরগণের কার্যাবলি তত্ত্বাবধান;\n\n১৫। (১) সুপ্রীমকোর্ট কমিটি এই আইনের আওতায় প্রদত্ত আইনগত সহায়তার অধীনে বাংলাদেশ সুপ্রীমকোর্টে দায়েরযোগ্য বা দায়েরকৃত মামলার পরামর্শ প্রদান ও মামলা পরিচালনার জন্য সুপ্রীমকোর্টের মামলা পরিচালনায় অন্যুন ৫ (পাঁচ) বত্সরের অভিজ্ঞতাসম্পন্ন আইনজীবীগণের মধ্য হইতে একটি তালিকা প্রণয়ন করিবে।\n\n(৪) কোন বিচারপ্রার্থীর আবেদন বা দরখাস্ত বিবেচনাক্রমে যদি কোন ক্ষেত্রে, আইনগত সহায়তা প্রদানের সিদ্ধান্ত গৃহীত হয়, তাহা হইলে সুপ্রীম কোর্ট কমিটি বা, ক্ষেত্রমত, জেলা কমিটি, মহানগর কমিটি বা বিশেষ কমিটি কর্তৃক অনুমোদিত তালিকা হইতে সংশ্লিষ্ট চীফ লিগ্যাল এইড অফিসার বা, ক্ষেত্রমত, লিগ্যাল এইড অফিসার কোনো আইনজীবীকে এতদুদ্দেশ্যে নিযুক্ত করিবে:\nতবে শর্ত থাকে যে, এইরূপ নিযুক্তির ক্ষেত্রে বিচারপ্রার্থীর পছন্দ, যতদূর সম্ভব, বিবেচনা করা হইবে।",
+          "key_concepts": [
+            "Constitution Art.102; Legal Aid Act 2000",
+            "আইনজীবী ও জনস্বার্থ",
+            "Constitution Art.102(4); Legal Aid Act 2000 ss.2, 7, 15",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "(1) The High Court Division on the application of any person aggrieved, may give such directions or orders to any person or authority, including any person performing any function in connection with the affairs of the Republic, as may be appropriate for the enforcement of any of the fundamental rights conferred by Part III of this Constitution.",
+            "(4) Whereon an application made under clause (1) or sub-clause (a) of clause (2), an interim order is prayed for and such interim order is likely to have the effect of-\n\n(a) prejudicing or interfering with any measure designed to implement any development programme, or any development work ; or\n\n(b) being otherwise harmful to the public interest, the High Court Division shall not make an interim order unless the Attorney-General has heen given reasonable notice of the application and he (or an advocate authorised by him in that behalf) has been given an opportunity of being heard, and the High Court Division is satisfied that the interim order would not have the effect referred to in sub-clause (a) or sub-caluse (b).",
+            "---\n\nআইনগত সহায়তা প্রদান আইন, ২০০০ (২০০০ সনের ৬ নং আইন)\n\nআর্থিকভাবে অসচ্ছল, সহায়-সম্বলহীন এবং নানাবিধ আর্থ-সামাজিক কারণে বিচার প্রাপ্তিতে অসমর্থ বিচারপ্রার্থী জনগণকে আইনগত সহায়তা এবং অধিকতর জনমুখী বিচার ব্যবস্থা প্রতিষ্ঠায় বিচারপ্রার্থী জনগণকে স্বল্প সময়ে কম খরচে বিকল্প বিরোধ নিষ্পত্তি সেবা প্রদানকল্পে প্রণীত আইন।\n\n২। (ঝ) “প্যানেল আইনজীবী” অর্থ ধারা ১৫ এর অধীন তালিকাভুক্ত আইনজীবী;\n\n৭। (১) অধিদপ্তরের দায়িত্ব ও কার্যাবলি হইবে নিম্নরূপ, যথা:-\n(ক) অসচ্ছল, সহায়-সম্বলহীন এবং নানাবিধ আর্থ-সামাজিক কারণে বিচার প্রাপ্তিতে অসমর্থ বিচারপ্রার্থী জনগণকে সরকারি খরচে আইনগত সহায়তা প্রদান ও সময় সময় আইনগত সহায়তা প্রার্থীর যোগ্যতা নির্ধারণ;\n(থ) আইনের অধীন দায়িত্বপ্রাপ্ত চীফ লিগ্যাল এইড অফিসার, লিগ্যাল এইড অফিসার, প্যানেল আইনজীবী এবং স্পেশাল মেডিয়েটরগণের কার্যাবলি তত্ত্বাবধান;\n\n১৫। (১) সুপ্রীমকোর্ট কমিটি এই আইনের আওতায় প্রদত্ত আইনগত সহায়তার অধীনে বাংলাদেশ সুপ্রীমকোর্টে দায়েরযোগ্য বা দায়েরকৃত মামলার পরামর্শ প্রদান ও মামলা পরিচালনার জন্য সুপ্রীমকোর্টের মামলা পরিচালনায় অন্যুন ৫ (পাঁচ) বত্সরের অভিজ্ঞতাসম্পন্ন আইনজীবীগণের মধ্য হইতে একটি তালিকা প্রণয়ন করিবে।\n\n(৪) কোন বিচারপ্রার্থীর আবেদন বা দরখাস্ত বিবেচনাক্রমে যদি কোন ক্ষেত্রে, আইনগত সহায়তা প্রদানের সিদ্ধান্ত গৃহীত হয়, তাহা হইলে সুপ্রীম কোর্ট কমিটি বা, ক্ষেত্রমত, জেলা কমিটি, মহানগর কমিটি বা বিশেষ কমিটি কর্তৃক অনুমোদিত তালিকা হইতে সংশ্লিষ্ট চীফ লিগ্যাল এইড অফিসার বা, ক্ষেত্রমত, লিগ্যাল এইড অফিসার কোনো আইনজীবীকে এতদুদ্দেশ্যে নিযুক্ত করিবে:\nতবে শর্ত থাকে যে, এইরূপ নিযুক্তির ক্ষেত্রে বিচারপ্রার্থীর পছন্দ, যতদূর সম্ভব, বিবেচনা করা হইবে।"
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-367/section-24659.html খুলে Constitution Art.102(4); Legal Aid Act 2000 ss.2, 7, 15 নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "বাদ পড়া বিধি/তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-367/section-24659.html",
+            "উদ্ধৃত: Constitution Art.102(4); Legal Aid Act 2000 ss.2, 7, 15"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-ETH-03",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-ETH-03",
+      "topic_id": "T-ETH-03",
+      "module_id": "BC-MOD-ETHICS",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Official extract retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-24.html",
+      "section_or_order": "N/A",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Confidentiality, transparency and accountability of a lawyer",
+          "short_description": "Official extract for N/A (Confidentiality, transparency and accountability of a lawyer). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording cited as Evidence Act ss.126–129 and map it to \"Confidentiality, transparency and accountability of a lawyer\". This card quotes official text; it is not commentary and is not verified.",
+          "explanation": "Official Evidence Act professional communications (ss.126–129). This is the nearest numbered official text on advocate-client confidentiality. It is not Bar Council Canons commentary on transparency/accountability, which is not in this HTML.\n\nOfficial English from https://bdlaws.minlaw.gov.bd/act-details-24.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full instrument.\n\nSyllabus: Confidentiality, transparency and accountability of a lawyer (N/A).\n\n126. No [Advocate] shall at any time be permitted, unless with his client's express consent, to disclose any communication made to him in the course and for the purpose of his employment as such Advocate by or on behalf of his client, or to state the contents or condition of any document with which he has become acquainted in the course and for the purpose of his professional employment, or to disclose any advice given by him to his client in the course and for the purpose of such employment:\n\nProvided that nothing in this section shall protect from disclosure–\n\n(1) any such communication made in furtherance of any illegal purpose:\n\n(2) any fact observed by any [Advocate], in the course of his employment as such, showing that any crime of fraud has been committed since the commencement of his employment.\n\nIt is immaterial whether the attention of such [Advocate] was or was not directed to such fact by or on behalf of his client.\n\nExplanation.– The obligation stated in this section continues after the employment has ceased.\n\n127. The provisions of section 126 shall apply to interpreters and the clerks or servants of [Advocate].\n\n128. If any party to a suit gives evidence therein at his own instance or otherwise, he shall not be deemed to have consented thereby to such disclosure as is mentioned in section 126; and, if any party to a suit or proceeding calls any such [Advocate] as a witness, he shall be deemed to have consented to such disclosure only if he questions such [Advocate] on matters which, but for such question, he would not be at liberty to disclose.\n\n129. No one shall be compelled to disclose to the Court any confidential communication which has taken place between him and his legal professional adviser, unless he offers himself as a witness, in which case he may be compelled to disclose any such communications as may appear to the Court necessary to be known in order to explain any evidence which he has given, but no others.",
+          "key_concepts": [
+            "N/A",
+            "Confidentiality, transparency and accountability of a lawyer",
+            "Evidence Act ss.126–129",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "No [Advocate] shall at any time be permitted, unless with his client's express consent, to disclose any communication made to him in the course and for the purpose of his employment as such Advocate by or on behalf of his client, or to state the contents or condition of any document with which he has become acquainted in the course and for the purpose of his professional employment, or to disclose any advice given by him to his client in the course and for the purpose of such employment:\n\nProvided that nothing in this section shall protect from disclosure–\n\n(1) any such communication made in furtherance of any illegal purpose:\n\n(2) any fact observed by any [Advocate], in the course of his employment as such, showing that any crime of fraud has been committed since the commencement of his employment.",
+            "It is immaterial whether the attention of such [Advocate] was or was not directed to such fact by or on behalf of his client.",
+            "Explanation.– The obligation stated in this section continues after the employment has ceased.",
+            "The provisions of section 126 shall apply to interpreters and the clerks or servants of [Advocate]."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-24.html and read Evidence Act ss.126–129. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming omitted rules, schedules, or Bangla authentic text are fully in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-24.html",
+            "Quoted: Evidence Act ss.126–129"
+          ]
+        },
+        "bn": {
+          "title": "একজন আইনজীবীর গোপনীয়তা, স্বচ্ছতা ও জবাবদিহিতা",
+          "short_description": "অফিসিয়াল উদ্ধৃতি — N/A (একজন আইনজীবীর গোপনীয়তা, স্বচ্ছতা ও জবাবদিহিতা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "অফিসিয়াল পাঠ Evidence Act ss.126–129 পড়ে সিলেবাস \"একজন আইনজীবীর গোপনীয়তা, স্বচ্ছতা ও জবাবদিহিতা\"-এর সাথে মিলান। ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "Official Evidence Act professional communications (ss.126–129). This is the nearest numbered official text on advocate-client confidentiality. It is not Bar Council Canons commentary on transparency/accountability, which is not in this HTML.\n\nঅফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-24.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সূত্রে। এখানে বাংলা অনুবাদ উদ্ভাবন করা হয়নি।\n\nসিলেবাস: একজন আইনজীবীর গোপনীয়তা, স্বচ্ছতা ও জবাবদিহিতা (N/A)।\n\n126. No [Advocate] shall at any time be permitted, unless with his client's express consent, to disclose any communication made to him in the course and for the purpose of his employment as such Advocate by or on behalf of his client, or to state the contents or condition of any document with which he has become acquainted in the course and for the purpose of his professional employment, or to disclose any advice given by him to his client in the course and for the purpose of such employment:\n\nProvided that nothing in this section shall protect from disclosure–\n\n(1) any such communication made in furtherance of any illegal purpose:\n\n(2) any fact observed by any [Advocate], in the course of his employment as such, showing that any crime of fraud has been committed since the commencement of his employment.\n\nIt is immaterial whether the attention of such [Advocate] was or was not directed to such fact by or on behalf of his client.\n\nExplanation.– The obligation stated in this section continues after the employment has ceased.\n\n127. The provisions of section 126 shall apply to interpreters and the clerks or servants of [Advocate].\n\n128. If any party to a suit gives evidence therein at his own instance or otherwise, he shall not be deemed to have consented thereby to such disclosure as is mentioned in section 126; and, if any party to a suit or proceeding calls any such [Advocate] as a witness, he shall be deemed to have consented to such disclosure only if he questions such [Advocate] on matters which, but for such question, he would not be at liberty to disclose.\n\n129. No one shall be compelled to disclose to the Court any confidential communication which has taken place between him and his legal professional adviser, unless he offers himself as a witness, in which case he may be compelled to disclose any such communications as may appear to the Court necessary to be known in order to explain any evidence which he has given, but no others.",
+          "key_concepts": [
+            "N/A",
+            "একজন আইনজীবীর গোপনীয়তা, স্বচ্ছতা ও জবাবদিহিতা",
+            "Evidence Act ss.126–129",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "No [Advocate] shall at any time be permitted, unless with his client's express consent, to disclose any communication made to him in the course and for the purpose of his employment as such Advocate by or on behalf of his client, or to state the contents or condition of any document with which he has become acquainted in the course and for the purpose of his professional employment, or to disclose any advice given by him to his client in the course and for the purpose of such employment:\n\nProvided that nothing in this section shall protect from disclosure–\n\n(1) any such communication made in furtherance of any illegal purpose:\n\n(2) any fact observed by any [Advocate], in the course of his employment as such, showing that any crime of fraud has been committed since the commencement of his employment.",
+            "It is immaterial whether the attention of such [Advocate] was or was not directed to such fact by or on behalf of his client.",
+            "Explanation.– The obligation stated in this section continues after the employment has ceased.",
+            "The provisions of section 126 shall apply to interpreters and the clerks or servants of [Advocate]."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-24.html খুলে Evidence Act ss.126–129 নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "বাদ পড়া বিধি/তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-24.html",
+            "উদ্ধৃত: Evidence Act ss.126–129"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-ETH-05",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-ETH-05",
+      "topic_id": "T-ETH-05",
+      "module_id": "BC-MOD-ETHICS",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Official extract retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-print-387.html",
+      "section_or_order": "Canons of Professional Conduct and Etiquette",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Canons of Professional Conduct and Etiquette",
+          "short_description": "Official extract for Canons of Professional Conduct and Etiquette (Canons of Professional Conduct and Etiquette). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording cited as Bar Council Order Art.10(c) and Art.44(g) and map it to \"Canons of Professional Conduct and Etiquette\". This card quotes official text; it is not commentary and is not verified.",
+          "explanation": "Official Order, 1972: Bar Council may lay down standards of professional conduct (Art.10(c)); Art.44(g) deems the Canons framed by the Pakistan Bar Council to be the Canons of the Bangladesh Bar Council (substituting “Bangladesh” for “Pakistan”). The Canons body itself is not in this bdlaws HTML. Not invented commentary.\n\nOfficial English from https://bdlaws.minlaw.gov.bd/act-print-387.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full instrument.\n\nSyllabus: Canons of Professional Conduct and Etiquette (Canons of Professional Conduct and Etiquette).\n\n10. Subject to the provisions of this Order and the rules made thereunder the functions of the Bar Council shall be-\n(c) to lay down standard of professional conduct and etiquette for advocates;\n(d) to entertain and determine cases of misconduct against advocates on its roll and to order punishment in such cases;\n\n44. On the commencement of this Order,-\n(g) the Canons of Professional Conduct and Etiquette framed by the Pakistan Bar Council shall be deemed to be the Canons framed by the Bar Council and in those Canons for the word “Pakistan”, wherever occurring, the word “Bangladesh” shall be substituted.",
+          "key_concepts": [
+            "Canons of Professional Conduct and Etiquette",
+            "Canons of Professional Conduct and Etiquette",
+            "Bar Council Order Art.10(c) and Art.44(g)",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "Subject to the provisions of this Order and the rules made thereunder the functions of the Bar Council shall be-\n(c) to lay down standard of professional conduct and etiquette for advocates;\n(d) to entertain and determine cases of misconduct against advocates on its roll and to order punishment in such cases;\n\n44.",
+            "On the commencement of this Order,-\n(g) the Canons of Professional Conduct and Etiquette framed by the Pakistan Bar Council shall be deemed to be the Canons framed by the Bar Council and in those Canons for the word “Pakistan”, wherever occurring, the word “Bangladesh” shall be substituted."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-print-387.html and read Bar Council Order Art.10(c) and Art.44(g). No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming omitted rules, schedules, or Bangla authentic text are fully in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-print-387.html",
+            "Quoted: Bar Council Order Art.10(c) and Art.44(g)"
+          ]
+        },
+        "bn": {
+          "title": "পেশাগত আচরণবিধি ও শিষ্টাচারের নীতিমালা",
+          "short_description": "অফিসিয়াল উদ্ধৃতি — Canons of Professional Conduct and Etiquette (পেশাগত আচরণবিধি ও শিষ্টাচারের নীতিমালা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "অফিসিয়াল পাঠ Bar Council Order Art.10(c) and Art.44(g) পড়ে সিলেবাস \"পেশাগত আচরণবিধি ও শিষ্টাচারের নীতিমালা\"-এর সাথে মিলান। ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "Official Order, 1972: Bar Council may lay down standards of professional conduct (Art.10(c)); Art.44(g) deems the Canons framed by the Pakistan Bar Council to be the Canons of the Bangladesh Bar Council (substituting “Bangladesh” for “Pakistan”). The Canons body itself is not in this bdlaws HTML. Not invented commentary.\n\nঅফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-print-387.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সূত্রে। এখানে বাংলা অনুবাদ উদ্ভাবন করা হয়নি।\n\nসিলেবাস: পেশাগত আচরণবিধি ও শিষ্টাচারের নীতিমালা (Canons of Professional Conduct and Etiquette)।\n\n10. Subject to the provisions of this Order and the rules made thereunder the functions of the Bar Council shall be-\n(c) to lay down standard of professional conduct and etiquette for advocates;\n(d) to entertain and determine cases of misconduct against advocates on its roll and to order punishment in such cases;\n\n44. On the commencement of this Order,-\n(g) the Canons of Professional Conduct and Etiquette framed by the Pakistan Bar Council shall be deemed to be the Canons framed by the Bar Council and in those Canons for the word “Pakistan”, wherever occurring, the word “Bangladesh” shall be substituted.",
+          "key_concepts": [
+            "Canons of Professional Conduct and Etiquette",
+            "পেশাগত আচরণবিধি ও শিষ্টাচারের নীতিমালা",
+            "Bar Council Order Art.10(c) and Art.44(g)",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "Subject to the provisions of this Order and the rules made thereunder the functions of the Bar Council shall be-\n(c) to lay down standard of professional conduct and etiquette for advocates;\n(d) to entertain and determine cases of misconduct against advocates on its roll and to order punishment in such cases;\n\n44.",
+            "On the commencement of this Order,-\n(g) the Canons of Professional Conduct and Etiquette framed by the Pakistan Bar Council shall be deemed to be the Canons framed by the Bar Council and in those Canons for the word “Pakistan”, wherever occurring, the word “Bangladesh” shall be substituted."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-print-387.html খুলে Bar Council Order Art.10(c) and Art.44(g) নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "বাদ পড়া বিধি/তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-print-387.html",
+            "উদ্ধৃত: Bar Council Order Art.10(c) and Art.44(g)"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-ETH-10",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-ETH-10",
+      "topic_id": "T-ETH-10",
+      "module_id": "BC-MOD-ETHICS",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Official extract retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-367.html",
+      "section_or_order": "N/A",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Legal decisions and law reports",
+          "short_description": "Official extract for N/A (Legal decisions and law reports). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording cited as Constitution Art.111 and map it to \"Legal decisions and law reports\". This card quotes official text; it is not commentary and is not verified.",
+          "explanation": "Official Constitution Art.111 on the binding nature of Supreme Court decisions. Law-report banks / DLR tables are not in this HTML and were not invented.\n\nOfficial English from https://bdlaws.minlaw.gov.bd/act-details-367.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full instrument.\n\nSyllabus: Legal decisions and law reports (N/A).\n\n111. The law declared by the Appellate Division shall be binding on the High Court Division and the law declared by either division of the Supreme Court shall be binding on all courts subordinate to it.",
+          "key_concepts": [
+            "N/A",
+            "Legal decisions and law reports",
+            "Constitution Art.111",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "The law declared by the Appellate Division shall be binding on the High Court Division and the law declared by either division of the Supreme Court shall be binding on all courts subordinate to it."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-367.html and read Constitution Art.111. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming omitted rules, schedules, or Bangla authentic text are fully in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-367.html",
+            "Quoted: Constitution Art.111"
+          ]
+        },
+        "bn": {
+          "title": "আইনি সিদ্ধান্ত ও ল রিপোর্ট",
+          "short_description": "অফিসিয়াল উদ্ধৃতি — N/A (আইনি সিদ্ধান্ত ও ল রিপোর্ট)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "অফিসিয়াল পাঠ Constitution Art.111 পড়ে সিলেবাস \"আইনি সিদ্ধান্ত ও ল রিপোর্ট\"-এর সাথে মিলান। ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "Official Constitution Art.111 on the binding nature of Supreme Court decisions. Law-report banks / DLR tables are not in this HTML and were not invented.\n\nঅফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-367.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সূত্রে। এখানে বাংলা অনুবাদ উদ্ভাবন করা হয়নি।\n\nসিলেবাস: আইনি সিদ্ধান্ত ও ল রিপোর্ট (N/A)।\n\n111. The law declared by the Appellate Division shall be binding on the High Court Division and the law declared by either division of the Supreme Court shall be binding on all courts subordinate to it.",
+          "key_concepts": [
+            "N/A",
+            "আইনি সিদ্ধান্ত ও ল রিপোর্ট",
+            "Constitution Art.111",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "The law declared by the Appellate Division shall be binding on the High Court Division and the law declared by either division of the Supreme Court shall be binding on all courts subordinate to it."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-367.html খুলে Constitution Art.111 নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "বাদ পড়া বিধি/তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-367.html",
+            "উদ্ধৃত: Constitution Art.111"
+          ]
+        }
+      }
+    }
+  ]
+}

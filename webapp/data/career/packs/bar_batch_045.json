@@ -1,0 +1,835 @@
+{
+  "batch_id": "BATCH-2026-09-045-WRITTEN-2023-WEB",
+  "schema_version": "1.0",
+  "content_version": "2026.09.15",
+  "created_at": "2026-09-15T00:00:00Z",
+  "source": "web-photo-ocr",
+  "content_source": "web-photo-ocr",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Web-photo OCR of Bar Council written 2023 (23 Dec 2023). AUTHENTIC_REPORTED_QUESTION. BD Law Post photographs of the printed paper. Not an official PDF. No model answers.",
+  "official_past_papers": 0,
+  "asset_count": 13,
+  "assets": [
+    {
+      "content_id": "BC-WQ-WEB-2023-01",
+      "written_question_id": "BC-WQ-WEB-2023-01",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "ক",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 1 (ক অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) \"Pleading shall contain only material facts\"—The Code of Civil Procedure, 1908 এর Order VI অনুযায়ী এর বিষয়বস্তু বর্ণিয়ে আলোচনা করুন। [≈১০]\n\nখ) Y দেওয়ানী ৮৩/২০২২ নং স্বত্ব ঘোষণা মোকদ্দমা দায়ের করেন এবং আরজিতে দাবি করেন যে, তিনি ইতোপূর্বে গৃহীত সহকারী শিক্ষক পদে নিয়োগ পরীক্ষায় প্রথম হওয়া সত্ত্বেও কাউকে নিয়োগ না দিয়ে ঐ পদে নতুন নিয়োগ বিজ্ঞপ্তি প্রচার অবৈধ। সংশ্লিষ্ট আইন ও কারণ উল্লেখ করে আরজি প্রত্যাখ্যানের দরখাস্ত প্রস্তুত করুন। [≈৫]",
+          "answer_outline": [
+            "O.6 r.2: তথ্য, আইন/সাক্ষ্য নয়",
+            "শিক্ষক নিয়োগ — দেওয়ানি স্বত্ব নয়, r.11 খারিজ"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) আদেশ ৬ বিধি ২: প্লিডিংয়ে কেবল বস্তুগত তথ্য সংক্ষেপে, তারিখ ও ঘটনা; আইনের যুক্তি, সাক্ষ্যের বিবরণ বা দলিলের পুরো পাঠ নয়। বিধি ৪-এ প্রতারণার বিশেষ তথ্য; বিধি ৬ অস্বীকার স্পষ্ট। উদ্দেশ্য — পক্ষ জানুক কী লড়তে হবে।\nখ) স্বত্ব ঘোষণা মোকদ্দমায় সহকারী শিক্ষক নিয়োগের বৈধতা চাওয়া — এটা চাকরি/প্রশাসনিক আইন, দেওয়ানি স্বত্ব নয়। আদেশ ৭ বিধি ১১(ক)/(ঘ): কারণ প্রকাশ না হওয়া ও এখতিয়ারহীন। দরখাস্ত: “মাননীয় সহকারী জজ, দেওয়ানি ৮৩/২০২২। আরজি প্রত্যাখ্যান — নিয়োগ বিজ্ঞপ্তি রদ দেওয়ানি আদালতের বিষয় নয়; রিট/প্রশাসনিক ফোরাম। প্রার্থনা — আরজি খারিজ, খরচ।”",
+          "prep_outline": [
+            "O.6 r.2: তথ্য, আইন/সাক্ষ্য নয়",
+            "শিক্ষক নিয়োগ — দেওয়ানি স্বত্ব নয়, r.11 খারিজ"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q1",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) \"Pleading shall contain only material facts\"—discuss in the context of the contents of pleading according to Order VI of the Code of Civil Procedure, 1908. [10]\n\nb) Y filed a suit for declaration bearing no. 83/2022 and claimed in the plaint that the fresh advertisement for appointment in the post of Assistant Teacher without appointing anyone is illegal, despite the fact that he stood first in the recruitment examination for the same position held earlier. Prepare an application for rejection of the plaint stating relevant laws and reasons. [5]",
+          "answer_outline": [
+            "O.6 r.2: তথ্য, আইন/সাক্ষ্য নয়",
+            "শিক্ষক নিয়োগ — দেওয়ানি স্বত্ব নয়, r.11 খারিজ"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) আদেশ ৬ বিধি ২: প্লিডিংয়ে কেবল বস্তুগত তথ্য সংক্ষেপে, তারিখ ও ঘটনা; আইনের যুক্তি, সাক্ষ্যের বিবরণ বা দলিলের পুরো পাঠ নয়। বিধি ৪-এ প্রতারণার বিশেষ তথ্য; বিধি ৬ অস্বীকার স্পষ্ট। উদ্দেশ্য — পক্ষ জানুক কী লড়তে হবে।\nখ) স্বত্ব ঘোষণা মোকদ্দমায় সহকারী শিক্ষক নিয়োগের বৈধতা চাওয়া — এটা চাকরি/প্রশাসনিক আইন, দেওয়ানি স্বত্ব নয়। আদেশ ৭ বিধি ১১(ক)/(ঘ): কারণ প্রকাশ না হওয়া ও এখতিয়ারহীন। দরখাস্ত: “মাননীয় সহকারী জজ, দেওয়ানি ৮৩/২০২২। আরজি প্রত্যাখ্যান — নিয়োগ বিজ্ঞপ্তি রদ দেওয়ানি আদালতের বিষয় নয়; রিট/প্রশাসনিক ফোরাম। প্রার্থনা — আরজি খারিজ, খরচ।”"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-02",
+      "written_question_id": "BC-WQ-WEB-2023-02",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "ক",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 2 (ক অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) দেওয়ানী মোকদ্দমায় পক্ষগণের হাজিরা ও অহাজিরার ফলাফল কী? এক্ষেত্রে ক্ষতিগ্রস্ত পক্ষের প্রতিকার কী? The Code of Civil Procedure, 1908 এর প্রাসঙ্গিক বিধান উল্লেখ্য উত্তর দিন। [≈১০]\n\nখ) বাদীর অস্থায়ী নিষেধাজ্ঞার আবেদন শুনানীর দিন কোনোপক্ষে হাজির না থাকায় নামঞ্জুর করা হয়। কয়েকদিন পর বাদী The Code of Civil Procedure, 1908 এর ১৫১ ধারামতে একটি দরখাস্ত দাখিল করে তিনি ধার্য তারিখে অসুস্থ থাকায় আদালতে হাজির হতে পারেননি বলে অস্থায়ী নিষেধাজ্ঞার দরখাস্ত নামঞ্জুর আদেশটি বাতিল চান। তদনিরূপ প্রাসঙ্গিক বিধান উল্লেখ্য আপত্তি মুসাবিদা করুন। [≈৫]",
+          "answer_outline": [
+            "আদেশ ৯: একতরফা/খারিজ",
+            "মিশ্র দরখাস্তে ১৫১ নয় — r.9/r.13"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) বাদী অনুপস্থিত: আদেশ ৯ বিধি ৮ খারিজ; বিবাদী অনুপস্থিত: বিধি ৬ একতরফা। দুই পক্ষ অনুপস্থিত: বিধি ৩ খারিজ। প্রতিকার: বিধি ৪/৯ নতুন মামলা/পুনরুজ্জীবন, বিধি ১৩ একতরফা ডিক্রি রদ — যথেষ্ট কারণ ও তামাদি।\nখ) নিষেধাজ্ঞা নামঞ্জুর — এটি মূল মামলা খারিজ নয়। আদেশ ৯ বিধি ৯ এখানে খাটে না। ধারা ১৫১ সেখানে নয় যেখানে বিধি আছে। আপত্তি: “আবেদনকারী নির্দিষ্ট বিধি এড়িয়ে ১৫১ এসেছেন; অসুস্থতার প্রমাণ নেই; পুনঃশুনানি আদেশ ৩৯-এর অধীনে নতুন দরখাস্তে সম্ভব। নামঞ্জুর আদেশ বহাল রাখুন।”",
+          "prep_outline": [
+            "আদেশ ৯: একতরফা/খারিজ",
+            "মিশ্র দরখাস্তে ১৫১ নয় — r.9/r.13"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q2",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) What are the consequences of appearance and non-appearance of parties in a civil suit? What remedies are available to the party aggrieved thereby? Answer mentioning the relevant provisions of the Code of Civil Procedure, 1908. [10]\n\nb) The plaintiff's application for temporary injunction was rejected for non-appearance of the parties on the date of hearing. A few days later the plaintiff filed a petition under section 151 of the Code of Civil Procedure, 1908 for setting aside the order rejecting the application for temporary injunction on the assertion that due to illness he could not appear in the court on the date fixed. Draft a written objection against the aforesaid petition referring to relevant laws. [5]",
+          "answer_outline": [
+            "আদেশ ৯: একতরফা/খারিজ",
+            "মিশ্র দরখাস্তে ১৫১ নয় — r.9/r.13"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) বাদী অনুপস্থিত: আদেশ ৯ বিধি ৮ খারিজ; বিবাদী অনুপস্থিত: বিধি ৬ একতরফা। দুই পক্ষ অনুপস্থিত: বিধি ৩ খারিজ। প্রতিকার: বিধি ৪/৯ নতুন মামলা/পুনরুজ্জীবন, বিধি ১৩ একতরফা ডিক্রি রদ — যথেষ্ট কারণ ও তামাদি।\nখ) নিষেধাজ্ঞা নামঞ্জুর — এটি মূল মামলা খারিজ নয়। আদেশ ৯ বিধি ৯ এখানে খাটে না। ধারা ১৫১ সেখানে নয় যেখানে বিধি আছে। আপত্তি: “আবেদনকারী নির্দিষ্ট বিধি এড়িয়ে ১৫১ এসেছেন; অসুস্থতার প্রমাণ নেই; পুনঃশুনানি আদেশ ৩৯-এর অধীনে নতুন দরখাস্তে সম্ভব। নামঞ্জুর আদেশ বহাল রাখুন।”"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-03",
+      "written_question_id": "BC-WQ-WEB-2023-03",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-SRA",
+      "topic_id": "T-SRA-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "ক",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 3 (ক অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) The Specific Relief Act, 1877 অনুযায়ী কোন কোন চুক্তি সুনির্দিষ্টভাবে বলবৎযোগ্য নয়? সংশ্লিষ্ট ধারাসমূহের উল্লেখ্য সংক্ষেপে উত্তর দিন। [≈৫]\n\nখ) পিতা F তার পুত্র Z কে ৫ শতক টাকা মূল্যমানের ১১ শতক অবিভক্ত জমির মধ্যে ৫ শতক দানপত্রের মাধ্যমে দান করেন। F এর মৃত্যুর পর তার অপর পুত্র X ও Y দানপত্রটি জালিত ও তাতে অন্তর্ভুক্ত জমিতে Z স্বত্ব অর্জন করে নাই মর্মে দাবি করেন। এমতাবস্থায়, Z এর পক্ষে প্রতিকার প্রার্থনা উপযুক্ত আদালতে দাখিলের জন্য একটি আরজির মুসাবিদা করুন এবং পৃথকভাবে আরজিতে প্রার্থিত প্রতিকারসমূহ পক্ষে আইনসমূহ উল্লেখ করুন। [≈৭+৩=১০]",
+          "answer_outline": [
+            "ধারা ২১: ব্যক্তিগত/অনির্দিষ্ট চুক্তি",
+            "দানপত্র: ঘোষণা+স্থায়ী নিষেধ, জালিতার ভার বাদীর নয়"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) ধারা ২১: অর্থ দিয়ে ক্ষতিপূরণ যথেষ্ট, ব্যক্তিগত চাকরি, অনিশ্চিত শর্ত, নিছক জুয়া/দাম নির্ধারণহীন, তৃতীয় পক্ষের অধিকার লঙ্ঘন, অবৈধ চুক্তি — সুনির্দিষ্ট পালন নয়।\nখ) আরজি: সহকারী জজ/যে আদালত তায়দাদ অনুসারে। বাদী Z, বিবাদী X,Y। তথ্য: পিতা F ৫ শতক দান, নিবন্ধিত দানপত্র, F-এর মৃত্যু, ভাইয়েরা জাল দাবি। প্রার্থনা: (১) দানপত্র বৈধ ও Z-এর স্বত্ব ঘোষণা (SRA ৪২), (২) বিবাদীদের হস্তক্ষেপ নিষেধ (৫৪), (৩) প্রয়োজনে দখল, (৪) খরচ। জালিতার প্রমাণভার যে অস্বীকার করে তার।",
+          "prep_outline": [
+            "ধারা ২১: ব্যক্তিগত/অনির্দিষ্ট চুক্তি",
+            "দানপত্র: ঘোষণা+স্থায়ী নিষেধ, জালিতার ভার বাদীর নয়"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q3",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) Which contracts are not specifically enforceable under the Specific Relief Act, 1877? Answer briefly with reference to relevant sections. [5]\n\nb) Father F makes a hiba of 5 decimals of land out of his undivided 11 decimals of land worth Tk. 33 lac in favour of his son Z through a deed of hiba. After the death of F, his other sons X and Y claimed that the deed of hiba was forged and Z did not acquire title to the land included in the deed. In this context draft a plaint for filing in the competent court seeking remedies on behalf of Z and mention separately relevant laws in support of the remedies sought in the plaint. [7+3=10]",
+          "answer_outline": [
+            "ধারা ২১: ব্যক্তিগত/অনির্দিষ্ট চুক্তি",
+            "দানপত্র: ঘোষণা+স্থায়ী নিষেধ, জালিতার ভার বাদীর নয়"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) ধারা ২১: অর্থ দিয়ে ক্ষতিপূরণ যথেষ্ট, ব্যক্তিগত চাকরি, অনিশ্চিত শর্ত, নিছক জুয়া/দাম নির্ধারণহীন, তৃতীয় পক্ষের অধিকার লঙ্ঘন, অবৈধ চুক্তি — সুনির্দিষ্ট পালন নয়।\nখ) আরজি: সহকারী জজ/যে আদালত তায়দাদ অনুসারে। বাদী Z, বিবাদী X,Y। তথ্য: পিতা F ৫ শতক দান, নিবন্ধিত দানপত্র, F-এর মৃত্যু, ভাইয়েরা জাল দাবি। প্রার্থনা: (১) দানপত্র বৈধ ও Z-এর স্বত্ব ঘোষণা (SRA ৪২), (২) বিবাদীদের হস্তক্ষেপ নিষেধ (৫৪), (৩) প্রয়োজনে দখল, (৪) খরচ। জালিতার প্রমাণভার যে অস্বীকার করে তার।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-04",
+      "written_question_id": "BC-WQ-WEB-2023-04",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "খ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 4 (খ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) The Code of Criminal Procedure, 1898 এর সংশ্লিষ্ট ধারার উল্লেখ্য গ্রেফতারকৃত ব্যক্তির অধিকারসমূহ আলোচনা করুন। [≈১০]\n\nখ) X Y কে আঘাত করেন। এতে Y প্রচণ্ড ক্রোধাবিষ্ট হন, Z, Y এর ক্রোধের সুযোগ নিয়ে Y কর্তৃক X কে হত্যার অভিপ্রায়ে Y এর হাতে একটি ছুরি তুলে দেন। Y ঐ ছুরির সাহায্যে ০৩/১১/২০২৩ তারিখ সকাল ৯.০০ টায় সদর থানার রাসুলপুর বাজারে X কে হত্যা করেন। এই ঘটনায় পুলিশ Y ও Z কে অভিযুক্ত করে The Penal Code, 1860 এর ১০৯, ৩৪, ৩২৩ ও ৩২৬ ধারায় অভিবচন দাখিল করে। The Penal Code, 1860 অনুযায়ী Y ও Z এর ফৌজদারি দায় নিরুপণপূর্বক পুলিশ প্রতিবেদনের বিরুদ্ধে সংশ্লিষ্ট আদালতে দাখিলের জন্য একটি নারাজি দরখাস্ত প্রস্তুত করুন। [≈৫]",
+          "answer_outline": [
+            "গ্রেপ্তার: ৫০, ৫৪, ১৬৭, ৬০–৬১, আইনজীবী",
+            "Y: ৩০২; Z: ১০৯ — ৩২৩/৩২৬ অপর্যাপ্ত"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) গ্রেপ্তারকালে কারণ জানানো (৫০), আত্মীয়/বন্ধুকে খবর, আইনজীবীর পরামর্শ, ২৪ ঘণ্টায় ম্যাজিস্ট্রেট (৬১), নির্যাতন নিষেধ, ১৬৪ স্বীকারোক্তি স্বেচ্ছায়, জামিন ৪৯৬/৪৯৭। ৫৪ সন্দেহে গ্রেপ্তার ক্ষমতা সীমিত, যথেচ্ছ নয়।\nখ) Y ইচ্ছায় ছুরি দিয়ে X হত্যা — ৩০২, আকস্মিক লড়াইয়ের ৩০০ ব্যতিক্রম দুর্বল (Z ছুরি দিয়েছে)। Z প্ররোচনা/সহায়তা ১০৯ সহ ৩০২। পুলিশ ৩২৩/৩২৬/৩৪ চার্জশিট কম চার্জ। নারাজি: “সম্পূরক তদন্ত, ৩০২/১০৯ যোগ করুন; ৩২৩ নামঞ্জুর।” খ/গ: আক্রোশ প্ররোচিত, পূর্বপরিকল্পনা Z-এর।",
+          "prep_outline": [
+            "গ্রেপ্তার: ৫০, ৫৪, ১৬৭, ৬০–৬১, আইনজীবী",
+            "Y: ৩০২; Z: ১০৯ — ৩২৩/৩২৬ অপর্যাপ্ত"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q4",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) Discuss the rights of an arrested person mentioning the relevant sections of the Code of Criminal Procedure, 1898 and leading case laws. [10]\n\nb) X strikes Y. By this Y gets excited to violent rage. Z taking the advantage of Y's rage, and intending to cause him (Y) to kill X, puts a knife into Y's hand. Y kills X with the knife on 03/11/2023 at 9.00 A.M at Rasulpur Bazaar under Sadar Police Station. Police, in this occurrence, submits report accusing Y and Z under sections 109, 34, 323 and 326 of the Penal Code, 1860. Ascertain the criminal liabilities of Y and Z according to the Penal Code, 1860 and prepare a Naraji petition against the police report for filing in the competent court. [5]",
+          "answer_outline": [
+            "গ্রেপ্তার: ৫০, ৫৪, ১৬৭, ৬০–৬১, আইনজীবী",
+            "Y: ৩০২; Z: ১০৯ — ৩২৩/৩২৬ অপর্যাপ্ত"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) গ্রেপ্তারকালে কারণ জানানো (৫০), আত্মীয়/বন্ধুকে খবর, আইনজীবীর পরামর্শ, ২৪ ঘণ্টায় ম্যাজিস্ট্রেট (৬১), নির্যাতন নিষেধ, ১৬৪ স্বীকারোক্তি স্বেচ্ছায়, জামিন ৪৯৬/৪৯৭। ৫৪ সন্দেহে গ্রেপ্তার ক্ষমতা সীমিত, যথেচ্ছ নয়।\nখ) Y ইচ্ছায় ছুরি দিয়ে X হত্যা — ৩০২, আকস্মিক লড়াইয়ের ৩০০ ব্যতিক্রম দুর্বল (Z ছুরি দিয়েছে)। Z প্ররোচনা/সহায়তা ১০৯ সহ ৩০২। পুলিশ ৩২৩/৩২৬/৩৪ চার্জশিট কম চার্জ। নারাজি: “সম্পূরক তদন্ত, ৩০২/১০৯ যোগ করুন; ৩২৩ নামঞ্জুর।” খ/গ: আক্রোশ প্ররোচিত, পূর্বপরিকল্পনা Z-এর।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-05",
+      "written_question_id": "BC-WQ-WEB-2023-05",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "খ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 5 (খ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) অব্যাহতি ও খালাসের মধ্যে পার্থক্য কী? অভিযোগ গঠনকালে আসামীপক্ষের কাগজপত্র দেখে অব্যাহতি দেওয়া যায় কি? [≈৩+২=৫]\n\nখ) ১৫/০২/২০২৩ তারিখ সকাল ১০.০০ টায় X তার বন্ধু P, Q ও R সাথে রাজপুর বাজারে সদর থানার পথে সদর থানার রাজপুর নামক স্থানে Y ও Z তাহসিল আটক করে ৩০,০০০ টাকা চাঁদা দাবি করেন এবং প্রাণনাশের হুমকি দেন। হঠাৎ N, Y ও Z, X কে এলোপাতাড়ি ঘুসি মারতে থাকেন। M রাস্তার পাশের দোকান থেকে ফুটন্ত পানি এনে X এর শরীরে ঢেলে দেন। X মারাত্মক আহত হয়। এই ঘটনায় The Penal Code, 1860 অনুসারে প্রত্যেক আসামীর ফৌজদারি দায় নিরুপণপূর্বক একটি নালিশ প্রস্তুত করুন। [≈১০]",
+          "answer_outline": [
+            "অব্যাহতি বিচারপূর্ব; খালাস বিচারশেষে",
+            "২৪১ক-এ প্রতিরক্ষা কাগজ নয়",
+            "চাঁদা+হুমকি+ফুটন্ত পানি"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) অব্যাহতি (discharge) চার্জ গঠনের আগে — প্রাথমিক পত্রে অপরাধ নেই। খালাস (acquittal) বিচারের পর সন্দেহাতীত প্রমাণ না হলে। ২৪১ক/২৬৫গ-তে আসামীর অডিট/প্রতিরক্ষা সাক্ষ্য দেখে অব্যাহতি সাধারণত নয়।\nখ) নালিশ: Y,Z চাঁদা ৩৮৪/৩৮৭, প্রাণনাশের হুমকি ৫০৬; N,Y,Z ঘুসি ৩২৩/৩৪; M ফুটন্ত পানি — গুরুতর জখম ৩২৬/৩২৪। সাধারণ উদ্দেশ্য থাকলে ১৪৯। ম্যাজিস্ট্রেট আদালতে নালিশ ২০০ ধারা, মেডিকেল সংযুক্ত।",
+          "prep_outline": [
+            "অব্যাহতি বিচারপূর্ব; খালাস বিচারশেষে",
+            "২৪১ক-এ প্রতিরক্ষা কাগজ নয়",
+            "চাঁদা+হুমকি+ফুটন্ত পানি"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q5",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) What is the difference between discharge and acquittal? Can the accused be discharged on perusal of the documents of the defence side during framing of charge? [3+2=5]\n\nb) On 15/02/2023 at 10.00 A.M., X with his friends P, Q and R while was at Rajapur under Sadar Police Station on their way to the local market, Y and Z obstructed them and demanded ransom of Tk. 30,000 and also put them in fear of death. Suddenly, N, Y and Z started striking X with clenched fist indiscriminately. M brought boiling water from a roadside tea stall and poured it on X's body. X got fatally injured. In this occurrence, prepare a complaint determining the criminal liability of each offender under the Penal Code, 1860. [10]",
+          "answer_outline": [
+            "অব্যাহতি বিচারপূর্ব; খালাস বিচারশেষে",
+            "২৪১ক-এ প্রতিরক্ষা কাগজ নয়",
+            "চাঁদা+হুমকি+ফুটন্ত পানি"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) অব্যাহতি (discharge) চার্জ গঠনের আগে — প্রাথমিক পত্রে অপরাধ নেই। খালাস (acquittal) বিচারের পর সন্দেহাতীত প্রমাণ না হলে। ২৪১ক/২৬৫গ-তে আসামীর অডিট/প্রতিরক্ষা সাক্ষ্য দেখে অব্যাহতি সাধারণত নয়।\nখ) নালিশ: Y,Z চাঁদা ৩৮৪/৩৮৭, প্রাণনাশের হুমকি ৫০৬; N,Y,Z ঘুসি ৩২৩/৩৪; M ফুটন্ত পানি — গুরুতর জখম ৩২৬/৩২৪। সাধারণ উদ্দেশ্য থাকলে ১৪৯। ম্যাজিস্ট্রেট আদালতে নালিশ ২০০ ধারা, মেডিকেল সংযুক্ত।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-06",
+      "written_question_id": "BC-WQ-WEB-2023-06",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "গ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 6 (গ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) কোন পরিস্থিতিতে কোনো ব্যক্তি কর্তৃক 'আইনবলে বাধ্য' বা 'আইনবলে ন্যায়সঙ্গত' ধারায় সরল বিশ্বাসে সম্পাদিত কাজ ফৌজদারি অপরাধের অভিযোগের বিরুদ্ধে যথেষ্ট প্রতিরক্ষা বিবেচনা গণ্য হবে? [≈১০]\n\nখ) সমবায় সমিতির মালিকানাধীন একটি স্থাবর সম্পত্তি নিলামে নব্বই শতক জায়গা Q ক্রয় করেন। Y ও Z এর সাথে যোগসাজশে ঐ সমবায় সমিতির সেক্রেটারি X ঐ সম্পত্তির মূল্য চল্লিশ শতক টাকা উল্লেখ্য Z এর অনুকূলে একটি জাল দলিল করেন মর্মে সাক্ষ্যে প্রমাণিত হয়। X, Y ও Z কে The Penal Code, 1860 এর কোন কোন ধারার অধীনে দোষী সাব্যস্ত ও দণ্ডিত করা যেতে পারে? প্রাসঙ্গিক বিধান উল্লেখ্য উত্তর দিন। [≈৫]",
+          "answer_outline": [
+            "ধারা ৭৬–৭৯ সরল বিশ্বাস",
+            "জাল দলিল ৪৬৭/৪৭১, ৪০৯, ১২০খ"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) ৭৬ আইনবলে বাধ্য, ৭৭ বিচারিক কাজ, ৭৮ আদেশ পালন, ৭৯ ভুল কিন্তু সরল বিশ্বাসে আইনসঙ্গত মনে করা। সীমা: জ্ঞান থাকলে/অসৎ উদ্দেশ্যে খাটে না।\nখ) সেক্রেটারি X বিশ্বাসভঙ্গ ৪০৯, জাল ৪৬৭/৪৬৮/৪৭১, ষড়যন্ত্র ১২০খ; Y,Z সহায়তা ১০৯/৩৪। নিলামকে ফাঁকি দিয়ে মূল্য কম দেখানো প্রতারণা ৪২০।",
+          "prep_outline": [
+            "ধারা ৭৬–৭৯ সরল বিশ্বাস",
+            "জাল দলিল ৪৬৭/৪৭১, ৪০৯, ১২০খ"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q6",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) Under what circumstances act done by a person in good faith believing himself to be 'bound by law' or 'justified by law' be considered sufficient defence against charge of criminal offence? [10]\n\nb) Q purchased at auction an immovable property belonging to a co-operative society at Tk. ninety lac. It was proved through evidence that X, secretary of the said co-operative society, in collusion with Y and Z, forged a document in favour of Z mentioning therein Tk. forty lac as the value of property. Under which sections of the Penal Code, 1860 X, Y and Z may be found guilty and sentenced? Answer with reference to relevant provisions. [5]",
+          "answer_outline": [
+            "ধারা ৭৬–৭৯ সরল বিশ্বাস",
+            "জাল দলিল ৪৬৭/৪৭১, ৪০৯, ১২০খ"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) ৭৬ আইনবলে বাধ্য, ৭৭ বিচারিক কাজ, ৭৮ আদেশ পালন, ৭৯ ভুল কিন্তু সরল বিশ্বাসে আইনসঙ্গত মনে করা। সীমা: জ্ঞান থাকলে/অসৎ উদ্দেশ্যে খাটে না।\nখ) সেক্রেটারি X বিশ্বাসভঙ্গ ৪০৯, জাল ৪৬৭/৪৬৮/৪৭১, ষড়যন্ত্র ১২০খ; Y,Z সহায়তা ১০৯/৩৪। নিলামকে ফাঁকি দিয়ে মূল্য কম দেখানো প্রতারণা ৪২০।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-07",
+      "written_question_id": "BC-WQ-WEB-2023-07",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "গ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 7 (গ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) The Penal Code, 1860 অনুসারে নিম্নবর্ণিত বিষয়সমূহের মধ্যে পার্থক্য লিখুন— [৪×২.৫=১০]\ni) গুরুতর আঘাত ও আঘাত;\nii) সাধারণ অভিপ্রায় ও সাধারণ উদ্দেশ্য;\niii) অপহরণ ও অপহরণণ [OCR_UNCERTAIN: kidnapping/abduction];\niv) অবৈধ বাধা ও অবৈধ অবরোধ।\n\nখ) X মৃত্যু হবে জেনেও Y এর মৃত্যু ঘটানোর উদ্দেশ্যে গুলি ছোড়েন। কিন্তু ঐ গুলিতে Z এর মৃত্যু হয়। X এক্ষেত্রে The Penal Code, 1860 এর কোন ধারার অধীনে অপরাধ করেছেন? ব্যাখ্যা করুন। [≈৫]",
+          "answer_outline": [
+            "৩১৯–৩২০ vs ৩২১",
+            "৩৪ অভিপ্রায়; ১৪৯ উদ্দেশ্য",
+            "৩৬১/৩৬২",
+            "৩৩৯/৩৪০",
+            "৩০১ স্থানান্তর"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) i) আঘাত ৩১৯; গুরুতর ৩২০-এর আট প্রকার। ii) ৩৪ সকলের অভিপ্রায়+অংশ; ১৪৯ সমাবেশের উদ্দেশ্য, ব্যক্তিগত আঘাত না থাকলেও। iii) কিডন্যাপিং ৩৫৯–৩৬১ (অভিভাবক থেকে); অপহরণ ৩৬২ বল/প্রতারণা। iv) বাধা ৩৩৯ চলাচল; অবরোধ ৩৪০ নির্দিষ্ট সীমায় বন্দি।\nখ) Y মারতে গিয়ে Z মরে — ধারা ৩০১: অভিপ্রায় স্থানান্তর, ৩০২ যেন Y-কেই মেরেছে।",
+          "prep_outline": [
+            "৩১৯–৩২০ vs ৩২১",
+            "৩৪ অভিপ্রায়; ১৪৯ উদ্দেশ্য",
+            "৩৬১/৩৬২",
+            "৩৩৯/৩৪০",
+            "৩০১ স্থানান্তর"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q7",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) Distinguish between the following topics according to the Penal Code, 1860: [4×2.5=10]\ni) Grievous hurt and hurt;\nii) Common intention and common object;\niii) Kidnapping and abduction;\niv) Wrongful restraint and wrongful confinement.\n\nb) X, knowing and intending that it would likely cause death of Y, fires bullet. But it causes death of Z. Under which provision of the Penal Code, 1860 X committed the offence? Explain. [5]",
+          "answer_outline": [
+            "৩১৯–৩২০ vs ৩২১",
+            "৩৪ অভিপ্রায়; ১৪৯ উদ্দেশ্য",
+            "৩৬১/৩৬২",
+            "৩৩৯/৩৪০",
+            "৩০১ স্থানান্তর"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) i) আঘাত ৩১৯; গুরুতর ৩২০-এর আট প্রকার। ii) ৩৪ সকলের অভিপ্রায়+অংশ; ১৪৯ সমাবেশের উদ্দেশ্য, ব্যক্তিগত আঘাত না থাকলেও। iii) কিডন্যাপিং ৩৫৯–৩৬১ (অভিভাবক থেকে); অপহরণ ৩৬২ বল/প্রতারণা। iv) বাধা ৩৩৯ চলাচল; অবরোধ ৩৪০ নির্দিষ্ট সীমায় বন্দি।\nখ) Y মারতে গিয়ে Z মরে — ধারা ৩০১: অভিপ্রায় স্থানান্তর, ৩০২ যেন Y-কেই মেরেছে।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-08",
+      "written_question_id": "BC-WQ-WEB-2023-08",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "ঘ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 8 (ঘ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) The Evidence Act, 1872 অনুসারে শিশু, বোবা ও বৈরী সাক্ষীর সাক্ষ্য কখন ও কতটুকু গ্রহণযোগ্য? মূল দলিলের ফটোকপি সাক্ষ্য হিসাবে গ্রহণযোগ্য কি? [≈১০]\n\nখ) X অগ্নিদগ্ধ হয়ে ০২/০৩/২০২৩ তারিখে ডাক্তার D এর নিকট প্রকাশ করেন যে, N ও Z তার গায়ে দাহ্য পদার্থ ঢেলে আগুন ধরিয়ে দেন। X পরদিন পুলিশ কর্মকর্তা P এর নিকট বলেন যে, N, Y ও Z তার গায়ে কেরোসিন ঢেলে আগুন ধরিয়ে দেন। X ১৫/০৩/২০২৩ তারিখে মৃত্যুশয্যায় মারা যান। X এর বক্তব্যের ভিত্তিতে N, Y ও Z কে সাজা প্রদান করা যাবে কি? The Evidence Act, 1872 এর মৃত্যুকালীন ঘোষণা সংক্রান্ত বিধানানুসারে উত্তর দিন। [≈৫]",
+          "answer_outline": [
+            "শিশু ১১৮ বোধশক্তি",
+            "বোবা ইশারা ১১৯",
+            "বৈরী ১৫৪",
+            "ফটোকপি ৬৩/৬৫",
+            "৩২(১) মৃত্যুকালীন"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) শিশু: বোধশক্তি থাকলে ১১৮, শপথ ১৩। বোবা: ইশারায় ১১৯, লিখিত হলে ভাল। বৈরী: ১৫৪ অনুমতি নিয়ে জেরা। ফটোকপি গৌণ ৬৩; ৬৫-এর শর্তে (হারানো, বিপক্ষের দখল, জনদলিল) গ্রহণযোগ্য — নিছক ফটোকপি নয়।\nখ) চিকিৎসকের কাছে ০২/০৩ বিবৃতি — মৃত্যুকালীন ৩২(১) যদি তখন মৃত্যুর আশঙ্কা থাকে। পুলিশের কাছে পরদিনের বিবৃতি ৩২-এ যেতে পারে কিন্তু ২৫/২৬ পুলিশের কাছে কনফেশন বার। Y শুধু পুলিশ-বিবৃতিতে — সে অংশ দুর্বল। N ও Z দুই বিবৃতিতে আছে — চিকিৎসক সাক্ষ্যে ৩২(১) চলতে পারে। একা মৃত্যুকালীনতে সাজা সম্ভব যদি বিশ্বাসযোগ্য হয়; Y-এর ব্যাপারে সতর্ক।",
+          "prep_outline": [
+            "শিশু ১১৮ বোধশক্তি",
+            "বোবা ইশারা ১১৯",
+            "বৈরী ১৫৪",
+            "ফটোকপি ৬৩/৬৫",
+            "৩২(১) মৃত্যুকালীন"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) When and to what extent the testimony of minor, dumb and hostile witnesses is admissible under the Evidence Act, 1872? Is photocopy of the original document admissible in evidence? [10]\n\nb) X, being burnt, discloses to the doctor D on 02/03/2023 that N and Z poured 'flammable substance' on her and set her on fire. On the next day X tells to police officer P that N, Y and Z poured 'kerosene' on her and set her on fire. X died in a dying state on 15/03/2023. Can N, Y and Z be punished on the basis of X's statement? Answer according to the provision(s) regarding dying declaration under the Evidence Act, 1872. [5]",
+          "answer_outline": [
+            "শিশু ১১৮ বোধশক্তি",
+            "বোবা ইশারা ১১৯",
+            "বৈরী ১৫৪",
+            "ফটোকপি ৬৩/৬৫",
+            "৩২(১) মৃত্যুকালীন"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) শিশু: বোধশক্তি থাকলে ১১৮, শপথ ১৩। বোবা: ইশারায় ১১৯, লিখিত হলে ভাল। বৈরী: ১৫৪ অনুমতি নিয়ে জেরা। ফটোকপি গৌণ ৬৩; ৬৫-এর শর্তে (হারানো, বিপক্ষের দখল, জনদলিল) গ্রহণযোগ্য — নিছক ফটোকপি নয়।\nখ) চিকিৎসকের কাছে ০২/০৩ বিবৃতি — মৃত্যুকালীন ৩২(১) যদি তখন মৃত্যুর আশঙ্কা থাকে। পুলিশের কাছে পরদিনের বিবৃতি ৩২-এ যেতে পারে কিন্তু ২৫/২৬ পুলিশের কাছে কনফেশন বার। Y শুধু পুলিশ-বিবৃতিতে — সে অংশ দুর্বল। N ও Z দুই বিবৃতিতে আছে — চিকিৎসক সাক্ষ্যে ৩২(১) চলতে পারে। একা মৃত্যুকালীনতে সাজা সম্ভব যদি বিশ্বাসযোগ্য হয়; Y-এর ব্যাপারে সতর্ক।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-09",
+      "written_question_id": "BC-WQ-WEB-2023-09",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-EVIDENCE",
+      "topic_id": "T-EVID-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "ঘ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 9 (ঘ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) \"Evidence has to be weighed and not counted\"—The Evidence Act, 1872 এর ১১৪ ও ১৩৪ ধারার আলোকে দেওয়ানী মোকদ্দমা ও ফৌজদারি মামলায় এই ধারণার প্রয়োগযোগ্যতা উদাহরণসহ আলোচনা করুন। [≈১০]\n\nখ) বাটোয়ারা মোকদ্দমায় বাদী পিতৃত্ব প্রমাণের জন্য DNA পরীক্ষার প্রতিবেদন জমা দেন। আদালত অভিমত ব্যক্ত করেন যে, উক্ত প্রতিবেদন দেওয়ানী মোকদ্দমায় সাক্ষ্য হিসাবে গ্রহণযোগ্য নয়। আদালতের এই অভিমত The Evidence Act, 1872 অনুসারে আইনসঙ্গত কি? উত্তরের স্বপক্ষে সংশ্লিষ্ট বিধান উল্লেখ্য যুক্তি দিন। [≈৫]",
+          "answer_outline": [
+            "১৩৪ সংখ্যা নয় গুণ",
+            "১১৪ অনুমান",
+            "DNA বিশেষজ্ঞ ৪৫"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) ১৩৪ নির্দিষ্ট সংখ্যা চায় না; একজন বিশ্বাসযোগ্য সাক্ষী যথেষ্ট (ফৌজদারিতেও, তবে সতর্কতা)। ১১৪ আদালত স্বাভাবিক অনুমান করতে পারে — যেমন বাদীর নিজস্ব সাক্ষীতে ফাঁক। দেওয়ানিতে সম্ভাবনার পাল্লা; ফৌজদারিতে সন্দেহাতীত — তাই “ওজন” মানে গুণগত বিচার।\nখ) DNA বিশেষজ্ঞ মতামত ধারা ৪৫। বাটোয়ারায় পিতৃত্ব প্রাসঙ্গিক হলে গ্রহণযোগ্য; “দেওয়ানিতে চলে না” বলা ভুল। নমুনা সংগ্রহের চেইন ও ল্যাব বিশ্বাসযোগ্যতা যাচাই হবে, বর্জন নয়।",
+          "prep_outline": [
+            "১৩৪ সংখ্যা নয় গুণ",
+            "১১৪ অনুমান",
+            "DNA বিশেষজ্ঞ ৪৫"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q9",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) \"Evidence has to be weighed and not counted\"—discuss with illustrations the applicability of this concept to civil suits and criminal cases in the light of sections 114 and 134 of the Evidence Act, 1872. [10]\n\nb) In the suit for partition, the plaintiff submitted a DNA test report to prove paternity. The court opined that such report is not admissible as evidence in civil suits. Is the opinion of the court lawful under the Evidence Act, 1872? Assign reasons in support of the answer with reference to relevant provisions. [5]",
+          "answer_outline": [
+            "১৩৪ সংখ্যা নয় গুণ",
+            "১১৪ অনুমান",
+            "DNA বিশেষজ্ঞ ৪৫"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) ১৩৪ নির্দিষ্ট সংখ্যা চায় না; একজন বিশ্বাসযোগ্য সাক্ষী যথেষ্ট (ফৌজদারিতেও, তবে সতর্কতা)। ১১৪ আদালত স্বাভাবিক অনুমান করতে পারে — যেমন বাদীর নিজস্ব সাক্ষীতে ফাঁক। দেওয়ানিতে সম্ভাবনার পাল্লা; ফৌজদারিতে সন্দেহাতীত — তাই “ওজন” মানে গুণগত বিচার।\nখ) DNA বিশেষজ্ঞ মতামত ধারা ৪৫। বাটোয়ারায় পিতৃত্ব প্রাসঙ্গিক হলে গ্রহণযোগ্য; “দেওয়ানিতে চলে না” বলা ভুল। নমুনা সংগ্রহের চেইন ও ল্যাব বিশ্বাসযোগ্যতা যাচাই হবে, বর্জন নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-10",
+      "written_question_id": "BC-WQ-WEB-2023-10",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "ঙ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 10 (ঙ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) \"Limitation bars the remedy but does not destroy the right.\"—The Limitation Act, 1908 অনুসারে এই ধারণাটি ব্যতিক্রমসহ (যদি থাকে) আলোচনা করুন। [≈১০]\n\nখ) নাবালক X এর সম্পত্তি তার মাতা Y বৈধ কর্তৃত্ব ছাড়াই ২০১২ সালে বিক্রয় করেন। X ২০১৮ সালে সাবালকত্ব অর্জন করেন। X উক্ত সম্পত্তি দখল উদ্ধারের জন্য ২০২৩ সালে মোকদ্দমা করতে চান। মোকদ্দমাটি দায়েরের ক্ষেত্রে প্রয়োজ্য তামাদি উল্লেখ্য X কে পরামর্শ দিন। [≈৫]",
+          "answer_outline": [
+            "ধারা ৩ প্রতিকার বার; ২৮ স্বত্ব গেলে",
+            "নাবালক: ৬+৩, বেচাকেনা অনুচ্ছেদ ৪৪/৯১"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) তামাদি সাধারণত প্রতিকার বন্ধ করে, অধিকার থাকে (যেমন ঋণে মোকদ্দমা বার কিন্তু দেনা থাকে)। ব্যতিক্রম ধারা ২৮: নির্ধারিত সময় দখল না নিলে স্বত্বও বিলুপ্ত।\nখ) ২০১২ বিক্রি, সাবালক ২০১৮, মামলা ২০২৩। ধারা ৬: অক্ষমতা চলাকালে সময় থামে; সাবালকের পর ৩ বছর (ধারা ৮ সীমা)। দখল উদ্ধার ১২ বছর (অনুচ্ছেদ ১৪৪) হলে ২০২৪ পর্যন্তও বাঁচতে পারে; তবে অভিভাবকের অবৈধ বিক্রি রদে প্রায়ই ৩ বছর সাবালকত্ব থেকে — ২০২১ শেষ। ২০২৩ দায়েরে ঘোষণা/বাতিল অংশ তামাদি হতে পারে; দখল থাকলে পৃথক হিসাব। পরামর্শ: দখল ও জানার তারিখ নিশ্চিত করে দ্রুত মামলা, ধারা ৫ আপিল নয় মূল মোকদ্দমায়।",
+          "prep_outline": [
+            "ধারা ৩ প্রতিকার বার; ২৮ স্বত্ব গেলে",
+            "নাবালক: ৬+৩, বেচাকেনা অনুচ্ছেদ ৪৪/৯১"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q10",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) \"Limitation bars the remedy but does not destroy the right\"—discuss the concept with exception(s), if any, as per the Limitation Act, 1908. [10]\n\nb) Minor X's property was sold by his mother Y in 2012 without lawful authority. X attained majority in 2018. X intends to sue in 2023 to recover possession of the said property. Advise X on limitation applicable to the filing of the suit. [5]",
+          "answer_outline": [
+            "ধারা ৩ প্রতিকার বার; ২৮ স্বত্ব গেলে",
+            "নাবালক: ৬+৩, বেচাকেনা অনুচ্ছেদ ৪৪/৯১"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) তামাদি সাধারণত প্রতিকার বন্ধ করে, অধিকার থাকে (যেমন ঋণে মোকদ্দমা বার কিন্তু দেনা থাকে)। ব্যতিক্রম ধারা ২৮: নির্ধারিত সময় দখল না নিলে স্বত্বও বিলুপ্ত।\nখ) ২০১২ বিক্রি, সাবালক ২০১৮, মামলা ২০২৩। ধারা ৬: অক্ষমতা চলাকালে সময় থামে; সাবালকের পর ৩ বছর (ধারা ৮ সীমা)। দখল উদ্ধার ১২ বছর (অনুচ্ছেদ ১৪৪) হলে ২০২৪ পর্যন্তও বাঁচতে পারে; তবে অভিভাবকের অবৈধ বিক্রি রদে প্রায়ই ৩ বছর সাবালকত্ব থেকে — ২০২১ শেষ। ২০২৩ দায়েরে ঘোষণা/বাতিল অংশ তামাদি হতে পারে; দখল থাকলে পৃথক হিসাব। পরামর্শ: দখল ও জানার তারিখ নিশ্চিত করে দ্রুত মামলা, ধারা ৫ আপিল নয় মূল মোকদ্দমায়।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-11",
+      "written_question_id": "BC-WQ-WEB-2023-11",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-LIMITATION",
+      "topic_id": "T-LIM-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "ঙ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 11 (ঙ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) \"The Court has no jurisdiction to extend time where the petitioner has been negligent and inactive.\"—The Limitation Act, 1908 এবং \"তামাদির সময় বৃদ্ধি\" সংক্রান্ত বিধান উল্লেখ্য বক্তব্যটি ব্যাখ্যা করুন। [≈১০]\n\nখ) X ২০/০২/২০২০ তারিখ খাস দখলের মোকদ্দমায় ডিক্রি পান। Y ঐ ডিক্রি রদ-রহিছের জন্য পৃথক মোকদ্দমা করলে আদালত ২৫/০১/২০২৩ তারিখ ডিক্রির কার্যকারিতা ৬ মাসের জন্য স্থগিত করেন। X ২২/১১/২০২৩ তারিখ উক্ত ডিক্রি জারির জন্য দরখাস্ত দাখিল করতে চান। তামাদি সংশ্লিষ্ট বিধান উল্লেখ্য X কে পরামর্শ দিন। [≈৫]",
+          "answer_outline": [
+            "ধারা ৫ যথেষ্ট কারণ — গাফিলতি নয়",
+            "জারির ১২ বছর; স্থগিতকাল বাদ"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) ধারা ৫ আপিল/আবেদনে যথেষ্ট কারণ; অবহেলা/নিষ্ক্রিয়তায় সময় বাড়ে না। “আইনজীবীর ভুল” কখনো মেলে, নিছক ভুলে নয়। মূল মোকদ্দমায় ধারা ৫ নেই।\nখ) ডিক্রি ২০/০২/২০২০, জারি অনুচ্ছেদ ১৮২ — ১২ বছর, অর্থাৎ ২০৩২ পর্যন্ত। ২৫/০১/২০২৩ থেকে ৬ মাস স্থগিত — স্থগিতকাল ধারা ১৫/১৮২ ব্যাখ্যায় বাদ। ২২/১১/২০২৩ জারি তামাদির মধ্যে; স্থগিত ২৫/০৭/২০২৩ নাগাদ শেষ — তার পর জারি চলে। দরখাস্ত দায়ের করুন।",
+          "prep_outline": [
+            "ধারা ৫ যথেষ্ট কারণ — গাফিলতি নয়",
+            "জারির ১২ বছর; স্থগিতকাল বাদ"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q11",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) \"The Court has no jurisdiction to extend time where the petitioner has been negligent and inactive\"—explain the statement with reference to the provision of the Limitation Act, 1908 relating to 'extension of the period of limitation'. [10]\n\nb) X obtained a decree on 20/02/2020 in a suit for Khas possession. Y filed a separate suit for setting aside the decree, wherein on 25/01/2023 the court stayed the operation of the decree for 6 months. X desires to file an application for the execution of the decree on 22/11/2023. Advise X with reference to relevant provisions of limitation. [5]",
+          "answer_outline": [
+            "ধারা ৫ যথেষ্ট কারণ — গাফিলতি নয়",
+            "জারির ১২ বছর; স্থগিতকাল বাদ"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) ধারা ৫ আপিল/আবেদনে যথেষ্ট কারণ; অবহেলা/নিষ্ক্রিয়তায় সময় বাড়ে না। “আইনজীবীর ভুল” কখনো মেলে, নিছক ভুলে নয়। মূল মোকদ্দমায় ধারা ৫ নেই।\nখ) ডিক্রি ২০/০২/২০২০, জারি অনুচ্ছেদ ১৮২ — ১২ বছর, অর্থাৎ ২০৩২ পর্যন্ত। ২৫/০১/২০২৩ থেকে ৬ মাস স্থগিত — স্থগিতকাল ধারা ১৫/১৮২ ব্যাখ্যায় বাদ। ২২/১১/২০২৩ জারি তামাদির মধ্যে; স্থগিত ২৫/০৭/২০২৩ নাগাদ শেষ — তার পর জারি চলে। দরখাস্ত দায়ের করুন।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-12",
+      "written_question_id": "BC-WQ-WEB-2023-12",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-ETHICS",
+      "topic_id": "T-ETH-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "চ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 12 (চ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) প্রাসঙ্গিক বিধান উল্লেখ্য বার কাউন্সিলের চেয়ারম্যান এর ক্ষমতা ও কার্যাবলি আলোচনা করুন। [≈৭]\n\nখ) আইনজীবী X বাদী হয়ে মোকদ্দমা করেন। Y বিবাদীর আইনজীবী। মোকদ্দমাটি চলাকালে প্রায়ই প্রকাশ্য আদালতে X ও Y তর্কাতর্কি করেন এবং ব্যক্তিগত বিষয় নিয়ে পরস্পরকে আক্রমণ করেন। The Canons of Professional Conduct and Etiquette এর আলোকে উভয় আইনজীবীর আচরণ মূল্যায়ন করুন। [≈৩]",
+          "answer_outline": [
+            "চেয়ারম্যান: সভা, তালিকা, শৃঙ্খলা প্রেরণ",
+            "আদালতে ব্যক্তিগত কলহ ক্যানন লঙ্ঘন"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) বার কাউন্সিল অর্ডার: চেয়ারম্যান সভাপতি, কার্যনির্বাহী, তালিকা ও নির্বাচন তত্ত্বাবধান, শৃঙ্খলা অভিযোগ ট্রাইব্যুনালে পাঠানো, সনদ/পরিচয়পত্র। ভাইস চেয়ারম্যান অনুপস্থিতিতে কাজ।\nখ) প্রকাশ্য আদালতে ব্যক্তিগত আক্রমণ — ক্যানন: সহকর্মী ও আদালতের প্রতি সম্মান। উভয়ের আচরণ অসদাচরণ; সতর্কতা/নালিশ যোগ্য।",
+          "prep_outline": [
+            "চেয়ারম্যান: সভা, তালিকা, শৃঙ্খলা প্রেরণ",
+            "আদালতে ব্যক্তিগত কলহ ক্যানন লঙ্ঘন"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q12",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) Discuss the powers and functions of the Chairman of the Bar Council with reference to relevant provisions. [7]\n\nb) Advocate X files a suit as plaintiff. Y is defendant's Advocate. During the proceedings of the suit, X and Y frequently engage in altercations and attack each other on personal issues in the open court. Evaluate the conduct of both the Advocates in the light of the Canons of Professional Conduct and Etiquette. [3]",
+          "answer_outline": [
+            "চেয়ারম্যান: সভা, তালিকা, শৃঙ্খলা প্রেরণ",
+            "আদালতে ব্যক্তিগত কলহ ক্যানন লঙ্ঘন"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) বার কাউন্সিল অর্ডার: চেয়ারম্যান সভাপতি, কার্যনির্বাহী, তালিকা ও নির্বাচন তত্ত্বাবধান, শৃঙ্খলা অভিযোগ ট্রাইব্যুনালে পাঠানো, সনদ/পরিচয়পত্র। ভাইস চেয়ারম্যান অনুপস্থিতিতে কাজ।\nখ) প্রকাশ্য আদালতে ব্যক্তিগত আক্রমণ — ক্যানন: সহকর্মী ও আদালতের প্রতি সম্মান। উভয়ের আচরণ অসদাচরণ; সতর্কতা/নালিশ যোগ্য।"
+        }
+      }
+    },
+    {
+      "content_id": "BC-WQ-WEB-2023-13",
+      "written_question_id": "BC-WQ-WEB-2023-13",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "BC-MOD-ETHICS",
+      "topic_id": "T-ETH-01",
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2023",
+      "paper_year": "2023",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "চ",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a photograph of the printed paper with Bangladesh Bar Council header + year + written stage. Not an official download. No model answer invented. Messy OCR kept with ocr_unverified.",
+      "language_versions": {
+        "bn": {
+          "title": "বার কাউন্সিল লিখিত 2023 — প্রশ্ন 13 (চ অংশ)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2023।\n\nক) \"In doing professional duty an Advocate must obey the voice of his conscience and not that of his client.\"—The Canons of Professional Conduct and Etiquette অনুসারে নীতিটি ব্যাখ্যা করুন। [≈৭]\n\nখ) একজন আইনজীবীর শিক্ষাগত যোগ্যতার সনদ জাল বা ভুয়া হলে বার কাউন্সিল তার বিরুদ্ধে কী ধরনের ব্যবস্থা নিতে পারে? [≈৩]",
+          "answer_outline": [
+            "বিবেক > মক্কেলের অন্যায় নির্দেশ",
+            "জাল সনদ: তালিকা বাতিল, ফৌজদারি"
+          ],
+          "marking_points": [
+            "প্রশ্নের সব অংশ উত্তর দিয়েছি",
+            "সংশ্লিষ্ট আইন/ধারা উল্লেখ করেছি",
+            "প্রার্থনা/খসড়া চাইলে কাঠামো মেনেছি"
+          ],
+          "model_answer": "ক) আইনজীবী মক্কেলের মুখপাত্র নন অবৈধ কাজে। মিথ্যা সাক্ষ্য তৈরি, আদালতকে প্রতারিত করা নিষেধ। বিবেক ও আইন দুই-ই মানতে হয়।\nখ) শিক্ষাগত সনদ জাল: এনরোলমেন্ট বাতিল/স্থগিত, ট্রাইব্যুনাল, দণ্ডবিধি ৪৬৮/৪৭১-এ নালিশ। ভুয়া যোগ্যতায় তালিকা শুরু থেকে অবৈধ।",
+          "prep_outline": [
+            "বিবেক > মক্কেলের অন্যায় নির্দেশ",
+            "জাল সনদ: তালিকা বাতিল, ফৌজদারি"
+          ]
+        },
+        "en": {
+          "title": "Bar Council written 2023 — Q13",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nExam: 2023.\n\na) \"In doing professional duty an Advocate must obey the voice of his conscience and not that of his client\"—explain the principle as per the Canons of Professional Conduct and Etiquette. [7]\n\nb) What action can the Bar Council take against an Advocate if his/her academic certificate is found forged or fake? [3]",
+          "answer_outline": [
+            "বিবেক > মক্কেলের অন্যায় নির্দেশ",
+            "জাল সনদ: তালিকা বাতিল, ফৌজদারি"
+          ],
+          "marking_points": [
+            "Answered every part",
+            "Cited the relevant law",
+            "Used a drafting structure if a petition was asked"
+          ],
+          "model_answer": "ক) আইনজীবী মক্কেলের মুখপাত্র নন অবৈধ কাজে। মিথ্যা সাক্ষ্য তৈরি, আদালতকে প্রতারিত করা নিষেধ। বিবেক ও আইন দুই-ই মানতে হয়।\nখ) শিক্ষাগত সনদ জাল: এনরোলমেন্ট বাতিল/স্থগিত, ট্রাইব্যুনাল, দণ্ডবিধি ৪৬৮/৪৭১-এ নালিশ। ভুয়া যোগ্যতায় তালিকা শুরু থেকে অবৈধ।"
+        }
+      }
+    }
+  ],
+  "exam_years": [
+    "2023"
+  ]
+}

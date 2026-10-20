@@ -1,0 +1,791 @@
+{
+  "batch_id": "BATCH-2026-09-046-HC-WRITTEN-2016-2017-WEB",
+  "schema_version": "1.0",
+  "content_version": "2026.09.15",
+  "created_at": "2026-09-15T00:00:00Z",
+  "source": "web-photo-ocr",
+  "content_source": "web-photo-ocr",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Web-photo OCR of HC Permission written 2016 (9 Jan) and 2017. AUTHENTIC_REPORTED_QUESTION. Photographs hosted on QuesBankBD. Not an official download. No model answers. No HC MCQ invented.",
+  "official_past_papers": 0,
+  "asset_count": 12,
+  "assets": [
+    {
+      "content_id": "HC-WQ-WEB-2016-01",
+      "written_question_id": "HC-WQ-WEB-2016-01",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2016-01",
+      "order": 11,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2016",
+      "paper_year": "2016",
+      "exam_date": "9 January 2016",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2016 — প্রশ্ন 1 (Group A CIVIL) · 8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group A (CIVIL) · 8 নম্বর।\n\n'A' instituted a suit against 'B' in the 1st Court of the Assistant Judge, Sylhet for a decree of perpetual injunction simpliciter with reference to certain property. Anyway, 'B' filed an application for local investigation of the suit property and that was allowed by the Assistant Judge. 'A' being aggrieved by the aforesaid order moved the District Judge of Sylhet who also affirmed the order of the Assistant Judge. Advise 'A' as to the next course of action and prepare a brief as per provisions of the relevant law in this regard.",
+          "answer_outline": [
+            "স্থানীয় তদন্ত মধ্যবর্তী আদেশ",
+            "জেলা জজ নিশ্চিত — পরবর্তী রিভিশন ১১৫ HCD"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "সহকারী জজ স্থায়ী নিষেধাজ্ঞার মামলায় স্থানীয় তদন্ত মঞ্জুর; জেলা জজ নিশ্চিত। এটি চূড়ান্ত ডিক্রি নয় — আপিল ধারা ৯৬ নয়। পরবর্তী পথ: হাইকোর্ট বিভাগে সিপিসি ধারা ১১৫ রিভিশন (এবং প্রয়োজনে ১৫১)। যুক্তি: নিছক নিষেধাজ্ঞায় সীমানা-তদন্ত অনাবশ্যক, খরচ ও বিলম্ব, কমিশন সাক্ষ্যের বিকল্প নয়।\nখসড়া: “ইন দ্য সুপ্রিম কোর্ট অব বাংলাদেশ, হাইকোর্ট বিভাগ, সিভিল রিভিশন নং …/২০১৬। আবেদনকারী A বনাম বিপরীতপক্ষ B। সহকারী জজ, সিলেট ১ম আদালতের আদেশ ও জেলা জজের নিশ্চয়ন রদের প্রার্থনা। কারণ — এখতিয়ার/বিচার্য বিষয়ের বাইরে তদন্ত, স্বেচ্ছাচার, পক্ষপাতের আশঙ্কা। প্রার্থনা: উভয় আদেশ রদ, খরচ।”",
+          "prep_outline": [
+            "স্থানীয় তদন্ত মধ্যবর্তী আদেশ",
+            "জেলা জজ নিশ্চিত — পরবর্তী রিভিশন ১১৫ HCD"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2016 — Q1 (Group A)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group A (CIVIL) · 8 নম্বর।\n\n'A' instituted a suit against 'B' in the 1st Court of the Assistant Judge, Sylhet for a decree of perpetual injunction simpliciter with reference to certain property. Anyway, 'B' filed an application for local investigation of the suit property and that was allowed by the Assistant Judge. 'A' being aggrieved by the aforesaid order moved the District Judge of Sylhet who also affirmed the order of the Assistant Judge. Advise 'A' as to the next course of action and prepare a brief as per provisions of the relevant law in this regard.",
+          "answer_outline": [
+            "স্থানীয় তদন্ত মধ্যবর্তী আদেশ",
+            "জেলা জজ নিশ্চিত — পরবর্তী রিভিশন ১১৫ HCD"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "সহকারী জজ স্থায়ী নিষেধাজ্ঞার মামলায় স্থানীয় তদন্ত মঞ্জুর; জেলা জজ নিশ্চিত। এটি চূড়ান্ত ডিক্রি নয় — আপিল ধারা ৯৬ নয়। পরবর্তী পথ: হাইকোর্ট বিভাগে সিপিসি ধারা ১১৫ রিভিশন (এবং প্রয়োজনে ১৫১)। যুক্তি: নিছক নিষেধাজ্ঞায় সীমানা-তদন্ত অনাবশ্যক, খরচ ও বিলম্ব, কমিশন সাক্ষ্যের বিকল্প নয়।\nখসড়া: “ইন দ্য সুপ্রিম কোর্ট অব বাংলাদেশ, হাইকোর্ট বিভাগ, সিভিল রিভিশন নং …/২০১৬। আবেদনকারী A বনাম বিপরীতপক্ষ B। সহকারী জজ, সিলেট ১ম আদালতের আদেশ ও জেলা জজের নিশ্চয়ন রদের প্রার্থনা। কারণ — এখতিয়ার/বিচার্য বিষয়ের বাইরে তদন্ত, স্বেচ্ছাচার, পক্ষপাতের আশঙ্কা। প্রার্থনা: উভয় আদেশ রদ, খরচ।”"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2016-02",
+      "written_question_id": "HC-WQ-WEB-2016-02",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2016-02",
+      "order": 12,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2016",
+      "paper_year": "2016",
+      "exam_date": "9 January 2016",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2016 — প্রশ্ন 2 (Group A CIVIL OR) · 8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group A (CIVIL) · 8 নম্বর · OR।\n\n'A' as plaintiff filed a suit against 'B' in the 1st Court of the Joint District Judge, Dhaka for declaration of title to and recovery of khas possession of the suit property measuring an area of 80 decimals recorded in R.S. Plot No.172 under R.S. Khatian No.16 of Mouza Gulshan, P.S. Gulshan, District-Dhaka. The plaintiff's case, in short, is that he purchased the suit property from 'X' on 26th December, 2013 by a registered sale deed for a consideration of Tk.5 crore and since then he has been owning and possessing the same. On 14th February, 2014, 'B', having no title to the suit property, illegally dispossessed him therefrom and hence the suit. 'B' contested the suit by filing a written statement denying the material allegations made in the plaint and contended, inter alia, that 'A' had no title to and possession in the suit property and that 'A's kabala from 'X' is nothing but a fraudulent document. 'B' further contended that he purchased the suit property from 'Y', uncle of 'X', on 18th March, 2013 for a consideration of Tk.6 crore and since then he has been owning and possessing the same. It was also contended that 'Y' inherited the suit property along with other properties from his father 'Z' and he owned and possessed the same in his own right for a long time. The learned Joint District Judge dismissed the suit by his judgment and decree dated 10th July, 2015. 'A' approaches you for doing the needful. What advice will you render to 'A' in this respect? How will you prepare a memorandum of appeal, if you desire to do so?",
+          "answer_outline": [
+            "যৌথ জেলা জজ খারিজ — মূল্য ৫ কোটি আপিল HCD",
+            "দলিল বনাম উত্তরাধিকার: প্রমাণভার"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "মূল্য ও সহকারী/যৌথ জেলা জজের ডিক্রি — তায়দাদ অনুসারে আপিল হাইকোর্ট বিভাগে (সিপিসি ৯৬, আদেশ ৪১)।\nমেমো: “A (আপিলকারী-বাদী) বনাম B। যৌথ জেলা জজ, ঢাকা ১ম আদালত, রায়-ডিক্রি ১০/০৭/২০১৫ রদ। কারণ: (১) নিবন্ধিত কবলা ২৬/১২/২০১৩ উপেক্ষা, (২) Y চাচা — X-এর স্বত্ব না কেটে B-এর কবলা ১৮/০৩/২০১৩ প্রাধান্য পায়নি প্রমাণে, (৩) বেদখল ১৪/০২/২০১৪ তথ্য উপেক্ষা, (৪) প্রতারণার দাবি বিশেষ তথ্য ছাড়া, (৫) দখল ও রেকর্ড ভুল মূল্যায়ন। প্রার্থনা: মামলা ডিক্রি, দখল, খরচ।” স্টেম কর্তিত — খসড়া এই কাঠামোতে পূর্ণ করুন।",
+          "prep_outline": [
+            "যৌথ জেলা জজ খারিজ — মূল্য ৫ কোটি আপিল HCD",
+            "দলিল বনাম উত্তরাধিকার: প্রমাণভার"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2016 — Q2 (Group A OR)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group A (CIVIL) · 8 নম্বর · OR।\n\n'A' as plaintiff filed a suit against 'B' in the 1st Court of the Joint District Judge, Dhaka for declaration of title to and recovery of khas possession of the suit property measuring an area of 80 decimals recorded in R.S. Plot No.172 under R.S. Khatian No.16 of Mouza Gulshan, P.S. Gulshan, District-Dhaka. The plaintiff's case, in short, is that he purchased the suit property from 'X' on 26th December, 2013 by a registered sale deed for a consideration of Tk.5 crore and since then he has been owning and possessing the same. On 14th February, 2014, 'B', having no title to the suit property, illegally dispossessed him therefrom and hence the suit. 'B' contested the suit by filing a written statement denying the material allegations made in the plaint and contended, inter alia, that 'A' had no title to and possession in the suit property and that 'A's kabala from 'X' is nothing but a fraudulent document. 'B' further contended that he purchased the suit property from 'Y', uncle of 'X', on 18th March, 2013 for a consideration of Tk.6 crore and since then he has been owning and possessing the same. It was also contended that 'Y' inherited the suit property along with other properties from his father 'Z' and he owned and possessed the same in his own right for a long time. The learned Joint District Judge dismissed the suit by his judgment and decree dated 10th July, 2015. 'A' approaches you for doing the needful. What advice will you render to 'A' in this respect? How will you prepare a memorandum of appeal, if you desire to do so?",
+          "answer_outline": [
+            "যৌথ জেলা জজ খারিজ — মূল্য ৫ কোটি আপিল HCD",
+            "দলিল বনাম উত্তরাধিকার: প্রমাণভার"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "মূল্য ও সহকারী/যৌথ জেলা জজের ডিক্রি — তায়দাদ অনুসারে আপিল হাইকোর্ট বিভাগে (সিপিসি ৯৬, আদেশ ৪১)।\nমেমো: “A (আপিলকারী-বাদী) বনাম B। যৌথ জেলা জজ, ঢাকা ১ম আদালত, রায়-ডিক্রি ১০/০৭/২০১৫ রদ। কারণ: (১) নিবন্ধিত কবলা ২৬/১২/২০১৩ উপেক্ষা, (২) Y চাচা — X-এর স্বত্ব না কেটে B-এর কবলা ১৮/০৩/২০১৩ প্রাধান্য পায়নি প্রমাণে, (৩) বেদখল ১৪/০২/২০১৪ তথ্য উপেক্ষা, (৪) প্রতারণার দাবি বিশেষ তথ্য ছাড়া, (৫) দখল ও রেকর্ড ভুল মূল্যায়ন। প্রার্থনা: মামলা ডিক্রি, দখল, খরচ।” স্টেম কর্তিত — খসড়া এই কাঠামোতে পূর্ণ করুন।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2016-03",
+      "written_question_id": "HC-WQ-WEB-2016-03",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2016-03",
+      "order": 13,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2016",
+      "paper_year": "2016",
+      "exam_date": "9 January 2016",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2016 — প্রশ্ন 3 (Group B CRIMINAL) · 8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group B (CRIMINAL) · 8 নম্বর।\n\n'A' was suffering from a heart disease. He hired a taxi from Banani to take him to New Market. 'B', the taxi-driver, was not aware of the illness of 'A'. When 'A' reached New Market and offered 'B' Tk.100.00 as fare, 'B' demanded Tk.200.00 from 'A'. An altercation followed. During tussle, 'B' lifted 'A' and threw him to the ground with sufficient force. As a result, 'A' got his ribs fractured and died of rupture of the heart. The Metropolitan Sessions Judge, Dhaka by his judgment and order dated 20th November, 2015 found 'B' guilty of murder under section 302 of the Penal Code and sentenced him thereunder to suffer imprisonment for life and to pay a fine of Tk.25,000.00, in default, to suffer rigorous imprisonment for a further period of one year.\n\n(a) Draft a petition of appeal challenging the aforesaid judgment and order of conviction and sentence passed by the learned Metropolitan Sessions Judge, Dhaka for presentation before the High Court Division mentioning the relevant Section under which the appeal can be filed.\n(b) Draft an application for bail of the convict-appellant 'B' stating the Section under which such application can be filed.",
+          "answer_outline": [
+            "দায়রা থেকে HCD আপিল CrPC ৪১০/৪১৭ প্রসঙ্গ",
+            "৩০৪/৩২৫ হতে পারে, ৩০২ দুর্বল",
+            "জামিন ৪২৬"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "ক) মেট্রোপলিটন দায়রা জজ ৩০২ ও যাবজ্জীবন — হাইকোর্ট বিভাগে আপিল (সাধারণত ৪১০ CrPC, দায়রা-ডিক্রি)।\nপেটিশন: B (আপিলকারী) বনাম রাষ্ট্র। রায় ২০/১১/২০১৫ রদ। কারণ: ভাড়া নিয়ে হাতাহাতি, হৃদরোগ অজানা, পাঁজর ভাঙা — ৩০০-এর অভিপ্রায়/জ্ঞান দুর্বল; ৩০৪(ক) বা ৩২৫/৩০৪ দ্বিতীয় অংশ বেশি খাটে; সন্দেহাতীত নয়। প্রার্থনা: খালাস, বিকল্পে দণ্ড হ্রাস।\nখ) জামিন: ধারা ৪২৬ CrPC আপিল চলাকালীন। কারণ: নির্দিষ্ট ঠিকানা, পলায়ন নয়, হত্যার পূর্বপরিকল্পনা নেই, শুনানির বিলম্ব।",
+          "prep_outline": [
+            "দায়রা থেকে HCD আপিল CrPC ৪১০/৪১৭ প্রসঙ্গ",
+            "৩০৪/৩২৫ হতে পারে, ৩০২ দুর্বল",
+            "জামিন ৪২৬"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2016 — Q3 (Group B)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group B (CRIMINAL) · 8 নম্বর।\n\n'A' was suffering from a heart disease. He hired a taxi from Banani to take him to New Market. 'B', the taxi-driver, was not aware of the illness of 'A'. When 'A' reached New Market and offered 'B' Tk.100.00 as fare, 'B' demanded Tk.200.00 from 'A'. An altercation followed. During tussle, 'B' lifted 'A' and threw him to the ground with sufficient force. As a result, 'A' got his ribs fractured and died of rupture of the heart. The Metropolitan Sessions Judge, Dhaka by his judgment and order dated 20th November, 2015 found 'B' guilty of murder under section 302 of the Penal Code and sentenced him thereunder to suffer imprisonment for life and to pay a fine of Tk.25,000.00, in default, to suffer rigorous imprisonment for a further period of one year.\n\n(a) Draft a petition of appeal challenging the aforesaid judgment and order of conviction and sentence passed by the learned Metropolitan Sessions Judge, Dhaka for presentation before the High Court Division mentioning the relevant Section under which the appeal can be filed.\n(b) Draft an application for bail of the convict-appellant 'B' stating the Section under which such application can be filed.",
+          "answer_outline": [
+            "দায়রা থেকে HCD আপিল CrPC ৪১০/৪১৭ প্রসঙ্গ",
+            "৩০৪/৩২৫ হতে পারে, ৩০২ দুর্বল",
+            "জামিন ৪২৬"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "ক) মেট্রোপলিটন দায়রা জজ ৩০২ ও যাবজ্জীবন — হাইকোর্ট বিভাগে আপিল (সাধারণত ৪১০ CrPC, দায়রা-ডিক্রি)।\nপেটিশন: B (আপিলকারী) বনাম রাষ্ট্র। রায় ২০/১১/২০১৫ রদ। কারণ: ভাড়া নিয়ে হাতাহাতি, হৃদরোগ অজানা, পাঁজর ভাঙা — ৩০০-এর অভিপ্রায়/জ্ঞান দুর্বল; ৩০৪(ক) বা ৩২৫/৩০৪ দ্বিতীয় অংশ বেশি খাটে; সন্দেহাতীত নয়। প্রার্থনা: খালাস, বিকল্পে দণ্ড হ্রাস।\nখ) জামিন: ধারা ৪২৬ CrPC আপিল চলাকালীন। কারণ: নির্দিষ্ট ঠিকানা, পলায়ন নয়, হত্যার পূর্বপরিকল্পনা নেই, শুনানির বিলম্ব।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2016-04",
+      "written_question_id": "HC-WQ-WEB-2016-04",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2016-04",
+      "order": 14,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2016",
+      "paper_year": "2016",
+      "exam_date": "9 January 2016",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2016 — প্রশ্ন 4 (Group B CRIMINAL OR) · 8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group B (CRIMINAL) · 8 নম্বর · OR।\n\nArfan was convicted by the Nari-O-Shishu Nirjatan Daman Tribunal No.1, Comilla by the impugned judgment and order dated 03.07.2011 on a charge of rape on Rahima, a girl of 18 years. Arfan was sentenced to suffer imprisonment for life and to pay a fine of Tk.5,000/-, in default, to suffer rigorous imprisonment for a further period of 1 (one) year. The occurrence took place at dead of night. The FIR was lodged after 7 days of the occurrence without any cogent explanation. The Tribunal based its decision on the uncorroborated solitary testimony of Rahima.\n\nPrepare a petition of appeal mentioning the relevant provision of law in the cause-title and setting forth the grounds of appeal. Also prepare an application for bail on behalf of the convict-appellant Arfan for filing in the Appellate Court.",
+          "answer_outline": [
+            "নারী ও শিশু আইন: ট্রাইব্যুনাল থেকে HCD আপিল",
+            "৭ দিন দেরি, একা সাক্ষ্য",
+            "জামিন"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "নারী ও শিশু নির্যাতন দমন আইনে ট্রাইব্যুনালের দণ্ড — হাইকোর্ট বিভাগে আপিল (ঐ আইনের আপিল ধারা; CrPC সহায়ক)।\nআপিল: আরফান বনাম রাষ্ট্র। ০৩/০৭/২০১১ যাবজ্জীবন রদ। কারণ: (১) এফআইআর ৭ দিন দেরি ব্যাখ্যাহীন, (২) রহিমা একা সাক্ষ্য সতর্কতা ছাড়া, (৩) চিকিৎসা/DNA স্পষ্ট নয়, (৪) মধ্যরাতের সনাক্তকরণ সন্দেহ, (৫) সন্দেহাতীত মান পূরণ হয়নি।\nজামিন: আপিল আদালতে, দীর্ঘ দণ্ড, শুনানি বিলম্ব, স্থায়ী ঠিকানা — নারী ও শিশু আইনের জামিন-সীমা মাথায় রেখে।",
+          "prep_outline": [
+            "নারী ও শিশু আইন: ট্রাইব্যুনাল থেকে HCD আপিল",
+            "৭ দিন দেরি, একা সাক্ষ্য",
+            "জামিন"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2016 — Q4 (Group B OR)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group B (CRIMINAL) · 8 নম্বর · OR।\n\nArfan was convicted by the Nari-O-Shishu Nirjatan Daman Tribunal No.1, Comilla by the impugned judgment and order dated 03.07.2011 on a charge of rape on Rahima, a girl of 18 years. Arfan was sentenced to suffer imprisonment for life and to pay a fine of Tk.5,000/-, in default, to suffer rigorous imprisonment for a further period of 1 (one) year. The occurrence took place at dead of night. The FIR was lodged after 7 days of the occurrence without any cogent explanation. The Tribunal based its decision on the uncorroborated solitary testimony of Rahima.\n\nPrepare a petition of appeal mentioning the relevant provision of law in the cause-title and setting forth the grounds of appeal. Also prepare an application for bail on behalf of the convict-appellant Arfan for filing in the Appellate Court.",
+          "answer_outline": [
+            "নারী ও শিশু আইন: ট্রাইব্যুনাল থেকে HCD আপিল",
+            "৭ দিন দেরি, একা সাক্ষ্য",
+            "জামিন"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "নারী ও শিশু নির্যাতন দমন আইনে ট্রাইব্যুনালের দণ্ড — হাইকোর্ট বিভাগে আপিল (ঐ আইনের আপিল ধারা; CrPC সহায়ক)।\nআপিল: আরফান বনাম রাষ্ট্র। ০৩/০৭/২০১১ যাবজ্জীবন রদ। কারণ: (১) এফআইআর ৭ দিন দেরি ব্যাখ্যাহীন, (২) রহিমা একা সাক্ষ্য সতর্কতা ছাড়া, (৩) চিকিৎসা/DNA স্পষ্ট নয়, (৪) মধ্যরাতের সনাক্তকরণ সন্দেহ, (৫) সন্দেহাতীত মান পূরণ হয়নি।\nজামিন: আপিল আদালতে, দীর্ঘ দণ্ড, শুনানি বিলম্ব, স্থায়ী ঠিকানা — নারী ও শিশু আইনের জামিন-সীমা মাথায় রেখে।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2016-05",
+      "written_question_id": "HC-WQ-WEB-2016-05",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2016-05",
+      "order": 15,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2016",
+      "paper_year": "2016",
+      "exam_date": "9 January 2016",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2016 — প্রশ্ন 5 (Group C WRIT) · 9",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group C (WRIT) · 9 নম্বর।\n\nBabul was arrested from his house on 24.12.2015 by the police under Section 54 of the Code of Criminal Procedure and was produced before the Chief Metropolitan Magistrate, Dhaka on the following day, i.e., 25.12.2015. Meanwhile he was served with an order of detention issued by the District Magistrate, Dhaka purporting to act under Section 3(2) of the Special Powers Act, 1974 ordering his detention in Dhaka Central Jail for a period of 30 days. In the grounds of detention served on Babul, it was stated that he was a gangster, notorious extortionist and a man of bad character in the locality and was wanted in connection with a number of criminal cases.\n\nDraft an appropriate application for presentation before the High Court Division under the relevant provisions of the Constitution challenging the legality of the impugned order of detention.",
+          "answer_outline": [
+            "SPA ৩(২) ৩০ দিন; ভিত্তিহীন “খারাপ চরিত্র”",
+            "আর্টিকেল ১০২ হাবিয়াস/রিট"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "গ্রেপ্তার ৫৪ CrPC-এর পর বিশেষ ক্ষমতা আইন ৩(২)-এ ৩০ দিন — “গ্যাংস্টার, চাঁদাবাজ” সাধারণ কথা, সুনির্দিষ্ট ঘটনা নেই। বাংলাদেশের স্থিতিশীল নীতি: অস্পষ্ট ভিত্তি, ইতিমধ্যে ফৌজদারি মামলা থাকলে নির্বাহী আটক অপব্যবহার।\nরিট (আর্ট. ১০২): বাবুল বনাম জেলা ম্যাজিস্ট্রেট ও অন্যান্য। প্রার্থনা: আটক আদেশ রদ, হাজির করুন (habeas), মুক্তি, ৫৪-পরবর্তী আটকের বৈধতা। যুক্তি: ৩৩/৩৫ SPA পরামর্শ পরিষদ, ভিত্তি সরবরাহ, মৌলিক অধিকার ৩২/৩৩।",
+          "prep_outline": [
+            "SPA ৩(২) ৩০ দিন; ভিত্তিহীন “খারাপ চরিত্র”",
+            "আর্টিকেল ১০২ হাবিয়াস/রিট"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2016 — Q5 (Group C)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group C (WRIT) · 9 নম্বর।\n\nBabul was arrested from his house on 24.12.2015 by the police under Section 54 of the Code of Criminal Procedure and was produced before the Chief Metropolitan Magistrate, Dhaka on the following day, i.e., 25.12.2015. Meanwhile he was served with an order of detention issued by the District Magistrate, Dhaka purporting to act under Section 3(2) of the Special Powers Act, 1974 ordering his detention in Dhaka Central Jail for a period of 30 days. In the grounds of detention served on Babul, it was stated that he was a gangster, notorious extortionist and a man of bad character in the locality and was wanted in connection with a number of criminal cases.\n\nDraft an appropriate application for presentation before the High Court Division under the relevant provisions of the Constitution challenging the legality of the impugned order of detention.",
+          "answer_outline": [
+            "SPA ৩(২) ৩০ দিন; ভিত্তিহীন “খারাপ চরিত্র”",
+            "আর্টিকেল ১০২ হাবিয়াস/রিট"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "গ্রেপ্তার ৫৪ CrPC-এর পর বিশেষ ক্ষমতা আইন ৩(২)-এ ৩০ দিন — “গ্যাংস্টার, চাঁদাবাজ” সাধারণ কথা, সুনির্দিষ্ট ঘটনা নেই। বাংলাদেশের স্থিতিশীল নীতি: অস্পষ্ট ভিত্তি, ইতিমধ্যে ফৌজদারি মামলা থাকলে নির্বাহী আটক অপব্যবহার।\nরিট (আর্ট. ১০২): বাবুল বনাম জেলা ম্যাজিস্ট্রেট ও অন্যান্য। প্রার্থনা: আটক আদেশ রদ, হাজির করুন (habeas), মুক্তি, ৫৪-পরবর্তী আটকের বৈধতা। যুক্তি: ৩৩/৩৫ SPA পরামর্শ পরিষদ, ভিত্তি সরবরাহ, মৌলিক অধিকার ৩২/৩৩।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2016-06",
+      "written_question_id": "HC-WQ-WEB-2016-06",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2016-06",
+      "order": 16,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2016",
+      "paper_year": "2016",
+      "exam_date": "9 January 2016",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2016 — প্রশ্ন 6 (Group C WRIT OR) · 9",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group C (WRIT) · 9 নম্বর · OR।\n\nFarida Begum took her disabled son Redwan on a wheel-chair to Dhanmondi Government Boys' High School, Dhaka for admission. The Headmaster politely refused to admit Redwan on the ground that in a crowded school, it is not safe for Redwan to be in the classroom as the students may jeer at him and in consequence, the discipline and efficiency of the school management may be affected.\n\nFarida Begum comes to you for seeking legal remedy, if any. Do you think that there is any remedy you can seek in the High Court Division? If so, draft an application for moving the High Court Division under the relevant Article of the Constitution.",
+          "answer_outline": [
+            "প্রতিবন্ধী শিশুর শিক্ষা: আর্ট. ১৭, ২৭, ২৮, ৩১",
+            "সরকারি স্কুল জনকর্তৃপক্ষ"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "হ্যাঁ, হাইকোর্ট বিভাগে রিট চলে। সরকারি বিদ্যালয় “কর্তৃপক্ষ”; প্রধান শিক্ষকের প্রত্যাখ্যান বৈষম্য (প্রতিবন্ধী ব্যক্তি অধিকার আইন ২০১৩, সংবিধান ২৭/২৮)। শিশুদের শিক্ষা ১৭, জীবন-মর্যাদা ৩২।\nখসড়া: ফরিদা বেগম ও রেদওয়ান বনাম শিক্ষা সচিব, ডিএসই, প্রধান শিক্ষক। আর্ট. ১০২। প্রার্থনা: ভর্তি নিতে নির্দেশ (mandamus), বৈষম্যমূলক সিদ্ধান্ত রদ, হুইলচেয়ার সুবিধা।",
+          "prep_outline": [
+            "প্রতিবন্ধী শিশুর শিক্ষা: আর্ট. ১৭, ২৭, ২৮, ৩১",
+            "সরকারি স্কুল জনকর্তৃপক্ষ"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2016 — Q6 (Group C OR)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 9 January 2016। Group C (WRIT) · 9 নম্বর · OR।\n\nFarida Begum took her disabled son Redwan on a wheel-chair to Dhanmondi Government Boys' High School, Dhaka for admission. The Headmaster politely refused to admit Redwan on the ground that in a crowded school, it is not safe for Redwan to be in the classroom as the students may jeer at him and in consequence, the discipline and efficiency of the school management may be affected.\n\nFarida Begum comes to you for seeking legal remedy, if any. Do you think that there is any remedy you can seek in the High Court Division? If so, draft an application for moving the High Court Division under the relevant Article of the Constitution.",
+          "answer_outline": [
+            "প্রতিবন্ধী শিশুর শিক্ষা: আর্ট. ১৭, ২৭, ২৮, ৩১",
+            "সরকারি স্কুল জনকর্তৃপক্ষ"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "হ্যাঁ, হাইকোর্ট বিভাগে রিট চলে। সরকারি বিদ্যালয় “কর্তৃপক্ষ”; প্রধান শিক্ষকের প্রত্যাখ্যান বৈষম্য (প্রতিবন্ধী ব্যক্তি অধিকার আইন ২০১৩, সংবিধান ২৭/২৮)। শিশুদের শিক্ষা ১৭, জীবন-মর্যাদা ৩২।\nখসড়া: ফরিদা বেগম ও রেদওয়ান বনাম শিক্ষা সচিব, ডিএসই, প্রধান শিক্ষক। আর্ট. ১০২। প্রার্থনা: ভর্তি নিতে নির্দেশ (mandamus), বৈষম্যমূলক সিদ্ধান্ত রদ, হুইলচেয়ার সুবিধা।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2017-01",
+      "written_question_id": "HC-WQ-WEB-2017-01",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2017-01",
+      "order": 21,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2017",
+      "paper_year": "2017",
+      "exam_date": "2017",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2017 — প্রশ্ন 1 (Group A CIVIL) · 8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group A (CIVIL) · 8 নম্বর।\n\n'A' instituted a suit against 'B' in the 1st Court of Joint District Judge, Dhaka praying for declaration of title to the suit property. 'A' claimed the suit property by way of inheritance. On the other hand, 'B' claimed the same by way of purchase from one of the co-sharers of 'A'. The Joint District Judge dismissed the suit on the ground that 'A' was an attesting witness to the deed of transfer executed in favour of 'B' in respect of the self-same property. Draft a memorandum of Appeal for presentation to the High Court Division of the Supreme Court of Bangladesh.",
+          "answer_outline": [
+            "সাক্ষী হওয়া স্বত্ব ত্যাগ নয়",
+            "আপিল HCD ৯৬"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "যৌথ জেলা জজ খারিজ: A দলিলে সাক্ষী ছিলেন বলে। সাক্ষী হওয়া এস্টোপেল/স্বত্ব ত্যাগ নয়, যদি অংশ বিক্রির সম্মতি/অধিকার ত্যাগ প্রমাণ না হয়।\nমেমোরেন্ডাম: A বনাম B, হাইকোর্ট বিভাগ, সিভিল আপিল। কারণ: (১) উত্তরাধিকারে অংশ থাকে, (২) সহ-শরিকের বিক্রি কেবল তার অংশে, (৩) সাক্ষী = উপস্থিতি, সম্মতি নয়, (৪) এস্টোপেল ১১৫ সাক্ষ্য আইনের কঠোর শর্ত। প্রার্থনা: ডিক্রি/পুনর্বিচার।",
+          "prep_outline": [
+            "সাক্ষী হওয়া স্বত্ব ত্যাগ নয়",
+            "আপিল HCD ৯৬"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2017 — Q1 (Group A)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group A (CIVIL) · 8 নম্বর।\n\n'A' instituted a suit against 'B' in the 1st Court of Joint District Judge, Dhaka praying for declaration of title to the suit property. 'A' claimed the suit property by way of inheritance. On the other hand, 'B' claimed the same by way of purchase from one of the co-sharers of 'A'. The Joint District Judge dismissed the suit on the ground that 'A' was an attesting witness to the deed of transfer executed in favour of 'B' in respect of the self-same property. Draft a memorandum of Appeal for presentation to the High Court Division of the Supreme Court of Bangladesh.",
+          "answer_outline": [
+            "সাক্ষী হওয়া স্বত্ব ত্যাগ নয়",
+            "আপিল HCD ৯৬"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "যৌথ জেলা জজ খারিজ: A দলিলে সাক্ষী ছিলেন বলে। সাক্ষী হওয়া এস্টোপেল/স্বত্ব ত্যাগ নয়, যদি অংশ বিক্রির সম্মতি/অধিকার ত্যাগ প্রমাণ না হয়।\nমেমোরেন্ডাম: A বনাম B, হাইকোর্ট বিভাগ, সিভিল আপিল। কারণ: (১) উত্তরাধিকারে অংশ থাকে, (২) সহ-শরিকের বিক্রি কেবল তার অংশে, (৩) সাক্ষী = উপস্থিতি, সম্মতি নয়, (৪) এস্টোপেল ১১৫ সাক্ষ্য আইনের কঠোর শর্ত। প্রার্থনা: ডিক্রি/পুনর্বিচার।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2017-02",
+      "written_question_id": "HC-WQ-WEB-2017-02",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2017-02",
+      "order": 22,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2017",
+      "paper_year": "2017",
+      "exam_date": "2017",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2017 — প্রশ্ন 2 (Group A CIVIL OR) · 8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group A (CIVIL) · 8 নম্বর · OR।\n\n'A' instituted a suit against 'B' in the 1st Court of the Assistant Judge, Sylhet for a decree of perpetual injunction simpliciter with reference to certain property. Anyway, 'B' filed an application for local investigation of the suit property and that was allowed by the Assistant Judge. 'A' being aggrieved by the aforesaid order moved the District Judge of Sylhet who also affirmed the order of the Assistant Judge. Advise 'A' as to the next course of action and prepare a brief as per provisions of the relevant law in this regard.",
+          "answer_outline": [
+            "২০১৬-০১-এর অনুরূপ: রিভিশন ১১৫"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "একই তথ্য ২০১৬ গ্রুপ A স্থানীয় তদন্ত। পরবর্তী পথ হাইকোর্ট বিভাগে ধারা ১১৫ রিভিশন; জেলা জজের নিশ্চয়ন চূড়ান্ত আপিল নয়। খসড়া ২০১৬-০১-এর মতো — সিলেট সহকারী জজ ও জেলা জজের আদেশ রদ।",
+          "prep_outline": [
+            "২০১৬-০১-এর অনুরূপ: রিভিশন ১১৫"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2017 — Q2 (Group A OR)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group A (CIVIL) · 8 নম্বর · OR।\n\n'A' instituted a suit against 'B' in the 1st Court of the Assistant Judge, Sylhet for a decree of perpetual injunction simpliciter with reference to certain property. Anyway, 'B' filed an application for local investigation of the suit property and that was allowed by the Assistant Judge. 'A' being aggrieved by the aforesaid order moved the District Judge of Sylhet who also affirmed the order of the Assistant Judge. Advise 'A' as to the next course of action and prepare a brief as per provisions of the relevant law in this regard.",
+          "answer_outline": [
+            "২০১৬-০১-এর অনুরূপ: রিভিশন ১১৫"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "একই তথ্য ২০১৬ গ্রুপ A স্থানীয় তদন্ত। পরবর্তী পথ হাইকোর্ট বিভাগে ধারা ১১৫ রিভিশন; জেলা জজের নিশ্চয়ন চূড়ান্ত আপিল নয়। খসড়া ২০১৬-০১-এর মতো — সিলেট সহকারী জজ ও জেলা জজের আদেশ রদ।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2017-03",
+      "written_question_id": "HC-WQ-WEB-2017-03",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2017-03",
+      "order": 23,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2017",
+      "paper_year": "2017",
+      "exam_date": "2017",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2017 — প্রশ্ন 3 (Group B CRIMINAL) · 8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group B (CRIMINAL) · 8 নম্বর।\n\n'A' lodged an ejahar (First Information Report) against 'B' with Ramna Police Station, Dhaka Metropolitan Police, Dhaka for commission of theft in his house on 10.10.2016. Police started a regular case and submitted final report against 'B' after investigation. No naraji petition (petition of protest) was filed by 'A' and the Court accepted the final report and discharged 'B' from the case. Anyway, after 6 (six) months of the acceptance of the final report, 'A' filed a C.R. Case against 'B' in the Court of Chief Metropolitan Magistrate, Dhaka on the self-same occurrence.\nNow what remedy is open to 'B'? Draft an application invoking the relevant provision of law.",
+          "answer_outline": [
+            "একই ঘটনায় CR: ৪০৩/৫৬১ক",
+            "ফাইনাল রিপোর্ট গৃহীত = খালাস/অব্যাহতি"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "ফাইনাল রিপোর্ট গৃহীত, নারাজি নেই, B অব্যাহতি। ছয় মাস পর একই চুরি নিয়ে CR — দ্বিতীয় বিচার/অপব্যবহার। প্রতিকার: হাইকোর্ট বিভাগে ৫৬১ক CrPC (এবং ৪০৩ যদি খালাস গণ্য হয়) মামলা কোয়াশ।\nদরখাস্ত: B বনাম রাষ্ট্র ও A। কারণ: একই ঘটনা, পূর্ব নিষ্পত্তি, নারাজি না দেওয়া বাদীর গাফিলতি, হয়রানি। প্রার্থনা: CR মামলা রদ, স্থগিতাদেশ।",
+          "prep_outline": [
+            "একই ঘটনায় CR: ৪০৩/৫৬১ক",
+            "ফাইনাল রিপোর্ট গৃহীত = খালাস/অব্যাহতি"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2017 — Q3 (Group B)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group B (CRIMINAL) · 8 নম্বর।\n\n'A' lodged an ejahar (First Information Report) against 'B' with Ramna Police Station, Dhaka Metropolitan Police, Dhaka for commission of theft in his house on 10.10.2016. Police started a regular case and submitted final report against 'B' after investigation. No naraji petition (petition of protest) was filed by 'A' and the Court accepted the final report and discharged 'B' from the case. Anyway, after 6 (six) months of the acceptance of the final report, 'A' filed a C.R. Case against 'B' in the Court of Chief Metropolitan Magistrate, Dhaka on the self-same occurrence.\nNow what remedy is open to 'B'? Draft an application invoking the relevant provision of law.",
+          "answer_outline": [
+            "একই ঘটনায় CR: ৪০৩/৫৬১ক",
+            "ফাইনাল রিপোর্ট গৃহীত = খালাস/অব্যাহতি"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "ফাইনাল রিপোর্ট গৃহীত, নারাজি নেই, B অব্যাহতি। ছয় মাস পর একই চুরি নিয়ে CR — দ্বিতীয় বিচার/অপব্যবহার। প্রতিকার: হাইকোর্ট বিভাগে ৫৬১ক CrPC (এবং ৪০৩ যদি খালাস গণ্য হয়) মামলা কোয়াশ।\nদরখাস্ত: B বনাম রাষ্ট্র ও A। কারণ: একই ঘটনা, পূর্ব নিষ্পত্তি, নারাজি না দেওয়া বাদীর গাফিলতি, হয়রানি। প্রার্থনা: CR মামলা রদ, স্থগিতাদেশ।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2017-04",
+      "written_question_id": "HC-WQ-WEB-2017-04",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2017-04",
+      "order": 24,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2017",
+      "paper_year": "2017",
+      "exam_date": "2017",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2017 — প্রশ্ন 4 (Group B CRIMINAL OR) · 8",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group B (CRIMINAL) · 8 নম্বর · OR।\n\n'A' is a businessman and 'B' had business transactions with 'A' for quite some time. 'B' took some loan from 'A' and with the loan money, 'B' used to purchase rice and spices from the village and sell them to retailers including 'A'. But unfortunately 'B's wife fell seriously ill and he spent the entire loan money for her treatment. When 'A' wanted his money back, 'B' always told him that he would repay the loan after a fortnight. However, after waiting for a year or so, 'A' lodged a complaint against 'B' under Section 406 of the Penal Code, 1860 and accordingly the Metropolitan Magistrate took cognizance of the offence punishable thereunder.\n'B' approaches you for an appropriate legal remedy. You suggest the remedy and do the needful.",
+          "answer_outline": [
+            "ঋণ দেওয়ানি; ৪০৬ নয় যদি আস্থাভঙ্গের শুরু না থাকে",
+            "৫৬১ক কোয়াশ"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "ব্যবসায়িক ঋণ, চিকিৎসায় খরচ, ফেরতের আশ্বাস — নিছক দেনা ৪০৬/৪০৫ নয় (বিশ্বাসভঙ্গে সম্পত্তি “আস্থা”য় অর্পণ ও অসৎ অপসারণ চাই)। প্রতিকার: ৫৬১ক-এ আমল রদ; বিকল্পে ২৪১ক অব্যাহতি।\nখসড়া: B বনাম রাষ্ট্র ও A। ধারা ৫৬১ক। প্রার্থনা: সিআর/জিআর কোয়াশ, দেওয়ানি মোকদ্দমায় পাঠানোর পরামর্শ।",
+          "prep_outline": [
+            "ঋণ দেওয়ানি; ৪০৬ নয় যদি আস্থাভঙ্গের শুরু না থাকে",
+            "৫৬১ক কোয়াশ"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2017 — Q4 (Group B OR)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group B (CRIMINAL) · 8 নম্বর · OR।\n\n'A' is a businessman and 'B' had business transactions with 'A' for quite some time. 'B' took some loan from 'A' and with the loan money, 'B' used to purchase rice and spices from the village and sell them to retailers including 'A'. But unfortunately 'B's wife fell seriously ill and he spent the entire loan money for her treatment. When 'A' wanted his money back, 'B' always told him that he would repay the loan after a fortnight. However, after waiting for a year or so, 'A' lodged a complaint against 'B' under Section 406 of the Penal Code, 1860 and accordingly the Metropolitan Magistrate took cognizance of the offence punishable thereunder.\n'B' approaches you for an appropriate legal remedy. You suggest the remedy and do the needful.",
+          "answer_outline": [
+            "ঋণ দেওয়ানি; ৪০৬ নয় যদি আস্থাভঙ্গের শুরু না থাকে",
+            "৫৬১ক কোয়াশ"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "ব্যবসায়িক ঋণ, চিকিৎসায় খরচ, ফেরতের আশ্বাস — নিছক দেনা ৪০৬/৪০৫ নয় (বিশ্বাসভঙ্গে সম্পত্তি “আস্থা”য় অর্পণ ও অসৎ অপসারণ চাই)। প্রতিকার: ৫৬১ক-এ আমল রদ; বিকল্পে ২৪১ক অব্যাহতি।\nখসড়া: B বনাম রাষ্ট্র ও A। ধারা ৫৬১ক। প্রার্থনা: সিআর/জিআর কোয়াশ, দেওয়ানি মোকদ্দমায় পাঠানোর পরামর্শ।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2017-05",
+      "written_question_id": "HC-WQ-WEB-2017-05",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2017-05",
+      "order": 25,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2017",
+      "paper_year": "2017",
+      "exam_date": "2017",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2017 — প্রশ্ন 5 (Group C WRIT) · 9",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group C (WRIT) · 9 নম্বর।\n\n'A' obtained loan from Sonali Bank, Ramna Branch, Dhaka for business purpose, but failed to repay the same within the period stipulated in the sanction letter. Sonali Bank filed a suit against 'A' in the 1st Artha Rin Adalat, Dhaka for realization of the loan amount. During pendency of the suit, 'A' submitted an application for Settlement Conference with the consent of the Bank as per provision of the Artha Rin Adalat Ain, 2003. The Adalat rejected the same without assigning any reason. Prepare a Writ Petition under Article 102 of the Constitution challenging the aforesaid order of rejection.",
+          "answer_outline": [
+            "অর্থ ঋণ আদালত আইন নিষ্পত্তি সম্মেলন",
+            "কারণহীন নামঞ্জুর — ১০২"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "অর্থ ঋণ আদালত আইন ২০০৩-এর নিষ্পত্তি সম্মেলন বিধান (ধারা ২২ প্রসঙ্গ) পক্ষসম্মতিতে; কারণ না দিয়ে নামঞ্জুর নির্বিচার।\nরিট: A বনাম ১ম অর্থ ঋণ আদালত, ঢাকা ও সোনালী ব্যাংক। আর্ট. ১০২। যুক্তি: আইনানুগ অধিকার হরণ, স্পিকিং অর্ডার নয়, বিকল্প ফোরাম নিষ্ফল। প্রার্থনা: নামঞ্জুর রদ, সম্মেলন আহ্বানের নির্দেশ। (ব্যাংক সম্মতি স্টেমে আছে — গুরুত্বপূর্ণ।)",
+          "prep_outline": [
+            "অর্থ ঋণ আদালত আইন নিষ্পত্তি সম্মেলন",
+            "কারণহীন নামঞ্জুর — ১০২"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2017 — Q5 (Group C)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group C (WRIT) · 9 নম্বর।\n\n'A' obtained loan from Sonali Bank, Ramna Branch, Dhaka for business purpose, but failed to repay the same within the period stipulated in the sanction letter. Sonali Bank filed a suit against 'A' in the 1st Artha Rin Adalat, Dhaka for realization of the loan amount. During pendency of the suit, 'A' submitted an application for Settlement Conference with the consent of the Bank as per provision of the Artha Rin Adalat Ain, 2003. The Adalat rejected the same without assigning any reason. Prepare a Writ Petition under Article 102 of the Constitution challenging the aforesaid order of rejection.",
+          "answer_outline": [
+            "অর্থ ঋণ আদালত আইন নিষ্পত্তি সম্মেলন",
+            "কারণহীন নামঞ্জুর — ১০২"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "অর্থ ঋণ আদালত আইন ২০০৩-এর নিষ্পত্তি সম্মেলন বিধান (ধারা ২২ প্রসঙ্গ) পক্ষসম্মতিতে; কারণ না দিয়ে নামঞ্জুর নির্বিচার।\nরিট: A বনাম ১ম অর্থ ঋণ আদালত, ঢাকা ও সোনালী ব্যাংক। আর্ট. ১০২। যুক্তি: আইনানুগ অধিকার হরণ, স্পিকিং অর্ডার নয়, বিকল্প ফোরাম নিষ্ফল। প্রার্থনা: নামঞ্জুর রদ, সম্মেলন আহ্বানের নির্দেশ। (ব্যাংক সম্মতি স্টেমে আছে — গুরুত্বপূর্ণ।)"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-WEB-2017-06",
+      "written_question_id": "HC-WQ-WEB-2017-06",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-WEB-2017-06",
+      "order": 26,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "web-photo-ocr",
+      "exam_year": "2017",
+      "paper_year": "2017",
+      "exam_date": "2017",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "ocr_unverified",
+        "web_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "OCR of a QuesBankBD-hosted photograph of the printed HC Permission paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2017 — প্রশ্ন 6 (Group C WRIT OR) · 9",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group C (WRIT) · 9 নম্বর · OR।\n\n'Y', an employee of Sylhet City Corporation, was terminated from service on 01.09.2017 with three months' notice, pay and other benefits. In the termination letter, serious allegations of misconduct were leveled against him without any prior show-cause notice.\n'Y' requests you to take the requisite legal step against his termination from service. In what manner and how will you give legal remedy to 'Y'? Explain.",
+          "answer_outline": [
+            "সিটি কর্পোরেশন স্থানীয় কর্তৃপক্ষ",
+            "দুর্নীতির অভিযোগে নোটিশ ছাড়া বরখাস্ত অবৈধ"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "সিলেট সিটি কর্পোরেশন সংবিধিবদ্ধ কর্তৃপক্ষ — রিট চলে। “সার্ভিস অব প্লেজার” নোটিশেও যদি কলঙ্ক/দুর্নীতির অভিযোগ থাকে, প্রাক-নোটিশ ও শুনানি (প্রাকৃতিক ন্যায়) ছাড়া বরখাস্ত টেকে না।\nপথ: আর্ট. ১০২ রিট — কারণ দর্শানো ছাড়া কলঙ্কিত বরখাস্ত রদ, পুনর্বহাল, বকেয়া। বিকল্প: চাকরি বিধি/শ্রম যদি প্রযোজ্য হয় সে ফোরাম; কলঙ্ক থাকলে রিটই উপযোগী।",
+          "prep_outline": [
+            "সিটি কর্পোরেশন স্থানীয় কর্তৃপক্ষ",
+            "দুর্নীতির অভিযোগে নোটিশ ছাড়া বরখাস্ত অবৈধ"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2017 — Q6 (Group C OR)",
+          "question": "সূত্র: ওয়েব ছবি OCR (যাচাইহীন)। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ। মডেল উত্তর নেই।\nপরীক্ষা: 2017। Group C (WRIT) · 9 নম্বর · OR।\n\n'Y', an employee of Sylhet City Corporation, was terminated from service on 01.09.2017 with three months' notice, pay and other benefits. In the termination letter, serious allegations of misconduct were leveled against him without any prior show-cause notice.\n'Y' requests you to take the requisite legal step against his termination from service. In what manner and how will you give legal remedy to 'Y'? Explain.",
+          "answer_outline": [
+            "সিটি কর্পোরেশন স্থানীয় কর্তৃপক্ষ",
+            "দুর্নীতির অভিযোগে নোটিশ ছাড়া বরখাস্ত অবৈধ"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "সিলেট সিটি কর্পোরেশন সংবিধিবদ্ধ কর্তৃপক্ষ — রিট চলে। “সার্ভিস অব প্লেজার” নোটিশেও যদি কলঙ্ক/দুর্নীতির অভিযোগ থাকে, প্রাক-নোটিশ ও শুনানি (প্রাকৃতিক ন্যায়) ছাড়া বরখাস্ত টেকে না।\nপথ: আর্ট. ১০২ রিট — কারণ দর্শানো ছাড়া কলঙ্কিত বরখাস্ত রদ, পুনর্বহাল, বকেয়া। বিকল্প: চাকরি বিধি/শ্রম যদি প্রযোজ্য হয় সে ফোরাম; কলঙ্ক থাকলে রিটই উপযোগী।"
+        }
+      }
+    }
+  ],
+  "exam_years": [
+    "2016",
+    "2017"
+  ],
+  "hc_mcq_invented": false
+}

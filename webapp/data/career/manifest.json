@@ -1,0 +1,527 @@
+{
+  "generatedAt": "2026-09-13",
+  "localPct": 20,
+  "remotePct": 80,
+  "note": "Remote ~80%. APK keeps start-here + shells + syllabus + batches 002/004/008/041 + hc_essential_v1 + hc drills/drafting + user HC written 2016/17/23/24/25. Bulky BJS MCQ/written remote. Bar MCQ 2026 + 2012–23 PDF years = bar_batch_047–053 remote. Bar written 2026 = bar_batch_046 remote.",
+  "apkBarBatches": [
+    "002",
+    "004",
+    "008",
+    "041"
+  ],
+  "packs": [
+    {
+      "id": "bar_batch_003",
+      "file": "bar_batch_003.json",
+      "hash": "339d14cb4c957be3c59501a010d629cbf10720516337c1a911eb914dcba1e3d3",
+      "size": 48784,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_005",
+      "file": "bar_batch_005.json",
+      "hash": "df01164c1a1a8e533db5838d2a19e68dcb50156926e77289d0effcef16e62822",
+      "size": 52176,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_006",
+      "file": "bar_batch_006.json",
+      "hash": "8ed8e6a87379072bdeba4b3b85445dbd1d4a8e376e5fa9a0fec789309259085b",
+      "size": 48266,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_007",
+      "file": "bar_batch_007.json",
+      "hash": "b7aef2dab18867176cabe50eba37b52755cb69f1aee3f2f966d382097e72ddc5",
+      "size": 53110,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_009",
+      "file": "bar_batch_009.json",
+      "hash": "7a0e7053fc22673eb63651b6717882e5f334ec091228a768dd6b00ed82b73c6f",
+      "size": 48282,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_010",
+      "file": "bar_batch_010.json",
+      "hash": "441cdd66d6a369acb344cd5436162610f5cc30d21ffd43e4abfda15cf823f1f3",
+      "size": 44708,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_011",
+      "file": "bar_batch_011.json",
+      "hash": "d9ae26b73637bbc8091186df992e48b9ef3ecf62c0eaeb102efcfebc1c866613",
+      "size": 53889,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_012",
+      "file": "bar_batch_012.json",
+      "hash": "d6334d9b676060675086938099b4b6d3505b0f4eb78823fd2fbc2d763878ecc0",
+      "size": 50021,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_013",
+      "file": "bar_batch_013.json",
+      "hash": "971094d05a1d0997eb18d8dc52439826776706c8c0605a86efd1ac7d84d53838",
+      "size": 44361,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_014",
+      "file": "bar_batch_014.json",
+      "hash": "ad06a06e086a411ef7bb45348a82acb40dceb69cc83237933bc6c71ce0d38095",
+      "size": 50122,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_015",
+      "file": "bar_batch_015.json",
+      "hash": "9f78efcc8ee75e7f8b334f537a84cbbe344a856f31d76d494bfda4d44e28e4df",
+      "size": 44460,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_016",
+      "file": "bar_batch_016.json",
+      "hash": "b2754ad35cd606896a2b991e03c58f85a45b4b46207f411ea50b52779c10ea8a",
+      "size": 41767,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_017",
+      "file": "bar_batch_017.json",
+      "hash": "b5a3fc13c75a3caf43657e6bbfe8d76e3e04db873caf0da2fcb646adfa2b84d1",
+      "size": 51169,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_018",
+      "file": "bar_batch_018.json",
+      "hash": "0bd96d6719569f778a0105f5d566d58a441e71025c9596f80cfbfd46b55fe585",
+      "size": 45264,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_019",
+      "file": "bar_batch_019.json",
+      "hash": "f435d64fc29123c42cbc40f3dbcbedc4cdae5e12daf6abb96e46a1199b11a38e",
+      "size": 46115,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_020",
+      "file": "bar_batch_020.json",
+      "hash": "759b64964c0a20a5847d5fb750dc4c98229f2b6d4116c8fc08cc653be82eae41",
+      "size": 48997,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_021",
+      "file": "bar_batch_021.json",
+      "hash": "4320398a5e15ac81d724c3cd0f951f9d786027bf252c4d657a4e5a860ac8811b",
+      "size": 45719,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_022",
+      "file": "bar_batch_022.json",
+      "hash": "e5fc0c69f3d45374a544e3ebf1267ad86db43cfa3a7f1b892d15c0aef90506ef",
+      "size": 48227,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_023",
+      "file": "bar_batch_023.json",
+      "hash": "a5cff0aa3fbc17319ba0122c7211322fe8e4ada8a7bf13a9fe3b52546a99deca",
+      "size": 53120,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_024",
+      "file": "bar_batch_024.json",
+      "hash": "7e9f0cbffb51ecb6ad0ebafbd027aff417fa8b8917f9e57f3d377df1a2cf4eaa",
+      "size": 48006,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_025",
+      "file": "bar_batch_025.json",
+      "hash": "d91c82fcd837e49b51d4b7e38ed5b77f95922435ec04b8b6f5ce7ac51484475c",
+      "size": 50189,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_026",
+      "file": "bar_batch_026.json",
+      "hash": "1dc07b786043c837f17567259c639908d9dc55b46fba837af7b8d99aea057e3f",
+      "size": 110456,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_027",
+      "file": "bar_batch_027.json",
+      "hash": "576aa31f3553b0df2489c21f652302c339aecb81414b69e044b96c4ff0f90e91",
+      "size": 53344,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_028",
+      "file": "bar_batch_028.json",
+      "hash": "3649b33b3be52b49e43473de09bb6d3f61ef6827d5a1d59da771f9723e8882e0",
+      "size": 45327,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_029",
+      "file": "bar_batch_029.json",
+      "hash": "593af8784ffdcbcf5fc5d46b67ec61f4f217124a53d7235a193d5847dceb94a2",
+      "size": 134760,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_030",
+      "file": "bar_batch_030.json",
+      "hash": "0d7da0b0901abde6f82a137d18261b121a63228816fb2283df2fb4b60d947537",
+      "size": 367460,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_031",
+      "file": "bar_batch_031.json",
+      "hash": "e8cfca2fca40da302f47096d401d62ac36a797688594e3c203b745920c8746a6",
+      "size": 315398,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_032",
+      "file": "bar_batch_032.json",
+      "hash": "3e29c9752c5a0c7379754e272cc943fa39f2ba7a2c3833826db07131d88f3b59",
+      "size": 120928,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_033",
+      "file": "bar_batch_033.json",
+      "hash": "f8fb6b7af0b4c56f40ae64a760ad250f8934bf972a56883afbe7affd837fe784",
+      "size": 20613,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_034",
+      "file": "bar_batch_034.json",
+      "hash": "0c24caf519dc0c658b090f08c13aaeb44186c3f7d9b0a4e7619fdf24e7bb7593",
+      "size": 15856,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_035",
+      "file": "bar_batch_035.json",
+      "hash": "c2872e4808b8766a83351c65a22fc94e4512f3d90c4a80ea1d85dd1cea482895",
+      "size": 71960,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_036",
+      "file": "bar_batch_036.json",
+      "hash": "9174b55ed908a905cf865e665ce6c2dadd82034b65b11021b336dad36edc0a83",
+      "size": 49252,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_037",
+      "file": "bar_batch_037.json",
+      "hash": "50518377f6f5294b5babb43a212ef3a2aa11aad47b3c352a09deb57684ec4995",
+      "size": 47979,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_038",
+      "file": "bar_batch_038.json",
+      "hash": "2a553a2803eccf4e85f0880abc630192c46ebc344cc5aa0da3fb41afaa0b60ac",
+      "size": 99451,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_039",
+      "file": "bar_batch_039.json",
+      "hash": "80e5ba00d2b3f5d35f081df8d67ff337062cc7c4f9d27c07664c4166030ddad1",
+      "size": 322458,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_040",
+      "file": "bar_batch_040.json",
+      "hash": "435607e499150f40c4f2e2c4436b728693400d17b14e8f5cb002275edccca8c9",
+      "size": 52281,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_042",
+      "file": "bar_batch_042.json",
+      "hash": "7ee14582f5496ecd95e49727ab3b3a4cd9e03bed5245db6881a1489a850479ef",
+      "size": 227796,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_043",
+      "file": "bar_batch_043.json",
+      "hash": "f43af1ff22305ad1023c3527c5b77c8cc515194cb1d22215f7314c4839ab6738",
+      "size": 389829,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_044",
+      "file": "bar_batch_044.json",
+      "hash": "7fb3957f6d6d4cc0d844bc2099291d78a52112784a6a8f6c12a6dd41b5680ae5",
+      "size": 382639,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_045",
+      "file": "bar_batch_045.json",
+      "hash": "bd43c403a07a9f4194c1f1141ac65eecdf8967df374acff3f2b9b7ab2920c575",
+      "size": 93672,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_046",
+      "file": "bar_batch_046.json",
+      "hash": "d1f0d48086fd5f00e074dd38f924b73aaa498d52707746ad12c819604bf3e27b",
+      "size": 92390,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_047",
+      "file": "bar_batch_047.json",
+      "hash": "2fa1a0c64be3b6cd4660f6248f8341255cd88b04ff2d02a9d04fa764365f24da",
+      "size": 352739,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_048",
+      "file": "bar_batch_048.json",
+      "hash": "55d66bef1f96cd72d5e107dee81f7618e34c303361dfdf019aae7277de9cafbd",
+      "size": 345577,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_049",
+      "file": "bar_batch_049.json",
+      "hash": "d8534dc325a8df29d9dd1c62bf06499f21949e9f8fa80bd75d0fcad6a263c63a",
+      "size": 362353,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_050",
+      "file": "bar_batch_050.json",
+      "hash": "eb5e6b5ced96dedf6bfca6327c129fa9b3a794ad4bf4f2127df6f2d024b09dca",
+      "size": 367565,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_051",
+      "file": "bar_batch_051.json",
+      "hash": "f520841d7c602cac0bc99f101a56003efc19d880fe07888dae1725d4ed1dab28",
+      "size": 356235,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_052",
+      "file": "bar_batch_052.json",
+      "hash": "4e8c37aabd932e5e6fa696edf3338a47f73d59f5d824ff69dec895096474f011",
+      "size": 346710,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bar_batch_053",
+      "file": "bar_batch_053.json",
+      "hash": "05214786781ee74728026106bcd0ab2c9fb38574b6e3bd90e0618864ec34e346",
+      "size": 340431,
+      "kind": "lesson",
+      "packId": "bar-council",
+      "local": false
+    },
+    {
+      "id": "bjs_mcq_03_10",
+      "file": "bjs_mcq_03_10.json",
+      "hash": "a1791c6467ee86132552372a1bb256deba9e2a73fd1d2d03f1d17142d75558fc",
+      "size": 785083,
+      "kind": "mcq",
+      "packId": "bjs",
+      "local": false
+    },
+    {
+      "id": "bjs_mcq_11_16",
+      "file": "bjs_mcq_11_16.json",
+      "hash": "289ee538b6345f12e12bcb390ef3414eb957a8567f6e14a54ce8a31c56fb7429",
+      "size": 1416696,
+      "kind": "mcq",
+      "packId": "bjs",
+      "local": false
+    },
+    {
+      "id": "bjs_written_user_v1",
+      "file": "bjs_written_user_v1.json",
+      "hash": "a559c959e42b8010b31607c7a9554ca04f22150fc35dd648fcafbf7477994577",
+      "size": 1413046,
+      "kind": "lesson",
+      "packId": "bjs",
+      "local": false
+    },
+    {
+      "id": "hc_canonical",
+      "file": "hc_canonical.json",
+      "hash": "544a4cea05e6f4ba16c604061cbddb2d318711a942b208b7837cee3a7d540afb",
+      "size": 867614,
+      "kind": "hc",
+      "packId": "high-court-ad",
+      "local": false
+    },
+    {
+      "id": "hc_drafting_syllabus_v1",
+      "file": "hc_drafting_syllabus_v1.json",
+      "hash": "44be80701dca508a1bee7d113d52f84a9ad2f86bceb3ac06e7212293c71703c4",
+      "size": 146612,
+      "kind": "hc",
+      "packId": "high-court-ad",
+      "local": false
+    },
+    {
+      "id": "hc_permission_drills",
+      "file": "hc_permission_drills.json",
+      "hash": "24b95001ad7a9717df6ff1abb97c75608e03b69d64651d57991c247ad457209f",
+      "size": 54996,
+      "kind": "hc",
+      "packId": "high-court-ad",
+      "local": false
+    },
+    {
+      "id": "hc_user_written_2024_2025",
+      "file": "hc_user_written_2024_2025.json",
+      "hash": "4c5ab586285f348536b2cb29a9667ab26068d1fee8339464e4e8d468314b21a2",
+      "size": 108984,
+      "kind": "hc",
+      "packId": "high-court-ad",
+      "local": false
+    },
+    {
+      "id": "hc_written_2016_2017",
+      "file": "hc_written_2016_2017.json",
+      "hash": "77ad98723ac2ca7859f0566c785fe66b726d08cf71be2f37614607298eb5ed69",
+      "size": 84044,
+      "kind": "hc",
+      "packId": "high-court-ad",
+      "local": false
+    },
+    {
+      "id": "hc_written_2023",
+      "file": "hc_written_2023.json",
+      "hash": "77fd73e5ba5298227f0e63f2567e7cc5dcc5bf13071634d98369885c76b11aac",
+      "size": 51576,
+      "kind": "hc",
+      "packId": "high-court-ad",
+      "local": false
+    }
+  ]
+}

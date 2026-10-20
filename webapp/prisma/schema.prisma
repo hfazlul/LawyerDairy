@@ -1,11 +1,5 @@
-// Lawyer Diary BD — Prisma Schema (webapp)
-// BD-specific notes:
-//   - chamberId on every user-owned table (multi-tenancy from day 1)
-//   - deletedAt on every mutable table (NEVER hard delete)
-//   - rev on synced tables (optimistic concurrency for mobile sync)
-//   - appRole USER|ADMIN for web dashboards; chamber role stays OWNER|...
-//   - plan / subscriptionEndsAt = entitlement; STARTER+ cause-list; PRO_ADVANCE case mgmt
-//   - jurisdiction (BD|PK|IN) = law pack; User.uiLanguage orthogonal
+// Lawyer Diary BD — Prisma schema v2 (Phase 0)
+// Locked: workspace tenancy (not User.chamberId), courtUid FK, username+password, no OTP.
 
 generator client {
   provider = "prisma-client-js"
@@ -16,74 +10,31 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-// ── Tenancy ───────────────────────────────────────────────────────────────────
-
-model Chamber {
-  id                 String           @id @default(cuid())
-  name               String
-  plan               Plan             @default(FREE)
-  subscriptionEndsAt DateTime?
-  /// Law pack — orthogonal to UI language
-  jurisdiction       JurisdictionCode @default(BD)
-  /// Soft-suggest only until user confirms (first open / signup)
-  jurisdictionConfirmed Boolean       @default(false)
-  smsCredits         Int              @default(0)
-  createdAt          DateTime         @default(now())
-  users              User[]
-  cases              Case[]
-  hearings           Hearing[]
-  clients            Client[]
-  documents          Document[]
-  feeEntries         FeeEntry[]
-  subscriptions      Subscription[]
-}
+// ── Enums ────────────────────────────────────────────────────────────────────
 
 enum Plan {
   FREE
   STARTER
   PRO
   PRO_ADVANCE
-  CHAMBER // legacy / team ACL ceiling — treat like PRO_ADVANCE for gates
+  ADVANCE
+  CHAMBER // legacy — not sold; treat seats like PRO_ADVANCE
 }
 
-/// Law content pack (UK skipped for now)
-enum JurisdictionCode {
-  BD
-  PK
-  IN // West Bengal / Tripura belt — one India pack
+enum BillingPeriod {
+  MONTH
+  YEAR
 }
 
-// ── Users & Auth ──────────────────────────────────────────────────────────────
-
-model User {
-  id           String    @id @default(cuid())
-  chamberId    String
-  chamber      Chamber   @relation(fields: [chamberId], references: [id])
-  name         String
-  phone        String    @unique
-  email        String?   @unique
-  /// bcrypt hash for web email/password auth (mobile still uses phone OTP)
-  passwordHash String?
-  /// Platform role for /admin vs /dashboard (entitlement is Chamber.plan, not this)
-  appRole      AppRole   @default(USER)
-  role         UserRole  @default(OWNER)
-  barRegNo     String?
-  /// UI language — orthogonal to chamber jurisdiction content
-  uiLanguage   UiLanguage @default(bn)
-  createdAt    DateTime  @default(now())
-  sessions     Session[]
-  otpLogs      OtpLog[]
-  loginAttempts LoginAttempt[]
-
-  @@index([chamberId])
-  @@index([email])
-  @@index([appRole])
+enum ClaimStatus {
+  PENDING
+  APPROVED
+  REJECTED
 }
 
 enum UiLanguage {
   bn
   en
-  ur
 }
 
 enum AppRole {
@@ -91,82 +42,41 @@ enum AppRole {
   ADMIN
 }
 
-enum UserRole {
+enum WorkspaceKind {
+  PERSONAL
+  CHAMBER
+}
+
+enum MemberRole {
   OWNER
-  ASSOCIATE
-  CLERK
-  READONLY
+  ADMIN
+  LAWYER
+  STAFF
+  VIEWER
 }
 
-model Session {
-  id           String   @id @default(cuid())
-  userId       String
-  user         User     @relation(fields: [userId], references: [id])
-  refreshToken String   @unique
-  expiresAt    DateTime
-  createdAt    DateTime @default(now())
-
-  @@index([userId])
+enum MemberStatus {
+  INVITED
+  ACTIVE
+  SUSPENDED
+  REMOVED
 }
 
-model OtpLog {
-  id        String   @id @default(cuid())
-  userId    String?
-  user      User?    @relation(fields: [userId], references: [id])
-  phone     String
-  otp       String
-  used      Boolean  @default(false)
-  expiresAt DateTime
-  createdAt DateTime @default(now())
-
-  @@index([phone, createdAt])
+enum ScopeMode {
+  ALL
+  ASSIGNED_ONLY
 }
 
-/// Brute-force protection log (auth endpoints)
-model LoginAttempt {
-  id        String   @id @default(cuid())
-  userId    String?
-  user      User?    @relation(fields: [userId], references: [id])
-  email     String?
-  phone     String?
-  ip        String?
-  success   Boolean  @default(false)
-  createdAt DateTime @default(now())
-
-  @@index([email, createdAt])
-  @@index([ip, createdAt])
+enum PermissionEffect {
+  ALLOW
+  DENY
 }
 
-// ── Catalog & billing (web sells; mobile only reads entitlement) ───────────────
-
-model SubscriptionPackage {
-  id          String   @id @default(cuid())
-  code        String   @unique // FREE | STARTER | PRO | PRO_ADVANCE | CHAMBER
-  nameBn      String
-  nameEn      String
-  priceBdt    Int      // monthly price in BDT
-  yearlyBdt   Int?
-  featuresJson String  // JSON string list of feature ids
-  active      Boolean  @default(true)
-  sortOrder   Int      @default(0)
-  createdAt   DateTime @default(now())
-  subscriptions Subscription[]
-}
-
-model Subscription {
-  id          String   @id @default(cuid())
-  chamberId   String
-  chamber     Chamber  @relation(fields: [chamberId], references: [id])
-  packageId   String
-  package     SubscriptionPackage @relation(fields: [packageId], references: [id])
-  status      SubStatus @default(PENDING)
-  startsAt    DateTime?
-  endsAt      DateTime?
-  gateway     String?  // SSLCommerz | BKASH | MANUAL
-  gatewayRef  String?
-  createdAt   DateTime @default(now())
-
-  @@index([chamberId, status])
+enum InviteStatus {
+  PENDING
+  ACCEPTED
+  EXPIRED
+  REVOKED
 }
 
 enum SubStatus {
@@ -176,139 +86,18 @@ enum SubStatus {
   CANCELLED
 }
 
-model EmailCampaign {
-  id          String   @id @default(cuid())
-  subject     String
-  bodyHtml    String
-  audience    String   @default("all") // all | inactive | expiring
-  status      String   @default("draft") // draft | sending | sent | dry_run | failed
-  sentCount   Int      @default(0)
-  createdById String?
-  createdAt   DateTime @default(now())
-  sentAt      DateTime?
+enum TaskKind {
+  TASK
+  REMINDER
+  DEADLINE
+  LIMITATION
 }
 
-// ── Cases ─────────────────────────────────────────────────────────────────────
-
-model Case {
-  id            String    @id @default(cuid())
-  chamberId     String
-  chamber       Chamber   @relation(fields: [chamberId], references: [id])
-  caseNo        String
-  caseYear      Int?
-  court         String
-  courtName     String?
-  courtRoom     String?
-  judgeName     String?
-  caseType      String
-  actsSections  String?
-  policeStation String?
-  onBehalf      String    @default("plaintiff")
-  stage         String?
-  priority      String    @default("medium")
-  status        String    @default("active")
-  clientId      String?
-  filingDate    DateTime?
-  nextDate      DateTime?
-  lastOutcome   String?
-  rev           Int       @default(0)
-  updatedAt     DateTime  @updatedAt
-  deletedAt     DateTime?
-  hearings      Hearing[]
-  documents     Document[]
-  feeEntries    FeeEntry[]
-  deadlines     Deadline[]
-  causeListEntries CauseListEntry[]
-
-  @@index([chamberId, nextDate])
-  @@index([chamberId, status])
-  @@index([chamberId, caseNo])
-}
-
-/// Official cause-list rows (pro-advance web + mobile)
-model CauseListEntry {
-  id        String    @id @default(cuid())
-  chamberId String
-  caseId    String?
-  case      Case?     @relation(fields: [caseId], references: [id])
-  date      DateTime
-  courtName String?
-  serialNo  String?
-  partyName String?
-  purpose   String?
-  rawText   String?
-  matched   Boolean   @default(false)
-  rev       Int       @default(0)
-  updatedAt DateTime  @updatedAt
-  deletedAt DateTime?
-
-  @@index([chamberId, date])
-  @@index([caseId])
-}
-
-// ── Hearings ──────────────────────────────────────────────────────────────────
-
-model Hearing {
-  id              String    @id @default(cuid())
-  caseId          String
-  case            Case      @relation(fields: [caseId], references: [id])
-  chamberId       String
-  chamber         Chamber   @relation(fields: [chamberId], references: [id])
-  date            DateTime
-  purpose         String?
-  outcome         String?
-  note            String?
-  voiceNotePath   String?
-  attended        Boolean   @default(false)
-  appearingUserId String?
-  rev             Int       @default(0)
-  updatedAt       DateTime  @updatedAt
-  deletedAt       DateTime?
-
-  @@index([chamberId, date])
-  @@index([caseId])
-}
-
-// ── Clients ───────────────────────────────────────────────────────────────────
-
-model Client {
-  id        String    @id @default(cuid())
-  chamberId String
-  chamber   Chamber   @relation(fields: [chamberId], references: [id])
-  name      String
-  phone     String?
-  altPhone  String?
-  email     String?
-  nid       String?
-  address   String?
-  fileNo    String?
-  note      String?
-  createdAt DateTime  @default(now())
-  deletedAt DateTime?
-
-  @@index([chamberId])
-}
-
-// ── Documents ─────────────────────────────────────────────────────────────────
-
-model Document {
-  id         String    @id @default(cuid())
-  caseId     String
-  case       Case      @relation(fields: [caseId], references: [id])
-  chamberId  String
-  chamber    Chamber   @relation(fields: [chamberId], references: [id])
-  kind       DocKind
-  title      String
-  storageKey String
-  pageCount  Int
-  sizeBytes  Int
-  ocrText    String?
-  localOnly  Boolean   @default(false)
-  createdAt  DateTime  @default(now())
-  deletedAt  DateTime?
-
-  @@index([caseId])
-  @@index([chamberId])
+enum ChangeOp {
+  UPSERT
+  DELETE
+  SCOPE_GRANT
+  SCOPE_REVOKE
 }
 
 enum DocKind {
@@ -317,68 +106,1569 @@ enum DocKind {
   OKALATNAMA
   SHAKKHYA
   ADESH
+  FIR
+  JUDGMENT
   OTHER
 }
 
-// ── Fee Entries ───────────────────────────────────────────────────────────────
+enum VerificationStatus {
+  UNSUBMITTED
+  PENDING
+  VERIFIED
+  REJECTED
+}
 
-model FeeEntry {
-  id        String   @id @default(cuid())
-  caseId    String
-  case      Case     @relation(fields: [caseId], references: [id])
-  chamberId String
-  chamber   Chamber  @relation(fields: [chamberId], references: [id])
-  type      FeeType
-  amount    Decimal  @db.Decimal(12, 2)
-  date      DateTime
-  method    String?
-  note      String?
-  receiptNo String?
+enum ReviewStatus {
+  PENDING
+  VERIFIED
+  REJECTED
+}
+
+enum LeadStatus {
+  NEW
+  CONTACTED
+  CONVERTED
+  NOT_INTERESTED
+  SPAM_REPORTED
+}
+
+enum PreferredContactTime {
+  ANYTIME
+  MORNING
+  AFTERNOON
+  EVENING
+}
+
+enum DeliveryStatus {
+  PENDING
+  SENT
+  FAILED
+  NO_TOKEN
+  SKIPPED
+}
+
+enum JoinRequestStatus {
+  PENDING
+  ACCEPTED
+  REJECTED
+}
+
+// ── Identity & tenancy ───────────────────────────────────────────────────────
+
+model User {
+  id            String     @id @default(uuid())
+  username      String     @unique
+  name          String
+  phone         String     @unique
+  phoneVerified Boolean    @default(false)
+  email         String?    @unique
+  passwordHash  String
+  appRole       AppRole    @default(USER)
+  barRegNo      String?
+  uiLanguage    UiLanguage @default(bn)
+  avatarUrl           String?
+  lastLoginAt         DateTime?
+  lastSeenAt          DateTime?
+  referralCode        String?    @unique
+  referredById        String?
+  referredBy          User?      @relation("UserReferrals", fields: [referredById], references: [id])
+  referrals           User[]     @relation("UserReferrals")
+  installFingerprint  String?
+  webTrialEndsAt      DateTime?
+  createdAt           DateTime   @default(now())
+  updatedAt           DateTime   @updatedAt
+  deletedAt           DateTime?
+
+  ownedWorkspaces    Workspace[]          @relation("WorkspaceOwner")
+  memberships        WorkspaceMember[]
+  devices            Device[]
+  sessions           Session[]
+  loginAttempts      LoginAttempt[]
+  passwordResets     PasswordResetToken[]
+  passwordOtps       PasswordOtpChallenge[]
+  joinRequestsMade   JoinRequest[]          @relation("JoinRequester")
+  lawyerProfile      LawyerProfile?
+  auditEvents        AuditLog[]
+  consultationReqs   ConsultationRequest[] @relation("LeadRequester")
+  lawyerReviews      LawyerReview[]
+  demandSignals      DistrictDemandSignal[]
+  bookmarks          Bookmark[]
+  userNotes          UserNote[]
+  attempts           Attempt[]
+  learningProgress   LearningProgress[]
+  srsStates          SrsState[]
+  adminRecord        AdminUser?
+  adminInvitesCreated AdminInvite[]       @relation("AdminInviter")
+  referralAttributions ReferralAttribution[] @relation("ReferrerAttributions")
+  referredAttribution  ReferralAttribution?  @relation("ReferredAttribution")
+  referralRewards    ReferralReward[]
+  paymentClaims      PaymentClaim[]
+  analyticsEvents    AnalyticsEvent[]
+
+  @@index([installFingerprint])
+  @@index([lastSeenAt])
+
+  @@index([phone])
+  @@index([email])
+  @@index([appRole])
+  @@index([deletedAt])
+}
+
+model Workspace {
+  id            String        @id @default(uuid())
+  name          String
+  kind          WorkspaceKind @default(PERSONAL)
+  ownerUserId   String
+  owner         User          @relation("WorkspaceOwner", fields: [ownerUserId], references: [id])
+  plan          Plan          @default(FREE)
+  planExpiresAt DateTime?
+  memberLimit   Int           @default(2)
+  smsCredits    Int           @default(20)
+  smsGrantYm    String?
+  storageBytes  BigInt        @default(0)
+  logoUrl       String?
+  joinCode      String?
+  autoMessaging Boolean       @default(false)
+  smsD1         Boolean       @default(true)
+  smsD2         Boolean       @default(false)
+  smsD3         Boolean       @default(false)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+  deletedAt     DateTime?
+  usageMonths        UsageMonth[]
+  smsUsages          SmsUsage[]
+
+  members            WorkspaceMember[]
+  invites            Invite[]
+  joinRequests       JoinRequest[]
+  cases              Case[]
+  hearings           Hearing[]
+  clients            Client[]
+  documents          Document[]
+  feeEntries         FeeEntry[]
+  payments           Payment[]
+  tasks              Task[]
+  notes              Note[]
+  causeListEntries   CauseListEntry[]
+  timelineEvents     TimelineEvent[]
+  comms              CommunicationMessage[]
+  subscriptions      Subscription[]
+  auditLogs          AuditLog[]
+  changeLogs         ChangeLog[]
+  syncOps            SyncOpLog[]
+  deviceSyncStates   DeviceSyncState[]
+  caseParties        CaseParty[]
+  caseSections       CaseSection[]
+
+  @@index([ownerUserId])
+  @@index([kind])
+  @@index([joinCode])
+}
+
+model WorkspaceMember {
+  id                 String       @id @default(uuid())
+  workspaceId        String
+  workspace          Workspace    @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  userId             String
+  user               User         @relation(fields: [userId], references: [id])
+  role               MemberRole   @default(STAFF)
+  title              String?
+  status             MemberStatus @default(ACTIVE)
+  scopeMode          ScopeMode    @default(ALL)
+  invitedByUserId    String?
+  joinedAt           DateTime?
+  suspendedAt        DateTime?
+  removedAt          DateTime?
+  permissionsVersion Int          @default(0)
+  version            Int          @default(0)
+  updatedAt          DateTime     @updatedAt
+  deletedAt          DateTime?
+
+  permissions MemberPermission[]
+
+  @@unique([workspaceId, userId])
+  @@index([userId, status])
+  @@index([workspaceId, status])
+}
+
+model MemberPermission {
+  id                String            @id @default(uuid())
+  workspaceMemberId String
+  member            WorkspaceMember   @relation(fields: [workspaceMemberId], references: [id], onDelete: Cascade)
+  permissionKey     String
+  effect            PermissionEffect  @default(ALLOW)
+  grantedByUserId   String?
+  createdAt         DateTime          @default(now())
+
+  @@unique([workspaceMemberId, permissionKey])
+  @@index([permissionKey])
+}
+
+model Invite {
+  id               String       @id @default(uuid())
+  workspaceId      String
+  workspace        Workspace    @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  phone            String?
+  email            String?
+  role             MemberRole   @default(STAFF)
+  scopeMode        ScopeMode    @default(ALL)
+  tokenHash        String       @unique
+  status           InviteStatus @default(PENDING)
+  invitedByUserId  String
+  expiresAt        DateTime
+  acceptedAt       DateTime?
+  acceptedByUserId String?
+  createdAt        DateTime     @default(now())
+
+  @@index([workspaceId, status])
+  @@index([phone])
+  @@index([email])
+}
+
+model JoinRequest {
+  id                 String            @id @default(uuid())
+  workspaceId        String
+  workspace          Workspace         @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  requesterUserId    String
+  requester          User              @relation("JoinRequester", fields: [requesterUserId], references: [id])
+  requesterName      String
+  requesterPhone     String?
+  code               String?
+  firestoreRequestId String?           @unique
+  status             JoinRequestStatus @default(PENDING)
+  decidedByUserId    String?
+  decidedAt          DateTime?
+  createdAt          DateTime          @default(now())
+  updatedAt          DateTime          @updatedAt
+
+  @@index([workspaceId, status])
+  @@index([requesterUserId, status])
+}
+
+model Device {
+  id         String    @id @default(uuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  label      String?
+  platform   String
+  appVersion String?
+  osVersion  String?
+  pushToken   String?
+  pushEnabled Boolean   @default(true)
+  lastSeenAt  DateTime?
+  revokedAt   DateTime?
+  createdAt   DateTime  @default(now())
+  sessions    Session[]
+
+  @@index([userId, revokedAt])
+  @@index([pushToken])
+}
+
+model FcmDispatch {
+  id        String   @id @default(uuid())
+  userId    String
+  dedupeKey String    @unique
+  kind      String
+  createdAt DateTime  @default(now())
+
+  @@index([userId, createdAt])
+}
+
+model Session {
+  id               String    @id @default(uuid())
+  userId           String
+  user             User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  deviceId         String?
+  device           Device?   @relation(fields: [deviceId], references: [id])
+  refreshTokenHash String    @unique
+  userAgent        String?
+  ipAddress        String?
+  expiresAt        DateTime
+  revokedAt        DateTime?
+  createdAt        DateTime  @default(now())
+  lastUsedAt       DateTime?
+
+  @@index([userId, revokedAt])
+  @@index([deviceId])
+}
+
+model LoginAttempt {
+  id        String   @id @default(uuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  email     String?
+  phone     String?
+  username  String?
+  ip        String?
+  success   Boolean  @default(false)
   createdAt DateTime @default(now())
 
-  @@index([caseId])
-  @@index([chamberId, date])
+  @@index([email, createdAt])
+  @@index([ip, createdAt])
+  @@index([username, createdAt])
 }
 
-enum FeeType {
-  FEE_AGREED
-  RECEIVED
-  EXPENSE_COURT_FEE
-  EXPENSE_STAMP
-  EXPENSE_OTHER
+model PasswordResetToken {
+  id        String    @id @default(uuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash String    @unique
+  expiresAt DateTime
+  usedAt    DateTime?
+  createdAt DateTime  @default(now())
+
+  @@index([userId, createdAt])
 }
 
-// ── Limitation Deadlines ──────────────────────────────────────────────────────
+model PasswordOtpChallenge {
+  id        String    @id @default(uuid())
+  userId    String
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  phone     String
+  otpHash   String
+  expiresAt DateTime
+  usedAt    DateTime?
+  attempts  Int       @default(0)
+  createdAt DateTime  @default(now())
 
-model Deadline {
-  id              String   @id @default(cuid())
+  @@index([phone, createdAt])
+  @@index([userId, createdAt])
+}
+
+// ── Catalog & billing ────────────────────────────────────────────────────────
+
+model SubscriptionPackage {
+  id             String         @id @default(uuid())
+  code           String         @unique
+  nameBn         String
+  nameEn         String
+  priceBdt       Int
+  yearlyBdt      Int?
+  featuresJson   Json
+  smsMonthly     Int            @default(0)
+  smsYearly      Int            @default(0)
+  teamSeats      Int            @default(0)
+  autoHearingSms Boolean        @default(false)
+  careerFull     Boolean        @default(false)
+  adsOff         Boolean        @default(true)
+  active         Boolean        @default(true)
+  sortOrder      Int            @default(0)
+  createdAt      DateTime       @default(now())
+  subscriptions  Subscription[]
+}
+
+model Subscription {
+  id             String               @id @default(uuid())
+  workspaceId    String
+  workspace      Workspace            @relation(fields: [workspaceId], references: [id])
+  packageId      String
+  package        SubscriptionPackage  @relation(fields: [packageId], references: [id])
+  status         SubStatus            @default(PENDING)
+  billingPeriod  BillingPeriod        @default(MONTH)
+  amountBdt      Int?
+  startsAt       DateTime?
+  endsAt         DateTime?
+  gateway        String?
+  gatewayRef     String?
+  createdAt      DateTime             @default(now())
+
+  @@index([workspaceId, status])
+  @@index([gatewayRef])
+}
+
+model EmailCampaign {
+  id          String    @id @default(uuid())
+  subject     String
+  bodyHtml    String
+  audience    String    @default("all")
+  status      String    @default("draft")
+  sentCount   Int       @default(0)
+  createdById String?
+  createdAt   DateTime  @default(now())
+  sentAt      DateTime?
+}
+
+model AppConfig {
+  id             String   @id @default("current")
+  configVersion  Int      @default(1)
+  minAppVersion  String   @default("1.0.0")
+  killSwitches   Json     @default("[]")
+  limits         Json     @default("{}")
+  guideCard      Json?
+  guideVideos    Json?
+  updatedAt      DateTime @updatedAt
+}
+
+model CmsSettings {
+  id                   String   @id @default("current")
+  playStoreUrl         String   @default("https://play.google.com/store/apps/details?id=com.mamlaq.app")
+  shareUrl             String   @default("")
+  homeVideoUrl         String   @default("")
+  homeVideoTitle       String   @default("MAMLAQ গাইড")
+  homeBlogHtml         String   @default("")
+  contactIntro         String   @default("")
+  contactEmail         String   @default("")
+  contactPhone         String   @default("")
+  contactWhatsapp      String   @default("")
+  contactTelegram      String   @default("")
+  footerBlurb          String   @default("")
+  reminderD4Template   String   @default("আপনার MAMLAQ প্যাকেজ ৪ দিন পর শেষ হবে। নবায়ন করুন: {url}")
+  reminderD3Template   String   @default("আপনার MAMLAQ প্যাকেজ ৩ দিন পর শেষ হবে। নবায়ন করুন: {url}")
+  supportWhatsapp      String   @default("")
+  smsRatePaisa         Int      @default(40)
+  waRatePaisa          Int      @default(0)
+  updatedAt            DateTime @updatedAt
+}
+
+// ── Case domain ──────────────────────────────────────────────────────────────
+
+model Case {
+  id               String    @id
+  workspaceId      String
+  workspace        Workspace @relation(fields: [workspaceId], references: [id])
+
+  courtLevelId     String
+  courtLevel       CourtLevel @relation(fields: [courtLevelId], references: [id])
+  courtTypeId      String
+  courtType        CourtType  @relation(fields: [courtTypeId], references: [id])
+  courtUid         String?
+  court            Court?     @relation(fields: [courtUid], references: [id])
+  courtNameFree    String?
+  districtId       String?
+  metropolitanId   String?
+  caseTypeId       String?
+  caseType         CaseType?  @relation(fields: [caseTypeId], references: [id])
+  caseTypeFree     String?
+
+  caseNo           String
+  caseNoNormalized String
+  caseYear         Int?
+  courtRoom        String?
+  judgeName        String?
+  policeStation    String?
+  firNo            String?
+  fileNo           String?
+  stage            String?
+  priority         String    @default("medium")
+  status           String    @default("active")
+  filingDate       DateTime?
+  nextDate         DateTime?
+  lastHearingDate  DateTime?
+  lastOutcome      String?
+  agreedFeePaisa   BigInt?
+  notes            String?
+  assignedToUserId String?
+  createdByUserId  String
+  searchTokens     String    @default("")
+
+  version          Int       @default(0)
+  updatedAt        DateTime  @updatedAt
+  updatedByUserId  String?
+  deletedAt        DateTime?
+  deviceId         String?
+
+  parties          CaseParty[]
+  caseSections     CaseSection[]
+  hearings         Hearing[]
+  documents        Document[]
+  feeEntries       FeeEntry[]
+  payments         Payment[]
+  tasks            Task[]
+  caseNotes        Note[]
+  timelineEvents   TimelineEvent[]
+  causeListEntries CauseListEntry[]
+
+  @@index([workspaceId, nextDate])
+  @@index([workspaceId, status, nextDate])
+  @@index([workspaceId, courtUid, nextDate])
+  @@index([workspaceId, assignedToUserId])
+  @@index([workspaceId, caseNoNormalized])
+  @@index([workspaceId, updatedAt])
+}
+
+model CaseParty {
+  id                   String    @id
+  workspaceId          String
+  workspace            Workspace @relation(fields: [workspaceId], references: [id])
+  caseId               String
+  case                 Case      @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  clientId             String?
+  client               Client?   @relation(fields: [clientId], references: [id])
+  partyName            String
+  partyRoleId          String
+  entityTypeId         String?
+  representationSideId String    @default("client_side")
+  isPrimary            Boolean   @default(false)
+  phone                String?
+  address              String?
+  sortOrder            Int       @default(0)
+  version              Int       @default(0)
+  updatedAt            DateTime  @updatedAt
+  updatedByUserId      String?
+  deletedAt            DateTime?
+  deviceId             String?
+
+  @@index([caseId, sortOrder])
+  @@index([workspaceId, clientId])
+}
+
+model CaseSection {
+  id           String    @id
+  workspaceId  String
+  workspace    Workspace @relation(fields: [workspaceId], references: [id])
+  caseId       String
+  case         Case      @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  actId        String?
+  sectionId    String?
+  rawText      String?
+  displayLabel String
+  sortOrder    Int       @default(0)
+  version      Int       @default(0)
+  updatedAt    DateTime  @updatedAt
+  updatedByUserId String?
+  deletedAt    DateTime?
+  deviceId     String?
+
+  @@index([caseId, sortOrder])
+  @@index([workspaceId, sectionId])
+}
+
+model Hearing {
+  id              String    @id
   caseId          String
-  case            Case     @relation(fields: [caseId], references: [id])
-  chamberId       String
-  kind            String
-  baseDate        DateTime
-  days            Int
-  computedDueDate DateTime
-  ruleRef         String
-  status          String   @default("OPEN")
-  createdAt       DateTime @default(now())
+  case            Case      @relation(fields: [caseId], references: [id])
+  workspaceId     String
+  workspace       Workspace @relation(fields: [workspaceId], references: [id])
+  date            DateTime
+  purpose         String?
+  outcome         String?
+  nextDateSet     DateTime?
+  note            String?
+  voiceNotePath   String?
+  attended        Boolean   @default(false)
+  appearingUserId String?
+  isAdjourned     Boolean   @default(false)
+  orderSummary    String?
+  version         Int       @default(0)
+  updatedAt       DateTime  @updatedAt
+  updatedByUserId String?
+  deletedAt       DateTime?
+  deviceId        String?
 
+  @@index([workspaceId, date])
   @@index([caseId])
-  @@index([chamberId, computedDueDate])
 }
 
-// ── Message Log ───────────────────────────────────────────────────────────────
+model CauseListEntry {
+  id              String    @id @default(uuid())
+  workspaceId     String
+  workspace       Workspace @relation(fields: [workspaceId], references: [id])
+  caseId          String?
+  case            Case?     @relation(fields: [caseId], references: [id])
+  date            DateTime
+  source          String    @default("manual")
+  courtUid        String?
+  courtNameFree   String?
+  serialNo        String?
+  caseNoRaw       String?
+  partyName       String?
+  purpose         String?
+  rawText         String?
+  matchStatus     String    @default("unmatched")
+  matchConfidence Float?
+  actionStatus    String    @default("pending")
+  assignedToUserId String?
+  importBatchId   String?
+  version         Int       @default(0)
+  updatedAt       DateTime  @updatedAt
+  updatedByUserId String?
+  deletedAt       DateTime?
+  deviceId        String?
 
-model MessageLog {
-  id        String   @id @default(cuid())
-  chamberId String
-  caseId    String?
-  channel   String
-  to        String
-  template  String?
-  body      String?
-  sentAt    DateTime @default(now())
-  status    String   @default("sent")
+  @@index([workspaceId, date])
+  @@index([caseId])
+  @@index([workspaceId, matchStatus])
+  @@index([workspaceId, date, actionStatus])
+}
 
-  @@index([chamberId, sentAt])
+model Client {
+  id                   String    @id
+  workspaceId          String
+  workspace            Workspace @relation(fields: [workspaceId], references: [id])
+  name                 String
+  defaultPartyRoleId   String?
+  phone                String?
+  phoneNormalized      String?
+  altPhone             String?
+  email                String?
+  address              String?
+  districtId           String?
+  nid                  String?
+  entityTypeId         String?
+  fileNo               String?
+  note                 String?
+  photoPath            String?
+  searchTokens         String    @default("")
+  version              Int       @default(0)
+  createdAt            DateTime  @default(now())
+  updatedAt            DateTime  @updatedAt
+  updatedByUserId      String?
+  deletedAt            DateTime?
+  deviceId             String?
+
+  parties CaseParty[]
+  tasks   Task[]
+  notes   Note[]
+  fees    FeeEntry[]
+  payments Payment[]
+  documents Document[]
+
+  @@index([workspaceId])
+  @@index([workspaceId, phoneNormalized])
+  @@index([workspaceId, updatedAt])
+}
+
+model Document {
+  id              String    @id
+  caseId          String?
+  case            Case?     @relation(fields: [caseId], references: [id])
+  clientId        String?
+  client          Client?   @relation(fields: [clientId], references: [id])
+  workspaceId     String
+  workspace       Workspace @relation(fields: [workspaceId], references: [id])
+  kind            DocKind   @default(OTHER)
+  title           String
+  localPath       String?
+  remoteKey       String?
+  mimeType        String    @default("application/pdf")
+  pageCount       Int?
+  sizeBytes       BigInt    @default(0)
+  checksumSha256  String?
+  ocrText         String?
+  ocrStatus       String    @default("none")
+  uploadStatus    String    @default("local_only")
+  downloadStatus  String    @default("not_downloaded")
+  isEvidence      Boolean   @default(false)
+  version         Int       @default(0)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  updatedByUserId String?
+  deletedAt       DateTime?
+  deviceId        String?
+
+  @@index([caseId])
+  @@index([workspaceId])
+}
+
+model Task {
+  id                 String    @id
+  workspaceId        String
+  workspace          Workspace @relation(fields: [workspaceId], references: [id])
+  caseId             String?
+  case               Case?     @relation(fields: [caseId], references: [id])
+  clientId           String?
+  client             Client?   @relation(fields: [clientId], references: [id])
+  title              String
+  description        String?
+  kind               TaskKind  @default(TASK)
+  dueDate            DateTime?
+  dueTimeMinutes     Int?
+  remindBeforeDays   String?   @default("7,3,1")
+  priority           String    @default("medium")
+  status             String    @default("open")
+  completedAt        DateTime?
+  assignedToUserId   String?
+  limitationRuleRef  String?
+  limitationBaseDate DateTime?
+  isAutoGenerated    Boolean   @default(false)
+  version            Int       @default(0)
+  updatedAt          DateTime  @updatedAt
+  updatedByUserId    String?
+  deletedAt          DateTime?
+  deviceId           String?
+
+  @@index([workspaceId, dueDate, status])
+  @@index([workspaceId, assignedToUserId, status])
+  @@index([caseId])
+}
+
+model FeeEntry {
+  id              String    @id
+  workspaceId     String
+  workspace       Workspace @relation(fields: [workspaceId], references: [id])
+  caseId          String?
+  case            Case?     @relation(fields: [caseId], references: [id])
+  clientId        String?
+  client          Client?   @relation(fields: [clientId], references: [id])
+  kind            String    @default("fee")
+  title           String
+  amountPaisa     BigInt    @default(0)
+  currency        String    @default("BDT")
+  dueDate         DateTime?
+  status          String    @default("unpaid")
+  note            String?
+  version         Int       @default(0)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  updatedByUserId String?
+  deletedAt       DateTime?
+  deviceId        String?
+  payments        Payment[]
+
+  @@index([workspaceId, caseId])
+  @@index([workspaceId, status, dueDate])
+}
+
+model Payment {
+  id                String    @id
+  workspaceId       String
+  workspace         Workspace @relation(fields: [workspaceId], references: [id])
+  feeEntryId        String?
+  feeEntry          FeeEntry? @relation(fields: [feeEntryId], references: [id])
+  caseId            String?
+  case              Case?     @relation(fields: [caseId], references: [id])
+  clientId          String?
+  client            Client?   @relation(fields: [clientId], references: [id])
+  amountPaisa       BigInt
+  paidAt            DateTime
+  method            String?
+  referenceNo       String?
+  receiptNo         String?
+  receivedByUserId  String?
+  note              String?
+  version           Int       @default(0)
+  updatedAt         DateTime  @updatedAt
+  updatedByUserId   String?
+  deletedAt         DateTime?
+  deviceId          String?
+
+  @@index([feeEntryId])
+  @@index([workspaceId, paidAt])
+}
+
+model Note {
+  id              String    @id
+  workspaceId     String
+  workspace       Workspace @relation(fields: [workspaceId], references: [id])
+  caseId          String?
+  case            Case?     @relation(fields: [caseId], references: [id])
+  clientId        String?
+  client          Client?   @relation(fields: [clientId], references: [id])
+  hearingId       String?
+  body            String
+  isPinned        Boolean   @default(false)
+  voicePath       String?
+  searchTokens    String    @default("")
+  version         Int       @default(0)
+  createdAt       DateTime  @default(now())
+  updatedAt       DateTime  @updatedAt
+  updatedByUserId String?
+  deletedAt       DateTime?
+  deviceId        String?
+
+  @@index([caseId, createdAt])
+  @@index([workspaceId, isPinned])
+}
+
+model TimelineEvent {
+  id           String    @id @default(uuid())
+  workspaceId  String
+  workspace    Workspace @relation(fields: [workspaceId], references: [id])
+  caseId       String
+  case         Case      @relation(fields: [caseId], references: [id], onDelete: Cascade)
+  eventType    String
+  occurredAt   DateTime
+  actorUserId  String?
+  summaryBn    String
+  refTable     String?
+  refId        String?
+  payloadJson  Json?
+
+  @@index([caseId, occurredAt])
+}
+
+model CommunicationMessage {
+  id               String    @id @default(uuid())
+  workspaceId      String
+  workspace        Workspace @relation(fields: [workspaceId], references: [id])
+  channel          String
+  direction        String    @default("out")
+  caseId           String?
+  clientId         String?
+  toAddress        String
+  templateKey      String?
+  body             String?
+  status           String    @default("queued")
+  sentAt           DateTime?
+  deliveredAt      DateTime?
+  creditsUsed      Int       @default(0)
+  providerRef      String?
+  errorCode        String?
+  actorUserId      String?
+  idempotencyKey   String?   @unique
+  createdAt        DateTime  @default(now())
+
+  @@index([workspaceId, sentAt])
+  @@index([status])
+  @@index([clientId])
+}
+
+model AuditLog {
+  id            String    @id @default(uuid())
+  workspaceId   String
+  workspace     Workspace @relation(fields: [workspaceId], references: [id])
+  actorUserId   String?
+  actor         User?     @relation(fields: [actorUserId], references: [id])
+  actorDeviceId String?
+  action        String
+  entity        String?
+  entityId      String?
+  summaryBn     String
+  changesJson   Json?
+  ipAddress     String?
+  occurredAt    DateTime  @default(now())
+  serverSeq     BigInt    @default(0)
+
+  @@index([workspaceId, occurredAt])
+  @@index([workspaceId, actorUserId, occurredAt])
+  @@index([entity, entityId])
+}
+
+// ── Sync infrastructure ──────────────────────────────────────────────────────
+
+model ChangeLog {
+  seq           BigInt    @id @default(autoincrement())
+  workspaceId   String
+  workspace     Workspace @relation(fields: [workspaceId], references: [id])
+  entity        String
+  entityId      String
+  op            ChangeOp
+  version       Int
+  actorUserId   String?
+  actorDeviceId String?
+  scopeHint     Json?
+  committedAt   DateTime  @default(now())
+
+  @@index([workspaceId, seq])
+  @@index([entity, entityId, seq])
+}
+
+model SyncOpLog {
+  opId        String    @id
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id])
+  userId      String
+  deviceId    String
+  entity      String
+  entityId    String
+  result      String
+  resultSeq   BigInt?
+  appliedAt   DateTime  @default(now())
+
+  @@index([workspaceId, appliedAt])
+  @@index([deviceId, appliedAt])
+}
+
+model DeviceSyncState {
+  id          String    @id @default(uuid())
+  deviceId    String
+  workspaceId String
+  workspace   Workspace @relation(fields: [workspaceId], references: [id])
+  cursorSeq   BigInt    @default(0)
+  scopeHash   String    @default("")
+  lastPullAt  DateTime?
+  lastPushAt  DateTime?
+
+  @@unique([deviceId, workspaceId])
+}
+
+// ── Master data (slug PKs; Court.id = court_uid) ─────────────────────────────
+
+model Division {
+  id                 String   @id
+  nameBn             String
+  nameEn             String
+  officialName       String?
+  active             Boolean  @default(true)
+  sortOrder          Int      @default(0)
+  verificationStatus String?
+  sourceIds          String[] @default([])
+  lastVerified       String?
+  packVersion        String?
+  districts          District[]
+  metros             MetropolitanArea[]
+  courts             Court[]
+}
+
+model District {
+  id                 String   @id
+  divisionId         String
+  division           Division @relation(fields: [divisionId], references: [id])
+  nameBn             String
+  nameEn             String
+  officialName       String?
+  districtType       String?
+  notes              String?
+  active             Boolean  @default(true)
+  sortOrder          Int      @default(0)
+  verificationStatus String?
+  sourceIds          String[] @default([])
+  lastVerified       String?
+  packVersion        String?
+  metros             MetropolitanArea[]
+  courts             Court[]
+
+  @@index([divisionId])
+}
+
+model MetropolitanArea {
+  id                      String   @id
+  districtId              String
+  district                District @relation(fields: [districtId], references: [id])
+  divisionId              String
+  division                Division @relation(fields: [divisionId], references: [id])
+  nameBn                  String
+  nameEn                  String
+  legalBasis              String?
+  civilJurisdictionNote   String?
+  officialUrl             String?
+  active                  Boolean  @default(true)
+  sortOrder               Int      @default(0)
+  verificationStatus      String?
+  sourceIds               String[] @default([])
+  lastVerified            String?
+  packVersion             String?
+  courts                  Court[]
+
+  @@index([districtId])
+}
+
+model CourtLevel {
+  id                 String   @id
+  nameBn             String
+  nameEn             String
+  description        String?
+  active             Boolean  @default(true)
+  sortOrder          Int      @default(0)
+  verificationStatus String?
+  sourceIds          String[] @default([])
+  lastVerified       String?
+  packVersion        String?
+  courtTypes         CourtType[]
+  courts             Court[]
+  cases              Case[]
+}
+
+model CourtType {
+  id                           String     @id
+  courtLevelId                 String
+  courtLevel                   CourtLevel @relation(fields: [courtLevelId], references: [id])
+  category                     String?
+  nameBn                       String
+  nameEn                       String
+  description                  String?
+  applicableLocation           String?
+  alsoApplicableMetropolitan   Boolean    @default(false)
+  showInMetro                  Boolean    @default(false)
+  active                       Boolean    @default(true)
+  sortOrder                    Int        @default(0)
+  verificationStatus           String?
+  sourceIds                    String[]   @default([])
+  lastVerified                 String?
+  packVersion                  String?
+  courts                       Court[]
+  cases                        Case[]
+  caseTypeLinks                CaseTypeCourtType[]
+
+  @@index([courtLevelId, sortOrder])
+}
+
+model Court {
+  id                 String      @id // court_uid — NOT dataset court_id
+  sourceRowId        String
+  courtTypeId        String
+  courtType          CourtType   @relation(fields: [courtTypeId], references: [id])
+  courtLevelId       String
+  courtLevel         CourtLevel  @relation(fields: [courtLevelId], references: [id])
+  divisionId         String?
+  division           Division?   @relation(fields: [divisionId], references: [id])
+  districtId         String?
+  district           District?   @relation(fields: [districtId], references: [id])
+  metropolitanId     String?
+  metropolitan       MetropolitanArea? @relation(fields: [metropolitanId], references: [id])
+  isMetroSeated      Boolean     @default(false)
+  nameBn             String
+  nameEn             String
+  officialName       String?
+  courtCode          String?
+  courtCategory      String?
+  sourceUrl          String?
+  sourceName         String?
+  active             Boolean     @default(true)
+  sortOrder          Int         @default(0)
+  verificationStatus String?
+  sourceIds          String[]    @default([])
+  lastVerified       String?
+  packVersion        String?
+  cases              Case[]
+
+  @@index([courtTypeId])
+  @@index([districtId, courtTypeId])
+  @@index([metropolitanId])
+  @@index([courtLevelId])
+  @@index([sourceRowId])
+}
+
+model CaseType {
+  id                 String   @id
+  parentCaseTypeId   String?
+  parent             CaseType? @relation("CaseTypeTree", fields: [parentCaseTypeId], references: [id])
+  children           CaseType[] @relation("CaseTypeTree")
+  isCategory         Boolean  @default(false)
+  nameBn             String
+  nameEn             String
+  shortName          String?
+  description        String?
+  confidence         String?
+  active             Boolean  @default(true)
+  sortOrder          Int      @default(0)
+  verificationStatus String?
+  sourceIds          String[] @default([])
+  lastVerified       String?
+  packVersion        String?
+  cases              Case[]
+  courtTypes         CaseTypeCourtType[]
+  courtLevels        CaseTypeCourtLevel[]
+  acts               CaseTypeAct[]
+
+  @@index([parentCaseTypeId, sortOrder])
+  @@index([isCategory])
+}
+
+model CaseTypeCourtType {
+  caseTypeId  String
+  courtTypeId String
+  caseType    CaseType  @relation(fields: [caseTypeId], references: [id], onDelete: Cascade)
+  courtType   CourtType @relation(fields: [courtTypeId], references: [id], onDelete: Cascade)
+
+  @@id([caseTypeId, courtTypeId])
+}
+
+model CaseTypeCourtLevel {
+  caseTypeId    String
+  courtLevelId  String
+  caseType      CaseType @relation(fields: [caseTypeId], references: [id], onDelete: Cascade)
+
+  @@id([caseTypeId, courtLevelId])
+}
+
+model CaseTypeAct {
+  caseTypeId String
+  actId      String
+  caseType   CaseType @relation(fields: [caseTypeId], references: [id], onDelete: Cascade)
+  act        Act      @relation(fields: [actId], references: [id], onDelete: Cascade)
+
+  @@id([caseTypeId, actId])
+}
+
+model Act {
+  id                 String   @id
+  nameBn             String   @default("")
+  nameEn             String
+  shortName          String?
+  actNumberYear      String?
+  subjectCategory    String?
+  status             String?
+  sourceUrl          String?
+  officialSource     String?
+  notes              String?
+  active             Boolean  @default(true)
+  sortOrder          Int      @default(0)
+  verificationStatus String?
+  sourceIds          String[] @default([])
+  lastVerified       String?
+  packVersion        String?
+  /// ISO date from source when present; never invented. Null = উৎসে নেই.
+  effectiveDate      String?
+  sections           Section[]
+  caseTypes          CaseTypeAct[]
+  popular            PopularSection[]
+
+  @@index([subjectCategory])
+}
+
+model Section {
+  id                 String   @id
+  actId              String
+  act                Act      @relation(fields: [actId], references: [id])
+  sectionNumber      String
+  titleBn            String?
+  titleEn            String?
+  descriptionShort   String?
+  keywordsBn         String?
+  keywordsEn         String?
+  commonlyUsed       Boolean  @default(false)
+  active             Boolean  @default(true)
+  sortOrder          Int      @default(0)
+  verificationStatus String?
+  sourceIds          String[] @default([])
+  lastVerified       String?
+  packVersion        String?
+  popular            PopularSection[]
+
+  @@index([actId, sectionNumber])
+  @@index([commonlyUsed])
+}
+
+model PopularSection {
+  id                 String  @id
+  actId              String
+  act                Act     @relation(fields: [actId], references: [id])
+  sectionId          String
+  section            Section @relation(fields: [sectionId], references: [id])
+  popularityRank     Int
+  category           String?
+  reasonForPriority  String?
+  sourceType         String?
+  packVersion        String?
+
+  @@index([popularityRank])
+}
+
+model PartyRole {
+  id                 String   @id
+  nameBn             String
+  nameEn             String
+  category           String?
+  isOpposingRoleOf   String?
+  notes              String?
+  active             Boolean  @default(true)
+  sortOrder          Int      @default(0)
+  verificationStatus String?
+  sourceIds          String[] @default([])
+  lastVerified       String?
+  packVersion        String?
+
+  @@index([category, sortOrder])
+}
+
+model RepresentationSide {
+  id         String  @id
+  nameBn     String
+  nameEn     String
+  isDefault  Boolean @default(false)
+  sortOrder  Int     @default(0)
+  active     Boolean @default(true)
+}
+
+model PartyEntityType {
+  id        String  @id
+  nameBn    String
+  nameEn    String
+  sortOrder Int     @default(0)
+  active    Boolean @default(true)
+}
+
+model DataSource {
+  id          String  @id
+  name        String
+  url         String?
+  sourceType  String?
+  retrievedAt String?
+  confidence  String?
+  notes       String?
+  packVersion String?
+}
+
+model MasterDataVersion {
+  id             String    @id @default(uuid())
+  datasetVersion String    @unique
+  schemaVersion  String
+  generatedAt    DateTime
+  publishedAt    DateTime?
+  recordCounts   Json
+  checksum       String
+  changelog      Json
+  isCurrent      Boolean   @default(false)
+  packUrl        String?
+  packSizeBytes  Int?
+}
+
+model SearchAlias {
+  id        String @id @default(uuid())
+  term      String
+  alias     String
+  entityType String?
+  packVersion String?
+
+  @@index([term])
+}
+
+// ── Career Hub content (generic layer) ───────────────────────────────────────
+
+model ContentPack {
+  id            String    @id
+  hub           String
+  titleBn       String
+  titleEn       String
+  version       String
+  publishedAt   DateTime?
+  isCurrent     Boolean   @default(false)
+  checksum      String?
+  items         ContentItem[]
+}
+
+model ContentItem {
+  id          String      @id
+  packId      String
+  pack        ContentPack @relation(fields: [packId], references: [id], onDelete: Cascade)
+  itemType    String
+  sectionId   String?
+  moduleId    String?
+  topicId     String?
+  sortOrder   Int         @default(0)
+  status      String      @default("draft")
+  payload     Json
+  source      String?
+  sourceUrl   String?
+  version     String?
+  essential   Boolean     @default(false)
+  etag        String?
+  lastUpdated DateTime    @default(now())
+
+  @@index([packId, itemType])
+  @@index([moduleId])
+  @@index([topicId])
+  @@index([packId, essential, lastUpdated])
+}
+
+model Attempt {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  sessionId   String
+  sessionKind String
+  itemId      String
+  answerJson  Json?
+  isCorrect   Boolean?
+  score       Int?
+  createdAt   DateTime @default(now())
+
+  @@index([userId, sessionId])
+  @@index([userId, createdAt])
+}
+
+model LearningProgress {
+  id          String   @id @default(uuid())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  topicId     String
+  moduleId    String?
+  xp          Int      @default(0)
+  streakDays  Int      @default(0)
+  lastStudied DateTime?
+  level       Int      @default(1)
+  updatedAt   DateTime @updatedAt
+
+  @@unique([userId, topicId])
+}
+
+model SrsState {
+  id            String   @id @default(uuid())
+  userId        String
+  user          User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  itemId        String
+  ease          Float    @default(2.5)
+  intervalDays  Int      @default(0)
+  dueAt         DateTime @default(now())
+  reps          Int      @default(0)
+  lapses        Int      @default(0)
+  updatedAt     DateTime @updatedAt
+
+  @@unique([userId, itemId])
+}
+
+model Bookmark {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  itemId    String
+  anchor    String   @default("")
+  createdAt DateTime @default(now())
+
+  @@unique([userId, itemId, anchor])
+}
+
+model UserNote {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  itemId    String
+  body      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId, itemId])
+}
+
+// ── Find Lawyer (user-scoped, never in ChangeLog) ────────────────────────────
+
+model LawyerProfile {
+  id                 String              @id @default(uuid())
+  userId             String              @unique
+  user               User                @relation(fields: [userId], references: [id], onDelete: Cascade)
+  publicSlug         String              @unique
+  displayName        String
+  photoUrl           String?
+  degrees            String[]            @default([])
+  enrolmentYear      Int?
+  aboutBn            String?
+  aboutEn            String?
+  districtIds        String[]            @default([])
+  courtTypeIds       String[]            @default([])
+  practiceAreaIds    String[]            @default([])
+  caseTypeIds        String[]            @default([])
+  barRegNo           String?
+  publicPhone        String?
+  practiceCourtName  String?
+  verificationStatus VerificationStatus  @default(UNSUBMITTED)
+  verifiedAt         DateTime?
+  isListed           Boolean             @default(false)
+  profilePublishedAt DateTime?
+  completenessPct    Int                 @default(0)
+  responseMedianMins Int?
+  ratingAvg          Float?
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  deletedAt          DateTime?
+
+  verifications LawyerVerification[]
+  requests      ConsultationRequest[]
+  reviews       LawyerReview[]
+  blocks        LawyerBlock[]
+  reports       LawyerReport[]
+
+  @@index([isListed, verificationStatus, completenessPct])
+  @@index([isListed, verifiedAt, profilePublishedAt])
+  @@index([enrolmentYear])
+}
+
+model LawyerVerification {
+  id                  String       @id @default(uuid())
+  lawyerProfileId     String
+  lawyerProfile       LawyerProfile @relation(fields: [lawyerProfileId], references: [id], onDelete: Cascade)
+  barRegNo            String
+  districtBarName     String?
+  certificateKeys     String[]     @default([])
+  status              ReviewStatus @default(PENDING)
+  reviewedByUserId    String?
+  rejectionReason     String?
+  submittedAt         DateTime     @default(now())
+  reviewedAt          DateTime?
+  certificatePurgedAt DateTime?
+
+  @@index([status, submittedAt])
+  @@index([lawyerProfileId, submittedAt])
+}
+
+model ConsultationRequest {
+  id                   String                @id @default(uuid())
+  lawyerProfileId      String
+  lawyerProfile        LawyerProfile         @relation(fields: [lawyerProfileId], references: [id])
+  requesterUserId      String?
+  requester            User?                 @relation("LeadRequester", fields: [requesterUserId], references: [id])
+  requesterName        String
+  requesterPhone       String?
+  requesterEmail       String?
+  districtId           String?
+  legalIssue           String?
+  preferredContactTime PreferredContactTime?
+  status               LeadStatus            @default(NEW)
+  firstContactedAt     DateTime?
+  convertedCaseId      String?
+  phoneRevealedAt      DateTime?
+  notifiedAt           DateTime?
+  pushStatus           DeliveryStatus        @default(PENDING)
+  smsStatus            DeliveryStatus        @default(PENDING)
+  lawyerNote           String?
+  readAt               DateTime?
+  deletedAt            DateTime?
+  createdAt            DateTime              @default(now())
+  updatedAt            DateTime              @updatedAt
+  redactedAt           DateTime?
+  review               LawyerReview?
+
+  @@index([lawyerProfileId, status, createdAt])
+  @@index([requesterUserId, createdAt])
+  @@index([districtId, createdAt])
+  @@index([deletedAt])
+}
+
+model LawyerReview {
+  id              String            @id
+  lawyerProfileId String
+  lawyerProfile   LawyerProfile     @relation(fields: [lawyerProfileId], references: [id], onDelete: Cascade)
+  requesterUserId String
+  requester       User              @relation(fields: [requesterUserId], references: [id])
+  requestId       String            @unique
+  request         ConsultationRequest @relation(fields: [requestId], references: [id], onDelete: Cascade)
+  stars           Int
+  comment         String?
+  createdAt       DateTime          @default(now())
+
+  @@index([lawyerProfileId, createdAt])
+}
+
+model LawyerBlock {
+  id              String        @id @default(uuid())
+  lawyerProfileId String
+  lawyerProfile   LawyerProfile @relation(fields: [lawyerProfileId], references: [id], onDelete: Cascade)
+  blockedUserId   String
+  reason          String?
+  createdAt       DateTime      @default(now())
+
+  @@unique([lawyerProfileId, blockedUserId])
+}
+
+model LawyerReport {
+  id               String        @id @default(uuid())
+  lawyerProfileId  String
+  lawyerProfile    LawyerProfile @relation(fields: [lawyerProfileId], references: [id], onDelete: Cascade)
+  reporterUserId   String
+  reason           String
+  note             String?
+  createdAt        DateTime      @default(now())
+  resolvedAt       DateTime?
+  resolvedByUserId String?
+  resolution       String?
+
+  @@unique([lawyerProfileId, reporterUserId])
+  @@index([resolvedAt, createdAt])
+}
+
+model DistrictDemandSignal {
+  id         String    @id @default(uuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  districtId String
+  notifiedAt DateTime?
+  createdAt  DateTime  @default(now())
+
+  @@unique([userId, districtId])
+  @@index([districtId, createdAt])
+}
+
+// ── Webapp v2 (13 Sep 2026): admin, referral, claims, analytics, SMS cost ────
+
+model AdminUser {
+  id         String   @id @default(uuid())
+  userId     String   @unique
+  user       User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  bootstrap  Boolean  @default(false)
+  createdAt  DateTime @default(now())
+}
+
+model AdminInvite {
+  id          String    @id @default(uuid())
+  tokenHash   String    @unique
+  createdById String
+  createdBy   User      @relation("AdminInviter", fields: [createdById], references: [id])
+  email       String?
+  usedAt      DateTime?
+  expiresAt   DateTime
+  createdAt   DateTime  @default(now())
+
+  @@index([createdById])
+}
+
+model ReferralAttribution {
+  id                 String    @id @default(uuid())
+  referrerId         String
+  referrer           User      @relation("ReferrerAttributions", fields: [referrerId], references: [id])
+  referredUserId     String    @unique
+  referredUser       User      @relation("ReferredAttribution", fields: [referredUserId], references: [id])
+  code               String
+  installFingerprint String?
+  qualifiedAt        DateTime?
+  createdAt          DateTime  @default(now())
+
+  @@index([referrerId, qualifiedAt])
+}
+
+model ReferralReward {
+  id           String   @id @default(uuid())
+  userId       String
+  user         User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  qualifiedN   Int
+  monthsGranted Int
+  packageCode  String   @default("STARTER")
+  grantedAt    DateTime @default(now())
+
+  @@index([userId, grantedAt])
+}
+
+model PaymentClaim {
+  id          String      @id @default(uuid())
+  userId      String?
+  user        User?       @relation(fields: [userId], references: [id])
+  phone       String
+  email       String?
+  name        String?
+  packageCode String
+  months      Int         @default(1)
+  note        String?
+  status      ClaimStatus @default(PENDING)
+  reviewedBy  String?
+  reviewedAt  DateTime?
+  createdAt   DateTime    @default(now())
+
+  @@index([status, createdAt])
+  @@index([phone])
+}
+
+model AnalyticsEvent {
+  id        String   @id @default(uuid())
+  userId    String?
+  user      User?    @relation(fields: [userId], references: [id])
+  source    String   @default("web")
+  name      String
+  path      String?
+  payload   Json?
+  createdAt DateTime @default(now())
+
+  @@index([name, createdAt])
+  @@index([userId, createdAt])
+  @@index([source, createdAt])
+}
+
+model SmsUsage {
+  id          String   @id @default(uuid())
+  workspaceId String?
+  workspace   Workspace? @relation(fields: [workspaceId], references: [id])
+  provider    String
+  channel     String   @default("sms")
+  kind        String
+  qty         Int      @default(1)
+  costPaisa   Int      @default(0)
+  toMasked    String?
+  vendorRef   String?
+  createdAt   DateTime @default(now())
+
+  @@index([workspaceId, createdAt])
+  @@index([kind, createdAt])
+}
+
+model UsageMonth {
+  id                 String    @id @default(uuid())
+  workspaceId        String
+  workspace          Workspace @relation(fields: [workspaceId], references: [id], onDelete: Cascade)
+  ym                 String
+  clientsCreated     Int       @default(0)
+  casesCreated       Int       @default(0)
+  hearingsCreated    Int       @default(0)
+  findLawyerReceived Int       @default(0)
+  findLawyerContacted Int      @default(0)
+  smsSent            Int       @default(0)
+
+  @@unique([workspaceId, ym])
 }

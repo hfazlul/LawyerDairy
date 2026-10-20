@@ -1,0 +1,276 @@
+{
+  "batch_id": "BATCH-2026-08-022-CRPC-INFORMATION-INVESTIGATION",
+  "schema_version": "1.0",
+  "content_version": "2026.08.9",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Second topic in this depth round. Covers CrPC Information to Police and Investigation Powers (T-CRPC-10, Sections 154, 156, 157) -- another genuine gap: five prior CrPC lessons (Bail, Habeas Corpus, Immovable Property Disputes, Compounding, Revision) all deal with the middle or late stages of a criminal matter, but nothing in this dataset yet covers how a criminal case actually begins.",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-CRPC-INFOINVESTIGATION-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CRPC-INFOINVESTIGATION-001",
+      "topic_id": "T-CRPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Sections 154, 156, and 157 were obtained as VERBATIM Bangladesh-specific text via direct fetch and search-indexed content of bdlaws.minlaw.gov.bd during this session. The lesson's brief mention of Section 155 (non-cognizable offences) reflects the well-established, conventional cognizable/non-cognizable structure shared across jurisdictions inheriting this 1898 Code, rather than an independently verbatim-confirmed Bangladesh-specific read of Section 155 itself in this pass -- flagged accordingly. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": [],
+      "related_lesson_ids": ["BC-CRPC-BAIL-001"],
+      "related_question_ids": ["BC-MCQ-CRPC-INFO-001", "BC-MCQ-CRPC-INFO-002", "BC-MCQ-CRPC-INFO-003", "BC-MCQ-CRPC-INFO-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CRPC-S154", "LREF-CRPC-S156-157"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CRPC-S154", "LREF-CRPC-S156-157"],
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "language_versions": {
+        "en": {
+          "title": "Information to the Police and Powers of Investigation (Sections 154, 156-157)",
+          "short_description": "How a criminal case actually begins: for a cognizable offence, information given to the police must be formally recorded, and the police may then investigate without needing a Magistrate's prior permission -- a materially different starting point from a non-cognizable offence.",
+          "learning_objective": "By the end of this lesson you should be able to: state the formal requirements Section 154 imposes on recording information about a cognizable offence; explain why police can investigate a cognizable case without a Magistrate's order under Section 156; and state the police officer's duty under Section 157 once an investigation begins.",
+          "explanation": "Section 154 governs information relating to a cognizable offence. Where such information is given orally to the officer in charge of a police station, it must be reduced to writing by that officer or under their direction, and then read over to the informant. Whether given in writing originally or reduced to writing under this process, the information must be signed by the person giving it, and its substance must be entered in a register kept for that purpose. This formal recording process -- commonly referred to in practice as a First Information Report, though that exact phrase is not itself the statutory term -- creates the documented starting point for the criminal justice process.\n\nSection 156 then addresses what the police may do with that information. Under subsection (1), an officer in charge of a police station may investigate any cognizable case which a court having jurisdiction over the local area would have power to inquire into or try, without needing a Magistrate's order first. Subsection (2) reinforces this by providing that no proceeding of a police officer in any such case shall be called into question on the ground that the case was one which such officer was not empowered to investigate -- a jurisdictional objection of that kind cannot be used to unwind the investigation itself. This is the key structural point distinguishing cognizable from non-cognizable offences: for a cognizable offence, the police's power to investigate arises directly from the information received, without a prior judicial gatekeeping step. (Non-cognizable offences, by contrast, are conventionally understood to require the police to first obtain the Magistrate's order before investigating -- a structurally different starting point covered by Section 155.)\n\nOnce an investigation is underway, Section 157 requires the officer in charge, where there is reason to suspect the commission of an offence they are empowered to investigate, to send a report of that fact to a Magistrate empowered to take cognizance of the offence, and to proceed to investigate the facts and circumstances of the case -- either personally, or by directing a subordinate officer to do so.",
+          "key_concepts": ["S.154: formal recording requirements for information about a cognizable offence (writing, read over, signed, entered in a register)", "S.156(1): police may investigate a cognizable case WITHOUT a Magistrate's prior order", "S.156(2): the investigation cannot be unwound merely by questioning the officer's jurisdiction to investigate", "S.157: duty to report to a Magistrate and proceed with the investigation once it begins", "Cognizable vs. non-cognizable as the structural starting-point distinction"],
+          "important_rules": [
+            "S.154: oral information about a cognizable offence must be reduced to writing, read over to the informant, signed by the informant, and entered in a register -- whether the information was originally given orally or in writing.",
+            "S.156(1): a police officer in charge of a station may investigate any cognizable case within the relevant local jurisdiction without a Magistrate's order.",
+            "S.156(2): no proceeding in such a case shall be questioned on the ground that the investigating officer lacked the power to investigate it.",
+            "S.157(1): on reason to suspect an offence, the officer must send a report to an empowered Magistrate and proceed to investigate, personally or through a subordinate."
+          ],
+          "definitions": [
+            { "term": "Cognizable offence (in this structural context)", "definition": "An offence for which the police may investigate and, generally, arrest without needing a Magistrate's prior order -- the category to which Sections 154 and 156 specifically apply." },
+            { "term": "Information under Section 154", "definition": "A formally recorded account of a cognizable offence given to the officer in charge of a police station -- reduced to writing if given orally, read over to the informant, signed, and entered in a register -- that triggers the police's investigative process." }
+          ],
+          "examples": [
+            "A person goes to a police station and orally reports witnessing a robbery. The officer in charge must reduce that oral account to writing, read it back to the person, and have them sign it, with the substance entered in the station's register -- only then is the Section 154 recording process complete.",
+            "Following a properly recorded Section 154 report of a cognizable offence, the officer in charge begins investigating without first seeking a Magistrate's permission. A defence argument later challenging the investigation solely on the basis that the officer supposedly lacked jurisdiction to investigate does not, by itself, unwind what has already been done -- Section 156(2) specifically forecloses that particular challenge."
+          ],
+          "exam_focus": "Examiners test the precise formal steps Section 154 requires (writing, reading over, signing, register entry) as a checklist, and test whether candidates understand that cognizable-offence investigation begins without needing prior Magistrate authorisation -- a point often confused with procedures for non-cognizable offences.",
+          "common_traps": [
+            "Assuming police always need a Magistrate's order before investigating any offence -- Section 156(1) specifically dispenses with this for cognizable offences.",
+            "Treating Section 154's formalities (writing, reading over, signing, register entry) as optional administrative detail rather than the actual statutory recording requirement.",
+            "Assuming a challenge to an officer's jurisdiction can unwind an already-conducted investigation -- Section 156(2) specifically forecloses this."
+          ],
+          "quick_revision": [
+            "S.154 = cognizable offence info: reduce to writing (if oral) + read over + signed + entered in register.",
+            "S.156(1) = police can investigate a cognizable case WITHOUT a Magistrate's order first.",
+            "S.156(2) = can't unwind the investigation just by questioning the officer's jurisdiction to investigate.",
+            "S.157 = once investigating, report to Magistrate + proceed to investigate (personally or via subordinate)."
+          ],
+          "key_takeaways": [
+            "The cognizable/non-cognizable line is the single most structurally important distinction at the very start of a criminal case -- it determines whether police need prior judicial permission to investigate at all.",
+            "Section 154's formalities exist to create a reliable, contemporaneous record of what was reported -- each step (writing, reading over, signing, register entry) serves that documentary-integrity purpose.",
+            "Section 156(2)'s jurisdiction-challenge bar protects the practical value of investigations already carried out, rather than letting a technical objection unwind completed police work."
+          ]
+        },
+        "bn": {
+          "title": "পুলিশের কাছে তথ্য ও তদন্তের ক্ষমতা (ধারা ১৫৪, ১৫৬-১৫৭)",
+          "short_description": "কীভাবে একটি ফৌজদারি মামলা প্রকৃতপক্ষে শুরু হয়: একটি আমলযোগ্য অপরাধের জন্য, পুলিশকে প্রদত্ত তথ্য অবশ্যই আনুষ্ঠানিকভাবে রেকর্ড করতে হবে, এবং পুলিশ তখন ম্যাজিস্ট্রেটের পূর্ব অনুমতি ছাড়াই তদন্ত করতে পারে -- একটি অনামলযোগ্য অপরাধ থেকে বস্তুগতভাবে ভিন্ন সূচনাবিন্দু।",
+          "learning_objective": "এই পাঠ শেষে আপনি: একটি আমলযোগ্য অপরাধ সম্পর্কে তথ্য রেকর্ড করার ক্ষেত্রে ধারা ১৫৪ যে আনুষ্ঠানিক প্রয়োজনীয়তা আরোপ করে তা বলতে পারবেন; কেন পুলিশ ধারা ১৫৬-এর অধীনে ম্যাজিস্ট্রেটের আদেশ ছাড়াই একটি আমলযোগ্য মামলা তদন্ত করতে পারে তা ব্যাখ্যা করতে পারবেন; এবং তদন্ত শুরু হওয়ার পর ধারা ১৫৭-এর অধীনে পুলিশ কর্মকর্তার কর্তব্য বলতে পারবেন।",
+          "explanation": "ধারা ১৫৪ একটি আমলযোগ্য অপরাধ সম্পর্কিত তথ্য নিয়ন্ত্রণ করে। যেখানে এমন তথ্য মৌখিকভাবে থানার ভারপ্রাপ্ত কর্মকর্তাকে দেওয়া হয়, তা অবশ্যই সেই কর্মকর্তা বা তার নির্দেশে লিখিত আকারে আনতে হবে, এবং এরপর তথ্যদাতাকে পড়ে শোনাতে হবে। মূলত লিখিতভাবে দেওয়া হোক বা এই প্রক্রিয়ায় লিখিত আকারে আনা হোক, তথ্যটি অবশ্যই যিনি তা দিচ্ছেন তার দ্বারা স্বাক্ষরিত হতে হবে, এবং এর সারমর্ম সেই উদ্দেশ্যে রাখা একটি রেজিস্টারে লিপিবদ্ধ করতে হবে। এই আনুষ্ঠানিক রেকর্ডিং প্রক্রিয়া -- যা ব্যবহারিকভাবে সাধারণত এজাহার (এফআইআর) হিসেবে উল্লেখিত, যদিও এই সুনির্দিষ্ট শব্দগুচ্ছ নিজে সংবিধিবদ্ধ শব্দ নয় -- ফৌজদারি ন্যায়বিচার প্রক্রিয়ার নথিভুক্ত সূচনাবিন্দু তৈরি করে।\n\nধারা ১৫৬ এরপর পুলিশ সেই তথ্য নিয়ে কী করতে পারে তা সম্বোধন করে। উপধারা (১)-এর অধীনে, একটি থানার ভারপ্রাপ্ত কর্মকর্তা এমন যেকোনো আমলযোগ্য মামলা তদন্ত করতে পারেন যা স্থানীয় এলাকার উপর এখতিয়ারসম্পন্ন কোনো আদালতের অনুসন্ধান বা বিচারের ক্ষমতা থাকবে, প্রথমে ম্যাজিস্ট্রেটের আদেশের প্রয়োজন ছাড়াই। উপধারা (২) এটি আরও শক্তিশালী করে প্রদান করে যে এমন কোনো মামলায় পুলিশ কর্মকর্তার কোনো কার্যধারা এই ভিত্তিতে প্রশ্নবিদ্ধ করা যাবে না যে মামলাটি এমন ছিল যা সেই কর্মকর্তা তদন্ত করার ক্ষমতাপ্রাপ্ত ছিলেন না -- এই ধরনের একটি এখতিয়ারগত আপত্তি তদন্তটি নিজেই বাতিল করতে ব্যবহার করা যায় না। এটিই মূল কাঠামোগত বিষয় যা আমলযোগ্য অপরাধকে অনামলযোগ্য অপরাধ থেকে আলাদা করে: একটি আমলযোগ্য অপরাধের জন্য, পুলিশের তদন্তের ক্ষমতা প্রাপ্ত তথ্য থেকে সরাসরি উদ্ভূত হয়, কোনো পূর্ববর্তী বিচারিক-দ্বাররক্ষী পদক্ষেপ ছাড়াই। (অনামলযোগ্য অপরাধ, বিপরীতে, প্রচলিতভাবে বোঝা যায় যে তদন্তের আগে পুলিশকে প্রথমে ম্যাজিস্ট্রেটের আদেশ পেতে হবে -- ধারা ১৫৫ দ্বারা আচ্ছাদিত একটি কাঠামোগতভাবে ভিন্ন সূচনাবিন্দু।)\n\nএকবার একটি তদন্ত চলমান হলে, ধারা ১৫৭ ভারপ্রাপ্ত কর্মকর্তাকে প্রয়োজন করে, যেখানে তিনি যে অপরাধ তদন্তের ক্ষমতাপ্রাপ্ত তার সংঘটনের সন্দেহের কারণ থাকে, সেই বিষয়ের একটি প্রতিবেদন অপরাধের আমলগ্রহণে ক্ষমতাপ্রাপ্ত একজন ম্যাজিস্ট্রেটের কাছে পাঠাতে, এবং মামলার তথ্য ও পরিস্থিতি তদন্ত করতে এগিয়ে যেতে -- ব্যক্তিগতভাবে, অথবা একজন অধস্তন কর্মকর্তাকে তা করার নির্দেশ দিয়ে।",
+          "key_concepts": ["ধারা ১৫৪: আমলযোগ্য অপরাধ সম্পর্কিত তথ্যের জন্য আনুষ্ঠানিক রেকর্ডিং প্রয়োজনীয়তা (লিখিত, পড়ে শোনানো, স্বাক্ষরিত, রেজিস্টারে লিপিবদ্ধ)", "ধারা ১৫৬(১): পুলিশ ম্যাজিস্ট্রেটের পূর্ব আদেশ ছাড়াই একটি আমলযোগ্য মামলা তদন্ত করতে পারে", "ধারা ১৫৬(২): কেবল কর্মকর্তার তদন্তের এখতিয়ার প্রশ্নবিদ্ধ করে তদন্তটি বাতিল করা যায় না", "ধারা ১৫৭: তদন্ত শুরু হওয়ার পর ম্যাজিস্ট্রেটের কাছে প্রতিবেদন ও তদন্ত এগিয়ে নেওয়ার কর্তব্য", "আমলযোগ্য বনাম অনামলযোগ্য কাঠামোগত সূচনাবিন্দু পার্থক্য হিসেবে"],
+          "important_rules": [
+            "ধারা ১৫৪: একটি আমলযোগ্য অপরাধ সম্পর্কে মৌখিক তথ্য অবশ্যই লিখিত আকারে আনতে হবে, তথ্যদাতাকে পড়ে শোনাতে হবে, তথ্যদাতা দ্বারা স্বাক্ষরিত হতে হবে, এবং একটি রেজিস্টারে লিপিবদ্ধ করতে হবে -- তথ্যটি মূলত মৌখিকভাবে বা লিখিতভাবে দেওয়া হোক না কেন।",
+            "ধারা ১৫৬(১): একটি থানার ভারপ্রাপ্ত পুলিশ কর্মকর্তা প্রাসঙ্গিক স্থানীয় এখতিয়ারের মধ্যে যেকোনো আমলযোগ্য মামলা ম্যাজিস্ট্রেটের আদেশ ছাড়াই তদন্ত করতে পারেন।",
+            "ধারা ১৫৬(২): এমন একটি মামলায় কোনো কার্যধারা এই ভিত্তিতে প্রশ্নবিদ্ধ করা যাবে না যে তদন্তকারী কর্মকর্তার তা তদন্ত করার ক্ষমতা ছিল না।",
+            "ধারা ১৫৭(১): একটি অপরাধের সন্দেহের কারণে, কর্মকর্তাকে অবশ্যই একজন ক্ষমতাপ্রাপ্ত ম্যাজিস্ট্রেটের কাছে একটি প্রতিবেদন পাঠাতে হবে এবং ব্যক্তিগতভাবে বা একজন অধস্তনের মাধ্যমে তদন্ত এগিয়ে নিতে হবে।"
+          ],
+          "definitions": [
+            { "term": "আমলযোগ্য অপরাধ (এই কাঠামোগত প্রসঙ্গে)", "definition": "এমন একটি অপরাধ যার জন্য পুলিশ ম্যাজিস্ট্রেটের পূর্ব আদেশের প্রয়োজন ছাড়াই তদন্ত করতে এবং সাধারণত গ্রেফতার করতে পারে -- ধারা ১৫৪ ও ১৫৬ সুনির্দিষ্টভাবে যে শ্রেণিতে প্রযোজ্য।" },
+            { "term": "ধারা ১৫৪-এর অধীনে তথ্য", "definition": "থানার ভারপ্রাপ্ত কর্মকর্তাকে প্রদত্ত একটি আমলযোগ্য অপরাধের আনুষ্ঠানিকভাবে রেকর্ডকৃত বিবরণ -- মৌখিকভাবে দেওয়া হলে লিখিত আকারে আনা, তথ্যদাতাকে পড়ে শোনানো, স্বাক্ষরিত, ও একটি রেজিস্টারে লিপিবদ্ধ -- যা পুলিশের তদন্ত প্রক্রিয়া সক্রিয় করে।" }
+          ],
+          "examples": [
+            "একজন ব্যক্তি একটি থানায় গিয়ে একটি ডাকাতি প্রত্যক্ষ করার কথা মৌখিকভাবে জানান। ভারপ্রাপ্ত কর্মকর্তাকে অবশ্যই সেই মৌখিক বিবরণ লিখিত আকারে আনতে হবে, ব্যক্তিকে তা পড়ে শোনাতে হবে, এবং তাদের স্বাক্ষর নিতে হবে, থানার রেজিস্টারে সারমর্ম লিপিবদ্ধ সহ -- কেবল তখনই ধারা ১৫৪ রেকর্ডিং প্রক্রিয়া সম্পূর্ণ হয়।",
+            "একটি আমলযোগ্য অপরাধের সঠিকভাবে রেকর্ড করা ধারা ১৫৪ প্রতিবেদনের পর, ভারপ্রাপ্ত কর্মকর্তা প্রথমে ম্যাজিস্ট্রেটের অনুমতি না চেয়েই তদন্ত শুরু করেন। পরবর্তীতে কেবল এই ভিত্তিতে যে কর্মকর্তার তদন্তের এখতিয়ার নাকি ছিল না তা চ্যালেঞ্জ করে একটি প্রতিরক্ষা যুক্তি, নিজে থেকে, ইতিমধ্যে যা করা হয়েছে তা বাতিল করে না -- ধারা ১৫৬(২) সুনির্দিষ্টভাবে সেই নির্দিষ্ট চ্যালেঞ্জ আটকায়।"
+          ],
+          "exam_focus": "পরীক্ষকরা ধারা ১৫৪ যে সুনির্দিষ্ট আনুষ্ঠানিক পদক্ষেপ প্রয়োজন করে (লিখিত, পড়ে শোনানো, স্বাক্ষরিত, রেজিস্টার এন্ট্রি) তা একটি চেকলিস্ট হিসেবে যাচাই করেন, এবং প্রার্থীরা বোঝেন কিনা যে আমলযোগ্য-অপরাধের তদন্ত পূর্ববর্তী ম্যাজিস্ট্রেটের অনুমোদন ছাড়াই শুরু হয় তা যাচাই করেন -- একটি বিষয় যা প্রায়ই অনামলযোগ্য অপরাধের পদ্ধতির সাথে গুলিয়ে যায়।",
+          "common_traps": [
+            "মনে করা যে পুলিশের সবসময় যেকোনো অপরাধ তদন্ত করার আগে ম্যাজিস্ট্রেটের আদেশ প্রয়োজন -- ধারা ১৫৬(১) সুনির্দিষ্টভাবে আমলযোগ্য অপরাধের জন্য এটি বাতিল করে।",
+            "ধারা ১৫৪-এর আনুষ্ঠানিকতা (লিখিত, পড়ে শোনানো, স্বাক্ষরিত, রেজিস্টার এন্ট্রি) ঐচ্ছিক প্রশাসনিক বিবরণ হিসেবে বিবেচনা করা, প্রকৃত সংবিধিবদ্ধ রেকর্ডিং প্রয়োজনীয়তার পরিবর্তে।",
+            "মনে করা যে একজন কর্মকর্তার এখতিয়ার চ্যালেঞ্জ করে একটি ইতিমধ্যে পরিচালিত তদন্ত বাতিল করা যায় -- ধারা ১৫৬(২) সুনির্দিষ্টভাবে এটি আটকায়।"
+          ],
+          "quick_revision": [
+            "ধারা ১৫৪ = আমলযোগ্য অপরাধের তথ্য: লিখিত আকারে আনা (মৌখিক হলে) + পড়ে শোনানো + স্বাক্ষরিত + রেজিস্টারে লিপিবদ্ধ।",
+            "ধারা ১৫৬(১) = পুলিশ প্রথমে ম্যাজিস্ট্রেটের আদেশ ছাড়াই একটি আমলযোগ্য মামলা তদন্ত করতে পারে।",
+            "ধারা ১৫৬(২) = কেবল কর্মকর্তার তদন্তের এখতিয়ার প্রশ্নবিদ্ধ করে তদন্তটি বাতিল করা যায় না।",
+            "ধারা ১৫৭ = একবার তদন্ত করলে, ম্যাজিস্ট্রেটের কাছে প্রতিবেদন + তদন্ত এগিয়ে নেওয়া (ব্যক্তিগতভাবে বা অধস্তনের মাধ্যমে)।"
+          ],
+          "key_takeaways": [
+            "আমলযোগ্য/অনামলযোগ্য সীমারেখা একটি ফৌজদারি মামলার একেবারে শুরুতে সবচেয়ে কাঠামোগতভাবে গুরুত্বপূর্ণ পার্থক্য -- এটি নির্ধারণ করে পুলিশের আদৌ তদন্তের জন্য পূর্ববর্তী বিচারিক অনুমতির প্রয়োজন আছে কিনা।",
+            "ধারা ১৫৪-এর আনুষ্ঠানিকতা যা রিপোর্ট করা হয়েছে তার একটি নির্ভরযোগ্য, সমসাময়িক রেকর্ড তৈরির জন্য বিদ্যমান -- প্রতিটি পদক্ষেপ (লিখিত, পড়ে শোনানো, স্বাক্ষরিত, রেজিস্টার এন্ট্রি) সেই দলিলগত-অখণ্ডতার উদ্দেশ্য পূরণ করে।",
+            "ধারা ১৫৬(২)-এর এখতিয়ার-চ্যালেঞ্জ বাধা ইতিমধ্যে পরিচালিত তদন্তের ব্যবহারিক মূল্য রক্ষা করে, একটি প্রযুক্তিগত আপত্তিকে সম্পন্ন পুলিশি কাজ বাতিল করতে না দিয়ে।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CRPC-S154",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Section 154 (Information in cognizable cases)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "note": "Verbatim Bangladesh-specific text obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "LREF-CRPC-S156-157",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Sections 156 (Investigation into cognizable cases) and 157 (Procedure where cognizable offence suspected)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "note": "Verbatim Bangladesh-specific text of Section 156 subsections (1)-(2) and Section 157(1) obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-INFO-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-INFO-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S154"],
+      "exam_focus": "The formal recording steps under S.154.",
+      "source_basis": "Original question drawn directly from verbatim S.154 text.",
+      "mistake_tags": ["s154-formal-recording-steps"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-INFOINVESTIGATION-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 154, when oral information about a cognizable offence is given to an officer in charge of a police station, what must happen to it?",
+          "options": { "A": "It is simply noted verbally and acted upon immediately, with no written record required", "B": "It must be forwarded directly to the High Court Division before any action is taken", "C": "It must be witnessed by two independent members of the public before being accepted", "D": "It must be reduced to writing, read over to the informant, signed by the informant, and entered in a register" },
+          "explanation": "Section 154 requires oral information to be reduced to writing, read over to the informant, signed by them, and its substance entered in a register kept for that purpose.",
+          "why_other_options_are_wrong": { "A": "This directly contradicts the express written-record requirement.", "B": "No High Court Division forwarding step is part of Section 154's process.", "C": "No independent-witness requirement is imposed by Section 154." }
+        },
+        "bn": {
+          "question": "ধারা ১৫৪-এর অধীনে, একটি আমলযোগ্য অপরাধ সম্পর্কে মৌখিক তথ্য থানার ভারপ্রাপ্ত কর্মকর্তাকে দেওয়া হলে, এর সাথে কী ঘটতে হবে?",
+          "options": { "A": "এটি কেবল মৌখিকভাবে নোট করা হয় এবং তাৎক্ষণিকভাবে ব্যবস্থা নেওয়া হয়, কোনো লিখিত রেকর্ডের প্রয়োজন নেই", "B": "কোনো ব্যবস্থা নেওয়ার আগে এটি সরাসরি হাইকোর্ট বিভাগে পাঠাতে হবে", "C": "গ্রহণ করার আগে জনসাধারণের দুজন স্বাধীন সদস্য দ্বারা এর সাক্ষী হতে হবে", "D": "এটি লিখিত আকারে আনতে হবে, তথ্যদাতাকে পড়ে শোনাতে হবে, তথ্যদাতা দ্বারা স্বাক্ষরিত হতে হবে, এবং একটি রেজিস্টারে লিপিবদ্ধ করতে হবে" },
+          "explanation": "ধারা ১৫৪-এর জন্য প্রয়োজন মৌখিক তথ্য লিখিত আকারে আনা, তথ্যদাতাকে পড়ে শোনানো, তাদের দ্বারা স্বাক্ষরিত হওয়া, এবং সেই উদ্দেশ্যে রাখা একটি রেজিস্টারে সারমর্ম লিপিবদ্ধ করা।",
+          "why_other_options_are_wrong": { "A": "এটি স্পষ্ট লিখিত-রেকর্ড প্রয়োজনীয়তার সরাসরি বিপরীত।", "B": "ধারা ১৫৪-এর প্রক্রিয়ার অংশ হিসেবে কোনো হাইকোর্ট বিভাগে পাঠানোর পদক্ষেপ নেই।", "C": "ধারা ১৫৪ দ্বারা কোনো স্বাধীন-সাক্ষী প্রয়োজনীয়তা আরোপিত হয় না।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-INFO-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-INFO-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S156-157"],
+      "exam_focus": "S.156(1)'s key structural point -- no Magistrate's order needed for cognizable cases.",
+      "source_basis": "Original question drawn directly from verbatim S.156(1) text.",
+      "mistake_tags": ["s156-1-no-magistrate-order-needed"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-INFOINVESTIGATION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 156(1), can a police officer in charge of a station investigate a cognizable case without first obtaining a Magistrate's order?",
+          "options": { "A": "No, a Magistrate's prior order is always required for any investigation", "B": "Yes, Section 156(1) expressly allows investigation of a cognizable case within the relevant jurisdiction without a Magistrate's order", "C": "Only with the written consent of the informant", "D": "Only if the offence carries a maximum sentence of at least seven years" },
+          "explanation": "Section 156(1) expressly empowers a police officer in charge of a station to investigate any cognizable case within the relevant local jurisdiction without needing a Magistrate's order.",
+          "why_other_options_are_wrong": { "A": "This is precisely what Section 156(1) dispenses with for cognizable cases.", "C": "No informant-consent precondition is imposed by Section 156(1).", "D": "No minimum-sentence threshold is attached to Section 156(1)'s power." }
+        },
+        "bn": {
+          "question": "ধারা ১৫৬(১)-এর অধীনে, একটি থানার ভারপ্রাপ্ত পুলিশ কর্মকর্তা কি প্রথমে ম্যাজিস্ট্রেটের আদেশ না পেয়েই একটি আমলযোগ্য মামলা তদন্ত করতে পারেন?",
+          "options": { "A": "না, যেকোনো তদন্তের জন্য সবসময় ম্যাজিস্ট্রেটের পূর্ব আদেশ প্রয়োজন", "B": "হ্যাঁ, ধারা ১৫৬(১) স্পষ্টভাবে প্রাসঙ্গিক এখতিয়ারের মধ্যে একটি আমলযোগ্য মামলার তদন্তের অনুমতি দেয় ম্যাজিস্ট্রেটের আদেশ ছাড়াই", "C": "কেবল তথ্যদাতার লিখিত সম্মতিসহ", "D": "কেবল যদি অপরাধটি কমপক্ষে সাত বছরের সর্বোচ্চ সাজা বহন করে" },
+          "explanation": "ধারা ১৫৬(১) স্পষ্টভাবে একটি থানার ভারপ্রাপ্ত পুলিশ কর্মকর্তাকে প্রাসঙ্গিক স্থানীয় এখতিয়ারের মধ্যে যেকোনো আমলযোগ্য মামলা ম্যাজিস্ট্রেটের আদেশের প্রয়োজন ছাড়াই তদন্তের ক্ষমতা দেয়।",
+          "why_other_options_are_wrong": { "A": "এটি ঠিক যা ধারা ১৫৬(১) আমলযোগ্য মামলার জন্য বাতিল করে।", "C": "ধারা ১৫৬(১) দ্বারা কোনো তথ্যদাতা-সম্মতি পূর্বশর্ত আরোপিত হয় না।", "D": "ধারা ১৫৬(১)-এর ক্ষমতার সাথে কোনো ন্যূনতম-সাজা সীমা যুক্ত নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-INFO-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-INFO-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S156-157"],
+      "exam_focus": "S.156(2)'s bar on jurisdiction challenges.",
+      "source_basis": "Original question drawn directly from verbatim S.156(2) text.",
+      "mistake_tags": ["s156-2-jurisdiction-challenge-barred"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-INFOINVESTIGATION-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 156(2), if it later emerges that an investigating officer was not, strictly, empowered to investigate a particular case, what is the effect on the investigation already conducted?",
+          "options": { "A": "The entire investigation is automatically void from the start", "B": "The accused is automatically entitled to acquittal regardless of the evidence gathered", "C": "The proceeding cannot be called into question merely on that jurisdictional ground", "D": "The case must be restarted from the point of the original information under Section 154" },
+          "explanation": "Section 156(2) expressly provides that no proceeding of a police officer in such a case shall be called into question on the ground that the officer was not empowered to investigate it.",
+          "why_other_options_are_wrong": { "A": "This is the opposite of what Section 156(2) provides -- it specifically protects the proceeding from being unwound on this ground.", "B": "Automatic acquittal is not the consequence Section 156(2) attaches to this scenario.", "D": "No automatic restart mechanism is created by Section 156(2)." }
+        },
+        "bn": {
+          "question": "ধারা ১৫৬(২)-এর অধীনে, যদি পরে দেখা যায় যে একজন তদন্তকারী কর্মকর্তা, কঠোরভাবে, একটি নির্দিষ্ট মামলা তদন্তের ক্ষমতাপ্রাপ্ত ছিলেন না, তাহলে ইতিমধ্যে পরিচালিত তদন্তের উপর এর প্রভাব কী?",
+          "options": { "A": "সম্পূর্ণ তদন্তটি শুরু থেকেই স্বয়ংক্রিয়ভাবে বাতিল", "B": "সংগৃহীত প্রমাণ নির্বিশেষে অভিযুক্ত স্বয়ংক্রিয়ভাবে খালাসের অধিকারী", "C": "কেবল সেই এখতিয়ারগত ভিত্তিতে কার্যধারাটি প্রশ্নবিদ্ধ করা যায় না", "D": "ধারা ১৫৪-এর অধীনে মূল তথ্যের বিন্দু থেকে মামলাটি পুনরায় শুরু করতে হবে" },
+          "explanation": "ধারা ১৫৬(২) স্পষ্টভাবে প্রদান করে যে এমন একটি মামলায় পুলিশ কর্মকর্তার কোনো কার্যধারা এই ভিত্তিতে প্রশ্নবিদ্ধ করা যাবে না যে কর্মকর্তা তা তদন্তের ক্ষমতাপ্রাপ্ত ছিলেন না।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ১৫৬(২) যা প্রদান করে তার বিপরীত -- এটি সুনির্দিষ্টভাবে এই ভিত্তিতে কার্যধারা বাতিল হওয়া থেকে রক্ষা করে।", "B": "স্বয়ংক্রিয় খালাস ধারা ১৫৬(২) এই পরিস্থিতির সাথে যুক্ত ফলাফল নয়।", "D": "ধারা ১৫৬(২) দ্বারা কোনো স্বয়ংক্রিয় পুনঃসূচনা ব্যবস্থা তৈরি হয় না।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-INFO-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-INFO-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-10",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S156-157"],
+      "exam_focus": "S.157's reporting duty once investigation begins.",
+      "source_basis": "Original question drawn directly from verbatim S.157(1) text.",
+      "mistake_tags": ["s157-reporting-duty"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-INFOINVESTIGATION-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 157(1), once there is reason to suspect the commission of an offence the officer is empowered to investigate, what must the officer do?",
+          "options": { "A": "Send a report of the fact to an empowered Magistrate and proceed to investigate, personally or through a subordinate", "B": "Immediately arrest every person named in the original information", "C": "Wait for written authorisation from the Attorney-General before proceeding", "D": "Refer the matter to a civil court for a preliminary ruling" },
+          "explanation": "Section 157(1) requires the officer to send a report of the suspected offence to a Magistrate empowered to take cognizance of it, and to proceed to investigate the facts and circumstances, either personally or through a subordinate officer.",
+          "why_other_options_are_wrong": { "B": "Section 157(1) does not mandate immediate arrest of named persons as a consequence of this reporting duty.", "C": "No Attorney-General authorisation step is part of Section 157(1).", "D": "Referral to a civil court is not the procedure Section 157(1) establishes -- this is a criminal investigative process." }
+        },
+        "bn": {
+          "question": "ধারা ১৫৭(১)-এর অধীনে, একবার কর্মকর্তার তদন্তের ক্ষমতাপ্রাপ্ত একটি অপরাধ সংঘটনের সন্দেহের কারণ থাকলে, কর্মকর্তাকে কী করতে হবে?",
+          "options": { "A": "একজন ক্ষমতাপ্রাপ্ত ম্যাজিস্ট্রেটের কাছে বিষয়টির একটি প্রতিবেদন পাঠাতে হবে এবং ব্যক্তিগতভাবে বা একজন অধস্তনের মাধ্যমে তদন্ত এগিয়ে নিতে হবে", "B": "মূল তথ্যে নামোল্লিখিত প্রতিটি ব্যক্তিকে তাৎক্ষণিকভাবে গ্রেফতার করতে হবে", "C": "এগিয়ে যাওয়ার আগে অ্যাটর্নি জেনারেলের কাছ থেকে লিখিত অনুমোদনের জন্য অপেক্ষা করতে হবে", "D": "একটি প্রাথমিক রায়ের জন্য বিষয়টি একটি দেওয়ানি আদালতে পাঠাতে হবে" },
+          "explanation": "ধারা ১৫৭(১)-এর জন্য প্রয়োজন কর্মকর্তা সন্দেহভাজন অপরাধের একটি প্রতিবেদন তার আমলগ্রহণে ক্ষমতাপ্রাপ্ত একজন ম্যাজিস্ট্রেটের কাছে পাঠাবেন, এবং ব্যক্তিগতভাবে বা একজন অধস্তন কর্মকর্তার মাধ্যমে তথ্য ও পরিস্থিতি তদন্ত করতে এগিয়ে যাবেন।",
+          "why_other_options_are_wrong": { "B": "ধারা ১৫৭(১) এই প্রতিবেদনের কর্তব্যের ফলস্বরূপ নামোল্লিখিত ব্যক্তিদের তাৎক্ষণিক গ্রেফতার আদেশ করে না।", "C": "ধারা ১৫৭(১)-এর অংশ হিসেবে কোনো অ্যাটর্নি জেনারেল অনুমোদনের পদক্ষেপ নেই।", "D": "একটি দেওয়ানি আদালতে পাঠানো ধারা ১৫৭(১) প্রতিষ্ঠিত পদ্ধতি নয় -- এটি একটি ফৌজদারি তদন্ত প্রক্রিয়া।" }
+        }
+      }
+    }
+  ]
+}

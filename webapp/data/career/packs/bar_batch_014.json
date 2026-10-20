@@ -1,0 +1,285 @@
+{
+  "batch_id": "BATCH-2026-08-014-PENAL-ABETMENT",
+  "schema_version": "1.0",
+  "content_version": "2026.08.6",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Third and final topic in this depth round: Penal Code Abetment (T-PENAL-07, Sections 107-120, this lesson focuses on the core definitional Sections 107-109). Chosen deliberately to close a loop: batch 005's Private Defence lesson noted that a secondary source had mislabelled the Abetment section range (107-120) as belonging to Private Defence. This lesson properly builds out Abetment itself using that correct range.",
+  "asset_count": 8,
+  "assets": [
+    {
+      "content_id": "BC-PENAL-ABETMENT-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-PENAL-ABETMENT-001",
+      "topic_id": "T-PENAL-07",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 108 (definition of 'abettor', including Explanations and illustrations) and Section 109 (punishment provision) were fetched as VERBATIM text directly from bdlaws.minlaw.gov.bd during this session. Section 107's title and existence were confirmed from the same primary source's table of contents, but its own three-limb operative text (instigation / conspiracy / intentional aid) was corroborated via parallel-jurisdiction sources sharing this identically-numbered, unamended 1860 provision, not an independent Bangladesh-specific verbatim fetch in this pass -- flagged accordingly. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": [],
+      "related_lesson_ids": ["BC-PENAL-PRIVATEDEFENCE-001"],
+      "related_question_ids": ["BC-MCQ-PENAL-AB-001", "BC-MCQ-PENAL-AB-002", "BC-MCQ-PENAL-AB-003", "BC-MCQ-PENAL-AB-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-PENAL-S107", "LREF-PENAL-S108", "LREF-PENAL-S109"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-PENAL-S107", "LREF-PENAL-S108", "LREF-PENAL-S109"],
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "language_versions": {
+        "en": {
+          "title": "Abetment (Sections 107-109)",
+          "short_description": "A person can be criminally liable for a wrong they never physically committed -- Section 107 defines the three distinct ways someone can 'abet' an act (instigation, conspiracy, or intentional aid), and Section 108 clarifies that an abettor can be liable even if the person they abetted is never actually convicted, or is incapable of committing the offence themselves.",
+          "learning_objective": "By the end of this lesson you should be able to: state the three limbs of Section 107's definition of abetment; explain why an abettor's liability under Section 108 does not depend on the principal offender actually being convicted; and state the default punishment rule under Section 109 for abetment where the Code provides no express separate punishment for that specific abetment.",
+          "explanation": "Section 107 defines abetment through three distinct routes, only one of which needs to be satisfied: a person abets the doing of a thing if they (First) instigate any person to do that thing; or (Secondly) engage with one or more other persons in a conspiracy for the doing of that thing, where an act or illegal omission actually takes place in pursuance of that conspiracy and in order to the doing of that thing; or (Thirdly) intentionally aid, by an act or illegal omission, the doing of that thing. Instigation does not require any actual agreement or joint action -- urging or provoking someone toward an act is enough. Conspiracy-based abetment, by contrast, specifically requires that some act or illegal omission actually followed the agreement. Intentional aid can be committed by an act, or even by an illegal omission -- doing nothing can amount to abetment where there was a legal duty to act.\n\nSection 108 then defines 'abettor' and clarifies several points that often surprise students: a person can be an abettor even where the person abetted is incapable of committing an offence (for example, someone who is legally incapable of forming criminal intent), and even where the actual offence is not ultimately committed at all, or the abettor's own act differs in some particular from what they intended, so long as the abetment satisfies Section 107's definition. Abetment liability is therefore not simply parasitic on the principal offender's own guilt being separately established -- an abettor's liability is assessed on the abettor's own conduct against Section 107's test.\n\nSection 109 then supplies a default punishment rule: whoever abets an offence, if the act abetted is committed in consequence of the abetment and no express provision is made elsewhere in the Code for the punishment of that particular abetment, is punishable with the same punishment as is provided for the offence actually committed. This is a residual, fallback rule -- many specific offences have their own express abetment-punishment provisions, and Section 109 only fills the gap where none exists.",
+          "key_concepts": ["Three limbs of abetment (S.107): instigation, conspiracy-with-act, intentional aid", "Conspiracy-based abetment requires an actual act/illegal omission in pursuance of the agreement; instigation does not", "Intentional aid can be by act OR illegal omission", "An abettor's liability under S.108 does not depend on the principal actually being convicted, or even on the offence being committed at all", "S.109's default punishment rule -- same as the offence, where no express provision exists"],
+          "important_rules": [
+            "S.107: abetment occurs by (First) instigation; (Secondly) engaging in a conspiracy where an act or illegal omission follows in pursuance of it; or (Thirdly) intentionally aiding, by act or illegal omission.",
+            "S.108: a person may be an abettor even if the person abetted is incapable of committing the offence, or the offence is not ultimately committed, or the abettor's act differs in some particulars from what was intended -- so long as Section 107's definition is otherwise satisfied.",
+            "S.109: where an abetted act is committed in consequence of the abetment and no express punishment is provided elsewhere for that abetment, the abettor is punishable with the same punishment provided for the offence actually committed."
+          ],
+          "definitions": [
+            { "term": "Instigation", "definition": "Actively urging, provoking, or inciting another person toward an act -- the first limb of Section 107, requiring no actual agreement or joint action from the person instigated." },
+            { "term": "Abettor", "definition": "A person who abets the doing of a thing, or abets the commission of an offence, as defined in Sections 107-108 -- liable based on their own conduct, not derivatively on the principal offender's guilt being separately proven." }
+          ],
+          "examples": [
+            "A repeatedly urges B to set fire to C's shop, though A never touches a match or is present at the scene. If B goes on to commit the act, A has instigated it under the First limb of Section 107, regardless of A's physical distance from the actual burning.",
+            "A and B agree to commit a theft together, and in pursuance of that agreement B keeps watch outside while A takes the property. Even though B never touches the stolen property, B has abetted the theft by conspiracy under the Secondly limb, because an act (keeping watch) took place in pursuance of their agreement and in order to the doing of the theft."
+          ],
+          "exam_focus": "Examiners test whether candidates can correctly match a fact pattern to the right limb of Section 107 -- particularly distinguishing instigation (no agreement needed) from conspiracy-based abetment (requires an actual act following an agreement) -- and whether candidates know that an abettor's liability under Section 108 does not collapse just because the principal was acquitted or the offence was never completed.",
+          "common_traps": [
+            "Assuming abetment always requires the abetted offence to actually be committed and the principal to be convicted -- Section 108 expressly allows abettor liability even where this does not happen.",
+            "Treating instigation and conspiracy-based abetment as requiring the same elements -- conspiracy-based abetment specifically requires an act or illegal omission in pursuance of the agreement; mere instigation does not.",
+            "Forgetting that intentional aid can be committed by omission -- assuming abetment always requires some positive act."
+          ],
+          "quick_revision": [
+            "S.107 = 3 limbs: instigate; OR conspire + an act follows; OR intentionally aid (act or illegal omission).",
+            "S.108 = abettor liable even if principal incapable, offence not committed, or abettor's act differed somewhat from intended -- liability is NOT purely derivative.",
+            "S.109 = default rule: same punishment as the offence committed, ONLY where no other express provision covers that abetment."
+          ],
+          "key_takeaways": [
+            "Abetment is a standalone basis of liability assessed on the abettor's own conduct, not a mere shadow of the principal offender's guilt.",
+            "The three limbs of Section 107 are not interchangeable -- always check exactly which one a fact pattern satisfies, since their requirements differ (especially the 'an act must follow' condition unique to conspiracy-based abetment).",
+            "Section 109 is a gap-filler, not the primary source of abetment punishment for offences that already have their own specific abetment-punishment provisions elsewhere in the Code."
+          ]
+        },
+        "bn": {
+          "title": "প্ররোচনা (অ্যাবেটমেন্ট) (ধারা ১০৭-১০৯)",
+          "short_description": "একজন ব্যক্তি এমন একটি ভুল কাজের জন্য ফৌজদারিভাবে দায়ী হতে পারেন যা তিনি কখনো শারীরিকভাবে করেননি -- ধারা ১০৭ কাউকে 'প্ররোচিত' করার তিনটি স্বতন্ত্র উপায় সংজ্ঞায়িত করে (উসকানি, ষড়যন্ত্র, বা ইচ্ছাকৃত সহায়তা), এবং ধারা ১০৮ স্পষ্ট করে যে একজন প্ররোচনাকারী দায়ী হতে পারেন এমনকি যদি যাকে তিনি প্ররোচিত করেছেন তিনি কখনো প্রকৃতপক্ষে দোষী সাব্যস্ত না হন, বা নিজে অপরাধটি সংঘটিত করতে অক্ষম হন।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ১০৭-এর প্ররোচনার সংজ্ঞার তিনটি অংশ বলতে পারবেন; কেন ধারা ১০৮-এর অধীনে একজন প্ররোচনাকারীর দায় মূল অপরাধী প্রকৃতপক্ষে দোষী সাব্যস্ত হওয়ার উপর নির্ভর করে না তা ব্যাখ্যা করতে পারবেন; এবং যেসব ক্ষেত্রে বিধি সেই নির্দিষ্ট প্ররোচনার জন্য কোনো সুস্পষ্ট পৃথক শাস্তির বিধান দেয় না সেখানে ধারা ১০৯-এর অধীনে ডিফল্ট শাস্তির নিয়ম বলতে পারবেন।",
+          "explanation": "ধারা ১০৭ তিনটি স্বতন্ত্র উপায়ে প্ররোচনা সংজ্ঞায়িত করে, যার মধ্যে কেবল একটি পূরণ হলেই যথেষ্ট: একজন ব্যক্তি কোনো কাজ সম্পাদনে প্ররোচিত করেন যদি তিনি (প্রথমত) কোনো ব্যক্তিকে সেই কাজ করতে উসকানি দেন; অথবা (দ্বিতীয়ত) সেই কাজ সম্পাদনের জন্য এক বা একাধিক ব্যক্তির সাথে একটি ষড়যন্ত্রে জড়িত হন, যেখানে সেই ষড়যন্ত্র অনুসরণে এবং সেই কাজ সম্পাদনের উদ্দেশ্যে প্রকৃতপক্ষে একটি কাজ বা অবৈধ বিরতি ঘটে; অথবা (তৃতীয়ত) একটি কাজ বা অবৈধ বিরতির মাধ্যমে সেই কাজ সম্পাদনে ইচ্ছাকৃতভাবে সহায়তা করেন। উসকানির জন্য কোনো প্রকৃত সমঝোতা বা যৌথ কর্মের প্রয়োজন নেই -- কাউকে কোনো কাজের দিকে উৎসাহিত করা বা প্ররোচিত করাই যথেষ্ট। বিপরীতে, ষড়যন্ত্র-ভিত্তিক প্ররোচনার জন্য সুনির্দিষ্টভাবে প্রয়োজন যে সমঝোতার পর প্রকৃতপক্ষে কোনো কাজ বা অবৈধ বিরতি অনুসরণ করেছে। ইচ্ছাকৃত সহায়তা একটি কাজ দ্বারা, এমনকি একটি অবৈধ বিরতি দ্বারাও সংঘটিত হতে পারে -- কিছু না করাও প্ররোচনার সমান হতে পারে যেখানে কাজ করার একটি আইনি কর্তব্য ছিল।\n\nধারা ১০৮ এরপর 'প্ররোচনাকারী' সংজ্ঞায়িত করে এবং এমন বেশ কিছু বিষয় স্পষ্ট করে যা প্রায়ই শিক্ষার্থীদের অবাক করে: একজন ব্যক্তি প্ররোচনাকারী হতে পারেন এমনকি যখন যাকে প্ররোচিত করা হয়েছে তিনি অপরাধ সংঘটনে অক্ষম (উদাহরণস্বরূপ, কেউ আইনগতভাবে ফৌজদারি অভিপ্রায় গঠনে অক্ষম), এবং এমনকি যখন প্রকৃত অপরাধটি শেষ পর্যন্ত আদৌ সংঘটিত হয়নি, অথবা প্ররোচনাকারীর নিজস্ব কাজ তার উদ্দেশ্য থেকে কোনো নির্দিষ্ট বিষয়ে ভিন্ন, যতক্ষণ প্ররোচনাটি ধারা ১০৭-এর সংজ্ঞা পূরণ করে। তাই প্ররোচনার দায় কেবল মূল অপরাধীর নিজস্ব দোষ পৃথকভাবে প্রতিষ্ঠিত হওয়ার উপর পরজীবী নয় -- একজন প্ররোচনাকারীর দায় ধারা ১০৭-এর পরীক্ষার বিপরীতে প্ররোচনাকারীর নিজস্ব আচরণের ভিত্তিতে মূল্যায়ন করা হয়।\n\nধারা ১০৯ এরপর একটি ডিফল্ট শাস্তির নিয়ম সরবরাহ করে: যে কেউ কোনো অপরাধে প্ররোচিত করেন, যদি প্ররোচিত কাজটি প্ররোচনার ফলস্বরূপ সংঘটিত হয় এবং বিধিতে অন্য কোথাও সেই নির্দিষ্ট প্ররোচনার শাস্তির জন্য কোনো সুস্পষ্ট বিধান না থাকে, তিনি প্রকৃতপক্ষে সংঘটিত অপরাধের জন্য নির্ধারিত একই শাস্তিতে দণ্ডনীয়। এটি একটি অবশিষ্ট, বিকল্প নিয়ম -- অনেক নির্দিষ্ট অপরাধের নিজস্ব সুস্পষ্ট প্ররোচনা-শাস্তির বিধান রয়েছে, এবং ধারা ১০৯ কেবল তখনই ফাঁক পূরণ করে যখন এমন কোনো বিধান বিদ্যমান নেই।",
+          "key_concepts": ["প্ররোচনার তিনটি অংশ (ধারা ১০৭): উসকানি, ষড়যন্ত্র-সহ-কাজ, ইচ্ছাকৃত সহায়তা", "ষড়যন্ত্র-ভিত্তিক প্ররোচনার জন্য সমঝোতা অনুসরণে একটি প্রকৃত কাজ/অবৈধ বিরতি প্রয়োজন; উসকানির জন্য নয়", "ইচ্ছাকৃত সহায়তা কাজ বা অবৈধ বিরতি দ্বারা হতে পারে", "ধারা ১০৮-এর অধীনে একজন প্ররোচনাকারীর দায় মূল অপরাধী প্রকৃতপক্ষে দোষী সাব্যস্ত হওয়ার উপর, এমনকি অপরাধটি আদৌ সংঘটিত হওয়ার উপরও নির্ভর করে না", "ধারা ১০৯-এর ডিফল্ট শাস্তির নিয়ম -- অপরাধের সমান, যেখানে কোনো সুস্পষ্ট বিধান বিদ্যমান নেই"],
+          "important_rules": [
+            "ধারা ১০৭: প্ররোচনা ঘটে (প্রথমত) উসকানির মাধ্যমে; (দ্বিতীয়ত) একটি ষড়যন্ত্রে জড়িত হওয়ার মাধ্যমে যেখানে তা অনুসরণে একটি কাজ বা অবৈধ বিরতি ঘটে; অথবা (তৃতীয়ত) একটি কাজ বা অবৈধ বিরতির মাধ্যমে ইচ্ছাকৃতভাবে সহায়তা করার মাধ্যমে।",
+            "ধারা ১০৮: একজন ব্যক্তি প্ররোচনাকারী হতে পারেন এমনকি যদি যাকে প্ররোচিত করা হয়েছে তিনি অপরাধ সংঘটনে অক্ষম হন, অথবা অপরাধটি শেষ পর্যন্ত সংঘটিত না হয়, অথবা প্ররোচনাকারীর কাজ উদ্দেশ্য থেকে কিছু বিষয়ে ভিন্ন হয় -- যতক্ষণ ধারা ১০৭-এর সংজ্ঞা অন্যথায় পূরণ হয়।",
+            "ধারা ১০৯: যেখানে একটি প্ররোচিত কাজ প্ররোচনার ফলস্বরূপ সংঘটিত হয় এবং সেই প্ররোচনার জন্য অন্য কোথাও কোনো সুস্পষ্ট শাস্তি নির্ধারিত নেই, প্ররোচনাকারী প্রকৃতপক্ষে সংঘটিত অপরাধের জন্য নির্ধারিত একই শাস্তিতে দণ্ডনীয়।"
+          ],
+          "definitions": [
+            { "term": "উসকানি", "definition": "অন্য ব্যক্তিকে কোনো কাজের দিকে সক্রিয়ভাবে উৎসাহিত, প্ররোচিত, বা প্ররোচনা প্রদান -- ধারা ১০৭-এর প্রথম অংশ, যার জন্য যাকে উসকানি দেওয়া হয়েছে তার থেকে কোনো প্রকৃত সমঝোতা বা যৌথ কর্মের প্রয়োজন নেই।" },
+            { "term": "প্ররোচনাকারী", "definition": "ধারা ১০৭-১০৮-এ সংজ্ঞায়িত কোনো কাজ বা অপরাধ সংঘটনে প্ররোচিতকারী ব্যক্তি -- নিজস্ব আচরণের ভিত্তিতে দায়ী, মূল অপরাধীর দোষ পৃথকভাবে প্রমাণিত হওয়ার উপর নির্ভরশীলভাবে নয়।" }
+          ],
+          "examples": [
+            "ক বারবার খ-কে গ-এর দোকানে আগুন লাগাতে উৎসাহিত করে, যদিও ক কখনো একটি ম্যাচও স্পর্শ করেনি বা ঘটনাস্থলে উপস্থিত ছিল না। খ যদি কাজটি সম্পন্ন করে, তাহলে ক ধারা ১০৭-এর প্রথম অংশের অধীনে তা প্ররোচিত করেছে, ক-এর প্রকৃত অগ্নিসংযোগ থেকে শারীরিক দূরত্ব নির্বিশেষে।",
+            "ক ও খ একসাথে চুরি করতে সম্মত হয়, এবং সেই সমঝোতা অনুসরণে খ বাইরে পাহারা দেয় যখন ক সম্পত্তিটি নেয়। খ কখনো চোরাই সম্পত্তি স্পর্শ না করলেও, খ দ্বিতীয়ত অংশের অধীনে ষড়যন্ত্র দ্বারা চুরিতে প্ররোচনা দিয়েছে, কারণ তাদের সমঝোতা অনুসরণে এবং চুরি সম্পাদনের উদ্দেশ্যে একটি কাজ (পাহারা দেওয়া) সংঘটিত হয়েছে।"
+          ],
+          "exam_focus": "পরীক্ষকরা যাচাই করেন প্রার্থীরা একটি ঘটনাপ্রবাহকে ধারা ১০৭-এর সঠিক অংশের সাথে মেলাতে পারেন কিনা -- বিশেষত উসকানি (কোনো সমঝোতার প্রয়োজন নেই) থেকে ষড়যন্ত্র-ভিত্তিক প্ররোচনা (সমঝোতার পর একটি প্রকৃত কাজ প্রয়োজন) আলাদা করা -- এবং প্রার্থীরা জানেন কিনা যে ধারা ১০৮-এর অধীনে একজন প্ররোচনাকারীর দায় কেবল মূল অপরাধী খালাস পেলে বা অপরাধটি কখনো সম্পূর্ণ না হলেই ভেঙে পড়ে না।",
+          "common_traps": [
+            "মনে করা যে প্ররোচনার জন্য সবসময় প্ররোচিত অপরাধ প্রকৃতপক্ষে সংঘটিত হতে হবে এবং মূল অপরাধী দোষী সাব্যস্ত হতে হবে -- ধারা ১০৮ স্পষ্টভাবে এমনকি এটি না ঘটলেও প্ররোচনাকারীর দায়ের অনুমতি দেয়।",
+            "উসকানি ও ষড়যন্ত্র-ভিত্তিক প্ররোচনাকে একই উপাদান প্রয়োজন মনে করা -- ষড়যন্ত্র-ভিত্তিক প্ররোচনার জন্য সুনির্দিষ্টভাবে সমঝোতা অনুসরণে একটি কাজ বা অবৈধ বিরতি প্রয়োজন; কেবল উসকানির জন্য নয়।",
+            "ভুলে যাওয়া যে ইচ্ছাকৃত সহায়তা বিরতির মাধ্যমেও সংঘটিত হতে পারে -- মনে করা যে প্ররোচনার জন্য সবসময় কোনো ইতিবাচক কাজের প্রয়োজন।"
+          ],
+          "quick_revision": [
+            "ধারা ১০৭ = ৩টি অংশ: উসকানি; অথবা ষড়যন্ত্র + একটি কাজ অনুসরণ করে; অথবা ইচ্ছাকৃত সহায়তা (কাজ বা অবৈধ বিরতি)।",
+            "ধারা ১০৮ = মূল অপরাধী অক্ষম হলেও, অপরাধ সংঘটিত না হলেও, বা প্ররোচনাকারীর কাজ উদ্দেশ্য থেকে কিছুটা ভিন্ন হলেও প্ররোচনাকারী দায়ী -- দায় সম্পূর্ণভাবে নির্ভরশীল নয়।",
+            "ধারা ১০৯ = ডিফল্ট নিয়ম: সংঘটিত অপরাধের সমান শাস্তি, কেবল যেখানে সেই প্ররোচনা আচ্ছাদনকারী অন্য কোনো সুস্পষ্ট বিধান নেই।"
+          ],
+          "key_takeaways": [
+            "প্ররোচনা প্ররোচনাকারীর নিজস্ব আচরণের ভিত্তিতে মূল্যায়িত দায়ের একটি স্বতন্ত্র ভিত্তি, মূল অপরাধীর দোষের নিছক ছায়া নয়।",
+            "ধারা ১০৭-এর তিনটি অংশ বিনিময়যোগ্য নয় -- একটি ঘটনাপ্রবাহ ঠিক কোনটি পূরণ করে তা সবসময় পরীক্ষা করুন, কারণ তাদের প্রয়োজনীয়তা ভিন্ন (বিশেষত ষড়যন্ত্র-ভিত্তিক প্ররোচনার জন্য অনন্য 'একটি কাজ অবশ্যই অনুসরণ করতে হবে' শর্ত)।",
+            "ধারা ১০৯ একটি ফাঁক-পূরণকারী, বিধিতে অন্যত্র ইতিমধ্যে নিজস্ব সুনির্দিষ্ট প্ররোচনা-শাস্তির বিধান থাকা অপরাধের জন্য প্ররোচনার শাস্তির প্রাথমিক উৎস নয়।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-PENAL-S107",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Section 107 (Abetment of a thing)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Title and existence confirmed from the primary source's table of contents. The three-limb operative text (instigation/conspiracy/intentional aid) was corroborated via parallel-jurisdiction sources sharing this identically-numbered, historically unamended provision, not an independent Bangladesh-specific verbatim fetch in this pass."
+    },
+    {
+      "content_id": "LREF-PENAL-S108",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Section 108 (Abettor), including Explanations and illustrations",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Verbatim text obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "LREF-PENAL-S109",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Section 109 (Punishment of abetment if the act abetted is committed in consequence, and where no express provision is made for its punishment)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Verbatim text obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-AB-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-AB-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-07",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S107"],
+      "exam_focus": "Distinguishing instigation from conspiracy-based abetment.",
+      "source_basis": "Original fact pattern distinguishing the First and Secondly limbs of S.107.",
+      "mistake_tags": ["s107-instigation-vs-conspiracy"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-ABETMENT-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "A repeatedly urges B, alone, to commit an assault, without any agreement or joint plan between them. B then commits the assault. Under which limb of Section 107 has A abetted the offence?",
+          "options": { "A": "Instigation (First) -- no agreement or actual act by A beyond the urging is required", "B": "Conspiracy (Secondly) -- because A and B were both involved", "C": "Intentional aid (Thirdly) -- because A's words assisted B", "D": "None -- abetment requires A to be physically present at the assault" },
+          "explanation": "This is a straightforward instigation case: A urged B toward the act with no agreement or joint plan. The First limb of Section 107 requires only instigation, not an accompanying act or agreement.",
+          "why_other_options_are_wrong": { "B": "Conspiracy-based abetment requires an actual agreement between parties and a subsequent act in pursuance of it -- there is no agreement here, only one-sided urging.", "C": "Intentional aid typically involves facilitating the act itself (such as through assistance during commission), which is a different limb from mere prior urging.", "D": "Physical presence at the scene is not required for instigation-based abetment." }
+        },
+        "bn": {
+          "question": "ক একাধিকবার খ-কে, একাকী, একটি হামলা সংঘটনের জন্য উৎসাহিত করে, তাদের মধ্যে কোনো সমঝোতা বা যৌথ পরিকল্পনা ছাড়াই। খ এরপর হামলাটি সংঘটিত করে। ধারা ১০৭-এর কোন অংশের অধীনে ক অপরাধটিতে প্ররোচনা দিয়েছে?",
+          "options": { "A": "উসকানি (প্রথমত) -- উসকানি ছাড়া ক-এর কোনো সমঝোতা বা প্রকৃত কাজের প্রয়োজন নেই", "B": "ষড়যন্ত্র (দ্বিতীয়ত) -- কারণ ক ও খ উভয়ই জড়িত ছিল", "C": "ইচ্ছাকৃত সহায়তা (তৃতীয়ত) -- কারণ ক-এর কথা খ-কে সহায়তা করেছে", "D": "কোনোটিই নয় -- প্ররোচনার জন্য ক-কে হামলার সময় শারীরিকভাবে উপস্থিত থাকতে হবে" },
+          "explanation": "এটি একটি সরল উসকানির মামলা: ক কোনো সমঝোতা বা যৌথ পরিকল্পনা ছাড়াই খ-কে কাজটির দিকে উৎসাহিত করেছে। ধারা ১০৭-এর প্রথম অংশের জন্য কেবল উসকানি প্রয়োজন, সাথে কোনো কাজ বা সমঝোতা নয়।",
+          "why_other_options_are_wrong": { "B": "ষড়যন্ত্র-ভিত্তিক প্ররোচনার জন্য পক্ষগণের মধ্যে একটি প্রকৃত সমঝোতা এবং তা অনুসরণে একটি পরবর্তী কাজ প্রয়োজন -- এখানে কোনো সমঝোতা নেই, কেবল একতরফা উসকানি।", "C": "ইচ্ছাকৃত সহায়তা সাধারণত কাজটি সম্পাদনে সহায়তা জড়িত (যেমন সংঘটনের সময় সহায়তার মাধ্যমে), যা পূর্ববর্তী উসকানি থেকে ভিন্ন অংশ।", "D": "উসকানি-ভিত্তিক প্ররোচনার জন্য ঘটনাস্থলে শারীরিক উপস্থিতি প্রয়োজন নেই।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-AB-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-AB-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-07",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S108"],
+      "exam_focus": "Abettor liability not depending on the principal's conviction.",
+      "source_basis": "Original question drawn directly from verbatim S.108 text/Explanations.",
+      "mistake_tags": ["s108-liability-not-derivative"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-ABETMENT-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "A instigates B, a person legally incapable of committing the offence in question, to do an act that would be an offence if done by a person capable of the requisite intent. Can A still be held liable as an abettor under Section 108?",
+          "options": { "A": "No, because B's incapacity means the offence was never actually committed by anyone", "B": "No, an abettor can never be more culpable than the person abetted", "C": "Yes, Section 108 expressly allows abettor liability even where the person abetted is incapable of committing the offence", "D": "Yes, but only if B is later found capable after all" },
+          "explanation": "Section 108 expressly provides that a person may be an abettor even where the person abetted is incapable of committing the offence -- liability under this section is not defeated simply because the principal could not, as a matter of law, be convicted.",
+          "why_other_options_are_wrong": { "A": "This is precisely the incorrect assumption Section 108 corrects -- abettor liability does not require someone else to have actually committed the completed offence.", "B": "Section 108's Explanations address specific scenarios like this one directly, rather than resting on a general comparative-culpability rule.", "D": "There is no such retrospective-capability condition in Section 108." }
+        },
+        "bn": {
+          "question": "ক খ-কে, যিনি প্রশ্নবিদ্ধ অপরাধটি সংঘটনে আইনগতভাবে অক্ষম, এমন একটি কাজ করতে উসকানি দেয় যা প্রয়োজনীয় অভিপ্রায়সম্পন্ন কোনো ব্যক্তি দ্বারা সংঘটিত হলে একটি অপরাধ হতো। ধারা ১০৮-এর অধীনে ক কি তবুও একজন প্ররোচনাকারী হিসেবে দায়ী হতে পারেন?",
+          "options": { "A": "না, কারণ খ-এর অক্ষমতার অর্থ হলো অপরাধটি প্রকৃতপক্ষে কারও দ্বারা সংঘটিত হয়নি", "B": "না, একজন প্ররোচনাকারী কখনো যাকে প্ররোচিত করা হয়েছে তার চেয়ে বেশি দোষী হতে পারেন না", "C": "হ্যাঁ, ধারা ১০৮ স্পষ্টভাবে প্ররোচনাকারীর দায়ের অনুমতি দেয় এমনকি যখন যাকে প্ররোচিত করা হয়েছে তিনি অপরাধ সংঘটনে অক্ষম", "D": "হ্যাঁ, তবে কেবল যদি খ পরবর্তীতে সক্ষম প্রমাণিত হন" },
+          "explanation": "ধারা ১০৮ স্পষ্টভাবে প্রদান করে যে একজন ব্যক্তি প্ররোচনাকারী হতে পারেন এমনকি যখন যাকে প্ররোচিত করা হয়েছে তিনি অপরাধ সংঘটনে অক্ষম -- এই ধারার অধীনে দায় কেবল এই কারণে পরাজিত হয় না যে মূল ব্যক্তি আইনের বিষয় হিসেবে দোষী সাব্যস্ত হতে পারতেন না।",
+          "why_other_options_are_wrong": { "A": "এটি ঠিক সেই ভুল অনুমান যা ধারা ১০৮ সংশোধন করে -- প্ররোচনাকারীর দায়ের জন্য অন্য কারও দ্বারা সম্পূর্ণ অপরাধ প্রকৃতপক্ষে সংঘটিত হওয়ার প্রয়োজন নেই।", "B": "ধারা ১০৮-এর ব্যাখ্যাগুলো ঠিক এই ধরনের পরিস্থিতি সরাসরি সমাধান করে, একটি সাধারণ তুলনামূলক-দোষের নিয়মের উপর নির্ভর না করে।", "D": "ধারা ১০৮-এ এমন কোনো পূর্ববর্তী-সক্ষমতা শর্ত নেই।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-AB-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-AB-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-07",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S109"],
+      "exam_focus": "S.109 as a residual/default rule, not the primary punishment source.",
+      "source_basis": "Original question drawn directly from verbatim S.109 text.",
+      "mistake_tags": ["s109-residual-rule"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-PENAL-ABETMENT-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "When does the punishment rule in Section 109, Penal Code, apply to an abettor?",
+          "options": { "A": "Always, regardless of whether another provision of the Code separately punishes that specific abetment", "B": "Only where the abetted act is committed in consequence of the abetment AND no express provision is made elsewhere in the Code for punishing that particular abetment", "C": "Only where the abettor is a public servant", "D": "Only where the offence abetted carries a sentence of life imprisonment or death" },
+          "explanation": "Section 109 is a residual rule -- it applies only where the abetted act was committed in consequence of the abetment and no other provision in the Code expressly punishes that specific abetment.",
+          "why_other_options_are_wrong": { "A": "This ignores the express 'no other provision' condition -- where a specific abetment-punishment provision exists elsewhere, Section 109's default rule is not what applies.", "C": "Section 109 is of general application, not limited to public servants.", "D": "There is no such restriction to life-imprisonment or death-eligible offences in Section 109's text." }
+        },
+        "bn": {
+          "question": "দণ্ডবিধির ধারা ১০৯-এর শাস্তির নিয়ম কখন একজন প্ররোচনাকারীর ক্ষেত্রে প্রযোজ্য হয়?",
+          "options": { "A": "সবসময়, বিধির অন্য কোনো বিধান সেই নির্দিষ্ট প্ররোচনা পৃথকভাবে শাস্তি দেয় কিনা তা নির্বিশেষে", "B": "কেবল যেখানে প্ররোচিত কাজটি প্ররোচনার ফলস্বরূপ সংঘটিত হয় এবং বিধিতে অন্য কোথাও সেই নির্দিষ্ট প্ররোচনার শাস্তির জন্য কোনো সুস্পষ্ট বিধান নেই", "C": "কেবল যেখানে প্ররোচনাকারী একজন সরকারি কর্মচারী", "D": "কেবল যেখানে প্ররোচিত অপরাধটি যাবজ্জীবন কারাদণ্ড বা মৃত্যুদণ্ড বহন করে" },
+          "explanation": "ধারা ১০৯ একটি অবশিষ্ট নিয়ম -- এটি কেবল তখনই প্রযোজ্য যখন প্ররোচিত কাজটি প্ররোচনার ফলস্বরূপ সংঘটিত হয়েছে এবং বিধিতে অন্য কোনো বিধান সেই নির্দিষ্ট প্ররোচনাকে স্পষ্টভাবে শাস্তি দেয় না।",
+          "why_other_options_are_wrong": { "A": "এটি স্পষ্ট 'অন্য কোনো বিধান নেই' শর্ত উপেক্ষা করে -- যেখানে অন্যত্র একটি নির্দিষ্ট প্ররোচনা-শাস্তির বিধান বিদ্যমান, সেখানে ধারা ১০৯-এর ডিফল্ট নিয়ম প্রযোজ্য নয়।", "C": "ধারা ১০৯ সাধারণ প্রয়োগের, সরকারি কর্মচারীদের মধ্যে সীমাবদ্ধ নয়।", "D": "ধারা ১০৯-এর পাঠ্যে যাবজ্জীবন-কারাদণ্ড বা মৃত্যুদণ্ড-যোগ্য অপরাধে এমন কোনো সীমাবদ্ধতা নেই।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-AB-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-AB-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-07",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S107"],
+      "exam_focus": "Intentional aid by omission.",
+      "source_basis": "Original conceptual question on the Thirdly limb's inclusion of illegal omission.",
+      "mistake_tags": ["s107-aid-by-omission"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-PENAL-ABETMENT-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Under the Thirdly limb of Section 107, can 'intentional aid' be committed by doing nothing at all?",
+          "options": { "A": "Yes, an illegal omission -- failing to act despite a legal duty to do so -- can amount to intentional aid", "B": "No, aid must always involve some positive physical act", "C": "No, only instigation can be committed by omission", "D": "Yes, but only if the person aided is a family member" },
+          "explanation": "The Thirdly limb of Section 107 expressly extends intentional aid to acts AND illegal omissions -- a person under a legal duty to act who deliberately fails to do so, thereby facilitating an offence, can be abetting by intentional aid.",
+          "why_other_options_are_wrong": { "B": "This overlooks that Section 107 explicitly includes illegal omission within the scope of intentional aid.", "C": "This reverses the position -- illegal omission is specifically tied to the intentional-aid limb, not instigation.", "D": "There is no family-relationship condition attached to abetment by omission." }
+        },
+        "bn": {
+          "question": "ধারা ১০৭-এর তৃতীয় অংশের অধীনে, 'ইচ্ছাকৃত সহায়তা' কি কিছুই না করে সংঘটিত হতে পারে?",
+          "options": { "A": "হ্যাঁ, একটি অবৈধ বিরতি -- আইনি কর্তব্য থাকা সত্ত্বেও কাজ করতে ব্যর্থতা -- ইচ্ছাকৃত সহায়তার সমান হতে পারে", "B": "না, সহায়তার জন্য সবসময় কোনো ইতিবাচক শারীরিক কাজ জড়িত থাকতে হবে", "C": "না, কেবল উসকানি বিরতির মাধ্যমে সংঘটিত হতে পারে", "D": "হ্যাঁ, তবে কেবল যদি সহায়তাপ্রাপ্ত ব্যক্তি একজন পরিবারের সদস্য হন" },
+          "explanation": "ধারা ১০৭-এর তৃতীয় অংশ স্পষ্টভাবে ইচ্ছাকৃত সহায়তাকে কাজ ও অবৈধ বিরতি উভয় পর্যন্ত প্রসারিত করে -- কাজ করার আইনি কর্তব্যসম্পন্ন একজন ব্যক্তি যিনি ইচ্ছাকৃতভাবে তা করতে ব্যর্থ হন, এভাবে একটি অপরাধ সহজতর করেন, তিনি ইচ্ছাকৃত সহায়তা দ্বারা প্ররোচনা দিতে পারেন।",
+          "why_other_options_are_wrong": { "B": "এটি উপেক্ষা করে যে ধারা ১০৭ স্পষ্টভাবে ইচ্ছাকৃত সহায়তার পরিধির মধ্যে অবৈধ বিরতি অন্তর্ভুক্ত করে।", "C": "এটি অবস্থানটি উল্টে দেয় -- অবৈধ বিরতি সুনির্দিষ্টভাবে ইচ্ছাকৃত-সহায়তা অংশের সাথে যুক্ত, উসকানির সাথে নয়।", "D": "বিরতির মাধ্যমে প্ররোচনার সাথে এমন কোনো পারিবারিক-সম্পর্ক শর্ত যুক্ত নেই।" }
+        }
+      }
+    }
+  ]
+}

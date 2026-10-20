@@ -1,6 +1,6 @@
-// Thin App Router entry — POST /api/mobile/v1/auth/token/refresh
-import { POST_refresh } from '@/api/mobile/v1/auth/otp'
+import { POST_refresh } from '@/api/mobile/v1/auth/password'
+import { NextRequest } from 'next/server'
 
-export async function POST(req: Request) {
-  return POST_refresh(req as any)
+export async function POST(req: NextRequest) {
+  return POST_refresh(req)
 }

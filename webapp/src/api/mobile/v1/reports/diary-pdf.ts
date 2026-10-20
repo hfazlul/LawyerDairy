@@ -1,46 +1,80 @@
-// GET /api/mobile/v1/reports/diary-pdf?month=8&year=2026
-// Generates monthly cause list PDF server-side.
-//
-// WHY SERVER-SIDE: dart_pdf has known Bangla যুক্তাক্ষর shaping bugs.
-// Server uses puppeteer/react-pdf with a proper Bangla font (Hind Siliguri).
-
 import { NextRequest, NextResponse } from 'next/server'
 import { requireAuth } from '@/lib/auth-middleware'
-import { prisma } from '@/lib/prisma'
 import { generateDiaryPdf } from '@/lib/pdf/diary-generator'
+import { withWorkspaceTx } from '@/lib/rls'
+import { weekRangeFromStart } from '@/lib/dhaka-hours'
 
 export async function GET(req: NextRequest) {
   const user = await requireAuth(req)
-  if (!user) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
+  if (!user?.activeMembership) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
 
   const { searchParams } = new URL(req.url)
+  const day = searchParams.get('day')
+  const weekStart = searchParams.get('weekStart')
+  const variant = searchParams.get('variant')
+  const includeRaw = searchParams.get('include') || ''
+  const include = new Set(includeRaw.split(',').map((s) => s.trim()).filter(Boolean))
   const month = parseInt(searchParams.get('month') ?? '0')
-  const year  = parseInt(searchParams.get('year')  ?? '0')
+  const year = parseInt(searchParams.get('year') ?? '0')
 
-  if (!month || !year || month < 1 || month > 12) {
-    return NextResponse.json({ message: 'Invalid month/year' }, { status: 400 })
+  let startDate: Date
+  let endDate: Date
+  let labelMonth: number
+  let labelYear: number
+  let filename: string
+
+  if (weekStart && /^\d{4}-\d{2}-\d{2}$/.test(weekStart)) {
+    const range = weekRangeFromStart(weekStart)
+    startDate = range.start
+    endDate = range.end
+    labelMonth = Number(weekStart.slice(5, 7))
+    labelYear = Number(weekStart.slice(0, 4))
+    filename = `diary-week-${weekStart}.pdf`
+  } else if (variant === 'week' && day && /^\d{4}-\d{2}-\d{2}$/.test(day)) {
+    const range = weekRangeFromStart(day)
+    startDate = range.start
+    endDate = range.end
+    labelMonth = Number(day.slice(5, 7))
+    labelYear = Number(day.slice(0, 4))
+    filename = `diary-week-${day}.pdf`
+  } else if (day && /^\d{4}-\d{2}-\d{2}$/.test(day)) {
+    startDate = new Date(`${day}T00:00:00`)
+    endDate = new Date(`${day}T23:59:59`)
+    labelMonth = startDate.getMonth() + 1
+    labelYear = startDate.getFullYear()
+    filename = `diary-${day}.pdf`
+  } else {
+    if (!month || !year || month < 1 || month > 12) {
+      return NextResponse.json({ message: 'Invalid month/year' }, { status: 400 })
+    }
+    startDate = new Date(year, month - 1, 1)
+    endDate = new Date(year, month, 0, 23, 59, 59)
+    labelMonth = month
+    labelYear = year
+    filename = `diary-${fileYearSafe(year)}-${month}.pdf`
   }
 
-  const startDate = new Date(year, month - 1, 1)
-  const endDate   = new Date(year, month, 0, 23, 59, 59)
-
-  // Fetch all cases with hearings in this month
-  const cases = await prisma.case.findMany({
-    where: {
-      chamberId: user.chamberId,
-      deletedAt: null,
-      nextDate:  { gte: startDate, lte: endDate },
-    },
-    include: {
-      hearings: {
-        where: { date: { gte: startDate, lte: endDate }, deletedAt: null },
-        orderBy: { date: 'asc' },
+  const wsId = user.activeMembership.workspaceId
+  const cases = await withWorkspaceTx(wsId, (tx) =>
+    tx.case.findMany({
+      where: {
+        workspaceId: wsId,
+        deletedAt: null,
+        nextDate: { gte: startDate, lte: endDate },
       },
-    },
-    orderBy: [{ courtName: 'asc' }, { nextDate: 'asc' }],
-  })
+      include: {
+        hearings: {
+          where: { date: { gte: startDate, lte: endDate }, deletedAt: null },
+          orderBy: { date: 'asc' },
+        },
+        parties: include.has('clients')
+          ? { where: { deletedAt: null }, take: 8 }
+          : false,
+      },
+      orderBy: [{ nextDate: 'asc' }],
+    }),
+  )
 
-  // Group by day for the diary layout
   const byDay: Record<string, typeof cases> = {}
   for (const c of cases) {
     if (!c.nextDate) continue
@@ -48,19 +82,20 @@ export async function GET(req: NextRequest) {
     ;(byDay[key] ??= []).push(c)
   }
 
-  const pdfBuffer = await generateDiaryPdf({
-    chamberName: `${user.name}-এর চেম্বার`,
-    month, year, byDay,
+  const pdf = await generateDiaryPdf({
+    chamberName: user.activeMembership.workspace.name,
+    month: labelMonth,
+    year: labelYear,
+    byDay,
   })
-
-  const months = ['January','February','March','April','May','June',
-                  'July','August','September','October','November','December']
-
-  return new NextResponse(new Uint8Array(pdfBuffer), {
+  return new NextResponse(pdf as unknown as BodyInit, {
     headers: {
-      'Content-Type':        'application/pdf',
-      'Content-Disposition': `attachment; filename="diary-${months[month-1]}-${year}.pdf"`,
-      'Cache-Control':       'no-store',
+      'Content-Type': 'application/pdf',
+      'Content-Disposition': `attachment; filename="${filename}"`,
     },
   })
+}
+
+function fileYearSafe(year: number): number {
+  return year
 }

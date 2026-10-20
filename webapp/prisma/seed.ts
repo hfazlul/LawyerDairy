@@ -1,152 +1,153 @@
-import { PrismaClient, Plan, JurisdictionCode } from '@prisma/client'
+import { PrismaClient, Plan, Prisma } from '@prisma/client'
 import bcrypt from 'bcryptjs'
+import { ingestMasterData } from '../src/lib/master/ingest'
+import { ensureChangelogTriggers } from '../src/lib/sync/changelog'
+import { extraTeamSeats, monthlySmsCredits } from '../src/lib/permissions'
+import { ingestBarCouncilContent } from '../src/lib/master/career-ingest'
+import { ingestHighCourtContent } from '../src/lib/master/hc-ingest'
+import { ingestBjsContent } from '../src/lib/master/bjs-ingest'
+import { PACKAGE_DEFS } from '../src/lib/plans'
+import { CMS_DEFAULTS } from '../src/lib/cms'
 
 const prisma = new PrismaClient()
 
-const packages: Array<{
-  code: string
-  nameBn: string
-  nameEn: string
-  priceBdt: number
-  yearlyBdt: number | null
-  featuresJson: string
-  sortOrder: number
-}> = [
-  {
-    code: 'FREE',
-    nameBn: 'ফ্রি',
-    nameEn: 'Free',
-    priceBdt: 0,
-    yearlyBdt: 0,
-    featuresJson: JSON.stringify(['home_board', 'cases_basic', 'calendar', 'ads']),
-    sortOrder: 0,
-  },
-  {
-    code: 'STARTER',
-    nameBn: 'স্টার্টার',
-    nameEn: 'Starter',
-    priceBdt: 99,
-    yearlyBdt: 999,
-    featuresJson: JSON.stringify([
-      'cause_list',
-      'stats_visuals',
-      'payment_visuals',
-      'team_1',
-    ]),
-    sortOrder: 1,
-  },
-  {
-    code: 'PRO',
-    nameBn: 'প্রো',
-    nameEn: 'Pro',
-    priceBdt: 199,
-    yearlyBdt: 1799,
-    featuresJson: JSON.stringify([
-      'cause_list',
-      'stats_visuals',
-      'payment_visuals',
-      'team_1',
-      'doc_scanner',
-      'doc_vault_cloud',
-    ]),
-    sortOrder: 2,
-  },
-  {
-    code: 'PRO_ADVANCE',
-    nameBn: 'প্রো অ্যাডভান্স',
-    nameEn: 'Pro Advance',
-    priceBdt: 349,
-    yearlyBdt: 3490,
-    featuresJson: JSON.stringify([
-      'cause_list',
-      'web_case_mgmt',
-      'team_2_3',
-      'unlimited_cases',
-    ]),
-    sortOrder: 3,
-  },
-  {
-    code: 'CHAMBER',
-    nameBn: 'চেম্বার',
-    nameEn: 'Chamber',
-    priceBdt: 699,
-    yearlyBdt: null,
-    featuresJson: JSON.stringify(['chamber_roles', 'cause_list', 'web_case_mgmt', 'team_2_3']),
-    sortOrder: 4,
-  },
-]
-
 async function main() {
-  for (const p of packages) {
+  for (const p of PACKAGE_DEFS) {
     await prisma.subscriptionPackage.upsert({
       where: { code: p.code },
-      create: p,
+      create: {
+        code: p.code,
+        nameBn: p.nameBn,
+        nameEn: p.nameEn,
+        priceBdt: p.priceBdt,
+        yearlyBdt: p.yearlyBdt,
+        featuresJson: p.featuresJson as Prisma.InputJsonValue,
+        smsMonthly: p.smsMonthly,
+        smsYearly: p.smsYearly,
+        teamSeats: p.teamSeats,
+        autoHearingSms: p.autoHearingSms,
+        careerFull: p.careerFull,
+        adsOff: p.adsOff,
+        sortOrder: p.sortOrder,
+        active: p.active,
+      },
       update: {
         nameBn: p.nameBn,
         nameEn: p.nameEn,
         priceBdt: p.priceBdt,
         yearlyBdt: p.yearlyBdt,
-        featuresJson: p.featuresJson,
+        featuresJson: p.featuresJson as Prisma.InputJsonValue,
+        smsMonthly: p.smsMonthly,
+        smsYearly: p.smsYearly,
+        teamSeats: p.teamSeats,
+        autoHearingSms: p.autoHearingSms,
+        careerFull: p.careerFull,
+        adsOff: p.adsOff,
         sortOrder: p.sortOrder,
-        active: true,
+        active: p.active,
       },
     })
   }
 
-  // Sample chambers per jurisdiction (for local testing of content/payment rails)
-  for (const [code, name] of [
-    ['BD', 'Sample BD Chamber'],
-    ['PK', 'Sample PK Chamber'],
-    ['IN', 'Sample IN Chamber'],
-  ] as const) {
-    const existing = await prisma.chamber.findFirst({
-      where: { name, jurisdiction: code as JurisdictionCode },
-    })
-    if (!existing) {
-      await prisma.chamber.create({
-        data: {
-          name,
-          plan: Plan.FREE,
-          jurisdiction: code as JurisdictionCode,
-          jurisdictionConfirmed: true,
-        },
-      })
-      console.log(`Seeded sample chamber: ${name}`)
-    }
-  }
+  await prisma.appConfig.upsert({
+    where: { id: 'current' },
+    create: {
+      id: 'current',
+      configVersion: 2,
+      minAppVersion: '1.0.0',
+      killSwitches: [],
+      limits: { catalog: 'v2-4tier' },
+    },
+    update: { configVersion: 2 },
+  })
+
+  await prisma.cmsSettings.upsert({
+    where: { id: 'current' },
+    create: { id: 'current', ...CMS_DEFAULTS },
+    update: {},
+  })
 
   const adminEmail = process.env.SEED_ADMIN_EMAIL || 'admin@lawyerdiarybd.com'
   const existing = await prisma.user.findUnique({ where: { email: adminEmail } })
   if (!existing) {
-    const chamber = await prisma.chamber.create({
-      data: {
-        name: 'Owner Chamber',
-        plan: Plan.CHAMBER,
-        jurisdiction: JurisdictionCode.BD,
-        jurisdictionConfirmed: true,
-        subscriptionEndsAt: new Date(Date.now() + 365 * 86400000),
-      },
-    })
-    const passwordHash = await bcrypt.hash(
-      process.env.SEED_ADMIN_PASSWORD || 'ChangeMeAdmin!234',
-      12,
-    )
-    await prisma.user.create({
-      data: {
-        name: 'Admin',
-        email: adminEmail,
-        phone: process.env.SEED_ADMIN_PHONE || '+8801700000000',
-        passwordHash,
-        appRole: 'ADMIN',
-        role: 'OWNER',
-        uiLanguage: 'bn',
-        chamberId: chamber.id,
-      },
-    })
-    console.log(`Seeded ADMIN ${adminEmail}`)
+    const adminPassword = process.env.SEED_ADMIN_PASSWORD
+    if (!adminPassword) {
+      console.warn('SEED_ADMIN_PASSWORD missing — skip admin user (use /hfazlul/signup bootstrap)')
+    } else {
+      const passwordHash = await bcrypt.hash(adminPassword, 12)
+      const admin = await prisma.user.create({
+        data: {
+          username: 'admin',
+          name: 'Admin',
+          email: adminEmail,
+          phone: process.env.SEED_ADMIN_PHONE || '+8801700000000',
+          passwordHash,
+          appRole: 'ADMIN',
+          uiLanguage: 'bn',
+          webTrialEndsAt: new Date(Date.now() + 7 * 86400000),
+        },
+      })
+      await prisma.adminUser.create({ data: { userId: admin.id, bootstrap: true } })
+      await prisma.workspace.create({
+        data: {
+          name: 'আমার ডায়েরি',
+          kind: 'PERSONAL',
+          ownerUserId: admin.id,
+          plan: Plan.ADVANCE,
+          planExpiresAt: new Date(Date.now() + 365 * 86400000),
+          memberLimit: extraTeamSeats(Plan.ADVANCE),
+          smsCredits: monthlySmsCredits(Plan.ADVANCE),
+          members: {
+            create: {
+              userId: admin.id,
+              role: 'OWNER',
+              scopeMode: 'ALL',
+              status: 'ACTIVE',
+              joinedAt: new Date(),
+            },
+          },
+        },
+      })
+      console.log(`Seeded ADMIN ${adminEmail} / username=admin`)
+    }
   }
 
-  console.log('Seed complete: packages + jurisdictions (+ admin if missing)')
+  try {
+    const counts = await ingestMasterData()
+    console.log('Master data ingested', counts)
+  } catch (err) {
+    console.warn('Master ingest skipped/failed:', err)
+  }
+
+  try {
+    const bar = await ingestBarCouncilContent()
+    console.log('Bar Council content ingested', bar)
+  } catch (err) {
+    console.warn('Career ingest skipped/failed:', err)
+  }
+
+  try {
+    const hc = await ingestHighCourtContent()
+    console.log('High Court / AD content ingested', hc)
+  } catch (err) {
+    console.warn('HC ingest skipped/failed:', err)
+  }
+
+  try {
+    const bjs = await ingestBjsContent()
+    console.log('BJS content ingested', bjs)
+  } catch (err) {
+    console.warn('BJS ingest skipped/failed:', err)
+  }
+
+  try {
+    await ensureChangelogTriggers()
+    console.log('ChangeLog triggers installed')
+  } catch (err) {
+    console.warn('Trigger install skipped (needs Postgres):', err)
+  }
+
+  console.log('Seed complete')
 }
 
 main()

@@ -1,0 +1,785 @@
+{
+  "batch_id": "BATCH-2026-09-045-HC-WRITTEN-2024-2025-USER",
+  "schema_version": "1.0",
+  "content_version": "2026.09.15",
+  "created_at": "2026-09-15T00:00:00Z",
+  "source": "user-supplied",
+  "content_source": "user-supplied",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "User-supplied HC Permission written 2024 (10 May) and 2025 (24 Oct). AUTHENTIC_REPORTED_QUESTION. Not an official download. No model answers.",
+  "official_past_papers": 0,
+  "asset_count": 12,
+  "assets": [
+    {
+      "content_id": "HC-WQ-US-2024-01",
+      "written_question_id": "HC-WQ-US-2024-01",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2024-01",
+      "order": 101,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2024",
+      "paper_year": "2024",
+      "exam_date": "10 May, 2024",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2024 — প্রশ্ন 1 (Group A CIVIL) · 8",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group A (CIVIL) · 8 নম্বর।\n\nPlaintiff 'P' filed Title Suit No. 10 of 2020 in the 1st Court of the Joint District Judge, Jamalpur on 04.11.2020 against 'A', 'B' and 'C' for specific performance of contract valuing the suit at Tk. 40 crore and stating in the plaint inter alia that the suit land originally belonged to 'C' who on 01.01.2019 entered into a contract for sale of the land in suit to 'P' for a consideration of Tk. 40 crore and on receipt of Tk. 20 crore as earnest money executed a bainapatra with stipulation that 'C' would execute kabala within one year from the date of the contract, that subsequently on 11.11.2019 defendant 'A' and 'B' purchased the same land from 'C' with notice of the earlier contract and that 'P' brought the instant suit after 'C' had denied to execute and register the kabala upon receipt of the balance consideration money tendered. 'C' never appeared and contested the suit. 'A' and 'B' jointly filed a written statement and contested the suit stating inter alia that decree of specific performance of contract could not be passed against them for the reasons that they were not parties to the contract and that decree could not be passed also against 'C' as he had transferred the land in suit to 'A' and 'B'. The learned trial Court relying on the arguments advanced by the defendants dismissed the suit on 03.03.2022 followed by signing of decree on 10.03.2022.\n\nSuggest 'P' the next course of action for remedy against the aforesaid judgment and decree as per relevant laws and prepare a draft to that effect for presentation in the appropriate court.",
+          "answer_outline": [
+            "সুনির্দিষ্ট পালন: আগের বায়না vs পরের কবলা",
+            "নোটিশ ২৭ SRA"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "P-এর বায়না ০১/০১/২০১৯, আংশিক মূল্য; A,B ১১/১১/২০১৯ নোটিশসহ কিনেছে — তৃতীয় পক্ষ নোটিশ থাকলে পালন তাদের বিরুদ্ধেও (SRA ১৮৭৭ ধারা ২৭ প্রসঙ্গ)। মামলা ০৪/১১/২০২০, মূল্য ৪০ কোটি — যৌথ জেলা জজ ঠিক।\nখসড়া রায়/জবাব: বায়না প্রমাণ, প্রস্তুত পালন, নোটিশ; প্রার্থনা দলিল সম্পাদন, দখল, আগের কবলা বাধ্য নয় P-এর অধিকারে। বিবাদী সরল বিশ্বাস দাবি করলে নোটিশ কাটে।",
+          "prep_outline": [
+            "সুনির্দিষ্ট পালন: আগের বায়না vs পরের কবলা",
+            "নোটিশ ২৭ SRA"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2024 — Q1 (Group A)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group A (CIVIL) · 8 নম্বর।\n\nPlaintiff 'P' filed Title Suit No. 10 of 2020 in the 1st Court of the Joint District Judge, Jamalpur on 04.11.2020 against 'A', 'B' and 'C' for specific performance of contract valuing the suit at Tk. 40 crore and stating in the plaint inter alia that the suit land originally belonged to 'C' who on 01.01.2019 entered into a contract for sale of the land in suit to 'P' for a consideration of Tk. 40 crore and on receipt of Tk. 20 crore as earnest money executed a bainapatra with stipulation that 'C' would execute kabala within one year from the date of the contract, that subsequently on 11.11.2019 defendant 'A' and 'B' purchased the same land from 'C' with notice of the earlier contract and that 'P' brought the instant suit after 'C' had denied to execute and register the kabala upon receipt of the balance consideration money tendered. 'C' never appeared and contested the suit. 'A' and 'B' jointly filed a written statement and contested the suit stating inter alia that decree of specific performance of contract could not be passed against them for the reasons that they were not parties to the contract and that decree could not be passed also against 'C' as he had transferred the land in suit to 'A' and 'B'. The learned trial Court relying on the arguments advanced by the defendants dismissed the suit on 03.03.2022 followed by signing of decree on 10.03.2022.\n\nSuggest 'P' the next course of action for remedy against the aforesaid judgment and decree as per relevant laws and prepare a draft to that effect for presentation in the appropriate court.",
+          "answer_outline": [
+            "সুনির্দিষ্ট পালন: আগের বায়না vs পরের কবলা",
+            "নোটিশ ২৭ SRA"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "P-এর বায়না ০১/০১/২০১৯, আংশিক মূল্য; A,B ১১/১১/২০১৯ নোটিশসহ কিনেছে — তৃতীয় পক্ষ নোটিশ থাকলে পালন তাদের বিরুদ্ধেও (SRA ১৮৭৭ ধারা ২৭ প্রসঙ্গ)। মামলা ০৪/১১/২০২০, মূল্য ৪০ কোটি — যৌথ জেলা জজ ঠিক।\nখসড়া রায়/জবাব: বায়না প্রমাণ, প্রস্তুত পালন, নোটিশ; প্রার্থনা দলিল সম্পাদন, দখল, আগের কবলা বাধ্য নয় P-এর অধিকারে। বিবাদী সরল বিশ্বাস দাবি করলে নোটিশ কাটে।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2024-02",
+      "written_question_id": "HC-WQ-US-2024-02",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2024-02",
+      "order": 102,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2024",
+      "paper_year": "2024",
+      "exam_date": "10 May, 2024",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2024 — প্রশ্ন 2 (Group A CIVIL OR) · 8",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group A (CIVIL) · 8 নম্বর · OR।\n\nPlaintiff 'P' filed Title Suit No. 173 of 2018 in the 1st Court of the Joint District Judge, Kushtia for permanent injunction valuing the relief at Tk. 40 crore and the suit was decreed on 30.01.2020. Against the said decree Title Appeal No. 50 of 2020 was preferred and the Appellate Court on 05.05.2023 allowed the appeal and setting aside the impugned judgment and decree sent the suit back on remand to the trial Court with direction for taking fresh evidence to prove the 'deed of gift' which was the basis of 'P's claim. Thereafter, in the trial Court 'P' filed an application for amending the prayer portion of the plaint to incorporate two more reliefs i.e., declaration of title and confirmation of possession. Defendant 'D' objected to the application on the plea that the proposed amendment would change the nature and character of the suit. The learned Joint District Judge vide Order dated 02.08.2023 rejected the application for amendment accepting the arguments advanced by the defendant.\n\nAdvise the plaintiff about the next course of action against aforesaid order according to the relevant laws and prepare a brief for presentation in the appropriate Court.",
+          "answer_outline": [
+            "রিমান্ডের পর আরজি সংশোধন O.6 r.17",
+            "নিষেধ থেকে স্বত্ব+দখল — প্রকৃতি বদল"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "স্থায়ী নিষেধাজ্ঞার ডিক্রি আপিল রিমান্ড; ট্রায়ালে স্বত্ব ঘোষণা ও দখল যোগ — O.6 r.17 বিচার শুরুর পর সংশোধন কঠিন (২০০৩ সংশোধনী সতর্কতা) তবে রিমান্ড “নতুন সাক্ষ্য” দিলে আদালত অনুমতি দিতে পারেন যদি বিবাদীর ক্ষতি জামানতে মেটে। সম্পূর্ণ নতুন মামলাও বিকল্প।\nপরামর্শ: সংশোধন মঞ্জুরের শর্ত — তায়দাদ/কোর্টফি বাড়ানো; নামঞ্জুর হলে পৃথক স্বত্ব মোকদ্দমা, নিষেধাজ্ঞা অংশ চলুক।",
+          "prep_outline": [
+            "রিমান্ডের পর আরজি সংশোধন O.6 r.17",
+            "নিষেধ থেকে স্বত্ব+দখল — প্রকৃতি বদল"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2024 — Q2 (Group A OR)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group A (CIVIL) · 8 নম্বর · OR।\n\nPlaintiff 'P' filed Title Suit No. 173 of 2018 in the 1st Court of the Joint District Judge, Kushtia for permanent injunction valuing the relief at Tk. 40 crore and the suit was decreed on 30.01.2020. Against the said decree Title Appeal No. 50 of 2020 was preferred and the Appellate Court on 05.05.2023 allowed the appeal and setting aside the impugned judgment and decree sent the suit back on remand to the trial Court with direction for taking fresh evidence to prove the 'deed of gift' which was the basis of 'P's claim. Thereafter, in the trial Court 'P' filed an application for amending the prayer portion of the plaint to incorporate two more reliefs i.e., declaration of title and confirmation of possession. Defendant 'D' objected to the application on the plea that the proposed amendment would change the nature and character of the suit. The learned Joint District Judge vide Order dated 02.08.2023 rejected the application for amendment accepting the arguments advanced by the defendant.\n\nAdvise the plaintiff about the next course of action against aforesaid order according to the relevant laws and prepare a brief for presentation in the appropriate Court.",
+          "answer_outline": [
+            "রিমান্ডের পর আরজি সংশোধন O.6 r.17",
+            "নিষেধ থেকে স্বত্ব+দখল — প্রকৃতি বদল"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "স্থায়ী নিষেধাজ্ঞার ডিক্রি আপিল রিমান্ড; ট্রায়ালে স্বত্ব ঘোষণা ও দখল যোগ — O.6 r.17 বিচার শুরুর পর সংশোধন কঠিন (২০০৩ সংশোধনী সতর্কতা) তবে রিমান্ড “নতুন সাক্ষ্য” দিলে আদালত অনুমতি দিতে পারেন যদি বিবাদীর ক্ষতি জামানতে মেটে। সম্পূর্ণ নতুন মামলাও বিকল্প।\nপরামর্শ: সংশোধন মঞ্জুরের শর্ত — তায়দাদ/কোর্টফি বাড়ানো; নামঞ্জুর হলে পৃথক স্বত্ব মোকদ্দমা, নিষেধাজ্ঞা অংশ চলুক।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2024-03",
+      "written_question_id": "HC-WQ-US-2024-03",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2024-03",
+      "order": 103,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2024",
+      "paper_year": "2024",
+      "exam_date": "10 May, 2024",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2024 — প্রশ্ন 3 (Group B CRIMINAL) · 8",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group B (CRIMINAL) · 8 নম্বর।\n\n'F', father of 'X', lodged the FIR with Jhalakathi Sadar Police Station stating as follows: On October 26, 2014 in the afternoon 'X' came to catch fish in the tank owned by 'A'. Then 'B', the brother of 'A' protested the said attempt and 'X' went away after altercation with 'B'. At 6.30 pm 'X', 'Y', 'Z' and 5 others came to the place of occurrence to catch fish. 'B' again protested them and raised alarm to call his brother 'A'. Thereafter, 'A' with his partymen 'C' and 'D' attacked 'X' and his men. 'A' inflicting blows with Ramdao on the head of 'X'. 'Y', 'Z' and others proceeded to rescue 'X'. Then 'B' struck 'Y' on the middle of his head with curved knife and 'C' and 'D' dealt lathi blows indiscriminately on both legs and hands of 'Z'. The partymen of 'X' witnessed the whole incident. Afterwards the victims were taken to the nearest hospital wherein the doctor on duty upon examination declared 'X' dead and finding injuries provided necessary medical treatment to 'Y' and 'Z'. After completion of investigation police submitted charge sheet and accordingly charges were framed against 'A', 'B', 'C' and 'D' under sections 34, 147, 148, 149, 323, 324, 307, 326 and 302 of the Penal Code, 1860. During trial the prosecution produced oral, documentary and medical evidences to support the charges levelled against the accused. The learned Additional Sessions Judge, Jhalakathi on 14.06.2022 with findings inter alia that charges against the accused got well proved in the evidences, facts and circumstances of the case, convicted all 'A', 'B', 'C' and 'D' under sections 149, 307, 323 and 302 read with section 34 of the Penal Code, 1860 and sentenced each of them to death and fine.\n\nSuggest convict 'A', 'B', 'C' and 'D' the next course of action for remedy against the aforesaid judgment and order of conviction and sentence as per relevant laws and prepare a brief for presentation in the appropriate court.",
+          "answer_outline": [
+            "রামদায় মাথায় আঘাত — ৩০২/৩৪/১৪৯",
+            "মাছ ধরা নিয়ে দলাদলি"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "পুকুরে মাছ, দুই দল, রামদায় X-এর মাথা, ছুরি Y-এর মাথা — গুরুতর, সম্ভাব্য ৩০০ চতুর্থ/প্রথম। সাধারণ উদ্দেশ্য ১৪৯, ৩৪।\nরায় কাঠামো: চার্জ ৩০২/৩২৬/৩৪/১৪৯; আত্মরক্ষা ৯৬–১০৬ দুর্বল যদি আক্রমণকারী তারাই। সাজা ব্যক্তিগত আঘাত অনুসারে পৃথক করা যায়।",
+          "prep_outline": [
+            "রামদায় মাথায় আঘাত — ৩০২/৩৪/১৪৯",
+            "মাছ ধরা নিয়ে দলাদলি"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2024 — Q3 (Group B)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group B (CRIMINAL) · 8 নম্বর।\n\n'F', father of 'X', lodged the FIR with Jhalakathi Sadar Police Station stating as follows: On October 26, 2014 in the afternoon 'X' came to catch fish in the tank owned by 'A'. Then 'B', the brother of 'A' protested the said attempt and 'X' went away after altercation with 'B'. At 6.30 pm 'X', 'Y', 'Z' and 5 others came to the place of occurrence to catch fish. 'B' again protested them and raised alarm to call his brother 'A'. Thereafter, 'A' with his partymen 'C' and 'D' attacked 'X' and his men. 'A' inflicting blows with Ramdao on the head of 'X'. 'Y', 'Z' and others proceeded to rescue 'X'. Then 'B' struck 'Y' on the middle of his head with curved knife and 'C' and 'D' dealt lathi blows indiscriminately on both legs and hands of 'Z'. The partymen of 'X' witnessed the whole incident. Afterwards the victims were taken to the nearest hospital wherein the doctor on duty upon examination declared 'X' dead and finding injuries provided necessary medical treatment to 'Y' and 'Z'. After completion of investigation police submitted charge sheet and accordingly charges were framed against 'A', 'B', 'C' and 'D' under sections 34, 147, 148, 149, 323, 324, 307, 326 and 302 of the Penal Code, 1860. During trial the prosecution produced oral, documentary and medical evidences to support the charges levelled against the accused. The learned Additional Sessions Judge, Jhalakathi on 14.06.2022 with findings inter alia that charges against the accused got well proved in the evidences, facts and circumstances of the case, convicted all 'A', 'B', 'C' and 'D' under sections 149, 307, 323 and 302 read with section 34 of the Penal Code, 1860 and sentenced each of them to death and fine.\n\nSuggest convict 'A', 'B', 'C' and 'D' the next course of action for remedy against the aforesaid judgment and order of conviction and sentence as per relevant laws and prepare a brief for presentation in the appropriate court.",
+          "answer_outline": [
+            "রামদায় মাথায় আঘাত — ৩০২/৩৪/১৪৯",
+            "মাছ ধরা নিয়ে দলাদলি"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "পুকুরে মাছ, দুই দল, রামদায় X-এর মাথা, ছুরি Y-এর মাথা — গুরুতর, সম্ভাব্য ৩০০ চতুর্থ/প্রথম। সাধারণ উদ্দেশ্য ১৪৯, ৩৪।\nরায় কাঠামো: চার্জ ৩০২/৩২৬/৩৪/১৪৯; আত্মরক্ষা ৯৬–১০৬ দুর্বল যদি আক্রমণকারী তারাই। সাজা ব্যক্তিগত আঘাত অনুসারে পৃথক করা যায়।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2024-04",
+      "written_question_id": "HC-WQ-US-2024-04",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2024-04",
+      "order": 104,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2024",
+      "paper_year": "2024",
+      "exam_date": "10 May, 2024",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2024 — প্রশ্ন 4 (Group B CRIMINAL OR) · 8",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group B (CRIMINAL) · 8 নম্বর · OR।\n\n'A' lodged a complaint against 'X' on 25.08.2020 in the Sadar Court of the Judicial Magistrate of the 1st Class, Faridpur under sections 406 and 420 of the Penal Code, 1860 which was registered as CR Case No. 355 of 2020 alleging, inter alia, that 'A' entered into a contract with 'X' on 15.04.2020 for supply of certain building materials of the price of Tk. 5 crore to 'X' who had undertaken a construction work of Faridpur Govt. College as a contractor, that 'A' supplied the building materials on 16.06.2020 and submitted a bill for payment of the price, that on 16.07.2020 'X' received Tk. 6 crore from the college authority but did not pay the bill submitted by 'A', that on 30.07.2020 'X' totally denied his obligation to make payment of the bill amount due to 'A' and thereby he cheated 'A'. On 28.09.2020 fixed for hearing of the case 'A' having failed to appear in the Court the concerned trial Magistrate acquitted 'X' under section 247 of the Code of Criminal Procedure, 1898. 'A' lodged second complaint against 'X' before the same Magistrate Court on 02.10.2020 on self-same allegations which was registered as CR Case No. 360 of 2020 and the Magistrate in that case after recording the statements of 'A' examining him under section 200 of the Code of Criminal Procedure, 1898 again took cognizance of the offence against 'X' under sections 406 and 420 of the Penal Code, 1860 followed by issuance of warrant of arrest against 'X'.\n\n'X' wants to move appropriate Court against the aforesaid order of cognizance passed in CR Case No.360 of 2020. Advise 'X' about necessary legal course of action mentioning relevant laws in this regard and prepare a brief accordingly.",
+          "answer_outline": [
+            "সরবরাহ বিল অনাদায় — ৪২০/৪০৬ সন্দেহজনক",
+            "দেওয়ানি ঋণ; ৫৬১ক"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "ঠিকাদার X কলেজ থেকে টাকা পেয়েও A-এর মালের বিল দেননি — চুক্তির পরবর্তী খেলাপি, শুরুতে প্রতারণার অভিপ্রায় স্পষ্ট নয়। ৪০৬ আস্থাভঙ্গ চাই; ব্যবসায়িক দেনা দেওয়ানি।\nপ্রতিকার X: ৫৬১ক কোয়াশ / ২৪১ক অব্যাহতি। A: অর্থ আদালত/দেওয়ানি মোকদ্দমা।",
+          "prep_outline": [
+            "সরবরাহ বিল অনাদায় — ৪২০/৪০৬ সন্দেহজনক",
+            "দেওয়ানি ঋণ; ৫৬১ক"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2024 — Q4 (Group B OR)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group B (CRIMINAL) · 8 নম্বর · OR।\n\n'A' lodged a complaint against 'X' on 25.08.2020 in the Sadar Court of the Judicial Magistrate of the 1st Class, Faridpur under sections 406 and 420 of the Penal Code, 1860 which was registered as CR Case No. 355 of 2020 alleging, inter alia, that 'A' entered into a contract with 'X' on 15.04.2020 for supply of certain building materials of the price of Tk. 5 crore to 'X' who had undertaken a construction work of Faridpur Govt. College as a contractor, that 'A' supplied the building materials on 16.06.2020 and submitted a bill for payment of the price, that on 16.07.2020 'X' received Tk. 6 crore from the college authority but did not pay the bill submitted by 'A', that on 30.07.2020 'X' totally denied his obligation to make payment of the bill amount due to 'A' and thereby he cheated 'A'. On 28.09.2020 fixed for hearing of the case 'A' having failed to appear in the Court the concerned trial Magistrate acquitted 'X' under section 247 of the Code of Criminal Procedure, 1898. 'A' lodged second complaint against 'X' before the same Magistrate Court on 02.10.2020 on self-same allegations which was registered as CR Case No. 360 of 2020 and the Magistrate in that case after recording the statements of 'A' examining him under section 200 of the Code of Criminal Procedure, 1898 again took cognizance of the offence against 'X' under sections 406 and 420 of the Penal Code, 1860 followed by issuance of warrant of arrest against 'X'.\n\n'X' wants to move appropriate Court against the aforesaid order of cognizance passed in CR Case No.360 of 2020. Advise 'X' about necessary legal course of action mentioning relevant laws in this regard and prepare a brief accordingly.",
+          "answer_outline": [
+            "সরবরাহ বিল অনাদায় — ৪২০/৪০৬ সন্দেহজনক",
+            "দেওয়ানি ঋণ; ৫৬১ক"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "ঠিকাদার X কলেজ থেকে টাকা পেয়েও A-এর মালের বিল দেননি — চুক্তির পরবর্তী খেলাপি, শুরুতে প্রতারণার অভিপ্রায় স্পষ্ট নয়। ৪০৬ আস্থাভঙ্গ চাই; ব্যবসায়িক দেনা দেওয়ানি।\nপ্রতিকার X: ৫৬১ক কোয়াশ / ২৪১ক অব্যাহতি। A: অর্থ আদালত/দেওয়ানি মোকদ্দমা।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2024-05",
+      "written_question_id": "HC-WQ-US-2024-05",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2024-05",
+      "order": 105,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2024",
+      "paper_year": "2024",
+      "exam_date": "10 May, 2024",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2024 — প্রশ্ন 5 (Group C WRIT) · 9",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group C (WRIT) · 9 নম্বর।\n\nBoth 'X' and 'Y' obtained Honours and Masters Degree from universities and thus having requisite qualifications got appointment on 15.06.2004 as Lecturers of 'L Mohila College', Dhaka. 'Z' also got appointment as Demonstrator (Physics) on 16.07.2005 in the said College. Accordingly, 'X', 'Y' and 'Z' have been discharging their respective duties since their appointment. 'X' and 'Y' got promotion to the post of Assistant Professor on 15.06.2010 and 'Z' got promotion to the post of Lecturer on 16.07.2011. 'L Mohila College' was affiliated with the National University established under the National University Act, 1992. As 'X', 'Y' and 'Z' were regular and permanent teachers of 'L Mohila College' the Governing Body of the College took decision on 23.12.2016 to pay salary as per National Pay Scale, 2015 and accordingly 'X', 'Y' and 'Z' were receiving their salaries as per National Pay Scale, 2015. The nationalization process of 'L Mohila College' started in the year 2020 under the Sarkari College Shikkhok O Karmachari Attikoron Bidhimala, 2018. After the College was nationalized by the Ministry of Education in pursuance to Notification bearing Memo No.37 dated 04.01.2022 with effect from 31.12.2021 the service of teachers and employees of the College was placed under the process for absorption. Although 'X' and 'Z' had been drawing their salary according to their designated posts and entitlements, the College Authority, without following the existing provisions of law, proposed and compelled 'X' and 'Y' to receive salary in the post of Lecturer and 'Z' to receive salary in the post of Demonstrator from July, 2023. Then 'X', 'Y' and 'Z' applied on 12.12.2023 to the Director General, Directorate of Secondary and Higher Secondary Education, Ministry of Education and Principal of the College for reconsideration of the decision regarding their salary emphasizing on the important aspects of their prolonged services, arbitrariness in degradation of their post and salary together with express flouting of their fundamental rights guaranteed by the Constitution. The Director General, Directorate of Secondary and Higher Secondary Education and the Principal, 'L Mohila College', Dhaka replied that 'X' and 'Y' were eligible for absorption only to the post of Lecturer while 'Z' was eligible for absorption as Demonstrator and since the absorbed teachers had scope for promotion, they would be promoted to higher posts subject to vacancy. In this context, 'X', 'Y' and 'Z' approached you for efficacious legal remedies.\n\nAdvice on the remedies may be sought and the manner of obtaining those remedies against the authorities concerned as per relevant laws. Draft a petition for presentation in the appropriate court accordingly.",
+          "answer_outline": [
+            "জাতীয়করণ/অন্তর্ভুক্তি: পদ ও বেতন",
+            "রিট ম্যান্ডামাস শিক্ষা মন্ত্রণালয়"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "কলেজ জাতীয়করণ ২০২১–২২, X,Y সহকারী অধ্যাপক, Z প্রদর্শক থেকে প্রভাষক। অন্তর্ভুক্তি বিধিমালা ২০১৮ অনুসারে পদ ও জ্যেষ্ঠতা। যদি কর্তৃপক্ষ নিম্নপদে ধরেন — অধিকারহরণ।\nরিট: শিক্ষকগণ বনাম শিক্ষা সচিব, জাতীয় বিশ্ববিদ্যালয়, অধ্যক্ষ। প্রার্থনা: পূর্ব পদ ও জাতীয় স্কেল অনুসারে অন্তর্ভুক্তি, বকেয়া। স্টেম কাটা — বেতন বৈষম্য অংশ পূর্ণ করে লিখুন।",
+          "prep_outline": [
+            "জাতীয়করণ/অন্তর্ভুক্তি: পদ ও বেতন",
+            "রিট ম্যান্ডামাস শিক্ষা মন্ত্রণালয়"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2024 — Q5 (Group C)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group C (WRIT) · 9 নম্বর।\n\nBoth 'X' and 'Y' obtained Honours and Masters Degree from universities and thus having requisite qualifications got appointment on 15.06.2004 as Lecturers of 'L Mohila College', Dhaka. 'Z' also got appointment as Demonstrator (Physics) on 16.07.2005 in the said College. Accordingly, 'X', 'Y' and 'Z' have been discharging their respective duties since their appointment. 'X' and 'Y' got promotion to the post of Assistant Professor on 15.06.2010 and 'Z' got promotion to the post of Lecturer on 16.07.2011. 'L Mohila College' was affiliated with the National University established under the National University Act, 1992. As 'X', 'Y' and 'Z' were regular and permanent teachers of 'L Mohila College' the Governing Body of the College took decision on 23.12.2016 to pay salary as per National Pay Scale, 2015 and accordingly 'X', 'Y' and 'Z' were receiving their salaries as per National Pay Scale, 2015. The nationalization process of 'L Mohila College' started in the year 2020 under the Sarkari College Shikkhok O Karmachari Attikoron Bidhimala, 2018. After the College was nationalized by the Ministry of Education in pursuance to Notification bearing Memo No.37 dated 04.01.2022 with effect from 31.12.2021 the service of teachers and employees of the College was placed under the process for absorption. Although 'X' and 'Z' had been drawing their salary according to their designated posts and entitlements, the College Authority, without following the existing provisions of law, proposed and compelled 'X' and 'Y' to receive salary in the post of Lecturer and 'Z' to receive salary in the post of Demonstrator from July, 2023. Then 'X', 'Y' and 'Z' applied on 12.12.2023 to the Director General, Directorate of Secondary and Higher Secondary Education, Ministry of Education and Principal of the College for reconsideration of the decision regarding their salary emphasizing on the important aspects of their prolonged services, arbitrariness in degradation of their post and salary together with express flouting of their fundamental rights guaranteed by the Constitution. The Director General, Directorate of Secondary and Higher Secondary Education and the Principal, 'L Mohila College', Dhaka replied that 'X' and 'Y' were eligible for absorption only to the post of Lecturer while 'Z' was eligible for absorption as Demonstrator and since the absorbed teachers had scope for promotion, they would be promoted to higher posts subject to vacancy. In this context, 'X', 'Y' and 'Z' approached you for efficacious legal remedies.\n\nAdvice on the remedies may be sought and the manner of obtaining those remedies against the authorities concerned as per relevant laws. Draft a petition for presentation in the appropriate court accordingly.",
+          "answer_outline": [
+            "জাতীয়করণ/অন্তর্ভুক্তি: পদ ও বেতন",
+            "রিট ম্যান্ডামাস শিক্ষা মন্ত্রণালয়"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "কলেজ জাতীয়করণ ২০২১–২২, X,Y সহকারী অধ্যাপক, Z প্রদর্শক থেকে প্রভাষক। অন্তর্ভুক্তি বিধিমালা ২০১৮ অনুসারে পদ ও জ্যেষ্ঠতা। যদি কর্তৃপক্ষ নিম্নপদে ধরেন — অধিকারহরণ।\nরিট: শিক্ষকগণ বনাম শিক্ষা সচিব, জাতীয় বিশ্ববিদ্যালয়, অধ্যক্ষ। প্রার্থনা: পূর্ব পদ ও জাতীয় স্কেল অনুসারে অন্তর্ভুক্তি, বকেয়া। স্টেম কাটা — বেতন বৈষম্য অংশ পূর্ণ করে লিখুন।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2024-06",
+      "written_question_id": "HC-WQ-US-2024-06",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2024-06",
+      "order": 106,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2024",
+      "paper_year": "2024",
+      "exam_date": "10 May, 2024",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2024 — প্রশ্ন 6 (Group C WRIT OR) · 9",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group C (WRIT) · 9 নম্বর · OR।\n\nRecently, a National daily newspaper having wide circulation, has published a report that now a days these are being noticed that elephants are being abused in brutal manners in the name of training for various forms of entertainment such as circuses, riding on elephants' backs, advertisements, weddings, celebrations at commercial and political establishments and engaging them in extortion activities keeping them under human control. The licensing, by the Forest Department, of elephants for use in private circuses is also abuse of elephants. In circuses and magic shows, baby elephants are mandatorily separated from their mothers and trained through relentless cruelty. During training, these elephants are hit with a metal hook, forced to perform actions that cause harm to various vulnerable parts of their bodies and can even endanger the lives of humans, including the audience. Notably, it is a common practice in Bangladesh that nearly half of its 200-elephant population are kept in captivity and employed in circuses or used for begging. Abused elephants are expressing their inner anger and pain through causing incidents leading to loss of lives and property in localities. Many lives have been lost while trying to capture elephants for such purposes. These are violation of laws. Furthermore, elephants are endangered animals and exploiting them for entertainment purposes are both a crime and a moral dilemma. Community for Animal Welfare Foundation (CAWF) has repeatedly appealed to the Forest Department seeking effective redress to the issues. The Foundation also formed human chain in front of the Forest Department office twice. The Foundation also highlighted on the endangered status of the Asian elephant according to the IUCN Red List. Despite various promises then from the Forest Department, no effective measures have been taken and in spite of repeated letters urging actions regarding the abused elephants, no appropriate response has been made. Recently the plight of the captive elephants was highlighted when a young elephant, used for begging in the streets, was killed by a train, resulting in a public outrage. After that incident on 30.12.2023 CAWF issued notice to the Forest Department, Ministry of Environment, Forest and Climate for complying with the obligation of Bangladesh Government to ensure constitutional right to life of animals and demanding justice. In reply, the Forest Department has advanced arguments that elephants are used under license governed by laws of Bangladesh. Thus, the Department did not stop licensing elephants for use in circuses and other private purposes. CAWF has approached you for legal remedy.\n\nAdvice on the remedies may be sought and the manner of obtaining those remedies in the aforesaid situation as per relevant laws. Draft a petition for presentation in the appropriate court accordingly.",
+          "answer_outline": [
+            "হাতি নির্যাতন: বন্যপ্রাণী আইন, পিআইএল ১০২",
+            "সার্কাস লাইসেন্স রদ"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "জনস্বার্থ রিট। বন্যপ্রাণী (সংরক্ষণ ও নিরাপত্তা) আইন, নিষ্ঠুরতা নিবারণ, সংবিধান ১৮ক পরিবেশ। প্রার্থনা: ব্যক্তিগত সার্কাসে হাতি নিষেধ, বন বিভাগের লাইসেন্স নীতি রদ/সংশোধন, বাচ্চা হাতি মা থেকে না আলাদা, উদ্ধার ও অভয়ারণ্য, মামলা দায়েরের নির্দেশ। আদালত নীতিতে সতর্ক তবে নিষ্ঠুরতা ও বিপন্ন প্রজাতি সংরক্ষণে নির্দেশ দিতে পারেন।",
+          "prep_outline": [
+            "হাতি নির্যাতন: বন্যপ্রাণী আইন, পিআইএল ১০২",
+            "সার্কাস লাইসেন্স রদ"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2024 — Q6 (Group C OR)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 10 May, 2024। Group C (WRIT) · 9 নম্বর · OR।\n\nRecently, a National daily newspaper having wide circulation, has published a report that now a days these are being noticed that elephants are being abused in brutal manners in the name of training for various forms of entertainment such as circuses, riding on elephants' backs, advertisements, weddings, celebrations at commercial and political establishments and engaging them in extortion activities keeping them under human control. The licensing, by the Forest Department, of elephants for use in private circuses is also abuse of elephants. In circuses and magic shows, baby elephants are mandatorily separated from their mothers and trained through relentless cruelty. During training, these elephants are hit with a metal hook, forced to perform actions that cause harm to various vulnerable parts of their bodies and can even endanger the lives of humans, including the audience. Notably, it is a common practice in Bangladesh that nearly half of its 200-elephant population are kept in captivity and employed in circuses or used for begging. Abused elephants are expressing their inner anger and pain through causing incidents leading to loss of lives and property in localities. Many lives have been lost while trying to capture elephants for such purposes. These are violation of laws. Furthermore, elephants are endangered animals and exploiting them for entertainment purposes are both a crime and a moral dilemma. Community for Animal Welfare Foundation (CAWF) has repeatedly appealed to the Forest Department seeking effective redress to the issues. The Foundation also formed human chain in front of the Forest Department office twice. The Foundation also highlighted on the endangered status of the Asian elephant according to the IUCN Red List. Despite various promises then from the Forest Department, no effective measures have been taken and in spite of repeated letters urging actions regarding the abused elephants, no appropriate response has been made. Recently the plight of the captive elephants was highlighted when a young elephant, used for begging in the streets, was killed by a train, resulting in a public outrage. After that incident on 30.12.2023 CAWF issued notice to the Forest Department, Ministry of Environment, Forest and Climate for complying with the obligation of Bangladesh Government to ensure constitutional right to life of animals and demanding justice. In reply, the Forest Department has advanced arguments that elephants are used under license governed by laws of Bangladesh. Thus, the Department did not stop licensing elephants for use in circuses and other private purposes. CAWF has approached you for legal remedy.\n\nAdvice on the remedies may be sought and the manner of obtaining those remedies in the aforesaid situation as per relevant laws. Draft a petition for presentation in the appropriate court accordingly.",
+          "answer_outline": [
+            "হাতি নির্যাতন: বন্যপ্রাণী আইন, পিআইএল ১০২",
+            "সার্কাস লাইসেন্স রদ"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "জনস্বার্থ রিট। বন্যপ্রাণী (সংরক্ষণ ও নিরাপত্তা) আইন, নিষ্ঠুরতা নিবারণ, সংবিধান ১৮ক পরিবেশ। প্রার্থনা: ব্যক্তিগত সার্কাসে হাতি নিষেধ, বন বিভাগের লাইসেন্স নীতি রদ/সংশোধন, বাচ্চা হাতি মা থেকে না আলাদা, উদ্ধার ও অভয়ারণ্য, মামলা দায়েরের নির্দেশ। আদালত নীতিতে সতর্ক তবে নিষ্ঠুরতা ও বিপন্ন প্রজাতি সংরক্ষণে নির্দেশ দিতে পারেন।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2025-01",
+      "written_question_id": "HC-WQ-US-2025-01",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2025-01",
+      "order": 111,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_date": "24 October, 2025",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2025 — প্রশ্ন 1 (Group A CIVIL) · 8",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group A (CIVIL) · 8 নম্বর।\n\nThe plaintiff 'A' filed the Title Suit No. 20 of 2025 before the 5th Joint District Judge Court, Dhaka valuing the suit at Tk. 30 Crore on 'Ga' scheduled land. The defendant 'X' filed the application for rejection of the plaint under Order 7 Rule 11 of the Code of Civil Procedure, 1908, stating that 'X' earlier instituted Title Suit No. 5 of 2015 in the same court in respect of 'Ka' scheduled land and that was decreed ex parte against 'A'. Thereafter 'A' filed a Misc. Case No. 9 of 2016 under Order 9 Rule 13 for setting aside the ex parte decree, but that Misc. Case was disallowed and that order was upheld up to the Appellate Division, and as such the present Title Suit No. 20 of 2025 is barred by the principle of res judicata. 'A's argument is that in the Title Suit No. 20 of 2025 additional lands have been included alongside the 'Ka' schedule land, creating a new schedule 'Ga', and also some more individuals have been added as parties. The plaintiff also prayed for setting aside the earlier ex parte decree of Title Suit 5 of 2015. On the other hand, the defendant 'X' claims that the Appellate Division upheld the ex parte decree of Title Suit 5 of 2015, so it can't be challenged in the present Title Suit No. 20 of 2025. He has also pointed out that in Title Suit No. 20 of 2025 'Ga' schedule land includes the 'Ka' schedule land, which was also the subject matter of Title Suit 5 of 2015. The learned Joint District Judge has disallowed the application for rejection of the plaint under Order 7 Rule 11 filed by Defendant 'X' of the Title Suit No. 20 of 2025.\n\nIn this context, Defendant 'X' approached you for legal remedy. Advice 'X' about necessary legal course of action mentioning relevant laws in this regard and prepare a brief accordingly.",
+          "answer_outline": [
+            "রেস জুডিকাটা ধারা ১১ — একই সম্পত্তি/পক্ষ",
+            "গা তফসিলে কা যোগে এড়ানো যায় না",
+            "আপিল বিভাগের ডিক্রি আক্রমণ r.11-এ খারিজ"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "২০১৫ একতরফা ডিক্রি, ৯ বিধি ১৩ নামঞ্জুর, আপিল বিভাগ পর্যন্ত বহাল। ২০২৫ মোকদ্দমায় গা তফসিলে কা যুক্ত ও নতুন পক্ষ — ধারা ১১ ব্যাখ্যা ৪: যা উঠানো উচিত ছিল। আপিল বিভাগের ডিক্রি ঘোষণা করে রদ চাওয়া দেওয়ানি আদালতের এখতিয়ারহীন।\nr.11(ঘ): বারড/এখতিয়ারহীন প্রার্থনা। খারিজ যুক্তিসঙ্গত, অন্তত কা অংশ ও “ডিক্রি রদ” প্রার্থনা। নতুন জমি আলাদা তফসিল হলে সে অংশ বাঁচতে পারে — আদালত আংশিক খারিজ করতে পারেন।",
+          "prep_outline": [
+            "রেস জুডিকাটা ধারা ১১ — একই সম্পত্তি/পক্ষ",
+            "গা তফসিলে কা যোগে এড়ানো যায় না",
+            "আপিল বিভাগের ডিক্রি আক্রমণ r.11-এ খারিজ"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2025 — Q1 (Group A)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group A (CIVIL) · 8 নম্বর।\n\nThe plaintiff 'A' filed the Title Suit No. 20 of 2025 before the 5th Joint District Judge Court, Dhaka valuing the suit at Tk. 30 Crore on 'Ga' scheduled land. The defendant 'X' filed the application for rejection of the plaint under Order 7 Rule 11 of the Code of Civil Procedure, 1908, stating that 'X' earlier instituted Title Suit No. 5 of 2015 in the same court in respect of 'Ka' scheduled land and that was decreed ex parte against 'A'. Thereafter 'A' filed a Misc. Case No. 9 of 2016 under Order 9 Rule 13 for setting aside the ex parte decree, but that Misc. Case was disallowed and that order was upheld up to the Appellate Division, and as such the present Title Suit No. 20 of 2025 is barred by the principle of res judicata. 'A's argument is that in the Title Suit No. 20 of 2025 additional lands have been included alongside the 'Ka' schedule land, creating a new schedule 'Ga', and also some more individuals have been added as parties. The plaintiff also prayed for setting aside the earlier ex parte decree of Title Suit 5 of 2015. On the other hand, the defendant 'X' claims that the Appellate Division upheld the ex parte decree of Title Suit 5 of 2015, so it can't be challenged in the present Title Suit No. 20 of 2025. He has also pointed out that in Title Suit No. 20 of 2025 'Ga' schedule land includes the 'Ka' schedule land, which was also the subject matter of Title Suit 5 of 2015. The learned Joint District Judge has disallowed the application for rejection of the plaint under Order 7 Rule 11 filed by Defendant 'X' of the Title Suit No. 20 of 2025.\n\nIn this context, Defendant 'X' approached you for legal remedy. Advice 'X' about necessary legal course of action mentioning relevant laws in this regard and prepare a brief accordingly.",
+          "answer_outline": [
+            "রেস জুডিকাটা ধারা ১১ — একই সম্পত্তি/পক্ষ",
+            "গা তফসিলে কা যোগে এড়ানো যায় না",
+            "আপিল বিভাগের ডিক্রি আক্রমণ r.11-এ খারিজ"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "২০১৫ একতরফা ডিক্রি, ৯ বিধি ১৩ নামঞ্জুর, আপিল বিভাগ পর্যন্ত বহাল। ২০২৫ মোকদ্দমায় গা তফসিলে কা যুক্ত ও নতুন পক্ষ — ধারা ১১ ব্যাখ্যা ৪: যা উঠানো উচিত ছিল। আপিল বিভাগের ডিক্রি ঘোষণা করে রদ চাওয়া দেওয়ানি আদালতের এখতিয়ারহীন।\nr.11(ঘ): বারড/এখতিয়ারহীন প্রার্থনা। খারিজ যুক্তিসঙ্গত, অন্তত কা অংশ ও “ডিক্রি রদ” প্রার্থনা। নতুন জমি আলাদা তফসিল হলে সে অংশ বাঁচতে পারে — আদালত আংশিক খারিজ করতে পারেন।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2025-02",
+      "written_question_id": "HC-WQ-US-2025-02",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2025-02",
+      "order": 112,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_date": "24 October, 2025",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "A",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2025 — প্রশ্ন 2 (Group A CIVIL OR) · 8",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group A (CIVIL) · 8 নম্বর · OR।\n\nPlaintiff 'M' filed Other Suit no. 248 of 2022, claiming that the suit land along with other properties belonged to his father 'G', who died leaving behind one son himself, and his mother, widow 'J'. 'J' was subsequently married to 'X', and one son 'Y' was born to that wedlock. 'X' died after several years, and then 'J' came to the house of the plaintiff 'M' and started living with him. Plaintiff 'M' was away from his house for about six months from January 2015 to June 2015 in connection with some work. During that period, his mother 'J' fell ill, and taking advantage of her illness and the absence of the plaintiff 'M' from the house, 'Y' obtained a deed of gift from 'J' by practicing fraud upon her. However, 'Y' did not disclose about the deed to anyone during the lifetime of 'J'; but after her death, 'Y' claimed title over the suit land on 11.09.2022, asserting that 'J' gifted the suit land to him by a registered deed of gift dated 11.03.2015. Plaintiff 'M' only then came to know about the deed of gift, and he then obtained the certified copy of that deed from the Sub-Registry Office for confirmation. Claiming that 'Y' obtained the deed fraudulently, and to remove the cloud on his title he, as Plaintiff, filed the Other Suit no. 248 of 2022. On the other hand, 'Y', as the defendant No.1, contested the suit by filing a written statement denying Plaintiff 'M's case. 'Y's case is that his mother 'J' was divorced by his father 'X' about three years before the death of 'X', and since then his mother 'J' used to live with him, and being satisfied about the service he rendered to her mother, she gifted the suit land which she inherited from her second husband 'X', to him by the deed of gift dated 11.03.2015 and since that date he has been possessing the suit land. He also claims that the plaintiff 'M' was fully aware of the gift but did not raise any question during life time of 'J' but filed the false suit only to grab the suit land. It is also stated that the suit is hopelessly barred by time and is also hit by section 42 of the Specific Relief Act, 1877. The Senior Assistant Judge on consideration of the evidence on record decreed the suit on contest against the defendant no.1 'Y'. Thereafter, 'Y' preferred Other Appeal no. 164 of 2024 before the District Judge and the District Judge allowed the appeal, setting aside the judgment and decree of the learned Senior Assistant Judge, dismissed the suit.\n\nSuggest 'M' the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. What would be your arguments in seeking such remedy?",
+          "answer_outline": [
+            "অসুস্থ মায়ের দান — প্রতারণা/প্রভাব",
+            "জ্ঞান ১১.০৯.২০২২, তামাদি ১৭"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "মা J অসুস্থ, M অনুপস্থিত, Y দানপত্র ১১/০৩/২০১৫, প্রকাশ ১১/০৯/২০২২। প্রতারণা গোপন থাকলে তামাদি জানার তারিখ থেকে (ধারা ১৭)। মুসলিম আইনে মায়ের অংশ সীমিত — তিনি পুরো সম্পত্তি দান করতে পারেন কি না ওয়ারিশভেদে।\nরায় কাঠামো: দানপত্র রদ (SRA ৩৫/৩৯), স্বত্ব ঘোষণা, দখল। প্রভাব/প্রতারণা বিশেষ তথ্যে প্রমাণ। নিবন্ধন একা বৈধতা দেয় না।",
+          "prep_outline": [
+            "অসুস্থ মায়ের দান — প্রতারণা/প্রভাব",
+            "জ্ঞান ১১.০৯.২০২২, তামাদি ১৭"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2025 — Q2 (Group A OR)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group A (CIVIL) · 8 নম্বর · OR।\n\nPlaintiff 'M' filed Other Suit no. 248 of 2022, claiming that the suit land along with other properties belonged to his father 'G', who died leaving behind one son himself, and his mother, widow 'J'. 'J' was subsequently married to 'X', and one son 'Y' was born to that wedlock. 'X' died after several years, and then 'J' came to the house of the plaintiff 'M' and started living with him. Plaintiff 'M' was away from his house for about six months from January 2015 to June 2015 in connection with some work. During that period, his mother 'J' fell ill, and taking advantage of her illness and the absence of the plaintiff 'M' from the house, 'Y' obtained a deed of gift from 'J' by practicing fraud upon her. However, 'Y' did not disclose about the deed to anyone during the lifetime of 'J'; but after her death, 'Y' claimed title over the suit land on 11.09.2022, asserting that 'J' gifted the suit land to him by a registered deed of gift dated 11.03.2015. Plaintiff 'M' only then came to know about the deed of gift, and he then obtained the certified copy of that deed from the Sub-Registry Office for confirmation. Claiming that 'Y' obtained the deed fraudulently, and to remove the cloud on his title he, as Plaintiff, filed the Other Suit no. 248 of 2022. On the other hand, 'Y', as the defendant No.1, contested the suit by filing a written statement denying Plaintiff 'M's case. 'Y's case is that his mother 'J' was divorced by his father 'X' about three years before the death of 'X', and since then his mother 'J' used to live with him, and being satisfied about the service he rendered to her mother, she gifted the suit land which she inherited from her second husband 'X', to him by the deed of gift dated 11.03.2015 and since that date he has been possessing the suit land. He also claims that the plaintiff 'M' was fully aware of the gift but did not raise any question during life time of 'J' but filed the false suit only to grab the suit land. It is also stated that the suit is hopelessly barred by time and is also hit by section 42 of the Specific Relief Act, 1877. The Senior Assistant Judge on consideration of the evidence on record decreed the suit on contest against the defendant no.1 'Y'. Thereafter, 'Y' preferred Other Appeal no. 164 of 2024 before the District Judge and the District Judge allowed the appeal, setting aside the judgment and decree of the learned Senior Assistant Judge, dismissed the suit.\n\nSuggest 'M' the next course of action and prepare a brief to be presented in the appropriate court as per provisions of the relevant laws in this regard. What would be your arguments in seeking such remedy?",
+          "answer_outline": [
+            "অসুস্থ মায়ের দান — প্রতারণা/প্রভাব",
+            "জ্ঞান ১১.০৯.২০২২, তামাদি ১৭"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "মা J অসুস্থ, M অনুপস্থিত, Y দানপত্র ১১/০৩/২০১৫, প্রকাশ ১১/০৯/২০২২। প্রতারণা গোপন থাকলে তামাদি জানার তারিখ থেকে (ধারা ১৭)। মুসলিম আইনে মায়ের অংশ সীমিত — তিনি পুরো সম্পত্তি দান করতে পারেন কি না ওয়ারিশভেদে।\nরায় কাঠামো: দানপত্র রদ (SRA ৩৫/৩৯), স্বত্ব ঘোষণা, দখল। প্রভাব/প্রতারণা বিশেষ তথ্যে প্রমাণ। নিবন্ধন একা বৈধতা দেয় না।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2025-03",
+      "written_question_id": "HC-WQ-US-2025-03",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2025-03",
+      "order": 113,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_date": "24 October, 2025",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2025 — প্রশ্ন 3 (Group B CRIMINAL) · 8",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group B (CRIMINAL) · 8 নম্বর।\n\n'H' father of 'C' lodged an FIR at Sadar thana, Gazipur stating that an altercation took place between 'A' and accused 'X' on 28 December 2024 at around 10 a.m. There 'B' intervened. 'X' threatened 'B' to teach a lesson. In the evening when 'B' was going to Bazar, accused 'X', 'Y', 'Z' and 3 other persons encircled him being armed with dao, rod, lathi etc. 'C', brother of 'B' being informed of the fact, rushed to the place of occurrence. Seeing that 'C' was approaching towards them, accused 'X' struck him with a dao at the front side of his head, accused 'Y' stuck him with a rod on his head and right shoulder and 'Z' indiscriminately assaulted causing multiple grievous and simple injuries to 'C'. Subsequently 'C' died in the Hospital at around 9 p.m that day. Police after investigation submitted charge sheet against 'X', 'Y', 'Z' under section 302, 34 of the Penal Code, 1860. As per the Post Mortem report of deceased 'C', two injuries in the occipital region were the cause of death while the other injuries were mentioned as simple in nature. At the trial, the prosecution examined several witnesses including the medical witness and the investigation officer. The concerned doctor as witness described the injuries while the other witnesses narrated what injury was caused by which accused. Later it was argued on behalf of accused 'X', 'Y' and 'Z' that they had no common intention or pre-plan of causing death to 'C' and they may be punished individually under section 323, 324 and 326 of the Penal Code. The prosecution argued that pre-concert is not the essential ingredient of common intention and when all the accused in this case jointly attacked 'C', common intention to kill developed on the spot. The accused persons are convicted under section 302 read with 34 of the Penal Code and the learned Additional Sessions Judge sentenced each of them to life imprisonment and fine.\n\nSuggest accused 'X', 'Y' and 'Z' the next course of action and prepare a brief to be presented in the appropriate court as per provisions laid down in relevant laws in this regard.",
+          "answer_outline": [
+            "পিএম: অক্সিপিটাল আঘাত মৃত্যুর কারণ",
+            "৩৪: কে কী মারল"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "দাও মাথার সামনে, রড মাথা/কাঁধ, মৃত্যু অক্সিপিটাল — যদি সাক্ষ্যে পেছনের আঘাত Y/Z-এর হয়, X-এর সামনের আঘাত মৃত্যুর কারণ নাও হতে পারে। ৩৪ চাই সাধারণ অভিপ্রায়; না থাকলে ব্যক্তিগত ৩২৬/৩২৪।\nপরামর্শ: চার্জ ৩০২/৩৪ সবের বিরুদ্ধে আবশ্যিক খালাস নয়; যিনি মারাত্মক আঘাত ৩০২/৩০৪, অন্যরা ৩২৪/৩২৬/৩৪ যদি যোগ প্রমাণ হয়। স্টেমের শেষ যুক্তি “কোনো সাধারণ অভিপ্রায় নেই” — আদালত তথ্য মেপে ভাগ করবেন, একা ৩৪ কাটলেও ১৪৯ উঠতে পারে যদি সমাবেশ প্রমাণিত হয়।",
+          "prep_outline": [
+            "পিএম: অক্সিপিটাল আঘাত মৃত্যুর কারণ",
+            "৩৪: কে কী মারল"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2025 — Q3 (Group B)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group B (CRIMINAL) · 8 নম্বর।\n\n'H' father of 'C' lodged an FIR at Sadar thana, Gazipur stating that an altercation took place between 'A' and accused 'X' on 28 December 2024 at around 10 a.m. There 'B' intervened. 'X' threatened 'B' to teach a lesson. In the evening when 'B' was going to Bazar, accused 'X', 'Y', 'Z' and 3 other persons encircled him being armed with dao, rod, lathi etc. 'C', brother of 'B' being informed of the fact, rushed to the place of occurrence. Seeing that 'C' was approaching towards them, accused 'X' struck him with a dao at the front side of his head, accused 'Y' stuck him with a rod on his head and right shoulder and 'Z' indiscriminately assaulted causing multiple grievous and simple injuries to 'C'. Subsequently 'C' died in the Hospital at around 9 p.m that day. Police after investigation submitted charge sheet against 'X', 'Y', 'Z' under section 302, 34 of the Penal Code, 1860. As per the Post Mortem report of deceased 'C', two injuries in the occipital region were the cause of death while the other injuries were mentioned as simple in nature. At the trial, the prosecution examined several witnesses including the medical witness and the investigation officer. The concerned doctor as witness described the injuries while the other witnesses narrated what injury was caused by which accused. Later it was argued on behalf of accused 'X', 'Y' and 'Z' that they had no common intention or pre-plan of causing death to 'C' and they may be punished individually under section 323, 324 and 326 of the Penal Code. The prosecution argued that pre-concert is not the essential ingredient of common intention and when all the accused in this case jointly attacked 'C', common intention to kill developed on the spot. The accused persons are convicted under section 302 read with 34 of the Penal Code and the learned Additional Sessions Judge sentenced each of them to life imprisonment and fine.\n\nSuggest accused 'X', 'Y' and 'Z' the next course of action and prepare a brief to be presented in the appropriate court as per provisions laid down in relevant laws in this regard.",
+          "answer_outline": [
+            "পিএম: অক্সিপিটাল আঘাত মৃত্যুর কারণ",
+            "৩৪: কে কী মারল"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "দাও মাথার সামনে, রড মাথা/কাঁধ, মৃত্যু অক্সিপিটাল — যদি সাক্ষ্যে পেছনের আঘাত Y/Z-এর হয়, X-এর সামনের আঘাত মৃত্যুর কারণ নাও হতে পারে। ৩৪ চাই সাধারণ অভিপ্রায়; না থাকলে ব্যক্তিগত ৩২৬/৩২৪।\nপরামর্শ: চার্জ ৩০২/৩৪ সবের বিরুদ্ধে আবশ্যিক খালাস নয়; যিনি মারাত্মক আঘাত ৩০২/৩০৪, অন্যরা ৩২৪/৩২৬/৩৪ যদি যোগ প্রমাণ হয়। স্টেমের শেষ যুক্তি “কোনো সাধারণ অভিপ্রায় নেই” — আদালত তথ্য মেপে ভাগ করবেন, একা ৩৪ কাটলেও ১৪৯ উঠতে পারে যদি সমাবেশ প্রমাণিত হয়।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2025-04",
+      "written_question_id": "HC-WQ-US-2025-04",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2025-04",
+      "order": 114,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_date": "24 October, 2025",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "B",
+      "marks": 8,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2025 — প্রশ্ন 4 (Group B CRIMINAL OR) · 8",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group B (CRIMINAL) · 8 নম্বর · OR।\n\nThe victim 'M' aged around 15, working as maid servant in the capital Dhaka was returning home by Bus and during midnight when she was proceeding to her house from the Netrokona Bus stand, 'X', 'Y' and 'Z' took her forcibly in a road side empty shop and raped her. A police patrol party rescued the victim and arrested 'X' and 'Y' from the spot while 'Z' managed to escape in front of them. Police took victim 'M' to the Netrokona Sadar thana where she narrated the occurrence, upon which FIR was Recorded. Thereafter, victim 'M' was produced for medical examination and the members of the Board found injuries on her body along with other signs of rape. 'X' who was caught red-handed made a confessional statement before the concerned magistrate. 'X', 'Y' and 'Z' faced trial before the Nari-O-Shishu Nirjatan Daman Tribunal, Netrokona. At the time of trial, victim 'M' could not be traced out as she might be working anywhere in the country and police could not produce her before the tribunal and as such she could not be examined. But the members of the patrol party who rescued her and the doctors who examined her and the magistrate who recorded the confessional statement of 'X' all deposed in the Tribunal in support of the prosecution case. However, all four local witnesses including one seizure list witness stated that they knew nothing about the occurrence. The Tribunal considering the evidence as sufficient enough convicted 'X', 'Y' and 'Z' each with death sentence and fine.\n\nSuggest convict 'X', 'Y' and 'Z' the next course of action and prepare a brief to be presented in the appropriate court.",
+          "answer_outline": [
+            "ভিকটিম অনুপস্থিত; গোপন সাক্ষ্য ৩২/৬/৮",
+            "১৬৪ কনফেশন; স্থানীয় সাক্ষী না জানে"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "১৫ বছর, ধর্ষণ, রক্তহাতে ধরা, মেডিকেল, ১৬৪ স্বীকারোক্তি। ভিকটিম হাজির নয় — সাক্ষ্য আইন ৩২(১) নয় (তিনি মৃত নন); পুলিশ/চিকিৎসক/ম্যাজিস্ট্রেট সাক্ষ্য ও রেস গেস্টি ৬ চলতে পারে। নারী ও শিশু আইনে ভিকটিম সাক্ষ্য গুরুত্বপূর্ণ কিন্তু একা অনুপস্থিতিতে অন্য সাক্ষ্যে দোষী সাব্যস্ত হওয়া যায় যদি কনফেশন স্বেচ্ছায় ও কর্পাস প্রমাণিত হয়। স্থানীয় সাক্ষী “জানি না” ফলপ্রসূ নয়।\nZ পলাতক: ৩৪/সহায়তা। সাজা তথ্যসাপেক্ষ; খালাস কেবল ভিকটিম না আসায় বাধ্যতামূলক নয়।",
+          "prep_outline": [
+            "ভিকটিম অনুপস্থিত; গোপন সাক্ষ্য ৩২/৬/৮",
+            "১৬৪ কনফেশন; স্থানীয় সাক্ষী না জানে"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2025 — Q4 (Group B OR)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group B (CRIMINAL) · 8 নম্বর · OR।\n\nThe victim 'M' aged around 15, working as maid servant in the capital Dhaka was returning home by Bus and during midnight when she was proceeding to her house from the Netrokona Bus stand, 'X', 'Y' and 'Z' took her forcibly in a road side empty shop and raped her. A police patrol party rescued the victim and arrested 'X' and 'Y' from the spot while 'Z' managed to escape in front of them. Police took victim 'M' to the Netrokona Sadar thana where she narrated the occurrence, upon which FIR was Recorded. Thereafter, victim 'M' was produced for medical examination and the members of the Board found injuries on her body along with other signs of rape. 'X' who was caught red-handed made a confessional statement before the concerned magistrate. 'X', 'Y' and 'Z' faced trial before the Nari-O-Shishu Nirjatan Daman Tribunal, Netrokona. At the time of trial, victim 'M' could not be traced out as she might be working anywhere in the country and police could not produce her before the tribunal and as such she could not be examined. But the members of the patrol party who rescued her and the doctors who examined her and the magistrate who recorded the confessional statement of 'X' all deposed in the Tribunal in support of the prosecution case. However, all four local witnesses including one seizure list witness stated that they knew nothing about the occurrence. The Tribunal considering the evidence as sufficient enough convicted 'X', 'Y' and 'Z' each with death sentence and fine.\n\nSuggest convict 'X', 'Y' and 'Z' the next course of action and prepare a brief to be presented in the appropriate court.",
+          "answer_outline": [
+            "ভিকটিম অনুপস্থিত; গোপন সাক্ষ্য ৩২/৬/৮",
+            "১৬৪ কনফেশন; স্থানীয় সাক্ষী না জানে"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "১৫ বছর, ধর্ষণ, রক্তহাতে ধরা, মেডিকেল, ১৬৪ স্বীকারোক্তি। ভিকটিম হাজির নয় — সাক্ষ্য আইন ৩২(১) নয় (তিনি মৃত নন); পুলিশ/চিকিৎসক/ম্যাজিস্ট্রেট সাক্ষ্য ও রেস গেস্টি ৬ চলতে পারে। নারী ও শিশু আইনে ভিকটিম সাক্ষ্য গুরুত্বপূর্ণ কিন্তু একা অনুপস্থিতিতে অন্য সাক্ষ্যে দোষী সাব্যস্ত হওয়া যায় যদি কনফেশন স্বেচ্ছায় ও কর্পাস প্রমাণিত হয়। স্থানীয় সাক্ষী “জানি না” ফলপ্রসূ নয়।\nZ পলাতক: ৩৪/সহায়তা। সাজা তথ্যসাপেক্ষ; খালাস কেবল ভিকটিম না আসায় বাধ্যতামূলক নয়।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2025-05",
+      "written_question_id": "HC-WQ-US-2025-05",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2025-05",
+      "order": 115,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_date": "24 October, 2025",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2025 — প্রশ্ন 5 (Group C WRIT) · 9",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group C (WRIT) · 9 নম্বর।\n\nA 24-year-old person participated in the parliamentary election and, after being elected, failed to take the oath as a member of the Parliament on the date of the first meeting of the Parliament held on 3rd May 2023. The said member of Parliament, without taking the oath, continues to sit and participate in the proceedings of the Parliament. But the member's seat was not vacated for the disqualification, and no by-election was held.\n\nAdvice the remedies may be sought and the manner of obtaining those remedies against the authorities concerned as per relevant laws. Draft a petition for submission to the appropriate court accordingly.",
+          "answer_outline": [
+            "শপথ আর্ট. ১৪৮; আসন শূন্য ৬৭(১)(ক)/১৪৮",
+            "বয়স ২২ আর্ট. ৬৬",
+            "রিট+নির্বাচনী"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "সংসদ সদস্যের বয়স ২৫ (আর্ট. ৬৬) — ২৪ বছর বয়সী নির্বাচনই অযোগ্য; এছাড়া প্রথম বৈঠকে শপথ না নিলে আসন শূন্য (আর্ট. ১৪৮ ও ৬৭)। শপথ ছাড়া অংশগ্রহণ অবৈধ।\nপ্রতিকার: (১) স্পিকার/ইসি-কে আসন শূন্য ঘোষণার ম্যান্ডামাস আর্ট. ১০২, (২) নির্বাচনী পিটিশন যদি তামাদি বাঁচে, (৩) অযোগ্যতায় উপনির্বাচন।\nখসড়া রিট: নাগরিক/প্রতিদ্বন্দ্বী বনাম স্পিকার, ইসি, সচিব। প্রার্থনা: অংশগ্রহণ নিষেধ, আসন শূন্য, উপনির্বাচন।",
+          "prep_outline": [
+            "শপথ আর্ট. ১৪৮; আসন শূন্য ৬৭(১)(ক)/১৪৮",
+            "বয়স ২২ আর্ট. ৬৬",
+            "রিট+নির্বাচনী"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2025 — Q5 (Group C)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group C (WRIT) · 9 নম্বর।\n\nA 24-year-old person participated in the parliamentary election and, after being elected, failed to take the oath as a member of the Parliament on the date of the first meeting of the Parliament held on 3rd May 2023. The said member of Parliament, without taking the oath, continues to sit and participate in the proceedings of the Parliament. But the member's seat was not vacated for the disqualification, and no by-election was held.\n\nAdvice the remedies may be sought and the manner of obtaining those remedies against the authorities concerned as per relevant laws. Draft a petition for submission to the appropriate court accordingly.",
+          "answer_outline": [
+            "শপথ আর্ট. ১৪৮; আসন শূন্য ৬৭(১)(ক)/১৪৮",
+            "বয়স ২২ আর্ট. ৬৬",
+            "রিট+নির্বাচনী"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "সংসদ সদস্যের বয়স ২৫ (আর্ট. ৬৬) — ২৪ বছর বয়সী নির্বাচনই অযোগ্য; এছাড়া প্রথম বৈঠকে শপথ না নিলে আসন শূন্য (আর্ট. ১৪৮ ও ৬৭)। শপথ ছাড়া অংশগ্রহণ অবৈধ।\nপ্রতিকার: (১) স্পিকার/ইসি-কে আসন শূন্য ঘোষণার ম্যান্ডামাস আর্ট. ১০২, (২) নির্বাচনী পিটিশন যদি তামাদি বাঁচে, (৩) অযোগ্যতায় উপনির্বাচন।\nখসড়া রিট: নাগরিক/প্রতিদ্বন্দ্বী বনাম স্পিকার, ইসি, সচিব। প্রার্থনা: অংশগ্রহণ নিষেধ, আসন শূন্য, উপনির্বাচন।"
+        }
+      }
+    },
+    {
+      "content_id": "HC-WQ-US-2025-06",
+      "written_question_id": "HC-WQ-US-2025-06",
+      "asset_type": "WRITTEN_QUESTION",
+      "section_id": "SEC-PREVQ",
+      "module_id": "SEC-PREVQ",
+      "topic_id": "HC-WQ-US-2025-06",
+      "order": 116,
+      "question_origin": "AUTHENTIC_REPORTED_QUESTION",
+      "question_category_authenticity": "AUTHENTIC_REPORTED_QUESTION",
+      "content_source": "user-supplied",
+      "exam_year": "2025",
+      "paper_year": "2025",
+      "exam_date": "24 October, 2025",
+      "exam_stage": "WRITTEN",
+      "exam_board": "Bangladesh Bar Council",
+      "group_label": "C",
+      "marks": 9,
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "NOT_VERIFIED",
+      "answer_type": "MODEL",
+      "flags": [
+        "user_photo_ocr",
+        "reproduction_prohibited_not_official_download",
+        "statute_fill"
+      ],
+      "flag_note": "User-supplied photo of the printed paper (Bar Council header + date + Group A/B/C). Reproduction without permission is prohibited. Not shipped as an official download. No model answer invented.",
+      "language_versions": {
+        "bn": {
+          "title": "HC পারমিশন লিখিত 2025 — প্রশ্ন 6 (Group C WRIT OR) · 9",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group C (WRIT) · 9 নম্বর · OR।\n\nHuman rights activist 'X' was abducted on 3rd April, 2023 at 6:30 am from the road just in front of his apartment located at Plot # 13 Road # 9/A, Dhanmondi R/A by the members of a law enforcing agency wearing vests with 'RAB' written on them. 'X' was immediately blindfolded and forcibly placed in a microbus that was waiting nearby, which took him to a secret detention center. Incidentally, the occurrence was recorded on the CC Camara of the apartment gate. Victim 'X' was never produced in any court of law. But when contacted, the RAB authority denied arresting the victim. On the afternoon of the following day, the victim's wife 'Y' went to the Dhanmondi thana, but she was verbally denied the opportunity to file a GD entry. Two prominent national dailies published the news of 'X's abduction, claiming that RAB were responsible for it.\n\nHow do you deal with 'X's right and his unlawful detention? Prepare a brief to be presented in the appropriate forum as per provisions of the relevant laws in this regard.",
+          "answer_outline": [
+            "গোপন আটক: হাবিয়াস ১০২",
+            "RAB অস্বীকারে উৎপাদন আদেশ",
+            "জিডি দিতে অস্বীকার অবৈধ"
+          ],
+          "marking_points": [
+            "সঠিক ফোরাম ও প্রতিকার বেছেছি",
+            "ঘটনা কালানুক্রমে সাজিয়েছি",
+            "গ্রাউন্ডস ও প্রার্থনা আলাদা করেছি"
+          ],
+          "model_answer": "সিসিটিভি, সাদা পোশাকে RAB লেখা, উৎপাদন হয়নি, থানায় জিডি নিতে অস্বীকার — গুম/অবৈধ আটক।\nহাবিয়াস করপাস আর্ট. ১০২: Y (স্ত্রী) বনাম RAB মহাপরিচালক, স্বরাষ্ট্র, থানা। প্রার্থনা: X-কে ২৪ ঘণ্টায় আদালতে হাজির, চিকিৎসা, সিসিটিভি সংরক্ষণ, জিডি/এফআইআর নিতে নির্দেশ, দায়ীদের বিরুদ্ধে মামলা। আর্ট. ৩২/৩৩, মাজারবাংলাদেশ নীতি: অস্বীকারেও উৎপাদন। ফৌজদারি: অপহরণ ৩৬৪/৩৪২, স্পেশাল আইন।",
+          "prep_outline": [
+            "গোপন আটক: হাবিয়াস ১০২",
+            "RAB অস্বীকারে উৎপাদন আদেশ",
+            "জিডি দিতে অস্বীকার অবৈধ"
+          ]
+        },
+        "en": {
+          "title": "HC Permission written 2025 — Q6 (Group C OR)",
+          "question": "সূত্র: ব্যবহারকারী সরবরাহকৃত ছবি। অফিসিয়াল বার কাউন্সিল ডাউনলোড নয়। পুনর্মুদ্রণ নিষিদ্ধ (পেপার ফুটার)। মডেল উত্তর নেই।\nপরীক্ষা: 24 October, 2025। Group C (WRIT) · 9 নম্বর · OR।\n\nHuman rights activist 'X' was abducted on 3rd April, 2023 at 6:30 am from the road just in front of his apartment located at Plot # 13 Road # 9/A, Dhanmondi R/A by the members of a law enforcing agency wearing vests with 'RAB' written on them. 'X' was immediately blindfolded and forcibly placed in a microbus that was waiting nearby, which took him to a secret detention center. Incidentally, the occurrence was recorded on the CC Camara of the apartment gate. Victim 'X' was never produced in any court of law. But when contacted, the RAB authority denied arresting the victim. On the afternoon of the following day, the victim's wife 'Y' went to the Dhanmondi thana, but she was verbally denied the opportunity to file a GD entry. Two prominent national dailies published the news of 'X's abduction, claiming that RAB were responsible for it.\n\nHow do you deal with 'X's right and his unlawful detention? Prepare a brief to be presented in the appropriate forum as per provisions of the relevant laws in this regard.",
+          "answer_outline": [
+            "গোপন আটক: হাবিয়াস ১০২",
+            "RAB অস্বীকারে উৎপাদন আদেশ",
+            "জিডি দিতে অস্বীকার অবৈধ"
+          ],
+          "marking_points": [
+            "Chose the correct forum and remedy",
+            "Set out facts in order",
+            "Separated grounds and prayer"
+          ],
+          "model_answer": "সিসিটিভি, সাদা পোশাকে RAB লেখা, উৎপাদন হয়নি, থানায় জিডি নিতে অস্বীকার — গুম/অবৈধ আটক।\nহাবিয়াস করপাস আর্ট. ১০২: Y (স্ত্রী) বনাম RAB মহাপরিচালক, স্বরাষ্ট্র, থানা। প্রার্থনা: X-কে ২৪ ঘণ্টায় আদালতে হাজির, চিকিৎসা, সিসিটিভি সংরক্ষণ, জিডি/এফআইআর নিতে নির্দেশ, দায়ীদের বিরুদ্ধে মামলা। আর্ট. ৩২/৩৩, মাজারবাংলাদেশ নীতি: অস্বীকারেও উৎপাদন। ফৌজদারি: অপহরণ ৩৬৪/৩৪২, স্পেশাল আইন।"
+        }
+      }
+    }
+  ],
+  "exam_years": [
+    "2024",
+    "2025"
+  ],
+  "hc_mcq_invented": false
+}

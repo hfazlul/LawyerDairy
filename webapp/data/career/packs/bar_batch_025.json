@@ -1,0 +1,274 @@
+{
+  "batch_id": "BATCH-2026-08-025-CRPC-APPEAL",
+  "schema_version": "1.0",
+  "content_version": "2026.08.11",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Single additional lesson requested directly by the user. Covers CrPC Appeal (T-CRPC-19, Sections 404-410) -- a natural companion to the existing CPC Appeal lesson (batch 009), since it reveals a structurally different design: criminal appeal destinations are organised by the RANK of the convicting court, not by a decree/order distinction the way civil appeals are.",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-CRPC-APPEAL-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CRPC-APPEAL-001",
+      "topic_id": "T-CRPC-19",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Sections 404, 407, and 408 were obtained as VERBATIM Bangladesh-specific text via search-indexed content of bdlaws.minlaw.gov.bd during this session, corroborated across multiple independent results including the primary source's own chapter and part pages. Section 410 (appeal from Sessions Court sentences to the High Court Division) is described only at the level of its confirmed title/existence from the chapter table of contents, not independently verbatim-confirmed in this pass. A secondary source's claim that a public prosecutor's further appeal is informally termed a 'second appeal' in criminal practice is noted but not treated as an established parallel to the CPC's own (omitted) Section 100-103 second-appeal mechanism, since the two are conceptually distinct and this specific usage was not independently corroborated. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": [],
+      "related_lesson_ids": ["BC-CPC-APPEAL-001"],
+      "related_question_ids": ["BC-MCQ-CRPC-APPEAL-001", "BC-MCQ-CRPC-APPEAL-002", "BC-MCQ-CRPC-APPEAL-003", "BC-MCQ-CRPC-APPEAL-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CRPC-S404", "LREF-CRPC-S407-408"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CRPC-S404", "LREF-CRPC-S407-408"],
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "language_versions": {
+        "en": {
+          "title": "Appeal under the CrPC -- and how its structure differs from CPC Appeal",
+          "short_description": "Where CPC appeals turn on whether you're dealing with a decree or an order, CrPC appeals turn on the rank of the court that convicted you -- and a conviction carrying a long enough sentence can skip a level entirely and go straight to the High Court Division.",
+          "learning_objective": "By the end of this lesson you should be able to: state Section 404's closed-list principle for criminal appeals; identify where an appeal lies depending on which court convicted the accused; and explain the specific circumstance under which a Joint Sessions Judge's sentence bypasses the Sessions Judge and goes directly to the High Court Division.",
+          "explanation": "Section 404 states the foundational rule: no appeal lies from any judgment or order of a Criminal Court except as provided for by the Code itself or by any other law currently in force. This is a closed-list principle -- much like the general architecture of appeal rights under the CPC -- meaning a right of criminal appeal must be traced to a specific provision, not assumed to exist generally.\n\nUnlike CPC appeals, which turn on classifying the outcome as a decree or an order, CrPC appeals are primarily organised around the RANK of the court that convicted the accused. A person convicted by a Magistrate of the second or third class may appeal to the Chief Judicial Magistrate, who may hear and dispose of the appeal personally or transfer it to an Additional Chief Judicial Magistrate. A person convicted by a Joint Sessions Judge, a Metropolitan Magistrate, or a Judicial Magistrate of the first class may appeal to the Sessions Judge -- but with an important carve-out: where a Joint Sessions Judge passes a sentence of imprisonment exceeding five years, the appeal of all or any of the convicted persons bypasses the Sessions Judge entirely and lies directly to the High Court Division instead. The same direct-to-High-Court-Division route applies where a person is convicted by a Metropolitan Magistrate or Judicial Magistrate specially empowered to try an offence under Section 124A of the Penal Code (sedition). A conviction by a Court of Session itself carries a further appeal to the High Court Division.\n\nThis produces a genuinely different structural logic from the CPC's decree/order framework: rather than asking what kind of formal outcome resulted, a CrPC appeal analysis starts by asking which court, and at what rank, delivered the conviction -- and then checks whether a sentence-length or subject-matter exception routes the appeal somewhere other than the ordinarily-expected next level up.",
+          "key_concepts": ["S.404: closed-list principle -- no criminal appeal except as the Code or another current law provides", "Appeal destination depends on the RANK of the convicting court, not a decree/order classification", "S.407: 2nd/3rd class Magistrate conviction -> Chief Judicial Magistrate", "S.408: Joint Sessions Judge/Metropolitan Magistrate/1st class Magistrate conviction -> Sessions Judge, UNLESS sentence exceeds 5 years (or S.124A Penal Code conviction) -> High Court Division directly", "A Sessions Court conviction itself carries a further appeal to the High Court Division"],
+          "important_rules": [
+            "S.404: no appeal lies from any judgment or order of a Criminal Court except as provided by the Code or another law for the time being in force.",
+            "S.407: a person convicted by a Magistrate of the second or third class may appeal to the Chief Judicial Magistrate.",
+            "S.408: a person convicted by a Joint Sessions Judge, Metropolitan Magistrate, or first-class Judicial Magistrate may appeal to the Sessions Judge -- except where a Joint Sessions Judge imposes imprisonment exceeding five years, or the conviction is under Section 124A of the Penal Code by a specially empowered Magistrate, in which case the appeal lies directly to the High Court Division."
+          ],
+          "definitions": [
+            { "term": "Closed-list principle for criminal appeal (S.404)", "definition": "The rule that a right of appeal from a criminal court's judgment or order must be traced to a specific provision of the Code or another current law -- it cannot be assumed to exist generally." },
+            { "term": "Sentence-length carve-out (S.408)", "definition": "The rule that a Joint Sessions Judge's sentence exceeding five years' imprisonment sends the appeal directly to the High Court Division, bypassing the Sessions Judge who would ordinarily hear appeals from that court." }
+          ],
+          "examples": [
+            "A is convicted by a Magistrate of the third class. Under Section 407, A's appeal lies to the Chief Judicial Magistrate, who may hear it personally or transfer it to an Additional Chief Judicial Magistrate.",
+            "B is convicted by a Joint Sessions Judge and sentenced to seven years' imprisonment. Because this exceeds the five-year threshold in Section 408, B's appeal does not go to the Sessions Judge as it ordinarily would for a Joint Sessions Judge conviction -- it lies directly to the High Court Division instead."
+          ],
+          "exam_focus": "Examiners test whether candidates can correctly route an appeal based on the rank of the convicting court, and specifically whether they remember the five-year sentence threshold that diverts a Joint Sessions Judge appeal straight to the High Court Division rather than to the Sessions Judge. A second common test point is simply recognising that Section 404's closed-list principle means a criminal appeal right must be traced to a specific provision, not assumed.",
+          "common_traps": [
+            "Assuming every appeal from a Joint Sessions Judge conviction goes to the Sessions Judge -- the five-year sentence threshold (and the Section 124A Penal Code carve-out) routes some of these appeals directly to the High Court Division instead.",
+            "Analysing a CrPC appeal question using the CPC's decree/order framework -- criminal appeal routing depends on the convicting court's rank, not that classification.",
+            "Assuming a general right of criminal appeal exists by default -- Section 404 makes clear that a specific provision must supply it."
+          ],
+          "quick_revision": [
+            "S.404 = no appeal except as the Code or another law specifically provides -- closed list.",
+            "S.407 = 2nd/3rd class Magistrate conviction -> Chief Judicial Magistrate.",
+            "S.408 = Joint Sessions Judge/Metropolitan Magistrate/1st class Magistrate conviction -> Sessions Judge, UNLESS 5+ years' imprisonment (or S.124A Penal Code) -> High Court Division directly.",
+            "Sessions Court conviction -> further appeal to High Court Division."
+          ],
+          "key_takeaways": [
+            "CrPC appeal routing is organised around the rank of the convicting court, a genuinely different structural principle from the CPC's decree/order framework covered in this dataset's CPC Appeal lesson.",
+            "The five-year sentence threshold in Section 408 is the single most important numeric detail in this topic -- it changes which court hears the appeal, not just how serious the case is.",
+            "Section 404's closed-list principle mirrors, in spirit, the CPC's own general approach to appeal rights: always find the specific provision, don't assume the right exists."
+          ]
+        },
+        "bn": {
+          "title": "ফৌজদারি কার্যবিধির অধীনে আপিল -- এবং এর কাঠামো দেওয়ানি কার্যবিধির আপিল থেকে কীভাবে ভিন্ন",
+          "short_description": "যেখানে দেওয়ানি কার্যবিধির আপিল নির্ভর করে আপনি একটি ডিক্রি নাকি আদেশ নিয়ে কাজ করছেন তার উপর, ফৌজদারি কার্যবিধির আপিল নির্ভর করে যে আদালত আপনাকে দোষী সাব্যস্ত করেছে তার পদমর্যাদার উপর -- এবং যথেষ্ট দীর্ঘ সাজাসম্পন্ন একটি দোষী সাব্যস্ততা একটি স্তর সম্পূর্ণরূপে এড়িয়ে সরাসরি হাইকোর্ট বিভাগে যেতে পারে।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ফৌজদারি আপিলের জন্য ধারা ৪০৪-এর বদ্ধ-তালিকা নীতি বলতে পারবেন; কোন আদালত অভিযুক্তকে দোষী সাব্যস্ত করেছে তার উপর নির্ভর করে আপিল কোথায় হয় তা চিহ্নিত করতে পারবেন; এবং কোন নির্দিষ্ট পরিস্থিতিতে একজন যুগ্ম দায়রা জজের সাজা দায়রা জজকে এড়িয়ে সরাসরি হাইকোর্ট বিভাগে যায় তা ব্যাখ্যা করতে পারবেন।",
+          "explanation": "ধারা ৪০৪ মৌলিক নিয়মটি বলে: কোনো ফৌজদারি আদালতের রায় বা আদেশ থেকে কোনো আপিল হবে না, বিধি নিজে বা বর্তমানে কার্যকর অন্য কোনো আইন দ্বারা প্রদত্ত ব্যতীত। এটি একটি বদ্ধ-তালিকা নীতি -- অনেকটা দেওয়ানি কার্যবিধির অধীনে আপিল অধিকারের সাধারণ কাঠামোর মতো -- যার অর্থ একটি ফৌজদারি আপিলের অধিকার অবশ্যই একটি নির্দিষ্ট বিধানে খুঁজে পেতে হবে, সাধারণভাবে বিদ্যমান বলে ধরে নেওয়া যাবে না।\n\nদেওয়ানি কার্যবিধির আপিলের বিপরীতে, যা ফলাফলকে ডিক্রি বা আদেশ হিসেবে শ্রেণিবদ্ধ করার উপর নির্ভর করে, ফৌজদারি কার্যবিধির আপিল প্রাথমিকভাবে অভিযুক্তকে দোষী সাব্যস্তকারী আদালতের পদমর্যাদার চারপাশে সংগঠিত। একজন দ্বিতীয় বা তৃতীয় শ্রেণির ম্যাজিস্ট্রেট কর্তৃক দোষী সাব্যস্ত একজন ব্যক্তি প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে আপিল করতে পারেন, যিনি ব্যক্তিগতভাবে আপিলটি শুনতে ও নিষ্পত্তি করতে পারেন বা একজন অতিরিক্ত প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে স্থানান্তর করতে পারেন। একজন যুগ্ম দায়রা জজ, মেট্রোপলিটন ম্যাজিস্ট্রেট, বা প্রথম শ্রেণির বিচারিক ম্যাজিস্ট্রেট কর্তৃক দোষী সাব্যস্ত একজন ব্যক্তি দায়রা জজের কাছে আপিল করতে পারেন -- তবে একটি গুরুত্বপূর্ণ ব্যতিক্রমসহ: যেখানে একজন যুগ্ম দায়রা জজ পাঁচ বছরের বেশি কারাদণ্ডের সাজা দেন, সেখানে দোষী সাব্যস্ত সকল বা যেকোনো ব্যক্তির আপিল দায়রা জজকে সম্পূর্ণরূপে এড়িয়ে পরিবর্তে সরাসরি হাইকোর্ট বিভাগে যায়। একই সরাসরি-হাইকোর্ট-বিভাগ পথ প্রযোজ্য যেখানে একজন ব্যক্তি দণ্ডবিধির ধারা ১২৪ক (রাষ্ট্রদ্রোহ) অনুযায়ী অপরাধ বিচারে বিশেষভাবে ক্ষমতাপ্রাপ্ত একজন মেট্রোপলিটন ম্যাজিস্ট্রেট বা বিচারিক ম্যাজিস্ট্রেট দ্বারা দোষী সাব্যস্ত হন। একটি দায়রা আদালতের নিজস্ব দোষী সাব্যস্ততা হাইকোর্ট বিভাগে আরও একটি আপিল বহন করে।\n\nএটি দেওয়ানি কার্যবিধির ডিক্রি/আদেশ কাঠামো থেকে প্রকৃতপক্ষে একটি ভিন্ন কাঠামোগত যুক্তি তৈরি করে: কী ধরনের আনুষ্ঠানিক ফলাফল হয়েছে তা জিজ্ঞাসা করার পরিবর্তে, একটি ফৌজদারি কার্যবিধি আপিল বিশ্লেষণ শুরু হয় কোন আদালত, কোন পদমর্যাদায়, দোষী সাব্যস্ততা প্রদান করেছে তা জিজ্ঞাসা করে দিয়ে -- এবং এরপর যাচাই করে একটি সাজা-দৈর্ঘ্য বা বিষয়বস্তু ব্যতিক্রম আপিলটিকে স্বাভাবিকভাবে প্রত্যাশিত পরবর্তী স্তরের পরিবর্তে অন্য কোথাও পরিচালিত করে কিনা।",
+          "key_concepts": ["ধারা ৪০৪: বদ্ধ-তালিকা নীতি -- বিধি বা অন্য বর্তমান আইন প্রদান করা ব্যতীত কোনো ফৌজদারি আপিল নেই", "আপিলের গন্তব্য দোষী সাব্যস্তকারী আদালতের পদমর্যাদার উপর নির্ভর করে, ডিক্রি/আদেশ শ্রেণিবিভাগের উপর নয়", "ধারা ৪০৭: ২য়/৩য় শ্রেণির ম্যাজিস্ট্রেটের দোষী সাব্যস্ততা -> প্রধান বিচারিক ম্যাজিস্ট্রেট", "ধারা ৪০৮: যুগ্ম দায়রা জজ/মেট্রোপলিটন ম্যাজিস্ট্রেট/১ম শ্রেণির ম্যাজিস্ট্রেটের দোষী সাব্যস্ততা -> দায়রা জজ, ৫+ বছরের কারাদণ্ড (বা দণ্ডবিধির ধারা ১২৪ক) ব্যতীত -> সরাসরি হাইকোর্ট বিভাগ", "একটি দায়রা আদালতের দোষী সাব্যস্ততা নিজেই হাইকোর্ট বিভাগে আরও আপিল বহন করে"],
+          "important_rules": [
+            "ধারা ৪০৪: কোনো ফৌজদারি আদালতের রায় বা আদেশ থেকে কোনো আপিল হবে না, বিধি বা বর্তমানে কার্যকর অন্য কোনো আইন দ্বারা প্রদত্ত ব্যতীত।",
+            "ধারা ৪০৭: একজন দ্বিতীয় বা তৃতীয় শ্রেণির ম্যাজিস্ট্রেট কর্তৃক দোষী সাব্যস্ত একজন ব্যক্তি প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে আপিল করতে পারেন।",
+            "ধারা ৪০৮: একজন যুগ্ম দায়রা জজ, মেট্রোপলিটন ম্যাজিস্ট্রেট, বা প্রথম শ্রেণির বিচারিক ম্যাজিস্ট্রেট কর্তৃক দোষী সাব্যস্ত একজন ব্যক্তি দায়রা জজের কাছে আপিল করতে পারেন -- ব্যতীত যেখানে একজন যুগ্ম দায়রা জজ পাঁচ বছরের বেশি কারাদণ্ড আরোপ করেন, অথবা দোষী সাব্যস্ততা বিশেষভাবে ক্ষমতাপ্রাপ্ত একজন ম্যাজিস্ট্রেট দ্বারা দণ্ডবিধির ধারা ১২৪ক-এর অধীনে হয়, সেই ক্ষেত্রে আপিল সরাসরি হাইকোর্ট বিভাগে যায়।"
+          ],
+          "definitions": [
+            { "term": "ফৌজদারি আপিলের বদ্ধ-তালিকা নীতি (ধারা ৪০৪)", "definition": "এই নিয়ম যে একটি ফৌজদারি আদালতের রায় বা আদেশ থেকে আপিলের অধিকার অবশ্যই বিধি বা অন্য বর্তমান আইনের একটি নির্দিষ্ট বিধানে খুঁজে পেতে হবে -- এটি সাধারণভাবে বিদ্যমান বলে ধরে নেওয়া যাবে না।" },
+            { "term": "সাজা-দৈর্ঘ্য ব্যতিক্রম (ধারা ৪০৮)", "definition": "এই নিয়ম যে একজন যুগ্ম দায়রা জজের পাঁচ বছরের বেশি কারাদণ্ডের সাজা আপিলটি সরাসরি হাইকোর্ট বিভাগে পাঠায়, দায়রা জজকে এড়িয়ে যিনি সাধারণত সেই আদালত থেকে আপিল শুনতেন।" }
+          ],
+          "examples": [
+            "ক একজন তৃতীয় শ্রেণির ম্যাজিস্ট্রেট কর্তৃক দোষী সাব্যস্ত হন। ধারা ৪০৭-এর অধীনে, ক-এর আপিল প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে যায়, যিনি ব্যক্তিগতভাবে তা শুনতে পারেন বা একজন অতিরিক্ত প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে স্থানান্তর করতে পারেন।",
+            "খ একজন যুগ্ম দায়রা জজ কর্তৃক দোষী সাব্যস্ত হন এবং সাত বছরের কারাদণ্ডের সাজা পান। যেহেতু এটি ধারা ৪০৮-এর পাঁচ বছরের সীমা অতিক্রম করে, খ-এর আপিল দায়রা জজের কাছে যায় না যেমনটি যুগ্ম দায়রা জজের দোষী সাব্যস্ততার জন্য সাধারণত হতো -- এটি পরিবর্তে সরাসরি হাইকোর্ট বিভাগে যায়।"
+          ],
+          "exam_focus": "পরীক্ষকরা যাচাই করেন প্রার্থীরা দোষী সাব্যস্তকারী আদালতের পদমর্যাদার ভিত্তিতে একটি আপিল সঠিকভাবে পরিচালনা করতে পারেন কিনা, এবং সুনির্দিষ্টভাবে তারা পাঁচ বছরের সাজা সীমা মনে রাখেন কিনা যা একজন যুগ্ম দায়রা জজের আপিলকে দায়রা জজের পরিবর্তে সরাসরি হাইকোর্ট বিভাগে পরিচালিত করে। দ্বিতীয় একটি সাধারণ পরীক্ষার বিষয় হলো কেবল স্বীকৃতি দেওয়া যে ধারা ৪০৪-এর বদ্ধ-তালিকা নীতির অর্থ হলো একটি ফৌজদারি আপিলের অধিকার অবশ্যই একটি নির্দিষ্ট বিধানে খুঁজে পেতে হবে, ধরে নেওয়া যাবে না।",
+          "common_traps": [
+            "মনে করা যে একজন যুগ্ম দায়রা জজের দোষী সাব্যস্ততা থেকে প্রতিটি আপিল দায়রা জজের কাছে যায় -- পাঁচ বছরের সাজা সীমা (এবং দণ্ডবিধির ধারা ১২৪ক ব্যতিক্রম) এই আপিলগুলোর কিছু সরাসরি হাইকোর্ট বিভাগে পরিচালিত করে।",
+            "দেওয়ানি কার্যবিধির ডিক্রি/আদেশ কাঠামো ব্যবহার করে একটি ফৌজদারি কার্যবিধি আপিল প্রশ্ন বিশ্লেষণ করা -- ফৌজদারি আপিল পরিচালনা দোষী সাব্যস্তকারী আদালতের পদমর্যাদার উপর নির্ভর করে, সেই শ্রেণিবিভাগের উপর নয়।",
+            "মনে করা যে ডিফল্টভাবে একটি সাধারণ ফৌজদারি আপিলের অধিকার বিদ্যমান -- ধারা ৪০৪ স্পষ্ট করে যে একটি নির্দিষ্ট বিধান অবশ্যই তা সরবরাহ করতে হবে।"
+          ],
+          "quick_revision": [
+            "ধারা ৪০৪ = বিধি বা অন্য আইন সুনির্দিষ্টভাবে প্রদান করা ব্যতীত কোনো আপিল নেই -- বদ্ধ তালিকা।",
+            "ধারা ৪০৭ = ২য়/৩য় শ্রেণির ম্যাজিস্ট্রেটের দোষী সাব্যস্ততা -> প্রধান বিচারিক ম্যাজিস্ট্রেট।",
+            "ধারা ৪০৮ = যুগ্ম দায়রা জজ/মেট্রোপলিটন ম্যাজিস্ট্রেট/১ম শ্রেণির ম্যাজিস্ট্রেটের দোষী সাব্যস্ততা -> দায়রা জজ, ৫+ বছরের কারাদণ্ড (বা দণ্ডবিধির ধারা ১২৪ক) ব্যতীত -> সরাসরি হাইকোর্ট বিভাগ।",
+            "দায়রা আদালতের দোষী সাব্যস্ততা -> হাইকোর্ট বিভাগে আরও আপিল।"
+          ],
+          "key_takeaways": [
+            "ফৌজদারি কার্যবিধি আপিল পরিচালনা দোষী সাব্যস্তকারী আদালতের পদমর্যাদার চারপাশে সংগঠিত, এই ডেটাসেটের দেওয়ানি কার্যবিধি আপিল পাঠে আচ্ছাদিত ডিক্রি/আদেশ কাঠামো থেকে প্রকৃতপক্ষে একটি ভিন্ন কাঠামোগত নীতি।",
+            "ধারা ৪০৮-এর পাঁচ বছরের সাজা সীমা এই বিষয়ে একমাত্র সবচেয়ে গুরুত্বপূর্ণ সাংখ্যিক বিবরণ -- এটি পরিবর্তন করে কোন আদালত আপিল শোনে, কেবল মামলাটি কতটা গুরুতর তা নয়।",
+            "ধারা ৪০৪-এর বদ্ধ-তালিকা নীতি, চেতনায়, দেওয়ানি কার্যবিধির নিজস্ব সাধারণ আপিল অধিকারের পদ্ধতির প্রতিফলন করে: সবসময় নির্দিষ্ট বিধান খুঁজুন, অধিকারটি বিদ্যমান বলে ধরে নেবেন না।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CRPC-S404",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Section 404 (Unless otherwise provided, no appeal to lie)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "note": "Verbatim Bangladesh-specific text obtained via search-indexed content of the primary source page during this session, corroborated across two independent results."
+    },
+    {
+      "content_id": "LREF-CRPC-S407-408",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Sections 407 (Appeal from sentence of Magistrate of the second or third class) and 408 (Appeal from sentence of Joint Sessions Judge and Magistrates of the first class)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "note": "Verbatim Bangladesh-specific text obtained via search-indexed content of the primary source page during this session, corroborated across three independent results, including the amendment history (Section 408 substituted by the Code of Criminal Procedure (Amendment) Act, 2009)."
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-APPEAL-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-APPEAL-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-19",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S404"],
+      "exam_focus": "The closed-list principle of S.404.",
+      "source_basis": "Original question drawn directly from verbatim S.404 text.",
+      "mistake_tags": ["s404-closed-list-appeal"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-APPEAL-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 404, CrPC, when does a right of appeal from a Criminal Court's judgment or order exist?",
+          "options": { "A": "Whenever the convicted person believes the outcome was unjust", "B": "Only where the Code itself, or another law currently in force, specifically provides for it", "C": "Automatically, in every criminal case without exception", "D": "Only where the sentence exceeds one year of imprisonment" },
+          "explanation": "Section 404 states that no appeal lies from any judgment or order of a Criminal Court except as provided for by the Code or another law for the time being in force -- a closed-list principle, not a general right.",
+          "why_other_options_are_wrong": { "A": "A subjective sense of injustice does not itself create a right of appeal under Section 404.", "C": "This overstates the position -- Section 404 specifically denies an automatic, universal appeal right.", "D": "No universal one-year sentence threshold governs appeal rights generally under Section 404 -- specific provisions set their own conditions." }
+        },
+        "bn": {
+          "question": "ফৌজদারি কার্যবিধির ধারা ৪০৪-এর অধীনে, একটি ফৌজদারি আদালতের রায় বা আদেশ থেকে আপিলের অধিকার কখন বিদ্যমান?",
+          "options": { "A": "যখনই দোষী সাব্যস্ত ব্যক্তি বিশ্বাস করেন ফলাফলটি অন্যায্য ছিল", "B": "কেবল যেখানে বিধি নিজে, বা বর্তমানে কার্যকর অন্য কোনো আইন, সুনির্দিষ্টভাবে তা প্রদান করে", "C": "স্বয়ংক্রিয়ভাবে, প্রতিটি ফৌজদারি মামলায় ব্যতিক্রম ছাড়াই", "D": "কেবল যেখানে সাজা এক বছরের কারাদণ্ড অতিক্রম করে" },
+          "explanation": "ধারা ৪০৪ বলে যে কোনো ফৌজদারি আদালতের রায় বা আদেশ থেকে কোনো আপিল হবে না, বিধি বা বর্তমানে কার্যকর অন্য কোনো আইন দ্বারা প্রদত্ত ব্যতীত -- একটি বদ্ধ-তালিকা নীতি, সাধারণ অধিকার নয়।",
+          "why_other_options_are_wrong": { "A": "অন্যায়ের একটি বিষয়ীগত অনুভূতি নিজে থেকে ধারা ৪০৪-এর অধীনে আপিলের অধিকার তৈরি করে না।", "C": "এটি অবস্থানটি অতিরিক্ত বলে -- ধারা ৪০৪ সুনির্দিষ্টভাবে একটি স্বয়ংক্রিয়, সার্বজনীন আপিল অধিকার অস্বীকার করে।", "D": "ধারা ৪০৪-এর অধীনে সাধারণভাবে আপিলের অধিকার নিয়ন্ত্রণকারী কোনো সার্বজনীন এক বছরের সাজা সীমা নেই -- নির্দিষ্ট বিধান তাদের নিজস্ব শর্ত নির্ধারণ করে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-APPEAL-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-APPEAL-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-19",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S407-408"],
+      "exam_focus": "The five-year sentence threshold diverting appeals to the High Court Division.",
+      "source_basis": "Original fact pattern drawn directly from verbatim S.408 text.",
+      "mistake_tags": ["s408-five-year-threshold"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-APPEAL-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "A Joint Sessions Judge convicts B and sentences B to eight years' imprisonment. Where does B's appeal lie?",
+          "options": { "A": "To the Sessions Judge, since all Joint Sessions Judge convictions are appealed there", "B": "To the Chief Judicial Magistrate", "C": "Directly to the High Court Division, since the sentence exceeds five years", "D": "There is no right of appeal from a sentence of this length" },
+          "explanation": "Section 408 specifically diverts an appeal from a Joint Sessions Judge's sentence directly to the High Court Division where that sentence exceeds five years' imprisonment -- eight years triggers this direct route.",
+          "why_other_options_are_wrong": { "A": "This ignores the specific five-year threshold exception in Section 408.", "B": "The Chief Judicial Magistrate hears appeals from second/third class Magistrate convictions under Section 407, not from a Joint Sessions Judge's sentence.", "D": "A right of appeal clearly exists here -- it simply lies directly to the High Court Division rather than the Sessions Judge." }
+        },
+        "bn": {
+          "question": "একজন যুগ্ম দায়রা জজ খ-কে দোষী সাব্যস্ত করেন এবং খ-কে আট বছরের কারাদণ্ডের সাজা দেন। খ-এর আপিল কোথায় হয়?",
+          "options": { "A": "দায়রা জজের কাছে, যেহেতু সকল যুগ্ম দায়রা জজের দোষী সাব্যস্ততা সেখানে আপিল হয়", "B": "প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে", "C": "সরাসরি হাইকোর্ট বিভাগে, যেহেতু সাজাটি পাঁচ বছর অতিক্রম করে", "D": "এই দৈর্ঘ্যের সাজা থেকে কোনো আপিলের অধিকার নেই" },
+          "explanation": "ধারা ৪০৮ সুনির্দিষ্টভাবে একজন যুগ্ম দায়রা জজের সাজা থেকে আপিলকে সরাসরি হাইকোর্ট বিভাগে পরিচালিত করে যেখানে সেই সাজা পাঁচ বছরের কারাদণ্ড অতিক্রম করে -- আট বছর এই সরাসরি পথ সক্রিয় করে।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ৪০৮-এর নির্দিষ্ট পাঁচ বছরের সীমা ব্যতিক্রম উপেক্ষা করে।", "B": "প্রধান বিচারিক ম্যাজিস্ট্রেট ধারা ৪০৭-এর অধীনে দ্বিতীয়/তৃতীয় শ্রেণির ম্যাজিস্ট্রেটের দোষী সাব্যস্ততা থেকে আপিল শোনেন, একজন যুগ্ম দায়রা জজের সাজা থেকে নয়।", "D": "এখানে স্পষ্টভাবে আপিলের অধিকার বিদ্যমান -- এটি কেবল দায়রা জজের পরিবর্তে সরাসরি হাইকোর্ট বিভাগে যায়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-APPEAL-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-APPEAL-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-19",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S407-408"],
+      "exam_focus": "S.407's basic routing rule.",
+      "source_basis": "Original question drawn directly from verbatim S.407 text.",
+      "mistake_tags": ["s407-basic-routing"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-APPEAL-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 407, a person convicted on a trial held by a Magistrate of the second or third class may appeal to:",
+          "options": { "A": "The Chief Judicial Magistrate, who may hear it personally or transfer it to an Additional Chief Judicial Magistrate", "B": "The High Court Division directly, regardless of sentence length", "C": "The Sessions Judge", "D": "The Attorney-General's office for review" },
+          "explanation": "Section 407 routes an appeal from a second or third class Magistrate's conviction to the Chief Judicial Magistrate, who may hear and dispose of it personally or transfer it to an Additional Chief Judicial Magistrate.",
+          "why_other_options_are_wrong": { "B": "Direct High Court Division appeal is not the route Section 407 establishes for this category of conviction.", "C": "The Sessions Judge is the destination for a different category of conviction under Section 408, not for second/third class Magistrate convictions under Section 407.", "D": "The Attorney-General's office does not function as an appellate body under Section 407." }
+        },
+        "bn": {
+          "question": "ধারা ৪০৭-এর অধীনে, একজন দ্বিতীয় বা তৃতীয় শ্রেণির ম্যাজিস্ট্রেটের পরিচালিত একটি বিচারে দোষী সাব্যস্ত একজন ব্যক্তি আপিল করতে পারেন:",
+          "options": { "A": "প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে, যিনি ব্যক্তিগতভাবে তা শুনতে পারেন বা একজন অতিরিক্ত প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে স্থানান্তর করতে পারেন", "B": "সরাসরি হাইকোর্ট বিভাগে, সাজার দৈর্ঘ্য নির্বিশেষে", "C": "দায়রা জজের কাছে", "D": "পর্যালোচনার জন্য অ্যাটর্নি জেনারেলের কার্যালয়ে" },
+          "explanation": "ধারা ৪০৭ একজন দ্বিতীয় বা তৃতীয় শ্রেণির ম্যাজিস্ট্রেটের দোষী সাব্যস্ততা থেকে একটি আপিল প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে পরিচালিত করে, যিনি ব্যক্তিগতভাবে তা শুনতে ও নিষ্পত্তি করতে পারেন বা একজন অতিরিক্ত প্রধান বিচারিক ম্যাজিস্ট্রেটের কাছে স্থানান্তর করতে পারেন।",
+          "why_other_options_are_wrong": { "B": "সরাসরি হাইকোর্ট বিভাগে আপিল এই শ্রেণির দোষী সাব্যস্ততার জন্য ধারা ৪০৭ প্রতিষ্ঠিত পথ নয়।", "C": "দায়রা জজ ধারা ৪০৮-এর অধীনে একটি ভিন্ন শ্রেণির দোষী সাব্যস্ততার জন্য গন্তব্য, ধারা ৪০৭-এর অধীনে দ্বিতীয়/তৃতীয় শ্রেণির ম্যাজিস্ট্রেটের দোষী সাব্যস্ততার জন্য নয়।", "D": "অ্যাটর্নি জেনারেলের কার্যালয় ধারা ৪০৭-এর অধীনে একটি আপিলীয় সংস্থা হিসেবে কাজ করে না।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-APPEAL-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-APPEAL-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-19",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S404", "LREF-CRPC-S407-408"],
+      "exam_focus": "Structural contrast with CPC Appeal -- rank of court vs. decree/order.",
+      "source_basis": "Original conceptual question connecting this lesson to the CPC Appeal lesson.",
+      "mistake_tags": ["crpc-appeal-vs-cpc-appeal-structure"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-APPEAL-001", "BC-CPC-APPEAL-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "What is the primary organising principle for determining where a CrPC appeal lies, in contrast to the CPC's approach?",
+          "options": { "A": "Both Codes use the identical decree/order classification to route appeals", "B": "CrPC appeals are primarily routed by the rank of the convicting court, whereas CPC appeals turn on classifying the outcome as a decree or an order", "C": "CrPC has no appeal routing principle at all -- every appeal goes to the same court", "D": "CPC appeals are routed by the rank of the deciding judge, exactly like CrPC appeals" },
+          "explanation": "CrPC appeal routing is organised primarily around the rank of the court that convicted the accused (second/third class Magistrate, Joint Sessions Judge, Sessions Court, and so on), a genuinely different structural principle from the CPC's decree-versus-order classification covered in this dataset's CPC Appeal lesson.",
+          "why_other_options_are_wrong": { "A": "This is incorrect -- the two Codes use different organising principles, not the same decree/order classification.", "C": "CrPC clearly does have a routing principle -- it is organised by convicting-court rank, not the absence of any principle.", "D": "This incorrectly imports the CrPC's rank-based principle into the CPC's own decree/order framework, which is how CPC appeals are actually organised." }
+        },
+        "bn": {
+          "question": "দেওয়ানি কার্যবিধির পদ্ধতির বিপরীতে, একটি ফৌজদারি কার্যবিধি আপিল কোথায় হবে তা নির্ধারণের প্রাথমিক সংগঠক নীতি কী?",
+          "options": { "A": "উভয় বিধিই আপিল পরিচালনার জন্য অভিন্ন ডিক্রি/আদেশ শ্রেণিবিভাগ ব্যবহার করে", "B": "ফৌজদারি কার্যবিধির আপিল প্রাথমিকভাবে দোষী সাব্যস্তকারী আদালতের পদমর্যাদা দ্বারা পরিচালিত হয়, যেখানে দেওয়ানি কার্যবিধির আপিল ফলাফলকে ডিক্রি বা আদেশ হিসেবে শ্রেণিবদ্ধ করার উপর নির্ভর করে", "C": "ফৌজদারি কার্যবিধির কোনো আপিল পরিচালনা নীতিই নেই -- প্রতিটি আপিল একই আদালতে যায়", "D": "দেওয়ানি কার্যবিধির আপিল সিদ্ধান্তদাতা বিচারকের পদমর্যাদা দ্বারা পরিচালিত হয়, ঠিক ফৌজদারি কার্যবিধির আপিলের মতো" },
+          "explanation": "ফৌজদারি কার্যবিধির আপিল পরিচালনা প্রাথমিকভাবে অভিযুক্তকে দোষী সাব্যস্তকারী আদালতের পদমর্যাদার (দ্বিতীয়/তৃতীয় শ্রেণির ম্যাজিস্ট্রেট, যুগ্ম দায়রা জজ, দায়রা আদালত, ইত্যাদি) চারপাশে সংগঠিত, এই ডেটাসেটের দেওয়ানি কার্যবিধি আপিল পাঠে আচ্ছাদিত ডিক্রি-বনাম-আদেশ শ্রেণিবিভাগ থেকে প্রকৃতপক্ষে একটি ভিন্ন কাঠামোগত নীতি।",
+          "why_other_options_are_wrong": { "A": "এটি ভুল -- দুটি বিধি ভিন্ন সংগঠক নীতি ব্যবহার করে, একই ডিক্রি/আদেশ শ্রেণিবিভাগ নয়।", "C": "ফৌজদারি কার্যবিধির স্পষ্টভাবে একটি পরিচালনা নীতি রয়েছে -- এটি দোষী সাব্যস্তকারী-আদালতের পদমর্যাদা দ্বারা সংগঠিত, কোনো নীতির অনুপস্থিতি নয়।", "D": "এটি ভুলভাবে ফৌজদারি কার্যবিধির পদমর্যাদা-ভিত্তিক নীতি দেওয়ানি কার্যবিধির নিজস্ব ডিক্রি/আদেশ কাঠামোতে আমদানি করে, যা প্রকৃতপক্ষে দেওয়ানি কার্যবিধির আপিল যেভাবে সংগঠিত।" }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,277 @@
+{
+  "batch_id": "BATCH-2026-08-005-PENAL-PRIVATE-DEFENCE",
+  "schema_version": "1.0",
+  "content_version": "2026.08.2",
+  "created_at": "2026-08-23T00:00:00Z",
+  "source": "claude-research-pass-2026-08-23",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Penal Code ties CrPC and CPC for the highest MCQ weight (20 marks) and had zero lesson coverage before this batch. This is a deliberately lighter second example (lesson + 4 MCQs, no written/viva pair) mirroring the batch-003 pattern. Topic chosen is Right of Private Defence (S.96-106) -- partly because it is highly tested and practically important, and partly because it lets this dataset properly resolve, with a full lesson, the section-numbering flag raised against this exact topic in data/syllabus.json (T-PENAL-06) during the original research pass.",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-PENAL-PRIVATEDEFENCE-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-PENAL-PRIVATEDEFENCE-001",
+      "topic_id": "T-PENAL-06",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "verification_note": "Reflects the long-standing, essentially unamended structure of Penal Code Chapter IV (General Exceptions), Sections 96-106, as taught uniformly across the jurisdictions that inherited this 1860 Code. This lesson uses S.96-106 (not the '107-120' figure that appeared in one secondary source for this exact topic) -- see the section_range_flag already recorded against topic T-PENAL-06 in data/syllabus.json for the reasoning. Not re-transcribed against a certified current bare act in this pass. No case law cited, for the same reason given in the other lessons in this dataset.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 35,
+      "prerequisite_ids": [],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-PENAL-PD-001", "BC-MCQ-PENAL-PD-002", "BC-MCQ-PENAL-PD-003", "BC-MCQ-PENAL-PD-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_law_ids": ["LREF-PENAL-S96-99", "LREF-PENAL-S100-106"],
+      "related_case_ids": [],
+      "legal_reference_ids": ["LREF-PENAL-S96-99", "LREF-PENAL-S100-106"],
+      "important_case_law": [],
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "language_versions": {
+        "en": {
+          "title": "Right of Private Defence",
+          "short_description": "Sections 96-106 of the Penal Code let a person lawfully use force to defend their own body or property (or another's) against certain offences -- but the right is bounded: it can extend to causing death only in specific, serious situations, and never extends further than necessity requires.",
+          "learning_objective": "By the end of this lesson you should be able to: state the general right under Sections 96-97; identify the situations in which the right does NOT arise (Section 99); list the categories of attack against which the right of private defence of the body extends to causing death (Section 100); and explain when the equivalent right over property extends to causing death (Section 103).",
+          "explanation": "Section 96 states the foundational principle simply: nothing is an offence which is done in the exercise of the right of private defence. Section 97 then defines the scope of that right -- every person has a right to defend (a) their own body, and the body of any other person, against any offence affecting the human body, and (b) their own property, or the property of any other person, movable or immovable, against theft, robbery, mischief, or criminal trespass, or an attempt to commit any of those offences.\n\nThe right is not unlimited. Section 99 removes it in several situations: there is generally no right of private defence against an act done, or attempted, by a public servant acting in good faith under colour of their office (even if that act is not strictly justifiable by law), unless it causes reasonable apprehension of death or grievous hurt; there is no right of private defence where there is time to have recourse to the protection of the public authorities; and, crucially, the right in no case extends to inflicting more harm than is necessary for the purpose of defence.\n\nFor defence of the body, Section 100 lists the specific, serious circumstances in which the right extends all the way to voluntarily causing death: an assault causing reasonable apprehension of death; an assault causing reasonable apprehension of grievous hurt; an assault with the intention of committing rape; an assault with the intention of gratifying unnatural lust; an assault with the intention of kidnapping or abducting; an assault with the intention of wrongfully confining a person, under circumstances which may reasonably cause them to apprehend that they will be unable to have recourse to the public authorities for release; and an act of throwing or administering acid, or attempting to, under circumstances reasonably causing apprehension of grievous hurt. Outside these listed circumstances, Section 101 caps the right at causing harm short of death. Section 102 fixes the right's timing: it commences as soon as a reasonable apprehension of danger arises, and continues only as long as that apprehension continues.\n\nFor defence of property, Section 103 lists its own, separate set of grave circumstances extending the right to causing death: robbery; house-breaking by night; mischief by fire committed on a building, tent, or vessel used as a human dwelling or for the custody of property; and theft, mischief, or house-trespass committed under circumstances that may reasonably cause apprehension of death or grievous hurt if the right of private defence is not exercised. Outside those, Section 104 caps the right at harm short of death, and Section 105 sets the right's timing for property offences.",
+          "key_concepts": ["The general right (S.96-97)", "Situations excluding the right (S.99)", "The 'no more harm than necessary' limitation", "When defence of the body may extend to death (S.100)", "When defence of property may extend to death (S.103)", "Commencement and continuance of the right (S.102, S.105)"],
+          "important_rules": [
+            "S.96-97: nothing done in the exercise of the right of private defence is an offence; the right covers defence of one's own or another's body, and of one's own or another's movable/immovable property, against specified offences.",
+            "S.99: no right of private defence against a public servant's good-faith official act (absent reasonable apprehension of death/grievous hurt); none where there is time to seek public-authority protection; and the right never extends to more harm than necessary.",
+            "S.100: lists the specific grave circumstances (e.g. apprehension of death, grievous hurt, rape, unnatural lust, kidnapping, wrongful confinement without recourse to authorities, acid attack) in which defence of the body may extend to causing death.",
+            "S.103: lists the specific grave circumstances (robbery, night house-breaking, fire-mischief to a dwelling, or theft/mischief/house-trespass reasonably apprehended to risk death or grievous hurt) in which defence of property may extend to causing death."
+          ],
+          "definitions": [
+            { "term": "Right of private defence", "definition": "The statutory right under S.96-106 allowing a person to use reasonable force, including in specific grave circumstances force causing death, to protect body or property from certain offences, without that force itself being an offence." },
+            { "term": "Necessity limitation", "definition": "The Section 99 principle that the right of private defence never extends to inflicting more harm than is necessary for the purpose of defence -- exceeding that necessity takes the act outside the protection of the right." }
+          ],
+          "examples": [
+            "A is suddenly attacked with a deadly weapon in circumstances giving A reasonable apprehension of death. A uses force sufficient to cause the attacker's death to repel the attack. This falls within the first circumstance listed in Section 100 -- the right of private defence of the body extends to causing death here.",
+            "B discovers a person committing theft of a bicycle from B's veranda in daylight, with no threat of violence and ample time to call for help or the police. B chases the thief and, catching him, beats him so severely that the thief dies. This is unlikely to fall within Section 103's specific grave circumstances for property (no robbery, night house-breaking, or fire-mischief, and no apprehension of death/grievous hurt if the theft is not resisted with lethal force) -- and, independently, Section 99's necessity limitation would likely be exceeded, since calling the public authorities was a real option and lethal force went beyond what the situation required."
+          ],
+          "exam_focus": "MCQ setters like to test whether a fact pattern falls within the SPECIFIC listed circumstances of Section 100 or 103 (rather than any serious-sounding threat in general), and whether the response stayed within the Section 99 necessity limit. Written setters often give a scenario and ask candidates to determine whether the right of private defence extended to causing death, requiring the candidate to map the facts onto the specific paragraphs of S.100 or S.103 rather than reasoning in the abstract.",
+          "common_traps": [
+            "Assuming any threatening situation justifies causing death in self-defence -- Sections 100 and 103 give closed, specific lists of circumstances, not a general 'if I felt threatened' standard.",
+            "Forgetting the Section 99 necessity cap -- even where some right of private defence exists, using more force than necessary removes the act from the right's protection.",
+            "Overlooking that Section 99 also removes the right against a public servant's good-faith official acts in most circumstances -- this is a frequently tested exclusion.",
+            "Treating the body-defence list (S.100) and the property-defence list (S.103) as interchangeable -- they list different circumstances and must not be mixed up."
+          ],
+          "quick_revision": [
+            "S.96-97 = the right exists, for body and property, against specified offences.",
+            "S.99 = three limits: no right against bona fide public servant acts (usually); none if time to seek authorities; never more harm than necessary.",
+            "S.100 = body defence -> death only for the specific listed grave threats (death, grievous hurt, rape, unnatural lust, kidnap, wrongful confinement without recourse, acid attack).",
+            "S.103 = property defence -> death only for robbery, night house-breaking, dwelling-fire mischief, or theft/mischief/trespass reasonably apprehended to risk death/grievous hurt."
+          ],
+          "key_takeaways": [
+            "The right of private defence is real and important, but deliberately bounded -- it is not a general licence to use lethal force whenever one feels threatened.",
+            "Sections 100 and 103 work as closed lists for the body and property respectively; a fact pattern must fit one of the listed circumstances for the right to extend to causing death.",
+            "The necessity limitation in Section 99 applies across the board and is frequently the deciding factor in borderline fact patterns."
+          ]
+        },
+        "bn": {
+          "title": "ব্যক্তিগত আত্মরক্ষার অধিকার",
+          "short_description": "দণ্ডবিধির ৯৬-১০৬ ধারা একজন ব্যক্তিকে নিজের দেহ বা সম্পত্তি (অথবা অন্য কারো) নির্দিষ্ট কিছু অপরাধের বিরুদ্ধে আইনসম্মতভাবে বল প্রয়োগ করে রক্ষা করার অনুমতি দেয় -- তবে এই অধিকার সীমাবদ্ধ: এটি কেবল নির্দিষ্ট, গুরুতর পরিস্থিতিতে মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হতে পারে, এবং প্রয়োজনের চেয়ে বেশি কখনো নয়।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৯৬-৯৭-এর অধীনে সাধারণ অধিকারটি বলতে পারবেন; কোন পরিস্থিতিতে অধিকারটি উদ্ভূত হয় না তা (ধারা ৯৯) শনাক্ত করতে পারবেন; শরীর রক্ষার ক্ষেত্রে ব্যক্তিগত আত্মরক্ষার অধিকার কোন কোন আক্রমণের বিরুদ্ধে মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হয় (ধারা ১০০) তার তালিকা করতে পারবেন; এবং সম্পত্তির ক্ষেত্রে সমতুল্য অধিকার কখন মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হয় (ধারা ১০৩) তা ব্যাখ্যা করতে পারবেন।",
+          "explanation": "ধারা ৯৬ মূল নীতিটি সহজভাবে বর্ণনা করে: ব্যক্তিগত আত্মরক্ষার অধিকার প্রয়োগে করা কোনো কাজ অপরাধ নয়। ধারা ৯৭ এরপর সেই অধিকারের পরিধি সংজ্ঞায়িত করে -- প্রতিটি ব্যক্তির অধিকার রয়েছে (ক) নিজের দেহ, এবং অন্য যেকোনো ব্যক্তির দেহ, মানবদেহের বিরুদ্ধে যেকোনো অপরাধ থেকে রক্ষা করার, এবং (খ) নিজের সম্পত্তি, অথবা অন্য যেকোনো ব্যক্তির সম্পত্তি, স্থাবর বা অস্থাবর, চুরি, দস্যুতা, ক্ষতিসাধন, বা অপরাধমূলক অনুপ্রবেশ, অথবা এই অপরাধগুলোর যেকোনোটি সংঘটনের চেষ্টা থেকে রক্ষা করার।\n\nঅধিকারটি সীমাহীন নয়। ধারা ৯৯ বেশ কিছু পরিস্থিতিতে এটি অপসারণ করে: সাধারণত কোনো সরকারি কর্মচারীর সরল বিশ্বাসে তার পদের রঙে সম্পাদিত বা সম্পাদনের চেষ্টাকৃত কোনো কাজের বিরুদ্ধে ব্যক্তিগত আত্মরক্ষার কোনো অধিকার নেই (যদিও সেই কাজটি কঠোরভাবে আইনসঙ্গত না হয়), যদি না তা মৃত্যু বা গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কা সৃষ্টি করে; সরকারি কর্তৃপক্ষের সুরক্ষা গ্রহণের সময় থাকলে ব্যক্তিগত আত্মরক্ষার কোনো অধিকার নেই; এবং, গুরুত্বপূর্ণভাবে, অধিকারটি কখনোই আত্মরক্ষার উদ্দেশ্যে প্রয়োজনের চেয়ে বেশি ক্ষতি সাধন পর্যন্ত বিস্তৃত হয় না।\n\nদেহ রক্ষার ক্ষেত্রে, ধারা ১০০ সেই নির্দিষ্ট, গুরুতর পরিস্থিতিগুলোর তালিকা করে যেখানে অধিকারটি ইচ্ছাকৃতভাবে মৃত্যু ঘটানো পর্যন্ত সম্পূর্ণরূপে বিস্তৃত হয়: মৃত্যুর যুক্তিসঙ্গত আশঙ্কা সৃষ্টিকারী আক্রমণ; গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কা সৃষ্টিকারী আক্রমণ; ধর্ষণ সংঘটনের উদ্দেশ্যে আক্রমণ; অস্বাভাবিক কামলালসা চরিতার্থ করার উদ্দেশ্যে আক্রমণ; অপহরণ বা অপরহণের উদ্দেশ্যে আক্রমণ; এমন পরিস্থিতিতে কোনো ব্যক্তিকে অন্যায়ভাবে আটক রাখার উদ্দেশ্যে আক্রমণ যা তাকে যুক্তিসঙ্গতভাবে এই আশঙ্কা করাতে পারে যে তিনি মুক্তির জন্য সরকারি কর্তৃপক্ষের সহায়তা নিতে অক্ষম হবেন; এবং গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কা সৃষ্টিকারী পরিস্থিতিতে এসিড নিক্ষেপ বা প্রয়োগ, অথবা তার চেষ্টা। এই তালিকাভুক্ত পরিস্থিতির বাইরে, ধারা ১০১ অধিকারটিকে মৃত্যুর কম ক্ষতির মধ্যে সীমাবদ্ধ করে। ধারা ১০২ অধিকারের সময়কাল নির্ধারণ করে: এটি বিপদের যুক্তিসঙ্গত আশঙ্কা উদ্ভূত হওয়ার সাথে সাথে শুরু হয়, এবং কেবল সেই আশঙ্কা অব্যাহত থাকা পর্যন্ত অব্যাহত থাকে।\n\nসম্পত্তি রক্ষার ক্ষেত্রে, ধারা ১০৩ নিজস্ব, পৃথক গুরুতর পরিস্থিতির তালিকা করে যা অধিকারটিকে মৃত্যু ঘটানো পর্যন্ত বিস্তৃত করে: দস্যুতা; রাতে গৃহভঙ্গ; মানুষের বসবাসের জন্য বা সম্পত্তি রক্ষণাবেক্ষণের জন্য ব্যবহৃত ভবন, তাঁবু, বা জলযানে অগ্নিসংযোগের মাধ্যমে ক্ষতিসাধন; এবং এমন পরিস্থিতিতে চুরি, ক্ষতিসাধন, বা গৃহে অনুপ্রবেশ যা ব্যক্তিগত আত্মরক্ষার অধিকার প্রয়োগ না করলে মৃত্যু বা গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কা সৃষ্টি করতে পারে। এর বাইরে, ধারা ১০৪ অধিকারটিকে মৃত্যুর কম ক্ষতির মধ্যে সীমাবদ্ধ করে, এবং ধারা ১০৫ সম্পত্তি সংক্রান্ত অপরাধের জন্য অধিকারের সময়কাল নির্ধারণ করে।",
+          "key_concepts": ["সাধারণ অধিকার (ধারা ৯৬-৯৭)", "অধিকার বাদ দেওয়া পরিস্থিতি (ধারা ৯৯)", "'প্রয়োজনের বেশি ক্ষতি নয়' সীমাবদ্ধতা", "দেহ রক্ষা কখন মৃত্যু পর্যন্ত বিস্তৃত হতে পারে (ধারা ১০০)", "সম্পত্তি রক্ষা কখন মৃত্যু পর্যন্ত বিস্তৃত হতে পারে (ধারা ১০৩)", "অধিকারের সূচনা ও ধারাবাহিকতা (ধারা ১০২, ১০৫)"],
+          "important_rules": [
+            "ধারা ৯৬-৯৭: ব্যক্তিগত আত্মরক্ষার অধিকার প্রয়োগে করা কোনো কাজ অপরাধ নয়; অধিকারটি নিজের বা অন্যের দেহ, এবং নিজের বা অন্যের স্থাবর/অস্থাবর সম্পত্তি, নির্দিষ্ট অপরাধের বিরুদ্ধে রক্ষা করা আচ্ছাদন করে।",
+            "ধারা ৯৯: সরকারি কর্মচারীর সরল বিশ্বাসে সম্পাদিত সরকারি কাজের বিরুদ্ধে কোনো অধিকার নেই (মৃত্যু/গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কা না থাকলে); সরকারি কর্তৃপক্ষের সুরক্ষা খোঁজার সময় থাকলে কোনো অধিকার নেই; এবং অধিকারটি কখনো প্রয়োজনের চেয়ে বেশি ক্ষতি পর্যন্ত বিস্তৃত হয় না।",
+            "ধারা ১০০: নির্দিষ্ট গুরুতর পরিস্থিতির তালিকা করে (যেমন মৃত্যু, গুরুতর জখম, ধর্ষণ, অস্বাভাবিক কামলালসা, অপহরণ, কর্তৃপক্ষের সহায়তা ছাড়া অন্যায় আটক, এসিড আক্রমণের আশঙ্কা) যেখানে দেহ রক্ষা মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হতে পারে।",
+            "ধারা ১০৩: নির্দিষ্ট গুরুতর পরিস্থিতির তালিকা করে (দস্যুতা, রাতে গৃহভঙ্গ, বসবাসের স্থানে অগ্নিসংযোগ, অথবা মৃত্যু/গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কাসৃষ্টিকারী চুরি/ক্ষতিসাধন/গৃহে অনুপ্রবেশ) যেখানে সম্পত্তি রক্ষা মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হতে পারে।"
+          ],
+          "definitions": [
+            { "term": "ব্যক্তিগত আত্মরক্ষার অধিকার", "definition": "ধারা ৯৬-১০৬-এর অধীনে সংবিধিবদ্ধ অধিকার যা একজন ব্যক্তিকে নির্দিষ্ট অপরাধ থেকে দেহ বা সম্পত্তি রক্ষা করতে যুক্তিসঙ্গত বল, এবং নির্দিষ্ট গুরুতর পরিস্থিতিতে মৃত্যু ঘটানো পর্যন্ত বল প্রয়োগ করার অনুমতি দেয়, সেই বল প্রয়োগ নিজে অপরাধ না হয়ে।" },
+            { "term": "প্রয়োজনীয়তার সীমাবদ্ধতা", "definition": "ধারা ৯৯-এর নীতি যে ব্যক্তিগত আত্মরক্ষার অধিকার কখনো আত্মরক্ষার উদ্দেশ্যে প্রয়োজনের চেয়ে বেশি ক্ষতি সাধন পর্যন্ত বিস্তৃত হয় না -- সেই প্রয়োজনীয়তা অতিক্রম করলে কাজটি অধিকারের সুরক্ষার বাইরে চলে যায়।" }
+          ],
+          "examples": [
+            "ক-কে হঠাৎ একটি প্রাণঘাতী অস্ত্র দিয়ে এমন পরিস্থিতিতে আক্রমণ করা হয় যা ক-কে মৃত্যুর যুক্তিসঙ্গত আশঙ্কা দেয়। ক আক্রমণকারীকে প্রতিহত করতে এমন বল প্রয়োগ করে যা আক্রমণকারীর মৃত্যু ঘটায়। এটি ধারা ১০০-এ তালিকাভুক্ত প্রথম পরিস্থিতির মধ্যে পড়ে -- এখানে দেহ রক্ষার ব্যক্তিগত আত্মরক্ষার অধিকার মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হয়।",
+            "খ দিনের বেলা কোনো সহিংসতার হুমকি ছাড়াই এবং সাহায্য বা পুলিশ ডাকার পর্যাপ্ত সময় থাকা অবস্থায় খ-এর বারান্দা থেকে একটি সাইকেল চুরি হতে দেখেন। খ চোরকে ধাওয়া করে ধরে ফেলে এবং এত মারাত্মকভাবে পেটান যে চোর মারা যায়। এটি সম্ভবত সম্পত্তির জন্য ধারা ১০৩-এর নির্দিষ্ট গুরুতর পরিস্থিতির মধ্যে পড়ে না (দস্যুতা, রাতে গৃহভঙ্গ, বা অগ্নিসংযোগে ক্ষতিসাধন নয়, এবং প্রাণঘাতী বল দিয়ে প্রতিরোধ না করলে মৃত্যু/গুরুতর জখমের আশঙ্কাও নেই) -- এবং, স্বাধীনভাবে, ধারা ৯৯-এর প্রয়োজনীয়তার সীমাবদ্ধতাও সম্ভবত অতিক্রান্ত হয়েছে, কারণ সরকারি কর্তৃপক্ষকে ডাকা একটি বাস্তব বিকল্প ছিল এবং প্রাণঘাতী বল পরিস্থিতির প্রয়োজনের চেয়ে বেশি ছিল।"
+          ],
+          "exam_focus": "এমসিকিউ প্রশ্নকর্তারা প্রায়ই যাচাই করেন কোনো ঘটনাপ্রবাহ ধারা ১০০ বা ১০৩-এর সুনির্দিষ্ট তালিকাভুক্ত পরিস্থিতির মধ্যে পড়ে কিনা (সাধারণভাবে যেকোনো গুরুতর-শোনানো হুমকির পরিবর্তে), এবং প্রতিক্রিয়াটি ধারা ৯৯-এর প্রয়োজনীয়তার সীমার মধ্যে ছিল কিনা। লিখিত পরীক্ষায় প্রায়ই একটি দৃশ্যকল্প দিয়ে প্রার্থীদের নির্ধারণ করতে বলা হয় ব্যক্তিগত আত্মরক্ষার অধিকার মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হয়েছিল কিনা, যার জন্য প্রার্থীকে বিমূর্তভাবে যুক্তি না দিয়ে ঘটনাগুলোকে ধারা ১০০ বা ১০৩-এর সুনির্দিষ্ট অনুচ্ছেদের সাথে মেলাতে হয়।",
+          "common_traps": [
+            "মনে করা যে যেকোনো হুমকিমূলক পরিস্থিতি আত্মরক্ষায় মৃত্যু ঘটানো ন্যায্য করে -- ধারা ১০০ ও ১০৩ নির্দিষ্ট পরিস্থিতির একটি বদ্ধ তালিকা দেয়, সাধারণ 'আমি হুমকি অনুভব করেছি' মানদণ্ড নয়।",
+            "ধারা ৯৯-এর প্রয়োজনীয়তার সীমা ভুলে যাওয়া -- কিছু ব্যক্তিগত আত্মরক্ষার অধিকার থাকলেও, প্রয়োজনের চেয়ে বেশি বল ব্যবহার করলে কাজটি অধিকারের সুরক্ষা থেকে বাদ পড়ে।",
+            "উপেক্ষা করা যে ধারা ৯৯ বেশিরভাগ পরিস্থিতিতে সরকারি কর্মচারীর সরল বিশ্বাসে সম্পাদিত সরকারি কাজের বিরুদ্ধেও অধিকারটি অপসারণ করে -- এটি প্রায়ই পরীক্ষায় আসা একটি বর্জন।",
+            "দেহ-রক্ষার তালিকা (ধারা ১০০) ও সম্পত্তি-রক্ষার তালিকা (ধারা ১০৩)-কে অভিন্ন মনে করা -- এগুলো ভিন্ন পরিস্থিতির তালিকা করে এবং গুলিয়ে ফেলা উচিত নয়।"
+          ],
+          "quick_revision": [
+            "ধারা ৯৬-৯৭ = অধিকারটি বিদ্যমান, দেহ ও সম্পত্তির জন্য, নির্দিষ্ট অপরাধের বিরুদ্ধে।",
+            "ধারা ৯৯ = তিনটি সীমা: সরল বিশ্বাসে সরকারি কর্মচারীর কাজের বিরুদ্ধে সাধারণত কোনো অধিকার নেই; কর্তৃপক্ষের সহায়তা নেওয়ার সময় থাকলে নেই; প্রয়োজনের চেয়ে বেশি কখনো নয়।",
+            "ধারা ১০০ = দেহ রক্ষা -> কেবল নির্দিষ্ট তালিকাভুক্ত গুরুতর হুমকির জন্য মৃত্যু (মৃত্যু, গুরুতর জখম, ধর্ষণ, অস্বাভাবিক কামলালসা, অপহরণ, সহায়তা ছাড়া অন্যায় আটক, এসিড আক্রমণ)।",
+            "ধারা ১০৩ = সম্পত্তি রক্ষা -> কেবল দস্যুতা, রাতে গৃহভঙ্গ, বসবাসের স্থানে অগ্নিসংযোগ, অথবা মৃত্যু/গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কাসৃষ্টিকারী চুরি/ক্ষতিসাধন/অনুপ্রবেশের জন্য মৃত্যু।"
+          ],
+          "key_takeaways": [
+            "ব্যক্তিগত আত্মরক্ষার অধিকার প্রকৃত ও গুরুত্বপূর্ণ, কিন্তু ইচ্ছাকৃতভাবে সীমাবদ্ধ -- এটি হুমকি অনুভব করলেই প্রাণঘাতী বল ব্যবহারের একটি সাধারণ অনুমতিপত্র নয়।",
+            "ধারা ১০০ ও ১০৩ যথাক্রমে দেহ ও সম্পত্তির জন্য বদ্ধ তালিকা হিসেবে কাজ করে; মৃত্যু ঘটানো পর্যন্ত অধিকার বিস্তৃত হতে হলে ঘটনাপ্রবাহকে তালিকাভুক্ত পরিস্থিতির একটির সাথে মিলতে হবে।",
+            "ধারা ৯৯-এর প্রয়োজনীয়তার সীমাবদ্ধতা সর্বত্র প্রযোজ্য এবং প্রায়ই সীমান্তরেখার ঘটনাপ্রবাহে নির্ধারক বিষয় হয়ে ওঠে।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-PENAL-S96-99",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Sections 96-99",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "note": "Paraphrased in the lesson, not verbatim-transcribed against a certified current bare act."
+    },
+    {
+      "content_id": "LREF-PENAL-S100-106",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Sections 100-106",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-LAWHELPBD-SYLLABUS-001"],
+      "note": "Same caveat as S.96-99. The exact current wording of each paragraph in S.100 and S.103 should be checked against a certified bare act before this is marked VERIFIED."
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-PD-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-PD-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-06",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S96-99"],
+      "exam_focus": "The necessity limitation under S.99.",
+      "source_basis": "Original question on S.99.",
+      "mistake_tags": ["s99-necessity-limit"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-PRIVATEDEFENCE-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 99 of the Penal Code, the right of private defence:",
+          "options": { "A": "Has no limitation once a threat is genuinely present", "B": "Extends to whatever force the defender subjectively feels is appropriate", "C": "Never extends to inflicting more harm than is necessary for the purpose of defence", "D": "Is available only to the owner of the property, never to a third party" },
+          "explanation": "Section 99 explicitly caps the right: it never extends to inflicting more harm than is necessary for the purpose of defence, regardless of how genuine the underlying threat was.",
+          "why_other_options_are_wrong": { "A": "This is the opposite of the S.99 position -- the right is expressly limited even where a genuine threat exists.", "B": "The limit is an objective necessity standard, not the defender's subjective sense of what feels appropriate.", "D": "S.97 extends the right of private defence of property to any person's property, not only the owner's." }
+        },
+        "bn": {
+          "question": "দণ্ডবিধির ধারা ৯৯ অনুযায়ী, ব্যক্তিগত আত্মরক্ষার অধিকার:",
+          "options": { "A": "প্রকৃত হুমকি উপস্থিত থাকলে কোনো সীমাবদ্ধতা নেই", "B": "আত্মরক্ষাকারী বিষয়গতভাবে যা উপযুক্ত মনে করেন তত বল পর্যন্ত বিস্তৃত হয়", "C": "আত্মরক্ষার উদ্দেশ্যে প্রয়োজনের চেয়ে বেশি ক্ষতি সাধন পর্যন্ত কখনো বিস্তৃত হয় না", "D": "কেবল সম্পত্তির মালিকের জন্য উপলব্ধ, তৃতীয় পক্ষের জন্য কখনো নয়" },
+          "explanation": "ধারা ৯৯ স্পষ্টভাবে অধিকারটি সীমাবদ্ধ করে: অন্তর্নিহিত হুমকি যতই প্রকৃত হোক না কেন, এটি কখনো আত্মরক্ষার উদ্দেশ্যে প্রয়োজনের চেয়ে বেশি ক্ষতি সাধন পর্যন্ত বিস্তৃত হয় না।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ৯৯-এর অবস্থানের বিপরীত -- প্রকৃত হুমকি থাকলেও অধিকারটি স্পষ্টভাবে সীমাবদ্ধ।", "B": "সীমাটি একটি বস্তুনিষ্ঠ প্রয়োজনীয়তার মানদণ্ড, আত্মরক্ষাকারীর বিষয়গত অনুভূতি নয়।", "D": "ধারা ৯৭ সম্পত্তির ব্যক্তিগত আত্মরক্ষার অধিকারকে যেকোনো ব্যক্তির সম্পত্তি পর্যন্ত বিস্তৃত করে, কেবল মালিকের নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-PD-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-PD-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-06",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S100-106"],
+      "exam_focus": "Closed-list nature of Section 100.",
+      "source_basis": "Original question on S.100's scope.",
+      "mistake_tags": ["s100-closed-list"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-PRIVATEDEFENCE-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "The right of private defence of the body extends to voluntarily causing the death of the assailant only where the situation falls within:",
+          "options": { "A": "Any situation the defender genuinely believed was life-threatening", "B": "One of the specific circumstances listed in Section 100", "C": "Any assault at all, regardless of severity", "D": "Situations where the assailant is a stranger rather than an acquaintance" },
+          "explanation": "Section 100 provides a specific, closed list of grave circumstances (apprehension of death, grievous hurt, rape, unnatural lust, kidnapping, wrongful confinement without recourse to authorities, acid attack) -- the right to cause death is tied to this list, not to a general subjective belief.",
+          "why_other_options_are_wrong": { "A": "A genuine subjective belief alone is not the statutory test -- the situation must fit one of Section 100's listed circumstances.", "C": "Not every assault qualifies; most assaults fall under the lesser right in Section 101, not Section 100.", "D": "The identity/relationship of the assailant to the defender is not the relevant test under Section 100." }
+        },
+        "bn": {
+          "question": "দেহ রক্ষার ব্যক্তিগত আত্মরক্ষার অধিকার আক্রমণকারীর ইচ্ছাকৃত মৃত্যু ঘটানো পর্যন্ত কেবল তখনই বিস্তৃত হয় যখন পরিস্থিতি নিচের কোনটির মধ্যে পড়ে?",
+          "options": { "A": "আত্মরক্ষাকারী প্রকৃতপক্ষে যা জীবন-হুমকিস্বরূপ মনে করেছিলেন এমন যেকোনো পরিস্থিতি", "B": "ধারা ১০০-এ তালিকাভুক্ত সুনির্দিষ্ট পরিস্থিতিগুলোর একটি", "C": "তীব্রতা নির্বিশেষে যেকোনো আক্রমণ", "D": "যেসব পরিস্থিতিতে আক্রমণকারী পরিচিত ব্যক্তির পরিবর্তে অপরিচিত" },
+          "explanation": "ধারা ১০০ গুরুতর পরিস্থিতির একটি সুনির্দিষ্ট, বদ্ধ তালিকা প্রদান করে (মৃত্যুর আশঙ্কা, গুরুতর জখম, ধর্ষণ, অস্বাভাবিক কামলালসা, অপহরণ, কর্তৃপক্ষের সহায়তা ছাড়া অন্যায় আটক, এসিড আক্রমণ) -- মৃত্যু ঘটানোর অধিকার এই তালিকার সাথে সংযুক্ত, একটি সাধারণ বিষয়গত বিশ্বাসের সাথে নয়।",
+          "why_other_options_are_wrong": { "A": "কেবল একটি প্রকৃত বিষয়গত বিশ্বাস সংবিধিবদ্ধ পরীক্ষা নয় -- পরিস্থিতিকে অবশ্যই ধারা ১০০-এর তালিকাভুক্ত পরিস্থিতিগুলোর একটির সাথে মিলতে হবে।", "C": "প্রতিটি আক্রমণ যোগ্য নয়; অধিকাংশ আক্রমণ ধারা ১০১-এর কম অধিকারের আওতায় পড়ে, ধারা ১০০-এর নয়।", "D": "আত্মরক্ষাকারীর সাথে আক্রমণকারীর পরিচয়/সম্পর্ক ধারা ১০০-এর অধীনে প্রাসঙ্গিক পরীক্ষা নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-PD-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-PD-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-06",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S100-106"],
+      "exam_focus": "Distinguishing S.100 (body) from S.103 (property) circumstances.",
+      "source_basis": "Original applied fact pattern.",
+      "mistake_tags": ["s100-vs-s103-confusion"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-PRIVATEDEFENCE-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "A person breaks into an occupied dwelling house at night. The occupant, acting under the right of private defence of property, causes the intruder's death. Which section most directly supports the occupant's right to extend to causing death in these circumstances?",
+          "options": { "A": "Section 96", "B": "Section 99", "C": "Section 100", "D": "Section 103" },
+          "explanation": "House-breaking by night is one of the specific circumstances listed in Section 103, which governs when the right of private defence of PROPERTY extends to causing death.",
+          "why_other_options_are_wrong": { "A": "Section 96 states the general foundational principle, not the specific circumstance permitting death.", "B": "Section 99 is a limiting provision (necessity, exclusions), not the source of the right to cause death here.", "C": "Section 100 concerns defence of the BODY, not property -- the correct property-defence provision is Section 103." }
+        },
+        "bn": {
+          "question": "একজন ব্যক্তি রাতে একটি বসবাসকৃত বাসগৃহে অনুপ্রবেশ করে। বাসিন্দা, সম্পত্তির ব্যক্তিগত আত্মরক্ষার অধিকারের অধীনে কাজ করে, অনুপ্রবেশকারীর মৃত্যু ঘটান। এই পরিস্থিতিতে বাসিন্দার অধিকার মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হওয়াকে কোন ধারা সবচেয়ে সরাসরি সমর্থন করে?",
+          "options": { "A": "ধারা ৯৬", "B": "ধারা ৯৯", "C": "ধারা ১০০", "D": "ধারা ১০৩" },
+          "explanation": "রাতে গৃহভঙ্গ ধারা ১০৩-এ তালিকাভুক্ত সুনির্দিষ্ট পরিস্থিতিগুলোর একটি, যা নিয়ন্ত্রণ করে কখন সম্পত্তির ব্যক্তিগত আত্মরক্ষার অধিকার মৃত্যু ঘটানো পর্যন্ত বিস্তৃত হয়।",
+          "why_other_options_are_wrong": { "A": "ধারা ৯৬ সাধারণ মৌলিক নীতিটি বর্ণনা করে, মৃত্যু অনুমোদনকারী নির্দিষ্ট পরিস্থিতি নয়।", "B": "ধারা ৯৯ একটি সীমাবদ্ধকারী বিধান (প্রয়োজনীয়তা, বর্জন), এখানে মৃত্যু ঘটানোর অধিকারের উৎস নয়।", "C": "ধারা ১০০ দেহ রক্ষা সম্পর্কিত, সম্পত্তি নয় -- সঠিক সম্পত্তি-রক্ষা বিধান হলো ধারা ১০৩।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-PD-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-PD-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-06",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S96-99"],
+      "exam_focus": "Exclusion against public servants under S.99.",
+      "source_basis": "Original question on the public-servant exclusion.",
+      "mistake_tags": ["s99-public-servant-exclusion"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-PENAL-PRIVATEDEFENCE-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 99, the right of private defence generally does NOT arise against:",
+          "options": { "A": "An act done in good faith by a public servant acting under colour of their office, unless it causes reasonable apprehension of death or grievous hurt", "B": "Any act done by a stranger at night", "C": "Any act done by a family member", "D": "Any act connected with property worth less than a specified amount" },
+          "explanation": "Section 99 removes the right of private defence, as a general rule, against a public servant's good-faith official act -- unless that act itself causes reasonable apprehension of death or grievous hurt.",
+          "why_other_options_are_wrong": { "B": "Being a stranger, or the act occurring at night, is not itself a Section 99 exclusion (night house-breaking is instead relevant to extending the right under S.103, the opposite effect).", "C": "Family relationship is not a Section 99 exclusion.", "D": "Section 99 does not turn on any monetary threshold for the property involved." }
+        },
+        "bn": {
+          "question": "ধারা ৯৯-এর অধীনে, ব্যক্তিগত আত্মরক্ষার অধিকার সাধারণত নিচের কোনটির বিরুদ্ধে উদ্ভূত হয় না?",
+          "options": { "A": "কোনো সরকারি কর্মচারী কর্তৃক তার পদের রঙে সরল বিশ্বাসে সম্পাদিত কাজ, যদি না তা মৃত্যু বা গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কা সৃষ্টি করে", "B": "রাতে কোনো অপরিচিত ব্যক্তি কর্তৃক সম্পাদিত যেকোনো কাজ", "C": "কোনো পরিবারের সদস্য কর্তৃক সম্পাদিত যেকোনো কাজ", "D": "নির্দিষ্ট পরিমাণের কম মূল্যের সম্পত্তি সংশ্লিষ্ট যেকোনো কাজ" },
+          "explanation": "ধারা ৯৯ সাধারণ নিয়ম হিসেবে সরকারি কর্মচারীর সরল বিশ্বাসে সম্পাদিত সরকারি কাজের বিরুদ্ধে ব্যক্তিগত আত্মরক্ষার অধিকার অপসারণ করে -- যদি না সেই কাজ নিজেই মৃত্যু বা গুরুতর জখমের যুক্তিসঙ্গত আশঙ্কা সৃষ্টি করে।",
+          "why_other_options_are_wrong": { "B": "অপরিচিত হওয়া, অথবা রাতে কাজটি সংঘটিত হওয়া, নিজে থেকে ধারা ৯৯-এর বর্জন নয় (রাতে গৃহভঙ্গ বরং ধারা ১০৩-এর অধীনে অধিকার সম্প্রসারণের সাথে প্রাসঙ্গিক, বিপরীত প্রভাব)।", "C": "পারিবারিক সম্পর্ক ধারা ৯৯-এর বর্জন নয়।", "D": "ধারা ৯৯ জড়িত সম্পত্তির কোনো আর্থিক সীমার উপর নির্ভর করে না।" }
+        }
+      }
+    }
+  ]
+}

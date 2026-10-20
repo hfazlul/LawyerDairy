@@ -1,0 +1,265 @@
+{
+  "batch_id": "BATCH-2026-08-021-CPC-JUDGMENT-DECREE-ORDER",
+  "schema_version": "1.0",
+  "content_version": "2026.08.9",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "First topic in a fifth depth round for CPC/CrPC/Penal Code. Covers CPC Judgment, Decree, and Order (T-CPC-09, Section 2 definitions) -- a genuine gap: five prior CPC lessons in this dataset (Res Judicata, Appeal, Revision, Execution, Review) all use the terms 'decree' and 'order' as if already understood, but none has formally defined them. This lesson fills that foundation and retroactively explains why Appeal and Revision/Review are governed by different provisions depending on whether a decree or an order is involved.",
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "BC-CPC-JUDGMENTDECREE-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CPC-JUDGMENTDECREE-001",
+      "topic_id": "T-CPC-09",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 2's definitions of 'decree', 'Judgment', and 'order' (clauses 2, 9, and 14) were fetched as VERBATIM text directly from bdlaws.minlaw.gov.bd during this session. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 25,
+      "prerequisite_ids": [],
+      "related_lesson_ids": ["BC-CPC-APPEAL-001", "BC-CPC-REVISION-001", "BC-CPC-REVIEW-001"],
+      "related_question_ids": ["BC-MCQ-CPC-JDO-001", "BC-MCQ-CPC-JDO-002", "BC-MCQ-CPC-JDO-003", "BC-MCQ-CPC-JDO-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CPC-S2-DEFS"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CPC-S2-DEFS"],
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "language_versions": {
+        "en": {
+          "title": "Judgment, Decree, and Order (Section 2 Definitions)",
+          "short_description": "Three related but legally distinct terms underpin every other CPC topic -- a judgment is the reasoning, a decree is a specific, conclusive kind of formal outcome, and an order is everything else a civil court formally decides that isn't a decree. Which one you're dealing with determines which appeal, revision, or review provision applies.",
+          "learning_objective": "By the end of this lesson you should be able to: state Section 2's definitions of 'decree', 'Judgment', and 'order'; identify the two categories of adjudication expressly excluded from being a decree; and explain why this distinction matters for choosing the right remedy under the Appeal, Revision, and Review lessons.",
+          "explanation": "Section 2(9) defines 'Judgment' simply: the statement given by the Judge of the grounds of a decree or order. A judgment is the reasoning -- the 'why' -- behind whatever formal outcome the court reaches.\n\nSection 2(2) then defines 'decree' with considerably more precision: the formal expression of an adjudication which, so far as regards the Court expressing it, conclusively determines the rights of the parties with regard to all or any of the matters in controversy in the suit, and may be either preliminary or final. A decree is deemed to include the rejection of a plaint and the determination of any question within Section 144 (restitution). But two things are expressly excluded from being a decree, however much they might resemble one: (a) any adjudication from which an appeal lies as an appeal from an order, and (b) any order of dismissal for default. An accompanying Explanation clarifies that a decree is preliminary where further proceedings must still be taken before the suit is completely disposed of, and final where the adjudication completely disposes of the suit -- a single decree may even be partly preliminary and partly final.\n\nSection 2(14) then defines 'order' as the formal expression of any decision of a Civil Court which is NOT a decree. This makes 'order' a residual category: once you have established that a particular formal court decision does not meet the definition of 'decree' (including falling into one of the two express exclusions above), it is, by definition, an order instead.\n\nThis distinction is not academic. It is precisely why this dataset's Appeal lesson covers Section 96 (appeal from a decree) separately from Sections 104-106 (appeal from an order, available only for a specifically listed set of orders) -- and why the same 'decree or order' language recurs throughout the Revision and Review lessons. Correctly classifying a given court decision as a decree or an order is often the first step in identifying which remedy provision even applies.",
+          "key_concepts": ["Judgment (S.2(9)): the statement of grounds -- the reasoning", "Decree (S.2(2)): a formal adjudication conclusively determining rights on matters in controversy in the suit", "The two express exclusions from 'decree': appealable-as-an-order adjudications, and dismissals for default", "Order (S.2(14)): the residual category -- any formal civil-court decision that is not a decree", "Preliminary vs. final decrees, and decrees that are partly both"],
+          "important_rules": [
+            "S.2(9): 'Judgment' means the statement given by the Judge of the grounds of a decree or order.",
+            "S.2(2): 'decree' means the formal expression of an adjudication which conclusively determines the parties' rights on all or any matters in controversy in the suit, and may be preliminary or final -- but excludes (a) adjudications appealable as an appeal from an order, and (b) dismissals for default.",
+            "S.2(14): 'order' means the formal expression of any decision of a Civil Court which is not a decree."
+          ],
+          "definitions": [
+            { "term": "Decree", "definition": "The formal expression of an adjudication that conclusively determines the parties' rights on all or any of the matters in controversy in the suit, whether preliminary or final -- subject to the two express statutory exclusions." },
+            { "term": "Order", "definition": "The formal expression of any decision of a Civil Court that does not meet the definition of a decree -- a residual, catch-all category." },
+            { "term": "Preliminary decree", "definition": "A decree passed where further proceedings still have to be taken before the suit can be completely disposed of." },
+            { "term": "Final decree", "definition": "A decree whose adjudication completely disposes of the suit, leaving nothing further to be done in it." }
+          ],
+          "examples": [
+            "A civil court, after a full trial, conclusively determines that A is entitled to possession of a disputed plot of land, finally disposing of the suit. This adjudication conclusively determines the parties' rights on the matter in controversy and is not caught by either exclusion -- it is a decree, and a final one, since nothing further remains to be done in the suit.",
+            "A court dismisses a suit for the plaintiff's default in appearing, without ever adjudicating on the merits. Even though this formally disposes of the case before the court, Section 2(2)'s second exclusion expressly removes 'any order of dismissal for default' from the definition of decree -- so this is an order, not a decree, with the consequence that a different set of remedy provisions (those governing orders, not decrees) applies to it."
+          ],
+          "exam_focus": "Examiners like fact patterns that require classifying a specific court action as a decree or an order before answering a further question (such as which remedy applies) -- the dismissal-for-default exclusion and the appealable-as-an-order exclusion are both common, deliberately counter-intuitive traps, since both outcomes can superficially look like they 'finally decide' something.",
+          "common_traps": [
+            "Assuming any formal decision that finally disposes of a case must be a decree -- a dismissal for default finally disposes of the case but is expressly excluded from being a decree.",
+            "Treating 'order' as a lesser or less formal category than 'decree' -- it is simply the residual category for civil-court decisions that don't meet the decree definition, not an informal or non-binding one.",
+            "Forgetting that 'Judgment' is neither a decree nor an order itself -- it is the statement of grounds that underlies whichever of the two the court ultimately issues."
+          ],
+          "quick_revision": [
+            "Judgment (S.2(9)) = the STATEMENT OF GROUNDS (the reasoning).",
+            "Decree (S.2(2)) = formal adjudication CONCLUSIVELY DETERMINING rights on matters in controversy -- EXCLUDES appealable-as-order adjudications AND default dismissals.",
+            "Order (S.2(14)) = the RESIDUAL category -- any civil-court decision that is NOT a decree.",
+            "Preliminary decree = more proceedings still needed. Final decree = suit completely disposed of. Can be both, partly."
+          ],
+          "key_takeaways": [
+            "Decree and order are mutually exclusive, exhaustive categories for formal civil-court decisions -- every such decision is one or the other, never both, never neither.",
+            "The two express exclusions from 'decree' are the most testable, most counter-intuitive part of this definition -- both look decree-like on the surface.",
+            "This lesson is deliberately foundational to the Appeal, Revision, and Review lessons already in this dataset -- correctly classifying decree vs. order is often the necessary first step before choosing the right remedy."
+          ]
+        },
+        "bn": {
+          "title": "রায়, ডিক্রি ও আদেশ (ধারা ২ সংজ্ঞা)",
+          "short_description": "তিনটি সম্পর্কিত কিন্তু আইনগতভাবে ভিন্ন শব্দ প্রতিটি অন্যান্য দেওয়ানি কার্যবিধি বিষয়ের ভিত্তি -- একটি রায় হলো যুক্তি, একটি ডিক্রি একটি নির্দিষ্ট, চূড়ান্ত ধরনের আনুষ্ঠানিক ফলাফল, এবং একটি আদেশ হলো একটি দেওয়ানি আদালত আনুষ্ঠানিকভাবে যা সিদ্ধান্ত নেয় তার বাকি সবকিছু যা ডিক্রি নয়। আপনি কোনটির সাথে মোকাবিলা করছেন তা নির্ধারণ করে কোন আপিল, রিভিশন, বা রিভিউ বিধান প্রযোজ্য।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ২-এর 'ডিক্রি', 'রায়', ও 'আদেশ'-এর সংজ্ঞা বলতে পারবেন; ডিক্রি হওয়া থেকে স্পষ্টভাবে বাদ দেওয়া দুটি শ্রেণির বিচার চিহ্নিত করতে পারবেন; এবং কেন এই পার্থক্যটি আপিল, রিভিশন, ও রিভিউ পাঠে সঠিক প্রতিকার বেছে নেওয়ার জন্য গুরুত্বপূর্ণ তা ব্যাখ্যা করতে পারবেন।",
+          "explanation": "ধারা ২(৯) 'রায়'-কে সহজভাবে সংজ্ঞায়িত করে: বিচারক কর্তৃক প্রদত্ত ডিক্রি বা আদেশের কারণসমূহের বিবৃতি। একটি রায় হলো যুক্তি -- 'কেন' -- আদালত যে আনুষ্ঠানিক ফলাফলে পৌঁছায় তার পেছনে।\n\nধারা ২(২) এরপর 'ডিক্রি'-কে যথেষ্ট অধিক নির্ভুলতার সাথে সংজ্ঞায়িত করে: একটি বিচারের আনুষ্ঠানিক প্রকাশ যা, যতদূর তা প্রকাশকারী আদালত সংশ্লিষ্ট, মামলায় বিতর্কিত সমস্ত বা যেকোনো বিষয়ে পক্ষগণের অধিকার চূড়ান্তভাবে নির্ধারণ করে, এবং প্রাথমিক বা চূড়ান্ত উভয়ই হতে পারে। একটি ডিক্রি আরজি খারিজ এবং ধারা ১৪৪ (প্রত্যর্পণ)-এর মধ্যে যেকোনো বিষয়ের নির্ধারণ অন্তর্ভুক্ত করে বলে গণ্য হয়। কিন্তু দুটি বিষয় স্পষ্টভাবে ডিক্রি হওয়া থেকে বাদ দেওয়া হয়েছে, তারা যতই ডিক্রির মতো দেখাক না কেন: (ক) এমন কোনো বিচার যা থেকে একটি আদেশের বিরুদ্ধে আপিল হিসেবে আপিল করা যায়, এবং (খ) অনুপস্থিতির কারণে খারিজের যেকোনো আদেশ। একটি সহগামী ব্যাখ্যা স্পষ্ট করে যে একটি ডিক্রি প্রাথমিক যেখানে মামলাটি সম্পূর্ণভাবে নিষ্পত্তি হওয়ার আগে আরও কার্যধারা নিতে হবে, এবং চূড়ান্ত যেখানে বিচারটি মামলাটি সম্পূর্ণভাবে নিষ্পত্তি করে -- একটি একক ডিক্রি এমনকি আংশিকভাবে প্রাথমিক ও আংশিকভাবে চূড়ান্তও হতে পারে।\n\nধারা ২(১৪) এরপর 'আদেশ'-কে সংজ্ঞায়িত করে দেওয়ানি আদালতের যেকোনো সিদ্ধান্তের আনুষ্ঠানিক প্রকাশ হিসেবে যা ডিক্রি নয়। এটি 'আদেশ'-কে একটি অবশিষ্ট শ্রেণিতে পরিণত করে: একবার প্রতিষ্ঠিত হলে যে একটি নির্দিষ্ট আনুষ্ঠানিক আদালতের সিদ্ধান্ত 'ডিক্রি'-র সংজ্ঞা পূরণ করে না (উপরের দুটি স্পষ্ট ব্যতিক্রমের একটিতে পড়া সহ), এটি, সংজ্ঞা অনুসারে, পরিবর্তে একটি আদেশ।\n\nএই পার্থক্যটি একাডেমিক নয়। এটিই ঠিক কেন এই ডেটাসেটের আপিল পাঠ ধারা ৯৬ (ডিক্রি থেকে আপিল) কে ধারা ১০৪-১০৬ (আদেশ থেকে আপিল, কেবল একটি সুনির্দিষ্টভাবে তালিকাভুক্ত আদেশের সেটের জন্য উপলব্ধ) থেকে পৃথকভাবে আচ্ছাদন করে -- এবং কেন একই 'ডিক্রি বা আদেশ' ভাষা রিভিশন ও রিভিউ পাঠ জুড়ে পুনরাবৃত্তি হয়। একটি প্রদত্ত আদালতের সিদ্ধান্তকে সঠিকভাবে ডিক্রি বা আদেশ হিসেবে শ্রেণিবদ্ধ করা প্রায়ই কোন প্রতিকার বিধান আদৌ প্রযোজ্য তা চিহ্নিত করার প্রথম পদক্ষেপ।",
+          "key_concepts": ["রায় (ধারা ২(৯)): কারণসমূহের বিবৃতি -- যুক্তি", "ডিক্রি (ধারা ২(২)): মামলায় বিতর্কিত বিষয়ে পক্ষগণের অধিকার চূড়ান্তভাবে নির্ধারণকারী একটি আনুষ্ঠানিক বিচার", "'ডিক্রি' থেকে দুটি স্পষ্ট ব্যতিক্রম: আদেশ-হিসেবে-আপিলযোগ্য বিচার, এবং অনুপস্থিতির কারণে খারিজ", "আদেশ (ধারা ২(১৪)): অবশিষ্ট শ্রেণি -- যেকোনো আনুষ্ঠানিক দেওয়ানি-আদালতের সিদ্ধান্ত যা ডিক্রি নয়", "প্রাথমিক বনাম চূড়ান্ত ডিক্রি, এবং আংশিকভাবে উভয়ই এমন ডিক্রি"],
+          "important_rules": [
+            "ধারা ২(৯): 'রায়' মানে বিচারক কর্তৃক প্রদত্ত ডিক্রি বা আদেশের কারণসমূহের বিবৃতি।",
+            "ধারা ২(২): 'ডিক্রি' মানে এমন একটি বিচারের আনুষ্ঠানিক প্রকাশ যা মামলায় বিতর্কিত সমস্ত বা যেকোনো বিষয়ে পক্ষগণের অধিকার চূড়ান্তভাবে নির্ধারণ করে, এবং প্রাথমিক বা চূড়ান্ত হতে পারে -- কিন্তু (ক) আদেশ-হিসেবে-আপিলযোগ্য বিচার, এবং (খ) অনুপস্থিতির কারণে খারিজ বাদ দেয়।",
+            "ধারা ২(১৪): 'আদেশ' মানে দেওয়ানি আদালতের যেকোনো সিদ্ধান্তের আনুষ্ঠানিক প্রকাশ যা ডিক্রি নয়।"
+          ],
+          "definitions": [
+            { "term": "ডিক্রি", "definition": "মামলায় বিতর্কিত সমস্ত বা যেকোনো বিষয়ে পক্ষগণের অধিকার চূড়ান্তভাবে নির্ধারণকারী একটি বিচারের আনুষ্ঠানিক প্রকাশ, প্রাথমিক বা চূড়ান্ত -- দুটি স্পষ্ট সংবিধিবদ্ধ ব্যতিক্রমসাপেক্ষে।" },
+            { "term": "আদেশ", "definition": "দেওয়ানি আদালতের যেকোনো সিদ্ধান্তের আনুষ্ঠানিক প্রকাশ যা ডিক্রির সংজ্ঞা পূরণ করে না -- একটি অবশিষ্ট, সার্বিক শ্রেণি।" },
+            { "term": "প্রাথমিক ডিক্রি", "definition": "এমন একটি ডিক্রি যেখানে মামলাটি সম্পূর্ণভাবে নিষ্পত্তি হওয়ার আগে আরও কার্যধারা নিতে হবে।" },
+            { "term": "চূড়ান্ত ডিক্রি", "definition": "এমন একটি ডিক্রি যার বিচার মামলাটি সম্পূর্ণভাবে নিষ্পত্তি করে, মামলায় আর কিছু করার বাকি রাখে না।" }
+          ],
+          "examples": [
+            "একটি সম্পূর্ণ বিচারের পর, একটি দেওয়ানি আদালত চূড়ান্তভাবে নির্ধারণ করে যে ক একটি বিতর্কিত জমির প্লটের দখলের অধিকারী, মামলাটি চূড়ান্তভাবে নিষ্পত্তি করে। এই বিচার বিতর্কিত বিষয়ে পক্ষগণের অধিকার চূড়ান্তভাবে নির্ধারণ করে এবং কোনো ব্যতিক্রম দ্বারা আটকায় না -- এটি একটি ডিক্রি, এবং একটি চূড়ান্ত ডিক্রি, যেহেতু মামলায় আর কিছু করার বাকি নেই।",
+            "একটি আদালত বাদীর হাজির হতে ব্যর্থতার কারণে একটি মামলা খারিজ করে, গুণাগুণে কখনো বিচার না করেই। যদিও এটি আনুষ্ঠানিকভাবে আদালতের সামনে থাকা মামলাটি নিষ্পত্তি করে, ধারা ২(২)-এর দ্বিতীয় ব্যতিক্রম স্পষ্টভাবে 'অনুপস্থিতির কারণে খারিজের যেকোনো আদেশ' ডিক্রির সংজ্ঞা থেকে সরিয়ে দেয় -- তাই এটি একটি আদেশ, ডিক্রি নয়, যার ফলে একটি ভিন্ন সেট প্রতিকার বিধান (ডিক্রি নয়, আদেশ নিয়ন্ত্রণকারী) এর ক্ষেত্রে প্রযোজ্য।"
+          ],
+          "exam_focus": "পরীক্ষকরা এমন ঘটনাপ্রবাহ পছন্দ করেন যার জন্য আরও একটি প্রশ্নের উত্তর দেওয়ার আগে (যেমন কোন প্রতিকার প্রযোজ্য) একটি নির্দিষ্ট আদালতের কার্যক্রমকে ডিক্রি বা আদেশ হিসেবে শ্রেণিবদ্ধ করতে হয় -- অনুপস্থিতি-খারিজ ব্যতিক্রম ও আদেশ-হিসেবে-আপিলযোগ্য ব্যতিক্রম উভয়ই সাধারণ, ইচ্ছাকৃতভাবে পাল্টা-স্বজ্ঞাত ফাঁদ, কারণ উভয় ফলাফলই উপরিভাগে কিছু 'চূড়ান্তভাবে সিদ্ধান্ত' নিচ্ছে বলে মনে হতে পারে।",
+          "common_traps": [
+            "মনে করা যে একটি মামলা চূড়ান্তভাবে নিষ্পত্তিকারী যেকোনো আনুষ্ঠানিক সিদ্ধান্ত অবশ্যই একটি ডিক্রি হতে হবে -- অনুপস্থিতির কারণে খারিজ মামলাটি চূড়ান্তভাবে নিষ্পত্তি করে কিন্তু ডিক্রি হওয়া থেকে স্পষ্টভাবে বাদ দেওয়া হয়েছে।",
+            "'আদেশ'-কে 'ডিক্রি'-র চেয়ে নিম্নতর বা কম আনুষ্ঠানিক শ্রেণি মনে করা -- এটি কেবল ডিক্রি সংজ্ঞা পূরণ না করা দেওয়ানি-আদালতের সিদ্ধান্তের জন্য অবশিষ্ট শ্রেণি, কোনো অনানুষ্ঠানিক বা অ-বাধ্যকর শ্রেণি নয়।",
+            "ভুলে যাওয়া যে 'রায়' নিজে একটি ডিক্রি বা আদেশ কোনোটিই নয় -- এটি কারণসমূহের বিবৃতি যা আদালত শেষ পর্যন্ত যে দুটির যেকোনো একটি প্রদান করে তার ভিত্তি।"
+          ],
+          "quick_revision": [
+            "রায় (ধারা ২(৯)) = কারণসমূহের বিবৃতি (যুক্তি)।",
+            "ডিক্রি (ধারা ২(২)) = বিতর্কিত বিষয়ে অধিকার চূড়ান্তভাবে নির্ধারণকারী আনুষ্ঠানিক বিচার -- আদেশ-হিসেবে-আপিলযোগ্য বিচার ও অনুপস্থিতি-খারিজ বাদ দেয়।",
+            "আদেশ (ধারা ২(১৪)) = অবশিষ্ট শ্রেণি -- যেকোনো দেওয়ানি-আদালতের সিদ্ধান্ত যা ডিক্রি নয়।",
+            "প্রাথমিক ডিক্রি = আরও কার্যধারা এখনও প্রয়োজন। চূড়ান্ত ডিক্রি = মামলা সম্পূর্ণভাবে নিষ্পত্তি। উভয়ই আংশিকভাবে হতে পারে।"
+          ],
+          "key_takeaways": [
+            "ডিক্রি ও আদেশ আনুষ্ঠানিক দেওয়ানি-আদালতের সিদ্ধান্তের জন্য পারস্পরিক একচেটিয়া, সম্পূর্ণ শ্রেণি -- এমন প্রতিটি সিদ্ধান্তই একটি বা অন্যটি, কখনো উভয়ই নয়, কখনো কোনোটিই নয়।",
+            "'ডিক্রি' থেকে দুটি স্পষ্ট ব্যতিক্রম এই সংজ্ঞার সবচেয়ে পরীক্ষাযোগ্য, সবচেয়ে পাল্টা-স্বজ্ঞাত অংশ -- উভয়ই উপরিভাগে ডিক্রির মতো দেখায়।",
+            "এই পাঠ ইচ্ছাকৃতভাবে এই ডেটাসেটে ইতিমধ্যে থাকা আপিল, রিভিশন, ও রিভিউ পাঠের জন্য মৌলিক -- ডিক্রি বনাম আদেশ সঠিকভাবে শ্রেণিবদ্ধ করা প্রায়ই সঠিক প্রতিকার বেছে নেওয়ার আগে প্রয়োজনীয় প্রথম পদক্ষেপ।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CPC-S2-DEFS",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Section 2, clauses (2) 'decree', (9) 'Judgment', and (14) 'order'",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "Full verbatim text of the complete Section 2 (all 20 clauses) obtained via direct fetch of the primary source page during this session; clauses (2), (9), and (14) are the ones this lesson relies on."
+    },
+    {
+      "content_id": "BC-MCQ-CPC-JDO-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-JDO-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-09",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S2-DEFS"],
+      "exam_focus": "The dismissal-for-default exclusion.",
+      "source_basis": "Original question drawn directly from verbatim S.2(2) text.",
+      "mistake_tags": ["s2-2-default-dismissal-excluded"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-JUDGMENTDECREE-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "A suit is dismissed because the plaintiff failed to appear on the hearing date. Under Section 2(2), is this dismissal a 'decree'?",
+          "options": { "A": "Yes, because it finally disposes of the suit", "B": "Yes, but only if the plaintiff does not apply to have it set aside within 30 days", "C": "No, Section 2(2) expressly excludes any order of dismissal for default from the definition of 'decree'", "D": "Yes, because all dismissals are automatically classified as final decrees" },
+          "explanation": "Section 2(2) expressly excludes 'any order of dismissal for default' from the definition of decree, regardless of the fact that it disposes of the case before the court.",
+          "why_other_options_are_wrong": { "A": "Finally disposing of the case is not, by itself, sufficient -- the express exclusion overrides this general impression.", "B": "No such 30-day conditional rule attaches to this exclusion under Section 2(2) itself.", "D": "This overstates the position -- default dismissals are specifically excluded from being decrees, not automatically classified as one." }
+        },
+        "bn": {
+          "question": "বাদী শুনানির তারিখে হাজির হতে ব্যর্থ হওয়ায় একটি মামলা খারিজ হয়। ধারা ২(২)-এর অধীনে, এই খারিজ কি একটি 'ডিক্রি'?",
+          "options": { "A": "হ্যাঁ, কারণ এটি মামলাটি চূড়ান্তভাবে নিষ্পত্তি করে", "B": "হ্যাঁ, তবে কেবল যদি বাদী ৩০ দিনের মধ্যে তা বাতিলের জন্য আবেদন না করেন", "C": "না, ধারা ২(২) স্পষ্টভাবে অনুপস্থিতির কারণে খারিজের যেকোনো আদেশ 'ডিক্রি'-র সংজ্ঞা থেকে বাদ দেয়", "D": "হ্যাঁ, কারণ সকল খারিজ স্বয়ংক্রিয়ভাবে চূড়ান্ত ডিক্রি হিসেবে শ্রেণিবদ্ধ হয়" },
+          "explanation": "ধারা ২(২) স্পষ্টভাবে 'অনুপস্থিতির কারণে খারিজের যেকোনো আদেশ' ডিক্রির সংজ্ঞা থেকে বাদ দেয়, এটি আদালতের সামনে থাকা মামলাটি নিষ্পত্তি করে এই সত্য নির্বিশেষে।",
+          "why_other_options_are_wrong": { "A": "মামলাটি চূড়ান্তভাবে নিষ্পত্তি করা, নিজে থেকে, যথেষ্ট নয় -- স্পষ্ট ব্যতিক্রম এই সাধারণ ধারণাকে অগ্রাহ্য করে।", "B": "ধারা ২(২)-এর নিজস্ব অধীনে এই ব্যতিক্রমের সাথে এমন কোনো ৩০ দিনের শর্তসাপেক্ষ নিয়ম যুক্ত নয়।", "D": "এটি অবস্থানটি অতিরিক্ত বলে -- অনুপস্থিতি-খারিজ সুনির্দিষ্টভাবে ডিক্রি হওয়া থেকে বাদ দেওয়া, স্বয়ংক্রিয়ভাবে একটি হিসেবে শ্রেণিবদ্ধ নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-JDO-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-JDO-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-09",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S2-DEFS"],
+      "exam_focus": "The relationship between judgment and decree/order.",
+      "source_basis": "Original question drawn directly from verbatim S.2(9) text.",
+      "mistake_tags": ["s2-9-judgment-is-the-reasoning"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-JUDGMENTDECREE-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 2(9), what is a 'Judgment'?",
+          "options": { "A": "A third category of formal court decision, separate from both decrees and orders", "B": "The statement given by the Judge of the grounds of a decree or order", "C": "Another name for a final decree specifically", "D": "A binding precedent that other courts must follow" },
+          "explanation": "Section 2(9) defines 'Judgment' as the statement given by the Judge of the grounds of a decree or order -- it is the reasoning behind the decree or order, not a separate category of formal outcome.",
+          "why_other_options_are_wrong": { "A": "Judgment is not a third category alongside decree and order -- it is the reasoning that underlies whichever of the two is issued.", "C": "Judgment is not specifically synonymous with 'final decree' -- it applies to the grounds of decrees and orders generally.", "D": "Binding-precedent status is not what Section 2(9)'s definition of judgment addresses." }
+        },
+        "bn": {
+          "question": "ধারা ২(৯)-এর অধীনে, একটি 'রায়' কী?",
+          "options": { "A": "ডিক্রি ও আদেশ উভয় থেকে পৃথক আনুষ্ঠানিক আদালতের সিদ্ধান্তের একটি তৃতীয় শ্রেণি", "B": "বিচারক কর্তৃক প্রদত্ত ডিক্রি বা আদেশের কারণসমূহের বিবৃতি", "C": "সুনির্দিষ্টভাবে চূড়ান্ত ডিক্রির অন্য নাম", "D": "একটি বাধ্যকর নজির যা অন্যান্য আদালতকে অনুসরণ করতে হবে" },
+          "explanation": "ধারা ২(৯) 'রায়'-কে বিচারক কর্তৃক প্রদত্ত ডিক্রি বা আদেশের কারণসমূহের বিবৃতি হিসেবে সংজ্ঞায়িত করে -- এটি ডিক্রি বা আদেশের পেছনের যুক্তি, আনুষ্ঠানিক ফলাফলের একটি পৃথক শ্রেণি নয়।",
+          "why_other_options_are_wrong": { "A": "রায় ডিক্রি ও আদেশের পাশাপাশি একটি তৃতীয় শ্রেণি নয় -- এটি দুটির যেকোনো একটি প্রদত্ত হওয়ার অন্তর্নিহিত যুক্তি।", "C": "রায় সুনির্দিষ্টভাবে 'চূড়ান্ত ডিক্রি'-র সমার্থক নয় -- এটি সাধারণভাবে ডিক্রি ও আদেশের কারণসমূহে প্রযোজ্য।", "D": "বাধ্যকর-নজির অবস্থা ধারা ২(৯)-এর রায়ের সংজ্ঞা যা সম্বোধন করে তা নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-JDO-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-JDO-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-09",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S2-DEFS"],
+      "exam_focus": "'Order' as the residual category.",
+      "source_basis": "Original question drawn directly from verbatim S.2(14) text.",
+      "mistake_tags": ["s2-14-order-residual-category"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-JUDGMENTDECREE-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 2(14), how is 'order' defined?",
+          "options": { "A": "Any decision made verbally by a Judge during a hearing", "B": "A decision that is always subject to appeal, unlike a decree", "C": "A category of decision that only applies to interlocutory matters", "D": "The formal expression of any decision of a Civil Court which is not a decree" },
+          "explanation": "Section 2(14) defines 'order' as the formal expression of any decision of a Civil Court which is not a decree -- a residual category defined by exclusion from 'decree', not by any independent positive test.",
+          "why_other_options_are_wrong": { "A": "Verbal decisions are not what distinguishes an order from a decree under this definition.", "B": "Appealability is not built into the definition of 'order' itself -- some orders are appealable, others are not, as covered in the Appeal lesson.", "C": "The definition is not limited to interlocutory matters -- it covers any formal civil-court decision that isn't a decree." }
+        },
+        "bn": {
+          "question": "ধারা ২(১৪)-এর অধীনে, 'আদেশ' কীভাবে সংজ্ঞায়িত?",
+          "options": { "A": "শুনানির সময় বিচারক কর্তৃক মৌখিকভাবে নেওয়া যেকোনো সিদ্ধান্ত", "B": "একটি সিদ্ধান্ত যা ডিক্রির বিপরীতে সবসময় আপিলযোগ্য", "C": "সিদ্ধান্তের একটি শ্রেণি যা কেবল অন্তর্বর্তীকালীন বিষয়ে প্রযোজ্য", "D": "দেওয়ানি আদালতের যেকোনো সিদ্ধান্তের আনুষ্ঠানিক প্রকাশ যা ডিক্রি নয়" },
+          "explanation": "ধারা ২(১৪) 'আদেশ'-কে দেওয়ানি আদালতের যেকোনো সিদ্ধান্তের আনুষ্ঠানিক প্রকাশ হিসেবে সংজ্ঞায়িত করে যা ডিক্রি নয় -- 'ডিক্রি' থেকে বর্জন দ্বারা সংজ্ঞায়িত একটি অবশিষ্ট শ্রেণি, কোনো স্বাধীন ইতিবাচক পরীক্ষা দ্বারা নয়।",
+          "why_other_options_are_wrong": { "A": "মৌখিক সিদ্ধান্ত এই সংজ্ঞার অধীনে একটি আদেশকে ডিক্রি থেকে পৃথক করে না।", "B": "আপিলযোগ্যতা 'আদেশ'-এর সংজ্ঞায় নিজে অন্তর্নির্মিত নয় -- কিছু আদেশ আপিলযোগ্য, অন্যগুলো নয়, যেমন আপিল পাঠে আচ্ছাদিত।", "C": "সংজ্ঞাটি অন্তর্বর্তীকালীন বিষয়ে সীমাবদ্ধ নয় -- এটি ডিক্রি নয় এমন যেকোনো আনুষ্ঠানিক দেওয়ানি-আদালতের সিদ্ধান্ত আচ্ছাদন করে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-JDO-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-JDO-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-09",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S2-DEFS"],
+      "exam_focus": "Preliminary vs. final decrees, and decrees that are partly both.",
+      "source_basis": "Original question drawn directly from verbatim S.2(2) Explanation text.",
+      "mistake_tags": ["s2-2-preliminary-final-decree"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-JUDGMENTDECREE-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under the Explanation to Section 2(2), can a single decree be partly preliminary and partly final?",
+          "options": { "A": "No, a decree must be classified as wholly preliminary or wholly final", "B": "No, only orders can have a mixed character; decrees cannot", "C": "Yes, the Explanation expressly contemplates a decree that is partly preliminary and partly final", "D": "Yes, but only in suits concerning immovable property" },
+          "explanation": "The Explanation to Section 2(2) expressly states that a decree may be partly preliminary and partly final -- the two categories are not mutually exclusive for a single decree.",
+          "why_other_options_are_wrong": { "A": "This directly contradicts the Explanation's express language allowing a mixed character.", "B": "This mischaracterises the source of the distinction -- the Explanation addresses decrees specifically, not orders.", "D": "No such subject-matter restriction (to immovable property suits) appears in the Explanation." }
+        },
+        "bn": {
+          "question": "ধারা ২(২)-এর ব্যাখ্যার অধীনে, একটি একক ডিক্রি কি আংশিকভাবে প্রাথমিক ও আংশিকভাবে চূড়ান্ত হতে পারে?",
+          "options": { "A": "না, একটি ডিক্রিকে সম্পূর্ণরূপে প্রাথমিক বা সম্পূর্ণরূপে চূড়ান্ত হিসেবে শ্রেণিবদ্ধ করতে হবে", "B": "না, কেবল আদেশের মিশ্র প্রকৃতি থাকতে পারে; ডিক্রির নয়", "C": "হ্যাঁ, ব্যাখ্যাটি স্পষ্টভাবে এমন একটি ডিক্রি বিবেচনা করে যা আংশিকভাবে প্রাথমিক ও আংশিকভাবে চূড়ান্ত", "D": "হ্যাঁ, তবে কেবল স্থাবর সম্পত্তি সংক্রান্ত মামলায়" },
+          "explanation": "ধারা ২(২)-এর ব্যাখ্যা স্পষ্টভাবে বলে যে একটি ডিক্রি আংশিকভাবে প্রাথমিক ও আংশিকভাবে চূড়ান্ত হতে পারে -- একটি একক ডিক্রির জন্য দুটি শ্রেণি পারস্পরিক একচেটিয়া নয়।",
+          "why_other_options_are_wrong": { "A": "এটি ব্যাখ্যার স্পষ্ট ভাষার সরাসরি বিপরীত যা একটি মিশ্র প্রকৃতির অনুমতি দেয়।", "B": "এটি পার্থক্যের উৎস ভুলভাবে চিহ্নিত করে -- ব্যাখ্যাটি সুনির্দিষ্টভাবে ডিক্রি নিয়ে, আদেশ নিয়ে নয়।", "D": "ব্যাখ্যায় এমন কোনো বিষয়বস্তু-সীমাবদ্ধতা (স্থাবর সম্পত্তি মামলায়) দেখা যায় না।" }
+        }
+      }
+    }
+  ]
+}

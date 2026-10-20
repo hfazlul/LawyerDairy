@@ -2,35 +2,20 @@ import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { prisma } from '@/lib/prisma'
 import { requireAuth } from '@/lib/auth-middleware'
-import { paymentRailFor, type JurisdictionCode } from '@/lib/jurisdiction'
+import { createZiniInvoice, zinipayConfigured } from '@/lib/zinipay'
+import { isSellablePackage, amountFor, defFor, monthsForPeriod } from '@/lib/plans'
+import { appBaseUrl, checkoutRedirectIsLocalhost } from '@/lib/app-url'
+import { originAllowed } from '@/lib/csrf'
 
 const schema = z.object({
   packageCode: z.string().min(1),
+  period: z.enum(['MONTH', 'YEAR']).optional(),
 })
 
-/**
- * Start web checkout — BD only (SSLCommerz).
- * IN/PK use Play Billing on mobile; do not steer them to web pay.
- */
 export async function POST(req: NextRequest) {
+  if (!originAllowed(req)) return NextResponse.json({ message: 'Forbidden' }, { status: 403 })
   const user = await requireAuth(req)
-  if (!user) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
-
-  const jurisdiction = user.chamber.jurisdiction as JurisdictionCode
-  const rail = paymentRailFor(jurisdiction)
-
-  if (rail !== 'sslcommerz_web') {
-    return NextResponse.json(
-      {
-        message:
-          'Web checkout is only for Bangladesh (SSLCommerz). Use Google Play Billing in the Android app for IN/PK.',
-        code: 'WRONG_PAYMENT_RAIL',
-        paymentRail: rail,
-        jurisdiction,
-      },
-      { status: 403 },
-    )
-  }
+  if (!user?.activeMembership) return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
 
   let body: z.infer<typeof schema>
   try {
@@ -39,30 +24,79 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ message: 'Invalid input' }, { status: 400 })
   }
 
-  const pkg = await prisma.subscriptionPackage.findUnique({
-    where: { code: body.packageCode },
-  })
-  if (!pkg || !pkg.active) {
+  if (!isSellablePackage(body.packageCode)) {
+    return NextResponse.json({ message: 'This package is not sold', code: 'NOT_SOLD' }, { status: 400 })
+  }
+  const def = defFor(body.packageCode)
+  const pkg = await prisma.subscriptionPackage.findUnique({ where: { code: body.packageCode } })
+  if (!pkg || !pkg.active || !def) {
     return NextResponse.json({ message: 'Unknown package' }, { status: 404 })
   }
 
+  const period = body.period ?? 'MONTH'
+  const amount = amountFor(def, period)
   const sub = await prisma.subscription.create({
     data: {
-      chamberId: user.chamberId,
+      workspaceId: user.activeMembership.workspaceId,
       packageId: pkg.id,
       status: 'PENDING',
-      gateway: 'SSLCommerz',
+      billingPeriod: period,
+      amountBdt: amount,
+      gateway: 'ZiniPay',
     },
   })
 
-  // TODO: create SSLCommerz session when SSLCOMMERZ_STORE_ID is set
-  const hasGateway = Boolean(process.env.SSLCOMMERZ_STORE_ID?.trim())
+  const origin = appBaseUrl(req.url)
+  const domainNote = checkoutRedirectIsLocalhost(origin)
+    ? ' PUBLIC_APP_URL / NEXT_PUBLIC_SITE_URL / NEXT_PUBLIC_APP_URL must match the ZiniPay brand website in production.'
+    : ''
+  if (!zinipayConfigured()) {
+    return NextResponse.json({
+      subscriptionId: sub.id,
+      paymentRail: 'zinipay_web',
+      checkoutUrl: null,
+      months: monthsForPeriod(period),
+      message: 'ZINIPAY_API_KEY সেট নেই — পেমেন্ট লাইভ নয়। অ্যাডমিন ম্যানুয়াল অ্যাক্টিভেট ব্যবহার করুন।' + domainNote,
+      redirectOriginLocalhost: checkoutRedirectIsLocalhost(origin),
+    })
+  }
+
+  const created = await createZiniInvoice({
+    cusName: user.name,
+    cusEmail: user.email,
+    amountBdt: amount,
+    metadata: {
+      subscriptionId: sub.id,
+      packageCode: pkg.code,
+      period,
+      workspaceId: user.activeMembership.workspaceId,
+    },
+    redirectUrl: `${origin}/api/web/v1/checkout/zinipay/return?subscriptionId=${sub.id}`,
+    cancelUrl: `${origin}/user/member?pay=cancel`,
+    webhookUrl: `${origin}/api/web/v1/checkout/zinipay/webhook`,
+  })
+
+  if (!created.ok) {
+    return NextResponse.json({
+      subscriptionId: sub.id,
+      paymentRail: 'zinipay_web',
+      checkoutUrl: null,
+      message: created.message,
+    }, { status: created.reason === 'unconfigured' ? 200 : 502 })
+  }
+
+  if (created.invoiceId) {
+    await prisma.subscription.update({
+      where: { id: sub.id },
+      data: { gatewayRef: created.invoiceId },
+    })
+  }
+
   return NextResponse.json({
     subscriptionId: sub.id,
-    paymentRail: rail,
-    checkoutUrl: null,
-    message: hasGateway
-      ? 'Gateway credentials present — SSLCommerz session create TODO'
-      : 'Subscription pending; configure SSLCommerz to get checkout URL',
+    paymentRail: 'zinipay_web',
+    checkoutUrl: created.paymentUrl,
+    invoiceId: created.invoiceId,
+    redirectOriginLocalhost: checkoutRedirectIsLocalhost(origin),
   })
 }

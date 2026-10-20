@@ -1,0 +1,265 @@
+{
+  "batch_id": "BATCH-2026-08-016-CRPC-COMPOUNDING",
+  "schema_version": "1.0",
+  "content_version": "2026.08.7",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Second topic in this depth round. Covers CrPC Compounding of Offences (T-CRPC-18, Section 345) -- a highly practical topic (most criminal-practice clients ask 'can we just settle this?') built around a strict closed-list principle that is easy to state loosely and get wrong.",
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "BC-CRPC-COMPOUNDING-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CRPC-COMPOUNDING-001",
+      "topic_id": "T-CRPC-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Subsections (1), (2), (3), and (7) of Section 345 were obtained as VERBATIM text via search-indexed content of the primary source (bdlaws.minlaw.gov.bd) during this session, corroborated across three independent search results. The specific offence-by-offence table content (which Penal Code sections fall in tier 1 vs tier 2, and who may compound each) was NOT independently transcribed in this pass -- the lesson describes the two-tier structure and the closed-list principle without listing specific table entries, to avoid fabricating table contents. The 'no local mediators/Panchayet' and 'public prosecutor cannot compound' points are corroborated by a Daily Star legal-affairs article and an academic paper respectively, both flagged VERIFY_CURRENT_RULE rather than VERIFIED since they are secondary-source points. No case law cited, consistent with this dataset's policy throughout, though a specific 1984 Appellate Division case name surfaced in the Daily Star source and was deliberately excluded.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 25,
+      "prerequisite_ids": [],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-CRPC-COMP-001", "BC-MCQ-CRPC-COMP-002", "BC-MCQ-CRPC-COMP-003", "BC-MCQ-CRPC-COMP-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CRPC-S345"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CRPC-S345"],
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "language_versions": {
+        "en": {
+          "title": "Compounding of Offences (Section 345)",
+          "short_description": "Some criminal offences can be settled directly between the parties, ending the prosecution -- but only the offences Section 345 specifically lists, only by the specific persons it names, and never through informal mediation outside a court's supervision.",
+          "learning_objective": "By the end of this lesson you should be able to: explain the two-tier structure of compoundable offences under Section 345(1) and (2); state the closed-list principle of Section 345(7); and identify who may -- and may not -- lawfully compound an offence.",
+          "explanation": "Compounding is a mechanism by which specified offences under the Penal Code can be settled directly between the parties, with the effect (once properly compounded) of ending the prosecution. Section 345 organises compoundable offences into two tiers. Under subsection (1), the offences listed in the first table may be compounded by the persons named against each offence without needing the court's permission. Under subsection (2), a second table lists offences that may only be compounded with the permission of the court before which the prosecution is pending -- a more serious tier of offence where court oversight is built into the process itself.\n\nSubsection (3) extends the same logic to an offence's abetment, or an attempt to commit it (where that attempt is itself punishable): if the completed offence is compoundable under this section, its abetment or attempt may be compounded in like manner.\n\nThe single most important limitation in this provision is subsection (7): no offence shall be compounded except as provided by this section. This is a strict closed-list rule -- an offence not appearing in either table cannot be compounded at all, however willing the parties are to settle, and offences created by special laws outside the Penal Code fall outside Section 345 altogether. The provision also confines the power to allow compounding to the Magistrate or Judge before whom the case is pending; it does not extend that power to informal community bodies or arbitral mechanisms operating outside the court's supervision. A further practical point worth knowing: compounding is an act for the party, victim, or accused to carry out -- the public prosecutor has no power to compound an offence on their own initiative.",
+          "key_concepts": ["Two tiers: compoundable without permission (S.345(1)) vs. compoundable only with the court's permission (S.345(2))", "S.345(3): abetment/attempt of a compoundable offence may also be compounded", "S.345(7): closed-list rule -- no offence compoundable except as this section provides", "Compounding power rests with the court, not informal mediation bodies", "The public prosecutor cannot compound an offence"],
+          "important_rules": [
+            "S.345(1): offences listed in the first table may be compounded by the named persons without the court's permission.",
+            "S.345(2): offences listed in the second table may be compounded by the named persons only with the permission of the court before which the prosecution is pending.",
+            "S.345(3): where an offence is compoundable, its abetment, or an attempt to commit it (if that attempt is itself an offence), may be compounded in like manner.",
+            "S.345(7): no offence shall be compounded except as provided by this section -- a strict closed list, with no extension to offences under special laws or to informal, out-of-court mediation."
+          ],
+          "definitions": [
+            { "term": "Compounding", "definition": "The lawful settlement of specified criminal offences directly between the parties, under Section 345, with the effect of ending the prosecution once properly compounded." },
+            { "term": "Closed-list rule (S.345(7))", "definition": "The principle that only offences expressly listed in Section 345's tables may be compounded -- no offence outside those tables can be settled this way, however much the parties may wish to." }
+          ],
+          "examples": [
+            "Two neighbours are involved in a minor Penal Code offence that appears in Section 345(1)'s table, requiring no court permission. They may settle the matter directly between themselves in the manner the table specifies, without needing to first ask the court's leave.",
+            "A more serious offence appears only in Section 345(2)'s table. Even if both parties genuinely wish to settle, they cannot simply do so privately -- they must first obtain the permission of the court before which the prosecution is pending before the compounding is lawful."
+          ],
+          "exam_focus": "Examiners like to test the closed-list principle directly -- a fact pattern involving an offence under a special law, or an attempt by parties to settle through a village mediation body rather than the court, is a common way to check whether a candidate understands that compounding is not a general 'settle anything by agreement' power.",
+          "common_traps": [
+            "Assuming any offence can be compounded if both parties genuinely agree -- Section 345(7) confines compounding strictly to the offences listed in the section's own tables.",
+            "Assuming informal village or community mediation can lawfully compound a criminal offence -- only the court before which the case is pending (for tier-2 offences) or the process the section itself sets out has this power.",
+            "Assuming the public prosecutor can initiate or agree to compounding on the state's behalf -- that power belongs to the party, victim, or accused, not the prosecutor."
+          ],
+          "quick_revision": [
+            "S.345(1) = compoundable WITHOUT court permission (table 1).",
+            "S.345(2) = compoundable ONLY WITH court permission (table 2).",
+            "S.345(3) = abetment/attempt of a compoundable offence -> compoundable too.",
+            "S.345(7) = closed list -- nothing outside these tables, no informal mediation, ever.",
+            "Public prosecutor CANNOT compound -- that's for the party/victim/accused."
+          ],
+          "key_takeaways": [
+            "Compounding is a narrow, statutorily-defined exception to ordinary prosecution, not a general settlement power.",
+            "The two-tier structure (with/without court permission) reflects a rough seriousness gradient among compoundable offences.",
+            "Court supervision is baked into the process -- this is not the same as, and should not be confused with, informal out-of-court mediation."
+          ]
+        },
+        "bn": {
+          "title": "অপরাধের আপোষরফা (ধারা ৩৪৫)",
+          "short_description": "কিছু ফৌজদারি অপরাধ সরাসরি পক্ষগণের মধ্যে নিষ্পত্তি করা যেতে পারে, যা মামলা পরিচালনা শেষ করে দেয় -- কিন্তু কেবল ধারা ৩৪৫ যে অপরাধগুলো সুনির্দিষ্টভাবে তালিকাভুক্ত করে সেগুলো, কেবল যাদের নাম উল্লেখ করে তাদের দ্বারা, এবং কখনো আদালতের তত্ত্বাবধানের বাইরে অনানুষ্ঠানিক মধ্যস্থতার মাধ্যমে নয়।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৩৪৫(১) ও (২)-এর অধীনে আপোষযোগ্য অপরাধের দুই-স্তরীয় কাঠামো ব্যাখ্যা করতে পারবেন; ধারা ৩৪৫(৭)-এর বদ্ধ-তালিকা নীতি বলতে পারবেন; এবং কে বৈধভাবে একটি অপরাধ আপোষ করতে পারেন -- ও পারেন না -- তা চিহ্নিত করতে পারবেন।",
+          "explanation": "আপোষরফা এমন একটি ব্যবস্থা যার মাধ্যমে দণ্ডবিধির নির্দিষ্ট অপরাধসমূহ সরাসরি পক্ষগণের মধ্যে নিষ্পত্তি করা যেতে পারে, যার ফলে (সঠিকভাবে আপোষ হলে) মামলা পরিচালনা শেষ হয়ে যায়। ধারা ৩৪৫ আপোষযোগ্য অপরাধগুলোকে দুটি স্তরে সংগঠিত করে। উপধারা (১)-এর অধীনে, প্রথম সারণিতে তালিকাভুক্ত অপরাধগুলো প্রতিটি অপরাধের বিপরীতে নামোল্লিখিত ব্যক্তিদের দ্বারা আদালতের অনুমতি ছাড়াই আপোষ করা যেতে পারে। উপধারা (২)-এর অধীনে, দ্বিতীয় সারণি এমন অপরাধ তালিকাভুক্ত করে যা কেবল যে আদালতে মামলা বিচারাধীন সেই আদালতের অনুমতিসহ আপোষ করা যেতে পারে -- অধিক গুরুতর স্তরের অপরাধ যেখানে আদালতের তত্ত্বাবধান প্রক্রিয়াটিতেই অন্তর্নির্মিত।\n\nউপধারা (৩) একই যুক্তি অপরাধের প্ররোচনা বা চেষ্টা পর্যন্ত প্রসারিত করে (যেখানে সেই চেষ্টা নিজেই দণ্ডনীয়): যদি সম্পূর্ণ অপরাধটি এই ধারার অধীনে আপোষযোগ্য হয়, তার প্ররোচনা বা চেষ্টাও একইভাবে আপোষ করা যেতে পারে।\n\nএই বিধানের সবচেয়ে গুরুত্বপূর্ণ সীমাবদ্ধতা হলো উপধারা (৭): এই ধারায় প্রদত্ত ব্যতীত কোনো অপরাধ আপোষ করা যাবে না। এটি একটি কঠোর বদ্ধ-তালিকা নিয়ম -- উভয় সারণির কোনোটিতেই না থাকা কোনো অপরাধ আপোষ করা যাবে না, পক্ষগণ যতই নিষ্পত্তি করতে ইচ্ছুক হোক না কেন, এবং দণ্ডবিধির বাইরে বিশেষ আইন দ্বারা সৃষ্ট অপরাধগুলো ধারা ৩৪৫-এর আওতাভুক্তই নয়। বিধানটি আপোষের অনুমতি দেওয়ার ক্ষমতাও যে ম্যাজিস্ট্রেট বা বিচারকের সামনে মামলাটি বিচারাধীন তার মধ্যে সীমাবদ্ধ করে; এটি সেই ক্ষমতা আদালতের তত্ত্বাবধানের বাইরে পরিচালিত অনানুষ্ঠানিক সম্প্রদায় সংস্থা বা সালিশি ব্যবস্থায় প্রসারিত করে না। জানার মতো আরেকটি ব্যবহারিক বিষয়: আপোষরফা পক্ষ, শিকার, বা অভিযুক্তের সম্পাদন করার একটি কাজ -- পাবলিক প্রসিকিউটরের নিজস্ব উদ্যোগে কোনো অপরাধ আপোষ করার ক্ষমতা নেই।",
+          "key_concepts": ["দুই স্তর: অনুমতি ছাড়া আপোষযোগ্য (ধারা ৩৪৫(১)) বনাম কেবল আদালতের অনুমতিসহ আপোষযোগ্য (ধারা ৩৪৫(২))", "ধারা ৩৪৫(৩): আপোষযোগ্য অপরাধের প্ররোচনা/চেষ্টাও আপোষ করা যেতে পারে", "ধারা ৩৪৫(৭): বদ্ধ-তালিকা নিয়ম -- এই ধারায় প্রদত্ত ব্যতীত কোনো অপরাধ আপোষযোগ্য নয়", "আপোষের ক্ষমতা আদালতের হাতে, অনানুষ্ঠানিক মধ্যস্থতা সংস্থার হাতে নয়", "পাবলিক প্রসিকিউটর কোনো অপরাধ আপোষ করতে পারেন না"],
+          "important_rules": [
+            "ধারা ৩৪৫(১): প্রথম সারণিতে তালিকাভুক্ত অপরাধগুলো নামোল্লিখিত ব্যক্তিদের দ্বারা আদালতের অনুমতি ছাড়াই আপোষ করা যেতে পারে।",
+            "ধারা ৩৪৫(২): দ্বিতীয় সারণিতে তালিকাভুক্ত অপরাধগুলো নামোল্লিখিত ব্যক্তিদের দ্বারা কেবল যে আদালতে মামলা বিচারাধীন সেই আদালতের অনুমতিসহ আপোষ করা যেতে পারে।",
+            "ধারা ৩৪৫(৩): যেখানে একটি অপরাধ আপোষযোগ্য, তার প্ররোচনা, বা তা সংঘটনের চেষ্টা (যদি সেই চেষ্টা নিজেই একটি অপরাধ হয়), একইভাবে আপোষ করা যেতে পারে।",
+            "ধারা ৩৪৫(৭): এই ধারায় প্রদত্ত ব্যতীত কোনো অপরাধ আপোষ করা যাবে না -- একটি কঠোর বদ্ধ তালিকা, বিশেষ আইনের অধীনে অপরাধ বা অনানুষ্ঠানিক, আদালতের বাইরে মধ্যস্থতায় কোনো সম্প্রসারণ ছাড়াই।"
+          ],
+          "definitions": [
+            { "term": "আপোষরফা", "definition": "ধারা ৩৪৫-এর অধীনে সরাসরি পক্ষগণের মধ্যে নির্দিষ্ট ফৌজদারি অপরাধের বৈধ নিষ্পত্তি, সঠিকভাবে আপোষ হলে মামলা পরিচালনা শেষ করার প্রভাবসহ।" },
+            { "term": "বদ্ধ-তালিকা নিয়ম (ধারা ৩৪৫(৭))", "definition": "এই নীতি যে কেবল ধারা ৩৪৫-এর সারণিতে স্পষ্টভাবে তালিকাভুক্ত অপরাধই আপোষ করা যেতে পারে -- সেই সারণির বাইরের কোনো অপরাধ এভাবে নিষ্পত্তি করা যায় না, পক্ষগণ যতই তা চান না কেন।" }
+          ],
+          "examples": [
+            "দুই প্রতিবেশী ধারা ৩৪৫(১)-এর সারণিতে থাকা একটি ছোটখাটো দণ্ডবিধি অপরাধে জড়িত, যার জন্য কোনো আদালতের অনুমতির প্রয়োজন নেই। তারা প্রথমে আদালতের অনুমতি না চেয়েই সারণি যেভাবে নির্দিষ্ট করে সেভাবে সরাসরি নিজেদের মধ্যে বিষয়টি নিষ্পত্তি করতে পারেন।",
+            "একটি অধিক গুরুতর অপরাধ কেবল ধারা ৩৪৫(২)-এর সারণিতে দেখা যায়। উভয় পক্ষ প্রকৃতপক্ষে নিষ্পত্তি করতে চাইলেও, তারা কেবল ব্যক্তিগতভাবে তা করতে পারেন না -- আপোষটি বৈধ হওয়ার আগে তাদের প্রথমে যে আদালতে মামলা বিচারাধীন সেই আদালতের অনুমতি নিতে হবে।"
+          ],
+          "exam_focus": "পরীক্ষকরা বদ্ধ-তালিকা নীতি সরাসরি যাচাই করতে পছন্দ করেন -- একটি বিশেষ আইনের অধীনে অপরাধ জড়িত, বা আদালতের পরিবর্তে একটি গ্রাম মধ্যস্থতা সংস্থার মাধ্যমে পক্ষগণের নিষ্পত্তির প্রচেষ্টা জড়িত একটি ঘটনাপ্রবাহ, একজন প্রার্থী বোঝেন কিনা যে আপোষরফা একটি সাধারণ 'সম্মতিতে যেকোনো কিছু নিষ্পত্তি করুন' ক্ষমতা নয় তা যাচাইয়ের একটি সাধারণ উপায়।",
+          "common_traps": [
+            "মনে করা যে উভয় পক্ষ প্রকৃতপক্ষে সম্মত হলে যেকোনো অপরাধ আপোষ করা যায় -- ধারা ৩৪৫(৭) আপোষরফাকে কঠোরভাবে ধারার নিজস্ব সারণিতে তালিকাভুক্ত অপরাধে সীমাবদ্ধ করে।",
+            "মনে করা যে অনানুষ্ঠানিক গ্রাম বা সম্প্রদায় মধ্যস্থতা বৈধভাবে একটি ফৌজদারি অপরাধ আপোষ করতে পারে -- কেবল যে আদালতে মামলাটি বিচারাধীন (স্তর-২ অপরাধের জন্য) বা ধারাটি নিজে যে প্রক্রিয়া নির্ধারণ করে তারই এই ক্ষমতা রয়েছে।",
+            "মনে করা যে পাবলিক প্রসিকিউটর রাষ্ট্রের পক্ষে আপোষরফা শুরু বা সম্মত করতে পারেন -- সেই ক্ষমতা পক্ষ, শিকার, বা অভিযুক্তের জন্য, প্রসিকিউটরের জন্য নয়।"
+          ],
+          "quick_revision": [
+            "ধারা ৩৪৫(১) = আদালতের অনুমতি ছাড়া আপোষযোগ্য (সারণি ১)।",
+            "ধারা ৩৪৫(২) = কেবল আদালতের অনুমতিসহ আপোষযোগ্য (সারণি ২)।",
+            "ধারা ৩৪৫(৩) = আপোষযোগ্য অপরাধের প্ররোচনা/চেষ্টা -> আপোষযোগ্যও।",
+            "ধারা ৩৪৫(৭) = বদ্ধ তালিকা -- এই সারণির বাইরে কিছুই নয়, কখনো অনানুষ্ঠানিক মধ্যস্থতা নয়।",
+            "পাবলিক প্রসিকিউটর আপোষ করতে পারেন না -- এটি পক্ষ/শিকার/অভিযুক্তের জন্য।"
+          ],
+          "key_takeaways": [
+            "আপোষরফা সাধারণ মামলা পরিচালনার একটি সংকীর্ণ, সংবিধিবদ্ধভাবে সংজ্ঞায়িত ব্যতিক্রম, সাধারণ নিষ্পত্তি ক্ষমতা নয়।",
+            "দুই-স্তরীয় কাঠামো (আদালতের অনুমতিসহ/ছাড়া) আপোষযোগ্য অপরাধের মধ্যে একটি মোটামুটি গুরুত্বের ক্রম প্রতিফলিত করে।",
+            "আদালতের তত্ত্বাবধান প্রক্রিয়ায় অন্তর্নির্মিত -- এটি অনানুষ্ঠানিক আদালত-বহির্ভূত মধ্যস্থতার মতো নয় এবং তার সাথে গুলিয়ে ফেলা উচিত নয়।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CRPC-S345",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Section 345 (Compounding offences)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "note": "Verbatim text of subsections (1), (2), (3), and (7) obtained via search-indexed content of the primary source page during this session, corroborated across three independent search results. The specific offence-by-offence contents of the two tables were not transcribed and are not asserted anywhere in this batch."
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-COMP-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-COMP-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S345"],
+      "exam_focus": "The closed-list principle of S.345(7).",
+      "source_basis": "Original question drawn directly from verbatim S.345(7) text.",
+      "mistake_tags": ["s345-7-closed-list"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-COMPOUNDING-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 345(7), CrPC, can an offence not listed in either table of Section 345 be compounded, if both parties genuinely consent?",
+          "options": { "A": "Yes, party consent is always sufficient regardless of the tables", "B": "No -- Section 345(7) provides that no offence shall be compounded except as provided by this section", "C": "Yes, but only with the written approval of the police", "D": "Yes, if the offence carries a sentence of less than one year" },
+          "explanation": "Section 345(7) is an express closed-list rule: no offence shall be compounded except as this section provides. An offence outside the tables cannot be compounded, regardless of party consent.",
+          "why_other_options_are_wrong": { "A": "This ignores the express statutory limitation in subsection (7).", "C": "Police approval is not the mechanism this section establishes for compounding offences outside its tables.", "D": "There is no sentence-length exception in Section 345(7) allowing offences outside the tables to be compounded." }
+        },
+        "bn": {
+          "question": "ফৌজদারি কার্যবিধির ধারা ৩৪৫(৭) অনুযায়ী, ধারা ৩৪৫-এর কোনো সারণিতে তালিকাভুক্ত নয় এমন একটি অপরাধ কি আপোষ করা যায়, যদি উভয় পক্ষ প্রকৃতপক্ষে সম্মত হন?",
+          "options": { "A": "হ্যাঁ, সারণি নির্বিশেষে পক্ষগণের সম্মতিই সবসময় যথেষ্ট", "B": "না -- ধারা ৩৪৫(৭) প্রদান করে যে এই ধারায় প্রদত্ত ব্যতীত কোনো অপরাধ আপোষ করা যাবে না", "C": "হ্যাঁ, তবে কেবল পুলিশের লিখিত অনুমোদনসহ", "D": "হ্যাঁ, যদি অপরাধটি এক বছরের কম সাজা বহন করে" },
+          "explanation": "ধারা ৩৪৫(৭) একটি স্পষ্ট বদ্ধ-তালিকা নিয়ম: এই ধারায় প্রদত্ত ব্যতীত কোনো অপরাধ আপোষ করা যাবে না। সারণির বাইরের একটি অপরাধ পক্ষগণের সম্মতি নির্বিশেষে আপোষ করা যায় না।",
+          "why_other_options_are_wrong": { "A": "এটি উপধারা (৭)-এর স্পষ্ট সংবিধিবদ্ধ সীমাবদ্ধতা উপেক্ষা করে।", "C": "পুলিশের অনুমোদন এই ধারা তার সারণির বাইরের অপরাধ আপোষের জন্য প্রতিষ্ঠিত পদ্ধতি নয়।", "D": "ধারা ৩৪৫(৭)-এ এমন কোনো সাজা-দৈর্ঘ্য ব্যতিক্রম নেই যা সারণির বাইরের অপরাধ আপোষের অনুমতি দেয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-COMP-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-COMP-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S345"],
+      "exam_focus": "The two-tier permission structure.",
+      "source_basis": "Original question distinguishing S.345(1) and S.345(2).",
+      "mistake_tags": ["s345-two-tier-permission"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-COMPOUNDING-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "What is the key procedural difference between an offence compoundable under Section 345(1) and one compoundable under Section 345(2)?",
+          "options": { "A": "Section 345(1) offences require a written contract; Section 345(2) offences do not", "B": "Section 345(2) offences can never actually be compounded in practice", "C": "Section 345(1) offences may be compounded without the court's permission; Section 345(2) offences require the court's permission", "D": "There is no procedural difference -- the two subsections list identical offences" },
+          "explanation": "The defining procedural difference is permission: Section 345(1) offences can be compounded by the named persons without asking the court; Section 345(2) offences require the court's permission first.",
+          "why_other_options_are_wrong": { "A": "No written-contract requirement is drawn from either subsection's text.", "B": "Section 345(2) offences are genuinely compoundable -- they simply require an extra step (court permission).", "D": "The two subsections list different offences precisely because they represent two different tiers of seriousness." }
+        },
+        "bn": {
+          "question": "ধারা ৩৪৫(১)-এর অধীনে আপোষযোগ্য একটি অপরাধ ও ধারা ৩৪৫(২)-এর অধীনে আপোষযোগ্য একটি অপরাধের মধ্যে মূল প্রক্রিয়াগত পার্থক্য কী?",
+          "options": { "A": "ধারা ৩৪৫(১) অপরাধের জন্য একটি লিখিত চুক্তি প্রয়োজন; ধারা ৩৪৫(২) অপরাধের জন্য নয়", "B": "ধারা ৩৪৫(২) অপরাধ বাস্তবে কখনো প্রকৃতপক্ষে আপোষ করা যায় না", "C": "ধারা ৩৪৫(১) অপরাধ আদালতের অনুমতি ছাড়াই আপোষ করা যেতে পারে; ধারা ৩৪৫(২) অপরাধের জন্য আদালতের অনুমতি প্রয়োজন", "D": "কোনো প্রক্রিয়াগত পার্থক্য নেই -- দুটি উপধারা অভিন্ন অপরাধ তালিকাভুক্ত করে" },
+          "explanation": "নির্ধারক প্রক্রিয়াগত পার্থক্যটি হলো অনুমতি: ধারা ৩৪৫(১) অপরাধ আদালতকে না জিজ্ঞাসা করেই নামোল্লিখিত ব্যক্তিদের দ্বারা আপোষ করা যেতে পারে; ধারা ৩৪৫(২) অপরাধের জন্য প্রথমে আদালতের অনুমতি প্রয়োজন।",
+          "why_other_options_are_wrong": { "A": "কোনো উপধারার পাঠ্য থেকে কোনো লিখিত-চুক্তির প্রয়োজনীয়তা আসে না।", "B": "ধারা ৩৪৫(২) অপরাধ প্রকৃতপক্ষে আপোষযোগ্য -- এর জন্য কেবল একটি অতিরিক্ত পদক্ষেপ (আদালতের অনুমতি) প্রয়োজন।", "D": "দুটি উপধারা ভিন্ন অপরাধ তালিকাভুক্ত করে ঠিক এই কারণে যে তারা গুরুত্বের দুটি ভিন্ন স্তর প্রতিনিধিত্ব করে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-COMP-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-COMP-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S345"],
+      "exam_focus": "Who cannot compound an offence -- the public prosecutor.",
+      "source_basis": "Original question on the party/prosecutor distinction, drawn from a secondary academic source.",
+      "mistake_tags": ["s345-prosecutor-cannot-compound"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-COMPOUNDING-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Who is generally recognised as able to compound a compoundable offence?",
+          "options": { "A": "Only the public prosecutor, on behalf of the state", "B": "Only a police officer investigating the case", "C": "The party, victim, or accused specifically entitled to do so under Section 345", "D": "Any lawyer representing either side" },
+          "explanation": "Compounding is an act for the party, victim, or accused specified in Section 345's tables -- not something the public prosecutor initiates or agrees to on the state's behalf.",
+          "why_other_options_are_wrong": { "A": "The public prosecutor specifically lacks the power to compound an offence.", "B": "An investigating police officer's role does not include the power to compound an offence.", "D": "Representation by a lawyer does not itself confer the power to compound -- that power belongs to the specified party, not counsel generally." }
+        },
+        "bn": {
+          "question": "একটি আপোষযোগ্য অপরাধ আপোষ করতে সাধারণত কাকে সক্ষম বলে স্বীকৃত করা হয়?",
+          "options": { "A": "কেবল পাবলিক প্রসিকিউটর, রাষ্ট্রের পক্ষে", "B": "কেবল মামলাটি তদন্তকারী একজন পুলিশ কর্মকর্তা", "C": "পক্ষ, শিকার, বা অভিযুক্ত যাদের ধারা ৩৪৫-এর অধীনে সুনির্দিষ্টভাবে এই অধিকার রয়েছে", "D": "যেকোনো পক্ষের প্রতিনিধিত্বকারী আইনজীবী" },
+          "explanation": "আপোষরফা ধারা ৩৪৫-এর সারণিতে নির্দিষ্ট পক্ষ, শিকার, বা অভিযুক্তের একটি কাজ -- পাবলিক প্রসিকিউটর রাষ্ট্রের পক্ষে শুরু বা সম্মত করার মতো কিছু নয়।",
+          "why_other_options_are_wrong": { "A": "পাবলিক প্রসিকিউটরের সুনির্দিষ্টভাবে একটি অপরাধ আপোষ করার ক্ষমতা নেই।", "B": "একজন তদন্তকারী পুলিশ কর্মকর্তার ভূমিকায় একটি অপরাধ আপোষ করার ক্ষমতা অন্তর্ভুক্ত নয়।", "D": "একজন আইনজীবীর প্রতিনিধিত্ব নিজে থেকে আপোষ করার ক্ষমতা প্রদান করে না -- সেই ক্ষমতা সাধারণভাবে আইনজীবীর নয়, নির্দিষ্ট পক্ষের।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-COMP-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-COMP-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S345"],
+      "exam_focus": "S.345(3)'s extension to abetment and attempt.",
+      "source_basis": "Original question drawn directly from verbatim S.345(3) text.",
+      "mistake_tags": ["s345-3-abetment-attempt-extension"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-COMPOUNDING-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 345(3), if the completed offence itself is compoundable, what else may be compounded in like manner?",
+          "options": { "A": "Its abetment, or an attempt to commit it (where that attempt is itself an offence)", "B": "Any unrelated offence committed by the same accused", "C": "Only the abetment, never an attempt", "D": "Nothing further -- subsection (3) only restates subsection (1)" },
+          "explanation": "Section 345(3) extends compounding to the abetment of a compoundable offence, and to an attempt to commit it where that attempt is itself punishable -- not to unrelated offences.",
+          "why_other_options_are_wrong": { "B": "Subsection (3) is specifically about abetment/attempt of the SAME offence, not unrelated offences.", "C": "The subsection covers attempt as well as abetment, not abetment alone.", "D": "Subsection (3) adds a genuine extension beyond subsection (1), not a mere restatement." }
+        },
+        "bn": {
+          "question": "ধারা ৩৪৫(৩)-এর অধীনে, যদি সম্পূর্ণ অপরাধটি নিজেই আপোষযোগ্য হয়, তাহলে আর কী একইভাবে আপোষ করা যেতে পারে?",
+          "options": { "A": "তার প্ররোচনা, বা তা সংঘটনের চেষ্টা (যেখানে সেই চেষ্টা নিজেই একটি অপরাধ)", "B": "একই অভিযুক্ত কর্তৃক সংঘটিত যেকোনো অসম্পর্কিত অপরাধ", "C": "কেবল প্ররোচনা, চেষ্টা কখনো নয়", "D": "আর কিছুই নয় -- উপধারা (৩) কেবল উপধারা (১) পুনরাবৃত্তি করে" },
+          "explanation": "ধারা ৩৪৫(৩) আপোষরফাকে একটি আপোষযোগ্য অপরাধের প্ররোচনা পর্যন্ত, এবং তা সংঘটনের চেষ্টা পর্যন্ত প্রসারিত করে যেখানে সেই চেষ্টা নিজেই দণ্ডনীয় -- অসম্পর্কিত অপরাধ পর্যন্ত নয়।",
+          "why_other_options_are_wrong": { "B": "উপধারা (৩) সুনির্দিষ্টভাবে একই অপরাধের প্ররোচনা/চেষ্টা নিয়ে, অসম্পর্কিত অপরাধ নিয়ে নয়।", "C": "উপধারাটি প্ররোচনার পাশাপাশি চেষ্টাও আচ্ছাদন করে, কেবল প্ররোচনা নয়।", "D": "উপধারা (৩) উপধারা (১)-এর বাইরে একটি প্রকৃত সম্প্রসারণ যোগ করে, নিছক পুনরাবৃত্তি নয়।" }
+        }
+      }
+    }
+  ]
+}

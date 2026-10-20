@@ -1,0 +1,261 @@
+{
+  "batch_id": "BATCH-2026-08-024-CPC-ADR-MEDIATION",
+  "schema_version": "1.0",
+  "content_version": "2026.08.10",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Single additional CPC topic requested directly by the user ('next lesson'), continuing the established depth pattern without a full three-subject round this time. Covers CPC Alternative Dispute Resolution -- Mediation (T-CPC-11, Section 89A) -- the first ADR-related lesson in this dataset, and notably the first lesson to surface a legislative-evolution finding (mediation went from discretionary to mandatory by a 2012 amendment) rather than a divergence-from-India or a doctrinal-confusion pairing.",
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "BC-CPC-ADRMEDIATION-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CPC-ADRMEDIATION-001",
+      "topic_id": "T-CPC-11",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 89A (operative text and Explanation) was obtained as VERBATIM text via search-indexed content of bdlaws.minlaw.gov.bd during this session, corroborated across five independent search results including the primary source's own print version and a Bangladesh judiciary website. The amendment history (the shift from 'the Court may' to 'the Court shall' by the Code of Civil Procedure (Amendment) Act, 2012) is directly stated in the primary source's own annotations. Sections 89B (Arbitration) and 89C (Mediation in Appeal) are described only at the level of their confirmed titles and general cross-reference to Section 89A ('mutatis mutandis'), not independently verbatim-confirmed in full in this pass. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 25,
+      "prerequisite_ids": [],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-CPC-ADR-001", "BC-MCQ-CPC-ADR-002", "BC-MCQ-CPC-ADR-003", "BC-MCQ-CPC-ADR-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CPC-S89A"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CPC-S89A"],
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "language_versions": {
+        "en": {
+          "title": "Alternative Dispute Resolution -- Mediation (Section 89A)",
+          "short_description": "Once a written statement is filed and the parties are before the court, mediation is not just an option the court may offer -- since a 2012 amendment, the court MUST attempt it, either personally or by referring the dispute to a Legal Aid Officer, the parties' own pleaders, the parties themselves, or a panel mediator.",
+          "learning_objective": "By the end of this lesson you should be able to: state when Section 89A's mediation process is triggered; list the persons or bodies to whom the court may refer a dispute for mediation; recite the statutory Explanation's definition of 'mediation'; and explain the significance of the 2012 amendment that changed this provision from discretionary to mandatory.",
+          "explanation": "Section 89A applies once the written statement has been filed and all contesting parties are in attendance before the court, in person or through their pleaders -- except in a suit under the Artha Rin Adalat Ain, 2003 (the special law governing money-loan court suits), which is expressly carved out. At that point, the court adjourns the hearing and either mediates the dispute itself, or refers it for mediation to one of several possible bodies: the concerned Legal Aid Officer appointed under the Legal Aid Act, 2000; the parties' own engaged pleaders; the parties themselves, where no pleader has been engaged; or a mediator drawn from a panel the District Judge is required to prepare.\n\nA critical point often missed is that this was not always a mandatory step. The original 2003 text (when Sections 89A and 89B were first inserted into the Code) used the word 'may', making mediation discretionary. The Code of Civil Procedure (Amendment) Act, 2012 changed this to 'shall' -- mediation is now a mandatory step the court must undertake at the specified stage, not merely an option it may choose to offer. This is a meaningful shift in the CPC's approach to civil litigation, reflecting a deliberate policy push toward settling disputes outside full adversarial trial wherever realistically possible.\n\nThe section's own Explanation defines 'mediation' precisely: a flexible, informal, non-binding, confidential, non-adversarial, and consensual dispute-resolution process in which the mediator facilitates a compromise between the parties without directing or dictating the terms of that compromise. This last point is important -- a mediator's role is to help the parties reach their own agreement, not to impose one, which is what distinguishes mediation from adjudication even when a judge personally conducts it. The Explanation also clarifies that 'compromise' includes a compromise of only part of the disputes in the suit, so mediation need not resolve every issue to have some effect.\n\nSection 89B separately provides for arbitration, and Section 89C extends a parallel mediation process to appeals, applying Section 89A's provisions with necessary changes (mutatis mutandis).",
+          "key_concepts": ["S.89A trigger: after written statement filed, all contesting parties in attendance", "Exclusion for Artha Rin Adalat Ain (money-loan court) suits", "Four possible referral routes: Legal Aid Officer, engaged pleaders, parties themselves, or panel mediator", "The 2012 amendment: mediation shifted from discretionary ('may') to mandatory ('shall')", "The statutory definition of 'mediation': flexible, informal, non-binding, confidential, non-adversarial, consensual -- mediator facilitates, does not dictate"],
+          "important_rules": [
+            "S.89A(1): once the written statement is filed and all contesting parties are in attendance, the court SHALL adjourn the hearing and mediate, or refer the dispute for mediation to a Legal Aid Officer, the parties' pleaders, the parties themselves, or a panel mediator -- except in Artha Rin Adalat Ain suits.",
+            "This mandatory 'shall' replaced the original discretionary 'may' by the Code of Civil Procedure (Amendment) Act, 2012.",
+            "Explanation: 'mediation' is a flexible, informal, non-binding, confidential, non-adversarial, consensual process in which the mediator facilitates compromise without dictating its terms; 'compromise' includes partial compromise of the disputes in the suit."
+          ],
+          "definitions": [
+            { "term": "Mediation (statutory definition)", "definition": "A flexible, informal, non-binding, confidential, non-adversarial, and consensual dispute-resolution process in which the mediator facilitates a compromise between the parties without directing or dictating the terms of that compromise." },
+            { "term": "Panel mediator", "definition": "A mediator drawn from a panel that the District Judge is required to prepare, to whom a court may refer a dispute for mediation under Section 89A." }
+          ],
+          "examples": [
+            "After B files a written statement in a civil suit and both A and B are present in court with their respective lawyers, the court -- rather than simply proceeding straight to trial -- must adjourn the hearing and either mediate the dispute itself or refer it to one of the specified bodies for mediation, because the 2012 amendment made this step mandatory rather than optional.",
+            "During mediation, the mediator suggests possible ways the parties might resolve their dispute but does not tell either party what the outcome must be. Because the parties themselves negotiate and agree (or don't) to the terms, this remains 'mediation' in the statutory sense; a process where a third party unilaterally decided and imposed the outcome would not fit the Explanation's definition."
+          ],
+          "exam_focus": "Examiners frequently test whether candidates know mediation under Section 89A is now mandatory, not discretionary, following the 2012 amendment -- a fact pattern describing a court that skips mediation and proceeds straight to trial after the written statement is filed (outside the Artha Rin Adalat Ain exception) would describe an error. The four specific referral options are also commonly tested as a checklist.",
+          "common_traps": [
+            "Assuming mediation under Section 89A is merely optional for the court to offer -- since the 2012 amendment, it is mandatory ('shall'), not discretionary.",
+            "Forgetting the Artha Rin Adalat Ain exclusion -- Section 89A does not apply to suits under that special law.",
+            "Describing a mediator's role as deciding the outcome -- the statutory Explanation is explicit that the mediator facilitates without dictating the terms of any compromise."
+          ],
+          "quick_revision": [
+            "S.89A trigger = written statement filed + all contesting parties present (except Artha Rin Adalat Ain suits).",
+            "Court SHALL (not 'may', since the 2012 amendment) mediate or refer to: Legal Aid Officer / parties' pleaders / parties themselves / panel mediator.",
+            "Mediation = flexible, informal, non-binding, confidential, non-adversarial, consensual -- mediator facilitates, does NOT dictate.",
+            "S.89B = arbitration (separate). S.89C = mediation in appeal, S.89A rules apply mutatis mutandis."
+          ],
+          "key_takeaways": [
+            "The 2012 shift from 'may' to 'shall' is the single most important fact about this section -- it reflects a real legislative policy change toward mandatory ADR, not just a stylistic edit.",
+            "The mediator's non-dictating role is built into the statutory definition itself, not just general ADR theory -- this makes it directly testable from the bare text.",
+            "This is the first ADR-related lesson in this dataset, and pairs naturally with any future coverage of Section 89B (Arbitration) or 89C (Mediation in Appeal)."
+          ]
+        },
+        "bn": {
+          "title": "বিকল্প বিরোধ নিষ্পত্তি -- মধ্যস্থতা (ধারা ৮৯ক)",
+          "short_description": "একবার লিখিত জবাব দাখিল হলে এবং পক্ষগণ আদালতের সামনে উপস্থিত হলে, মধ্যস্থতা কেবল আদালত প্রস্তাব করতে পারে এমন একটি বিকল্প নয় -- ২০১২ সালের একটি সংশোধনীর পর থেকে, আদালতকে অবশ্যই তা চেষ্টা করতে হবে, হয় ব্যক্তিগতভাবে অথবা লিগ্যাল এইড অফিসার, পক্ষগণের নিজস্ব আইনজীবী, পক্ষগণ নিজে, বা একজন প্যানেল মধ্যস্থতাকারীর কাছে বিরোধ পাঠিয়ে।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৮৯ক-এর মধ্যস্থতা প্রক্রিয়া কখন সক্রিয় হয় তা বলতে পারবেন; আদালত কোন ব্যক্তি বা সংস্থার কাছে মধ্যস্থতার জন্য বিরোধ পাঠাতে পারে তা তালিকাভুক্ত করতে পারবেন; সংবিধিবদ্ধ ব্যাখ্যার 'মধ্যস্থতা'-র সংজ্ঞা আবৃত্তি করতে পারবেন; এবং এই বিধানকে ঐচ্ছিক থেকে বাধ্যতামূলক করা ২০১২ সালের সংশোধনীর গুরুত্ব ব্যাখ্যা করতে পারবেন।",
+          "explanation": "ধারা ৮৯ক প্রযোজ্য হয় একবার লিখিত জবাব দাখিল হলে এবং সকল প্রতিদ্বন্দ্বী পক্ষ ব্যক্তিগতভাবে বা তাদের আইনজীবীর মাধ্যমে আদালতের সামনে উপস্থিত থাকলে -- অর্থঋণ আদালত আইন, ২০০৩ (অর্থঋণ আদালত মামলা নিয়ন্ত্রণকারী বিশেষ আইন)-এর অধীনে একটি মামলা ব্যতীত, যা স্পষ্টভাবে বাদ দেওয়া হয়েছে। সেই মুহূর্তে, আদালত শুনানি মুলতবি করে এবং হয় নিজেই বিরোধ মধ্যস্থতা করে, অথবা এটি বিভিন্ন সম্ভাব্য সংস্থার একটির কাছে মধ্যস্থতার জন্য পাঠায়: লিগ্যাল এইড আইন, ২০০০-এর অধীনে নিযুক্ত সংশ্লিষ্ট লিগ্যাল এইড অফিসার; পক্ষগণের নিজস্ব নিযুক্ত আইনজীবী; পক্ষগণ নিজে, যেখানে কোনো আইনজীবী নিযুক্ত করা হয়নি; অথবা জেলা জজকে প্রস্তুত করতে হবে এমন একটি প্যানেল থেকে একজন মধ্যস্থতাকারী।\n\nপ্রায়ই মিস হওয়া একটি গুরুত্বপূর্ণ বিষয় হলো এটি সবসময় একটি বাধ্যতামূলক পদক্ষেপ ছিল না। মূল ২০০৩ সালের পাঠ্য (যখন ধারা ৮৯ক ও ৮৯খ প্রথম বিধিতে সন্নিবেশিত হয়েছিল) 'may' (পারে) শব্দ ব্যবহার করেছিল, মধ্যস্থতাকে ঐচ্ছিক করে তুলেছিল। দেওয়ানি কার্যবিধি (সংশোধনী) আইন, ২০১২ এটি 'shall' (করবে)-এ পরিবর্তন করে -- মধ্যস্থতা এখন নির্দিষ্ট পর্যায়ে আদালতকে অবশ্যই গ্রহণ করতে হবে এমন একটি বাধ্যতামূলক পদক্ষেপ, কেবল প্রস্তাব করার একটি বিকল্প নয়। এটি দেওয়ানি মামলায় দেওয়ানি কার্যবিধির পদ্ধতিতে একটি অর্থপূর্ণ পরিবর্তন, যা সম্পূর্ণ প্রতিদ্বন্দ্বিতামূলক বিচারের বাইরে বিরোধ নিষ্পত্তির দিকে বাস্তবসম্মতভাবে যতটা সম্ভব একটি ইচ্ছাকৃত নীতিগত পদক্ষেপ প্রতিফলিত করে।\n\nধারার নিজস্ব ব্যাখ্যা 'মধ্যস্থতা'-কে সুনির্দিষ্টভাবে সংজ্ঞায়িত করে: একটি নমনীয়, অনানুষ্ঠানিক, অ-বাধ্যকর, গোপনীয়, অ-প্রতিদ্বন্দ্বিতামূলক, এবং সম্মতিমূলক বিরোধ-নিষ্পত্তি প্রক্রিয়া যেখানে মধ্যস্থতাকারী সেই আপোষের শর্তাবলি নির্দেশ বা নির্ধারণ না করে পক্ষগণের মধ্যে একটি আপোষ সহজতর করেন। এই শেষ বিষয়টি গুরুত্বপূর্ণ -- একজন মধ্যস্থতাকারীর ভূমিকা পক্ষগণকে তাদের নিজস্ব সমঝোতায় পৌঁছাতে সাহায্য করা, একটি চাপিয়ে দেওয়া নয়, যা মধ্যস্থতাকে বিচার থেকে পৃথক করে এমনকি যখন একজন বিচারক ব্যক্তিগতভাবে তা পরিচালনা করেন। ব্যাখ্যাটি এটাও স্পষ্ট করে যে 'আপোষ' মামলার বিরোধের কেবল একটি অংশের আপোষও অন্তর্ভুক্ত করে, তাই মধ্যস্থতার কিছু প্রভাব থাকতে প্রতিটি বিষয় নিষ্পত্তি করার প্রয়োজন নেই।\n\nধারা ৮৯খ পৃথকভাবে সালিশের বিধান দেয়, এবং ধারা ৮৯গ আপিলে একটি সমান্তরাল মধ্যস্থতা প্রক্রিয়া প্রসারিত করে, প্রয়োজনীয় পরিবর্তনসহ (মিউটেটিস মিউটান্ডিস) ধারা ৮৯ক-এর বিধান প্রয়োগ করে।",
+          "key_concepts": ["ধারা ৮৯ক ট্রিগার: লিখিত জবাব দাখিলের পর, সকল প্রতিদ্বন্দ্বী পক্ষ উপস্থিত", "অর্থঋণ আদালত আইন মামলার জন্য বর্জন", "চারটি সম্ভাব্য রেফারেল পথ: লিগ্যাল এইড অফিসার, নিযুক্ত আইনজীবী, পক্ষগণ নিজে, অথবা প্যানেল মধ্যস্থতাকারী", "২০১২ সংশোধনী: মধ্যস্থতা ঐচ্ছিক ('may') থেকে বাধ্যতামূলক ('shall')-এ পরিবর্তিত", "'মধ্যস্থতা'-র সংবিধিবদ্ধ সংজ্ঞা: নমনীয়, অনানুষ্ঠানিক, অ-বাধ্যকর, গোপনীয়, অ-প্রতিদ্বন্দ্বিতামূলক, সম্মতিমূলক -- মধ্যস্থতাকারী সহজতর করেন, নির্ধারণ করেন না"],
+          "important_rules": [
+            "ধারা ৮৯ক(১): একবার লিখিত জবাব দাখিল হলে এবং সকল প্রতিদ্বন্দ্বী পক্ষ উপস্থিত থাকলে, আদালত শুনানি মুলতবি করবে এবং মধ্যস্থতা করবে, অথবা বিরোধটি লিগ্যাল এইড অফিসার, পক্ষগণের আইনজীবী, পক্ষগণ নিজে, বা একজন প্যানেল মধ্যস্থতাকারীর কাছে মধ্যস্থতার জন্য পাঠাবে -- অর্থঋণ আদালত আইন মামলা ব্যতীত।",
+            "এই বাধ্যতামূলক 'shall' দেওয়ানি কার্যবিধি (সংশোধনী) আইন, ২০১২ দ্বারা মূল ঐচ্ছিক 'may' প্রতিস্থাপন করেছে।",
+            "ব্যাখ্যা: 'মধ্যস্থতা' একটি নমনীয়, অনানুষ্ঠানিক, অ-বাধ্যকর, গোপনীয়, অ-প্রতিদ্বন্দ্বিতামূলক, সম্মতিমূলক প্রক্রিয়া যেখানে মধ্যস্থতাকারী শর্তাবলি নির্ধারণ না করে আপোষ সহজতর করেন; 'আপোষ' মামলার বিরোধের আংশিক আপোষও অন্তর্ভুক্ত করে।"
+          ],
+          "definitions": [
+            { "term": "মধ্যস্থতা (সংবিধিবদ্ধ সংজ্ঞা)", "definition": "একটি নমনীয়, অনানুষ্ঠানিক, অ-বাধ্যকর, গোপনীয়, অ-প্রতিদ্বন্দ্বিতামূলক, এবং সম্মতিমূলক বিরোধ-নিষ্পত্তি প্রক্রিয়া যেখানে মধ্যস্থতাকারী সেই আপোষের শর্তাবলি নির্দেশ বা নির্ধারণ না করে পক্ষগণের মধ্যে একটি আপোষ সহজতর করেন।" },
+            { "term": "প্যানেল মধ্যস্থতাকারী", "definition": "জেলা জজকে প্রস্তুত করতে হবে এমন একটি প্যানেল থেকে একজন মধ্যস্থতাকারী, যার কাছে আদালত ধারা ৮৯ক-এর অধীনে মধ্যস্থতার জন্য একটি বিরোধ পাঠাতে পারে।" }
+          ],
+          "examples": [
+            "খ একটি দেওয়ানি মামলায় একটি লিখিত জবাব দাখিল করার পর এবং ক ও খ উভয়ই তাদের নিজ নিজ আইনজীবীসহ আদালতে উপস্থিত থাকার পর, আদালত -- সরাসরি বিচারে এগিয়ে যাওয়ার পরিবর্তে -- অবশ্যই শুনানি মুলতবি করতে হবে এবং হয় নিজেই বিরোধ মধ্যস্থতা করতে হবে অথবা এটি নির্দিষ্ট সংস্থার একটির কাছে মধ্যস্থতার জন্য পাঠাতে হবে, কারণ ২০১২ সালের সংশোধনী এই পদক্ষেপটিকে ঐচ্ছিকের পরিবর্তে বাধ্যতামূলক করেছে।",
+            "মধ্যস্থতার সময়, মধ্যস্থতাকারী পক্ষগণ কীভাবে তাদের বিরোধ নিষ্পত্তি করতে পারে সে সম্পর্কে সম্ভাব্য উপায় প্রস্তাব করেন কিন্তু কোনো পক্ষকে ফলাফল কী হতে হবে তা বলেন না। যেহেতু পক্ষগণ নিজেরাই আলোচনা করেন এবং শর্তাবলিতে সম্মত হন (বা হন না), এটি সংবিধিবদ্ধ অর্থে 'মধ্যস্থতা' থেকে যায়; যেখানে একটি তৃতীয় পক্ষ একতরফাভাবে ফলাফল নির্ধারণ ও চাপিয়ে দিয়েছে এমন একটি প্রক্রিয়া ব্যাখ্যার সংজ্ঞায় খাপ খাবে না।"
+          ],
+          "exam_focus": "পরীক্ষকরা প্রায়ই যাচাই করেন প্রার্থীরা জানেন কিনা যে ধারা ৮৯ক-এর অধীনে মধ্যস্থতা এখন বাধ্যতামূলক, ঐচ্ছিক নয়, ২০১২ সালের সংশোধনী অনুসরণ করে -- লিখিত জবাব দাখিলের পর মধ্যস্থতা এড়িয়ে সরাসরি বিচারে যাওয়া একটি আদালত বর্ণনা করা একটি ঘটনাপ্রবাহ (অর্থঋণ আদালত আইন ব্যতিক্রমের বাইরে) একটি ত্রুটি বর্ণনা করবে। চারটি নির্দিষ্ট রেফারেল বিকল্পও একটি চেকলিস্ট হিসেবে সাধারণভাবে পরীক্ষায় আসে।",
+          "common_traps": [
+            "মনে করা যে ধারা ৮৯ক-এর অধীনে মধ্যস্থতা কেবল আদালতের প্রস্তাব করার জন্য ঐচ্ছিক -- ২০১২ সালের সংশোধনীর পর থেকে, এটি বাধ্যতামূলক ('shall'), ঐচ্ছিক নয়।",
+            "অর্থঋণ আদালত আইন বর্জন ভুলে যাওয়া -- ধারা ৮৯ক সেই বিশেষ আইনের অধীনে মামলায় প্রযোজ্য নয়।",
+            "একজন মধ্যস্থতাকারীর ভূমিকা ফলাফল নির্ধারণ করা হিসেবে বর্ণনা করা -- সংবিধিবদ্ধ ব্যাখ্যা স্পষ্ট যে মধ্যস্থতাকারী কোনো আপোষের শর্তাবলি নির্ধারণ না করে সহজতর করেন।"
+          ],
+          "quick_revision": [
+            "ধারা ৮৯ক ট্রিগার = লিখিত জবাব দাখিল + সকল প্রতিদ্বন্দ্বী পক্ষ উপস্থিত (অর্থঋণ আদালত আইন মামলা ব্যতীত)।",
+            "আদালত SHALL (২০১২ সংশোধনীর পর থেকে 'may' নয়) মধ্যস্থতা করবে বা পাঠাবে: লিগ্যাল এইড অফিসার / পক্ষগণের আইনজীবী / পক্ষগণ নিজে / প্যানেল মধ্যস্থতাকারী।",
+            "মধ্যস্থতা = নমনীয়, অনানুষ্ঠানিক, অ-বাধ্যকর, গোপনীয়, অ-প্রতিদ্বন্দ্বিতামূলক, সম্মতিমূলক -- মধ্যস্থতাকারী সহজতর করেন, নির্ধারণ করেন না।",
+            "ধারা ৮৯খ = সালিশ (পৃথক)। ধারা ৮৯গ = আপিলে মধ্যস্থতা, ধারা ৮৯ক নিয়ম মিউটেটিস মিউটান্ডিস প্রযোজ্য।"
+          ],
+          "key_takeaways": [
+            "২০১২ সালের 'may' থেকে 'shall'-এ পরিবর্তন এই ধারা সম্পর্কে সবচেয়ে গুরুত্বপূর্ণ বিষয় -- এটি কেবল একটি শৈলীগত সম্পাদনা নয়, একটি প্রকৃত আইনি নীতি পরিবর্তন প্রতিফলিত করে বাধ্যতামূলক বিকল্প বিরোধ নিষ্পত্তির দিকে।",
+            "মধ্যস্থতাকারীর অ-নির্ধারণকারী ভূমিকা সংবিধিবদ্ধ সংজ্ঞায় নিজেই অন্তর্নির্মিত, কেবল সাধারণ বিকল্প বিরোধ নিষ্পত্তি তত্ত্বে নয় -- এটি একে বেয়ার পাঠ্য থেকে সরাসরি পরীক্ষাযোগ্য করে তোলে।",
+            "এটি এই ডেটাসেটের প্রথম বিকল্প বিরোধ নিষ্পত্তি-সম্পর্কিত পাঠ, এবং ধারা ৮৯খ (সালিশ) বা ৮৯গ (আপিলে মধ্যস্থতা)-এর যেকোনো ভবিষ্যৎ কভারেজের সাথে স্বাভাবিকভাবে জোড়া লাগে।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CPC-S89A",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Section 89A (Mediation), including the Explanation and amendment history",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "Verbatim text and amendment annotations (original 2003 insertion; 2012 amendment changing 'may' to 'shall') obtained via search-indexed content of the primary source page, corroborated across five independent search results during this session, including the primary source's own print version and a Bangladesh judiciary website (judiciary.org.bd)."
+    },
+    {
+      "content_id": "BC-MCQ-CPC-ADR-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-ADR-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-11",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S89A"],
+      "exam_focus": "The 2012 amendment making mediation mandatory.",
+      "source_basis": "Original question drawn directly from the primary source's own amendment annotation.",
+      "mistake_tags": ["s89a-mandatory-since-2012"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-ADRMEDIATION-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under the current text of Section 89A, once the written statement is filed and all contesting parties are in attendance, is the court's mediation step discretionary or mandatory?",
+          "options": { "A": "Discretionary, exactly as it has always been since Section 89A's original 2003 insertion", "B": "Mandatory, but only for suits valued above a prescribed monetary threshold", "C": "Mandatory, following the Code of Civil Procedure (Amendment) Act, 2012, which changed 'may' to 'shall'", "D": "Discretionary, and this has never changed since 2003" },
+          "explanation": "The original 2003 text used 'may', making mediation discretionary. The Code of Civil Procedure (Amendment) Act, 2012 changed this to 'shall', making it mandatory at the specified stage.",
+          "why_other_options_are_wrong": { "A": "This wrongly assumes no change occurred since 2003 -- the 2012 amendment specifically altered this from discretionary to mandatory.", "B": "No monetary-value threshold governs whether Section 89A's mediation step is mandatory.", "D": "This is incorrect -- the position did change, specifically in 2012." }
+        },
+        "bn": {
+          "question": "ধারা ৮৯ক-এর বর্তমান পাঠ্যের অধীনে, একবার লিখিত জবাব দাখিল হলে এবং সকল প্রতিদ্বন্দ্বী পক্ষ উপস্থিত থাকলে, আদালতের মধ্যস্থতা পদক্ষেপ কি ঐচ্ছিক নাকি বাধ্যতামূলক?",
+          "options": { "A": "ঐচ্ছিক, ঠিক যেমনটি ধারা ৮৯ক-এর মূল ২০০৩ সালের সন্নিবেশন থেকে সবসময় ছিল", "B": "বাধ্যতামূলক, তবে কেবল একটি নির্ধারিত আর্থিক সীমার উপরে মূল্যের মামলার জন্য", "C": "বাধ্যতামূলক, দেওয়ানি কার্যবিধি (সংশোধনী) আইন, ২০১২ অনুসরণ করে, যা 'may'-কে 'shall'-এ পরিবর্তন করেছে", "D": "ঐচ্ছিক, এবং ২০০৩ সাল থেকে এটি কখনো পরিবর্তিত হয়নি" },
+          "explanation": "মূল ২০০৩ সালের পাঠ্য 'may' ব্যবহার করেছিল, মধ্যস্থতাকে ঐচ্ছিক করে তুলেছিল। দেওয়ানি কার্যবিধি (সংশোধনী) আইন, ২০১২ এটি 'shall'-এ পরিবর্তন করে, নির্দিষ্ট পর্যায়ে এটি বাধ্যতামূলক করে তোলে।",
+          "why_other_options_are_wrong": { "A": "এটি ভুলভাবে ধরে নেয় ২০০৩ সাল থেকে কোনো পরিবর্তন ঘটেনি -- ২০১২ সালের সংশোধনী সুনির্দিষ্টভাবে এটি ঐচ্ছিক থেকে বাধ্যতামূলকে পরিবর্তন করেছে।", "B": "ধারা ৮৯ক-এর মধ্যস্থতা পদক্ষেপ বাধ্যতামূলক কিনা তা কোনো আর্থিক-মূল্যের সীমা নিয়ন্ত্রণ করে না।", "D": "এটি ভুল -- অবস্থানটি পরিবর্তিত হয়েছে, সুনির্দিষ্টভাবে ২০১২ সালে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-ADR-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-ADR-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-11",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S89A"],
+      "exam_focus": "The Artha Rin Adalat Ain exclusion.",
+      "source_basis": "Original question drawn directly from verbatim S.89A text.",
+      "mistake_tags": ["s89a-artha-rin-adalat-exclusion"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-ADRMEDIATION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "Does Section 89A's mandatory mediation step apply to a suit filed under the Artha Rin Adalat Ain, 2003?",
+          "options": { "A": "Yes, without exception", "B": "No, Section 89A expressly excludes suits under the Artha Rin Adalat Ain, 2003", "C": "Yes, but only with the written consent of both parties", "D": "No, because Section 89A applies only to criminal matters" },
+          "explanation": "Section 89A's own text expressly excludes suits under the Artha Rin Adalat Ain, 2003 (the special law governing money-loan court suits) from its mandatory mediation step.",
+          "why_other_options_are_wrong": { "A": "This ignores the express statutory exclusion.", "C": "No party-consent mechanism creates an exception to the exclusion itself -- the exclusion applies regardless.", "D": "Section 89A is a civil procedure provision concerning civil suits generally, not a criminal-matters provision -- this option mischaracterises the section's scope entirely." }
+        },
+        "bn": {
+          "question": "ধারা ৮৯ক-এর বাধ্যতামূলক মধ্যস্থতা পদক্ষেপ কি অর্থঋণ আদালত আইন, ২০০৩-এর অধীনে দায়েরকৃত একটি মামলায় প্রযোজ্য?",
+          "options": { "A": "হ্যাঁ, ব্যতিক্রম ছাড়াই", "B": "না, ধারা ৮৯ক স্পষ্টভাবে অর্থঋণ আদালত আইন, ২০০৩-এর অধীনে মামলা বাদ দেয়", "C": "হ্যাঁ, তবে কেবল উভয় পক্ষের লিখিত সম্মতিসহ", "D": "না, কারণ ধারা ৮৯ক কেবল ফৌজদারি বিষয়ে প্রযোজ্য" },
+          "explanation": "ধারা ৮৯ক-এর নিজস্ব পাঠ্য স্পষ্টভাবে অর্থঋণ আদালত আইন, ২০০৩ (অর্থঋণ আদালত মামলা নিয়ন্ত্রণকারী বিশেষ আইন)-এর অধীনে মামলা তার বাধ্যতামূলক মধ্যস্থতা পদক্ষেপ থেকে বাদ দেয়।",
+          "why_other_options_are_wrong": { "A": "এটি স্পষ্ট সংবিধিবদ্ধ বর্জন উপেক্ষা করে।", "C": "কোনো পক্ষ-সম্মতি ব্যবস্থা বর্জনটিতে একটি ব্যতিক্রম তৈরি করে না -- বর্জনটি নির্বিশেষে প্রযোজ্য।", "D": "ধারা ৮৯ক সাধারণভাবে দেওয়ানি মামলা সংক্রান্ত একটি দেওয়ানি কার্যবিধি বিধান, একটি ফৌজদারি-বিষয় বিধান নয় -- এই বিকল্পটি ধারাটির পরিধি সম্পূর্ণরূপে ভুলভাবে চিহ্নিত করে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-ADR-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-ADR-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-11",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S89A"],
+      "exam_focus": "The mediator's non-dictating role under the statutory Explanation.",
+      "source_basis": "Original question drawn directly from verbatim Explanation text.",
+      "mistake_tags": ["s89a-mediator-facilitates-not-dictates"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-ADRMEDIATION-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "Under the Explanation to Section 89A, what is the mediator's role in the mediation process?",
+          "options": { "A": "To personally decide the outcome and issue a binding order", "B": "To act as an advocate for whichever party is financially weaker", "C": "To determine which party is legally correct and rule accordingly", "D": "To facilitate a compromise between the parties without directing or dictating its terms" },
+          "explanation": "The Explanation to Section 89A defines mediation as a process in which the mediator facilitates a compromise between the parties without directing or dictating the terms of that compromise.",
+          "why_other_options_are_wrong": { "A": "Deciding the outcome and issuing a binding order describes adjudication, not the facilitative role the Explanation assigns to a mediator.", "B": "Advocating for one party is inconsistent with mediation's stated non-adversarial, consensual character.", "C": "Ruling on legal correctness is a judicial function, not the facilitative function the Explanation assigns to mediation." }
+        },
+        "bn": {
+          "question": "ধারা ৮৯ক-এর ব্যাখ্যার অধীনে, মধ্যস্থতা প্রক্রিয়ায় মধ্যস্থতাকারীর ভূমিকা কী?",
+          "options": { "A": "ব্যক্তিগতভাবে ফলাফল নির্ধারণ করা ও একটি বাধ্যকর আদেশ জারি করা", "B": "যে পক্ষ আর্থিকভাবে দুর্বল তার পক্ষে একজন উকিল হিসেবে কাজ করা", "C": "কোন পক্ষ আইনগতভাবে সঠিক তা নির্ধারণ করা এবং সেই অনুযায়ী রায় দেওয়া", "D": "শর্তাবলি নির্দেশ বা নির্ধারণ না করে পক্ষগণের মধ্যে একটি আপোষ সহজতর করা" },
+          "explanation": "ধারা ৮৯ক-এর ব্যাখ্যা মধ্যস্থতাকে এমন একটি প্রক্রিয়া হিসেবে সংজ্ঞায়িত করে যেখানে মধ্যস্থতাকারী সেই আপোষের শর্তাবলি নির্দেশ বা নির্ধারণ না করে পক্ষগণের মধ্যে একটি আপোষ সহজতর করেন।",
+          "why_other_options_are_wrong": { "A": "ফলাফল নির্ধারণ ও একটি বাধ্যকর আদেশ জারি করা বিচার বর্ণনা করে, ব্যাখ্যা একজন মধ্যস্থতাকারীকে যে সহজতরকারী ভূমিকা দেয় তা নয়।", "B": "একটি পক্ষের পক্ষে ওকালতি করা মধ্যস্থতার বর্ণিত অ-প্রতিদ্বন্দ্বিতামূলক, সম্মতিমূলক প্রকৃতির সাথে অসামঞ্জস্যপূর্ণ।", "C": "আইনি সঠিকতার উপর রায় দেওয়া একটি বিচারিক কাজ, ব্যাখ্যা মধ্যস্থতাকে যে সহজতরকারী কাজ দেয় তা নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-ADR-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-ADR-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-11",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S89A"],
+      "exam_focus": "The four referral routes under S.89A.",
+      "source_basis": "Original question drawn directly from verbatim S.89A text.",
+      "mistake_tags": ["s89a-referral-routes"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-ADRMEDIATION-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Besides mediating the dispute itself, to which of the following may a court refer a dispute for mediation under Section 89A?",
+          "options": { "A": "The concerned Legal Aid Officer, the parties' engaged pleaders, the parties themselves (if unrepresented), or a panel mediator", "B": "The local police station for informal resolution", "C": "A jury empanelled specifically for the mediation", "D": "The Attorney-General's office, in every case without exception" },
+          "explanation": "Section 89A allows referral to the concerned Legal Aid Officer, the parties' own engaged pleaders, the parties themselves where no pleader has been engaged, or a mediator from the District Judge's panel.",
+          "why_other_options_are_wrong": { "B": "A police station is not one of the referral bodies Section 89A names.", "C": "Bangladesh's civil procedure does not employ a jury mechanism of this kind, and it is not part of Section 89A's referral options.", "D": "The Attorney-General's office is not one of Section 89A's specified referral bodies." }
+        },
+        "bn": {
+          "question": "নিজে বিরোধ মধ্যস্থতা করা ছাড়াও, ধারা ৮৯ক-এর অধীনে একটি আদালত নিচের কোনটির কাছে মধ্যস্থতার জন্য একটি বিরোধ পাঠাতে পারে?",
+          "options": { "A": "সংশ্লিষ্ট লিগ্যাল এইড অফিসার, পক্ষগণের নিযুক্ত আইনজীবী, পক্ষগণ নিজে (যদি প্রতিনিধিত্বহীন হয়), অথবা একজন প্যানেল মধ্যস্থতাকারী", "B": "অনানুষ্ঠানিক নিষ্পত্তির জন্য স্থানীয় থানা", "C": "মধ্যস্থতার জন্য সুনির্দিষ্টভাবে গঠিত একটি জুরি", "D": "প্রতিটি ক্ষেত্রে ব্যতিক্রম ছাড়াই অ্যাটর্নি জেনারেলের কার্যালয়" },
+          "explanation": "ধারা ৮৯ক সংশ্লিষ্ট লিগ্যাল এইড অফিসার, পক্ষগণের নিজস্ব নিযুক্ত আইনজীবী, পক্ষগণ নিজে যেখানে কোনো আইনজীবী নিযুক্ত করা হয়নি, অথবা জেলা জজের প্যানেল থেকে একজন মধ্যস্থতাকারীর কাছে রেফারেলের অনুমতি দেয়।",
+          "why_other_options_are_wrong": { "B": "একটি থানা ধারা ৮৯ক নামকরণ করা রেফারেল সংস্থার একটি নয়।", "C": "বাংলাদেশের দেওয়ানি কার্যবিধি এই ধরনের জুরি ব্যবস্থা নিযুক্ত করে না, এবং এটি ধারা ৮৯ক-এর রেফারেল বিকল্পের অংশ নয়।", "D": "অ্যাটর্নি জেনারেলের কার্যালয় ধারা ৮৯ক-এর নির্দিষ্ট রেফারেল সংস্থার একটি নয়।" }
+        }
+      }
+    }
+  ]
+}

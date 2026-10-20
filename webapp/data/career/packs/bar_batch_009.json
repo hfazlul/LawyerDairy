@@ -1,0 +1,291 @@
+{
+  "batch_id": "BATCH-2026-08-009-CPC-APPEAL",
+  "schema_version": "1.0",
+  "content_version": "2026.08.5",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "User chose to go deeper into the three 20-mark subjects (CPC, CrPC, Penal Code) rather than spread wider. This batch covers CPC Appeal (T-CPC-12), built around a genuinely important, easy-to-get-wrong divergence: Bangladesh's CPC OMITTED the 'second appeal' provisions (S.100-103) that India's identically-numbered CPC still has in force. General knowledge of 'the CPC' defaults heavily to India's version online; this lesson exists specifically to correct that default for Bangladesh-specific exam prep.",
+  "asset_count": 8,
+  "assets": [
+    {
+      "content_id": "BC-CPC-APPEAL-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CPC-APPEAL-001",
+      "topic_id": "T-CPC-12",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 96 text and the omission of Sections 100-103 are both confirmed from VERBATIM primary-source text fetched directly from bdlaws.minlaw.gov.bd during this session -- the omission is explicitly dated to 'the Law Reforms Ordinance, 1978 (Ordinance No. XLIX of 1978)' in the Act's own annotations. Sections 104-112's existence and titles are confirmed from the same primary source's table of contents; their full operative text was not individually re-read in this pass (the specific part-details page was robots-disallowed for direct fetch), so claims about their content beyond the section titles are flagged VERIFY_CURRENT_RULE. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": [],
+      "related_lesson_ids": ["BC-CPC-RESJUDICATA-001"],
+      "related_question_ids": ["BC-MCQ-CPC-APPEAL-001", "BC-MCQ-CPC-APPEAL-002", "BC-MCQ-CPC-APPEAL-003", "BC-MCQ-CPC-APPEAL-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CPC-S96", "LREF-CPC-S100-103-OMITTED", "LREF-CPC-S104-112"],
+      "related_case_ids": [],
+      "legal_reference_ids": ["LREF-CPC-S96", "LREF-CPC-S100-103-OMITTED", "LREF-CPC-S104-112"],
+      "important_case_law": [],
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "language_versions": {
+        "en": {
+          "title": "Appeal (and why Bangladesh has no 'Second Appeal')",
+          "short_description": "Section 96 gives a broad right to a first appeal from most original decrees -- but Bangladesh's CPC does not carry India's separate 'second appeal on a substantial question of law' mechanism at all: Sections 100 to 103 were removed from Bangladesh's Code in 1978.",
+          "learning_objective": "By the end of this lesson you should be able to: state when a first appeal lies under Section 96 and the three situations where it does not; state, correctly and specifically, that Sections 100-103 (Second Appeal) stand omitted in Bangladesh's CPC since 1978; and distinguish an appeal from a 'decree' (Section 96) from an appeal from an 'order' (Section 104).",
+          "explanation": "Section 96 gives a broad right of appeal: subject to any express provision to the contrary, an appeal lies from every decree passed by any court exercising original jurisdiction, to the court authorised to hear appeals from that court. This right extends even to a decree passed ex parte (Section 96(2)). It does NOT extend, however, to a decree passed with the consent of the parties (Section 96(3)) -- a consent decree records agreement, not adjudication, so there is nothing left for an appellate court to review. Section 96(4) further bars appeal except on a question of law where the decree is in a small-cause-nature suit below a set value threshold.\n\nHere is the point most general knowledge of 'the CPC' gets wrong for Bangladesh specifically: in India, an unsuccessful first appeal can be taken further through a 'second appeal' under Sections 100-103, available only where the case involves a substantial question of law. Bangladesh's Code contains no such mechanism -- Sections 100 to 103 were entirely omitted by the Law Reforms Ordinance, 1978. A student answering from general South Asian legal knowledge, or from material written for the Indian CPC, will confidently describe a 'second appeal on a substantial question of law' that Bangladesh's Code simply does not provide for. This does not mean a party has no further recourse after losing a first appeal -- routes such as Revision (Section 115) or, in appropriate cases, a further appeal to the Appellate Division, remain available -- it specifically means the CPC's own distinct 'second appeal' machinery, as such, is not part of Bangladesh law.\n\nSeparately from appeals against decrees, Sections 104 to 106 govern appeals against orders -- a narrower, specifically listed set of interlocutory orders (rather than every order a court makes) from which an appeal lies. Sections 107 to 112 then set out general provisions: the appellate court's powers (Section 107), procedure for appeals from appellate decrees and orders (Section 108), and the route for appeals to the Appellate Division of the Supreme Court (Section 109) with associated value and bar provisions (Sections 110-111).",
+          "key_concepts": ["First appeal as of right (S.96)", "Ex parte decrees ARE appealable; consent decrees are NOT", "Sections 100-103 (Second Appeal) OMITTED in Bangladesh since 1978", "Appeals from decrees (S.96) vs appeals from orders (S.104)", "Appellate Court powers and route to the Appellate Division (S.107-112)"],
+          "important_rules": [
+            "S.96: an appeal lies from every decree of a court exercising original jurisdiction, including ex parte decrees, EXCEPT a decree passed with the consent of the parties, and except (barring a question of law) small-cause-nature decrees below the prescribed value.",
+            "S.100-103: OMITTED from Bangladesh's Code by the Law Reforms Ordinance, 1978 -- there is no CPC 'second appeal' mechanism in Bangladesh in the form India retains.",
+            "S.104-106: appeals from orders lie only from a specifically listed set of orders, not from every order a court makes -- this is a narrower right than the appeal from a decree."
+          ],
+          "definitions": [
+            { "term": "Decree", "definition": "The formal expression of a court's adjudication that conclusively determines the rights of the parties on the matters in controversy in a suit." },
+            { "term": "Consent decree", "definition": "A decree passed on the basis of the parties' own agreement rather than the court's adjudication on contested facts or law -- not appealable under Section 96(3), precisely because nothing was actually adjudicated for an appellate court to review." },
+            { "term": "Second appeal (as a concept, and its ABSENCE in Bangladesh)", "definition": "In jurisdictions that retain it (such as India), a further appeal from a first appellate decree, available only on a substantial question of law. Bangladesh's CPC does not contain this mechanism -- Sections 100-103 stand omitted." }
+          ],
+          "examples": [
+            "A civil court passes a decree against A after A fails to appear and contest the suit (an ex parte decree). A may still appeal that decree under Section 96(2) -- non-appearance at trial does not forfeit the right of appeal.",
+            "A and B settle their dispute and ask the court to record a decree reflecting their agreed terms. Neither party may later appeal that decree under Section 96(3), because it reflects their own consent, not a contested adjudication -- if either wants to challenge it, a suit to set aside the consent (e.g. for fraud) is the available route, not an ordinary appeal.",
+            "A loses a suit, then loses the first appeal against that decree. Unlike a similarly-placed litigant in India, A cannot file a Bangladeshi 'second appeal' under Sections 100-103, because no such provision exists in Bangladesh's Code -- A's remaining options lie elsewhere (such as Revision under Section 115, where its conditions are met), not within CPC's appeal-from-decree machinery itself."
+          ],
+          "exam_focus": "This is a favourite trap for candidates whose general knowledge of 'the CPC' comes from Indian sources: MCQ setters test directly whether candidates know Sections 100-103 are omitted in Bangladesh, and written setters may ask candidates to identify what remedy (if any) is available after an unsuccessful first appeal, expecting the answer to correctly rule out a CPC 'second appeal'.",
+          "common_traps": [
+            "Describing a 'second appeal on a substantial question of law' under Bangladesh's CPC -- this is Indian CPC doctrine and does not apply; Sections 100-103 are omitted here.",
+            "Assuming a consent decree can be appealed like any other decree -- Section 96(3) specifically bars this.",
+            "Treating 'appeal from an order' and 'appeal from a decree' as the same right -- Section 104's list of appealable orders is narrower than the general right of appeal from decrees under Section 96."
+          ],
+          "quick_revision": [
+            "S.96 = broad first-appeal right; ex parte decrees appealable, consent decrees NOT.",
+            "S.100-103 = OMITTED in Bangladesh (1978) -- no CPC 'second appeal', unlike India.",
+            "S.104-106 = appeals from ORDERS, a narrower, specifically listed set.",
+            "S.107-112 = appellate court powers, procedure, and the route to the Appellate Division."
+          ],
+          "key_takeaways": [
+            "Bangladesh's CPC gives one clear tier of appeal-as-of-right (Section 96) from most original decrees, not two.",
+            "The absence of Sections 100-103 is a deliberate 1978 legislative choice, not an oversight or a gap in this dataset's research.",
+            "'Appeal from a decree' and 'appeal from an order' are governed by different sections with different scope -- don't conflate them."
+          ]
+        },
+        "bn": {
+          "title": "আপিল (এবং কেন বাংলাদেশে কোনো 'দ্বিতীয় আপিল' নেই)",
+          "short_description": "ধারা ৯৬ অধিকাংশ মূল ডিক্রি থেকে প্রথম আপিলের একটি ব্যাপক অধিকার দেয় -- কিন্তু বাংলাদেশের দেওয়ানি কার্যবিধিতে ভারতের 'উল্লেখযোগ্য আইনগত প্রশ্নের ভিত্তিতে দ্বিতীয় আপিল' পদ্ধতিটি একেবারেই নেই: ধারা ১০০ থেকে ১০৩ ১৯৭৮ সালে বাংলাদেশের কার্যবিধি থেকে বাদ দেওয়া হয়েছিল।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৯৬-এর অধীনে কখন প্রথম আপিল করা যায় এবং কোন তিনটি পরিস্থিতিতে তা করা যায় না তা বলতে পারবেন; সঠিকভাবে ও সুনির্দিষ্টভাবে বলতে পারবেন যে ধারা ১০০-১০৩ (দ্বিতীয় আপিল) ১৯৭৮ সাল থেকে বাংলাদেশের দেওয়ানি কার্যবিধিতে বাদ দেওয়া অবস্থায় রয়েছে; এবং 'ডিক্রি' (ধারা ৯৬) থেকে আপিলকে 'আদেশ' (ধারা ১০৪) থেকে আপিল থেকে পৃথক করতে পারবেন।",
+          "explanation": "ধারা ৯৬ আপিলের একটি ব্যাপক অধিকার দেয়: বিপরীত কোনো সুস্পষ্ট বিধান না থাকলে, মূল এখতিয়ার প্রয়োগকারী যেকোনো আদালতের পাস করা প্রতিটি ডিক্রি থেকে সেই আদালতের সিদ্ধান্তের বিরুদ্ধে আপিল শুনতে অনুমোদিত আদালতে আপিল করা যায়। এই অধিকার এমনকি একতরফা (এক্স পার্টি) পাস করা ডিক্রি পর্যন্তও বিস্তৃত (ধারা ৯৬(২))। তবে, এটি পক্ষগণের সম্মতিতে পাস করা ডিক্রি পর্যন্ত বিস্তৃত নয় (ধারা ৯৬(৩)) -- একটি সম্মতি ডিক্রি সমঝোতা রেকর্ড করে, বিচারিক সিদ্ধান্ত নয়, তাই আপিল আদালতের পর্যালোচনা করার মতো কিছু অবশিষ্ট থাকে না। ধারা ৯৬(৪) আরও নির্ধারণ করে যে একটি নির্দিষ্ট মূল্যসীমার নিচে ক্ষুদ্র-মামলা প্রকৃতির মামলায় আইনগত প্রশ্ন ব্যতীত আপিল নিষিদ্ধ।\n\nএখানেই 'দেওয়ানি কার্যবিধি' সম্পর্কে সাধারণ জ্ঞান বাংলাদেশের ক্ষেত্রে সবচেয়ে বেশি ভুল করে: ভারতে, একটি ব্যর্থ প্রথম আপিল ধারা ১০০-১০৩-এর অধীনে একটি 'দ্বিতীয় আপিল'-এর মাধ্যমে আরও এগিয়ে নেওয়া যায়, যা কেবল উল্লেখযোগ্য আইনগত প্রশ্ন জড়িত ক্ষেত্রেই পাওয়া যায়। বাংলাদেশের কার্যবিধিতে এমন কোনো ব্যবস্থা নেই -- ধারা ১০০ থেকে ১০৩ আইন সংস্কার অধ্যাদেশ, ১৯৭৮ দ্বারা সম্পূর্ণরূপে বাদ দেওয়া হয়েছিল। সাধারণ দক্ষিণ এশীয় আইনি জ্ঞান থেকে, বা ভারতীয় দেওয়ানি কার্যবিধির জন্য রচিত উপাদান থেকে উত্তর দেওয়া একজন শিক্ষার্থী আত্মবিশ্বাসের সাথে 'উল্লেখযোগ্য আইনগত প্রশ্নের ভিত্তিতে দ্বিতীয় আপিল' বর্ণনা করবেন যা বাংলাদেশের কার্যবিধি আদৌ প্রদান করে না। এর অর্থ এই নয় যে প্রথম আপিলে হেরে যাওয়ার পর একটি পক্ষের আর কোনো উপায় নেই -- রিভিশন (ধারা ১১৫) বা, উপযুক্ত ক্ষেত্রে, আপিল বিভাগে আরও আপিলের মতো পথ উপলব্ধ থেকে যায় -- এর সুনির্দিষ্ট অর্থ হলো কার্যবিধির নিজস্ব পৃথক 'দ্বিতীয় আপিল' ব্যবস্থা, যেমনটি, বাংলাদেশের আইনের অংশ নয়।\n\nডিক্রির বিরুদ্ধে আপিল থেকে পৃথকভাবে, ধারা ১০৪ থেকে ১০৬ আদেশের বিরুদ্ধে আপিল নিয়ন্ত্রণ করে -- একটি সংকীর্ণ, সুনির্দিষ্টভাবে তালিকাভুক্ত অন্তর্বর্তী আদেশের সেট (আদালতের প্রতিটি আদেশ নয়) যা থেকে আপিল করা যায়। এরপর ধারা ১০৭ থেকে ১১২ সাধারণ বিধান নির্ধারণ করে: আপিল আদালতের ক্ষমতা (ধারা ১০৭), আপিলীয় ডিক্রি ও আদেশ থেকে আপিলের পদ্ধতি (ধারা ১০৮), এবং সুপ্রিম কোর্টের আপিল বিভাগে আপিলের পথ (ধারা ১০৯) সংশ্লিষ্ট মূল্য ও বাধা বিধানসহ (ধারা ১১০-১১১)।",
+          "key_concepts": ["অধিকার হিসেবে প্রথম আপিল (ধারা ৯৬)", "একতরফা ডিক্রি আপিলযোগ্য; সম্মতি ডিক্রি নয়", "ধারা ১০০-১০৩ (দ্বিতীয় আপিল) ১৯৭৮ সাল থেকে বাংলাদেশে বাদ দেওয়া", "ডিক্রি থেকে আপিল (ধারা ৯৬) বনাম আদেশ থেকে আপিল (ধারা ১০৪)", "আপিল আদালতের ক্ষমতা ও আপিল বিভাগে যাওয়ার পথ (ধারা ১০৭-১১২)"],
+          "important_rules": [
+            "ধারা ৯৬: মূল এখতিয়ার প্রয়োগকারী আদালতের প্রতিটি ডিক্রি থেকে আপিল করা যায়, একতরফা ডিক্রিসহ, তবে পক্ষগণের সম্মতিতে পাস করা ডিক্রি ব্যতীত, এবং (আইনগত প্রশ্ন ব্যতীত) নির্ধারিত মূল্যের নিচে ক্ষুদ্র-মামলা প্রকৃতির ডিক্রি ব্যতীত।",
+            "ধারা ১০০-১০৩: আইন সংস্কার অধ্যাদেশ, ১৯৭৮ দ্বারা বাংলাদেশের কার্যবিধি থেকে বাদ দেওয়া হয়েছে -- ভারত যেভাবে ধরে রেখেছে সেভাবে বাংলাদেশে কোনো দেওয়ানি কার্যবিধি 'দ্বিতীয় আপিল' ব্যবস্থা নেই।",
+            "ধারা ১০৪-১০৬: আদেশ থেকে আপিল কেবল একটি নির্দিষ্টভাবে তালিকাভুক্ত আদেশের সেট থেকে হয়, আদালতের প্রতিটি আদেশ থেকে নয় -- এটি ডিক্রি থেকে আপিলের চেয়ে সংকীর্ণ অধিকার।"
+          ],
+          "definitions": [
+            { "term": "ডিক্রি", "definition": "আদালতের বিচারিক সিদ্ধান্তের আনুষ্ঠানিক প্রকাশ যা কোনো মামলায় বিতর্কিত বিষয়ে পক্ষগণের অধিকার চূড়ান্তভাবে নির্ধারণ করে।" },
+            { "term": "সম্মতি ডিক্রি", "definition": "পক্ষগণের নিজস্ব সমঝোতার ভিত্তিতে পাস করা ডিক্রি, বিতর্কিত তথ্য বা আইনের উপর আদালতের বিচারিক সিদ্ধান্তের ভিত্তিতে নয় -- ধারা ৯৬(৩)-এর অধীনে আপিলযোগ্য নয়, ঠিক এই কারণে যে আপিল আদালতের পর্যালোচনা করার মতো প্রকৃতপক্ষে কিছু বিচারিতই হয়নি।" },
+            { "term": "দ্বিতীয় আপিল (একটি ধারণা হিসেবে, এবং বাংলাদেশে এর অনুপস্থিতি)", "definition": "যে সকল এখতিয়ারে এটি বহাল রয়েছে (যেমন ভারত), প্রথম আপিলীয় ডিক্রি থেকে আরও একটি আপিল, যা কেবল একটি উল্লেখযোগ্য আইনগত প্রশ্নের ক্ষেত্রেই পাওয়া যায়। বাংলাদেশের দেওয়ানি কার্যবিধিতে এই ব্যবস্থা নেই -- ধারা ১০০-১০৩ বাদ দেওয়া অবস্থায় রয়েছে।" }
+          ],
+          "examples": [
+            "একটি দেওয়ানি আদালত ক-এর বিরুদ্ধে একটি ডিক্রি পাস করে যখন ক মামলায় হাজির হয়ে লড়াই করতে ব্যর্থ হন (একতরফা ডিক্রি)। ক তবুও ধারা ৯৬(২)-এর অধীনে সেই ডিক্রির বিরুদ্ধে আপিল করতে পারেন -- বিচারে অনুপস্থিতি আপিলের অধিকার হারায় না।",
+            "ক ও খ তাদের বিরোধ নিষ্পত্তি করেন এবং আদালতকে তাদের সম্মত শর্তাবলি প্রতিফলিত করে একটি ডিক্রি রেকর্ড করতে বলেন। কোনো পক্ষই পরবর্তীতে ধারা ৯৬(৩)-এর অধীনে সেই ডিক্রির বিরুদ্ধে আপিল করতে পারবেন না, কারণ এটি তাদের নিজস্ব সম্মতি প্রতিফলিত করে, কোনো বিতর্কিত বিচারিক সিদ্ধান্ত নয় -- কেউ চ্যালেঞ্জ করতে চাইলে, সম্মতি বাতিলের জন্য একটি মামলা (যেমন প্রতারণার ভিত্তিতে) উপলব্ধ পথ, সাধারণ আপিল নয়।",
+            "ক একটি মামলায় হেরে যান, এরপর সেই ডিক্রির বিরুদ্ধে প্রথম আপিলেও হেরে যান। ভারতে অনুরূপ পরিস্থিতিতে থাকা একজন মামলাকারীর বিপরীতে, ক ধারা ১০০-১০৩-এর অধীনে একটি বাংলাদেশি 'দ্বিতীয় আপিল' দায়ের করতে পারবেন না, কারণ বাংলাদেশের কার্যবিধিতে এমন কোনো বিধান নেই -- ক-এর অবশিষ্ট বিকল্পগুলো অন্যত্র নিহিত (যেমন ধারা ১১৫-এর অধীনে রিভিশন, যেখানে এর শর্তাবলি পূরণ হয়), কার্যবিধির নিজস্ব ডিক্রি-থেকে-আপিল ব্যবস্থার মধ্যে নয়।"
+          ],
+          "exam_focus": "এটি এমন প্রার্থীদের জন্য একটি প্রিয় ফাঁদ যাদের 'দেওয়ানি কার্যবিধি' সম্পর্কে সাধারণ জ্ঞান ভারতীয় উৎস থেকে আসে: এমসিকিউ প্রশ্নকর্তারা সরাসরি যাচাই করেন প্রার্থীরা জানেন কিনা যে ধারা ১০০-১০৩ বাংলাদেশে বাদ দেওয়া, এবং লিখিত প্রশ্নকর্তারা প্রার্থীদের জিজ্ঞাসা করতে পারেন একটি ব্যর্থ প্রথম আপিলের পরে কী প্রতিকার (যদি থাকে) উপলব্ধ, যেখানে সঠিকভাবে একটি দেওয়ানি কার্যবিধি 'দ্বিতীয় আপিল' বাতিল করার প্রত্যাশা করা হয়।",
+          "common_traps": [
+            "বাংলাদেশের দেওয়ানি কার্যবিধির অধীনে 'উল্লেখযোগ্য আইনগত প্রশ্নের ভিত্তিতে দ্বিতীয় আপিল' বর্ণনা করা -- এটি ভারতীয় দেওয়ানি কার্যবিধির মতবাদ এবং এখানে প্রযোজ্য নয়; ধারা ১০০-১০৩ এখানে বাদ দেওয়া।",
+            "মনে করা যে একটি সম্মতি ডিক্রি অন্য যেকোনো ডিক্রির মতো আপিল করা যায় -- ধারা ৯৬(৩) সুনির্দিষ্টভাবে এটি নিষিদ্ধ করে।",
+            "'আদেশ থেকে আপিল' ও 'ডিক্রি থেকে আপিল'-কে একই অধিকার মনে করা -- ধারা ১০৪-এর আপিলযোগ্য আদেশের তালিকা ধারা ৯৬-এর অধীনে ডিক্রি থেকে আপিলের সাধারণ অধিকারের চেয়ে সংকীর্ণ।"
+          ],
+          "quick_revision": [
+            "ধারা ৯৬ = ব্যাপক প্রথম-আপিল অধিকার; একতরফা ডিক্রি আপিলযোগ্য, সম্মতি ডিক্রি নয়।",
+            "ধারা ১০০-১০৩ = বাংলাদেশে বাদ দেওয়া (১৯৭৮) -- ভারতের বিপরীতে কোনো দেওয়ানি কার্যবিধি 'দ্বিতীয় আপিল' নেই।",
+            "ধারা ১০৪-১০৬ = আদেশ থেকে আপিল, একটি সংকীর্ণ, সুনির্দিষ্টভাবে তালিকাভুক্ত সেট।",
+            "ধারা ১০৭-১১২ = আপিল আদালতের ক্ষমতা, পদ্ধতি, এবং আপিল বিভাগে যাওয়ার পথ।"
+          ],
+          "key_takeaways": [
+            "বাংলাদেশের দেওয়ানি কার্যবিধি অধিকাংশ মূল ডিক্রি থেকে একটি স্পষ্ট স্তরের অধিকার-হিসেবে-আপিল দেয় (ধারা ৯৬), দুটি নয়।",
+            "ধারা ১০০-১০৩-এর অনুপস্থিতি ১৯৭৮ সালের একটি ইচ্ছাকৃত আইনি সিদ্ধান্ত, কোনো অনিচ্ছাকৃত ত্রুটি বা এই ডেটাসেটের গবেষণায় ফাঁক নয়।",
+            "'ডিক্রি থেকে আপিল' ও 'আদেশ থেকে আপিল' ভিন্ন পরিধিসহ ভিন্ন ধারা দ্বারা নিয়ন্ত্রিত -- এগুলোকে গুলিয়ে ফেলবেন না।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CPC-S96",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Section 96 (Appeal from original decree)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "Verbatim text (all four sub-sections) obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "LREF-CPC-S100-103-OMITTED",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Sections 100-103 (Appeals from Appellate Decrees / 'Second Appeal') -- OMITTED",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "The primary source's own annotation reads: '100-103. [Omitted by section 2 and Schedule of the Law Reforms Ordinance, 1978 (Ordinance No. XLIX of 1978).]' Cross-checked against India's still-in-force equivalent sections (confirmed via multiple India-focused legal sites) to establish this is a genuine Bangladesh-specific divergence, not a universal feature of 'the CPC'."
+    },
+    {
+      "content_id": "LREF-CPC-S104-112",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Sections 104-112 (Appeals from orders; general provisions; appeals to the Appellate Division)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "Section titles and existence confirmed from the primary source's table of contents. Full operative text of S.104-112 was not individually re-read in this pass (a specific part-details page returned a robots-disallowed error on direct fetch) -- the lesson describes these sections at the level of their confirmed titles/general function only, not their full text."
+    },
+    {
+      "content_id": "BC-MCQ-CPC-APPEAL-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-APPEAL-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-12",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S96"],
+      "exam_focus": "Which decrees are/aren't appealable under S.96.",
+      "source_basis": "Original question drawn directly from verbatim S.96 text.",
+      "mistake_tags": ["s96-consent-decree-not-appealable"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-APPEAL-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 96 of the Code of Civil Procedure, 1908, which of the following decrees can NOT be appealed?",
+          "options": { "A": "A decree passed ex parte", "B": "A decree passed after a fully contested trial", "C": "A decree passed with the consent of the parties", "D": "A decree passed by a court exercising original jurisdiction" },
+          "explanation": "Section 96(3) specifically bars appeal from a decree passed with the consent of the parties -- there is no contested adjudication for an appellate court to review.",
+          "why_other_options_are_wrong": { "A": "Section 96(2) expressly allows appeal from an ex parte decree.", "B": "A decree from a fully contested trial is the ordinary case Section 96(1) allows appeal from.", "D": "This describes the general category Section 96(1) covers, not an exception to it." }
+        },
+        "bn": {
+          "question": "দেওয়ানি কার্যবিধি, ১৯০৮-এর ধারা ৯৬ অনুযায়ী, নিচের কোন ডিক্রির বিরুদ্ধে আপিল করা যাবে না?",
+          "options": { "A": "একতরফা পাস করা ডিক্রি", "B": "সম্পূর্ণ প্রতিদ্বন্দ্বিতামূলক বিচারের পর পাস করা ডিক্রি", "C": "পক্ষগণের সম্মতিতে পাস করা ডিক্রি", "D": "মূল এখতিয়ার প্রয়োগকারী আদালত কর্তৃক পাস করা ডিক্রি" },
+          "explanation": "ধারা ৯৬(৩) সুনির্দিষ্টভাবে পক্ষগণের সম্মতিতে পাস করা ডিক্রির বিরুদ্ধে আপিল নিষিদ্ধ করে -- আপিল আদালতের পর্যালোচনা করার মতো কোনো বিতর্কিত বিচারিক সিদ্ধান্ত থাকে না।",
+          "why_other_options_are_wrong": { "A": "ধারা ৯৬(২) স্পষ্টভাবে একতরফা ডিক্রির বিরুদ্ধে আপিলের অনুমতি দেয়।", "B": "সম্পূর্ণ প্রতিদ্বন্দ্বিতামূলক বিচার থেকে আসা ডিক্রি ধারা ৯৬(১) যে সাধারণ ক্ষেত্রে আপিলের অনুমতি দেয় তারই উদাহরণ।", "D": "এটি ধারা ৯৬(১) যে সাধারণ শ্রেণি আচ্ছাদন করে তা বর্ণনা করে, এর ব্যতিক্রম নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-APPEAL-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-APPEAL-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-12",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S100-103-OMITTED"],
+      "exam_focus": "The signature fact of this topic: S.100-103 omitted in Bangladesh.",
+      "source_basis": "Original question drawn directly from the primary source's own omission annotation.",
+      "mistake_tags": ["assuming-indian-second-appeal-applies"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-APPEAL-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "What is the current status of Sections 100 to 103 (the 'Second Appeal' provisions) in Bangladesh's Code of Civil Procedure, 1908?",
+          "options": { "A": "They are fully in force, exactly as in India, allowing a second appeal on a substantial question of law", "B": "They were omitted by the Law Reforms Ordinance, 1978, and Bangladesh's CPC has no equivalent 'second appeal' mechanism", "C": "They were replaced with a right to appeal to the Appellate Division as of right, without any restriction", "D": "They apply only to criminal appeals, not civil appeals" },
+          "explanation": "Sections 100-103 were omitted from Bangladesh's Code by the Law Reforms Ordinance, 1978 -- unlike India, which retains an equivalent 'second appeal' mechanism under its own Sections 100-103.",
+          "why_other_options_are_wrong": { "A": "This describes India's position, not Bangladesh's -- the sections are omitted here.", "C": "No such automatic, unrestricted replacement right was created by the omission.", "D": "These sections were never about criminal appeals -- the CPC governs civil procedure only." }
+        },
+        "bn": {
+          "question": "বাংলাদেশের দেওয়ানি কার্যবিধি, ১৯০৮-এ ধারা ১০০ থেকে ১০৩ ('দ্বিতীয় আপিল' বিধান)-এর বর্তমান অবস্থা কী?",
+          "options": { "A": "এগুলো ভারতের মতোই সম্পূর্ণরূপে বহাল রয়েছে, উল্লেখযোগ্য আইনগত প্রশ্নের ভিত্তিতে দ্বিতীয় আপিলের অনুমতি দেয়", "B": "আইন সংস্কার অধ্যাদেশ, ১৯৭৮ দ্বারা এগুলো বাদ দেওয়া হয়েছিল, এবং বাংলাদেশের দেওয়ানি কার্যবিধিতে সমতুল্য কোনো 'দ্বিতীয় আপিল' ব্যবস্থা নেই", "C": "কোনো বিধিনিষেধ ছাড়াই আপিল বিভাগে অধিকার হিসেবে আপিলের মাধ্যমে এগুলো প্রতিস্থাপিত হয়েছিল", "D": "এগুলো কেবল ফৌজদারি আপিলে প্রযোজ্য, দেওয়ানি আপিলে নয়" },
+          "explanation": "ধারা ১০০-১০৩ আইন সংস্কার অধ্যাদেশ, ১৯৭৮ দ্বারা বাংলাদেশের কার্যবিধি থেকে বাদ দেওয়া হয়েছিল -- ভারতের বিপরীতে, যেখানে তাদের নিজস্ব ধারা ১০০-১০৩-এর অধীনে একটি সমতুল্য 'দ্বিতীয় আপিল' ব্যবস্থা বহাল রয়েছে।",
+          "why_other_options_are_wrong": { "A": "এটি ভারতের অবস্থান বর্ণনা করে, বাংলাদেশের নয় -- এখানে ধারাগুলো বাদ দেওয়া।", "C": "বাদ দেওয়ার ফলে এমন কোনো স্বয়ংক্রিয়, নিরঙ্কুশ প্রতিস্থাপন অধিকার তৈরি হয়নি।", "D": "এই ধারাগুলো কখনোই ফৌজদারি আপিল নিয়ে ছিল না -- দেওয়ানি কার্যবিধি কেবল দেওয়ানি পদ্ধতি নিয়ন্ত্রণ করে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-APPEAL-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-APPEAL-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-12",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-CPC-S104-112"],
+      "exam_focus": "Appeal from a decree vs. appeal from an order.",
+      "source_basis": "Original conceptual question on the S.96/S.104 distinction.",
+      "mistake_tags": ["decree-vs-order-appeal-scope"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-APPEAL-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "How does the right of appeal from an order under Section 104 compare to the right of appeal from a decree under Section 96?",
+          "options": { "A": "They are identical -- every order and every decree can be appealed on the same terms", "B": "The right under Section 104 is narrower -- appeal lies only from a specifically listed set of orders, not from every order a court makes", "C": "There is no right of appeal from any order at all -- only decrees are appealable", "D": "Section 104 is broader -- it allows appeal from any order or decree without restriction" },
+          "explanation": "Section 96 gives a broad right of appeal from decrees generally (subject to its own exceptions), while Section 104 confines the right of appeal from orders to a specifically listed set -- a court's other, non-listed orders are not separately appealable under this provision.",
+          "why_other_options_are_wrong": { "A": "The two rights are not on identical terms -- S.104's list is narrower.", "C": "Section 104 does create an appeal right for listed orders; it is not a blanket bar.", "D": "This reverses the actual relationship -- S.104 is the narrower right, not the broader one." }
+        },
+        "bn": {
+          "question": "ধারা ১০৪-এর অধীনে আদেশ থেকে আপিলের অধিকার ধারা ৯৬-এর অধীনে ডিক্রি থেকে আপিলের অধিকারের সাথে কীভাবে তুলনীয়?",
+          "options": { "A": "এগুলো অভিন্ন -- প্রতিটি আদেশ ও প্রতিটি ডিক্রি একই শর্তে আপিল করা যায়", "B": "ধারা ১০৪-এর অধীনে অধিকার সংকীর্ণ -- আপিল কেবল একটি সুনির্দিষ্টভাবে তালিকাভুক্ত আদেশের সেট থেকে হয়, আদালতের প্রতিটি আদেশ থেকে নয়", "C": "কোনো আদেশ থেকেই আপিলের অধিকার নেই -- কেবল ডিক্রি আপিলযোগ্য", "D": "ধারা ১০৪ বিস্তৃত -- এটি কোনো বিধিনিষেধ ছাড়াই যেকোনো আদেশ বা ডিক্রি থেকে আপিলের অনুমতি দেয়" },
+          "explanation": "ধারা ৯৬ সাধারণভাবে ডিক্রি থেকে আপিলের একটি ব্যাপক অধিকার দেয় (নিজস্ব ব্যতিক্রমসাপেক্ষে), অন্যদিকে ধারা ১০৪ আদেশ থেকে আপিলের অধিকারকে একটি সুনির্দিষ্টভাবে তালিকাভুক্ত সেটে সীমাবদ্ধ করে -- আদালতের অন্যান্য, তালিকাভুক্ত নয় এমন আদেশ এই বিধানের অধীনে পৃথকভাবে আপিলযোগ্য নয়।",
+          "why_other_options_are_wrong": { "A": "দুটি অধিকার একই শর্তে নেই -- ধারা ১০৪-এর তালিকা সংকীর্ণ।", "C": "ধারা ১০৪ তালিকাভুক্ত আদেশের জন্য একটি আপিল অধিকার তৈরি করে; এটি কোনো সার্বিক নিষেধাজ্ঞা নয়।", "D": "এটি প্রকৃত সম্পর্কটি উল্টে দেয় -- ধারা ১০৪ সংকীর্ণ অধিকার, বিস্তৃত নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-APPEAL-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-APPEAL-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-12",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S96"],
+      "exam_focus": "S.96(4)'s small-cause-value bar.",
+      "source_basis": "Original question drawn from verbatim S.96(4) text.",
+      "mistake_tags": ["s96-4-small-cause-bar"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-APPEAL-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 96(4), in a suit of the nature cognizable by Courts of Small Causes where the value of the subject-matter does not exceed the prescribed amount, an appeal from the decree lies:",
+          "options": { "A": "On any ground whatsoever, with no restriction", "B": "Only with the leave of the Appellate Division", "C": "Only if the decree was passed ex parte", "D": "Only on a question of law" },
+          "explanation": "Section 96(4) restricts appeal in this specific category of low-value, small-cause-nature suits to questions of law only -- not to factual disputes.",
+          "why_other_options_are_wrong": { "A": "This ignores the specific restriction Section 96(4) imposes.", "B": "No such Appellate Division leave requirement is created by Section 96(4) itself.", "C": "The restriction in Section 96(4) is about the nature and value of the suit, not whether the decree was ex parte." }
+        },
+        "bn": {
+          "question": "ধারা ৯৬(৪) অনুযায়ী, ক্ষুদ্র মামলা আদালতের বিচারযোগ্য প্রকৃতির একটি মামলায় যেখানে বিষয়বস্তুর মূল্য নির্ধারিত পরিমাণ অতিক্রম করে না, সেখানে ডিক্রির বিরুদ্ধে আপিল করা যায়:",
+          "options": { "A": "যেকোনো কারণে, কোনো বিধিনিষেধ ছাড়াই", "B": "কেবল আপিল বিভাগের অনুমতি সাপেক্ষে", "C": "কেবল ডিক্রিটি একতরফা পাস হলে", "D": "কেবল আইনগত প্রশ্নের ভিত্তিতে" },
+          "explanation": "ধারা ৯৬(৪) এই নির্দিষ্ট শ্রেণির নিম্ন-মূল্যের, ক্ষুদ্র-মামলা-প্রকৃতির মামলায় আপিলকে কেবল আইনগত প্রশ্নে সীমাবদ্ধ করে -- তথ্যগত বিরোধে নয়।",
+          "why_other_options_are_wrong": { "A": "এটি ধারা ৯৬(৪) যে নির্দিষ্ট বিধিনিষেধ আরোপ করে তা উপেক্ষা করে।", "B": "ধারা ৯৬(৪) নিজে এমন কোনো আপিল বিভাগের অনুমতির প্রয়োজনীয়তা তৈরি করে না।", "C": "ধারা ৯৬(৪)-এর বিধিনিষেধ মামলার প্রকৃতি ও মূল্য নিয়ে, ডিক্রিটি একতরফা ছিল কিনা তা নিয়ে নয়।" }
+        }
+      }
+    }
+  ]
+}

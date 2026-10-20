@@ -1,0 +1,276 @@
+{
+  "batch_id": "BATCH-2026-08-013-CRPC-IMMOVABLE-PROPERTY-DISPUTE",
+  "schema_version": "1.0",
+  "content_version": "2026.08.6",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Second topic in this depth round. Sections 145-148 CrPC are a classic bar-exam trap: a criminal court (Magistrate) exercising what looks like civil jurisdiction over property, but confined strictly to possession rather than title. Chosen for high exam value and because it is explicitly named in the syllabus's own topic list (T-CRPC-08).",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-CRPC-IMMOVABLEPROPERTY-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CRPC-IMMOVABLEPROPERTY-001",
+      "topic_id": "T-CRPC-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Verbatim primary-source text for Section 145 (subsections 1, 2, and the costs provision) and Section 147 was obtained via search-indexed content of bdlaws.minlaw.gov.bd during this session. Section 146 (power to attach) and Section 148 (local inquiry) are described only at the level of their confirmed titles/general function from the chapter table of contents, not their full verbatim text -- flagged accordingly within an otherwise well-sourced lesson. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": [],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-CRPC-IP-001", "BC-MCQ-CRPC-IP-002", "BC-MCQ-CRPC-IP-003", "BC-MCQ-CRPC-IP-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CRPC-S145", "LREF-CRPC-S146-148"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CRPC-S145", "LREF-CRPC-S146-148"],
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "language_versions": {
+        "en": {
+          "title": "Dispute as to Immovable Property (Sections 145-148)",
+          "short_description": "A Magistrate can step into what looks like a civil property dispute -- but only to stop an immediate breach of the peace, and only by deciding who is actually in possession right now, never who actually owns the property.",
+          "learning_objective": "By the end of this lesson you should be able to: state the threshold condition that triggers Section 145 (likelihood of a breach of the peace); explain why a Magistrate acting under this section decides possession, not title; and identify when Section 146 lets the Magistrate attach the property instead of deciding possession.",
+          "explanation": "Section 145 is triggered when an Executive Magistrate is satisfied, from a police report or other information, that a dispute likely to cause a breach of the peace exists concerning land or water (or the boundaries of either) within their local jurisdiction. Once satisfied, the Magistrate makes an order in writing stating the grounds, requires the parties concerned to attend and put in written statements of their claims as to the fact of actual possession, and inquires into the matter.\n\nThe single most important, most tested feature of this provision is what the Magistrate is -- and is not -- deciding. The inquiry is confined to who was in actual possession at the relevant time, not who holds legal title. A Magistrate exercising this jurisdiction has no power to determine ownership; that question, if genuinely contested, must go to a civil court. This makes Section 145 a quasi-civil, preventive jurisdiction exercised by a criminal-court officer, aimed purely at heading off violence, not at resolving property rights.\n\nSection 146 provides a fallback for cases the Magistrate cannot resolve on the possession question alone: where the Magistrate considers the case one of emergency, or decides that none of the parties was in possession, or is unable to determine who was actually in possession, the Magistrate may attach the subject property, withdrawing it from the parties' control until a competent civil court determines the rights of the parties (or the person entitled to possession). Section 147 extends a parallel procedure to disputes concerning rights of use of land or water (such as easements) rather than possession of the land itself. Section 148 allows the Magistrate to depute a subordinate officer to make a local inquiry to assist in the decision.",
+          "key_concepts": ["Threshold: a dispute LIKELY TO CAUSE A BREACH OF THE PEACE, over land or water", "The Magistrate decides ACTUAL POSSESSION only, never TITLE/ownership", "Section 146: attachment as a fallback where possession cannot be determined or in an emergency", "Section 147: parallel procedure for disputes over rights of use (easements)", "Section 148: local inquiry by a subordinate officer"],
+          "important_rules": [
+            "S.145 is triggered by the Magistrate's satisfaction that a dispute likely to cause a breach of the peace exists concerning land or water within their jurisdiction.",
+            "The Magistrate's inquiry and decision under Section 145 is confined to actual possession, not legal title -- ownership disputes belong in a civil court.",
+            "S.146: where the case is one of emergency, or the Magistrate decides no party was in possession, or cannot determine who was in possession, the Magistrate may attach the property pending a civil court's determination of the parties' rights."
+          ],
+          "definitions": [
+            { "term": "Actual possession (in this context)", "definition": "Who was factually in physical possession or control of the disputed land/water at the relevant time -- the only question Section 145 empowers a Magistrate to decide, as distinct from who legally owns it." },
+            { "term": "Attachment under Section 146", "definition": "A Magistrate's order withdrawing disputed property from the control of the disputing parties, used where possession cannot be determined or the situation is an emergency, pending a civil court's decision on the underlying rights." }
+          ],
+          "examples": [
+            "Two families dispute who is entitled to farm a strip of land, and tensions have escalated to the point of an imminent clash. A Magistrate satisfied that this dispute is likely to cause a breach of the peace can invoke Section 145 to determine, on the evidence before them, which family was actually in possession of the strip -- and can order that family to remain undisturbed in that possession, without ruling on who actually owns the land in law.",
+            "In a similar dispute, the Magistrate finds the evidence so evenly balanced that it is genuinely impossible to say which side was in actual possession. Rather than guess, Section 146 allows the Magistrate to attach the land -- taking it out of both parties' control -- until a civil court decides the underlying question of right or title."
+          ],
+          "exam_focus": "Examiners test whether candidates understand that Section 145 jurisdiction is about possession, not title -- a fact pattern will often invite a candidate to wrongly conclude the Magistrate has 'decided the case' on ownership, when the Magistrate has (and can have) no power to do so. The emergency/indeterminate-possession trigger for Section 146 attachment is a second common test point.",
+          "common_traps": [
+            "Describing a Magistrate's Section 145 order as resolving who owns the property -- it resolves only who was in actual possession.",
+            "Assuming attachment under Section 146 is the normal outcome -- it is a fallback for emergency or indeterminate-possession cases, not the default procedure.",
+            "Treating Sections 145 and 147 as covering the same subject matter -- Section 145 is about possession of land/water itself; Section 147 is about rights of use (such as easements) over it."
+          ],
+          "quick_revision": [
+            "S.145 trigger = dispute likely to cause breach of peace, over land/water.",
+            "S.145 decides = actual POSSESSION only, never title/ownership.",
+            "S.146 = attachment fallback: emergency, OR no party in possession, OR can't determine who was.",
+            "S.147 = same idea, but for rights of USE (easements), not possession itself.",
+            "S.148 = local inquiry via a subordinate officer."
+          ],
+          "key_takeaways": [
+            "This is a preventive, peace-keeping jurisdiction dressed up as a property dispute -- its entire purpose is stopping violence, not settling rights.",
+            "The possession/title distinction is the single most important thing to get right about this topic.",
+            "A civil court, not the Magistrate, remains the only forum that can conclusively decide who actually owns the property."
+          ]
+        },
+        "bn": {
+          "title": "স্থাবর সম্পত্তি সংক্রান্ত বিরোধ (ধারা ১৪৫-১৪৮)",
+          "short_description": "একজন ম্যাজিস্ট্রেট এমন একটি বিষয়ে হস্তক্ষেপ করতে পারেন যা দেখতে একটি দেওয়ানি সম্পত্তি বিরোধের মতো মনে হয় -- কিন্তু কেবল একটি আসন্ন শান্তিভঙ্গ রোধ করতে, এবং কেবল বর্তমানে প্রকৃতপক্ষে কে দখলে আছেন তা নির্ধারণ করে, কে প্রকৃতপক্ষে সম্পত্তির মালিক তা কখনো নয়।",
+          "learning_objective": "এই পাঠ শেষে আপনি: কোন প্রান্তিক শর্ত ধারা ১৪৫ সক্রিয় করে (শান্তিভঙ্গের সম্ভাবনা) তা বলতে পারবেন; কেন এই ধারার অধীনে কাজ করা একজন ম্যাজিস্ট্রেট দখল নির্ধারণ করেন, স্বত্ব নয়, তা ব্যাখ্যা করতে পারবেন; এবং কখন ধারা ১৪৬ ম্যাজিস্ট্রেটকে দখল নির্ধারণের পরিবর্তে সম্পত্তি ক্রোক করার অনুমতি দেয় তা চিহ্নিত করতে পারবেন।",
+          "explanation": "ধারা ১৪৫ তখন সক্রিয় হয় যখন একজন নির্বাহী ম্যাজিস্ট্রেট পুলিশ প্রতিবেদন বা অন্য তথ্য থেকে সন্তুষ্ট হন যে তার স্থানীয় এখতিয়ারের মধ্যে জমি বা পানি (বা তাদের যেকোনো একটির সীমানা) সংক্রান্ত এমন একটি বিরোধ বিদ্যমান যা শান্তিভঙ্গ ঘটাতে পারে। সন্তুষ্ট হওয়ার পর, ম্যাজিস্ট্রেট কারণ উল্লেখ করে একটি লিখিত আদেশ প্রদান করেন, সংশ্লিষ্ট পক্ষগণকে হাজির হয়ে প্রকৃত দখল সম্পর্কে তাদের দাবির লিখিত বিবৃতি জমা দিতে বলেন, এবং বিষয়টি তদন্ত করেন।\n\nএই বিধানের সবচেয়ে গুরুত্বপূর্ণ, সবচেয়ে বেশি পরীক্ষায় আসা বৈশিষ্ট্যটি হলো ম্যাজিস্ট্রেট কী নির্ধারণ করছেন -- এবং করছেন না। তদন্তটি সংশ্লিষ্ট সময়ে কে প্রকৃত দখলে ছিলেন তার মধ্যে সীমাবদ্ধ, কে আইনি স্বত্বাধিকারী তা নয়। এই এখতিয়ার প্রয়োগকারী একজন ম্যাজিস্ট্রেটের মালিকানা নির্ধারণের কোনো ক্ষমতা নেই; সেই প্রশ্নটি, প্রকৃতপক্ষে বিতর্কিত হলে, একটি দেওয়ানি আদালতে যেতে হবে। এটি ধারা ১৪৫-কে একটি আধা-দেওয়ানি, প্রতিরোধমূলক এখতিয়ারে পরিণত করে যা একজন ফৌজদারি-আদালত কর্মকর্তা দ্বারা প্রয়োগ করা হয়, যার লক্ষ্য কেবল সহিংসতা রোধ করা, সম্পত্তির অধিকার নিষ্পত্তি করা নয়।\n\nধারা ১৪৬ এমন মামলার জন্য একটি বিকল্প ব্যবস্থা প্রদান করে যা ম্যাজিস্ট্রেট কেবল দখলের প্রশ্নে সমাধান করতে পারেন না: যেখানে ম্যাজিস্ট্রেট মামলাটিকে জরুরি বলে মনে করেন, বা সিদ্ধান্ত নেন যে কোনো পক্ষই দখলে ছিলেন না, বা কে প্রকৃতপক্ষে দখলে ছিলেন তা নির্ধারণ করতে অক্ষম হন, তখন ম্যাজিস্ট্রেট সংশ্লিষ্ট সম্পত্তি ক্রোক করতে পারেন, পক্ষগণের নিয়ন্ত্রণ থেকে তা প্রত্যাহার করে, যতক্ষণ না একটি এখতিয়ারসম্পন্ন দেওয়ানি আদালত পক্ষগণের অধিকার (বা দখলের অধিকারী ব্যক্তি) নির্ধারণ করে। ধারা ১৪৭ জমি নিজের দখলের পরিবর্তে জমি বা পানির ব্যবহারের অধিকার (যেমন সহজাধিকার) সংক্রান্ত বিরোধের জন্য একটি সমান্তরাল পদ্ধতি প্রসারিত করে। ধারা ১৪৮ ম্যাজিস্ট্রেটকে সিদ্ধান্তে সহায়তার জন্য একজন অধস্তন কর্মকর্তাকে স্থানীয় তদন্তের জন্য নিয়োজিত করার অনুমতি দেয়।",
+          "key_concepts": ["প্রান্তিক শর্ত: জমি বা পানি সংক্রান্ত শান্তিভঙ্গ ঘটাতে পারে এমন বিরোধ", "ম্যাজিস্ট্রেট কেবল প্রকৃত দখল নির্ধারণ করেন, কখনো স্বত্ব/মালিকানা নয়", "ধারা ১৪৬: দখল নির্ধারণ করা না গেলে বা জরুরি পরিস্থিতিতে ক্রোক একটি বিকল্প ব্যবস্থা", "ধারা ১৪৭: ব্যবহারের অধিকার (সহজাধিকার) সংক্রান্ত বিরোধের জন্য সমান্তরাল পদ্ধতি", "ধারা ১৪৮: একজন অধস্তন কর্মকর্তা দ্বারা স্থানীয় তদন্ত"],
+          "important_rules": [
+            "ধারা ১৪৫ সক্রিয় হয় যখন ম্যাজিস্ট্রেট সন্তুষ্ট হন যে তার এখতিয়ারের মধ্যে জমি বা পানি সংক্রান্ত এমন একটি বিরোধ বিদ্যমান যা শান্তিভঙ্গ ঘটাতে পারে।",
+            "ধারা ১৪৫-এর অধীনে ম্যাজিস্ট্রেটের তদন্ত ও সিদ্ধান্ত প্রকৃত দখলের মধ্যে সীমাবদ্ধ, আইনি স্বত্ব নয় -- মালিকানা বিরোধ দেওয়ানি আদালতের এখতিয়ারভুক্ত।",
+            "ধারা ১৪৬: মামলাটি জরুরি হলে, বা ম্যাজিস্ট্রেট সিদ্ধান্ত নেন যে কোনো পক্ষই দখলে ছিলেন না, বা কে দখলে ছিলেন তা নির্ধারণ করতে না পারলে, ম্যাজিস্ট্রেট একটি দেওয়ানি আদালতের পক্ষগণের অধিকার নির্ধারণ পর্যন্ত সম্পত্তি ক্রোক করতে পারেন।"
+          ],
+          "definitions": [
+            { "term": "প্রকৃত দখল (এই প্রসঙ্গে)", "definition": "সংশ্লিষ্ট সময়ে বিতর্কিত জমি/পানির প্রকৃত শারীরিক দখল বা নিয়ন্ত্রণে কে ছিলেন -- ধারা ১৪৫ একজন ম্যাজিস্ট্রেটকে নির্ধারণের ক্ষমতা দেয় এমন একমাত্র প্রশ্ন, কে আইনগতভাবে এর মালিক তা থেকে ভিন্ন।" },
+            { "term": "ধারা ১৪৬-এর অধীনে ক্রোক", "definition": "বিরোধী পক্ষগণের নিয়ন্ত্রণ থেকে বিতর্কিত সম্পত্তি প্রত্যাহারকারী একজন ম্যাজিস্ট্রেটের আদেশ, যখন দখল নির্ধারণ করা যায় না বা পরিস্থিতি জরুরি হয় তখন ব্যবহৃত হয়, অন্তর্নিহিত অধিকার সম্পর্কে একটি দেওয়ানি আদালতের সিদ্ধান্ত পর্যন্ত।" }
+          ],
+          "examples": [
+            "দুটি পরিবার একটি জমির টুকরায় চাষাবাদের অধিকার নিয়ে বিরোধে জড়িত, এবং উত্তেজনা একটি আসন্ন সংঘর্ষের পর্যায়ে পৌঁছেছে। একজন ম্যাজিস্ট্রেট, সন্তুষ্ট হয়ে যে এই বিরোধ শান্তিভঙ্গ ঘটাতে পারে, ধারা ১৪৫ প্রয়োগ করে তার সামনে থাকা প্রমাণের ভিত্তিতে নির্ধারণ করতে পারেন কোন পরিবার প্রকৃতপক্ষে সেই টুকরায় দখলে ছিল -- এবং সেই পরিবারকে সেই দখলে অবিচলিত থাকার নির্দেশ দিতে পারেন, আইনগতভাবে জমির প্রকৃত মালিক কে তা নিয়ে সিদ্ধান্ত না দিয়ে।",
+            "একটি অনুরূপ বিরোধে, ম্যাজিস্ট্রেট দেখেন প্রমাণ এতটাই সমানভাবে ভারসাম্যপূর্ণ যে কোন পক্ষ প্রকৃত দখলে ছিল তা বলা প্রকৃতপক্ষে অসম্ভব। অনুমান করার পরিবর্তে, ধারা ১৪৬ ম্যাজিস্ট্রেটকে জমিটি ক্রোক করার অনুমতি দেয় -- উভয় পক্ষের নিয়ন্ত্রণ থেকে তা প্রত্যাহার করে -- যতক্ষণ না একটি দেওয়ানি আদালত অধিকার বা স্বত্বের অন্তর্নিহিত প্রশ্নটি নির্ধারণ করে।"
+          ],
+          "exam_focus": "পরীক্ষকরা যাচাই করেন প্রার্থীরা বোঝেন কিনা যে ধারা ১৪৫ এখতিয়ার দখল নিয়ে, স্বত্ব নিয়ে নয় -- একটি ঘটনাপ্রবাহ প্রায়ই একজন প্রার্থীকে ভুলভাবে সিদ্ধান্তে পৌঁছানোর জন্য প্রলুব্ধ করবে যে ম্যাজিস্ট্রেট মালিকানার উপর 'মামলাটি নিষ্পত্তি করেছেন', যখন ম্যাজিস্ট্রেটের তা করার কোনো ক্ষমতা নেই (এবং থাকতেও পারে না)। ধারা ১৪৬ ক্রোকের জরুরি/অনির্ধারণযোগ্য-দখল ট্রিগারটি দ্বিতীয় সাধারণ পরীক্ষার বিষয়।",
+          "common_traps": [
+            "একজন ম্যাজিস্ট্রেটের ধারা ১৪৫ আদেশকে সম্পত্তির মালিকানা নিষ্পত্তি করে বলে বর্ণনা করা -- এটি কেবল কে প্রকৃত দখলে ছিলেন তা নিষ্পত্তি করে।",
+            "মনে করা যে ধারা ১৪৬-এর অধীনে ক্রোক স্বাভাবিক ফলাফল -- এটি জরুরি বা অনির্ধারণযোগ্য-দখলের মামলার জন্য একটি বিকল্প ব্যবস্থা, ডিফল্ট পদ্ধতি নয়।",
+            "ধারা ১৪৫ ও ১৪৭-কে একই বিষয় আচ্ছাদন করে মনে করা -- ধারা ১৪৫ জমি/পানির দখল নিজেই নিয়ে; ধারা ১৪৭ তার উপর ব্যবহারের অধিকার (যেমন সহজাধিকার) নিয়ে।"
+          ],
+          "quick_revision": [
+            "ধারা ১৪৫ ট্রিগার = জমি/পানি সংক্রান্ত শান্তিভঙ্গ ঘটাতে পারে এমন বিরোধ।",
+            "ধারা ১৪৫ নির্ধারণ করে = কেবল প্রকৃত দখল, স্বত্ব/মালিকানা কখনো নয়।",
+            "ধারা ১৪৬ = ক্রোক বিকল্প ব্যবস্থা: জরুরি, অথবা কোনো পক্ষই দখলে ছিল না, অথবা কে ছিল তা নির্ধারণ করা যায় না।",
+            "ধারা ১৪৭ = একই ধারণা, কিন্তু ব্যবহারের অধিকারের (সহজাধিকার) জন্য, দখল নিজের জন্য নয়।",
+            "ধারা ১৪৮ = একজন অধস্তন কর্মকর্তার মাধ্যমে স্থানীয় তদন্ত।"
+          ],
+          "key_takeaways": [
+            "এটি একটি সম্পত্তি বিরোধ হিসেবে সাজানো একটি প্রতিরোধমূলক, শান্তিরক্ষা এখতিয়ার -- এর সম্পূর্ণ উদ্দেশ্য সহিংসতা বন্ধ করা, অধিকার নিষ্পত্তি করা নয়।",
+            "দখল/স্বত্বের পার্থক্যটিই এই বিষয় সম্পর্কে সঠিকভাবে বোঝার সবচেয়ে গুরুত্বপূর্ণ বিষয়।",
+            "একটি দেওয়ানি আদালত, ম্যাজিস্ট্রেট নয়, একমাত্র ফোরাম যা চূড়ান্তভাবে নির্ধারণ করতে পারে কে প্রকৃতপক্ষে সম্পত্তির মালিক।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CRPC-S145",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Section 145 (Procedure where dispute concerning land, etc., is likely to cause breach of peace)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "note": "Verbatim text of subsections (1) and (2), and the costs provision, obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "LREF-CRPC-S146-148",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Criminal Procedure, 1898",
+      "act_year": 1898,
+      "act_number": "Act No. V of 1898",
+      "section_or_order": "Sections 146 (power to attach), 147 (disputes as to rights of use), 148 (local inquiry)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "source_ids": ["SRC-BDLAWS-CRPC1898-001"],
+      "note": "Section 147's core text was confirmed via search-indexed content. Sections 146 and 148's full operative text was not independently confirmed in this pass -- their description in the lesson rests on the confirmed chapter table-of-contents titles and general, well-established commentary on their function, not a verbatim read."
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-IP-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-IP-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S145"],
+      "exam_focus": "The single most tested point: possession, not title.",
+      "source_basis": "Original question drawn directly from the core possession/title distinction.",
+      "mistake_tags": ["s145-possession-not-title"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CRPC-IMMOVABLEPROPERTY-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "In proceedings under Section 145, CrPC, what is a Magistrate empowered to decide?",
+          "options": { "A": "Who holds legal title (ownership) of the disputed land", "B": "Who was in actual possession of the disputed land at the relevant time", "C": "Both title and possession, with title taking priority", "D": "Whether either party is entitled to compensation" },
+          "explanation": "Section 145 confines the Magistrate's inquiry to actual possession -- it does not empower a decision on legal title, which remains for a civil court.",
+          "why_other_options_are_wrong": { "A": "Title/ownership is precisely what this section does NOT empower a Magistrate to decide.", "C": "The Magistrate has no jurisdiction over title at all under this section, let alone a priority ranking between title and possession.", "D": "Compensation is not part of what a Section 145 inquiry determines." }
+        },
+        "bn": {
+          "question": "ফৌজদারি কার্যবিধির ধারা ১৪৫-এর অধীনে কার্যধারায়, একজন ম্যাজিস্ট্রেট কী নির্ধারণ করার ক্ষমতাপ্রাপ্ত?",
+          "options": { "A": "বিতর্কিত জমির আইনি স্বত্ব (মালিকানা) কার", "B": "সংশ্লিষ্ট সময়ে বিতর্কিত জমির প্রকৃত দখলে কে ছিলেন", "C": "স্বত্ব ও দখল উভয়ই, স্বত্বকে অগ্রাধিকার দিয়ে", "D": "কোনো পক্ষ ক্ষতিপূরণের যোগ্য কিনা" },
+          "explanation": "ধারা ১৪৫ ম্যাজিস্ট্রেটের তদন্তকে প্রকৃত দখলে সীমাবদ্ধ করে -- এটি আইনি স্বত্বের উপর সিদ্ধান্তের ক্ষমতা দেয় না, যা একটি দেওয়ানি আদালতের জন্য থেকে যায়।",
+          "why_other_options_are_wrong": { "A": "স্বত্ব/মালিকানা ঠিক যা এই ধারা একজন ম্যাজিস্ট্রেটকে নির্ধারণের ক্ষমতা দেয় না।", "C": "এই ধারার অধীনে ম্যাজিস্ট্রেটের স্বত্বের উপর কোনো এখতিয়ারই নেই, স্বত্ব ও দখলের মধ্যে অগ্রাধিকার ক্রম তো দূরের কথা।", "D": "ক্ষতিপূরণ ধারা ১৪৫ তদন্ত যা নির্ধারণ করে তার অংশ নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-IP-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-IP-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S145"],
+      "exam_focus": "The threshold trigger for S.145.",
+      "source_basis": "Original question drawn directly from verbatim S.145(1) text.",
+      "mistake_tags": ["s145-threshold-breach-of-peace"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-IMMOVABLEPROPERTY-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "What must a Magistrate be satisfied of before invoking Section 145, CrPC?",
+          "options": { "A": "That one party has already committed a criminal offence", "B": "That the dispute concerns a sum of money above a prescribed value", "C": "That a dispute likely to cause a breach of the peace exists concerning land or water within their jurisdiction", "D": "That both parties have agreed to submit to the Magistrate's jurisdiction" },
+          "explanation": "Section 145 is triggered by the Magistrate's satisfaction that a dispute likely to cause a breach of the peace exists concerning land or water (or their boundaries) within the local jurisdiction.",
+          "why_other_options_are_wrong": { "A": "No prior criminal offence is required to trigger this section -- it is preventive, not punitive.", "B": "There is no monetary-value threshold in Section 145's trigger.", "D": "Party consent to jurisdiction is not the basis on which this section operates." }
+        },
+        "bn": {
+          "question": "ফৌজদারি কার্যবিধির ধারা ১৪৫ প্রয়োগের আগে একজন ম্যাজিস্ট্রেটকে কী বিষয়ে সন্তুষ্ট হতে হবে?",
+          "options": { "A": "যে একটি পক্ষ ইতিমধ্যে একটি ফৌজদারি অপরাধ সংঘটিত করেছে", "B": "যে বিরোধটি একটি নির্ধারিত মূল্যের উপরে অর্থের পরিমাণ সংক্রান্ত", "C": "যে তার এখতিয়ারের মধ্যে জমি বা পানি সংক্রান্ত এমন একটি বিরোধ বিদ্যমান যা শান্তিভঙ্গ ঘটাতে পারে", "D": "যে উভয় পক্ষই ম্যাজিস্ট্রেটের এখতিয়ারে জমা দিতে সম্মত হয়েছেন" },
+          "explanation": "ধারা ১৪৫ ম্যাজিস্ট্রেটের সন্তুষ্টি দ্বারা সক্রিয় হয় যে স্থানীয় এখতিয়ারের মধ্যে জমি বা পানি (বা তাদের সীমানা) সংক্রান্ত এমন একটি বিরোধ বিদ্যমান যা শান্তিভঙ্গ ঘটাতে পারে।",
+          "why_other_options_are_wrong": { "A": "এই ধারা সক্রিয় করতে পূর্ববর্তী কোনো ফৌজদারি অপরাধের প্রয়োজন নেই -- এটি প্রতিরোধমূলক, শাস্তিমূলক নয়।", "B": "ধারা ১৪৫-এর ট্রিগারে কোনো আর্থিক-মূল্যের সীমা নেই।", "D": "এখতিয়ারে পক্ষগণের সম্মতি এই ধারা যে ভিত্তিতে কাজ করে তা নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-IP-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-IP-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S146-148"],
+      "exam_focus": "When attachment under S.146 is used, as a fallback.",
+      "source_basis": "Original question on the attachment trigger conditions.",
+      "mistake_tags": ["s146-attachment-fallback-conditions"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-IMMOVABLEPROPERTY-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 146, CrPC, in which situation may a Magistrate attach the disputed property instead of deciding who was in possession?",
+          "options": { "A": "Whenever either party requests attachment", "B": "Whenever the dispute has lasted more than one year", "C": "Whenever the property is worth more than a prescribed value", "D": "Where the case is one of emergency, or the Magistrate decides no party was in possession, or cannot determine who was" },
+          "explanation": "Section 146 provides attachment as a fallback specifically for cases of emergency, where no party was found in possession, or where the Magistrate cannot determine who was in possession -- not as a general, party-triggered or value-triggered option.",
+          "why_other_options_are_wrong": { "A": "A party's request alone is not the trigger for attachment under this section.", "B": "Duration of the dispute is not the condition Section 146 sets.", "C": "There is no value-based threshold in Section 146's trigger." }
+        },
+        "bn": {
+          "question": "ফৌজদারি কার্যবিধির ধারা ১৪৬-এর অধীনে, কোন পরিস্থিতিতে একজন ম্যাজিস্ট্রেট কে দখলে ছিলেন তা নির্ধারণের পরিবর্তে বিতর্কিত সম্পত্তি ক্রোক করতে পারেন?",
+          "options": { "A": "যখনই কোনো পক্ষ ক্রোকের অনুরোধ করে", "B": "যখনই বিরোধটি এক বছরের বেশি সময় ধরে চলছে", "C": "যখনই সম্পত্তির মূল্য একটি নির্ধারিত পরিমাণের বেশি", "D": "যেখানে মামলাটি জরুরি প্রকৃতির, অথবা ম্যাজিস্ট্রেট সিদ্ধান্ত নেন কোনো পক্ষই দখলে ছিলেন না, অথবা কে ছিলেন তা নির্ধারণ করতে পারেন না" },
+          "explanation": "ধারা ১৪৬ সুনির্দিষ্টভাবে জরুরি মামলার জন্য, যেখানে কোনো পক্ষকেই দখলে পাওয়া যায়নি, বা যেখানে ম্যাজিস্ট্রেট কে দখলে ছিলেন তা নির্ধারণ করতে পারেন না, সেসব ক্ষেত্রের জন্য ক্রোক একটি বিকল্প ব্যবস্থা প্রদান করে -- কোনো সাধারণ, পক্ষ-ট্রিগার বা মূল্য-ট্রিগার বিকল্প হিসেবে নয়।",
+          "why_other_options_are_wrong": { "A": "কেবল একটি পক্ষের অনুরোধ এই ধারার অধীনে ক্রোকের ট্রিগার নয়।", "B": "বিরোধের সময়কাল ধারা ১৪৬ যে শর্ত নির্ধারণ করে তা নয়।", "C": "ধারা ১৪৬-এর ট্রিগারে কোনো মূল্য-ভিত্তিক সীমা নেই।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CRPC-IP-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CRPC-IP-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CRPC",
+      "topic_id": "T-CRPC-08",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFY_CURRENT_RULE",
+      "relevant_legal_reference_ids": ["LREF-CRPC-S146-148"],
+      "exam_focus": "Distinguishing S.145 (possession) from S.147 (rights of use).",
+      "source_basis": "Original conceptual question distinguishing S.145 and S.147.",
+      "mistake_tags": ["s145-vs-s147-subject-matter"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CRPC-IMMOVABLEPROPERTY-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "How does the subject matter of a Section 147 proceeding differ from a Section 145 proceeding?",
+          "options": { "A": "Section 147 applies only to movable property, Section 145 only to immovable property", "B": "Section 147 concerns disputes over rights of use of land or water (such as easements), while Section 145 concerns possession of the land or water itself", "C": "Section 147 applies only in criminal courts, Section 145 only in civil courts", "D": "There is no difference -- the two sections are simply duplicate procedures" },
+          "explanation": "Section 147 extends a parallel procedure to disputes about rights of use, such as easements, over land or water -- as distinct from Section 145's focus on possession of the land or water itself.",
+          "why_other_options_are_wrong": { "A": "Both sections concern land/water and rights connected to it, not a movable-versus-immovable property distinction.", "C": "Both sections are procedures exercised by a Magistrate (a criminal-court officer) -- neither is a civil-court procedure.", "D": "The two sections address genuinely different subject matter (possession vs. rights of use), not duplicate ground." }
+        },
+        "bn": {
+          "question": "একটি ধারা ১৪৭ কার্যধারার বিষয়বস্তু একটি ধারা ১৪৫ কার্যধারা থেকে কীভাবে ভিন্ন?",
+          "options": { "A": "ধারা ১৪৭ কেবল অস্থাবর সম্পত্তির ক্ষেত্রে প্রযোজ্য, ধারা ১৪৫ কেবল স্থাবর সম্পত্তির ক্ষেত্রে", "B": "ধারা ১৪৭ জমি বা পানির ব্যবহারের অধিকার (যেমন সহজাধিকার) সংক্রান্ত বিরোধ নিয়ে, যেখানে ধারা ১৪৫ জমি বা পানি নিজের দখল নিয়ে", "C": "ধারা ১৪৭ কেবল ফৌজদারি আদালতে প্রযোজ্য, ধারা ১৪৫ কেবল দেওয়ানি আদালতে", "D": "কোনো পার্থক্য নেই -- দুটি ধারা কেবল ডুপ্লিকেট পদ্ধতি" },
+          "explanation": "ধারা ১৪৭ জমি বা পানির উপর ব্যবহারের অধিকার, যেমন সহজাধিকার, সংক্রান্ত বিরোধের জন্য একটি সমান্তরাল পদ্ধতি প্রসারিত করে -- ধারা ১৪৫-এর জমি বা পানি নিজের দখলের উপর মনোযোগ থেকে ভিন্ন।",
+          "why_other_options_are_wrong": { "A": "উভয় ধারাই জমি/পানি ও তার সাথে সংযুক্ত অধিকার নিয়ে, অস্থাবর-বনাম-স্থাবর সম্পত্তির পার্থক্য নয়।", "C": "উভয় ধারাই একজন ম্যাজিস্ট্রেট (একজন ফৌজদারি-আদালত কর্মকর্তা) দ্বারা প্রয়োগ করা পদ্ধতি -- কোনোটিই দেওয়ানি-আদালত পদ্ধতি নয়।", "D": "দুটি ধারা প্রকৃতপক্ষে ভিন্ন বিষয়বস্তু (দখল বনাম ব্যবহারের অধিকার) নিয়ে কাজ করে, ডুপ্লিকেট ভিত্তি নয়।" }
+        }
+      }
+    }
+  ]
+}

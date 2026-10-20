@@ -1,0 +1,780 @@
+{
+  "batch_id": "BATCH-2026-09-026-OFFICIAL-LIM",
+  "schema_version": "1.0",
+  "content_version": "2026.09.14",
+  "created_at": "2026-09-14T00:00:00Z",
+  "source": "bdlaws.minlaw.gov.bd-official-html",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Official bdlaws English extracts for remaining LIM syllabus topics. Interactive lesson player. No invented MCQ. Not lawyer-verified.",
+  "asset_count": 11,
+  "assets": [
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-01",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-01",
+      "topic_id": "T-LIM-01",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "Preamble / S.1",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Objects, interpretation and application of the Limitation Act",
+          "short_description": "Official bdlaws extract for Preamble / S.1 (Objects, interpretation and application of the Limitation Act). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.1 on bdlaws and map it to the syllabus topic \"Objects, interpretation and application of the Limitation Act\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Objects, interpretation and application of the Limitation Act (Preamble / S.1).\n\nSection 1.\n(1) This Act may be called the Limitation Act, 1908.\n\n(2) It extends to the whole of Bangladesh.\n\n(3) This section and section 31 shall come into force at once. The rest of this Act shall come into force on the first day of January, 1909.\n\n Definitions",
+          "key_concepts": [
+            "Preamble / S.1",
+            "Objects, interpretation and application of the Limitation Act",
+            "S.1",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.1: (1) This Act may be called the Limitation Act, 1908."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.1. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.1"
+          ]
+        },
+        "bn": {
+          "title": "তামাদি আইনের উদ্দেশ্য, ব্যাখ্যা ও প্রয়োগ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — Preamble / S.1 (তামাদি আইনের উদ্দেশ্য, ব্যাখ্যা ও প্রয়োগ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.1 পড়ে সিলেবাস টপিক \"তামাদি আইনের উদ্দেশ্য, ব্যাখ্যা ও প্রয়োগ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: তামাদি আইনের উদ্দেশ্য, ব্যাখ্যা ও প্রয়োগ (Preamble / S.1)।\n\nSection 1.\n(1) This Act may be called the Limitation Act, 1908.\n\n(2) It extends to the whole of Bangladesh.\n\n(3) This section and section 31 shall come into force at once. The rest of this Act shall come into force on the first day of January, 1909.\n\n Definitions",
+          "key_concepts": [
+            "Preamble / S.1",
+            "তামাদি আইনের উদ্দেশ্য, ব্যাখ্যা ও প্রয়োগ",
+            "S.1",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.1: (1) This Act may be called the Limitation Act, 1908."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.1-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.1"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-02",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-02",
+      "topic_id": "T-LIM-02",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.2",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Definitions",
+          "short_description": "Official bdlaws extract for S.2 (Definitions). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.2 on bdlaws and map it to the syllabus topic \"Definitions\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Definitions (S.2).\n\nSection 2.\nIn this Act, unless there is anything repugnant in the subject or context,-\n\n(1) “applicant” includes any person from or through whom an applicant derives his right to apply:\n\n (2) “bill of exchange” includes a hundi and a cheque:\n\n(3) “bond” includes any instrument whereby a person obliges himself to pay money to another, on condition that the obligation shall be void if a specified act is performed, or is not performed, as the case may be:\n\n(4) “defendant” includes any person from or through whom a defendant derives his liability to be sued:\n\n(5) “easement” includes a right not arising from contract, by which one person is entitled to remove and appropriate for his own profit any part of the soil belonging to another or anything growing in, or attached to or subsisting upon, the land of another:\n\n(6) “foreign country” means any country other than Bangladesh 2 [* * *]:\n\n(7) “good faith”: nothing shall be deemed to be done in good faith which is not done with due care and attention:\n\n(8) “plaintiff” includes any person from or through whom a plaintiff derives his right to sue:\n\n(9) “promissory note” means any instrument whereby the maker engages absolutely to pay a specified sum of money to another at a time therein limited, or on demand, or at sight:\n\n(10) “suit” does not include an appeal or application: and\n\n(11) “trustee” does not include a benamider, a mortgagee remaining in possession after the mortgage has been satisfied, or a wrong-doer in possession without title.\n\n Part II\n\n LIMITATION OF SUITS, APPEALS AND APPLICATIONS\n\n Dismissal of suits, etc., instituted, etc., after period of limitation",
+          "key_concepts": [
+            "S.2",
+            "Definitions",
+            "S.2",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.2: In this Act, unless there is anything repugnant in the subject or context,-\n\n(1) “applicant” includes any person from or through whom an applicant derives his right to apply:\n\n (2) “bill of exchange” includes a hundi and a cheque:\n\n(3) “bond” includes any instrument whereby a person obliges himself to pay money to another, on condition that the obligation shall be void if a specified act is performed, or is not performed, as the case may be:\n\n(4) “defendant” includes any person from or through whom a defendant derives his liability to be sued:\n\n(5) “easement” includes a right not arising from contract, by which one person is entitled to remove and appropriate for his own profit any part of the soil belonging to another or anything growing in, or attached to or subsisting upon, the land of another:\n\n(6) “foreign country” means any country other than Bangladesh 2 [* * *]:\n\n(7) “good faith”: nothing shall be deemed to be done in good faith which is not done with due care and attention:\n\n(8) “plaintiff” includes any person from or through whom a plaintiff derives his right to sue:\n\n(9) “promissory note” means any instrument whereby the maker engages absolutely to pay a specified sum of money to another at a time therein limited, or on demand, or at sight:\n\n(10) “suit” does not include an appeal or application: and\n\n(11) “trustee” does not include a benamider, a mortgagee remaining in possession after the mortgage has been satisfied, or a wrong-doer in possession without title."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.2. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.2"
+          ]
+        },
+        "bn": {
+          "title": "সংজ্ঞা",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.2 (সংজ্ঞা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.2 পড়ে সিলেবাস টপিক \"সংজ্ঞা\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: সংজ্ঞা (S.2)।\n\nSection 2.\nIn this Act, unless there is anything repugnant in the subject or context,-\n\n(1) “applicant” includes any person from or through whom an applicant derives his right to apply:\n\n (2) “bill of exchange” includes a hundi and a cheque:\n\n(3) “bond” includes any instrument whereby a person obliges himself to pay money to another, on condition that the obligation shall be void if a specified act is performed, or is not performed, as the case may be:\n\n(4) “defendant” includes any person from or through whom a defendant derives his liability to be sued:\n\n(5) “easement” includes a right not arising from contract, by which one person is entitled to remove and appropriate for his own profit any part of the soil belonging to another or anything growing in, or attached to or subsisting upon, the land of another:\n\n(6) “foreign country” means any country other than Bangladesh 2 [* * *]:\n\n(7) “good faith”: nothing shall be deemed to be done in good faith which is not done with due care and attention:\n\n(8) “plaintiff” includes any person from or through whom a plaintiff derives his right to sue:\n\n(9) “promissory note” means any instrument whereby the maker engages absolutely to pay a specified sum of money to another at a time therein limited, or on demand, or at sight:\n\n(10) “suit” does not include an appeal or application: and\n\n(11) “trustee” does not include a benamider, a mortgagee remaining in possession after the mortgage has been satisfied, or a wrong-doer in possession without title.\n\n Part II\n\n LIMITATION OF SUITS, APPEALS AND APPLICATIONS\n\n Dismissal of suits, etc., instituted, etc., after period of limitation",
+          "key_concepts": [
+            "S.2",
+            "সংজ্ঞা",
+            "S.2",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.2: In this Act, unless there is anything repugnant in the subject or context,-\n\n(1) “applicant” includes any person from or through whom an applicant derives his right to apply:\n\n (2) “bill of exchange” includes a hundi and a cheque:\n\n(3) “bond” includes any instrument whereby a person obliges himself to pay money to another, on condition that the obligation shall be void if a specified act is performed, or is not performed, as the case may be:\n\n(4) “defendant” includes any person from or through whom a defendant derives his liability to be sued:\n\n(5) “easement” includes a right not arising from contract, by which one person is entitled to remove and appropriate for his own profit any part of the soil belonging to another or anything growing in, or attached to or subsisting upon, the land of another:\n\n(6) “foreign country” means any country other than Bangladesh 2 [* * *]:\n\n(7) “good faith”: nothing shall be deemed to be done in good faith which is not done with due care and attention:\n\n(8) “plaintiff” includes any person from or through whom a plaintiff derives his right to sue:\n\n(9) “promissory note” means any instrument whereby the maker engages absolutely to pay a specified sum of money to another at a time therein limited, or on demand, or at sight:\n\n(10) “suit” does not include an appeal or application: and\n\n(11) “trustee” does not include a benamider, a mortgagee remaining in possession after the mortgage has been satisfied, or a wrong-doer in possession without title."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.2-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.2"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-04",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-04",
+      "topic_id": "T-LIM-04",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.6, 7",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Legal disability, Suspension of limitation",
+          "short_description": "Official bdlaws extract for S.6, 7 (Legal disability, Suspension of limitation). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.6 on bdlaws and map it to the syllabus topic \"Legal disability, Suspension of limitation\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Legal disability, Suspension of limitation (S.6, 7).\n\nSection 6.\n(1) Where a person entitled to institute a suit or proceeding or make an application for the execution of a decree is, at the time from which the period of limitation is to be reckoned, a minor, or insane, or an idiot, he may institute the suit or proceeding or make the application within the same period after the disability has ceased, as would otherwise have been allowed from the time prescribed therefore in the third column of the first schedule or in section 48 of the Code of Civil Procedure, 1908.\n\n(2) Where such person is, at the time from which the period of limitation is to be reckoned, affected by two such disabilities, or where, before his disability has ceased, he is affected by another disability, he may institute the suit or make the application within the same period, after both disabilities have ceased, as would otherwise have been allowed from the time so prescribed.\n\n(3) Where the disability continues up to the death of such person, his legal representative may institute the suit or make the application within the same period after the death as would otherwise have been allowed from the time so prescribed.\n\n(4) Where such representative is at the date of the death affected by any such disability, the rules contained in sub-sections (1) and (2) shall apply.\n\nIllustrations\n\n(a) The right to sue for the hire of a boat accrues to A during his minority. He attains majority four years after such accruer. He may institute his suit at any time within the years from the date of his attaining majority.\n\n(b) A right to sue accrues to Z during his minority. After the accruer, but while Z is still a minor, he becomes insane. Time runs against Z from the date when his insainity and minority cease.\n\n(c) A right to sue accrues to X during his minority. X dies before attaining majority, and is succeeded by Y, his minor son. Time runs against Y from the date of his attaining majority.\n\n Disability of one of several plaintiffs or applicants",
+          "key_concepts": [
+            "S.6, 7",
+            "Legal disability, Suspension of limitation",
+            "S.6",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.6: (1) Where a person entitled to institute a suit or proceeding or make an application for the execution of a decree is, at the time from which the period of limitation is to be reckoned, a minor, or insane, or an idiot, he may institute the suit or proceeding or make the application within the same period after the disability has ceased, as would otherwise have been allowed from the time prescribed therefore in the third column of the first schedule or in section 48 of the Code of Civil Procedure, 1908."
+          ],
+          "examples": [
+            "(a) The right to sue for the hire of a boat accrues to A during his minority. He attains majority four years after such accruer. He may institute his suit at any time within the years from the date of his attaining majority.",
+            "(b) A right to sue accrues to Z during his minority. After the accruer, but while Z is still a minor, he becomes insane. Time runs against Z from the date when his insainity and minority cease.",
+            "(c) A right to sue accrues to X during his minority. X dies before attaining majority, and is succeeded by Y, his minor son. Time runs against Y from the date of his attaining majority.\n\n Disability of one of several plaintiffs or applicants"
+          ],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.6. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.6"
+          ]
+        },
+        "bn": {
+          "title": "আইনগত অক্ষমতা, তামাদি স্থগিতকরণ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.6, 7 (আইনগত অক্ষমতা, তামাদি স্থগিতকরণ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.6 পড়ে সিলেবাস টপিক \"আইনগত অক্ষমতা, তামাদি স্থগিতকরণ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: আইনগত অক্ষমতা, তামাদি স্থগিতকরণ (S.6, 7)।\n\nSection 6.\n(1) Where a person entitled to institute a suit or proceeding or make an application for the execution of a decree is, at the time from which the period of limitation is to be reckoned, a minor, or insane, or an idiot, he may institute the suit or proceeding or make the application within the same period after the disability has ceased, as would otherwise have been allowed from the time prescribed therefore in the third column of the first schedule or in section 48 of the Code of Civil Procedure, 1908.\n\n(2) Where such person is, at the time from which the period of limitation is to be reckoned, affected by two such disabilities, or where, before his disability has ceased, he is affected by another disability, he may institute the suit or make the application within the same period, after both disabilities have ceased, as would otherwise have been allowed from the time so prescribed.\n\n(3) Where the disability continues up to the death of such person, his legal representative may institute the suit or make the application within the same period after the death as would otherwise have been allowed from the time so prescribed.\n\n(4) Where such representative is at the date of the death affected by any such disability, the rules contained in sub-sections (1) and (2) shall apply.\n\nIllustrations\n\n(a) The right to sue for the hire of a boat accrues to A during his minority. He attains majority four years after such accruer. He may institute his suit at any time within the years from the date of his attaining majority.\n\n(b) A right to sue accrues to Z during his minority. After the accruer, but while Z is still a minor, he becomes insane. Time runs against Z from the date when his insainity and minority cease.\n\n(c) A right to sue accrues to X during his minority. X dies before attaining majority, and is succeeded by Y, his minor son. Time runs against Y from the date of his attaining majority.\n\n Disability of one of several plaintiffs or applicants",
+          "key_concepts": [
+            "S.6, 7",
+            "আইনগত অক্ষমতা, তামাদি স্থগিতকরণ",
+            "S.6",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.6: (1) Where a person entitled to institute a suit or proceeding or make an application for the execution of a decree is, at the time from which the period of limitation is to be reckoned, a minor, or insane, or an idiot, he may institute the suit or proceeding or make the application within the same period after the disability has ceased, as would otherwise have been allowed from the time prescribed therefore in the third column of the first schedule or in section 48 of the Code of Civil Procedure, 1908."
+          ],
+          "examples": [
+            "(a) The right to sue for the hire of a boat accrues to A during his minority. He attains majority four years after such accruer. He may institute his suit at any time within the years from the date of his attaining majority.",
+            "(b) A right to sue accrues to Z during his minority. After the accruer, but while Z is still a minor, he becomes insane. Time runs against Z from the date when his insainity and minority cease.",
+            "(c) A right to sue accrues to X during his minority. X dies before attaining majority, and is succeeded by Y, his minor son. Time runs against Y from the date of his attaining majority.\n\n Disability of one of several plaintiffs or applicants"
+          ],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.6-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.6"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-05",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-05",
+      "topic_id": "T-LIM-05",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.12-25",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Computation of the period of limitation",
+          "short_description": "Official bdlaws extract for S.12-25 (Computation of the period of limitation). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.12, S.13, S.14, S.15, S.16, S.17, S.18, S.19, S.20, S.21 on bdlaws and map it to the syllabus topic \"Computation of the period of limitation\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Computation of the period of limitation (S.12-25).\n\nSection 12.\n(1) In computing the period of limitation prescribed for any suit, appeal or application, the day from which such period is to be reckoned shall be excluded.\n\n(2) In computing the period of limitation prescribed for an appeal, an application for leave to appeal and an application for a review of judgment, the day on which the judgment complained of was pronounced, and the time requisite for obtaining a copy of the decree, sentence or order appealed from or sought to be reviewed, shall be excluded.\n\n(3) Where a decree is appealed from or sought to be reviewed, the time requisite for obtaining a copy of the judgment on which it is founded shall also be excluded.\n\n(4) In computing the period of limitation prescribed for an application to set aside an award, the time requisite for obtaining a copy of the award shall be excluded.\n\n Exclusion of time of defendant’s absence from Bangladesh and certain other territories\n\nSection 13.\nIn computing the period of limitation prescribed for any suit, the time during which the defendant has been absent from Bangladesh and from the territories beyond Bangladesh under the administration of the 3 [Government] shall be excluded.\n\n Exclusion of time of proceeding bona fide in Court without jurisdiction\n\nSection 14.\n(1) In computing the period of limitation prescribed for any suit, the time during which the plantiff has been prosecuting with due diligence another civil proceeding, whether in a Court of first instance or in a Court of appeal, against the defendant, shall be excluded, where the proceeding is founded upon the same cause of action and is prosecuted in good faith in a Court which, from defect of jurisdiction, or other cause of a like nature, is unable to entertain it.\n\n(2) In computing the period of limitation prescribed for any application, the time during which the applicant has been prosecuting with due diligence another civil proceeding, whether in a Court of first instance or in a Court of appeal, against the same party for the same relief shall be excluded, where such proceeding is prosecuted in good faith in a Court which, from defect of jurisdiction, or other cause of a like nature, is unable to entertain it.\n\nExplanation I - In excluding the time during which a former suit or application was pending, the day on which that suit or application was instituted or made, and the day on which the proceedings therein ended, shall both be counted.\n\nExplanation II - For the purposes of this section, a plaintiff or an applicant resisting an appeal shall be deemed to be prosecuting a proceeding.\n\nExplanation III - For the purposes of this section misjoinder of parties or of causes of action shall be deemed to be a cause of a like nature with defect of jurisdiction.\n\n Exclusion of time during which proceedings are suspended\n\nSection 15.\n(1) In computing the period of limitation prescribed for any suit or application for the execution of a decree, the institution or execution of which has been stayed by injunction or order, the time of the continuance of the injunction or order, the day on which it was issued or made, and the day on which it was withdrawn, shall be excluded.\n\n(2) In computing the period of limitation prescribed for any suit of which notice has been given in accordance with the requirements of any enactment for the time being in force, the period of such notice shall be excluded.\n\n Exclusion of time during which proceedings to set aside execution-sale are pending\n\nSection 16.\nIn computing the period of limitation prescribed for a suit for possession by a purchaser at a sale in execution of a decree, the time during which a proceeding to set aside the sale has been prosecuted shall be excluded.\n\n Effect of death before right to sue accrues\n\nSection 17.\n(1) Where a person, who would, if he were living, have a right to institute a suit or make an application, dies before the right accrues, the period of limitation shall be computed from the time when there is a legal representative of the deceased capable of instituting or making such suit or application.\n\n(2) Where person against whom, if he were living, a right to institute a suit or make an application would have accrued dies before the right accrues, the period of limitation shall be computed from the time when there is a legal representative of the deceased against whom the plaintiff may institute or make such suit or application.\n\n(3) Nothing in sub-sections (1) and (2) applied to suits to enforce rights of pre-emption or to suits for the possession of immoveable property or of an hereditary office.\n\n Effect of fraud\n\nSection 18.\nWhere any person having a right to institute a suit or make an application has, by means of fraud, been kept from the knowledge of such right or of the title on which it is founded,\n\nor where any document necessary to establish such right has been fraudulently concealed from him,\n\nthe time limited for instituting a suit or making an application-\n\n(a) against the person guilty of the fraud or accessory thereto, or\n\n(b) against any person claiming through him otherwise than in good faith and for a valuable consideration,\n\nshall be computed from the time when the fraud first became known to the person injuriously affected thereby, or, in the case of the concealed document, when he first had the means of producing it or compelling its production.\n\n Effect of acknowledgement in writing\n\nSection 19.\n(1) Where, before the expiration of the period prescribed for a suit or application in respect of any property or right, an acknowledgement of liability in respect of such property or right has been made in writing signed by the party against whom such property or right is claimed, or by some person through whom he derives title or liability, a fresh period of limitation shall be computed from the time when the acknowledgement was so signed.\n\n(2) Where the writing containing the acknowledgement is undated, oral evidence may be given of the time when it was signed; but, subject to the provisions of the Evidence Act, 1872, oral evidence of its contents shall not be received.\n\nExplanation I - For the purposes of this section an acknowledgement may be sufficient though it omits to specify the exact nature of the property or right, or avers that the time\n\nfor payment, delivery, performance or enjoyment has not yet come, or is accompanied by a refusal to pay, deliver, perform or permit to enjoy, or is coupled with a claim to a set-off, or is addressed to a person other than the person entitled to the property or right.\n\nExplanation II - For the purposes of this section, “signed” means signed either personally or by an agent duly authorized in this behalf.\n\nExplanation III - For the purposes of this section an application for the execution of a decree or order is an application respect of a right.\n\n Effect of payment on account of debt as of interest on legacy\n\nSection 20.\n(1) Where payment on account of a debt or of interest on a legacy is made before the expiration of the prescribed period by the person liable to pay the debt or legacy, or by his duly authorized agent, a fresh period of limitation shall be computed from the time when the payment was made:\n\nProvided that, save in the case of a payment of interest made before the 1st day of January, 1928, an acknowledgment of the payment appears in the handwriting of, or in a writing signed by the person making the payment.\n\n Agent of persons under disability\n\nSection 21.\n(1) The expression “agent duly authorised in his behalf,” in sections 19 and 20, shall, in the case of a person under disability, include his lawful guardian, committee or manager, or an agent duly authorised by such guardian, committee or manager to sign the acknowledgement or make the payment.\n\n(2) Nothing in the said sections renders one of several joint contractors, partners, executors or mortgagees chargeable by reason only of a written acknowledgment signed or of a payment made by, or by the agent of, any other or others of them.\n\n(3) For the purposes of the said sections-\n\n(a) an acknowledgment signed, or a payment made, in respect of any liability, by, or by the duly authorised agent of, any widow or other limited owner of property who is governed by the Hindu law, shall be a valid acknowledgment or payment, as the case may be, as against a reversioner succeeding to such liability; and\n\n(b) where a liability has been incurred by, or on behalf of, a Hindu undivided family as such, an acknowledgment or payment made by, or by the duly authorised agent of, the manager of the family for the time being shall be deemed to have been made on behalf of the whole family.\n\n Effect of substituting or adding new plaintiff or defendant",
+          "key_concepts": [
+            "S.12-25",
+            "Computation of the period of limitation",
+            "S.12, S.13, S.14, S.15, S.16, S.17, S.18, S.19, S.20, S.21",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.12: (1) In computing the period of limitation prescribed for any suit, appeal or application, the day from which such period is to be reckoned shall be excluded.",
+            "S.13: In computing the period of limitation prescribed for any suit, the time during which the defendant has been absent from Bangladesh and from the territories beyond Bangladesh under the administration of the 3 [Government] shall be excluded.",
+            "S.14: (1) In computing the period of limitation prescribed for any suit, the time during which the plantiff has been prosecuting with due diligence another civil proceeding, whether in a Court of first instance or in a Court of appeal, against the defendant, shall be excluded, where the proceeding is founded upon the same cause of action and is prosecuted in good faith in a Court which, from defect of jurisdiction, or other cause of a like nature, is unable to entertain it.",
+            "S.15: (1) In computing the period of limitation prescribed for any suit or application for the execution of a decree, the institution or execution of which has been stayed by injunction or order, the time of the continuance of the injunction or order, the day on which it was issued or made, and the day on which it was withdrawn, shall be excluded.",
+            "S.16: In computing the period of limitation prescribed for a suit for possession by a purchaser at a sale in execution of a decree, the time during which a proceeding to set aside the sale has been prosecuted shall be excluded.",
+            "S.17: (1) Where a person, who would, if he were living, have a right to institute a suit or make an application, dies before the right accrues, the period of limitation shall be computed from the time when there is a legal representative of the deceased capable of instituting or making such suit or application."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.12, S.13, S.14, S.15, S.16, S.17, S.18, S.19, S.20, S.21. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.12, S.13, S.14, S.15, S.16, S.17, S.18, S.19, S.20, S.21"
+          ]
+        },
+        "bn": {
+          "title": "তামাদির মেয়াদ গণনা",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.12-25 (তামাদির মেয়াদ গণনা)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.12, S.13, S.14, S.15, S.16, S.17, S.18, S.19, S.20, S.21 পড়ে সিলেবাস টপিক \"তামাদির মেয়াদ গণনা\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: তামাদির মেয়াদ গণনা (S.12-25)।\n\nSection 12.\n(1) In computing the period of limitation prescribed for any suit, appeal or application, the day from which such period is to be reckoned shall be excluded.\n\n(2) In computing the period of limitation prescribed for an appeal, an application for leave to appeal and an application for a review of judgment, the day on which the judgment complained of was pronounced, and the time requisite for obtaining a copy of the decree, sentence or order appealed from or sought to be reviewed, shall be excluded.\n\n(3) Where a decree is appealed from or sought to be reviewed, the time requisite for obtaining a copy of the judgment on which it is founded shall also be excluded.\n\n(4) In computing the period of limitation prescribed for an application to set aside an award, the time requisite for obtaining a copy of the award shall be excluded.\n\n Exclusion of time of defendant’s absence from Bangladesh and certain other territories\n\nSection 13.\nIn computing the period of limitation prescribed for any suit, the time during which the defendant has been absent from Bangladesh and from the territories beyond Bangladesh under the administration of the 3 [Government] shall be excluded.\n\n Exclusion of time of proceeding bona fide in Court without jurisdiction\n\nSection 14.\n(1) In computing the period of limitation prescribed for any suit, the time during which the plantiff has been prosecuting with due diligence another civil proceeding, whether in a Court of first instance or in a Court of appeal, against the defendant, shall be excluded, where the proceeding is founded upon the same cause of action and is prosecuted in good faith in a Court which, from defect of jurisdiction, or other cause of a like nature, is unable to entertain it.\n\n(2) In computing the period of limitation prescribed for any application, the time during which the applicant has been prosecuting with due diligence another civil proceeding, whether in a Court of first instance or in a Court of appeal, against the same party for the same relief shall be excluded, where such proceeding is prosecuted in good faith in a Court which, from defect of jurisdiction, or other cause of a like nature, is unable to entertain it.\n\nExplanation I - In excluding the time during which a former suit or application was pending, the day on which that suit or application was instituted or made, and the day on which the proceedings therein ended, shall both be counted.\n\nExplanation II - For the purposes of this section, a plaintiff or an applicant resisting an appeal shall be deemed to be prosecuting a proceeding.\n\nExplanation III - For the purposes of this section misjoinder of parties or of causes of action shall be deemed to be a cause of a like nature with defect of jurisdiction.\n\n Exclusion of time during which proceedings are suspended\n\nSection 15.\n(1) In computing the period of limitation prescribed for any suit or application for the execution of a decree, the institution or execution of which has been stayed by injunction or order, the time of the continuance of the injunction or order, the day on which it was issued or made, and the day on which it was withdrawn, shall be excluded.\n\n(2) In computing the period of limitation prescribed for any suit of which notice has been given in accordance with the requirements of any enactment for the time being in force, the period of such notice shall be excluded.\n\n Exclusion of time during which proceedings to set aside execution-sale are pending\n\nSection 16.\nIn computing the period of limitation prescribed for a suit for possession by a purchaser at a sale in execution of a decree, the time during which a proceeding to set aside the sale has been prosecuted shall be excluded.\n\n Effect of death before right to sue accrues\n\nSection 17.\n(1) Where a person, who would, if he were living, have a right to institute a suit or make an application, dies before the right accrues, the period of limitation shall be computed from the time when there is a legal representative of the deceased capable of instituting or making such suit or application.\n\n(2) Where person against whom, if he were living, a right to institute a suit or make an application would have accrued dies before the right accrues, the period of limitation shall be computed from the time when there is a legal representative of the deceased against whom the plaintiff may institute or make such suit or application.\n\n(3) Nothing in sub-sections (1) and (2) applied to suits to enforce rights of pre-emption or to suits for the possession of immoveable property or of an hereditary office.\n\n Effect of fraud\n\nSection 18.\nWhere any person having a right to institute a suit or make an application has, by means of fraud, been kept from the knowledge of such right or of the title on which it is founded,\n\nor where any document necessary to establish such right has been fraudulently concealed from him,\n\nthe time limited for instituting a suit or making an application-\n\n(a) against the person guilty of the fraud or accessory thereto, or\n\n(b) against any person claiming through him otherwise than in good faith and for a valuable consideration,\n\nshall be computed from the time when the fraud first became known to the person injuriously affected thereby, or, in the case of the concealed document, when he first had the means of producing it or compelling its production.\n\n Effect of acknowledgement in writing\n\nSection 19.\n(1) Where, before the expiration of the period prescribed for a suit or application in respect of any property or right, an acknowledgement of liability in respect of such property or right has been made in writing signed by the party against whom such property or right is claimed, or by some person through whom he derives title or liability, a fresh period of limitation shall be computed from the time when the acknowledgement was so signed.\n\n(2) Where the writing containing the acknowledgement is undated, oral evidence may be given of the time when it was signed; but, subject to the provisions of the Evidence Act, 1872, oral evidence of its contents shall not be received.\n\nExplanation I - For the purposes of this section an acknowledgement may be sufficient though it omits to specify the exact nature of the property or right, or avers that the time\n\nfor payment, delivery, performance or enjoyment has not yet come, or is accompanied by a refusal to pay, deliver, perform or permit to enjoy, or is coupled with a claim to a set-off, or is addressed to a person other than the person entitled to the property or right.\n\nExplanation II - For the purposes of this section, “signed” means signed either personally or by an agent duly authorized in this behalf.\n\nExplanation III - For the purposes of this section an application for the execution of a decree or order is an application respect of a right.\n\n Effect of payment on account of debt as of interest on legacy\n\nSection 20.\n(1) Where payment on account of a debt or of interest on a legacy is made before the expiration of the prescribed period by the person liable to pay the debt or legacy, or by his duly authorized agent, a fresh period of limitation shall be computed from the time when the payment was made:\n\nProvided that, save in the case of a payment of interest made before the 1st day of January, 1928, an acknowledgment of the payment appears in the handwriting of, or in a writing signed by the person making the payment.\n\n Agent of persons under disability\n\nSection 21.\n(1) The expression “agent duly authorised in his behalf,” in sections 19 and 20, shall, in the case of a person under disability, include his lawful guardian, committee or manager, or an agent duly authorised by such guardian, committee or manager to sign the acknowledgement or make the payment.\n\n(2) Nothing in the said sections renders one of several joint contractors, partners, executors or mortgagees chargeable by reason only of a written acknowledgment signed or of a payment made by, or by the agent of, any other or others of them.\n\n(3) For the purposes of the said sections-\n\n(a) an acknowledgment signed, or a payment made, in respect of any liability, by, or by the duly authorised agent of, any widow or other limited owner of property who is governed by the Hindu law, shall be a valid acknowledgment or payment, as the case may be, as against a reversioner succeeding to such liability; and\n\n(b) where a liability has been incurred by, or on behalf of, a Hindu undivided family as such, an acknowledgment or payment made by, or by the duly authorised agent of, the manager of the family for the time being shall be deemed to have been made on behalf of the whole family.\n\n Effect of substituting or adding new plaintiff or defendant",
+          "key_concepts": [
+            "S.12-25",
+            "তামাদির মেয়াদ গণনা",
+            "S.12, S.13, S.14, S.15, S.16, S.17, S.18, S.19, S.20, S.21",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.12: (1) In computing the period of limitation prescribed for any suit, appeal or application, the day from which such period is to be reckoned shall be excluded.",
+            "S.13: In computing the period of limitation prescribed for any suit, the time during which the defendant has been absent from Bangladesh and from the territories beyond Bangladesh under the administration of the 3 [Government] shall be excluded.",
+            "S.14: (1) In computing the period of limitation prescribed for any suit, the time during which the plantiff has been prosecuting with due diligence another civil proceeding, whether in a Court of first instance or in a Court of appeal, against the defendant, shall be excluded, where the proceeding is founded upon the same cause of action and is prosecuted in good faith in a Court which, from defect of jurisdiction, or other cause of a like nature, is unable to entertain it.",
+            "S.15: (1) In computing the period of limitation prescribed for any suit or application for the execution of a decree, the institution or execution of which has been stayed by injunction or order, the time of the continuance of the injunction or order, the day on which it was issued or made, and the day on which it was withdrawn, shall be excluded.",
+            "S.16: In computing the period of limitation prescribed for a suit for possession by a purchaser at a sale in execution of a decree, the time during which a proceeding to set aside the sale has been prosecuted shall be excluded.",
+            "S.17: (1) Where a person, who would, if he were living, have a right to institute a suit or make an application, dies before the right accrues, the period of limitation shall be computed from the time when there is a legal representative of the deceased capable of instituting or making such suit or application."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.12, S.13, S.14, S.15, S.16, S.17, S.18, S.19, S.20, S.21-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.12, S.13, S.14, S.15, S.16, S.17, S.18, S.19, S.20, S.21"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-06",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-06",
+      "topic_id": "T-LIM-06",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.13, 14, 15, 16",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Grounds of extension and exemption of the period of limitation",
+          "short_description": "Official bdlaws extract for S.13, 14, 15, 16 (Grounds of extension and exemption of the period of limitation). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.13 on bdlaws and map it to the syllabus topic \"Grounds of extension and exemption of the period of limitation\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Grounds of extension and exemption of the period of limitation (S.13, 14, 15, 16).\n\nSection 13.\nIn computing the period of limitation prescribed for any suit, the time during which the defendant has been absent from Bangladesh and from the territories beyond Bangladesh under the administration of the 3 [Government] shall be excluded.\n\n Exclusion of time of proceeding bona fide in Court without jurisdiction",
+          "key_concepts": [
+            "S.13, 14, 15, 16",
+            "Grounds of extension and exemption of the period of limitation",
+            "S.13",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.13: In computing the period of limitation prescribed for any suit, the time during which the defendant has been absent from Bangladesh and from the territories beyond Bangladesh under the administration of the 3 [Government] shall be excluded."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.13. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.13"
+          ]
+        },
+        "bn": {
+          "title": "তামাদির মেয়াদ বর্ধিতকরণ ও অব্যাহতির কারণ",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.13, 14, 15, 16 (তামাদির মেয়াদ বর্ধিতকরণ ও অব্যাহতির কারণ)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.13 পড়ে সিলেবাস টপিক \"তামাদির মেয়াদ বর্ধিতকরণ ও অব্যাহতির কারণ\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: তামাদির মেয়াদ বর্ধিতকরণ ও অব্যাহতির কারণ (S.13, 14, 15, 16)।\n\nSection 13.\nIn computing the period of limitation prescribed for any suit, the time during which the defendant has been absent from Bangladesh and from the territories beyond Bangladesh under the administration of the 3 [Government] shall be excluded.\n\n Exclusion of time of proceeding bona fide in Court without jurisdiction",
+          "key_concepts": [
+            "S.13, 14, 15, 16",
+            "তামাদির মেয়াদ বর্ধিতকরণ ও অব্যাহতির কারণ",
+            "S.13",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.13: In computing the period of limitation prescribed for any suit, the time during which the defendant has been absent from Bangladesh and from the territories beyond Bangladesh under the administration of the 3 [Government] shall be excluded."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.13-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.13"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-07",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-07",
+      "topic_id": "T-LIM-07",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.18, 19",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Effect of fraud and acknowledgement on limitation",
+          "short_description": "Official bdlaws extract for S.18, 19 (Effect of fraud and acknowledgement on limitation). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.18 on bdlaws and map it to the syllabus topic \"Effect of fraud and acknowledgement on limitation\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Effect of fraud and acknowledgement on limitation (S.18, 19).\n\nSection 18.\nWhere any person having a right to institute a suit or make an application has, by means of fraud, been kept from the knowledge of such right or of the title on which it is founded,\n\nor where any document necessary to establish such right has been fraudulently concealed from him,\n\nthe time limited for instituting a suit or making an application-\n\n(a) against the person guilty of the fraud or accessory thereto, or\n\n(b) against any person claiming through him otherwise than in good faith and for a valuable consideration,\n\nshall be computed from the time when the fraud first became known to the person injuriously affected thereby, or, in the case of the concealed document, when he first had the means of producing it or compelling its production.\n\n Effect of acknowledgement in writing",
+          "key_concepts": [
+            "S.18, 19",
+            "Effect of fraud and acknowledgement on limitation",
+            "S.18",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.18: Where any person having a right to institute a suit or make an application has, by means of fraud, been kept from the knowledge of such right or of the title on which it is founded,\n\nor where any document necessary to establish such right has been fraudulently concealed from him,\n\nthe time limited for instituting a suit or making an application-\n\n(a) against the person guilty of the fraud or accessory thereto, or\n\n(b) against any person claiming through him otherwise than in good faith and for a valuable consideration,\n\nshall be computed from the time when the fraud first became known to the person injuriously affected thereby, or, in the case of the concealed document, when he first had the means of producing it or compelling its production."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.18. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.18"
+          ]
+        },
+        "bn": {
+          "title": "প্রতারণা ও তামাদি স্বীকৃতির প্রভাব",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.18, 19 (প্রতারণা ও তামাদি স্বীকৃতির প্রভাব)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.18 পড়ে সিলেবাস টপিক \"প্রতারণা ও তামাদি স্বীকৃতির প্রভাব\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: প্রতারণা ও তামাদি স্বীকৃতির প্রভাব (S.18, 19)।\n\nSection 18.\nWhere any person having a right to institute a suit or make an application has, by means of fraud, been kept from the knowledge of such right or of the title on which it is founded,\n\nor where any document necessary to establish such right has been fraudulently concealed from him,\n\nthe time limited for instituting a suit or making an application-\n\n(a) against the person guilty of the fraud or accessory thereto, or\n\n(b) against any person claiming through him otherwise than in good faith and for a valuable consideration,\n\nshall be computed from the time when the fraud first became known to the person injuriously affected thereby, or, in the case of the concealed document, when he first had the means of producing it or compelling its production.\n\n Effect of acknowledgement in writing",
+          "key_concepts": [
+            "S.18, 19",
+            "প্রতারণা ও তামাদি স্বীকৃতির প্রভাব",
+            "S.18",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.18: Where any person having a right to institute a suit or make an application has, by means of fraud, been kept from the knowledge of such right or of the title on which it is founded,\n\nor where any document necessary to establish such right has been fraudulently concealed from him,\n\nthe time limited for instituting a suit or making an application-\n\n(a) against the person guilty of the fraud or accessory thereto, or\n\n(b) against any person claiming through him otherwise than in good faith and for a valuable consideration,\n\nshall be computed from the time when the fraud first became known to the person injuriously affected thereby, or, in the case of the concealed document, when he first had the means of producing it or compelling its production."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.18-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.18"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-08",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-08",
+      "topic_id": "T-LIM-08",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.20",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Effect of payment",
+          "short_description": "Official bdlaws extract for S.20 (Effect of payment). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.20 on bdlaws and map it to the syllabus topic \"Effect of payment\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Effect of payment (S.20).\n\nSection 20.\n(1) Where payment on account of a debt or of interest on a legacy is made before the expiration of the prescribed period by the person liable to pay the debt or legacy, or by his duly authorized agent, a fresh period of limitation shall be computed from the time when the payment was made:\n\nProvided that, save in the case of a payment of interest made before the 1st day of January, 1928, an acknowledgment of the payment appears in the handwriting of, or in a writing signed by the person making the payment.\n\n Agent of persons under disability",
+          "key_concepts": [
+            "S.20",
+            "Effect of payment",
+            "S.20",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.20: (1) Where payment on account of a debt or of interest on a legacy is made before the expiration of the prescribed period by the person liable to pay the debt or legacy, or by his duly authorized agent, a fresh period of limitation shall be computed from the time when the payment was made:\n\nProvided that, save in the case of a payment of interest made before the 1st day of January, 1928, an acknowledgment of the payment appears in the handwriting of, or in a writing signed by the person making the payment."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.20. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.20"
+          ]
+        },
+        "bn": {
+          "title": "প্রদানের প্রভাব",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.20 (প্রদানের প্রভাব)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.20 পড়ে সিলেবাস টপিক \"প্রদানের প্রভাব\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: প্রদানের প্রভাব (S.20)।\n\nSection 20.\n(1) Where payment on account of a debt or of interest on a legacy is made before the expiration of the prescribed period by the person liable to pay the debt or legacy, or by his duly authorized agent, a fresh period of limitation shall be computed from the time when the payment was made:\n\nProvided that, save in the case of a payment of interest made before the 1st day of January, 1928, an acknowledgment of the payment appears in the handwriting of, or in a writing signed by the person making the payment.\n\n Agent of persons under disability",
+          "key_concepts": [
+            "S.20",
+            "প্রদানের প্রভাব",
+            "S.20",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.20: (1) Where payment on account of a debt or of interest on a legacy is made before the expiration of the prescribed period by the person liable to pay the debt or legacy, or by his duly authorized agent, a fresh period of limitation shall be computed from the time when the payment was made:\n\nProvided that, save in the case of a payment of interest made before the 1st day of January, 1928, an acknowledgment of the payment appears in the handwriting of, or in a writing signed by the person making the payment."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.20-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.20"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-09",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-09",
+      "topic_id": "T-LIM-09",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.21-24",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Exclusion of time in legal proceedings",
+          "short_description": "Official bdlaws extract for S.21-24 (Exclusion of time in legal proceedings). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.21, S.22, S.23, S.24 on bdlaws and map it to the syllabus topic \"Exclusion of time in legal proceedings\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Exclusion of time in legal proceedings (S.21-24).\n\nSection 21.\n(1) The expression “agent duly authorised in his behalf,” in sections 19 and 20, shall, in the case of a person under disability, include his lawful guardian, committee or manager, or an agent duly authorised by such guardian, committee or manager to sign the acknowledgement or make the payment.\n\n(2) Nothing in the said sections renders one of several joint contractors, partners, executors or mortgagees chargeable by reason only of a written acknowledgment signed or of a payment made by, or by the agent of, any other or others of them.\n\n(3) For the purposes of the said sections-\n\n(a) an acknowledgment signed, or a payment made, in respect of any liability, by, or by the duly authorised agent of, any widow or other limited owner of property who is governed by the Hindu law, shall be a valid acknowledgment or payment, as the case may be, as against a reversioner succeeding to such liability; and\n\n(b) where a liability has been incurred by, or on behalf of, a Hindu undivided family as such, an acknowledgment or payment made by, or by the duly authorised agent of, the manager of the family for the time being shall be deemed to have been made on behalf of the whole family.\n\n Effect of substituting or adding new plaintiff or defendant\n\nSection 22.\n(1) Where, after the institution of a suit, a new plaintiff or defendant is substituted or added, the suit shall, as regards him, be deemed to have been instituted when he was so made a party.\n\n(2) Nothing in sub-section (1) shall apply to a case where a party is added or substituted owing to an assignment or devolution of any interest during the pendency of a suit or where a plaintiff is made a defendant or a defendant is made a plaintiff.\n\n Continuing breaches and wrongs\n\nSection 23.\nIn the case of a continuing breach of contract and in the case of a continuing wrong independent of contract, a fresh period of limitation begins to run at every moment of the time during which the breach or the wrong, as the case may be, continues.\n\nSection 24.\nIn the case of a suit for compensation for an act which does not give rise to a cause of action unless some specific injury actually results therefrom, the period of limitation shall be computed from the time when the injury results.\n\nA owns the surface of a field. B owns the subsoil. B digs coal thereout without causing any immediate apparent injury to the surface, but at last the surface subsides. The period of limitation in the case of a suit by A against B runs from the time of the subsidence.\n\n Computation of time mentioned in instruments",
+          "key_concepts": [
+            "S.21-24",
+            "Exclusion of time in legal proceedings",
+            "S.21, S.22, S.23, S.24",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.21: (1) The expression “agent duly authorised in his behalf,” in sections 19 and 20, shall, in the case of a person under disability, include his lawful guardian, committee or manager, or an agent duly authorised by such guardian, committee or manager to sign the acknowledgement or make the payment.",
+            "S.22: (1) Where, after the institution of a suit, a new plaintiff or defendant is substituted or added, the suit shall, as regards him, be deemed to have been instituted when he was so made a party.",
+            "S.23: In the case of a continuing breach of contract and in the case of a continuing wrong independent of contract, a fresh period of limitation begins to run at every moment of the time during which the breach or the wrong, as the case may be, continues.",
+            "S.24: In the case of a suit for compensation for an act which does not give rise to a cause of action unless some specific injury actually results therefrom, the period of limitation shall be computed from the time when the injury results."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.21, S.22, S.23, S.24. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.21, S.22, S.23, S.24"
+          ]
+        },
+        "bn": {
+          "title": "আইনি কার্যধারায় সময় বাদ দেওয়া",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.21-24 (আইনি কার্যধারায় সময় বাদ দেওয়া)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.21, S.22, S.23, S.24 পড়ে সিলেবাস টপিক \"আইনি কার্যধারায় সময় বাদ দেওয়া\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: আইনি কার্যধারায় সময় বাদ দেওয়া (S.21-24)।\n\nSection 21.\n(1) The expression “agent duly authorised in his behalf,” in sections 19 and 20, shall, in the case of a person under disability, include his lawful guardian, committee or manager, or an agent duly authorised by such guardian, committee or manager to sign the acknowledgement or make the payment.\n\n(2) Nothing in the said sections renders one of several joint contractors, partners, executors or mortgagees chargeable by reason only of a written acknowledgment signed or of a payment made by, or by the agent of, any other or others of them.\n\n(3) For the purposes of the said sections-\n\n(a) an acknowledgment signed, or a payment made, in respect of any liability, by, or by the duly authorised agent of, any widow or other limited owner of property who is governed by the Hindu law, shall be a valid acknowledgment or payment, as the case may be, as against a reversioner succeeding to such liability; and\n\n(b) where a liability has been incurred by, or on behalf of, a Hindu undivided family as such, an acknowledgment or payment made by, or by the duly authorised agent of, the manager of the family for the time being shall be deemed to have been made on behalf of the whole family.\n\n Effect of substituting or adding new plaintiff or defendant\n\nSection 22.\n(1) Where, after the institution of a suit, a new plaintiff or defendant is substituted or added, the suit shall, as regards him, be deemed to have been instituted when he was so made a party.\n\n(2) Nothing in sub-section (1) shall apply to a case where a party is added or substituted owing to an assignment or devolution of any interest during the pendency of a suit or where a plaintiff is made a defendant or a defendant is made a plaintiff.\n\n Continuing breaches and wrongs\n\nSection 23.\nIn the case of a continuing breach of contract and in the case of a continuing wrong independent of contract, a fresh period of limitation begins to run at every moment of the time during which the breach or the wrong, as the case may be, continues.\n\nSection 24.\nIn the case of a suit for compensation for an act which does not give rise to a cause of action unless some specific injury actually results therefrom, the period of limitation shall be computed from the time when the injury results.\n\nA owns the surface of a field. B owns the subsoil. B digs coal thereout without causing any immediate apparent injury to the surface, but at last the surface subsides. The period of limitation in the case of a suit by A against B runs from the time of the subsidence.\n\n Computation of time mentioned in instruments",
+          "key_concepts": [
+            "S.21-24",
+            "আইনি কার্যধারায় সময় বাদ দেওয়া",
+            "S.21, S.22, S.23, S.24",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.21: (1) The expression “agent duly authorised in his behalf,” in sections 19 and 20, shall, in the case of a person under disability, include his lawful guardian, committee or manager, or an agent duly authorised by such guardian, committee or manager to sign the acknowledgement or make the payment.",
+            "S.22: (1) Where, after the institution of a suit, a new plaintiff or defendant is substituted or added, the suit shall, as regards him, be deemed to have been instituted when he was so made a party.",
+            "S.23: In the case of a continuing breach of contract and in the case of a continuing wrong independent of contract, a fresh period of limitation begins to run at every moment of the time during which the breach or the wrong, as the case may be, continues.",
+            "S.24: In the case of a suit for compensation for an act which does not give rise to a cause of action unless some specific injury actually results therefrom, the period of limitation shall be computed from the time when the injury results."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.21, S.22, S.23, S.24-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.21, S.22, S.23, S.24"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-10",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-10",
+      "topic_id": "T-LIM-10",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.23",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Continuing breaches and wrongs",
+          "short_description": "Official bdlaws extract for S.23 (Continuing breaches and wrongs). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.23 on bdlaws and map it to the syllabus topic \"Continuing breaches and wrongs\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Continuing breaches and wrongs (S.23).\n\nSection 23.\nIn the case of a continuing breach of contract and in the case of a continuing wrong independent of contract, a fresh period of limitation begins to run at every moment of the time during which the breach or the wrong, as the case may be, continues.",
+          "key_concepts": [
+            "S.23",
+            "Continuing breaches and wrongs",
+            "S.23",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.23: In the case of a continuing breach of contract and in the case of a continuing wrong independent of contract, a fresh period of limitation begins to run at every moment of the time during which the breach or the wrong, as the case may be, continues."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.23. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.23"
+          ]
+        },
+        "bn": {
+          "title": "অব্যাহত লঙ্ঘন ও অন্যায়",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.23 (অব্যাহত লঙ্ঘন ও অন্যায়)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.23 পড়ে সিলেবাস টপিক \"অব্যাহত লঙ্ঘন ও অন্যায়\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: অব্যাহত লঙ্ঘন ও অন্যায় (S.23)।\n\nSection 23.\nIn the case of a continuing breach of contract and in the case of a continuing wrong independent of contract, a fresh period of limitation begins to run at every moment of the time during which the breach or the wrong, as the case may be, continues.",
+          "key_concepts": [
+            "S.23",
+            "অব্যাহত লঙ্ঘন ও অন্যায়",
+            "S.23",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.23: In the case of a continuing breach of contract and in the case of a continuing wrong independent of contract, a fresh period of limitation begins to run at every moment of the time during which the breach or the wrong, as the case may be, continues."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.23-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.23"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-11",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-11",
+      "topic_id": "T-LIM-11",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.26",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Acquisition of right to easements",
+          "short_description": "Official bdlaws extract for S.26 (Acquisition of right to easements). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.26 on bdlaws and map it to the syllabus topic \"Acquisition of right to easements\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Acquisition of right to easements (S.26).\n\nSection 26.\n(1) Where the access and use of light or air to and for any building have been peaceably enjoyed therewith as an easement, and as of right, without interruption, and for twenty years,\n\nand where any way or watercourse, or the use of any water, or any other easement (whether affirmative or negative) has been peaceably and openly enjoyed by any person claiming title thereto as an easement and as of right without interruption, and for twenty years,\n\nthe right to such access and use of light or air, way, water-course, use of water, or other easement shall be absolute and indefeasible.\n\nEach of the said periods of twenty years shall be taken to be a period ending within two years next before the institution of the suit wherein the claim to which such period relates is contested.\n\n(2) Where the property over which a right is claimed under sub-section (1) belongs to the Government, that sub-section shall be read as if for the words “twenty years” the words “sixty years” were substituted.\n\nExplanation - Nothing is an interruption within the meaning of this section, unless where there is an actual discontinuance of the possession or enjoyment by reason of an obstruction by the act of some person other than the claimant, and unless such obstruction is submitted to or acquiesced in for one year after the claimant has notice thereof and of the person making or authorising the same to be made.\n\nIllustrations\n\n(a) A suit is brought in 1911 for obstructing a right of way. The defendant admits the obstruction, but denies the right of way. The plaintiff proves that the right was peaceably and openly enjoyed by him, claiming title thereto as an easement and as of right, without interruption from 1st January, 1890 to 1st January, 1910. The plaintiff is entitled to judgment.\n\n(b) In a like suit the plaintiff shows that the right was peaceably and openly enjoyed by him for twenty years. The defendant proves that the plaintiff, on one occasion during the twenty years, had asked his leave to enjoy the right. The suit shall be dismissed.\n\n Exclusion in favour of reversioner of servient tenement.",
+          "key_concepts": [
+            "S.26",
+            "Acquisition of right to easements",
+            "S.26",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.26: (1) Where the access and use of light or air to and for any building have been peaceably enjoyed therewith as an easement, and as of right, without interruption, and for twenty years,\n\nand where any way or watercourse, or the use of any water, or any other easement (whether affirmative or negative) has been peaceably and openly enjoyed by any person claiming title thereto as an easement and as of right without interruption, and for twenty years,\n\nthe right to such access and use of light or air, way, water-course, use of water, or other easement shall be absolute and indefeasible."
+          ],
+          "examples": [
+            "(a) A suit is brought in 1911 for obstructing a right of way. The defendant admits the obstruction, but denies the right of way. The plaintiff proves that the right was peaceably and openly enjoyed by him, claiming title thereto as an easement and as of right, without interruption from 1st January, 1890 to 1st January, 1910. The plaintiff is entitled to judgment.",
+            "(b) In a like suit the plaintiff shows that the right was peaceably and openly enjoyed by him for twenty years. The defendant proves that the plaintiff, on one occasion during the twenty years, had asked his leave to enjoy the right. The suit shall be dismissed.\n\n Exclusion in favour of reversioner of servient tenement."
+          ],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.26. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.26"
+          ]
+        },
+        "bn": {
+          "title": "সহজাধিকার (ইজমেন্ট) অর্জনের অধিকার",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.26 (সহজাধিকার (ইজমেন্ট) অর্জনের অধিকার)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.26 পড়ে সিলেবাস টপিক \"সহজাধিকার (ইজমেন্ট) অর্জনের অধিকার\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: সহজাধিকার (ইজমেন্ট) অর্জনের অধিকার (S.26)।\n\nSection 26.\n(1) Where the access and use of light or air to and for any building have been peaceably enjoyed therewith as an easement, and as of right, without interruption, and for twenty years,\n\nand where any way or watercourse, or the use of any water, or any other easement (whether affirmative or negative) has been peaceably and openly enjoyed by any person claiming title thereto as an easement and as of right without interruption, and for twenty years,\n\nthe right to such access and use of light or air, way, water-course, use of water, or other easement shall be absolute and indefeasible.\n\nEach of the said periods of twenty years shall be taken to be a period ending within two years next before the institution of the suit wherein the claim to which such period relates is contested.\n\n(2) Where the property over which a right is claimed under sub-section (1) belongs to the Government, that sub-section shall be read as if for the words “twenty years” the words “sixty years” were substituted.\n\nExplanation - Nothing is an interruption within the meaning of this section, unless where there is an actual discontinuance of the possession or enjoyment by reason of an obstruction by the act of some person other than the claimant, and unless such obstruction is submitted to or acquiesced in for one year after the claimant has notice thereof and of the person making or authorising the same to be made.\n\nIllustrations\n\n(a) A suit is brought in 1911 for obstructing a right of way. The defendant admits the obstruction, but denies the right of way. The plaintiff proves that the right was peaceably and openly enjoyed by him, claiming title thereto as an easement and as of right, without interruption from 1st January, 1890 to 1st January, 1910. The plaintiff is entitled to judgment.\n\n(b) In a like suit the plaintiff shows that the right was peaceably and openly enjoyed by him for twenty years. The defendant proves that the plaintiff, on one occasion during the twenty years, had asked his leave to enjoy the right. The suit shall be dismissed.\n\n Exclusion in favour of reversioner of servient tenement.",
+          "key_concepts": [
+            "S.26",
+            "সহজাধিকার (ইজমেন্ট) অর্জনের অধিকার",
+            "S.26",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.26: (1) Where the access and use of light or air to and for any building have been peaceably enjoyed therewith as an easement, and as of right, without interruption, and for twenty years,\n\nand where any way or watercourse, or the use of any water, or any other easement (whether affirmative or negative) has been peaceably and openly enjoyed by any person claiming title thereto as an easement and as of right without interruption, and for twenty years,\n\nthe right to such access and use of light or air, way, water-course, use of water, or other easement shall be absolute and indefeasible."
+          ],
+          "examples": [
+            "(a) A suit is brought in 1911 for obstructing a right of way. The defendant admits the obstruction, but denies the right of way. The plaintiff proves that the right was peaceably and openly enjoyed by him, claiming title thereto as an easement and as of right, without interruption from 1st January, 1890 to 1st January, 1910. The plaintiff is entitled to judgment.",
+            "(b) In a like suit the plaintiff shows that the right was peaceably and openly enjoyed by him for twenty years. The defendant proves that the plaintiff, on one occasion during the twenty years, had asked his leave to enjoy the right. The suit shall be dismissed.\n\n Exclusion in favour of reversioner of servient tenement."
+          ],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.26-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.26"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "BC-OFFICIAL-T-LIM-12",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-OFFICIAL-T-LIM-12",
+      "topic_id": "T-LIM-12",
+      "module_id": "BC-MOD-LIMITATION",
+      "status": "PENDING_REVIEW",
+      "verification_status": "OFFICIAL_FETCHED_PENDING_LAWYER",
+      "verification_note": "Verbatim/near-verbatim English from bdlaws.minlaw.gov.bd HTML retrieved 2026-09-14. Bangla statute text was not invented. No MCQ. Lawyer review still required.",
+      "is_shell": false,
+      "official_url": "https://bdlaws.minlaw.gov.bd/act-details-88.html",
+      "section_or_order": "S.28",
+      "official_fetched_at": "2026-09-14",
+      "cited_interactive": true,
+      "language_versions": {
+        "en": {
+          "title": "Adverse possession",
+          "short_description": "Official bdlaws extract for S.28 (Adverse possession). Retrieved 2026-09-14. Not lawyer-verified.",
+          "learning_objective": "Read the official wording of S.28 on bdlaws and map it to the syllabus topic \"Adverse possession\". This card quotes the Act; it is not commentary and is not verified.",
+          "explanation": "Official English from https://bdlaws.minlaw.gov.bd/act-details-88.html (retrieved 2026-09-14). Not lawyer-verified. Not a substitute for the full Act (orders, schedules, and omitted subsections may be missing from this HTML).\n\nSyllabus: Adverse possession (S.28).\n\nSection 28.\nAt the determination of the period hereby limited to any person for instituting a suit for possession of any property, his right to such property shall be extinguished.\n\n Part V\n\n [Repealed]\n\n 30-31. [Repealed by section 3 and Schedule of the Repealing and Amending Act, 1930 (Act No. VIII of 1930).]",
+          "key_concepts": [
+            "S.28",
+            "Adverse possession",
+            "S.28",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.28: At the determination of the period hereby limited to any person for instituting a suit for possession of any property, his right to such property shall be extinguished."
+          ],
+          "examples": [],
+          "exam_focus": "Before practice, open https://bdlaws.minlaw.gov.bd/act-details-88.html and note the ingredients of S.28. No invented MCQ keys here.",
+          "common_traps": [
+            "Treating this official extract as a verified commentary lesson.",
+            "Assuming Orders / First Schedule / omitted clauses are in this HTML extract."
+          ],
+          "key_takeaways": [
+            "Official page: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "Quoted: S.28"
+          ]
+        },
+        "bn": {
+          "title": "বৈরী দখল",
+          "short_description": "অফিসিয়াল bdlaws উদ্ধৃতি — S.28 (বৈরী দখল)। সংগ্রহ 2026-09-14। আইনজীবী যাচাই হয়নি।",
+          "learning_objective": "bdlaws-এ S.28 পড়ে সিলেবাস টপিক \"বৈরী দখল\"-এর সাথে মিলান। এই কার্ড আইনের উদ্ধৃতি; ভাষ্য নয়; যাচাইকৃত নয়।",
+          "explanation": "অফিসিয়াল ইংরেজি পাঠ https://bdlaws.minlaw.gov.bd/act-details-88.html (সংগ্রহ 2026-09-14)। বাংলা পূর্ণ পাঠ একই অফিসিয়াল সাইটে। এখানে বাংলা ধারা অনুবাদ উদ্ভাবন করা হয়নি। আইনজীবী যাচাই হয়নি। আদেশ/তফসিল এই HTML-এ নাও থাকতে পারে।\n\nসিলেবাস: বৈরী দখল (S.28)।\n\nSection 28.\nAt the determination of the period hereby limited to any person for instituting a suit for possession of any property, his right to such property shall be extinguished.\n\n Part V\n\n [Repealed]\n\n 30-31. [Repealed by section 3 and Schedule of the Repealing and Amending Act, 1930 (Act No. VIII of 1930).]",
+          "key_concepts": [
+            "S.28",
+            "বৈরী দখল",
+            "S.28",
+            "bdlaws.minlaw.gov.bd"
+          ],
+          "important_rules": [
+            "S.28: At the determination of the period hereby limited to any person for instituting a suit for possession of any property, his right to such property shall be extinguished."
+          ],
+          "examples": [],
+          "exam_focus": "পরীক্ষার আগে https://bdlaws.minlaw.gov.bd/act-details-88.html খুলে S.28-এর উপাদান নোট করুন। নকল MCQ/উত্তর এখানে নেই।",
+          "common_traps": [
+            "এই অফিসিয়াল উদ্ধৃতিকে verified ভাষ্য ভাবা।",
+            "আদেশ/প্রথম তফসিল এই HTML উদ্ধৃতিতে আছে বলে ধরে নেওয়া।"
+          ],
+          "key_takeaways": [
+            "অফিসিয়াল পাতা: https://bdlaws.minlaw.gov.bd/act-details-88.html",
+            "উদ্ধৃত: S.28"
+          ]
+        }
+      }
+    }
+  ]
+}

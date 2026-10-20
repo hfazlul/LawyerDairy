@@ -1,0 +1,263 @@
+{
+  "batch_id": "BATCH-2026-08-018-CPC-REVIEW",
+  "schema_version": "1.0",
+  "content_version": "2026.08.8",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "First topic in a fourth depth round for CPC/CrPC/Penal Code. Covers CPC Review (T-CPC-14, Section 114), deliberately chosen to complete a coherent trilogy with the Appeal (batch 009) and Revision (batch 012) lessons already in this dataset -- Review, Appeal, and Revision are the three classical post-decree remedies, and having all three cross-reference each other lets a learner see how they fit together rather than encountering each in isolation.",
+  "asset_count": 6,
+  "assets": [
+    {
+      "content_id": "BC-CPC-REVIEW-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-CPC-REVIEW-001",
+      "topic_id": "T-CPC-14",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 114's full operative text was fetched as VERBATIM text directly from bdlaws.minlaw.gov.bd during this session. The specific GROUNDS for review (discovery of new evidence, error apparent on the face of the record, or other sufficient reason) sit in Order XLVII, Rule 1 -- part of the CPC's First Schedule, which this dataset has repeatedly found harder to access directly than Section-numbered provisions (the same access pattern noted for CPC injunctions in the Specific Relief Act batch). This lesson describes those grounds at a general, well-established level without claiming a verbatim-verified read of Order XLVII Rule 1's exact text in this pass -- flagged accordingly. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 25,
+      "prerequisite_ids": ["T-CPC-12", "T-CPC-15"],
+      "related_lesson_ids": ["BC-CPC-APPEAL-001", "BC-CPC-REVISION-001"],
+      "related_question_ids": ["BC-MCQ-CPC-REVIEW-001", "BC-MCQ-CPC-REVIEW-002", "BC-MCQ-CPC-REVIEW-003", "BC-MCQ-CPC-REVIEW-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-CPC-S114"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-CPC-S114"],
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "language_versions": {
+        "en": {
+          "title": "Review (and how it differs from Appeal and Revision)",
+          "short_description": "Review asks the same court that decided a matter to look at it again -- and, unusually, it is available even where an appeal WAS technically open to the aggrieved person but simply was never filed, a threshold noticeably more generous than Revision's strict bar.",
+          "learning_objective": "By the end of this lesson you should be able to: state the three categories of person Section 114 allows to apply for review; explain why Section 114's threshold is more generous than Section 115's; and place Review correctly alongside Appeal and Revision as three distinct routes with three distinct thresholds.",
+          "explanation": "Section 114 allows any person who considers themselves aggrieved to apply for a review of judgment to the very court which passed the decree or made the order -- unlike Appeal and Revision, which both involve a different, superior court looking at the matter. Three categories of aggrieved person may apply: (a) someone aggrieved by a decree or order from which an appeal IS allowed under the Code, but from which no appeal has actually been preferred; (b) someone aggrieved by a decree or order from which NO appeal is allowed under the Code at all; or (c) someone aggrieved by a decision on a reference from a Court of Small Causes. Once such an application is properly made, the court may make such order on it as it thinks fit.\n\nThe most important comparative point is in category (a): Review is available even where an appeal was technically open to the aggrieved person but was simply never filed. This is a materially more generous threshold than the current Section 115 test for Revision, which (as covered in the Revision lesson) requires that no appeal LIES at all -- Revision is closed off the moment an appeal was available, regardless of whether it was actually used, whereas Review's first category specifically contemplates the appeal route having been available and simply not taken.\n\nThe specific grounds on which a review will actually be granted -- as opposed to who may apply for one -- sit in Order XLVII, Rule 1 of the CPC's First Schedule, and are conventionally understood to include: discovery of new and important evidence which, after the exercise of due diligence, was not within the applicant's knowledge or could not be produced at the time the decree or order was made; a mistake or error apparent on the face of the record; or any other sufficient reason. Review is therefore not a second bite at re-arguing a case on its original merits -- it targets a specific, narrow category of defect the original court itself can readily recognise and correct.",
+          "key_concepts": ["Review is decided by the SAME court that made the original decision, unlike Appeal or Revision", "Three categories of applicant under S.114(a)-(c)", "Category (a)'s generous threshold: available even if an appeal was possible but never filed", "Contrast with Revision's stricter 'no appeal lies at all' threshold", "The actual grounds for review sit in Order XLVII, Rule 1, not Section 114 itself"],
+          "important_rules": [
+            "S.114(a): review available to someone aggrieved by a decree/order from which an appeal is allowed, but from which no appeal was actually preferred.",
+            "S.114(b): review available to someone aggrieved by a decree/order from which no appeal is allowed at all.",
+            "S.114(c): review available to someone aggrieved by a decision on a reference from a Court of Small Causes.",
+            "Review is heard by the same court that passed the original decree or order -- not a superior court, unlike Appeal and Revision."
+          ],
+          "definitions": [
+            { "term": "Review", "definition": "A request to the same court that decided a matter to reconsider its own decree or order, available under Section 114 to three categories of aggrieved person, on grounds conventionally understood (via Order XLVII, Rule 1) to include new evidence, an error apparent on the face of the record, or other sufficient reason." },
+            { "term": "Error apparent on the face of the record", "definition": "A mistake obvious from the record itself without need for extended argument or fresh evidence -- one of the conventional grounds for review, distinguishing it from a full re-argument of the original case." }
+          ],
+          "examples": [
+            "A decree is passed against A, and an appeal was technically available to A, but A's lawyer simply let the appeal period lapse without filing one. A may still apply for review under Section 114(a), because that category specifically covers decrees from which an appeal was allowed but none was preferred -- contrast this with Revision, which A could not use here since an appeal did lie.",
+            "After a decree is passed, A discovers, despite having exercised due diligence beforehand, genuinely new evidence that existed at the time of the decree but could not then have been found or produced. This is the kind of fact pattern the conventional review grounds in Order XLVII, Rule 1 are aimed at."
+          ],
+          "exam_focus": "Examiners like to test whether candidates can place Review, Appeal, and Revision correctly against each other -- especially the generous 'appeal was available but not filed' threshold unique to Review's first category, which is easy to confuse with Revision's much stricter bar.",
+          "common_traps": [
+            "Assuming Review, like Appeal and Revision, is heard by a different, superior court -- it is heard by the same court that made the original decision.",
+            "Confusing Review's generous 'appeal available but not filed' threshold with Revision's much stricter 'no appeal lies at all' threshold -- they are not the same test.",
+            "Treating review as a general opportunity to re-argue the merits -- the conventional grounds (new evidence, error apparent on the face of the record, other sufficient reason) are narrower than that."
+          ],
+          "quick_revision": [
+            "S.114 = same court reconsiders its own decision (unlike Appeal/Revision -> different, superior court).",
+            "(a) appeal was allowed but not filed -> review OK. (b) no appeal allowed at all -> review OK. (c) Small Cause Court reference decision -> review OK.",
+            "Review's (a) threshold is MORE GENEROUS than Revision's -- 'not filed' still qualifies for review, but blocks revision.",
+            "Actual grounds (new evidence / error on face of record / other sufficient reason) live in Order XLVII r.1, not S.114 itself."
+          ],
+          "key_takeaways": [
+            "Review, Appeal, and Revision are three genuinely distinct remedies with three distinct thresholds -- know which court hears each, and exactly when each becomes available.",
+            "Review's defining feature is that the SAME court gets a narrow, defined opportunity to correct its own clear mistakes -- it is not a re-run of the original trial.",
+            "The 'appeal available but not filed' category is the single most distinguishing, most testable feature of Review compared to its two counterparts."
+          ]
+        },
+        "bn": {
+          "title": "রিভিউ (এবং এটি আপিল ও রিভিশন থেকে কীভাবে ভিন্ন)",
+          "short_description": "রিভিউ যে আদালত কোনো বিষয়ে সিদ্ধান্ত দিয়েছে তাকেই তা পুনরায় বিবেচনা করতে বলে -- এবং, অস্বাভাবিকভাবে, এটি এমনকি তখনও পাওয়া যায় যখন ক্ষতিগ্রস্ত ব্যক্তির জন্য প্রযুক্তিগতভাবে একটি আপিল উন্মুক্ত ছিল কিন্তু কখনো দায়ের করা হয়নি, যা রিভিশনের কঠোর বাধার চেয়ে লক্ষণীয়ভাবে অধিক উদার একটি প্রান্তিক শর্ত।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ১১৪ কোন তিনটি শ্রেণির ব্যক্তিকে রিভিউর আবেদনের অনুমতি দেয় তা বলতে পারবেন; কেন ধারা ১১৪-এর প্রান্তিক শর্ত ধারা ১১৫-এর চেয়ে অধিক উদার তা ব্যাখ্যা করতে পারবেন; এবং রিভিউকে আপিল ও রিভিশনের পাশাপাশি তিনটি ভিন্ন প্রান্তিক শর্তসহ তিনটি ভিন্ন পথ হিসেবে সঠিকভাবে স্থাপন করতে পারবেন।",
+          "explanation": "ধারা ১১৪ নিজেকে ক্ষতিগ্রস্ত মনে করেন এমন যেকোনো ব্যক্তিকে যে আদালত ডিক্রি পাস করেছে বা আদেশ দিয়েছে ঠিক সেই আদালতে রায়ের রিভিউর আবেদন করার অনুমতি দেয় -- আপিল ও রিভিশনের বিপরীতে, যেখানে উভয়ই একটি ভিন্ন, উচ্চতর আদালত বিষয়টি দেখে। তিন শ্রেণির ক্ষতিগ্রস্ত ব্যক্তি আবেদন করতে পারেন: (ক) এমন একটি ডিক্রি বা আদেশে ক্ষতিগ্রস্ত কেউ যেখান থেকে বিধি অনুযায়ী আপিল অনুমোদিত, কিন্তু যা থেকে প্রকৃতপক্ষে কোনো আপিল করা হয়নি; (খ) এমন একটি ডিক্রি বা আদেশে ক্ষতিগ্রস্ত কেউ যেখান থেকে বিধি অনুযায়ী আদৌ কোনো আপিল অনুমোদিত নয়; অথবা (গ) ক্ষুদ্র মামলা আদালত থেকে একটি রেফারেন্সের উপর একটি সিদ্ধান্তে ক্ষতিগ্রস্ত কেউ। একবার এমন একটি আবেদন সঠিকভাবে করা হলে, আদালত তার উপর যা উপযুক্ত মনে করে সেই আদেশ দিতে পারে।\n\nসবচেয়ে গুরুত্বপূর্ণ তুলনামূলক বিষয়টি রয়েছে শ্রেণি (ক)-এ: রিভিউ এমনকি তখনও পাওয়া যায় যখন ক্ষতিগ্রস্ত ব্যক্তির জন্য প্রযুক্তিগতভাবে একটি আপিল উন্মুক্ত ছিল কিন্তু কখনো দায়ের করা হয়নি। এটি বর্তমান ধারা ১১৫ পরীক্ষার (রিভিশন পাঠে আলোচিত) চেয়ে বস্তুগতভাবে অধিক উদার একটি প্রান্তিক শর্ত, যার জন্য প্রয়োজন যে কোনো আপিলই না থাকা -- রিভিশন সেই মুহূর্তেই বন্ধ হয়ে যায় যখন একটি আপিল উপলব্ধ ছিল, তা প্রকৃতপক্ষে ব্যবহার করা হয়েছিল কিনা তা নির্বিশেষে, যেখানে রিভিউর প্রথম শ্রেণি সুনির্দিষ্টভাবে আপিলের পথ উপলব্ধ থাকা ও কেবল না নেওয়া বিবেচনা করে।\n\nরিভিউ প্রকৃতপক্ষে যে নির্দিষ্ট ভিত্তিতে মঞ্জুর হবে -- কে আবেদন করতে পারেন তার বিপরীতে -- তা দেওয়ানি কার্যবিধির প্রথম তফসিলের অর্ডার XLVII, বিধি ১-এ রয়েছে, এবং প্রচলিতভাবে বোঝা যায় যে এতে অন্তর্ভুক্ত: নতুন ও গুরুত্বপূর্ণ প্রমাণের আবিষ্কার যা, যথাযথ পরিশ্রমের পরও, আবেদনকারীর জ্ঞানে ছিল না বা ডিক্রি বা আদেশ প্রদানের সময় উপস্থাপন করা যায়নি; রেকর্ডের মুখে স্পষ্ট একটি ভুল বা ত্রুটি; অথবা অন্য কোনো পর্যাপ্ত কারণ। তাই রিভিউ মূল গুণাগুণে মামলাটি পুনরায় তর্ক করার দ্বিতীয় সুযোগ নয় -- এটি একটি নির্দিষ্ট, সংকীর্ণ শ্রেণির ত্রুটি লক্ষ্য করে যা মূল আদালত নিজেই সহজে চিনতে ও সংশোধন করতে পারে।",
+          "key_concepts": ["রিভিউ একই আদালত দ্বারা সিদ্ধান্ত হয় যা মূল সিদ্ধান্ত দিয়েছে, আপিল বা রিভিশনের বিপরীতে", "ধারা ১১৪(ক)-(গ)-এর অধীনে আবেদনকারীর তিনটি শ্রেণি", "শ্রেণি (ক)-এর উদার প্রান্তিক শর্ত: আপিল সম্ভব ছিল কিন্তু কখনো দায়ের না হলেও উপলব্ধ", "রিভিশনের কঠোর 'আদৌ কোনো আপিল নেই' প্রান্তিক শর্তের সাথে বৈসাদৃশ্য", "রিভিউর প্রকৃত ভিত্তি অর্ডার XLVII, বিধি ১-এ রয়েছে, ধারা ১১৪ নিজে নয়"],
+          "important_rules": [
+            "ধারা ১১৪(ক): এমন একটি ডিক্রি/আদেশে ক্ষতিগ্রস্ত কারও জন্য রিভিউ উপলব্ধ যেখান থেকে আপিল অনুমোদিত, কিন্তু প্রকৃতপক্ষে কোনো আপিল করা হয়নি।",
+            "ধারা ১১৪(খ): এমন একটি ডিক্রি/আদেশে ক্ষতিগ্রস্ত কারও জন্য রিভিউ উপলব্ধ যেখান থেকে আদৌ কোনো আপিল অনুমোদিত নয়।",
+            "ধারা ১১৪(গ): ক্ষুদ্র মামলা আদালত থেকে একটি রেফারেন্সের উপর একটি সিদ্ধান্তে ক্ষতিগ্রস্ত কারও জন্য রিভিউ উপলব্ধ।",
+            "রিভিউ মূল ডিক্রি বা আদেশ পাসকারী একই আদালত দ্বারা শুনানি হয় -- আপিল ও রিভিশনের বিপরীতে কোনো উচ্চতর আদালত নয়।"
+          ],
+          "definitions": [
+            { "term": "রিভিউ", "definition": "কোনো বিষয়ে সিদ্ধান্তদাতা একই আদালতের কাছে তার নিজস্ব ডিক্রি বা আদেশ পুনর্বিবেচনার অনুরোধ, ধারা ১১৪-এর অধীনে তিন শ্রেণির ক্ষতিগ্রস্ত ব্যক্তির জন্য উপলব্ধ, প্রচলিতভাবে বোঝা ভিত্তিতে (অর্ডার XLVII, বিধি ১ এর মাধ্যমে) যাতে নতুন প্রমাণ, রেকর্ডের মুখে স্পষ্ট একটি ত্রুটি, বা অন্য পর্যাপ্ত কারণ অন্তর্ভুক্ত।" },
+            { "term": "রেকর্ডের মুখে স্পষ্ট ত্রুটি", "definition": "রেকর্ড থেকেই স্পষ্ট একটি ভুল যার জন্য বিস্তৃত তর্ক বা নতুন প্রমাণের প্রয়োজন নেই -- রিভিউর প্রচলিত ভিত্তিগুলোর একটি, যা এটিকে মূল মামলার সম্পূর্ণ পুনঃতর্ক থেকে পৃথক করে।" }
+          ],
+          "examples": [
+            "ক-এর বিরুদ্ধে একটি ডিক্রি পাস হয়, এবং ক-এর জন্য প্রযুক্তিগতভাবে একটি আপিল উপলব্ধ ছিল, কিন্তু ক-এর আইনজীবী কেবল আপিলের সময়সীমা কোনো আবেদন দায়ের না করেই পার হতে দেন। ক তবুও ধারা ১১৪(ক)-এর অধীনে রিভিউর আবেদন করতে পারেন, কারণ সেই শ্রেণি সুনির্দিষ্টভাবে এমন ডিক্রি আচ্ছাদন করে যেখান থেকে আপিল অনুমোদিত ছিল কিন্তু কোনোটি পেশ করা হয়নি -- এর সাথে রিভিশনের তুলনা করুন, যা ক এখানে ব্যবহার করতে পারতেন না যেহেতু আপিল করা যেত।",
+            "একটি ডিক্রি পাস হওয়ার পর, ক আবিষ্কার করেন, পূর্বে যথাযথ পরিশ্রম প্রয়োগ করা সত্ত্বেও, প্রকৃতপক্ষে নতুন প্রমাণ যা ডিক্রির সময় বিদ্যমান ছিল কিন্তু তখন খুঁজে পাওয়া বা উপস্থাপন করা যায়নি। এটি সেই ধরনের ঘটনাপ্রবাহ যা অর্ডার XLVII, বিধি ১-এর প্রচলিত রিভিউ ভিত্তি লক্ষ্য করে।"
+          ],
+          "exam_focus": "পরীক্ষকরা প্রার্থীরা রিভিউ, আপিল, ও রিভিশনকে একে অপরের বিপরীতে সঠিকভাবে স্থাপন করতে পারেন কিনা তা যাচাই করতে পছন্দ করেন -- বিশেষত রিভিউর প্রথম শ্রেণির অনন্য উদার 'আপিল উপলব্ধ ছিল কিন্তু দায়ের হয়নি' প্রান্তিক শর্ত, যা রিভিশনের অনেক কঠোর বাধার সাথে গুলিয়ে ফেলা সহজ।",
+          "common_traps": [
+            "মনে করা যে রিভিউ, আপিল ও রিভিশনের মতো, একটি ভিন্ন, উচ্চতর আদালত দ্বারা শুনানি হয় -- এটি মূল সিদ্ধান্তদাতা একই আদালত দ্বারা শুনানি হয়।",
+            "রিভিউর উদার 'আপিল উপলব্ধ কিন্তু দায়ের হয়নি' প্রান্তিক শর্তকে রিভিশনের অনেক কঠোর 'আদৌ কোনো আপিল নেই' প্রান্তিক শর্তের সাথে গুলিয়ে ফেলা -- এগুলো একই পরীক্ষা নয়।",
+            "রিভিউকে গুণাগুণ পুনরায় তর্ক করার একটি সাধারণ সুযোগ মনে করা -- প্রচলিত ভিত্তি (নতুন প্রমাণ, রেকর্ডের মুখে স্পষ্ট ত্রুটি, অন্য পর্যাপ্ত কারণ) তার চেয়ে সংকীর্ণ।"
+          ],
+          "quick_revision": [
+            "ধারা ১১৪ = একই আদালত নিজের সিদ্ধান্ত পুনর্বিবেচনা করে (আপিল/রিভিশনের বিপরীতে -> ভিন্ন, উচ্চতর আদালত)।",
+            "(ক) আপিল অনুমোদিত কিন্তু দায়ের হয়নি -> রিভিউ ঠিক আছে। (খ) আদৌ কোনো আপিল অনুমোদিত নয় -> রিভিউ ঠিক আছে। (গ) ক্ষুদ্র মামলা আদালতের রেফারেন্স সিদ্ধান্ত -> রিভিউ ঠিক আছে।",
+            "রিভিউর (ক) প্রান্তিক শর্ত রিভিশনের চেয়ে অধিক উদার -- 'দায়ের হয়নি' রিভিউর জন্য এখনও যোগ্য, কিন্তু রিভিশন আটকায়।",
+            "প্রকৃত ভিত্তি (নতুন প্রমাণ / রেকর্ডের মুখে ত্রুটি / অন্য পর্যাপ্ত কারণ) অর্ডার XLVII বিধি ১-এ থাকে, ধারা ১১৪ নিজে নয়।"
+          ],
+          "key_takeaways": [
+            "রিভিউ, আপিল, ও রিভিশন তিনটি প্রকৃতপক্ষে ভিন্ন প্রতিকার তিনটি ভিন্ন প্রান্তিক শর্তসহ -- কোন আদালত প্রতিটি শোনে, এবং ঠিক কখন প্রতিটি উপলব্ধ হয় তা জানুন।",
+            "রিভিউর নির্ধারক বৈশিষ্ট্য হলো একই আদালত তার নিজস্ব স্পষ্ট ভুল সংশোধনের একটি সংকীর্ণ, সংজ্ঞায়িত সুযোগ পায় -- এটি মূল বিচারের পুনরাবৃত্তি নয়।",
+            "'আপিল উপলব্ধ কিন্তু দায়ের হয়নি' শ্রেণিটি তার দুই প্রতিপক্ষের তুলনায় রিভিউর একমাত্র সবচেয়ে স্বতন্ত্র, সবচেয়ে বেশি পরীক্ষায় আসা বৈশিষ্ট্য।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-CPC-S114",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Code of Civil Procedure, 1908",
+      "act_year": 1908,
+      "act_number": "Act No. V of 1908",
+      "section_or_order": "Section 114 (Review)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-CPC1908-001"],
+      "note": "Full verbatim text obtained via direct fetch of the primary source page during this session. Order XLVII, Rule 1 (the actual grounds for review) was not independently verbatim-fetched -- described in the lesson at a general, conventionally-understood level only."
+    },
+    {
+      "content_id": "BC-MCQ-CPC-REVIEW-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-REVIEW-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-14",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S114"],
+      "exam_focus": "Which court hears a review application.",
+      "source_basis": "Original question drawn directly from verbatim S.114 text.",
+      "mistake_tags": ["s114-same-court-hears-review"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-REVIEW-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "Under Section 114, CPC, an application for review of judgment is made to:",
+          "options": { "A": "The same court which passed the decree or made the order", "B": "A superior appellate court, as with an appeal", "C": "The High Court Division exclusively, regardless of which court passed the decree", "D": "Any civil court chosen by the applicant" },
+          "explanation": "Section 114 directs a review application to the very court that passed the decree or made the order -- unlike appeal or revision, which involve a different, superior court.",
+          "why_other_options_are_wrong": { "B": "This describes appeal, not review -- review is heard by the original court itself.", "C": "Review is not confined to the High Court Division; it goes to whichever court passed the original decree or order.", "D": "The applicant does not get to choose the court -- it must be the one that passed the original decree or order." }
+        },
+        "bn": {
+          "question": "দেওয়ানি কার্যবিধির ধারা ১১৪ অনুযায়ী, রায়ের রিভিউর জন্য একটি আবেদন করা হয়:",
+          "options": { "A": "যে আদালত ডিক্রি পাস করেছে বা আদেশ দিয়েছে সেই একই আদালতে", "B": "আপিলের মতো একটি উচ্চতর আপিলীয় আদালতে", "C": "কেবল হাইকোর্ট বিভাগে, কোন আদালত ডিক্রি পাস করেছে তা নির্বিশেষে", "D": "আবেদনকারীর বেছে নেওয়া যেকোনো দেওয়ানি আদালতে" },
+          "explanation": "ধারা ১১৪ একটি রিভিউ আবেদন ঠিক সেই আদালতে নির্দেশ করে যে ডিক্রি পাস করেছে বা আদেশ দিয়েছে -- আপিল বা রিভিশনের বিপরীতে, যেখানে একটি ভিন্ন, উচ্চতর আদালত জড়িত।",
+          "why_other_options_are_wrong": { "B": "এটি রিভিউ নয়, আপিল বর্ণনা করে -- রিভিউ মূল আদালত নিজেই শুনানি করে।", "C": "রিভিউ কেবল হাইকোর্ট বিভাগে সীমাবদ্ধ নয়; এটি যে আদালত মূল ডিক্রি বা আদেশ পাস করেছে সেখানেই যায়।", "D": "আবেদনকারী আদালত বেছে নিতে পারেন না -- এটি অবশ্যই মূল ডিক্রি বা আদেশ পাসকারী আদালত হতে হবে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-REVIEW-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-REVIEW-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-14",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S114"],
+      "exam_focus": "The signature contrast: review's generous threshold vs. revision's strict one.",
+      "source_basis": "Original question directly comparing S.114(a) to the S.115 threshold covered in the Revision lesson.",
+      "mistake_tags": ["s114a-vs-s115-threshold-confusion"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-CPC-REVIEW-001", "BC-CPC-REVISION-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A decree was passed against A. An appeal was technically available to A, but A never filed one within the allowed time. Which remedy, if any, remains open to A on these facts?",
+          "options": { "A": "Neither review nor revision -- both are barred once an appeal was available", "B": "Review under Section 114(a), though not revision under Section 115, since Section 114(a) specifically covers decrees from which an appeal was allowed but not preferred", "C": "Revision under Section 115, though not review, since revision is the more general remedy", "D": "Both review and revision remain fully open on identical terms" },
+          "explanation": "Section 114(a) specifically contemplates exactly this situation -- an appeal was allowed but never preferred -- and permits review on that basis. Section 115's current 'no appeal lies' threshold, by contrast, is not satisfied here, since an appeal did lie (it just was not used).",
+          "why_other_options_are_wrong": { "A": "This overstates the bar -- review under Section 114(a) remains available on these specific facts.", "C": "This reverses the actual position -- revision is barred here, while review's first category is specifically satisfied.", "D": "The two remedies do not operate on identical terms -- their thresholds genuinely differ, as this fact pattern illustrates." }
+        },
+        "bn": {
+          "question": "ক-এর বিরুদ্ধে একটি ডিক্রি পাস হয়েছিল। ক-এর জন্য প্রযুক্তিগতভাবে একটি আপিল উপলব্ধ ছিল, কিন্তু ক অনুমোদিত সময়ের মধ্যে কখনো তা দায়ের করেননি। এই ঘটনায়, যদি থাকে, কোন প্রতিকার ক-এর জন্য উন্মুক্ত থাকে?",
+          "options": { "A": "রিভিউ বা রিভিশন কোনোটিই নয় -- একবার আপিল উপলব্ধ থাকলে উভয়ই বাধাপ্রাপ্ত", "B": "ধারা ১১৪(ক)-এর অধীনে রিভিউ, তবে ধারা ১১৫-এর অধীনে রিভিশন নয়, যেহেতু ধারা ১১৪(ক) সুনির্দিষ্টভাবে এমন ডিক্রি আচ্ছাদন করে যেখান থেকে আপিল অনুমোদিত ছিল কিন্তু পেশ করা হয়নি", "C": "ধারা ১১৫-এর অধীনে রিভিশন, তবে রিভিউ নয়, যেহেতু রিভিশন অধিক সাধারণ প্রতিকার", "D": "রিভিউ ও রিভিশন উভয়ই অভিন্ন শর্তে সম্পূর্ণরূপে উন্মুক্ত থাকে" },
+          "explanation": "ধারা ১১৪(ক) সুনির্দিষ্টভাবে ঠিক এই পরিস্থিতি বিবেচনা করে -- একটি আপিল অনুমোদিত ছিল কিন্তু কখনো পেশ করা হয়নি -- এবং সেই ভিত্তিতে রিভিউর অনুমতি দেয়। বিপরীতে, ধারা ১১৫-এর বর্তমান 'কোনো আপিল নেই' প্রান্তিক শর্ত এখানে পূরণ হয় না, যেহেতু একটি আপিল করা যেত (কেবল ব্যবহার করা হয়নি)।",
+          "why_other_options_are_wrong": { "A": "এটি বাধাটি অতিরিক্ত বলে -- এই নির্দিষ্ট ঘটনায় ধারা ১১৪(ক)-এর অধীনে রিভিউ উপলব্ধ থাকে।", "C": "এটি প্রকৃত অবস্থান উল্টে দেয় -- এখানে রিভিশন বাধাপ্রাপ্ত, যেখানে রিভিউর প্রথম শ্রেণি সুনির্দিষ্টভাবে পূরণ হয়।", "D": "দুটি প্রতিকার অভিন্ন শর্তে কাজ করে না -- এই ঘটনাপ্রবাহ যেমন দেখায় তাদের প্রান্তিক শর্ত প্রকৃতপক্ষে ভিন্ন।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-REVIEW-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-REVIEW-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-14",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S114"],
+      "exam_focus": "Category (c) -- Small Cause Court reference decisions.",
+      "source_basis": "Original question drawn directly from verbatim S.114(c) text.",
+      "mistake_tags": ["s114c-small-cause-reference"],
+      "revision_priority": "LOW",
+      "related_lesson_ids": ["BC-CPC-REVIEW-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Which of the following is one of the three categories of person Section 114 allows to apply for review?",
+          "options": { "A": "Anyone dissatisfied with any interlocutory order, without further condition", "B": "Only a party who has already exhausted an appeal and lost", "C": "A person aggrieved by a decision on a reference from a Court of Small Causes", "D": "Only the Government, as a special category of litigant" },
+          "explanation": "Section 114(c) specifically names a person aggrieved by a decision on a reference from a Court of Small Causes as one of the three eligible categories.",
+          "why_other_options_are_wrong": { "A": "Section 114 does not create an unconditional review right for any interlocutory order -- it specifies three particular categories.", "B": "Exhausting and losing an appeal is not one of Section 114's three listed categories.", "D": "Section 114 is not confined to the Government as a special litigant category." }
+        },
+        "bn": {
+          "question": "নিচের কোনটি ধারা ১১৪ রিভিউর আবেদনের অনুমতি দেয় এমন তিনটি শ্রেণির ব্যক্তির একটি?",
+          "options": { "A": "কোনো অন্তর্বর্তীকালীন আদেশে অসন্তুষ্ট যে কেউ, আর কোনো শর্ত ছাড়াই", "B": "কেবল একজন পক্ষ যিনি ইতিমধ্যে আপিল নিঃশেষ করে হেরেছেন", "C": "ক্ষুদ্র মামলা আদালত থেকে একটি রেফারেন্সের উপর একটি সিদ্ধান্তে ক্ষতিগ্রস্ত একজন ব্যক্তি", "D": "কেবল সরকার, একটি বিশেষ শ্রেণির মামলাকারী হিসেবে" },
+          "explanation": "ধারা ১১৪(গ) সুনির্দিষ্টভাবে ক্ষুদ্র মামলা আদালত থেকে একটি রেফারেন্সের উপর একটি সিদ্ধান্তে ক্ষতিগ্রস্ত একজন ব্যক্তিকে তিনটি যোগ্য শ্রেণির একটি হিসেবে নামকরণ করে।",
+          "why_other_options_are_wrong": { "A": "ধারা ১১৪ কোনো অন্তর্বর্তীকালীন আদেশের জন্য একটি নিঃশর্ত রিভিউ অধিকার তৈরি করে না -- এটি তিনটি নির্দিষ্ট শ্রেণি নির্দিষ্ট করে।", "B": "আপিল নিঃশেষ করে হারা ধারা ১১৪-এর তিনটি তালিকাভুক্ত শ্রেণির একটি নয়।", "D": "ধারা ১১৪ একটি বিশেষ মামলাকারী শ্রেণি হিসেবে সরকারের মধ্যে সীমাবদ্ধ নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-CPC-REVIEW-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-CPC-REVIEW-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-CPC",
+      "topic_id": "T-CPC-14",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-CPC-S114"],
+      "exam_focus": "Category (b) -- decrees/orders from which no appeal is allowed at all.",
+      "source_basis": "Original question drawn directly from verbatim S.114(b) text.",
+      "mistake_tags": ["s114b-no-appeal-allowed-at-all"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-CPC-REVIEW-001"],
+      "correct_answer": "D",
+      "language_versions": {
+        "en": {
+          "question": "A decree is of a kind from which the Code allows no appeal whatsoever. Can the aggrieved party still seek review under Section 114?",
+          "options": { "A": "No, review is only available where an appeal was allowed but not filed", "B": "No, review is never available for non-appealable decrees", "C": "Only if the High Court Division first grants special leave", "D": "Yes, Section 114(b) specifically covers decrees or orders from which no appeal is allowed at all" },
+          "explanation": "Section 114(b) is a distinct category from (a): it covers exactly this situation, where the Code allows no appeal at all from the decree or order in question, and permits review on that basis.",
+          "why_other_options_are_wrong": { "A": "This describes category (a) only and wrongly excludes category (b), which covers the opposite situation.", "B": "This is incorrect -- category (b) exists precisely to cover non-appealable decrees and orders.", "C": "No special-leave precondition from the High Court Division is attached to Section 114(b)." }
+        },
+        "bn": {
+          "question": "একটি ডিক্রি এমন ধরনের যেখান থেকে বিধি আদৌ কোনো আপিলের অনুমতি দেয় না। ক্ষতিগ্রস্ত পক্ষ কি তবুও ধারা ১১৪-এর অধীনে রিভিউ চাইতে পারেন?",
+          "options": { "A": "না, রিভিউ কেবল তখনই উপলব্ধ যখন একটি আপিল অনুমোদিত ছিল কিন্তু দায়ের করা হয়নি", "B": "না, অ-আপিলযোগ্য ডিক্রির জন্য রিভিউ কখনো উপলব্ধ নয়", "C": "কেবল যদি হাইকোর্ট বিভাগ প্রথমে বিশেষ অনুমতি প্রদান করে", "D": "হ্যাঁ, ধারা ১১৪(খ) সুনির্দিষ্টভাবে এমন ডিক্রি বা আদেশ আচ্ছাদন করে যেখান থেকে আদৌ কোনো আপিল অনুমোদিত নয়" },
+          "explanation": "ধারা ১১৪(খ) (ক) থেকে একটি পৃথক শ্রেণি: এটি ঠিক এই পরিস্থিতি আচ্ছাদন করে, যেখানে বিধি প্রশ্নবিদ্ধ ডিক্রি বা আদেশ থেকে আদৌ কোনো আপিলের অনুমতি দেয় না, এবং সেই ভিত্তিতে রিভিউর অনুমতি দেয়।",
+          "why_other_options_are_wrong": { "A": "এটি কেবল শ্রেণি (ক) বর্ণনা করে এবং ভুলভাবে শ্রেণি (খ) বাদ দেয়, যা বিপরীত পরিস্থিতি আচ্ছাদন করে।", "B": "এটি ভুল -- শ্রেণি (খ) ঠিক অ-আপিলযোগ্য ডিক্রি ও আদেশ আচ্ছাদন করার জন্য বিদ্যমান।", "C": "ধারা ১১৪(খ)-এর সাথে হাইকোর্ট বিভাগের কোনো বিশেষ-অনুমতি পূর্বশর্ত যুক্ত নেই।" }
+        }
+      }
+    }
+  ]
+}

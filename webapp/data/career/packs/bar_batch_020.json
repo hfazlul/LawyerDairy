@@ -1,0 +1,282 @@
+{
+  "batch_id": "BATCH-2026-08-020-PENAL-THEFT",
+  "schema_version": "1.0",
+  "content_version": "2026.08.8",
+  "created_at": "2026-08-25T00:00:00Z",
+  "source": "claude-research-pass-2026-08-25",
+  "operation": "CREATE",
+  "status": "PENDING_REVIEW",
+  "batch_purpose": "Third and final topic in this depth round. Covers Penal Code Theft (T-PENAL-18, Sections 378-380) -- a deliberate shift toward property offences after four consecutive Penal Code lessons on violent crime, liberty, and inchoate offences (Private Defence, Homicide/Murder, Abetment, Criminal Conspiracy). Theft's precise definition, with its often-underestimated 'moving' requirement and its explicit coverage of temporary taking, is one of the most foundational and heavily tested topics in the property-offences chapter.",
+  "asset_count": 7,
+  "assets": [
+    {
+      "content_id": "BC-PENAL-THEFT-001",
+      "asset_type": "LESSON",
+      "lesson_id": "BC-PENAL-THEFT-001",
+      "topic_id": "T-PENAL-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "verification_note": "Section 378 (full definition, all four Explanations, and several of the Act's own illustrations), Section 379 (punishment), and Section 380 (theft in a dwelling house, enhanced punishment) were all obtained as VERBATIM text via search-indexed content of bdlaws.minlaw.gov.bd during this session. Illustrations described in this lesson are ORIGINAL, not copied from the Act's own illustrations, consistent with this dataset's copyright-paraphrase policy. No case law cited, consistent with this dataset's policy throughout.",
+      "difficulty": "MEDIUM",
+      "estimated_minutes": 30,
+      "prerequisite_ids": [],
+      "related_lesson_ids": [],
+      "related_question_ids": ["BC-MCQ-PENAL-THEFT-001", "BC-MCQ-PENAL-THEFT-002", "BC-MCQ-PENAL-THEFT-003", "BC-MCQ-PENAL-THEFT-004"],
+      "related_test_ids": [],
+      "related_previous_question_ids": [],
+      "related_previous_question_note": "Intentionally empty -- see main README.",
+      "related_law_ids": ["LREF-PENAL-S378", "LREF-PENAL-S379-380"],
+      "related_case_ids": [],
+      "important_case_law": [],
+      "legal_reference_ids": ["LREF-PENAL-S378", "LREF-PENAL-S379-380"],
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "language_versions": {
+        "en": {
+          "title": "Theft (Sections 378-380)",
+          "short_description": "Theft is defined more precisely than everyday usage suggests -- it requires an actual act of MOVING the property, not merely deciding to take it, and (contrary to a common assumption) even a purely temporary taking can qualify if done with dishonest intent to cause wrongful gain or wrongful loss.",
+          "learning_objective": "By the end of this lesson you should be able to: state Section 378's full definition of theft and identify each of its elements; explain when a thing attached to the earth becomes capable of being the subject of theft; explain why a temporary taking can still amount to theft; and state the enhanced punishment that applies to theft committed in a dwelling house under Section 380.",
+          "explanation": "Section 378 defines theft precisely: whoever, intending to take dishonestly any movable property out of the possession of any person without that person's consent, moves that property in order to accomplish the taking, is said to commit theft. Every element matters. The property must be movable. It must be taken out of someone's possession. It must be taken without that person's consent. The taking must be dishonest (broadly, done with intention to cause wrongful gain to one person or wrongful loss to another). And critically, the offender must actually move the property in order to effect the taking -- merely forming the intention, without any accompanying act of moving the property, does not complete the offence.\n\nFour Explanations sharpen the definition. Explanation 1 addresses property attached to the earth: such property is not ordinarily capable of being the subject of theft, but becomes capable of being so the moment it is severed from the earth. Explanation 2 clarifies that this severance may be caused by the thief's own act, or may simply be the effect or means of the thief's act of taking -- the severance and the taking can happen together. Explanation 3 addresses living creatures: moving a living animal is treated as moving its body, even though the animal may move partly through its own volition once set in motion. Explanation 4 -- often the most heavily tested -- clarifies that the dishonest intention required for theft may exist even where the offender intends to keep the property for only a temporary period, so long as the intention to cause wrongful gain or wrongful loss is present.\n\nSection 379 sets the basic punishment for theft: imprisonment of either description for a term which may extend to three years, or fine, or both. Section 380 then increases that punishment substantially where the theft is committed in any building, tent, or vessel used as a human dwelling, or used for the custody of property -- in that more serious setting, the punishment may extend to imprisonment of either description for a term of up to seven years, along with a fine.",
+          "key_concepts": ["Section 378's precise elements: movable property, out of possession, without consent, dishonest intention, and an act of MOVING the property", "Explanation 1: property attached to earth becomes theft-capable only upon severance", "Explanation 4: temporary taking can still be theft, if done with dishonest intent to cause wrongful gain/loss", "Section 379: basic theft punishment (up to 3 years)", "Section 380: enhanced punishment (up to 7 years) for theft in a dwelling house or place used for custody of property"],
+          "important_rules": [
+            "S.378: theft requires (a) movable property, (b) taken out of someone's possession, (c) without that person's consent, (d) with dishonest intention, and (e) an actual act of moving the property in order to effect the taking.",
+            "Explanation 1: a thing attached to the earth is not capable of being the subject of theft until it is severed from the earth.",
+            "Explanation 4: dishonest intention sufficient for theft may exist even where the taking is intended to be only temporary, provided the intention to cause wrongful gain or wrongful loss is present.",
+            "S.379: basic theft is punishable with imprisonment up to 3 years, or fine, or both.",
+            "S.380: theft in a building, tent, or vessel used as a human dwelling or for custody of property is punishable with imprisonment up to 7 years, and fine."
+          ],
+          "definitions": [
+            { "term": "Theft", "definition": "The dishonest taking of movable property out of another's possession without their consent, completed by an actual act of moving the property in order to effect the taking, as defined in Section 378." },
+            { "term": "Dishonestly (in this context)", "definition": "Doing something with the intention of causing wrongful gain to one person or wrongful loss to another -- the mental element that, combined with the other elements of Section 378, makes a taking theft rather than an innocent or merely mistaken act." }
+          ],
+          "examples": [
+            "A cuts down a tree growing on B's land and carries away the wood, without B's consent and intending to keep the proceeds. Before being cut, the standing tree was attached to the earth and not capable of being the subject of theft; the moment A severs it, Explanation 1 makes it capable of being stolen, and A's act of cutting and carrying it away completes the theft.",
+            "A takes B's car without permission, intending to use it for a few hours and then abandon it somewhere for B to eventually recover, purely to inconvenience B. Even though A never intended to permanently keep the car, Explanation 4 makes clear that this temporary taking can still amount to theft, because A's intention to cause wrongful loss to B (through the inconvenience and deprivation, however temporary) supplies the dishonest intention Section 378 requires."
+          ],
+          "exam_focus": "Examiners frequently test Explanation 4's temporary-taking point, since many candidates assume theft requires an intention to permanently deprive the owner -- it does not. Fact patterns involving property attached to the earth (crops, trees, fixtures) are also common, testing whether candidates know the severance moment under Explanation 1. The distinction between ordinary theft (Section 379) and dwelling-house theft (Section 380) is a further common test point.",
+          "common_traps": [
+            "Assuming theft requires an intention to permanently keep the property -- Explanation 4 expressly allows for temporary takings, provided the wrongful-gain/wrongful-loss intention is present.",
+            "Assuming standing crops, trees, or other things attached to the earth can be stolen before they are severed -- Explanation 1 makes clear they are not capable of being the subject of theft until severance.",
+            "Treating mere intention to take property, without any accompanying act of moving it, as sufficient to complete the offence -- Section 378 requires an actual act of moving the property.",
+            "Applying the basic Section 379 punishment to a dwelling-house theft -- Section 380's enhanced punishment applies specifically in that more serious setting."
+          ],
+          "quick_revision": [
+            "S.378 = movable property + out of possession + without consent + dishonest intention + ACTUALLY MOVES it.",
+            "Explanation 1 = attached to earth -> not theft-capable UNTIL severed.",
+            "Explanation 4 = TEMPORARY taking can still be theft, if wrongful-gain/loss intent is present.",
+            "S.379 = basic theft, up to 3 years.",
+            "S.380 = theft in a dwelling/custody place, up to 7 years -- enhanced."
+          ],
+          "key_takeaways": [
+            "Theft's 'moving' requirement means the offence is not complete on intention alone -- an actual act toward the taking is essential.",
+            "The permanence of the intended deprivation is not the test for dishonest intention -- purely temporary takings can still be theft.",
+            "Context escalates punishment substantially: the same underlying act of theft carries a much higher maximum sentence when committed in a dwelling or place used to store property."
+          ]
+        },
+        "bn": {
+          "title": "চুরি (ধারা ৩৭৮-৩৮০)",
+          "short_description": "চুরি প্রতিদিনের ব্যবহারের চেয়ে অধিক সুনির্দিষ্টভাবে সংজ্ঞায়িত -- এর জন্য সম্পত্তি সরানোর একটি প্রকৃত কাজ প্রয়োজন, কেবল তা নেওয়ার সিদ্ধান্ত নেওয়া নয়, এবং (একটি সাধারণ অনুমানের বিপরীতে) এমনকি একটি সম্পূর্ণ অস্থায়ী গ্রহণও যোগ্য হতে পারে যদি অন্যায্য লাভ বা অন্যায্য ক্ষতি ঘটানোর অসৎ উদ্দেশ্যে করা হয়।",
+          "learning_objective": "এই পাঠ শেষে আপনি: ধারা ৩৭৮-এর চুরির সম্পূর্ণ সংজ্ঞা বলতে পারবেন এবং এর প্রতিটি উপাদান চিহ্নিত করতে পারবেন; কখন মাটিতে সংযুক্ত কোনো বস্তু চুরির বিষয় হওয়ার যোগ্য হয়ে ওঠে তা ব্যাখ্যা করতে পারবেন; কেন একটি অস্থায়ী গ্রহণও চুরির সমান হতে পারে তা ব্যাখ্যা করতে পারবেন; এবং ধারা ৩৮০-এর অধীনে বাসগৃহে সংঘটিত চুরির ক্ষেত্রে প্রযোজ্য বর্ধিত শাস্তি বলতে পারবেন।",
+          "explanation": "ধারা ৩৭৮ চুরিকে সুনির্দিষ্টভাবে সংজ্ঞায়িত করে: যে কেউ, কোনো ব্যক্তির দখল থেকে সেই ব্যক্তির সম্মতি ছাড়া কোনো অস্থাবর সম্পত্তি অসৎভাবে নেওয়ার উদ্দেশ্যে, সেই গ্রহণ সম্পন্ন করতে সেই সম্পত্তি সরায়, তিনি চুরি করেছেন বলে গণ্য হন। প্রতিটি উপাদান গুরুত্বপূর্ণ। সম্পত্তিটি অবশ্যই অস্থাবর হতে হবে। এটি অবশ্যই কারও দখল থেকে নেওয়া হতে হবে। এটি অবশ্যই সেই ব্যক্তির সম্মতি ছাড়া নেওয়া হতে হবে। গ্রহণটি অবশ্যই অসৎ হতে হবে (ব্যাপকভাবে, একজনের অন্যায্য লাভ বা অন্যজনের অন্যায্য ক্ষতি ঘটানোর উদ্দেশ্যে করা)। এবং গুরুত্বপূর্ণভাবে, অপরাধীকে অবশ্যই গ্রহণ সম্পন্ন করতে প্রকৃতপক্ষে সম্পত্তিটি সরাতে হবে -- কেবল উদ্দেশ্য গঠন করা, সম্পত্তি সরানোর কোনো সহগামী কাজ ছাড়া, অপরাধটি সম্পূর্ণ করে না।\n\nচারটি ব্যাখ্যা সংজ্ঞাটি তীক্ষ্ণ করে। ব্যাখ্যা ১ মাটিতে সংযুক্ত সম্পত্তি নিয়ে আলোচনা করে: এমন সম্পত্তি সাধারণত চুরির বিষয় হওয়ার যোগ্য নয়, কিন্তু মাটি থেকে বিচ্ছিন্ন হওয়ার মুহূর্তে তা হওয়ার যোগ্য হয়ে ওঠে। ব্যাখ্যা ২ স্পষ্ট করে যে এই বিচ্ছিন্নতা চোরের নিজস্ব কাজ দ্বারা ঘটতে পারে, অথবা কেবল চোরের গ্রহণের কাজের প্রভাব বা উপায় হতে পারে -- বিচ্ছিন্নতা ও গ্রহণ একসাথে ঘটতে পারে। ব্যাখ্যা ৩ জীবিত প্রাণী নিয়ে আলোচনা করে: একটি জীবিত প্রাণী সরানো তার দেহ সরানো হিসেবে গণ্য হয়, যদিও প্রাণীটি একবার গতিশীল হলে আংশিকভাবে তার নিজস্ব ইচ্ছায় চলতে পারে। ব্যাখ্যা ৪ -- প্রায়ই সবচেয়ে বেশি পরীক্ষায় আসা -- স্পষ্ট করে যে চুরির জন্য প্রয়োজনীয় অসৎ উদ্দেশ্য এমনকি তখনও থাকতে পারে যখন অপরাধী সম্পত্তিটি কেবল অস্থায়ী সময়ের জন্য রাখার উদ্দেশ্য রাখেন, যতক্ষণ অন্যায্য লাভ বা অন্যায্য ক্ষতি ঘটানোর উদ্দেশ্য উপস্থিত থাকে।\n\nধারা ৩৭৯ চুরির মূল শাস্তি নির্ধারণ করে: যেকোনো বিবরণের কারাদণ্ড যা তিন বছর পর্যন্ত বিস্তৃত হতে পারে, অথবা জরিমানা, অথবা উভয়ই। ধারা ৩৮০ এরপর সেই শাস্তি যথেষ্ট পরিমাণে বৃদ্ধি করে যেখানে চুরিটি এমন কোনো ভবন, তাঁবু, বা জলযানে সংঘটিত হয় যা মানুষের বাসস্থান হিসেবে, বা সম্পত্তির হেফাজতের জন্য ব্যবহৃত হয় -- সেই অধিক গুরুতর প্রেক্ষাপটে, শাস্তি জরিমানাসহ সাত বছর পর্যন্ত যেকোনো বিবরণের কারাদণ্ড পর্যন্ত বিস্তৃত হতে পারে।",
+          "key_concepts": ["ধারা ৩৭৮-এর সুনির্দিষ্ট উপাদান: অস্থাবর সম্পত্তি, দখল থেকে, সম্মতি ছাড়া, অসৎ উদ্দেশ্য, এবং সম্পত্তি সরানোর একটি কাজ", "ব্যাখ্যা ১: মাটিতে সংযুক্ত সম্পত্তি কেবল বিচ্ছিন্ন হওয়ার পরই চুরি-যোগ্য হয়ে ওঠে", "ব্যাখ্যা ৪: অস্থায়ী গ্রহণও চুরি হতে পারে, যদি অন্যায্য লাভ/ক্ষতির অসৎ উদ্দেশ্যে করা হয়", "ধারা ৩৭৯: মূল চুরির শাস্তি (৩ বছর পর্যন্ত)", "ধারা ৩৮০: বাসগৃহ বা সম্পত্তির হেফাজতের স্থানে চুরির জন্য বর্ধিত শাস্তি (৭ বছর পর্যন্ত)"],
+          "important_rules": [
+            "ধারা ৩৭৮: চুরির জন্য প্রয়োজন (ক) অস্থাবর সম্পত্তি, (খ) কারও দখল থেকে নেওয়া, (গ) সেই ব্যক্তির সম্মতি ছাড়া, (ঘ) অসৎ উদ্দেশ্যসহ, এবং (ঙ) গ্রহণ সম্পন্ন করতে সম্পত্তি সরানোর একটি প্রকৃত কাজ।",
+            "ব্যাখ্যা ১: মাটিতে সংযুক্ত একটি বস্তু মাটি থেকে বিচ্ছিন্ন না হওয়া পর্যন্ত চুরির বিষয় হওয়ার যোগ্য নয়।",
+            "ব্যাখ্যা ৪: চুরির জন্য যথেষ্ট অসৎ উদ্দেশ্য এমনকি তখনও থাকতে পারে যখন গ্রহণটি কেবল অস্থায়ী হওয়ার উদ্দেশ্য রাখা হয়, যদি অন্যায্য লাভ বা অন্যায্য ক্ষতি ঘটানোর উদ্দেশ্য উপস্থিত থাকে।",
+            "ধারা ৩৭৯: মূল চুরি ৩ বছর পর্যন্ত কারাদণ্ড, বা জরিমানা, বা উভয় দ্বারা দণ্ডনীয়।",
+            "ধারা ৩৮০: মানুষের বাসস্থান বা সম্পত্তির হেফাজতের জন্য ব্যবহৃত ভবন, তাঁবু, বা জলযানে চুরি ৭ বছর পর্যন্ত কারাদণ্ড, ও জরিমানা দ্বারা দণ্ডনীয়।"
+          ],
+          "definitions": [
+            { "term": "চুরি", "definition": "অন্যের দখল থেকে তার সম্মতি ছাড়া অস্থাবর সম্পত্তির অসৎ গ্রহণ, গ্রহণ সম্পন্ন করতে সম্পত্তি সরানোর একটি প্রকৃত কাজের মাধ্যমে সম্পূর্ণ, ধারা ৩৭৮-এ সংজ্ঞায়িত।" },
+            { "term": "অসৎভাবে (এই প্রসঙ্গে)", "definition": "একজনের অন্যায্য লাভ বা অন্যজনের অন্যায্য ক্ষতি ঘটানোর উদ্দেশ্যে কিছু করা -- মানসিক উপাদান যা, ধারা ৩৭৮-এর অন্যান্য উপাদানের সাথে মিলিত হয়ে, একটি গ্রহণকে নির্দোষ বা কেবল ভুলবশত কাজের পরিবর্তে চুরিতে পরিণত করে।" }
+          ],
+          "examples": [
+            "ক খ-এর জমিতে জন্মানো একটি গাছ কেটে ফেলে ও কাঠ নিয়ে যায়, খ-এর সম্মতি ছাড়া এবং আয় রাখার উদ্দেশ্যে। কাটার আগে, দাঁড়িয়ে থাকা গাছটি মাটিতে সংযুক্ত ছিল এবং চুরির বিষয় হওয়ার যোগ্য ছিল না; ক যে মুহূর্তে তা বিচ্ছিন্ন করে, ব্যাখ্যা ১ একে চুরির যোগ্য করে তোলে, এবং ক-এর তা কেটে নিয়ে যাওয়ার কাজ চুরি সম্পন্ন করে।",
+            "ক খ-এর গাড়ি অনুমতি ছাড়া নেয়, কয়েক ঘণ্টা ব্যবহার করার এবং এরপর খ-কে পরে উদ্ধারের জন্য কোথাও ফেলে রাখার উদ্দেশ্যে, শুধু খ-কে অসুবিধায় ফেলার জন্য। যদিও ক কখনো গাড়িটি স্থায়ীভাবে রাখার উদ্দেশ্য রাখেনি, ব্যাখ্যা ৪ স্পষ্ট করে যে এই অস্থায়ী গ্রহণও চুরির সমান হতে পারে, কারণ খ-এর প্রতি অন্যায্য ক্ষতি ঘটানোর (অসুবিধা ও বঞ্চনার মাধ্যমে, যতই অস্থায়ী হোক না কেন) ক-এর উদ্দেশ্য ধারা ৩৭৮ প্রয়োজনীয় অসৎ উদ্দেশ্য সরবরাহ করে।"
+          ],
+          "exam_focus": "পরীক্ষকরা প্রায়ই ব্যাখ্যা ৪-এর অস্থায়ী-গ্রহণ বিষয়টি যাচাই করেন, কারণ অনেক প্রার্থী মনে করেন চুরির জন্য মালিককে স্থায়ীভাবে বঞ্চিত করার উদ্দেশ্য প্রয়োজন -- তা প্রয়োজন নেই। মাটিতে সংযুক্ত সম্পত্তি (ফসল, গাছ, স্থিরকরণ) জড়িত ঘটনাপ্রবাহও সাধারণ, যাচাই করে প্রার্থীরা ব্যাখ্যা ১-এর অধীনে বিচ্ছিন্নতার মুহূর্ত জানেন কিনা। সাধারণ চুরি (ধারা ৩৭৯) ও বাসগৃহ চুরি (ধারা ৩৮০)-এর মধ্যে পার্থক্যও একটি আরও সাধারণ পরীক্ষার বিষয়।",
+          "common_traps": [
+            "মনে করা যে চুরির জন্য সম্পত্তিটি স্থায়ীভাবে রাখার উদ্দেশ্য প্রয়োজন -- ব্যাখ্যা ৪ স্পষ্টভাবে অস্থায়ী গ্রহণের অনুমতি দেয়, যদি অন্যায্য-লাভ/ক্ষতি উদ্দেশ্য উপস্থিত থাকে।",
+            "মনে করা যে দাঁড়িয়ে থাকা ফসল, গাছ, বা মাটিতে সংযুক্ত অন্যান্য বস্তু বিচ্ছিন্ন হওয়ার আগেই চুরি করা যায় -- ব্যাখ্যা ১ স্পষ্ট করে যে বিচ্ছিন্নতা না হওয়া পর্যন্ত এগুলো চুরির বিষয় হওয়ার যোগ্য নয়।",
+            "সম্পত্তি সরানোর কোনো সহগামী কাজ ছাড়া কেবল তা নেওয়ার উদ্দেশ্যকে অপরাধ সম্পূর্ণ করার জন্য যথেষ্ট মনে করা -- ধারা ৩৭৮-এর জন্য সম্পত্তি সরানোর একটি প্রকৃত কাজ প্রয়োজন।",
+            "একটি বাসগৃহ চুরিতে মূল ধারা ৩৭৯ শাস্তি প্রয়োগ করা -- ধারা ৩৮০-এর বর্ধিত শাস্তি সুনির্দিষ্টভাবে সেই অধিক গুরুতর প্রেক্ষাপটে প্রযোজ্য।"
+          ],
+          "quick_revision": [
+            "ধারা ৩৭৮ = অস্থাবর সম্পত্তি + দখল থেকে + সম্মতি ছাড়া + অসৎ উদ্দেশ্য + প্রকৃতপক্ষে সরায়।",
+            "ব্যাখ্যা ১ = মাটিতে সংযুক্ত -> বিচ্ছিন্ন না হওয়া পর্যন্ত চুরি-যোগ্য নয়।",
+            "ব্যাখ্যা ৪ = অস্থায়ী গ্রহণও চুরি হতে পারে, যদি অন্যায্য-লাভ/ক্ষতি উদ্দেশ্য থাকে।",
+            "ধারা ৩৭৯ = মূল চুরি, ৩ বছর পর্যন্ত।",
+            "ধারা ৩৮০ = বাসগৃহ/হেফাজত স্থানে চুরি, ৭ বছর পর্যন্ত -- বর্ধিত।"
+          ],
+          "key_takeaways": [
+            "চুরির 'সরানো' প্রয়োজনীয়তার অর্থ হলো অপরাধটি কেবল উদ্দেশ্যে সম্পূর্ণ হয় না -- গ্রহণের দিকে একটি প্রকৃত কাজ অপরিহার্য।",
+            "উদ্দিষ্ট বঞ্চনার স্থায়িত্ব অসৎ উদ্দেশ্যের পরীক্ষা নয় -- সম্পূর্ণ অস্থায়ী গ্রহণও চুরি হতে পারে।",
+            "প্রেক্ষাপট শাস্তি যথেষ্ট বৃদ্ধি করে: একই অন্তর্নিহিত চুরির কাজ একটি বাসগৃহ বা সম্পত্তি সংরক্ষণের জন্য ব্যবহৃত স্থানে সংঘটিত হলে অনেক বেশি সর্বোচ্চ সাজা বহন করে।"
+          ]
+        }
+      }
+    },
+    {
+      "content_id": "LREF-PENAL-S378",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Section 378 (Theft), including all four Explanations and illustrations",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Full verbatim text obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "LREF-PENAL-S379-380",
+      "asset_type": "LAW_SECTION",
+      "act_name": "The Penal Code, 1860",
+      "act_year": 1860,
+      "act_number": "Act No. XLV of 1860",
+      "section_or_order": "Sections 379 (Punishment for theft) and 380 (Theft in dwelling house, etc.)",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "verification_status": "VERIFIED",
+      "source_ids": ["SRC-BDLAWS-PENALCODE-001"],
+      "note": "Verbatim text obtained via search-indexed content of the primary source page during this session."
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-THEFT-001",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-THEFT-001",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "MEDIUM",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S378"],
+      "exam_focus": "The 'moving' requirement -- intention alone is not enough.",
+      "source_basis": "Original question drawn directly from verbatim S.378 text.",
+      "mistake_tags": ["s378-moving-requirement"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-THEFT-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A forms a clear, dishonest intention to take B's bicycle without consent, but is interrupted before touching or moving it in any way. Has A committed theft under Section 378?",
+          "options": { "A": "Yes, forming the dishonest intention alone is sufficient to complete theft", "B": "No, Section 378 requires an actual act of moving the property in order to effect the taking, which did not occur here", "C": "Yes, but only if A had previously stolen from B before", "D": "No, because bicycles are not considered movable property" },
+          "explanation": "Section 378 requires that the offender actually moves the property in order to effect the taking -- a bare, uncompleted intention, without any accompanying act of moving the property, does not complete the offence.",
+          "why_other_options_are_wrong": { "A": "This overstates the offence -- intention alone, without the required act of moving, is not sufficient.", "C": "A prior theft is irrelevant to whether this specific incident satisfies Section 378's elements.", "D": "Bicycles are squarely movable property; that is not the issue in this fact pattern." }
+        },
+        "bn": {
+          "question": "ক খ-এর সাইকেল সম্মতি ছাড়া নেওয়ার একটি স্পষ্ট, অসৎ উদ্দেশ্য গঠন করে, কিন্তু তা স্পর্শ বা কোনোভাবে সরানোর আগেই বাধাপ্রাপ্ত হয়। ধারা ৩৭৮-এর অধীনে ক কি চুরি করেছে?",
+          "options": { "A": "হ্যাঁ, কেবল অসৎ উদ্দেশ্য গঠন করাই চুরি সম্পূর্ণ করার জন্য যথেষ্ট", "B": "না, ধারা ৩৭৮-এর জন্য গ্রহণ সম্পন্ন করতে সম্পত্তি সরানোর একটি প্রকৃত কাজ প্রয়োজন, যা এখানে ঘটেনি", "C": "হ্যাঁ, তবে কেবল যদি ক এর আগে খ-এর কাছ থেকে চুরি করে থাকে", "D": "না, কারণ সাইকেল অস্থাবর সম্পত্তি হিসেবে বিবেচিত হয় না" },
+          "explanation": "ধারা ৩৭৮-এর জন্য প্রয়োজন যে অপরাধী গ্রহণ সম্পন্ন করতে প্রকৃতপক্ষে সম্পত্তি সরায় -- নিছক, অসম্পন্ন একটি উদ্দেশ্য, সম্পত্তি সরানোর কোনো সহগামী কাজ ছাড়া, অপরাধটি সম্পূর্ণ করে না।",
+          "why_other_options_are_wrong": { "A": "এটি অপরাধটি অতিরিক্ত বলে -- কেবল উদ্দেশ্য, প্রয়োজনীয় সরানোর কাজ ছাড়া, যথেষ্ট নয়।", "C": "এই নির্দিষ্ট ঘটনাটি ধারা ৩৭৮-এর উপাদান পূরণ করে কিনা তার সাথে পূর্ববর্তী একটি চুরি অপ্রাসঙ্গিক।", "D": "সাইকেল স্পষ্টভাবে অস্থাবর সম্পত্তি; এই ঘটনাপ্রবাহে এটি বিষয় নয়।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-THEFT-002",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-THEFT-002",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S378"],
+      "exam_focus": "Explanation 1 -- severance from earth as the trigger point.",
+      "source_basis": "Original question drawn directly from verbatim Explanation 1 text.",
+      "mistake_tags": ["explanation1-severance-trigger"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-THEFT-001"],
+      "correct_answer": "C",
+      "language_versions": {
+        "en": {
+          "question": "Under Explanation 1 to Section 378, when does a standing crop growing in B's field become capable of being the subject of theft?",
+          "options": { "A": "As soon as it is planted", "B": "Only once it has fully matured and is ready for harvest", "C": "The moment it is severed from the earth", "D": "It can never be the subject of theft, even after severance" },
+          "explanation": "Explanation 1 provides that a thing attached to the earth is not ordinarily capable of being the subject of theft, but becomes capable of being so the moment it is severed from the earth.",
+          "why_other_options_are_wrong": { "A": "Mere planting does not sever the crop from the earth; it remains incapable of being stolen at that stage.", "B": "Maturity is not the relevant trigger -- severance is, regardless of the crop's stage of growth.", "D": "This is the reverse of Explanation 1's actual effect -- severance is precisely what makes such property capable of being stolen." }
+        },
+        "bn": {
+          "question": "ধারা ৩৭৮-এর ব্যাখ্যা ১-এর অধীনে, খ-এর জমিতে জন্মানো একটি দাঁড়িয়ে থাকা ফসল কখন চুরির বিষয় হওয়ার যোগ্য হয়ে ওঠে?",
+          "options": { "A": "রোপণ করার সাথে সাথেই", "B": "কেবল একবার এটি সম্পূর্ণ পরিপক্ব হয়ে ফসল কাটার জন্য প্রস্তুত হলে", "C": "মাটি থেকে বিচ্ছিন্ন হওয়ার মুহূর্তে", "D": "এটি কখনো চুরির বিষয় হতে পারে না, বিচ্ছিন্ন হওয়ার পরেও নয়" },
+          "explanation": "ব্যাখ্যা ১ প্রদান করে যে মাটিতে সংযুক্ত একটি বস্তু সাধারণত চুরির বিষয় হওয়ার যোগ্য নয়, কিন্তু মাটি থেকে বিচ্ছিন্ন হওয়ার মুহূর্তে তা হওয়ার যোগ্য হয়ে ওঠে।",
+          "why_other_options_are_wrong": { "A": "নিছক রোপণ ফসলটিকে মাটি থেকে বিচ্ছিন্ন করে না; এই পর্যায়ে এটি চুরি করার অযোগ্যই থাকে।", "B": "পরিপক্বতা প্রাসঙ্গিক ট্রিগার নয় -- বিচ্ছিন্নতাই, ফসলের বৃদ্ধির পর্যায় নির্বিশেষে।", "D": "এটি ব্যাখ্যা ১-এর প্রকৃত প্রভাবের বিপরীত -- বিচ্ছিন্নতাই ঠিক যা এমন সম্পত্তিকে চুরি করার যোগ্য করে তোলে।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-THEFT-003",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-THEFT-003",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "HARD",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S378"],
+      "exam_focus": "Explanation 4 -- temporary taking can still be theft.",
+      "source_basis": "Original question drawn directly from verbatim Explanation 4 text.",
+      "mistake_tags": ["explanation4-temporary-taking-sufficient"],
+      "revision_priority": "HIGH",
+      "related_lesson_ids": ["BC-PENAL-THEFT-001"],
+      "correct_answer": "A",
+      "language_versions": {
+        "en": {
+          "question": "A takes B's umbrella without permission, intending to use it only for the duration of a rainstorm and then discard it wherever convenient, purely to inconvenience B. A never intends to permanently deprive B of the umbrella. Under Explanation 4 to Section 378, can this still amount to theft?",
+          "options": { "A": "Yes, Explanation 4 makes clear that a dishonest intention sufficient for theft may exist even where the taking is intended to be only temporary", "B": "No, theft requires an intention to permanently deprive the owner of the property", "C": "No, temporary use of property is never a criminal matter under the Penal Code", "D": "Yes, but only if the umbrella is never returned at all" },
+          "explanation": "Explanation 4 expressly covers exactly this scenario: a temporary taking, intended to cause wrongful loss (here, the inconvenience to B), can still supply the dishonest intention Section 378 requires.",
+          "why_other_options_are_wrong": { "B": "This is precisely the common misconception Explanation 4 corrects -- permanence is not required.", "C": "This overstates the position -- temporary takings CAN be criminal under Section 378, given the right intention.", "D": "Whether the property is ultimately returned does not determine whether theft was already completed at the time of the dishonest taking." }
+        },
+        "bn": {
+          "question": "ক খ-এর ছাতা অনুমতি ছাড়া নেয়, কেবল একটি বৃষ্টির সময়কালের জন্য ব্যবহার করার এবং এরপর যেখানে সুবিধাজনক সেখানে ফেলে দেওয়ার উদ্দেশ্যে, শুধু খ-কে অসুবিধায় ফেলার জন্য। ক কখনো খ-কে স্থায়ীভাবে ছাতা থেকে বঞ্চিত করার উদ্দেশ্য রাখে না। ধারা ৩৭৮-এর ব্যাখ্যা ৪-এর অধীনে, এটি কি তবুও চুরির সমান হতে পারে?",
+          "options": { "A": "হ্যাঁ, ব্যাখ্যা ৪ স্পষ্ট করে যে চুরির জন্য যথেষ্ট অসৎ উদ্দেশ্য এমনকি তখনও থাকতে পারে যখন গ্রহণটি কেবল অস্থায়ী হওয়ার উদ্দেশ্য রাখা হয়", "B": "না, চুরির জন্য মালিককে সম্পত্তি থেকে স্থায়ীভাবে বঞ্চিত করার উদ্দেশ্য প্রয়োজন", "C": "না, সম্পত্তির অস্থায়ী ব্যবহার দণ্ডবিধির অধীনে কখনো একটি ফৌজদারি বিষয় নয়", "D": "হ্যাঁ, তবে কেবল যদি ছাতাটি আদৌ কখনো ফেরত না দেওয়া হয়" },
+          "explanation": "ব্যাখ্যা ৪ স্পষ্টভাবে ঠিক এই পরিস্থিতি আচ্ছাদন করে: একটি অস্থায়ী গ্রহণ, অন্যায্য ক্ষতি ঘটানোর উদ্দেশ্যে (এখানে, খ-এর প্রতি অসুবিধা), তবুও ধারা ৩৭৮ প্রয়োজনীয় অসৎ উদ্দেশ্য সরবরাহ করতে পারে।",
+          "why_other_options_are_wrong": { "B": "এটি ঠিক সেই সাধারণ ভুল ধারণা যা ব্যাখ্যা ৪ সংশোধন করে -- স্থায়িত্ব প্রয়োজন নেই।", "C": "এটি অবস্থানটি অতিরিক্ত বলে -- সঠিক উদ্দেশ্য থাকলে ধারা ৩৭৮-এর অধীনে অস্থায়ী গ্রহণও ফৌজদারি হতে পারে।", "D": "সম্পত্তি শেষ পর্যন্ত ফেরত দেওয়া হয়েছে কিনা তা অসৎ গ্রহণের সময় চুরি ইতিমধ্যে সম্পূর্ণ হয়েছিল কিনা তা নির্ধারণ করে না।" }
+        }
+      }
+    },
+    {
+      "content_id": "BC-MCQ-PENAL-THEFT-004",
+      "asset_type": "MCQ",
+      "question_id": "BC-MCQ-PENAL-THEFT-004",
+      "question_type": "MCQ",
+      "question_origin": "ORIGINAL_PRACTICE",
+      "subject_module_id": "BC-MOD-PENAL",
+      "topic_id": "T-PENAL-18",
+      "version": 1,
+      "status": "PENDING_REVIEW",
+      "difficulty": "EASY",
+      "verification_status": "VERIFIED",
+      "relevant_legal_reference_ids": ["LREF-PENAL-S379-380"],
+      "exam_focus": "S.379 vs. S.380 -- when the enhanced punishment applies.",
+      "source_basis": "Original question drawn directly from verbatim S.379 and S.380 text.",
+      "mistake_tags": ["s379-vs-s380-enhanced-punishment"],
+      "revision_priority": "MEDIUM",
+      "related_lesson_ids": ["BC-PENAL-THEFT-001"],
+      "correct_answer": "B",
+      "language_versions": {
+        "en": {
+          "question": "A commits theft inside B's home, which is used as a human dwelling. Under which provision, and to what maximum term, is A punishable?",
+          "options": { "A": "Section 379, up to 3 years, since the location of the theft is irrelevant to punishment", "B": "Section 380, up to 7 years, since the theft was committed in a place used as a human dwelling", "C": "Section 379, up to 7 years, since Section 379 already accounts for dwelling-house theft", "D": "Neither section applies -- theft inside a private home is a purely civil matter" },
+          "explanation": "Because the theft occurred in a building used as a human dwelling, Section 380's enhanced punishment applies, extending to imprisonment of up to 7 years, rather than the basic Section 379 maximum of 3 years.",
+          "why_other_options_are_wrong": { "A": "This wrongly treats the location as irrelevant -- Section 380 specifically escalates punishment based on exactly this kind of location.", "C": "Section 379 sets the basic 3-year maximum; the 7-year enhancement is Section 380's specific contribution, not folded into Section 379.", "D": "Theft in a private dwelling remains squarely a criminal matter under the Penal Code, not merely a civil dispute." }
+        },
+        "bn": {
+          "question": "ক খ-এর বাড়ির ভেতরে চুরি করে, যা মানুষের বাসস্থান হিসেবে ব্যবহৃত হয়। কোন বিধানের অধীনে, এবং সর্বোচ্চ কত মেয়াদে, ক দণ্ডনীয়?",
+          "options": { "A": "ধারা ৩৭৯, ৩ বছর পর্যন্ত, যেহেতু চুরির স্থান শাস্তির জন্য অপ্রাসঙ্গিক", "B": "ধারা ৩৮০, ৭ বছর পর্যন্ত, যেহেতু চুরিটি মানুষের বাসস্থান হিসেবে ব্যবহৃত একটি স্থানে সংঘটিত হয়েছিল", "C": "ধারা ৩৭৯, ৭ বছর পর্যন্ত, যেহেতু ধারা ৩৭৯ ইতিমধ্যে বাসগৃহ চুরির হিসাব রাখে", "D": "কোনো ধারাই প্রযোজ্য নয় -- একটি ব্যক্তিগত বাড়ির ভেতরে চুরি সম্পূর্ণরূপে একটি দেওয়ানি বিষয়" },
+          "explanation": "যেহেতু চুরিটি মানুষের বাসস্থান হিসেবে ব্যবহৃত একটি ভবনে ঘটেছে, ধারা ৩৮০-এর বর্ধিত শাস্তি প্রযোজ্য, যা মূল ধারা ৩৭৯-এর ৩ বছরের সর্বোচ্চ মেয়াদের পরিবর্তে ৭ বছর পর্যন্ত কারাদণ্ড পর্যন্ত বিস্তৃত হয়।",
+          "why_other_options_are_wrong": { "A": "এটি ভুলভাবে স্থানকে অপ্রাসঙ্গিক হিসেবে বিবেচনা করে -- ধারা ৩৮০ সুনির্দিষ্টভাবে ঠিক এই ধরনের স্থানের ভিত্তিতে শাস্তি বৃদ্ধি করে।", "C": "ধারা ৩৭৯ মূল ৩ বছরের সর্বোচ্চ সীমা নির্ধারণ করে; ৭ বছরের বৃদ্ধি ধারা ৩৮০-এর নির্দিষ্ট অবদান, ধারা ৩৭৯-এ ভাঁজ করা নয়।", "D": "একটি ব্যক্তিগত বাসস্থানে চুরি দণ্ডবিধির অধীনে স্পষ্টভাবে একটি ফৌজদারি বিষয়ই থেকে যায়, নিছক একটি দেওয়ানি বিরোধ নয়।" }
+        }
+      }
+    }
+  ]
+}
