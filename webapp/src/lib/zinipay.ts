@@ -7,11 +7,16 @@
  *
  * Header: zini-api-key (or zinipay-api-key when ZINIPAY_API_KEY_HEADER says so).
  * Always re-verify via /verify before fulfilling. Never invent COMPLETED.
- * Keys that start with sandbox_test_ are not live unless ZINIPAY_ALLOW_SANDBOX=true.
- * API key aliases: ZINIPAY_API_KEY, ZINI_API_KEY, ZINIPAY_KEY, ZINIPAY_SECRET.
+ * The docs sample sandbox_test_8f4c9a2e7b31 is never live.
+ * Other sandbox_test_ keys are not live unless ZINIPAY_ALLOW_SANDBOX=true,
+ * and production mode refuses every sandbox_test_ key.
+ * A real brand key is accepted in production. Aliases: ZINIPAY_API_KEY, ZINI_API_KEY, ZINIPAY_KEY, ZINIPAY_SECRET.
  */
 
 import { zinipayApiKeyFromEnv } from './env-aliases'
+
+/** Public documentation sample. Not a brand key. */
+export const ZINIPAY_DOCS_SAMPLE_KEY = 'sandbox_test_8f4c9a2e7b31'
 
 export type ZiniCreateInput = {
   cusName: string
@@ -62,6 +67,7 @@ export function zinipayMode(): 'production' | 'sandbox' {
 export function zinipayConfigured(): boolean {
   const key = zinipayApiKey()
   if (!key) return false
+  if (key === ZINIPAY_DOCS_SAMPLE_KEY) return false
   const sample = /^sandbox_test_/i.test(key)
   if (sample && zinipayMode() === 'production') return false
   if (sample && process.env.ZINIPAY_ALLOW_SANDBOX !== 'true') return false

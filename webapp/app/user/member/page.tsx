@@ -25,6 +25,9 @@ export default async function MemberTypePage({ searchParams }: Props) {
           পেমেন্ট সম্পূর্ণ হয়নি। সাপোর্ট বা অ্যাডমিন অ্যাক্টিভেট ব্যবহার করুন।
         </p>
       ) : null}
+      {params.pay === 'cancel' ? (
+        <p className="mb-3 font-bengali text-muted-foreground">পেমেন্ট বাতিল হয়েছে। কোনো প্যাকেজ চালু হয়নি।</p>
+      ) : null}
       <Card className="max-w-lg">
         <CardHeader className="flex flex-row items-center justify-between">
           <CardTitle className="font-bengali">বর্তমান প্যাকেজ</CardTitle>

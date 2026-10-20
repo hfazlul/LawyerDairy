@@ -12,6 +12,8 @@ import {
  * SIM bulk SMS hybrid: sms.net.bd primary, 24bulksmsbd failover.
  * Skip-if-no-keys. WhatsApp Cloud auto-send is removed.
  * Named aliases: SMS_NET_BD_API_KEY / SMS_API_URL-as-key, BULKSMS24_API_KEY / SMS_FAILOVER_KEY.
+ * 24bulksmsbd sends go to DynamicSMSApi (customer_id + api_key + messages[{to,message}]).
+ * Hearing texts differ per client, so smsSendApi is not used. OTP is one entry in that same array.
  */
 
 export function smsNetBdUrl(): string {
@@ -110,6 +112,11 @@ export async function sendSmsNetBd(phone: string, message: string): Promise<{
   }
 }
 
+function bulkSms24CustomerId(): string {
+  return envTrim('SMS_CUSTOMER_ID') || '1684'
+}
+
+/** One recipient. Dynamic SMS still sends messages as [{to, message}] so each client can differ. */
 export async function sendBulkSms24(phone: string, message: string): Promise<{
   ok: boolean
   skipped?: string
@@ -117,13 +124,12 @@ export async function sendBulkSms24(phone: string, message: string): Promise<{
 }> {
   const key = bulkSms24Key()
   if (!key) return { ok: false, skipped: 'sms_unconfigured' }
-  const to = formatSmsPhone(phone, 'e164')
+  const to = formatSmsPhone(phone, 'local01')
   const url = bulkSms24Url()
   const body = new URLSearchParams({
+    customer_id: bulkSms24CustomerId(),
     api_key: key,
-    senderid: senderId(),
-    number: to,
-    message,
+    messages: JSON.stringify([{ to, message }]),
   })
   try {
     const res = await fetch(url, {

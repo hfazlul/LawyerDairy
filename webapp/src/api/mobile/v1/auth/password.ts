@@ -27,6 +27,7 @@ import {
 import { applyReferralCode } from '@/lib/referral'
 import { hashToken, randomOpaqueToken } from '@/lib/crypto-tokens'
 import { sendEmail } from '@/lib/email'
+import { appBaseUrl } from '@/lib/app-url'
 import {
   anonymizeDeletedUser,
   isWithinDeletionGrace,
@@ -442,7 +443,7 @@ export async function POST_passwordResetRequest(req: NextRequest) {
         expiresAt: new Date(Date.now() + 30 * 60 * 1000),
       },
     })
-    const base = process.env.PUBLIC_WEB_URL || 'http://localhost:3000'
+    const base = appBaseUrl()
     const link = `${base}/reset-password?token=${token}`
     await sendEmail({
       to: user.email,

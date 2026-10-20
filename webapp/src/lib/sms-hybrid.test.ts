@@ -35,6 +35,7 @@ const SMS_ENV = [
   'SMS_FAILOVER_KEY',
   'SMS_SENDER_ID',
   'SMS_MODE',
+  'SMS_CUSTOMER_ID',
 ]
 
 test('hybrid is unconfigured without keys; WhatsApp auto always skipped', async () => {
@@ -74,7 +75,7 @@ test('SMS_MODE=production uses only the non-masking account', async () => {
     assert.equal(r.ok, true)
     assert.equal(r.provider, '24bulksmsbd')
     assert.equal(calls.length, 1)
-    assert.match(calls[0], /24bulksmsbd/)
+    assert.equal(calls[0], 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
   } finally {
     globalThis.fetch = orig
     restore(prev)
@@ -87,6 +88,8 @@ test('sms.net.bd primary then 24bulksmsbd failover (mocked HTTP)', async () => {
   process.env.SMS_NET_BD_URL = 'https://api.sms.net.bd/sendsms'
   process.env.BULKSMS24_API_KEY = 'bulk-key'
   process.env.BULKSMS24_URL = 'https://www.24bulksmsbd.com/api/smsSendApi'
+  delete process.env.SMS_MODE
+  delete process.env.SMS_CUSTOMER_ID
   process.env.SMS_SENDER_ID = 'LawyerDiary'
   delete process.env.SMS_API_URL
   delete process.env.SMS_API_KEY
@@ -110,8 +113,11 @@ test('sms.net.bd primary then 24bulksmsbd failover (mocked HTTP)', async () => {
     assert.equal(calls.length, 2)
     assert.match(calls[0].url, /sms\.net\.bd/)
     assert.match(calls[0].body, /api_key=net-key/)
-    assert.match(calls[1].url, /24bulksmsbd/)
+    assert.equal(calls[1].url, 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
     assert.match(calls[1].body, /api_key=bulk-key/)
+    assert.match(calls[1].body, /customer_id=1684/)
+    assert.match(calls[1].body, /01712345678/)
+    assert.doesNotMatch(calls[1].body, /senderid=/)
   } finally {
     globalThis.fetch = orig
     restore(prev)
@@ -122,6 +128,7 @@ test('sms.net.bd success does not call failover', async () => {
   const prev = stash(SMS_ENV)
   process.env.SMS_NET_BD_API_KEY = 'net-key'
   process.env.BULKSMS24_API_KEY = 'bulk-key'
+  delete process.env.SMS_MODE
   let bulkHits = 0
   const orig = globalThis.fetch
   globalThis.fetch = (async (input: RequestInfo | URL) => {
@@ -167,8 +174,12 @@ test('24bulksmsbd-only send when primary missing', async () => {
   process.env.BULKSMS24_API_KEY = 'bulk-key'
   const orig = globalThis.fetch
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
-    assert.match(String(input), /24bulksmsbd/)
-    assert.match(String(init?.body || ''), /number=8801712345678/)
+    assert.equal(String(input), 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
+    const body = String(init?.body || '')
+    assert.match(body, /customer_id=1684/)
+    assert.match(body, /messages=/)
+    assert.match(body, /01712345678/)
+    assert.doesNotMatch(body, /number=/)
     return new Response('SUCCESS', { status: 200 })
   }) as typeof fetch
   try {

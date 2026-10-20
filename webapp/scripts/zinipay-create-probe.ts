@@ -5,8 +5,8 @@
 import { readFileSync } from 'node:fs'
 import { dirname, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
-import { checkoutRedirectIsLocalhost } from '../src/lib/app-url'
-import { publicAppUrlFromEnv, zinipayApiKeyFromEnv } from '../src/lib/env-aliases'
+import { appBaseUrl, checkoutRedirectIsLocalhost } from '../src/lib/app-url'
+import { zinipayApiKeyFromEnv } from '../src/lib/env-aliases'
 import { createZiniInvoice, zinipayConfigured } from '../src/lib/zinipay'
 
 const envPath = join(dirname(fileURLToPath(import.meta.url)), '..', '.env')
@@ -35,7 +35,7 @@ function redact(message: string, key: string): string {
 async function main() {
   const keyPresent = Boolean(zinipayApiKeyFromEnv())
   const configured = zinipayConfigured()
-  const origin = publicAppUrlFromEnv() || 'http://localhost:3000'
+  const origin = appBaseUrl()
   const localhost = checkoutRedirectIsLocalhost(origin)
 
   const report: Record<string, unknown> = {
@@ -94,7 +94,7 @@ async function main() {
     report.message = redact(created.message, zinipayApiKeyFromEnv())
     if (localhost) {
       report.domain_hint =
-        'If vendor rejects localhost, set PUBLIC_APP_URL (aliases NEXT_PUBLIC_SITE_URL / NEXT_PUBLIC_APP_URL) to the ZiniPay brand website. Do not invent a domain.'
+        'Set PUBLIC_APP_URL, NEXT_PUBLIC_SITE_URL, and NEXT_PUBLIC_APP_URL to https://mamlaq.com. The brand website field is that homepage.'
     }
   }
 

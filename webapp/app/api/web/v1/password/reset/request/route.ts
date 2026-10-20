@@ -4,6 +4,7 @@ import { rateLimit, clientIp } from '@/lib/rate-limit'
 import { kPhoneNotRegisteredMessage, kSignupPhoneError, normalizeBdPhone, signupPhoneIssue } from '@/lib/identity'
 import { hashToken, randomOpaqueToken } from '@/lib/crypto-tokens'
 import { sendEmail } from '@/lib/email'
+import { appBaseUrl } from '@/lib/app-url'
 
 function isDev(): boolean {
   return process.env.NODE_ENV === 'development'
@@ -75,7 +76,7 @@ export async function POST(req: NextRequest) {
         expiresAt: new Date(Date.now() + 30 * 60 * 1000),
       },
     })
-    const base = process.env.PUBLIC_WEB_URL || 'http://localhost:3000'
+    const base = appBaseUrl()
     const link = `${base}/reset-password?token=${token}`
     await sendEmail({
       to: user.email,

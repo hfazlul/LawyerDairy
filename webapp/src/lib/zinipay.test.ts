@@ -24,6 +24,27 @@ test('sandbox_test_ prefix is not live unless ZINIPAY_ALLOW_SANDBOX', () => {
   else process.env.ZINIPAY_ALLOW_SANDBOX = allow
 })
 
+test('production accepts a brand key and always refuses the docs sample', () => {
+  const prev = process.env.ZINIPAY_API_KEY
+  const mode = process.env.ZINIPAY_MODE
+  const allow = process.env.ZINIPAY_ALLOW_SANDBOX
+  process.env.ZINIPAY_API_KEY = 'sandbox_test_8f4c9a2e7b31'
+  process.env.ZINIPAY_MODE = 'production'
+  process.env.ZINIPAY_ALLOW_SANDBOX = 'true'
+  assert.equal(zinipayConfigured(), false)
+  delete process.env.ZINIPAY_MODE
+  assert.equal(zinipayConfigured(), false)
+  process.env.ZINIPAY_MODE = 'production'
+  process.env.ZINIPAY_API_KEY = 'c0ffee1234abcd5678ef9012345678ab9012345678cd'
+  assert.equal(zinipayConfigured(), true)
+  if (prev === undefined) delete process.env.ZINIPAY_API_KEY
+  else process.env.ZINIPAY_API_KEY = prev
+  if (mode === undefined) delete process.env.ZINIPAY_MODE
+  else process.env.ZINIPAY_MODE = mode
+  if (allow === undefined) delete process.env.ZINIPAY_ALLOW_SANDBOX
+  else process.env.ZINIPAY_ALLOW_SANDBOX = allow
+})
+
 test('production mode refuses a sandbox_test_ key', () => {
   const prev = process.env.ZINIPAY_API_KEY
   const mode = process.env.ZINIPAY_MODE
@@ -161,7 +182,9 @@ test('fulfill only after verify COMPLETED — never from webhook status:true', a
 
 test('create rejects vendor status:false; verify sends zini-api-key', async () => {
   const prevKey = process.env.ZINIPAY_API_KEY
+  const prevBase = process.env.ZINIPAY_BASE_URL
   process.env.ZINIPAY_API_KEY = 'test_live_style_key'
+  delete process.env.ZINIPAY_BASE_URL
   const failed = await createZiniInvoice(
     {
       cusName: 'Test',
@@ -184,7 +207,7 @@ test('create rejects vendor status:false; verify sends zini-api-key', async () =
   }
 
   const verifyFetch: typeof fetch = async (input, init) => {
-    assert.match(String(input), /\/v1\/payment\/verify$/)
+    assert.equal(String(input), 'https://api.zinipay.com/v1/payment/verify')
     const headers = new Headers(init?.headers)
     assert.equal(headers.get('zini-api-key'), 'test_live_style_key')
     return new Response(JSON.stringify({ status: 'PENDING', invoice_id: 'INV-1' }), {
@@ -201,22 +224,27 @@ test('create rejects vendor status:false; verify sends zini-api-key', async () =
 
   if (prevKey === undefined) delete process.env.ZINIPAY_API_KEY
   else process.env.ZINIPAY_API_KEY = prevKey
+  if (prevBase === undefined) delete process.env.ZINIPAY_BASE_URL
+  else process.env.ZINIPAY_BASE_URL = prevBase
 })
 
 test('create + verify use mocked HTTP (no live charge)', async () => {
   const prevKey = process.env.ZINIPAY_API_KEY
   const prevAllow = process.env.ZINIPAY_ALLOW_SANDBOX
+  const prevBase = process.env.ZINIPAY_BASE_URL
   process.env.ZINIPAY_API_KEY = 'test_live_style_key'
   delete process.env.ZINIPAY_ALLOW_SANDBOX
+  delete process.env.ZINIPAY_BASE_URL
 
   const createFetch: typeof fetch = async (input, init) => {
     const url = String(input)
-    assert.match(url, /\/v1\/payment\/create$/)
+    assert.equal(url, 'https://api.zinipay.com/v1/payment/create')
     const headers = new Headers(init?.headers)
     assert.equal(headers.get('zini-api-key'), 'test_live_style_key')
     const body = JSON.parse(String(init?.body || '{}')) as Record<string, unknown>
     assert.equal(body.amount, 99)
     assert.ok(body.redirect_url)
+    assert.ok(body.cancel_url)
     assert.ok(body.webhook_url)
     return new Response(JSON.stringify({ payment_url: 'https://pay.example/payment/INV-1', invoice_id: 'INV-1' }), {
       status: 200,
@@ -242,7 +270,7 @@ test('create + verify use mocked HTTP (no live charge)', async () => {
   }
 
   const verifyFetch: typeof fetch = async (input, init) => {
-    assert.match(String(input), /\/v1\/payment\/verify$/)
+    assert.equal(String(input), 'https://api.zinipay.com/v1/payment/verify')
     const body = JSON.parse(String(init?.body || '{}')) as Record<string, unknown>
     assert.equal(body.invoice_id, 'INV-1')
     return new Response(JSON.stringify({ status: 'COMPLETED', invoice_id: 'INV-1', amount: 99 }), {
@@ -267,4 +295,6 @@ test('create + verify use mocked HTTP (no live charge)', async () => {
   else process.env.ZINIPAY_API_KEY = prevKey
   if (prevAllow === undefined) delete process.env.ZINIPAY_ALLOW_SANDBOX
   else process.env.ZINIPAY_ALLOW_SANDBOX = prevAllow
+  if (prevBase === undefined) delete process.env.ZINIPAY_BASE_URL
+  else process.env.ZINIPAY_BASE_URL = prevBase
 })

@@ -1,6 +1,7 @@
 import type { CampaignTemplate } from './types'
+import { appBaseUrl } from '../app-url'
 
-const APP_URL = () => process.env.NEXT_PUBLIC_APP_URL || 'https://mamlaq.com'
+const APP_URL = () => appBaseUrl()
 
 export type TemplateVars = {
   name?: string

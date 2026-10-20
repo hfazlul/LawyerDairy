@@ -1,7 +1,9 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
+import { appBaseUrl } from './app-url'
 import {
   bulkSms24KeyFromEnv,
+  bulkSms24UrlFromEnv,
   looksLikeKeyNotUrl,
   looksLikeUrl,
   missingSecretNames,
@@ -23,6 +25,7 @@ const NAMES = [
   'SMS_API_URL',
   'SMS_API_KEY',
   'BULKSMS24_API_KEY',
+  'BULKSMS24_URL',
   'SMS_FAILOVER_KEY',
   'SMS_NET_BD_URL',
 ]
@@ -72,6 +75,29 @@ test('SMS_NETBD_API_KEY alias and 24bulksms failover alias', () => {
   assert.equal(smsNetBdKeyFromEnv(), 'netbd-alias-key-16xx')
   assert.equal(bulkSms24KeyFromEnv(), 'bulk-alias-key-16xxxx')
   restore(prev)
+})
+
+test('unset public URL and the VPS IP become https://mamlaq.com', () => {
+  const prev = stash()
+  const web = process.env.PUBLIC_WEB_URL
+  clear()
+  delete process.env.PUBLIC_WEB_URL
+  assert.equal(appBaseUrl(), 'https://mamlaq.com')
+  assert.equal(appBaseUrl('http://187.77.153.28/package'), 'https://mamlaq.com')
+  assert.equal(appBaseUrl('http://localhost:3000/user'), 'http://localhost:3000')
+  process.env.PUBLIC_APP_URL = 'http://187.77.153.28'
+  assert.equal(appBaseUrl(), 'https://mamlaq.com')
+  process.env.PUBLIC_APP_URL = 'https://www.mamlaq.com'
+  assert.equal(appBaseUrl(), 'https://mamlaq.com')
+  process.env.PUBLIC_APP_URL = 'http://localhost:3000'
+  assert.equal(appBaseUrl(), 'http://localhost:3000')
+  delete process.env.BULKSMS24_URL
+  assert.equal(bulkSms24UrlFromEnv(), 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
+  process.env.BULKSMS24_URL = 'https://www.24bulksmsbd.com/api/smsSendApi'
+  assert.equal(bulkSms24UrlFromEnv(), 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
+  restore(prev)
+  if (web === undefined) delete process.env.PUBLIC_WEB_URL
+  else process.env.PUBLIC_WEB_URL = web
 })
 
 test('NEXT_PUBLIC_APP_URL aliases PUBLIC_APP_URL; placeholders are missing', () => {
