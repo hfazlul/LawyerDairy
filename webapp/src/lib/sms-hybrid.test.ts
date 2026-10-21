@@ -116,7 +116,7 @@ test('sms.net.bd primary then 24bulksmsbd failover (mocked HTTP)', async () => {
     assert.equal(calls[1].url, 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
     assert.match(calls[1].body, /api_key=bulk-key/)
     assert.match(calls[1].body, /customer_id=1684/)
-    assert.match(calls[1].body, /01712345678/)
+    assert.match(calls[1].body, /8801712345678/)
     assert.doesNotMatch(calls[1].body, /senderid=/)
   } finally {
     globalThis.fetch = orig
@@ -168,6 +168,26 @@ test('SMS_API_URL used as key alias still hits sms.net.bd', async () => {
   }
 })
 
+test('24bulksmsbd failure is not treated as sent and does not echo the key', async () => {
+  const prev = stash(SMS_ENV)
+  for (const n of SMS_ENV) delete process.env[n]
+  process.env.BULKSMS24_API_KEY = 'bulk-key-secret'
+  process.env.SMS_MODE = 'production'
+  const orig = globalThis.fetch
+  globalThis.fetch = (async () => {
+    return new Response(JSON.stringify({ success: false, error: 'invalid number' }), { status: 200 })
+  }) as typeof fetch
+  try {
+    const r = await sendSmsHybrid({ phone: '01712345678', message: 'hi', kind: 'otp' })
+    assert.equal(r.ok, false)
+    assert.equal(r.provider, '24bulksmsbd')
+    assert.equal((r.error || '').includes('bulk-key-secret'), false)
+  } finally {
+    globalThis.fetch = orig
+    restore(prev)
+  }
+})
+
 test('24bulksmsbd-only send when primary missing', async () => {
   const prev = stash(SMS_ENV)
   for (const n of SMS_ENV) delete process.env[n]
@@ -178,7 +198,7 @@ test('24bulksmsbd-only send when primary missing', async () => {
     const body = String(init?.body || '')
     assert.match(body, /customer_id=1684/)
     assert.match(body, /messages=/)
-    assert.match(body, /01712345678/)
+    assert.match(body, /8801712345678/)
     assert.doesNotMatch(body, /number=/)
     return new Response('SUCCESS', { status: 200 })
   }) as typeof fetch

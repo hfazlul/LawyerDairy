@@ -1,15 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
-import { prisma } from '@/lib/prisma'
 import { rateLimit, clientIp } from '@/lib/rate-limit'
 import { normalizeBdPhone } from '@/lib/identity'
-import { sendSmsHybrid } from '@/lib/sms-hybrid'
-import {
-  generateNumericOtp,
-  hashPasswordOtp,
-  otpRequestMessage,
-  OTP_TTL_MS,
-} from '@/lib/auth/password-otp'
+import { issuePasswordOtp } from '@/lib/auth/issue-password-otp'
 
 const schema = z.object({ phone: z.string().min(10).max(20) })
 
@@ -43,29 +36,15 @@ export async function POST(req: NextRequest) {
   const rlHour = rateLimit(`otp-req-hour:${phone}`, 5, 60 * 60_000)
   if (!rlPhone.ok || !rlHour.ok) return NextResponse.json(UNIFORM)
 
-  const user = await prisma.user.findFirst({
-    where: { phone, deletedAt: null },
-    select: { id: true },
-  })
-  if (!user) return NextResponse.json(UNKNOWN_PHONE, { status: 422 })
-
-  const otp = generateNumericOtp()
-  await prisma.passwordOtpChallenge.updateMany({
-    where: { userId: user.id, usedAt: null, expiresAt: { gt: new Date() } },
-    data: { usedAt: new Date() },
-  })
-  await prisma.passwordOtpChallenge.create({
-    data: {
-      userId: user.id,
-      phone,
-      otpHash: hashPasswordOtp(phone, otp),
-      expiresAt: new Date(Date.now() + OTP_TTL_MS),
-    },
-  })
-
-  const sent = await sendSmsHybrid({ phone, message: otpRequestMessage(otp), kind: 'password_otp' })
-  if (!sent.ok && process.env.NODE_ENV === 'development') {
-    console.log(`[OTP] stored; SMS ${sent.skipped || sent.error || 'failed'}`)
+  const issued = await issuePasswordOtp(body.phone)
+  if (!issued.ok) {
+    if (issued.error === 'unknown_phone') {
+      return NextResponse.json(UNKNOWN_PHONE, { status: 422 })
+    }
+    return NextResponse.json(
+      { error: issued.error, messageBn: issued.messageBn },
+      { status: issued.status },
+    )
   }
 
   return NextResponse.json(UNIFORM)

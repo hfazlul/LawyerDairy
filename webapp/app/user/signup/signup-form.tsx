@@ -221,7 +221,7 @@ export function SignupForm({ error }: { error: string }) {
         {extrasOpen ? (
           <div id="signup-extras-panel" className="space-y-3">
             <div className="space-y-1.5">
-              <Label htmlFor="email">Email (Opt.)</Label>
+              <Label htmlFor="email">Email (Optional)</Label>
               <Input
                 id="email"
                 type="text"
@@ -238,7 +238,7 @@ export function SignupForm({ error }: { error: string }) {
               />
             </div>
             <div className="space-y-1.5">
-              <Label htmlFor="referralCode">Referral (Opt.)</Label>
+              <Label htmlFor="referralCode">Referral (Optional)</Label>
               <Input
                 id="referralCode"
                 type="text"

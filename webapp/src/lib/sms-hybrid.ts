@@ -69,12 +69,30 @@ function smsNetBdOk(status: number, text: string): boolean {
   return status >= 200 && status < 300
 }
 
+function redactProviderText(text: string): string {
+  return text
+    .replace(/(api[_-]?key|token|secret|password)(["'\s:=]+)[^&\s"']+/gi, '$1$2redacted')
+    .replace(/\s+/g, ' ')
+    .trim()
+    .slice(0, 220)
+}
+
 function bulk24Ok(status: number, text: string): boolean {
   const json = parseJson(text)
   if (json) {
+    if (json.success === false || json.ok === false) return false
     const code = json.response_code ?? json.error ?? json.status
-    if (code === 0 || code === '0' || code === 202 || code === '202' || code === 'SUCCESS') return true
-    if (typeof code === 'number' && code >= 1000) return false
+    if (
+      code === 0 ||
+      code === '0' ||
+      code === 202 ||
+      code === '202' ||
+      code === 'SUCCESS' ||
+      code === 'success'
+    ) {
+      return true
+    }
+    if (typeof code === 'number' && (code >= 1000 || (code > 0 && code !== 202))) return false
   }
   if (/invalid|insufficient|failed|error/i.test(text) && !/success/i.test(text)) return false
   return status >= 200 && status < 300
@@ -124,7 +142,8 @@ export async function sendBulkSms24(phone: string, message: string): Promise<{
 }> {
   const key = bulkSms24Key()
   if (!key) return { ok: false, skipped: 'sms_unconfigured' }
-  const to = formatSmsPhone(phone, 'local01')
+  // Gateway delivers 8801… numbers. 01… is accepted by some panels and then dropped.
+  const to = formatSmsPhone(phone, 'e164')
   const url = bulkSms24Url()
   const body = new URLSearchParams({
     customer_id: bulkSms24CustomerId(),
@@ -139,11 +158,14 @@ export async function sendBulkSms24(phone: string, message: string): Promise<{
     })
     const text = await res.text()
     if (!bulk24Ok(res.status, text)) {
+      console.error('[sms] 24bulksmsbd rejected', res.status, redactProviderText(text))
       return { ok: false, error: `24bulksmsbd ${res.status}` }
     }
     return { ok: true }
   } catch (e) {
-    return { ok: false, error: e instanceof Error ? e.message : '24bulksmsbd_failed' }
+    const detail = e instanceof Error ? e.message : '24bulksmsbd_failed'
+    console.error('[sms] 24bulksmsbd request failed', redactProviderText(detail))
+    return { ok: false, error: '24bulksmsbd_failed' }
   }
 }
 

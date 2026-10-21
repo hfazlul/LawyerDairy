@@ -4,6 +4,7 @@ import { prisma } from '@/lib/prisma'
 import { normalizeBdPhone, passwordIssues, phoneFieldIssue } from '@/lib/identity'
 import { hashPassword } from '@/lib/auth/session'
 import { hashPasswordOtp, OTP_MAX_ATTEMPTS } from '@/lib/auth/password-otp'
+import { OTP_EXPIRED_MESSAGE_BN } from '@/lib/auth/issue-password-otp'
 
 const schema = z.object({
   phone: z.string().min(1).max(20),
@@ -32,12 +33,26 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'validation', messageBn: '১১ সংখ্যার মোবাইল নম্বর দিন, যেমন 01XXXXXXXXX' }, { status: 422 })
   }
 
+  const now = new Date()
   const challenge = await prisma.passwordOtpChallenge.findFirst({
-    where: { phone, usedAt: null, expiresAt: { gt: new Date() } },
+    where: { phone, usedAt: null, expiresAt: { gt: now } },
     orderBy: { createdAt: 'desc' },
     include: { user: true },
   })
-  if (!challenge || challenge.attempts >= OTP_MAX_ATTEMPTS) {
+  if (!challenge) {
+    const expired = await prisma.passwordOtpChallenge.findFirst({
+      where: { phone, usedAt: null, expiresAt: { lte: now } },
+      orderBy: { createdAt: 'desc' },
+    })
+    if (expired) {
+      return NextResponse.json(
+        { error: 'otp_expired', messageBn: OTP_EXPIRED_MESSAGE_BN },
+        { status: 400 },
+      )
+    }
+    return NextResponse.json({ error: 'invalid_otp', messageBn: 'কোড ভুল বা মেয়াদ শেষ' }, { status: 400 })
+  }
+  if (challenge.attempts >= OTP_MAX_ATTEMPTS) {
     return NextResponse.json({ error: 'invalid_otp', messageBn: 'কোড ভুল বা মেয়াদ শেষ' }, { status: 400 })
   }
 
