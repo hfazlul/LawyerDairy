@@ -1,9 +1,16 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
+import type { Prisma } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 import { requireAuth } from '@/lib/auth-middleware'
 import { checkoutCustomerEmail, createZiniInvoice, zinipayConfigured } from '@/lib/zinipay'
-import { isSellablePackage, amountFor, defFor, monthsForPeriod } from '@/lib/plans'
+import { monthsForPeriod } from '@/lib/plans'
+import {
+  UNKNOWN_PACKAGE_BN,
+  buyerFacingCheckoutMessage,
+  catalogPackageFields,
+  resolveCheckoutPackage,
+} from '@/lib/checkout-package'
 import { appBaseUrl, checkoutRedirectIsLocalhost } from '@/lib/app-url'
 import { originAllowed } from '@/lib/csrf'
 
@@ -24,17 +31,35 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ message: 'Invalid input' }, { status: 400 })
   }
 
-  if (!isSellablePackage(body.packageCode)) {
-    return NextResponse.json({ message: 'This package is not sold', code: 'NOT_SOLD' }, { status: 400 })
-  }
-  const def = defFor(body.packageCode)
-  const pkg = await prisma.subscriptionPackage.findUnique({ where: { code: body.packageCode } })
-  if (!pkg || !pkg.active || !def) {
-    return NextResponse.json({ message: 'Unknown package' }, { status: 404 })
+  const selection = resolveCheckoutPackage(body.packageCode, body.period)
+  if (!selection || !(selection.amountBdt > 0)) {
+    return NextResponse.json({ message: UNKNOWN_PACKAGE_BN }, { status: 404 })
   }
 
-  const period = body.period ?? 'MONTH'
-  const amount = amountFor(def, period)
+  const fields = catalogPackageFields(selection.def)
+  const featuresJson = fields.featuresJson as Prisma.InputJsonValue
+  const pkg = await prisma.subscriptionPackage.upsert({
+    where: { code: selection.code },
+    create: { ...fields, featuresJson },
+    update: {
+      nameBn: fields.nameBn,
+      nameEn: fields.nameEn,
+      priceBdt: fields.priceBdt,
+      yearlyBdt: fields.yearlyBdt,
+      featuresJson,
+      smsMonthly: fields.smsMonthly,
+      smsYearly: fields.smsYearly,
+      teamSeats: fields.teamSeats,
+      autoHearingSms: fields.autoHearingSms,
+      careerFull: fields.careerFull,
+      adsOff: fields.adsOff,
+      sortOrder: fields.sortOrder,
+      active: true,
+    },
+  })
+
+  const period = selection.period
+  const amount = selection.amountBdt
   const sub = await prisma.subscription.create({
     data: {
       workspaceId: user.activeMembership.workspaceId,
@@ -47,16 +72,13 @@ export async function POST(req: NextRequest) {
   })
 
   const origin = appBaseUrl(req.url)
-  const domainNote = checkoutRedirectIsLocalhost(origin)
-    ? ' PUBLIC_APP_URL / NEXT_PUBLIC_SITE_URL / NEXT_PUBLIC_APP_URL must match the ZiniPay brand website in production.'
-    : ''
   if (!zinipayConfigured()) {
     return NextResponse.json({
       subscriptionId: sub.id,
       paymentRail: 'zinipay_web',
       checkoutUrl: null,
       months: monthsForPeriod(period),
-      message: 'ZINIPAY_API_KEY সেট নেই — পেমেন্ট লাইভ নয়। অ্যাডমিন ম্যানুয়াল অ্যাক্টিভেট ব্যবহার করুন।' + domainNote,
+      message: 'পেমেন্ট এখন উপলব্ধ নয়। সাপোর্ট বা অ্যাডমিন অ্যাক্টিভেট ব্যবহার করুন।',
       redirectOriginLocalhost: checkoutRedirectIsLocalhost(origin),
     })
   }
@@ -67,7 +89,7 @@ export async function POST(req: NextRequest) {
     amountBdt: amount,
     metadata: {
       subscriptionId: sub.id,
-      packageCode: pkg.code,
+      packageCode: selection.code,
       period,
       workspaceId: user.activeMembership.workspaceId,
     },
@@ -81,7 +103,7 @@ export async function POST(req: NextRequest) {
       subscriptionId: sub.id,
       paymentRail: 'zinipay_web',
       checkoutUrl: null,
-      message: created.message,
+      message: buyerFacingCheckoutMessage(created.message, created.reason === 'unconfigured'),
     }, { status: created.reason === 'unconfigured' ? 200 : 502 })
   }
 
