@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { FEATURE_MATRIX, PACKAGE_DEFS } from '@/lib/plans'
 import { Button } from '@/components/ui/button'
+import { CheckoutButton } from '@/ui/checkout-button'
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import { cn } from '@/lib/utils'
@@ -58,11 +59,7 @@ export function PackageCards(props: { detailsHref?: string; showBuy?: boolean })
             <Button asChild variant="outline" className="flex-1 font-bengali">
               <Link href={details}>বিস্তারিত</Link>
             </Button>
-            {props.showBuy ? (
-              <Button asChild className="flex-1 font-bengali">
-                <Link href={`/package?buy=${p.code}`}>কিনুন</Link>
-              </Button>
-            ) : null}
+            {props.showBuy ? <CheckoutButton packageCode={p.code} /> : null}
           </CardFooter>
         </Card>
       ))}

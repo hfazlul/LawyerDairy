@@ -1,9 +1,9 @@
-import Link from 'next/link'
+import { Suspense } from 'react'
 import { requireWebUser, planOfUser, personalWorkspace } from '@/lib/web-session'
+import { BuyButtons } from '@/app/package/buy-buttons'
 import { isPremiumActive } from '@/lib/entitlement-gates'
 import { extraTeamSeats, monthlySmsCredits } from '@/lib/permissions'
 import { UserShell } from '@/ui/app-nav'
-import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 
@@ -40,13 +40,13 @@ export default async function MemberTypePage({ searchParams }: Props) {
           <p className="text-muted-foreground">
             টিম সিট (মালিক ছাড়া): {extraTeamSeats(plan)} · এসএমএস/মাস: {monthlySmsCredits(plan)}
           </p>
-          {!active ? (
-            <Button asChild className="mt-2">
-              <Link href="/package">ওয়েবসাইটে পে করুন</Link>
-            </Button>
-          ) : null}
         </CardContent>
       </Card>
+      {!active ? (
+        <Suspense fallback={<p className="mt-3 font-bengali text-muted-foreground">লোড হচ্ছে…</p>}>
+          <BuyButtons />
+        </Suspense>
+      ) : null}
     </UserShell>
   )
 }

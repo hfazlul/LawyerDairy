@@ -2,7 +2,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import { z } from 'zod'
 import { prisma } from '@/lib/prisma'
 import { requireAuth } from '@/lib/auth-middleware'
-import { createZiniInvoice, zinipayConfigured } from '@/lib/zinipay'
+import { checkoutCustomerEmail, createZiniInvoice, zinipayConfigured } from '@/lib/zinipay'
 import { isSellablePackage, amountFor, defFor, monthsForPeriod } from '@/lib/plans'
 import { appBaseUrl, checkoutRedirectIsLocalhost } from '@/lib/app-url'
 import { originAllowed } from '@/lib/csrf'
@@ -63,7 +63,7 @@ export async function POST(req: NextRequest) {
 
   const created = await createZiniInvoice({
     cusName: user.name,
-    cusEmail: user.email,
+    cusEmail: checkoutCustomerEmail(user),
     amountBdt: amount,
     metadata: {
       subscriptionId: sub.id,

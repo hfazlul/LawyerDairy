@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import {
+  checkoutCustomerEmail,
   createZiniInvoice,
   extractInvoiceId,
   shouldActivateFromVerify,
@@ -98,6 +99,28 @@ test('webhook paid detection and invoice parse', () => {
   assert.equal(extractInvoiceId({ invoice_id: 'A1' }), 'A1')
   assert.equal(extractInvoiceId({ val_id: 'VAL-9' }), 'VAL-9')
   assert.equal(extractInvoiceId({}, 'https://secure.zinipay.com/payment/INV99'), 'INV99')
+  assert.equal(
+    extractInvoiceId(
+      { val_id: 'not-the-invoice' },
+      'https://secure.zinipay.com/barakah-tech/payment/INV-FROM-URL',
+    ),
+    'INV-FROM-URL',
+  )
+})
+
+test('phone-only accounts still get a cus_email ZiniPay will accept', () => {
+  assert.equal(
+    checkoutCustomerEmail({ email: 'Lawyer@Example.com', phone: '+8801711111111', id: 'u1' }),
+    'lawyer@example.com',
+  )
+  assert.equal(
+    checkoutCustomerEmail({ email: null, phone: '+8801712345678', id: 'u1' }),
+    '8801712345678@users.mamlaq.com',
+  )
+  assert.equal(
+    checkoutCustomerEmail({ email: '  ', phone: '', id: 'abc-123' }),
+    'abc123@users.mamlaq.com',
+  )
 })
 
 test('fulfill only after verify COMPLETED — never from webhook status:true', async () => {
@@ -243,6 +266,7 @@ test('create + verify use mocked HTTP (no live charge)', async () => {
     assert.equal(headers.get('zini-api-key'), 'test_live_style_key')
     const body = JSON.parse(String(init?.body || '{}')) as Record<string, unknown>
     assert.equal(body.amount, 99)
+    assert.equal(body.cus_email, 't@example.com')
     assert.ok(body.redirect_url)
     assert.ok(body.cancel_url)
     assert.ok(body.webhook_url)

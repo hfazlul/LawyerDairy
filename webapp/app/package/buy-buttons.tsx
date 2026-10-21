@@ -3,7 +3,7 @@
 import { useSearchParams } from 'next/navigation'
 import { useState } from 'react'
 import { PACKAGE_DEFS } from '@/lib/plans'
-import { GA4_EVENT_NAMES, trackGa4Event } from '@/lib/ga4'
+import { startCheckout } from '@/ui/start-checkout'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Label } from '@/components/ui/label'
@@ -21,27 +21,13 @@ export function BuyButtons() {
   async function buy() {
     setLoading(true)
     setMsg('')
-    const res = await fetch('/api/web/v1/checkout/start', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ packageCode: code, period }),
-    })
-    const data = await res.json()
-    setLoading(false)
-    if (res.status === 401) {
-      window.location.href = `/user/login?next=${encodeURIComponent(`/package?buy=${code}`)}`
-      return
+    try {
+      await startCheckout(code, period)
+    } catch (e) {
+      setMsg(e instanceof Error ? e.message : 'চেকআউট ব্যর্থ হয়েছে')
+    } finally {
+      setLoading(false)
     }
-    if (!res.ok) {
-      setMsg(data.message || 'চেকআউট ব্যর্থ হয়েছে')
-      return
-    }
-    if (data.checkoutUrl) {
-      trackGa4Event(GA4_EVENT_NAMES.beginCheckout, { package_code: code, period })
-      window.location.href = data.checkoutUrl
-      return
-    }
-    setMsg(data.message || 'পেমেন্ট এখন উপলব্ধ নয়। সাপোর্ট বা অ্যাডমিন অ্যাক্টিভেট ব্যবহার করুন।')
   }
 
   return (

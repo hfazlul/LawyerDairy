@@ -81,14 +81,56 @@ function authHeaders(): Record<string, string> {
   }
 }
 
+/**
+ * ZiniPay requires cus_email. Phone signup leaves User.email empty, and create
+ * then returns 400 with no payment_url. A real address is kept. Otherwise a
+ * stable address is built from the phone or id so the hosted page can open.
+ */
+export function checkoutCustomerEmail(user: {
+  email?: string | null
+  phone?: string | null
+  id?: string | null
+}): string {
+  const email = (user.email || '').trim().toLowerCase()
+  if (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) return email
+  const digits = (user.phone || '').replace(/\D/g, '')
+  if (digits.length >= 10) return `${digits}@users.mamlaq.com`
+  const id = (user.id || '').replace(/[^a-z0-9]/gi, '').slice(0, 24)
+  return `${id || 'member'}@users.mamlaq.com`
+}
+
+/**
+ * Live create returns val_id plus payment_url, and those ids differ.
+ * /verify accepts the id in the payment URL and returns 404 for val_id.
+ */
 export function extractInvoiceId(raw: Record<string, unknown>, paymentUrl?: string): string | undefined {
-  const direct = raw.invoice_id ?? raw.invoiceId ?? raw.val_id ?? raw.valId ?? raw.id
-  if (typeof direct === 'string' && direct.length > 0) return direct
+  const named = raw.invoice_id ?? raw.invoiceId
+  if (typeof named === 'string' && named.length > 0) return named
   if (paymentUrl) {
     const m = paymentUrl.match(/\/payment\/([^/?#]+)/)
     if (m?.[1]) return m[1]
   }
+  const fallback = raw.val_id ?? raw.valId ?? raw.id
+  if (typeof fallback === 'string' && fallback.length > 0) return fallback
   return undefined
+}
+
+function vendorMessage(raw: Record<string, unknown>, fallback: string): string {
+  const base = String(raw.message || fallback)
+  const errors = raw.errors
+  if (!Array.isArray(errors)) return base
+  const detail = errors
+    .slice(0, 3)
+    .map((e) => {
+      if (!e || typeof e !== 'object') return ''
+      const row = e as { field?: unknown; message?: unknown }
+      const field = typeof row.field === 'string' ? row.field.replace(/^body\./, '') : ''
+      const message = typeof row.message === 'string' ? row.message : ''
+      return [field, message].filter(Boolean).join(' ')
+    })
+    .filter(Boolean)
+    .join('; ')
+  return detail ? `${base} (${detail})` : base
 }
 
 /** Entitle only after /v1/payment/verify returns COMPLETED. Never invent COMPLETED from webhook status:true. */
@@ -128,7 +170,7 @@ export async function createZiniInvoice(
       return {
         ok: false,
         reason: 'vendor',
-        message: String(raw.message || `ZiniPay create failed (${res.status})`),
+        message: vendorMessage(raw, `ZiniPay create failed (${res.status})`),
       }
     }
     return { ok: true, paymentUrl, invoiceId: extractInvoiceId(raw, paymentUrl), raw }
