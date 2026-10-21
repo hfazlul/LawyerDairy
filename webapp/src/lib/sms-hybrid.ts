@@ -12,7 +12,7 @@ import {
  * SIM bulk SMS hybrid: sms.net.bd primary, 24bulksmsbd failover.
  * Skip-if-no-keys. WhatsApp Cloud auto-send is removed.
  * Named aliases: SMS_NET_BD_API_KEY / SMS_API_URL-as-key, BULKSMS24_API_KEY / SMS_FAILOVER_KEY.
- * 24bulksmsbd sends go to DynamicSMSApi (customer_id + api_key + messages[{to,message}]).
+ * 24bulksmsbd posts JSON to DynamicSMSApi: customer_id, api_key, messages[{to,message}].
  * Hearing texts differ per client, so smsSendApi is not used. OTP is one entry in that same array.
  */
 
@@ -130,11 +130,12 @@ export async function sendSmsNetBd(phone: string, message: string): Promise<{
   }
 }
 
-function bulkSms24CustomerId(): string {
-  return envTrim('SMS_CUSTOMER_ID') || '1684'
+function bulkSms24CustomerId(): number | string {
+  const raw = envTrim('SMS_CUSTOMER_ID') || '1684'
+  return /^\d+$/.test(raw) ? Number(raw) : raw
 }
 
-/** One recipient. Dynamic SMS still sends messages as [{to, message}] so each client can differ. */
+/** One recipient. JSON body; messages is an array so each client text can differ. */
 export async function sendBulkSms24(phone: string, message: string): Promise<{
   ok: boolean
   skipped?: string
@@ -142,19 +143,19 @@ export async function sendBulkSms24(phone: string, message: string): Promise<{
 }> {
   const key = bulkSms24Key()
   if (!key) return { ok: false, skipped: 'sms_unconfigured' }
-  // Gateway delivers 8801… numbers. 01… is accepted by some panels and then dropped.
+  // Gateway example is 880 then the mobile with no leading 0 (88017…).
   const to = formatSmsPhone(phone, 'e164')
   const url = bulkSms24Url()
-  const body = new URLSearchParams({
+  const body = JSON.stringify({
     customer_id: bulkSms24CustomerId(),
     api_key: key,
-    messages: JSON.stringify([{ to, message }]),
+    messages: [{ to, message }],
   })
   try {
     const res = await fetch(url, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: body.toString(),
+      headers: { 'Content-Type': 'application/json' },
+      body,
     })
     const text = await res.text()
     if (!bulk24Ok(res.status, text)) {

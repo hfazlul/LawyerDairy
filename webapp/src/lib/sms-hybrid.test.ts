@@ -94,12 +94,13 @@ test('sms.net.bd primary then 24bulksmsbd failover (mocked HTTP)', async () => {
   delete process.env.SMS_API_URL
   delete process.env.SMS_API_KEY
 
-  const calls: { url: string; body: string }[] = []
+  const calls: { url: string; body: string; contentType: string }[] = []
   const orig = globalThis.fetch
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
     const url = String(input)
     const body = String(init?.body || '')
-    calls.push({ url, body })
+    const contentType = new Headers(init?.headers).get('content-type') || ''
+    calls.push({ url, body, contentType })
     if (url.includes('sms.net.bd')) {
       return new Response(JSON.stringify({ error: 1, msg: 'fail' }), { status: 200 })
     }
@@ -114,10 +115,20 @@ test('sms.net.bd primary then 24bulksmsbd failover (mocked HTTP)', async () => {
     assert.match(calls[0].url, /sms\.net\.bd/)
     assert.match(calls[0].body, /api_key=net-key/)
     assert.equal(calls[1].url, 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
-    assert.match(calls[1].body, /api_key=bulk-key/)
-    assert.match(calls[1].body, /customer_id=1684/)
-    assert.match(calls[1].body, /8801712345678/)
-    assert.doesNotMatch(calls[1].body, /senderid=/)
+    assert.equal(calls[1].contentType, 'application/json')
+    const sent = JSON.parse(calls[1].body) as {
+      customer_id: number
+      api_key: string
+      messages: { to: string; message: string }[]
+      senderid?: string
+      sender_id?: string
+    }
+    assert.equal(sent.customer_id, 1684)
+    assert.equal(typeof sent.customer_id, 'number')
+    assert.equal(sent.api_key, 'bulk-key')
+    assert.deepEqual(sent.messages, [{ to: '8801712345678', message: 'নমস্কার' }])
+    assert.equal(sent.senderid, undefined)
+    assert.equal(sent.sender_id, undefined)
   } finally {
     globalThis.fetch = orig
     restore(prev)
@@ -195,11 +206,20 @@ test('24bulksmsbd-only send when primary missing', async () => {
   const orig = globalThis.fetch
   globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
     assert.equal(String(input), 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
-    const body = String(init?.body || '')
-    assert.match(body, /customer_id=1684/)
-    assert.match(body, /messages=/)
-    assert.match(body, /8801712345678/)
-    assert.doesNotMatch(body, /number=/)
+    assert.equal(new Headers(init?.headers).get('content-type'), 'application/json')
+    const sent = JSON.parse(String(init?.body || '')) as {
+      customer_id: number
+      api_key: string
+      messages: { to: string; message: string }[]
+      senderid?: string
+      sender_id?: string
+    }
+    assert.equal(sent.customer_id, 1684)
+    assert.equal(typeof sent.customer_id, 'number')
+    assert.equal(sent.api_key, 'bulk-key')
+    assert.deepEqual(sent.messages, [{ to: '8801712345678', message: 'hi' }])
+    assert.equal(sent.senderid, undefined)
+    assert.equal(sent.sender_id, undefined)
     return new Response('SUCCESS', { status: 200 })
   }) as typeof fetch
   try {
