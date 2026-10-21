@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
 import { requireWebUser, planOfUser, personalWorkspace } from '@/lib/web-session'
-import { BuyButtons } from '@/app/package/buy-buttons'
+import { BuyButtons } from '../../package/buy-buttons'
 import { isPremiumActive } from '@/lib/entitlement-gates'
 import { extraTeamSeats, monthlySmsCredits } from '@/lib/permissions'
 import { UserShell } from '@/ui/app-nav'
