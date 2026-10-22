@@ -9,11 +9,15 @@ import {
 } from './env-aliases'
 
 /**
- * SIM bulk SMS hybrid: sms.net.bd primary, 24bulksmsbd failover.
+ * SIM bulk SMS hybrid.
+ * SMS_MODE=production tries 24bulksmsbd DynamicSMSApi first. sms.net.bd is called
+ * once only when that send is not accepted. A status of ok does not fall back.
+ * Otherwise sms.net.bd is primary and 24bulksmsbd is the failover.
  * Skip-if-no-keys. WhatsApp Cloud auto-send is removed.
- * Named aliases: SMS_NET_BD_API_KEY / SMS_API_URL-as-key, BULKSMS24_API_KEY / SMS_FAILOVER_KEY.
+ * Named aliases: SMS_NET_BD_API_KEY / SMS_NETBD_API_KEY / SMS_API_URL-as-key, BULKSMS24_API_KEY / SMS_FAILOVER_KEY.
  * 24bulksmsbd posts JSON to DynamicSMSApi: customer_id, api_key, messages[{to,message}].
  * Hearing texts differ per client, so the same-text endpoint is not used. OTP is one entry in that same array.
+ * sms.net.bd posts form fields api_key, to, and msg. It does not send sender_id or content_id.
  */
 
 export function smsNetBdUrl(): string {
@@ -42,10 +46,6 @@ export function bulkSms24Configured(): boolean {
 
 export function smsHybridConfigured(): boolean {
   return smsNetBdConfigured() || bulkSms24Configured() || smsGatewayConfigured()
-}
-
-function senderId(): string {
-  return envTrim('SMS_SENDER_ID') || 'LawyerDiary'
 }
 
 function parseJson(text: string): Record<string, unknown> | null {
@@ -141,8 +141,6 @@ export async function sendSmsNetBd(phone: string, message: string): Promise<{
     to,
     msg: message,
   })
-  const sid = senderId()
-  if (sid) body.set('sender_id', sid)
   try {
     const res = await fetch(url, {
       method: 'POST',
@@ -210,8 +208,8 @@ export async function sendSmsHybrid(input: {
   kind: string
   workspaceId?: string | null
 }): Promise<{ ok: boolean; skipped?: string; provider?: string; error?: string }> {
-  // Production uses the non-masking account (BULKSMS24_API_KEY) only.
-  // sms.net.bd and the generic gateway stay off so a dummy or old key cannot send.
+  // Production tries 24bulksmsbd first. Fall back once only when that send is not
+  // accepted. status ok must return here — a second call would send two SMS.
   if (smsProductionMode()) {
     if (!bulkSms24Configured()) return { ok: false, skipped: 'sms_unconfigured' }
     const sent = await sendBulkSms24(input.phone, input.message)
@@ -223,6 +221,24 @@ export async function sendSmsHybrid(input: {
         phone: input.phone,
       })
       return { ok: true, provider: '24bulksmsbd' }
+    }
+    if (sent.skipped !== 'sms_unconfigured' && smsNetBdConfigured()) {
+      const fallback = await sendSmsNetBd(input.phone, input.message)
+      if (fallback.ok) {
+        await recordSmsUsage({
+          provider: 'sms.net.bd',
+          kind: input.kind,
+          workspaceId: input.workspaceId,
+          phone: input.phone,
+        })
+        return { ok: true, provider: 'sms.net.bd' }
+      }
+      return {
+        ok: false,
+        provider: 'sms.net.bd',
+        error: fallback.error,
+        skipped: fallback.skipped,
+      }
     }
     return { ok: false, provider: '24bulksmsbd', error: sent.error, skipped: sent.skipped }
   }

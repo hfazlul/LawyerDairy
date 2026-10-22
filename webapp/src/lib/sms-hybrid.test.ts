@@ -66,7 +66,7 @@ test('hybrid is unconfigured without keys; WhatsApp auto always skipped', async 
   restore(prev)
 })
 
-test('SMS_MODE=production uses only the non-masking account', async () => {
+test('SMS_MODE=production does not fall back when 24bulksms status is ok', async () => {
   const prev = stash(SMS_ENV)
   process.env.SMS_MODE = 'production'
   process.env.SMS_NET_BD_API_KEY = 'net-key'
@@ -87,6 +87,121 @@ test('SMS_MODE=production uses only the non-masking account', async () => {
     assert.equal(calls[0], 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
   } finally {
     globalThis.fetch = orig
+    restore(prev)
+  }
+})
+
+test('SMS_MODE=production falls back to sms.net.bd once when 24bulksms does not accept', async () => {
+  const prev = stash(SMS_ENV)
+  process.env.SMS_MODE = 'production'
+  process.env.SMS_NET_BD_API_KEY = 'net-key'
+  process.env.BULKSMS24_API_KEY = 'bulk-key'
+  process.env.SMS_SENDER_ID = 'LawyerDiary'
+  delete process.env.SMS_API_URL
+  delete process.env.SMS_API_KEY
+  const calls: { url: string; body: string }[] = []
+  const orig = globalThis.fetch
+  const origLog = console.log
+  const origErr = console.error
+  console.log = () => {}
+  console.error = () => {}
+  globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+    const url = String(input)
+    const body = String(init?.body || '')
+    calls.push({ url, body })
+    if (url.includes('sms.net.bd')) {
+      return new Response(JSON.stringify({ error: 0, msg: 'Submitted', data: { request_id: 99 } }), {
+        status: 200,
+      })
+    }
+    return new Response(JSON.stringify({ status: 'failed', sms_id: 'abc123' }), { status: 200 })
+  }) as typeof fetch
+  try {
+    const r = await sendSmsHybrid({
+      phone: '01712345678',
+      message: 'MAMLAQ-Lawyer Dairy',
+      kind: 'password_otp',
+    })
+    assert.equal(r.ok, true)
+    assert.equal(r.provider, 'sms.net.bd')
+    assert.equal(calls.length, 2)
+    assert.equal(calls[0].url, 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
+    assert.match(calls[1].url, /api\.sms\.net\.bd/)
+    const params = new URLSearchParams(calls[1].body)
+    assert.equal(params.get('api_key'), 'net-key')
+    assert.equal(params.get('to'), '01712345678')
+    assert.equal(params.get('msg'), 'MAMLAQ-Lawyer Dairy')
+    assert.equal(params.get('sender_id'), null)
+    assert.equal(params.get('content_id'), null)
+    assert.equal([...params.keys()].sort().join(','), 'api_key,msg,to')
+  } finally {
+    globalThis.fetch = orig
+    console.log = origLog
+    console.error = origErr
+    restore(prev)
+  }
+})
+
+test('SMS_MODE=production calls sms.net.bd once when 24bulksms returns a non-ok HTTP status', async () => {
+  const prev = stash(SMS_ENV)
+  process.env.SMS_MODE = 'production'
+  process.env.SMS_NETBD_API_KEY = 'netbd-alias-key'
+  process.env.BULKSMS24_API_KEY = 'bulk-key'
+  delete process.env.SMS_NET_BD_API_KEY
+  const calls: string[] = []
+  const orig = globalThis.fetch
+  const origErr = console.error
+  console.error = () => {}
+  globalThis.fetch = (async (input: RequestInfo | URL, init?: RequestInit) => {
+    const url = String(input)
+    calls.push(url)
+    if (url.includes('sms.net.bd')) {
+      assert.match(String(init?.body || ''), /api_key=netbd-alias-key/)
+      assert.equal(String(init?.body || '').includes('sender_id'), false)
+      return new Response(JSON.stringify({ error: 0 }), { status: 200 })
+    }
+    return new Response('unavailable', { status: 503 })
+  }) as typeof fetch
+  try {
+    const r = await sendSmsHybrid({ phone: '01712345678', message: 'hi', kind: 'password_otp' })
+    assert.equal(r.ok, true)
+    assert.equal(r.provider, 'sms.net.bd')
+    assert.equal(calls.length, 2)
+    assert.equal(calls.filter((url) => url.includes('sms.net.bd')).length, 1)
+  } finally {
+    globalThis.fetch = orig
+    console.error = origErr
+    restore(prev)
+  }
+})
+
+test('SMS_MODE=production does not retry sms.net.bd when the fallback is rejected', async () => {
+  const prev = stash(SMS_ENV)
+  process.env.SMS_MODE = 'production'
+  process.env.SMS_NET_BD_API_KEY = 'net-key'
+  process.env.BULKSMS24_API_KEY = 'bulk-key'
+  const calls: string[] = []
+  const orig = globalThis.fetch
+  const origErr = console.error
+  console.error = () => {}
+  globalThis.fetch = (async (input: RequestInfo | URL) => {
+    const url = String(input)
+    calls.push(url)
+    if (url.includes('sms.net.bd')) {
+      return new Response(JSON.stringify({ error: 421, msg: 'registered only' }), { status: 200 })
+    }
+    return new Response(JSON.stringify({ status: 'error' }), { status: 200 })
+  }) as typeof fetch
+  try {
+    const r = await sendSmsHybrid({ phone: '01712345678', message: 'hi', kind: 'password_otp' })
+    assert.equal(r.ok, false)
+    assert.equal(r.provider, 'sms.net.bd')
+    assert.equal(calls.length, 2)
+    assert.equal(calls.filter((url) => url.includes('sms.net.bd')).length, 1)
+    assert.equal((r.error || '').includes('net-key'), false)
+  } finally {
+    globalThis.fetch = orig
+    console.error = origErr
     restore(prev)
   }
 })
@@ -123,6 +238,9 @@ test('sms.net.bd primary then 24bulksmsbd failover (mocked HTTP)', async () => {
     assert.equal(calls.length, 2)
     assert.match(calls[0].url, /sms\.net\.bd/)
     assert.match(calls[0].body, /api_key=net-key/)
+    const netParams = new URLSearchParams(calls[0].body)
+    assert.equal(netParams.get('sender_id'), null)
+    assert.equal(netParams.get('content_id'), null)
     assert.equal(calls[1].url, 'https://www.24bulksmsbd.com/api/DynamicSMSApi')
     assert.equal(calls[1].contentType, 'application/json')
     const sent = JSON.parse(calls[1].body) as {
