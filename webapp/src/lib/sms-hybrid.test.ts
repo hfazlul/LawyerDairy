@@ -41,7 +41,7 @@ const SMS_ENV = [
 
 test('password OTP text keeps MAMLAQ and has no URL', () => {
   const text = otpRequestMessage('000000')
-  assert.equal(text, 'MAMLAQ-Lawyer Dairy\nYour 6 digit OTP is : 000000')
+  assert.equal(text, 'MAMLAQ-Lawyer Dairy\nYour 6 digit code is : 000000')
   assert.equal(text.split('\n').length, 2)
   assert.equal(text.includes('http'), false)
   assert.equal(text.includes('.com'), false)

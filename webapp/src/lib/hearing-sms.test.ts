@@ -3,11 +3,11 @@ import test from 'node:test'
 import { otpRequestMessage } from './auth/password-otp'
 import { HEARING_SMS_DEMO, hearingReminderSms } from './hearing-sms'
 
-test('forgot-password OTP SMS is the three-line public template', () => {
+test('forgot-password SMS keeps MAMLAQ and has no URL', () => {
   const text = otpRequestMessage('482913')
   assert.equal(
     text,
-    'MAMLAQ-Lawyer Dairy\nYour 6 digit OTP is : 482913\nhttps://mamlaq.com',
+    'MAMLAQ-Lawyer Dairy\nYour 6 digit code is : 482913',
   )
   assert.equal(text.includes('123456'), false)
 })

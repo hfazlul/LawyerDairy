@@ -17,5 +17,5 @@ export const OTP_MAX_ATTEMPTS = 5
 export const MAMLAQ_PUBLIC_SITE = 'https://mamlaq.com'
 
 export function otpRequestMessage(otp: string): string {
-  return `MAMLAQ-Lawyer Dairy\nYour 6 digit OTP is : ${otp}`
+  return `MAMLAQ-Lawyer Dairy\nYour 6 digit code is : ${otp}`
 }
