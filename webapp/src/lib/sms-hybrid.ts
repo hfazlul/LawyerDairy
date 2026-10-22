@@ -13,7 +13,7 @@ import {
  * Skip-if-no-keys. WhatsApp Cloud auto-send is removed.
  * Named aliases: SMS_NET_BD_API_KEY / SMS_API_URL-as-key, BULKSMS24_API_KEY / SMS_FAILOVER_KEY.
  * 24bulksmsbd posts JSON to DynamicSMSApi: customer_id, api_key, messages[{to,message}].
- * Hearing texts differ per client, so smsSendApi is not used. OTP is one entry in that same array.
+ * Hearing texts differ per client, so the same-text endpoint is not used. OTP is one entry in that same array.
  */
 
 export function smsNetBdUrl(): string {
@@ -77,25 +77,54 @@ function redactProviderText(text: string): string {
     .slice(0, 220)
 }
 
+/** Short gateway token safe to print. Never the message, phone, or key. */
+function bulk24StatusToken(json: Record<string, unknown> | null): string {
+  if (!json || json.status == null) return ''
+  const raw = json.status
+  const text =
+    typeof raw === 'number' && Number.isFinite(raw)
+      ? String(raw)
+      : typeof raw === 'string'
+        ? raw.trim()
+        : ''
+  if (!text || !/^[A-Za-z0-9_-]{1,32}$/.test(text)) return ''
+  return text
+}
+
+function bulk24SmsIdToken(json: Record<string, unknown> | null): string {
+  if (!json || json.sms_id == null) return ''
+  const raw = json.sms_id
+  const text =
+    typeof raw === 'number' && Number.isFinite(raw)
+      ? String(raw)
+      : typeof raw === 'string'
+        ? raw.trim()
+        : ''
+  if (!text || !/^[A-Za-z0-9_-]{1,80}$/.test(text)) return ''
+  return text
+}
+
+/**
+ * Countdown may start only after the gateway accepts the SMS.
+ * status ok means accepted. HTTP 200 alone does not.
+ * failed, error, and 1003 are failures. 1002 is a later report code and is not required.
+ */
 function bulk24Ok(status: number, text: string): boolean {
+  if (status < 200 || status >= 300) return false
+  const gateway = bulk24StatusToken(parseJson(text)).toLowerCase()
+  if (gateway === 'failed' || gateway === 'error' || gateway === '1003') return false
+  return gateway === 'ok'
+}
+
+function logBulk24Result(httpStatus: number, text: string, accepted: boolean): void {
   const json = parseJson(text)
-  if (json) {
-    if (json.success === false || json.ok === false) return false
-    const code = json.response_code ?? json.error ?? json.status
-    if (
-      code === 0 ||
-      code === '0' ||
-      code === 202 ||
-      code === '202' ||
-      code === 'SUCCESS' ||
-      code === 'success'
-    ) {
-      return true
-    }
-    if (typeof code === 'number' && (code >= 1000 || (code > 0 && code !== 202))) return false
-  }
-  if (/invalid|insufficient|failed|error/i.test(text) && !/success/i.test(text)) return false
-  return status >= 200 && status < 300
+  const gateway = bulk24StatusToken(json)
+  const smsId = bulk24SmsIdToken(json)
+  const verb = accepted ? 'accept' : 'reject'
+  const idPart = smsId ? ` sms_id=${smsId}` : ''
+  const line = `[sms] 24bulksmsbd ${verb} http=${httpStatus} status=${gateway}${idPart}`
+  if (accepted) console.log(line)
+  else console.error(line)
 }
 
 export async function sendSmsNetBd(phone: string, message: string): Promise<{
@@ -158,8 +187,9 @@ export async function sendBulkSms24(phone: string, message: string): Promise<{
       body,
     })
     const text = await res.text()
-    if (!bulk24Ok(res.status, text)) {
-      console.error('[sms] 24bulksmsbd rejected', res.status, redactProviderText(text))
+    const accepted = bulk24Ok(res.status, text)
+    logBulk24Result(res.status, text, accepted)
+    if (!accepted) {
       return { ok: false, error: `24bulksmsbd ${res.status}` }
     }
     return { ok: true }

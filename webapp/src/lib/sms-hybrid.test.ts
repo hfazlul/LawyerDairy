@@ -1,5 +1,6 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
+import { otpRequestMessage } from './auth/password-otp'
 import {
   bulkSms24Configured,
   sendBulkSms24,
@@ -38,6 +39,14 @@ const SMS_ENV = [
   'SMS_CUSTOMER_ID',
 ]
 
+test('password OTP text keeps MAMLAQ and has no URL', () => {
+  const text = otpRequestMessage('000000')
+  assert.equal(text, 'MAMLAQ-Lawyer Dairy\nYour 6 digit OTP is : 000000')
+  assert.equal(text.split('\n').length, 2)
+  assert.equal(text.includes('http'), false)
+  assert.equal(text.includes('.com'), false)
+})
+
 test('hybrid is unconfigured without keys; WhatsApp auto always skipped', async () => {
   const prev = stash(SMS_ENV)
   for (const n of SMS_ENV) delete process.env[n]
@@ -68,7 +77,7 @@ test('SMS_MODE=production uses only the non-masking account', async () => {
   const orig = globalThis.fetch
   globalThis.fetch = (async (input: RequestInfo | URL) => {
     calls.push(String(input))
-    return new Response(JSON.stringify({ response_code: 202 }), { status: 200 })
+    return new Response(JSON.stringify({ status: 'ok', sms_id: 'abc123' }), { status: 200 })
   }) as typeof fetch
   try {
     const r = await sendSmsHybrid({ phone: '01712345678', message: 'hi', kind: 'otp' })
@@ -104,7 +113,7 @@ test('sms.net.bd primary then 24bulksmsbd failover (mocked HTTP)', async () => {
     if (url.includes('sms.net.bd')) {
       return new Response(JSON.stringify({ error: 1, msg: 'fail' }), { status: 200 })
     }
-    return new Response(JSON.stringify({ response_code: 202 }), { status: 200 })
+    return new Response(JSON.stringify({ status: 'ok', sms_id: 'abc123' }), { status: 200 })
   }) as typeof fetch
 
   try {
@@ -185,6 +194,11 @@ test('24bulksmsbd failure is not treated as sent and does not echo the key', asy
   process.env.BULKSMS24_API_KEY = 'bulk-key-secret'
   process.env.SMS_MODE = 'production'
   const orig = globalThis.fetch
+  const origErr = console.error
+  const lines: string[] = []
+  console.error = ((...args: unknown[]) => {
+    lines.push(args.map((a) => String(a)).join(' '))
+  }) as typeof console.error
   globalThis.fetch = (async () => {
     return new Response(JSON.stringify({ success: false, error: 'invalid number' }), { status: 200 })
   }) as typeof fetch
@@ -193,8 +207,11 @@ test('24bulksmsbd failure is not treated as sent and does not echo the key', asy
     assert.equal(r.ok, false)
     assert.equal(r.provider, '24bulksmsbd')
     assert.equal((r.error || '').includes('bulk-key-secret'), false)
+    assert.equal(lines.some((line) => line.includes('bulk-key-secret')), false)
+    assert.equal(lines.some((line) => line.includes('invalid number')), false)
   } finally {
     globalThis.fetch = orig
+    console.error = origErr
     restore(prev)
   }
 })
@@ -220,13 +237,63 @@ test('24bulksmsbd-only send when primary missing', async () => {
     assert.deepEqual(sent.messages, [{ to: '8801712345678', message: 'hi' }])
     assert.equal(sent.senderid, undefined)
     assert.equal(sent.sender_id, undefined)
-    return new Response('SUCCESS', { status: 200 })
+    return new Response(JSON.stringify({ status: 'ok', sms_id: 'abc123' }), { status: 200 })
   }) as typeof fetch
   try {
     const r = await sendBulkSms24('01712345678', 'hi')
     assert.equal(r.ok, true)
   } finally {
     globalThis.fetch = orig
+    restore(prev)
+  }
+})
+
+test('24bulksmsbd countdown starts only when status is ok', async () => {
+  const prev = stash(SMS_ENV)
+  for (const n of SMS_ENV) delete process.env[n]
+  process.env.BULKSMS24_API_KEY = 'bulk-key-secret'
+  const cases: { http: number; body: string; ok: boolean }[] = [
+    { http: 200, body: JSON.stringify({ status: 'ok', sms_id: 'abc123' }), ok: true },
+    { http: 200, body: JSON.stringify({ status: 'OK' }), ok: true },
+    { http: 200, body: 'SUCCESS', ok: false },
+    { http: 200, body: JSON.stringify({ response_code: 202 }), ok: false },
+    { http: 200, body: JSON.stringify({ status: 'failed', sms_id: 'abc123' }), ok: false },
+    { http: 200, body: JSON.stringify({ status: 'error' }), ok: false },
+    { http: 200, body: JSON.stringify({ status: 1003 }), ok: false },
+    { http: 200, body: JSON.stringify({ status: '1003' }), ok: false },
+    { http: 200, body: JSON.stringify({ status: 1002 }), ok: false },
+    { http: 200, body: JSON.stringify({ status: 1001 }), ok: false },
+    { http: 200, body: '', ok: false },
+    { http: 500, body: JSON.stringify({ status: 'ok', sms_id: 'abc123' }), ok: false },
+  ]
+  const orig = globalThis.fetch
+  const origLog = console.log
+  const origErr = console.error
+  const lines: string[] = []
+  const push = (...args: unknown[]) => {
+    lines.push(args.map((a) => String(a)).join(' '))
+  }
+  console.log = ((...args: unknown[]) => push(...args)) as typeof console.log
+  console.error = ((...args: unknown[]) => push(...args)) as typeof console.error
+  try {
+    for (const c of cases) {
+      globalThis.fetch = (async () => new Response(c.body, { status: c.http })) as typeof fetch
+      const r = await sendBulkSms24('01712345678', 'marker-text')
+      assert.equal(r.ok, c.ok, c.body || `http ${c.http}`)
+    }
+    assert.ok(lines.includes('[sms] 24bulksmsbd accept http=200 status=ok sms_id=abc123'))
+    assert.ok(lines.includes('[sms] 24bulksmsbd reject http=200 status=failed sms_id=abc123'))
+    assert.ok(lines.includes('[sms] 24bulksmsbd reject http=200 status=1003'))
+    for (const line of lines) {
+      assert.equal(line.includes('bulk-key-secret'), false)
+      assert.equal(line.includes('marker-text'), false)
+      assert.equal(line.includes('01712345678'), false)
+      assert.equal(line.includes('8801712345678'), false)
+    }
+  } finally {
+    globalThis.fetch = orig
+    console.log = origLog
+    console.error = origErr
     restore(prev)
   }
 })

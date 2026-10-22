@@ -100,7 +100,7 @@ export function smsNetBdKeyFromEnv(): string {
   return ''
 }
 
-/** Different text per recipient. smsSendApi is the same-text endpoint and is not used. */
+/** Different text per recipient. The same-text endpoint is not used. */
 export const BULKSMS24_DYNAMIC_URL = 'https://www.24bulksmsbd.com/api/DynamicSMSApi'
 
 export function bulkSms24UrlFromEnv(): string {

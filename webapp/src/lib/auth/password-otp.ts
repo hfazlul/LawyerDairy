@@ -13,9 +13,9 @@ export function hashPasswordOtp(phone: string, otp: string): string {
 export const OTP_TTL_MS = 10 * 60 * 1000
 export const OTP_MAX_ATTEMPTS = 5
 
-/** Public site people see in SMS. Not the API host. */
+/** Public site for non-OTP texts. The password OTP body does not include this URL. */
 export const MAMLAQ_PUBLIC_SITE = 'https://mamlaq.com'
 
 export function otpRequestMessage(otp: string): string {
-  return `MAMLAQ-Lawyer Dairy\nYour 6 digit OTP is : ${otp}\n${MAMLAQ_PUBLIC_SITE}`
+  return `MAMLAQ-Lawyer Dairy\nYour 6 digit OTP is : ${otp}`
 }
