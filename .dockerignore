@@ -1,0 +1,12 @@
+.git
+**/.git
+**/.env
+**/.env.*
+!**/.env.example
+**/service-account.json
+**/*firebase-adminsdk*.json
+**/node_modules
+**/.next
+**/.vercel
+**/__pycache__
+mobile

@@ -1,0 +1,17 @@
+{
+  "name": "shelfaware-central-agent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ShelfAware Phase 2 — Central AI Agent. Resolves queued barcodes via a free-tier-first fallback chain and writes results to Firestore.",
+  "type": "module",
+  "engines": {
+    "node": ">=18.x"
+  },
+  "scripts": {
+    "dev": "vercel dev",
+    "classify-check": "node scripts/classify-check.mjs"
+  },
+  "dependencies": {
+    "firebase-admin": "^14.2.0"
+  }
+}

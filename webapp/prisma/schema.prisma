@@ -1672,3 +1672,58 @@ model UsageMonth {
 
   @@unique([workspaceId, ym])
 }
+
+// ShelfAware app — separate from Mamlaq users. Managed on the VPS, not Vercel.
+model ShelfDevice {
+  id           String    @id @default(uuid())
+  installId    String    @unique
+  fcmToken     String?
+  country      String    @default("")
+  language     String    @default("")
+  appVersion   String    @default("")
+  premium      Boolean   @default(false)
+  productId    String?
+  validUntil   DateTime?
+  autoRenewing Boolean   @default(true)
+  suspended    Boolean   @default(false)
+  panelNote    String    @default("")
+  lastSeenAt   DateTime  @default(now())
+  createdAt    DateTime  @default(now())
+  reminders    ShelfReminder[]
+
+  @@index([premium, lastSeenAt])
+  @@index([lastSeenAt])
+}
+
+model ShelfReminder {
+  id        String      @id @default(uuid())
+  deviceId  String
+  device    ShelfDevice @relation(fields: [deviceId], references: [id], onDelete: Cascade)
+  itemKey   String
+  title     String
+  body      String      @default("")
+  dueAt     DateTime
+  sentAt    DateTime?
+  createdAt DateTime    @default(now())
+
+  @@unique([deviceId, itemKey])
+  @@index([sentAt, dueAt])
+}
+
+model ShelfLedgerEvent {
+  id           String   @id @default(uuid())
+  installId    String   @default("")
+  kind         String
+  productId    String?
+  amountMicros BigInt   @default(0)
+  currency     String   @default("USD")
+  createdAt    DateTime @default(now())
+
+  @@index([kind, createdAt])
+}
+
+model ShelfOpsBeat {
+  id        String   @id
+  lastRunAt DateTime @default(now())
+  detail    String   @default("")
+}

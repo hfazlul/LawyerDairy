@@ -1,0 +1,23 @@
+# Runtime env comes from webapp/.env on the host. That file is gitignored and
+# excluded from the image. Do not put real secrets in this compose file.
+services:
+  web:
+    build:
+      context: .
+      target: web
+    ports:
+      - "3000:3000"
+    env_file:
+      - webapp/.env
+    restart: unless-stopped
+
+  worker:
+    build:
+      context: .
+      target: worker
+    env_file:
+      - webapp/.env
+    environment:
+      SHELFAWARE_AGENT_DIR: /app/shelfaware-agent
+      SHELFAWARE_HEALTH_DIR: /app/shelfaware-health
+    restart: unless-stopped

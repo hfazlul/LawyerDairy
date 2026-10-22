@@ -76,6 +76,12 @@ firebase/functions/package-lock.json
 **/*firebase-adminsdk*.json
 **/firebase-service-account.json
 **/serviceAccountKey.json
+**/service-account.json
+
+# ShelfAware VPS sidecars (installed on the host / in the image, not committed)
+shelfaware-agent/node_modules/
+shelfaware-health/.venv/
+shelfaware-health/**/__pycache__/
 
 # Misc
 *.orig.*

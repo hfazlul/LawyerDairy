@@ -35,6 +35,7 @@ export type NavItem = {
   label: string
   labelBn?: string
   icon: LucideIcon
+  section?: string
 }
 
 const USER_NAV: NavItem[] = [
@@ -50,16 +51,17 @@ const USER_NAV: NavItem[] = [
 ]
 
 const ADMIN_NAV: NavItem[] = [
-  { href: '/hfazlul', label: 'Overview', labelBn: 'ওভারভিউ', icon: LayoutDashboard },
-  { href: '/hfazlul/cms', label: 'CMS', labelBn: 'সিএমএস', icon: FileText },
-  { href: '/hfazlul/packages', label: 'Packages', labelBn: 'প্যাকেজ', icon: Package },
-  { href: '/hfazlul/activate', label: 'Activate', labelBn: 'অ্যাক্টিভেট', icon: Settings },
-  { href: '/hfazlul/users', label: 'Users', labelBn: 'ইউজার', icon: Users },
-  { href: '/hfazlul/analytics', label: 'Analytics', labelBn: 'অ্যানালিটিক্স', icon: BarChart3 },
-  { href: '/hfazlul/find-lawyer', label: 'Find Lawyer', labelBn: 'আইনজীবী খুঁজুন', icon: UserSearch },
-  { href: '/hfazlul/referrals', label: 'Referrals', labelBn: 'রেফারেল', icon: Share2 },
-  { href: '/hfazlul/messaging', label: 'Messaging', labelBn: 'মেসেজিং', icon: MessageSquare },
-  { href: '/hfazlul/career', label: 'Career', labelBn: 'ক্যারিয়ার', icon: GraduationCap },
+  { href: '/hfazlul', label: 'Overview', labelBn: 'ওভারভিউ', icon: LayoutDashboard, section: 'Mamlaq' },
+  { href: '/hfazlul/cms', label: 'CMS', labelBn: 'সিএমএস', icon: FileText, section: 'Mamlaq' },
+  { href: '/hfazlul/packages', label: 'Packages', labelBn: 'প্যাকেজ', icon: Package, section: 'Mamlaq' },
+  { href: '/hfazlul/activate', label: 'Activate', labelBn: 'অ্যাক্টিভেট', icon: Settings, section: 'Mamlaq' },
+  { href: '/hfazlul/users', label: 'Users', labelBn: 'ইউজার', icon: Users, section: 'Mamlaq' },
+  { href: '/hfazlul/analytics', label: 'Analytics', labelBn: 'অ্যানালিটিক্স', icon: BarChart3, section: 'Mamlaq' },
+  { href: '/hfazlul/find-lawyer', label: 'Find Lawyer', labelBn: 'আইনজীবী খুঁজুন', icon: UserSearch, section: 'Mamlaq' },
+  { href: '/hfazlul/referrals', label: 'Referrals', labelBn: 'রেফারেল', icon: Share2, section: 'Mamlaq' },
+  { href: '/hfazlul/messaging', label: 'Messaging', labelBn: 'মেসেজিং', icon: MessageSquare, section: 'Mamlaq' },
+  { href: '/hfazlul/career', label: 'Career', labelBn: 'ক্যারিয়ার', icon: GraduationCap, section: 'Mamlaq' },
+  { href: '/hfazlul/shelfaware', label: 'ShelfAware', labelBn: 'ShelfAware', icon: Package, section: 'ShelfAware' },
 ]
 
 function NavLinks(props: {
@@ -70,15 +72,21 @@ function NavLinks(props: {
   const pathname = usePathname()
   return (
     <nav className={cn('flex flex-col gap-1', props.compact ? 'p-2' : 'p-3')}>
-      {props.items.map((item) => {
+      {props.items.map((item, index) => {
         const active =
           item.href === '/user' || item.href === '/hfazlul'
             ? pathname === item.href
             : pathname === item.href || pathname.startsWith(`${item.href}/`)
         const Icon = item.icon
+        const showSection = Boolean(item.section) && item.section !== props.items[index - 1]?.section
         return (
-          <Link
-            key={item.href}
+          <div key={item.href}>
+            {showSection ? (
+              <div className={cn('px-3 pb-1 pt-3 text-[10px] font-semibold uppercase tracking-[.16em]', props.compact ? 'text-navy/45' : 'text-white/40')}>
+                {item.section}
+              </div>
+            ) : null}
+            <Link
             href={item.href}
             onClick={props.onNavigate}
             className={cn(
@@ -95,6 +103,7 @@ function NavLinks(props: {
             <Icon className="h-4 w-4 shrink-0" />
             <span className="font-bengali">{item.labelBn || item.label}</span>
           </Link>
+          </div>
         )
       })}
     </nav>
