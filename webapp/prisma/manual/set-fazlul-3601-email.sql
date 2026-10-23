@@ -1,52 +1,29 @@
--- Idempotent. User.email is UNIQUE, so this address cannot sit on two rows.
--- Keep fazlul.shakil10@gmail.com on the web admin phone 01531390692
--- (+8801531390692 / 8801531390692) so admin login by email still works.
--- Attach it to 01858173601 only when that does not take the address from the admin.
--- If both accounts exist, the address stays on the admin and is not copied.
--- Does not change passwords. Does not print hashes or the database URL.
+-- Idempotent. User.email is UNIQUE.
+-- Sets hfazlul860@gmail.com only on the existing row whose phone is
+-- +8801858173601 / 01858173601 / 8801858173601 (username fazlul_3601).
+-- Does nothing if that row is missing.
+-- Does nothing if another user already owns hfazlul860@gmail.com.
+-- Does nothing if more than one row matches that phone, so one address
+-- is never written onto two users.
+-- Does not create a user. Does not change passwords.
+-- Does not print hashes or the database URL.
 
 BEGIN;
 
-UPDATE "User" AS other
-SET email = NULL
-WHERE other.email = 'fazlul.shakil10@gmail.com'
-  AND right(regexp_replace(coalesce(other.phone, ''), '[^0-9]', '', 'g'), 10) <> '1531390692'
-  AND EXISTS (
-    SELECT 1
-    FROM "User" AS admin
-    WHERE admin."deletedAt" IS NULL
-      AND right(regexp_replace(coalesce(admin.phone, ''), '[^0-9]', '', 'g'), 10) = '1531390692'
-  );
-
-UPDATE "User" AS admin
-SET email = 'fazlul.shakil10@gmail.com'
-WHERE admin."deletedAt" IS NULL
-  AND right(regexp_replace(coalesce(admin.phone, ''), '[^0-9]', '', 'g'), 10) = '1531390692'
-  AND admin.email IS DISTINCT FROM 'fazlul.shakil10@gmail.com'
-  AND NOT EXISTS (
-    SELECT 1
-    FROM "User" AS other
-    WHERE other.email = 'fazlul.shakil10@gmail.com'
-      AND other.id <> admin.id
-  );
-
 UPDATE "User" AS sub
-SET email = 'fazlul.shakil10@gmail.com'
-WHERE sub."deletedAt" IS NULL
-  AND right(regexp_replace(coalesce(sub.phone, ''), '[^0-9]', '', 'g'), 10) = '1858173601'
-  AND sub.email IS DISTINCT FROM 'fazlul.shakil10@gmail.com'
-  AND NOT EXISTS (
-    SELECT 1
-    FROM "User" AS admin
-    WHERE admin."deletedAt" IS NULL
-      AND right(regexp_replace(coalesce(admin.phone, ''), '[^0-9]', '', 'g'), 10) = '1531390692'
-      AND admin.email = 'fazlul.shakil10@gmail.com'
-  )
+SET email = 'hfazlul860@gmail.com'
+WHERE right(regexp_replace(coalesce(sub.phone, ''), '[^0-9]', '', 'g'), 10) = '1858173601'
+  AND sub.email IS DISTINCT FROM 'hfazlul860@gmail.com'
   AND NOT EXISTS (
     SELECT 1
     FROM "User" AS other
-    WHERE other.email = 'fazlul.shakil10@gmail.com'
+    WHERE lower(other.email) = 'hfazlul860@gmail.com'
       AND other.id <> sub.id
-  );
+  )
+  AND (
+    SELECT count(*)
+    FROM "User" AS matches
+    WHERE right(regexp_replace(coalesce(matches.phone, ''), '[^0-9]', '', 'g'), 10) = '1858173601'
+  ) = 1;
 
 COMMIT;
