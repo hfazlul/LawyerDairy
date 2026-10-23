@@ -2,6 +2,7 @@ import { formatSmsPhone, sendSms, smsGatewayConfigured } from './sms-otp'
 import { prisma } from './prisma'
 import {
   bulkSms24KeyFromEnv,
+  bulkSms24SingleUrlFromEnv,
   bulkSms24UrlFromEnv,
   envTrim,
   smsNetBdKeyFromEnv,
@@ -10,13 +11,14 @@ import {
 
 /**
  * SIM bulk SMS hybrid.
- * SMS_MODE=production tries 24bulksmsbd DynamicSMSApi first. sms.net.bd is called
- * once only when that send is not accepted. A status of ok does not fall back.
+ * SMS_MODE=production tries 24bulksmsbd first. sms.net.bd is called
+ * once only when that send is not accepted. An accepted send does not fall back.
  * Otherwise sms.net.bd is primary and 24bulksmsbd is the failover.
  * Skip-if-no-keys. WhatsApp Cloud auto-send is removed.
  * Named aliases: SMS_NET_BD_API_KEY / SMS_NETBD_API_KEY / SMS_API_URL-as-key, BULKSMS24_API_KEY / SMS_FAILOVER_KEY.
- * 24bulksmsbd posts JSON to DynamicSMSApi: customer_id, api_key, messages[{to,message}].
- * Hearing texts differ per client, so the same-text endpoint is not used. OTP is one entry in that same array.
+ * Hearing/bulk texts post JSON to DynamicSMSApi: customer_id, api_key, messages[{to,message}].
+ * Password OTP posts form fields customer_id, api_key, message, mobile_no (01…) to smsSendApi,
+ * because the provider whitelists OTP only on that endpoint. No sender_id.
  * sms.net.bd posts form fields api_key, to, and msg. It does not send sender_id or content_id.
  */
 
@@ -198,6 +200,132 @@ export async function sendBulkSms24(phone: string, message: string): Promise<{
   }
 }
 
+const SINGLE_OK_STATUS = new Set(['ok', 'success', 'successful', 'sent'])
+const SINGLE_FAIL_STATUS = new Set(['failed', 'fail', 'failure', 'error', 'false', '1003'])
+const SINGLE_ERROR_WORDS =
+  /error|fail|invalid|whitelist|white list|insufficient|denied|unauthori[sz]ed|blocked|reject|not allowed/i
+const SINGLE_ID_KEYS = ['sms_id', 'smsId', 'message_id', 'messageId', 'msg_id', 'request_id', 'id']
+
+function idToken(raw: unknown): string {
+  const text =
+    typeof raw === 'number' && Number.isFinite(raw)
+      ? String(raw)
+      : typeof raw === 'string'
+        ? raw.trim()
+        : ''
+  return /^[A-Za-z0-9_-]{1,80}$/.test(text) ? text : ''
+}
+
+function singleIdToken(json: Record<string, unknown>): string {
+  const scopes: Record<string, unknown>[] = [json]
+  const data = json.data
+  if (data && typeof data === 'object' && !Array.isArray(data)) scopes.push(data as Record<string, unknown>)
+  for (const scope of scopes) {
+    for (const k of SINGLE_ID_KEYS) {
+      const id = idToken(scope[k])
+      if (id) return id
+    }
+  }
+  return ''
+}
+
+function stringValues(value: unknown, out: string[] = []): string[] {
+  if (typeof value === 'string') out.push(value)
+  else if (Array.isArray(value)) for (const v of value) stringValues(v, out)
+  else if (value && typeof value === 'object') {
+    for (const v of Object.values(value as Record<string, unknown>)) stringValues(v, out)
+  }
+  return out
+}
+
+function singleExplicitError(json: Record<string, unknown>): boolean {
+  if (json.success === false || json.success === 'false') return true
+  const err = json.error
+  if (err != null && err !== false && err !== 0 && err !== '0' && err !== '') return true
+  const status = bulk24StatusToken(json).toLowerCase()
+  if (SINGLE_FAIL_STATUS.has(status)) return true
+  return stringValues(json).some((v) => SINGLE_ERROR_WORDS.test(v))
+}
+
+/**
+ * smsSendApi response shape is undocumented. Accepted only when the JSON body
+ * has status ok/success (or success true), or carries an id, and no error marker.
+ * Empty or non-JSON bodies are failures.
+ */
+export function parseBulk24SingleResponse(
+  httpStatus: number,
+  text: string,
+): { accepted: boolean; status: string; id: string } {
+  const json = parseJson(text)
+  if (!json) return { accepted: false, status: '', id: '' }
+  const status = bulk24StatusToken(json)
+  const id = singleIdToken(json)
+  if (httpStatus < 200 || httpStatus >= 300) return { accepted: false, status, id }
+  if (singleExplicitError(json)) return { accepted: false, status, id }
+  const okStatus = SINGLE_OK_STATUS.has(status.toLowerCase()) || json.success === true
+  return { accepted: okStatus || Boolean(id), status, id }
+}
+
+function escapeRegExp(text: string): string {
+  return text.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')
+}
+
+/** Provider body safe for pm2 logs: no key, no phone, no message digits, max 200 chars. */
+function scrubSingleBody(text: string, secrets: { key: string; phone: string; message: string }): string {
+  let out = text
+  if (secrets.key) out = out.split(secrets.key).join('[key]')
+  out = out.replace(/(api[_-]?key|token|secret|password)(["'\s:=]+)[^&\s"',}]+/gi, '$1$2[key]')
+  const local = secrets.phone.replace(/\D/g, '').replace(/^880/, '').replace(/^0/, '')
+  if (local) out = out.replace(new RegExp(`(?:\\+?880|0)?${escapeRegExp(local)}`, 'g'), '[phone]')
+  out = out.replace(/(?:\+?88)?01[3-9]\d{8}/g, '[phone]')
+  if (secrets.message) out = out.split(secrets.message).join('[message]')
+  for (const digits of secrets.message.match(/\d{4,}/g) || []) out = out.split(digits).join('[code]')
+  return out.replace(/\s+/g, ' ').trim().slice(0, 200)
+}
+
+/** One recipient, form POST to smsSendApi. Used for the password OTP. */
+export async function sendBulkSms24Single(phone: string, message: string): Promise<{
+  ok: boolean
+  skipped?: string
+  error?: string
+}> {
+  const key = bulkSms24Key()
+  if (!key) return { ok: false, skipped: 'sms_unconfigured' }
+  const mobile = formatSmsPhone(phone, 'local01')
+  if (!/^01[3-9]\d{8}$/.test(mobile)) return { ok: false, error: 'invalid_phone' }
+  const url = bulkSms24SingleUrlFromEnv()
+  const body = new URLSearchParams({
+    customer_id: String(bulkSms24CustomerId()),
+    api_key: key,
+    message,
+    mobile_no: mobile,
+  })
+  try {
+    const res = await fetch(url, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: body.toString(),
+    })
+    const text = await res.text()
+    const parsed = parseBulk24SingleResponse(res.status, text)
+    const safeBody = scrubSingleBody(text, { key, phone: mobile, message })
+    const line =
+      `[sms] 24bulksms smsSendApi http=${res.status} status=${parsed.status || '-'}` +
+      ` id=${parsed.id || '-'} body=${safeBody}`
+    if (parsed.accepted) console.log(line)
+    else console.error(line)
+    if (!parsed.accepted) return { ok: false, error: `24bulksmsbd smsSendApi ${res.status}` }
+    return { ok: true }
+  } catch (e) {
+    const detail = e instanceof Error ? e.message : '24bulksmsbd_failed'
+    console.error(
+      '[sms] 24bulksms smsSendApi request failed',
+      scrubSingleBody(detail, { key, phone: mobile, message }),
+    )
+    return { ok: false, error: '24bulksmsbd_failed' }
+  }
+}
+
 function smsProductionMode(): boolean {
   return envTrim('SMS_MODE').toLowerCase() === 'production'
 }
@@ -207,12 +335,15 @@ export async function sendSmsHybrid(input: {
   message: string
   kind: string
   workspaceId?: string | null
+  /** Password OTP: 24bulksms goes through smsSendApi, never DynamicSMSApi. */
+  otp?: boolean
 }): Promise<{ ok: boolean; skipped?: string; provider?: string; error?: string }> {
+  const send24 = input.otp ? sendBulkSms24Single : sendBulkSms24
   // Production tries 24bulksmsbd first. Fall back once only when that send is not
-  // accepted. status ok must return here — a second call would send two SMS.
+  // accepted. An accepted send must return here — a second call would send two SMS.
   if (smsProductionMode()) {
     if (!bulkSms24Configured()) return { ok: false, skipped: 'sms_unconfigured' }
-    const sent = await sendBulkSms24(input.phone, input.message)
+    const sent = await send24(input.phone, input.message)
     if (sent.ok) {
       await recordSmsUsage({
         provider: '24bulksmsbd',
@@ -255,7 +386,7 @@ export async function sendSmsHybrid(input: {
       return { ok: true, provider: 'sms.net.bd' }
     }
     if (bulkSms24Configured()) {
-      const fail = await sendBulkSms24(input.phone, input.message)
+      const fail = await send24(input.phone, input.message)
       if (fail.ok) {
         await recordSmsUsage({
           provider: '24bulksmsbd',
@@ -282,7 +413,7 @@ export async function sendSmsHybrid(input: {
       return { ok: true, provider: 'primary' }
     }
     if (bulkSms24Configured() && generic.skipped !== 'sms_unconfigured') {
-      const fail = await sendBulkSms24(input.phone, input.message)
+      const fail = await send24(input.phone, input.message)
       if (fail.ok) {
         await recordSmsUsage({
           provider: '24bulksmsbd',
@@ -294,7 +425,7 @@ export async function sendSmsHybrid(input: {
       }
     }
     if (generic.skipped === 'sms_unconfigured' && bulkSms24Configured()) {
-      const fail = await sendBulkSms24(input.phone, input.message)
+      const fail = await send24(input.phone, input.message)
       if (fail.ok) {
         await recordSmsUsage({
           provider: '24bulksmsbd',
@@ -315,7 +446,7 @@ export async function sendSmsHybrid(input: {
   }
 
   if (bulkSms24Configured()) {
-    const fail = await sendBulkSms24(input.phone, input.message)
+    const fail = await send24(input.phone, input.message)
     if (fail.ok) {
       await recordSmsUsage({
         provider: '24bulksmsbd',

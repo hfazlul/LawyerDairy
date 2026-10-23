@@ -53,6 +53,7 @@ export async function issuePasswordOtp(rawPhone: string): Promise<OtpIssueResult
     phone,
     message: otpRequestMessage(otp),
     kind: 'password_otp',
+    otp: true,
   })
   if (!sent.ok) {
     console.error('[otp] sms failed', {

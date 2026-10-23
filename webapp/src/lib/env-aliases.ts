@@ -109,6 +109,15 @@ export function bulkSms24UrlFromEnv(): string {
   return BULKSMS24_DYNAMIC_URL
 }
 
+/** Single/Multiple endpoint. The provider asked for OTP to go here, one number per call. */
+export const BULKSMS24_SINGLE_URL = 'https://www.24bulksmsbd.com/api/smsSendApi'
+
+export function bulkSms24SingleUrlFromEnv(): string {
+  const named = firstConfigured(['BULKSMS24_URL', 'SMS_FAILOVER_URL', 'BULKSMSBD_URL', 'SMS24_URL'])
+  if (named && looksLikeUrl(named) && /smsSendApi/i.test(named)) return named.replace(/\/$/, '')
+  return BULKSMS24_SINGLE_URL
+}
+
 export function bulkSms24KeyFromEnv(): string {
   return firstConfigured(BULKSMS24_KEY_ALIASES)
 }
