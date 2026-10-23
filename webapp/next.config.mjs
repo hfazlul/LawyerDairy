@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
-  serverExternalPackages: ['firebase-admin'],
+  serverExternalPackages: ['firebase-admin', 'nodemailer'],
   async redirects() {
     return [
       { source: '/login', destination: '/user/login', permanent: false },

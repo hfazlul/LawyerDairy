@@ -14,6 +14,19 @@ export function hasResendKey(): boolean {
   return Boolean(process.env.RESEND_API_KEY?.trim())
 }
 
+export function hasGmailSmtp(): boolean {
+  return Boolean(process.env.GMAIL_USER?.trim() && process.env.GMAIL_APP_PASSWORD?.trim())
+}
+
+/** OTP From: GMAIL_USER, then MAIL_FROM_NOREPLY, then EMAIL_FROM. */
+export function resolveGmailOtpFrom(): string {
+  const user = process.env.GMAIL_USER?.trim()
+  if (user) return user
+  const noreply = process.env.MAIL_FROM_NOREPLY?.trim()
+  if (noreply) return noreply
+  return (process.env.EMAIL_FROM || '').trim()
+}
+
 export function mailDailyLimit(): number {
   const n = Number(process.env.MAIL_DAILY_LIMIT || 300)
   return Number.isFinite(n) && n > 0 ? Math.floor(n) : 300

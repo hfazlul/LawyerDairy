@@ -17,7 +17,7 @@ export type SendResult = {
   dryRun: boolean
   id?: string
   error?: string
-  provider?: MailProviderName | 'dry_run'
+  provider?: MailProviderName | 'gmail' | 'dry_run'
 }
 
 export type CampaignAudience = 'all' | 'inactive' | 'expiring'

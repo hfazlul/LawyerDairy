@@ -1,12 +1,14 @@
 import { prisma } from '@/lib/prisma'
-import { sendEmail } from '@/lib/mail'
+import { sendViaGmail } from '../mail/providers/gmail'
 import { sendSmsHybrid } from '@/lib/sms-hybrid'
 import { kSignupPhoneError, normalizeBdPhone } from '@/lib/identity'
 import { generateNumericOtp, hashPasswordOtp, otpRequestMessage, OTP_TTL_MS } from '@/lib/auth/password-otp'
+import { hasPasswordOtpSend, recordPasswordOtpSend, type OtpSendChannel } from './password-otp-quota'
 
 export const OTP_EXPIRED_MESSAGE_BN = 'কোডের মেয়াদ শেষ। আবার চেষ্টা করুন।'
 export const OTP_SMS_FAILED_MESSAGE_BN = 'এসএমএস পাঠানো যায়নি। আবার চেষ্টা করুন।'
 export const OTP_EMAIL_FAILED_MESSAGE_BN = 'ইমেইল পাঠানো যায়নি। আবার চেষ্টা করুন।'
+export const OTP_DAILY_LIMIT_BN = 'আজকের কোড নেওয়া হয়ে গেছে। কাল আবার চেষ্টা করুন।'
 /** Same text for an unknown phone, an unknown email, and a mismatch. */
 export const OTP_ACCOUNT_MISMATCH_BN = 'ইমেইল ও ফোন নম্বর মিলছে না।'
 
@@ -26,6 +28,8 @@ export type PasswordOtpDeps = {
   storeChallenge: (row: { userId: string; phone: string; otp: string; expiresAt: Date }) => Promise<void>
   sendSms: (phone: string, message: string) => Promise<{ ok: boolean }>
   sendEmail: (to: string, subject: string, html: string) => Promise<{ ok: boolean }>
+  alreadySent: (userId: string, channel: OtpSendChannel, now: Date) => Promise<boolean>
+  recordSent: (userId: string, channel: OtpSendChannel, now: Date) => Promise<void>
   now: () => Date
   generateOtp: () => string
 }
@@ -67,10 +71,20 @@ function defaultDeps(): PasswordOtpDeps {
       return { ok: sent.ok }
     },
     async sendEmail(to, subject, html) {
-      const sent = await sendEmail({ to, subject, html })
-      return { ok: sent.ok }
+      try {
+        const sent = await sendViaGmail({ to, subject, html })
+        return { ok: sent.ok === true && sent.dryRun === false }
+      } catch {
+        return { ok: false }
+      }
     },
+    alreadySent: hasPasswordOtpSend,
+    recordSent: recordPasswordOtpSend,
   }
+}
+
+function dailyLimited(): OtpIssueResult {
+  return { ok: false, status: 429, error: 'otp_daily_limit', messageBn: OTP_DAILY_LIMIT_BN }
 }
 
 function uniformOk(): OtpIssueResult {
@@ -88,20 +102,28 @@ function emailBody(otp: string): string {
 /**
  * Stores a 5-minute OTP.
  * Email sends mail only. Phone sends SMS only after email and phone match one account.
+ * Each channel is handed to Gmail or SMS once per Asia/Dhaka day, and only after the provider accepts it.
  */
-export async function issuePasswordOtp(input: PasswordOtpInput, deps: PasswordOtpDeps = defaultDeps()): Promise<OtpIssueResult> {
+export async function issuePasswordOtp(
+  input: PasswordOtpInput,
+  deps: Partial<PasswordOtpDeps> = {},
+): Promise<OtpIssueResult> {
+  const d: PasswordOtpDeps = { ...defaultDeps(), ...deps }
   if (input.channel === 'email') {
     const email = input.email.trim().toLowerCase()
     if (!email.includes('@') || !email.includes('.')) return uniformOk()
-    const user = await deps.findUserByEmail(email)
+    const user = await d.findUserByEmail(email)
     if (!user?.phone || !user.email) return uniformOk()
-    const otp = deps.generateOtp()
-    const expiresAt = new Date(deps.now().getTime() + OTP_TTL_MS)
-    await deps.storeChallenge({ userId: user.id, phone: user.phone, otp, expiresAt })
-    const sent = await deps.sendEmail(user.email, 'MAMLAQ — পাসওয়ার্ড কোড', emailBody(otp))
+    const now = d.now()
+    if (await d.alreadySent(user.id, 'email', now)) return dailyLimited()
+    const otp = d.generateOtp()
+    const expiresAt = new Date(now.getTime() + OTP_TTL_MS)
+    await d.storeChallenge({ userId: user.id, phone: user.phone, otp, expiresAt })
+    const sent = await d.sendEmail(user.email, 'MAMLAQ — পাসওয়ার্ড কোড', emailBody(otp))
     if (!sent.ok) {
       return { ok: false, status: 502, error: 'email_failed', messageBn: OTP_EMAIL_FAILED_MESSAGE_BN }
     }
+    await d.recordSent(user.id, 'email', now)
     return uniformOk()
   }
 
@@ -112,15 +134,18 @@ export async function issuePasswordOtp(input: PasswordOtpInput, deps: PasswordOt
     return { ok: false, status: 400, error: 'invalid_phone', messageBn: kSignupPhoneError }
   }
   if (!email.includes('@') || !email.includes('.')) return mismatch()
-  const user = await deps.findUserByEmailAndPhone(email, phone)
+  const user = await d.findUserByEmailAndPhone(email, phone)
   if (!user?.phone) return mismatch()
 
-  const otp = deps.generateOtp()
-  const expiresAt = new Date(deps.now().getTime() + OTP_TTL_MS)
-  await deps.storeChallenge({ userId: user.id, phone: user.phone, otp, expiresAt })
-  const sent = await deps.sendSms(user.phone, otpRequestMessage(otp))
+  const now = d.now()
+  if (await d.alreadySent(user.id, 'phone', now)) return dailyLimited()
+  const otp = d.generateOtp()
+  const expiresAt = new Date(now.getTime() + OTP_TTL_MS)
+  await d.storeChallenge({ userId: user.id, phone: user.phone, otp, expiresAt })
+  const sent = await d.sendSms(user.phone, otpRequestMessage(otp))
   if (!sent.ok) {
     return { ok: false, status: 502, error: 'sms_failed', messageBn: OTP_SMS_FAILED_MESSAGE_BN }
   }
+  await d.recordSent(user.id, 'phone', now)
   return uniformOk()
 }

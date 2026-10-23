@@ -186,6 +186,7 @@ model User {
   loginAttempts      LoginAttempt[]
   passwordResets     PasswordResetToken[]
   passwordOtps       PasswordOtpChallenge[]
+  passwordOtpDailySends PasswordOtpDailySend[]
   joinRequestsMade   JoinRequest[]          @relation("JoinRequester")
   lawyerProfile      LawyerProfile?
   auditEvents        AuditLog[]
@@ -433,6 +434,19 @@ model PasswordOtpChallenge {
 
   @@index([phone, createdAt])
   @@index([userId, createdAt])
+}
+
+/// One successful password-OTP handoff per user, channel, and Asia/Dhaka day.
+model PasswordOtpDailySend {
+  id        String   @id @default(uuid())
+  userId    String
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  channel   String
+  dhakaDay  String
+  createdAt DateTime @default(now())
+
+  @@unique([userId, channel, dhakaDay])
+  @@index([userId, dhakaDay])
 }
 
 // ── Catalog & billing ────────────────────────────────────────────────────────
