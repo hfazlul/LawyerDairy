@@ -153,6 +153,10 @@ function responseLooksOk(text: string, httpOk: boolean): boolean {
 }
 
 export async function sendSms(phone: string, message: string): Promise<SmsSendResult> {
+  // portal.sms.net.bd is off on purpose so it cannot conflict with 24bulksms.
+  if (/sms\.net\.bd/i.test((process.env.SMS_API_URL || '').trim())) {
+    return { ok: false, skipped: 'sms_unconfigured' }
+  }
   if (!smsGatewayConfigured()) {
     if (process.env.NODE_ENV === 'development') {
       console.log(`[SMS] unconfigured — not sending to ${phone}`)

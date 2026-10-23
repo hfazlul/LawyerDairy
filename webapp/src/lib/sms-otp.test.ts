@@ -32,6 +32,29 @@ test('form_post uses urlencoded number/message fields', () => {
   assert.match(req.body || '', /number=01712345678/)
 })
 
+test('sms.net.bd URL does not send', async () => {
+  process.env.SMS_API_URL = 'https://api.sms.net.bd/sendsms'
+  process.env.SMS_API_KEY = 'net-gateway-key'
+  process.env.SMS_VENDOR_STYLE = 'form_post'
+  const orig = globalThis.fetch
+  let hits = 0
+  globalThis.fetch = (async () => {
+    hits++
+    return new Response('{}', { status: 200 })
+  }) as typeof fetch
+  try {
+    const skip = await sendSms('01712345678', 'hi')
+    assert.equal(skip.ok, false)
+    if (!skip.ok) assert.equal(skip.skipped, 'sms_unconfigured')
+    assert.equal(hits, 0)
+  } finally {
+    globalThis.fetch = orig
+    delete process.env.SMS_API_URL
+    delete process.env.SMS_API_KEY
+    delete process.env.SMS_VENDOR_STYLE
+  }
+})
+
 test('unconfigured sendSms skips; sendOtp still throws', async () => {
   delete process.env.SMS_API_URL
   delete process.env.SMS_API_KEY

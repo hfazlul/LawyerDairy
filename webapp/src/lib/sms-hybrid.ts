@@ -10,17 +10,17 @@ import {
 } from './env-aliases'
 
 /**
- * SIM bulk SMS hybrid.
- * SMS_MODE=production tries 24bulksmsbd first. sms.net.bd is called
- * once only when that send is not accepted. An accepted send does not fall back.
- * Otherwise sms.net.bd is primary and 24bulksmsbd is the failover.
- * Skip-if-no-keys. WhatsApp Cloud auto-send is removed.
- * Named aliases: SMS_NET_BD_API_KEY / SMS_NETBD_API_KEY / SMS_API_URL-as-key, BULKSMS24_API_KEY / SMS_FAILOVER_KEY.
+ * SIM bulk SMS.
+ * portal.sms.net.bd is off on purpose so it cannot conflict with 24bulksms.
  * Hearing/bulk texts post JSON to DynamicSMSApi: customer_id, api_key, messages[{to,message}].
  * Password OTP posts form fields customer_id, api_key, message, mobile_no (01…) to smsSendApi,
  * because the provider whitelists OTP only on that endpoint. No sender_id.
- * sms.net.bd posts form fields api_key, to, and msg. It does not send sender_id or content_id.
+ * A failed send does not try a second provider.
+ * Skip-if-no-keys. WhatsApp Cloud auto-send is removed.
  */
+
+/** portal.sms.net.bd is off on purpose so it cannot conflict with 24bulksms. */
+const smsNetBdEnabled = false
 
 export function smsNetBdUrl(): string {
   return smsNetBdUrlFromEnv()
@@ -39,7 +39,11 @@ export function bulkSms24Key(): string {
 }
 
 export function smsNetBdConfigured(): boolean {
-  return Boolean(smsNetBdKey())
+  return smsNetBdEnabled && Boolean(smsNetBdKey())
+}
+
+function smsApiUrlIsSmsNetBd(): boolean {
+  return /sms\.net\.bd/i.test(envTrim('SMS_API_URL'))
 }
 
 export function bulkSms24Configured(): boolean {
@@ -47,7 +51,8 @@ export function bulkSms24Configured(): boolean {
 }
 
 export function smsHybridConfigured(): boolean {
-  return smsNetBdConfigured() || bulkSms24Configured() || smsGatewayConfigured()
+  const generic = smsGatewayConfigured() && !smsApiUrlIsSmsNetBd()
+  return smsNetBdConfigured() || bulkSms24Configured() || generic
 }
 
 function parseJson(text: string): Record<string, unknown> | null {
@@ -134,6 +139,7 @@ export async function sendSmsNetBd(phone: string, message: string): Promise<{
   skipped?: string
   error?: string
 }> {
+  if (!smsNetBdEnabled) return { ok: false, skipped: 'sms_net_bd_disabled' }
   const key = smsNetBdKey()
   if (!key) return { ok: false, skipped: 'sms_unconfigured' }
   const to = formatSmsPhone(phone, 'local01')
@@ -339,9 +345,9 @@ export async function sendSmsHybrid(input: {
   otp?: boolean
 }): Promise<{ ok: boolean; skipped?: string; provider?: string; error?: string }> {
   const send24 = input.otp ? sendBulkSms24Single : sendBulkSms24
-  // Production tries 24bulksmsbd first. Fall back once only when that send is not
-  // accepted. An accepted send must return here — a second call would send two SMS.
-  if (smsProductionMode()) {
+  // Password OTP and production hearing/bulk use 24bulksmsbd only.
+  // portal.sms.net.bd is off, including when SMS_MODE is not production.
+  if (input.otp || smsProductionMode()) {
     if (!bulkSms24Configured()) return { ok: false, skipped: 'sms_unconfigured' }
     const sent = await send24(input.phone, input.message)
     if (sent.ok) {
@@ -353,55 +359,10 @@ export async function sendSmsHybrid(input: {
       })
       return { ok: true, provider: '24bulksmsbd' }
     }
-    if (sent.skipped !== 'sms_unconfigured' && smsNetBdConfigured()) {
-      const fallback = await sendSmsNetBd(input.phone, input.message)
-      if (fallback.ok) {
-        await recordSmsUsage({
-          provider: 'sms.net.bd',
-          kind: input.kind,
-          workspaceId: input.workspaceId,
-          phone: input.phone,
-        })
-        return { ok: true, provider: 'sms.net.bd' }
-      }
-      return {
-        ok: false,
-        provider: 'sms.net.bd',
-        error: fallback.error,
-        skipped: fallback.skipped,
-      }
-    }
     return { ok: false, provider: '24bulksmsbd', error: sent.error, skipped: sent.skipped }
   }
 
-  if (smsNetBdConfigured()) {
-    const primary = await sendSmsNetBd(input.phone, input.message)
-    if (primary.ok) {
-      await recordSmsUsage({
-        provider: 'sms.net.bd',
-        kind: input.kind,
-        workspaceId: input.workspaceId,
-        phone: input.phone,
-      })
-      return { ok: true, provider: 'sms.net.bd' }
-    }
-    if (bulkSms24Configured()) {
-      const fail = await send24(input.phone, input.message)
-      if (fail.ok) {
-        await recordSmsUsage({
-          provider: '24bulksmsbd',
-          kind: input.kind,
-          workspaceId: input.workspaceId,
-          phone: input.phone,
-        })
-        return { ok: true, provider: '24bulksmsbd' }
-      }
-      return { ok: false, provider: '24bulksmsbd', error: fail.error || primary.error }
-    }
-    return { ok: false, provider: 'sms.net.bd', error: primary.error, skipped: primary.skipped }
-  }
-
-  if (smsGatewayConfigured()) {
+  if (smsGatewayConfigured() && !smsApiUrlIsSmsNetBd()) {
     const generic = await sendSms(input.phone, input.message)
     if (generic.ok) {
       await recordSmsUsage({
