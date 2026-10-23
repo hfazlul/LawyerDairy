@@ -41,12 +41,14 @@ const SMS_ENV = [
   'SMS_CUSTOMER_ID',
 ]
 
-test('password OTP text keeps MAMLAQ and has no URL', () => {
+test('password OTP text matches the provider-whitelisted format', () => {
   const text = otpRequestMessage('000000')
-  assert.equal(text, 'MAMLAQ-Lawyer Dairy\nYour 6 digit code is : 000000')
-  assert.equal(text.split('\n').length, 2)
+  assert.equal(text, 'MAMLAQ-Lawyer Dairy\nYour forgot password 6 digit OTP is 000000\nmamlaq.com')
+  assert.equal(text.split('\n').length, 3)
   assert.equal(text.includes('http'), false)
-  assert.equal(text.includes('.com'), false)
+  assert.equal(text.includes(':'), false)
+  assert.match(text, /^[\x20-\x7E\n]+$/)
+  assert.ok(text.length <= 160)
 })
 
 test('hybrid is unconfigured without keys; WhatsApp auto always skipped', async () => {
@@ -486,7 +488,7 @@ test('password OTP in production posts smsSendApi form fields and does not fall 
     assert.equal(params.get('customer_id'), '1684')
     assert.equal(params.get('api_key'), 'bulk-key-secret')
     assert.equal(params.get('mobile_no'), '01712345678')
-    assert.equal(params.get('message'), 'MAMLAQ-Lawyer Dairy\nYour 6 digit code is : 482913')
+    assert.equal(params.get('message'), 'MAMLAQ-Lawyer Dairy\nYour forgot password 6 digit OTP is 482913\nmamlaq.com')
     assert.equal(params.get('sender_id'), null)
     assert.equal(params.get('senderid'), null)
     assert.equal(calls.some((c) => c.url.includes('DynamicSMSApi')), false)
