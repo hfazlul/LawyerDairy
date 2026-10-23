@@ -18,13 +18,22 @@ export function hasGmailSmtp(): boolean {
   return Boolean(process.env.GMAIL_USER?.trim() && process.env.GMAIL_APP_PASSWORD?.trim())
 }
 
-/** OTP From: GMAIL_USER, then MAIL_FROM_NOREPLY, then EMAIL_FROM. */
+/** OTP Gmail From: GMAIL_USER, then MAIL_FROM_NOREPLY, then EMAIL_FROM. */
 export function resolveGmailOtpFrom(): string {
   const user = process.env.GMAIL_USER?.trim()
   if (user) return user
   const noreply = process.env.MAIL_FROM_NOREPLY?.trim()
   if (noreply) return noreply
   return (process.env.EMAIL_FROM || '').trim()
+}
+
+/** OTP Brevo From: MAIL_FROM_NOREPLY, then EMAIL_FROM, else GMAIL_USER. */
+export function resolveBrevoOtpFrom(): string {
+  const noreply = process.env.MAIL_FROM_NOREPLY?.trim()
+  if (noreply) return noreply
+  const emailFrom = process.env.EMAIL_FROM?.trim()
+  if (emailFrom) return emailFrom
+  return (process.env.GMAIL_USER || '').trim()
 }
 
 export function mailDailyLimit(): number {

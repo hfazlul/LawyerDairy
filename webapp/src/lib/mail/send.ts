@@ -18,7 +18,7 @@ async function dispatch(
 
 /**
  * Send one email via Brevo / Resend (or dry-run when no API keys).
- * Password-reset OTP does not use this path. It uses Gmail SMTP and fails closed.
+ * Password-reset OTP does not use this path. It tries Gmail SMTP, then Brevo.
  * `EMAIL_PROVIDER=auto` tries primary then fallback.
  */
 export async function sendEmail(input: SendEmailInput): Promise<SendResult> {

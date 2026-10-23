@@ -1,4 +1,6 @@
 import { prisma } from '@/lib/prisma'
+import { resolveBrevoOtpFrom } from '../mail/config'
+import { sendViaBrevo } from '../mail/providers/brevo'
 import { sendViaGmail } from '../mail/providers/gmail'
 import { sendSmsHybrid } from '@/lib/sms-hybrid'
 import { kSignupPhoneError, normalizeBdPhone } from '@/lib/identity'
@@ -71,12 +73,7 @@ function defaultDeps(): PasswordOtpDeps {
       return { ok: sent.ok }
     },
     async sendEmail(to, subject, html) {
-      try {
-        const sent = await sendViaGmail({ to, subject, html })
-        return { ok: sent.ok === true && sent.dryRun === false }
-      } catch {
-        return { ok: false }
-      }
+      return sendPasswordOtpEmail(to, subject, html)
     },
     alreadySent: hasPasswordOtpSend,
     recordSent: recordPasswordOtpSend,
@@ -99,10 +96,40 @@ function emailBody(otp: string): string {
   return `<p>আপনার ৬ সংখ্যার কোড: ${otp}</p><p>৫ মিনিটের মধ্যে ব্যবহার করুন।</p>`
 }
 
+function mailAccepted(sent: { ok: boolean; dryRun: boolean }): boolean {
+  return sent.ok === true && sent.dryRun === false
+}
+
+/**
+ * Gmail first. Any Gmail failure tries Brevo before this returns.
+ * The caller records the daily email slot only after this returns ok.
+ */
+async function sendPasswordOtpEmail(
+  to: string,
+  subject: string,
+  html: string,
+): Promise<{ ok: boolean }> {
+  try {
+    const gmail = await sendViaGmail({ to, subject, html })
+    if (mailAccepted(gmail)) return { ok: true }
+  } catch {
+    // Gmail threw. Do not record a send; try Brevo.
+  }
+
+  const from = resolveBrevoOtpFrom()
+  if (!from) return { ok: false }
+  try {
+    const brevo = await sendViaBrevo({ from, to, subject, html })
+    return { ok: mailAccepted(brevo) }
+  } catch {
+    return { ok: false }
+  }
+}
+
 /**
  * Stores a 5-minute OTP.
- * Email sends mail only. Phone sends SMS only after email and phone match one account.
- * Each channel is handed to Gmail or SMS once per Asia/Dhaka day, and only after the provider accepts it.
+ * Email tries Gmail, then Brevo if Gmail does not accept. Phone sends SMS only after email and phone match one account.
+ * Each channel is counted once per Asia/Dhaka day, and only after a provider accepts it.
  */
 export async function issuePasswordOtp(
   input: PasswordOtpInput,

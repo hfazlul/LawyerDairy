@@ -33,7 +33,7 @@ export async function hasPasswordOtpSend(
   }
 }
 
-/** Call only after Gmail or the SMS provider accepts the message. */
+/** Call only after Gmail, Brevo, or the SMS provider accepts the message. */
 export async function recordPasswordOtpSend(
   userId: string,
   channel: OtpSendChannel,
