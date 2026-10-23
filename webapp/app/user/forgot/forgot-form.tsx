@@ -1,26 +1,30 @@
 'use client'
 
 import { FormEvent, useEffect, useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
-import { kPasswordHintBn, kPhoneExample, kPhoneNotRegisteredMessage, kSignupPhoneError, passwordIssues, signupPhoneIssue } from '@/lib/identity'
+import { kEmailExample, kPasswordHintBn, kPhoneExample, passwordIssues, signupPhoneIssue } from '@/lib/identity'
 import { plainAuthNotice } from '@/lib/auth/signup-failure'
 import { cn } from '@/lib/utils'
 
 const invalidClass = 'border-red-600 focus-visible:border-red-600 focus-visible:ring-red-600/20'
-const kForgotServerMessage = 'এসএমএস পাঠানো যায়নি। আবার চেষ্টা করুন।'
+const kForgotServerMessage = 'কোড পাঠানো যায়নি। আবার চেষ্টা করুন।'
 const kOtpExpiredMessage = 'কোডের মেয়াদ শেষ। আবার চেষ্টা করুন।'
-const kResetDoneMessage = 'পাসওয়ার্ড বদলেছে — আবার লগইন করুন'
-const OTP_SECONDS = 10 * 60
+const OTP_SECONDS = 5 * 60
+
+function PhoneOtpHint() {
+  return (
+    <p className="font-bengali text-sm leading-6 text-navy">
+      মোবাইলে ওটিপি না এলে পেছনে গিয়ে ইমেইল বেছে নিন। ইমেইল বাটনে চাপ দিয়ে ইমেইল দিয়ে ওটিপি নিন।
+    </p>
+  )
+}
 
 function shownForgotError(raw: string): string {
   if (!raw.trim()) return ''
   return plainAuthNotice(raw, kForgotServerMessage)
-}
-
-function phoneBorder(message: string) {
-  return message === kSignupPhoneError || message === kPhoneNotRegisteredMessage
 }
 
 function bnDigits(value: string): string {
@@ -34,34 +38,42 @@ function clock(seconds: number): string {
   return bnDigits(`${String(m).padStart(2, '0')}:${String(s).padStart(2, '0')}`)
 }
 
+function emailOk(value: string): boolean {
+  const text = value.trim()
+  return text.includes('@') && text.includes('.') && !text.includes(' ')
+}
+
+type Channel = 'email' | 'phone'
+type Step = 'choose' | 'form' | 'code'
+
 export function ForgotForm({ error = '', sent = false }: { error?: string; sent?: boolean }) {
+  const router = useRouter()
+  const [channel, setChannel] = useState<Channel | null>(null)
+  const [step, setStep] = useState<Step>(sent ? 'code' : 'choose')
+  const [email, setEmail] = useState('')
   const [phone, setPhone] = useState('')
   const [otp, setOtp] = useState('')
   const [password, setPassword] = useState('')
   const [confirm, setConfirm] = useState('')
   const [busy, setBusy] = useState(false)
-  const [step, setStep] = useState<'phone' | 'otp'>(sent ? 'otp' : 'phone')
   const [message, setMessage] = useState(sent ? '' : shownForgotError(error))
-  const [invalid, setInvalid] = useState(phoneBorder(shownForgotError(error)))
+  const [invalidPhone, setInvalidPhone] = useState(false)
   const [left, setLeft] = useState(sent ? OTP_SECONDS : 0)
-  const [done, setDone] = useState(false)
 
   useEffect(() => {
     if (sent) {
-      setStep('otp')
+      setStep('code')
       setMessage('')
-      setInvalid(false)
+      setInvalidPhone(false)
       setLeft(OTP_SECONDS)
       return
     }
     if (!error) return
-    const text = shownForgotError(error)
-    setMessage(text)
-    setInvalid(phoneBorder(text))
+    setMessage(shownForgotError(error))
   }, [error, sent])
 
   useEffect(() => {
-    if (step !== 'otp' || left <= 0) return
+    if (step !== 'code' || left <= 0) return
     const id = window.setInterval(() => {
       setLeft((n) => (n <= 1 ? 0 : n - 1))
     }, 1000)
@@ -69,16 +81,41 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
   }, [step, left > 0])
 
   useEffect(() => {
-    if (step === 'otp' && left === 0 && !done) setMessage(kOtpExpiredMessage)
-  }, [step, left, done])
+    if (step === 'code' && left === 0) setMessage(kOtpExpiredMessage)
+  }, [step, left])
+
+  function choose(next: Channel) {
+    setChannel(next)
+    setStep('form')
+    setMessage('')
+    setInvalidPhone(false)
+  }
+
+  function backToChoice() {
+    setStep('choose')
+    setMessage('')
+    setInvalidPhone(false)
+    setLeft(0)
+  }
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    if (step === 'phone') {
-      const phoneErr = signupPhoneIssue(phone)
-      if (phoneErr) {
-        setMessage(phoneErr)
-        setInvalid(true)
+    if (step === 'choose' || !channel) return
+    if (step === 'form') {
+      if (channel === 'phone') {
+        const phoneErr = signupPhoneIssue(phone)
+        if (phoneErr) {
+          setMessage(phoneErr)
+          setInvalidPhone(true)
+          return
+        }
+        if (!emailOk(email)) {
+          setMessage('ইমেইল ও ফোন নম্বর দিন।')
+          setInvalidPhone(false)
+          return
+        }
+      } else if (!emailOk(email)) {
+        setMessage('সঠিক ইমেইল দিন।')
         return
       }
       setBusy(true)
@@ -86,7 +123,7 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
         const res = await fetch('/api/web/v1/password/reset/request', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-          body: JSON.stringify({ identifier: phone }),
+          body: JSON.stringify(channel === 'email' ? { channel, email } : { channel, email, phone }),
         })
         const data = await res.json().catch(() => ({}))
         if (!res.ok) {
@@ -95,9 +132,8 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
             : typeof data.message === 'string'
               ? data.message
               : ''
-          const text = raw.trim() ? shownForgotError(raw) : kForgotServerMessage
-          setMessage(text)
-          setInvalid(phoneBorder(text))
+          setMessage(raw.trim() ? shownForgotError(raw) : kForgotServerMessage)
+          setInvalidPhone(channel === 'phone')
           setBusy(false)
           return
         }
@@ -105,12 +141,12 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
           ? data.expiresInSec
           : OTP_SECONDS
         setMessage('')
-        setInvalid(false)
+        setInvalidPhone(false)
         setLeft(seconds)
-        setStep('otp')
+        setStep('code')
       } catch {
         setMessage(kForgotServerMessage)
-        setInvalid(false)
+        setInvalidPhone(false)
       } finally {
         setBusy(false)
       }
@@ -131,12 +167,13 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
       return
     }
     setBusy(true)
+    let redirected = false
     try {
       const res = await fetch('/api/mobile/v1/auth/password/otp/complete', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
         body: JSON.stringify({
-          phone,
+          ...(channel === 'email' ? { email } : { phone, email }),
           otp,
           newPassword: password,
           confirmPassword: confirm,
@@ -152,12 +189,12 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
         setMessage(raw.trim() ? shownForgotError(raw) : kOtpExpiredMessage)
         return
       }
-      setDone(true)
-      setMessage(kResetDoneMessage)
+      redirected = true
+      router.replace('/user/login')
     } catch {
       setMessage(kForgotServerMessage)
     } finally {
-      setBusy(false)
+      if (!redirected) setBusy(false)
     }
   }
 
@@ -165,38 +202,82 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
     <form className="space-y-5" action="/api/web/v1/password/reset/request" method="post" noValidate onSubmit={onSubmit}>
       {message ? (
         <p
-          role={done ? 'status' : 'alert'}
-          className={
-            done
-              ? 'rounded-xl border border-emerald-200 bg-emerald-50 px-4 py-3 font-bengali text-sm text-emerald-800'
-              : 'rounded-xl border border-red-200 bg-red-50 px-4 py-3 font-bengali text-sm text-destructive'
-          }
+          role="alert"
+          className="rounded-xl border border-red-200 bg-red-50 px-4 py-3 font-bengali text-sm text-destructive"
         >
           {message}
         </p>
       ) : null}
-      <div className="space-y-1.5">
-        <Label htmlFor="identifier" className="font-bengali">ফোন নম্বর</Label>
-        <Input
-          id="identifier"
-          name="identifier"
-          required
-          inputMode="numeric"
-          maxLength={11}
-          autoComplete="tel"
-          placeholder={kPhoneExample}
-          value={phone}
-          readOnly={step === 'otp'}
-          aria-invalid={invalid || undefined}
-          className={cn(invalid && invalidClass)}
-          onChange={(e) => {
-            setPhone(e.target.value.replace(/\D/g, '').slice(0, 11))
-            setInvalid(false)
-          }}
-        />
-      </div>
-      {step === 'otp' ? (
+      {step === 'choose' ? (
+        <div className="grid grid-cols-2 gap-3">
+          <Button type="button" size="lg" variant="navy" className="font-bengali" onClick={() => choose('email')}>
+            ইমেইল
+          </Button>
+          <Button type="button" size="lg" variant="outline" className="font-bengali" onClick={() => choose('phone')}>
+            ফোন
+          </Button>
+        </div>
+      ) : null}
+      {step !== 'choose' ? (
+        <button type="button" onClick={backToChoice} className="font-bengali text-sm font-bold text-navy">
+          পেছনে
+        </button>
+      ) : null}
+      {step === 'form' && channel === 'email' ? (
+        <div className="space-y-1.5">
+          <Label htmlFor="email" className="font-bengali">ইমেইল</Label>
+          <Input
+            id="email"
+            name="email"
+            type="email"
+            required
+            autoComplete="email"
+            placeholder={kEmailExample}
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
+        </div>
+      ) : null}
+      {step === 'form' && channel === 'phone' ? (
         <>
+          {channel === 'phone' ? <PhoneOtpHint /> : null}
+          <div className="space-y-1.5">
+            <Label htmlFor="email" className="font-bengali">ইমেইল</Label>
+            <Input
+              id="email"
+              name="email"
+              type="email"
+              required
+              autoComplete="email"
+              placeholder={kEmailExample}
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+          </div>
+          <div className="space-y-1.5">
+            <Label htmlFor="identifier" className="font-bengali">ফোন নম্বর</Label>
+            <Input
+              id="identifier"
+              name="phone"
+              required
+              inputMode="numeric"
+              maxLength={11}
+              autoComplete="tel"
+              placeholder={kPhoneExample}
+              value={phone}
+              aria-invalid={invalidPhone || undefined}
+              className={cn(invalidPhone && invalidClass)}
+              onChange={(e) => {
+                setPhone(e.target.value.replace(/\D/g, '').slice(0, 11))
+                setInvalidPhone(false)
+              }}
+            />
+          </div>
+        </>
+      ) : null}
+      {step === 'code' ? (
+        <>
+          {channel === 'phone' ? <PhoneOtpHint /> : null}
           <p className="font-bengali text-sm text-navy" data-otp-clock={left}>
             {left > 0 ? `বাকি সময় ${clock(left)}` : kOtpExpiredMessage}
           </p>
@@ -237,9 +318,11 @@ export function ForgotForm({ error = '', sent = false }: { error?: string; sent?
           </div>
         </>
       ) : null}
-      <Button type="submit" size="lg" variant="navy" className="w-full font-bengali" disabled={busy || (step === 'otp' && left <= 0)}>
-        {busy ? 'অপেক্ষা করুন' : step === 'otp' ? 'পাসওয়ার্ড বদলান' : 'OTP পাঠান'}
-      </Button>
+      {step !== 'choose' ? (
+        <Button type="submit" size="lg" variant="navy" className="w-full font-bengali" disabled={busy || (step === 'code' && left <= 0)}>
+          {busy ? 'অপেক্ষা করুন' : step === 'code' ? 'পাসওয়ার্ড বদলান' : 'OTP পাঠান'}
+        </Button>
+      ) : null}
     </form>
   )
 }

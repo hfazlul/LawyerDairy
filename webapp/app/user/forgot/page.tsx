@@ -9,7 +9,7 @@ export default async function UserForgotPage({ searchParams }: Props) {
   return (
     <AuthShell
       title="পাসওয়ার্ড পুনরুদ্ধার"
-      description="অ্যাকাউন্টের ফোন নম্বরে ৬ সংখ্যার কোড পাঠানো হবে। ১০ মিনিটের মধ্যে কোড দিয়ে পাসওয়ার্ড বদলান।"
+      description="ইমেইল বা ফোন বেছে নিয়ে ৬ সংখ্যার কোড নিন।"
       footer={<Link href="/user/login" className="font-bengali text-sm font-bold text-navy no-underline hover:text-brass">লগইনে ফিরে যান</Link>}
     >
       <ForgotForm error={params.error || ''} sent={Boolean(params.sent)} />

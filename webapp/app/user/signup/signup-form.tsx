@@ -47,7 +47,7 @@ function bordersForSignup(message: string): FieldFlags {
 
 export function SignupForm({ error }: { error: string }) {
   const initialBorders = bordersForSignup(error)
-  const [extrasOpen, setExtrasOpen] = useState(initialBorders.email || initialBorders.referral)
+  const [referralOpen, setReferralOpen] = useState(initialBorders.referral)
   const [showPassword, setShowPassword] = useState(false)
   const [phone, setPhone] = useState('')
   const [email, setEmail] = useState('')
@@ -72,7 +72,7 @@ export function SignupForm({ error }: { error: string }) {
     const borders = bordersForSignup(text)
     setMessage(text)
     setInvalid(borders)
-    if (borders.email || borders.referral) setExtrasOpen(true)
+    if (borders.referral) setReferralOpen(true)
   }, [error])
 
   function clearField(field: keyof FieldFlags) {
@@ -83,7 +83,7 @@ export function SignupForm({ error }: { error: string }) {
     const borders = bordersForSignup(text)
     setMessage(text)
     setInvalid(borders)
-    if (borders.email || borders.referral) setExtrasOpen(true)
+    if (borders.referral) setReferralOpen(true)
   }
 
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
@@ -185,75 +185,74 @@ export function SignupForm({ error }: { error: string }) {
         </div>
         <div className="space-y-1.5">
           <Label htmlFor="phone">Mobile</Label>
-          <div className="flex items-start gap-2">
+          <Input
+            id="phone"
+            type="text"
+            name="phone"
+            required
+            inputMode="numeric"
+            maxLength={11}
+            pattern="01[3-9][0-9]{8}"
+            placeholder={kPhoneExample}
+            autoComplete="tel"
+            value={phone}
+            aria-invalid={invalid.phone || undefined}
+            className={cn(invalid.phone && invalidClass)}
+            onChange={(e) => {
+              setPhone(e.target.value.replace(/\D/g, '').slice(0, 11))
+              clearField('phone')
+            }}
+          />
+        </div>
+        <div className="space-y-1.5">
+          <Label htmlFor="email">Email</Label>
+          <div className="relative">
             <Input
-              id="phone"
+              id="email"
               type="text"
-              name="phone"
+              name="email"
               required
-              inputMode="numeric"
-              maxLength={11}
-              pattern="01[3-9][0-9]{8}"
-              placeholder={kPhoneExample}
-              autoComplete="tel"
-              value={phone}
-              aria-invalid={invalid.phone || undefined}
-              className={cn('min-w-0 flex-1', invalid.phone && invalidClass)}
+              autoComplete="email"
+              placeholder={kEmailExample}
+              value={email}
+              aria-invalid={invalid.email || undefined}
+              className={cn('pr-12', invalid.email && invalidClass)}
               onChange={(e) => {
-                setPhone(e.target.value.replace(/\D/g, '').slice(0, 11))
-                clearField('phone')
+                setEmail(e.target.value)
+                clearField('email')
               }}
             />
             <button
               type="button"
-              aria-expanded={extrasOpen}
-              aria-controls="signup-extras-panel"
-              aria-label={extrasOpen ? 'Hide email and referral' : 'Email and referral'}
-              onClick={() => setExtrasOpen((open) => !open)}
-              className="grid h-12 w-12 shrink-0 place-items-center rounded-xl border border-input bg-white text-[#12263f]"
+              aria-expanded={referralOpen}
+              aria-controls="signup-referral-panel"
+              aria-label={referralOpen ? 'Hide referral' : 'Referral'}
+              onClick={() => setReferralOpen((open) => !open)}
+              className="absolute inset-y-0 right-1 my-auto grid h-10 w-10 place-items-center rounded-lg text-[#12263f]"
             >
               <svg viewBox="0 0 24 24" className="h-5 w-5" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden>
-                <path d={extrasOpen ? 'M6 14l6-6 6 6' : 'M6 10l6 6 6-6'} strokeLinecap="round" strokeLinejoin="round" />
+                <path d={referralOpen ? 'M6 14l6-6 6 6' : 'M6 10l6 6 6-6'} strokeLinecap="round" strokeLinejoin="round" />
               </svg>
             </button>
           </div>
         </div>
-        {extrasOpen ? (
-          <div id="signup-extras-panel" className="space-y-3">
-            <div className="space-y-1.5">
-              <Label htmlFor="email">Email (Optional)</Label>
-              <Input
-                id="email"
-                type="text"
-                name="email"
-                autoComplete="email"
-                placeholder={kEmailExample}
-                value={email}
-                aria-invalid={invalid.email || undefined}
-                className={cn(invalid.email && invalidClass)}
-                onChange={(e) => {
-                  setEmail(e.target.value)
-                  clearField('email')
-                }}
-              />
-            </div>
-            <div className="space-y-1.5">
-              <Label htmlFor="referralCode">Referral (Optional)</Label>
-              <Input
-                id="referralCode"
-                type="text"
-                name="referralCode"
-                maxLength={32}
-                autoCapitalize="characters"
-                value={referral}
-                aria-invalid={invalid.referral || undefined}
-                className={cn(invalid.referral && invalidClass)}
-                onChange={(e) => {
-                  setReferral(e.target.value.replace(/[^A-Za-z0-9]/g, '').slice(0, 32))
-                  clearField('referral')
-                }}
-              />
-            </div>
+        {referralOpen ? (
+          <div id="signup-referral-panel" className="space-y-1.5">
+            <Label htmlFor="referralCode">Referral (Optional)</Label>
+            <Input
+              id="referralCode"
+              type="text"
+              name="referralCode"
+              maxLength={32}
+              autoCapitalize="characters"
+              value={referral}
+              aria-invalid={invalid.referral || undefined}
+              className={cn(invalid.referral && invalidClass)}
+              onChange={(e) => {
+                setReferral(e.target.value.replace(/[^A-Za-z0-9]/g, '').slice(0, 32))
+                clearField('referral')
+              }}
+            />
           </div>
         ) : null}
         <div className="space-y-1.5">

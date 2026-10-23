@@ -46,6 +46,7 @@ export function passwordIssues(password: string, _extras: string[] = []): string
 
 export const kSignupNameError = 'Text only.'
 export const kSignupPhoneError = 'ফোন নম্বর ১১ সংখ্যার হতে হবে এবং ০১ দিয়ে শুরু হবে।'
+export const kSignupEmailRequired = 'ইমেইল দিন।'
 export const kSignupEmailError = 'ইমেইলে @ এবং .com থাকতে হবে।'
 export const kSignupPasswordError = 'পাসওয়ার্ড ৬ থেকে ১০ সংখ্যা হতে হবে।'
 export const kSignupPasswordHelper = 'Use at least 6 numbers (123) or above. No more than 10.'
@@ -70,7 +71,7 @@ export function signupPhoneIssue(raw: string): string | null {
 
 export function signupEmailIssue(raw: string): string | null {
   const v = raw.trim()
-  if (!v) return null
+  if (!v) return kSignupEmailRequired
   const lower = v.toLowerCase()
   if (!lower.includes('@') || !lower.includes('.com')) return kSignupEmailError
   return null

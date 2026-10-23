@@ -1,12 +1,9 @@
-import 'dart:math';
-
 import 'package:dio/dio.dart';
 
 import '../config/api_config.dart';
 import '../storage/string_store.dart';
 import 'sms_phone.dart';
 import 'sms_vendor_adapter.dart';
-import 'sms_vendor_config.dart';
 
 /// Local 11-digit form: 01, operator 3–9, then 8 digits. 880… is accepted too.
 bool isForgotBdMobile(String raw) {
@@ -25,20 +22,23 @@ class ForgotOtpRequestResult {
     required this.via,
     this.passwordResetBlocked = false,
     this.reason,
-    this.expiresInSec = 600,
+    this.message,
+    this.expiresInSec = 300,
   });
 
   final bool sent;
   final String via; // server | adapter | none
   final bool passwordResetBlocked;
   final String? reason;
+  final String? message;
   final int expiresInSec;
 }
 
 class ForgotOtpCompleteResult {
-  const ForgotOtpCompleteResult({required this.ok, this.reason});
+  const ForgotOtpCompleteResult({required this.ok, this.reason, this.message});
   final bool ok;
   final String? reason;
+  final String? message;
 }
 
 /// Phone OTP forgot-pass. Complete always hits the server — never changes
@@ -60,16 +60,26 @@ class ForgotPasswordOtpService {
   static bool _otpApiMissing(int code) =>
       code == 404 || code == 405 || code == 410 || code == 501;
 
-  /// Unknown numbers must not fall through to the local SMS adapter.
-  static ForgotOtpRequestResult? _unknownPhone(dynamic data) {
-    if (data is Map && data['error'] == 'unknown_phone') {
-      return const ForgotOtpRequestResult(
-        sent: false,
-        via: 'server',
-        reason: 'unknown_phone',
-      );
+  static String? _messageBn(dynamic data) {
+    if (data is Map && data['messageBn'] is String) {
+      final text = (data['messageBn'] as String).trim();
+      if (text.isNotEmpty) return text;
     }
     return null;
+  }
+
+  static String _reasonCode(dynamic data, int code) {
+    if (data is Map && data['error'] == 'otp_expired') return 'otp_expired';
+    if (data is Map && data['error'] == 'invalid_otp') return 'invalid_otp';
+    return 'server_${code == 0 ? 'error' : code}';
+  }
+
+  static int _expiresIn(dynamic data) {
+    if (data is Map && data['expiresInSec'] is num) {
+      final n = (data['expiresInSec'] as num).toInt();
+      if (n > 0 && n <= 3600) return n;
+    }
+    return 300;
   }
 
   int _now() => nowMs?.call() ?? DateTime.now().millisecondsSinceEpoch;
@@ -102,17 +112,24 @@ class ForgotPasswordOtpService {
     await store.write(kOtpCountHour, '${count + 1}');
   }
 
-  static String generateOtp([Random? random]) {
-    final n = (random ?? Random.secure()).nextInt(1000000);
-    return n.toString().padLeft(6, '0');
-  }
-
-  Future<ForgotOtpRequestResult> requestOtp(String phone) async {
-    if (!isForgotBdMobile(phone)) {
+  Future<ForgotOtpRequestResult> requestOtp({
+    required String channel,
+    String email = '',
+    String phone = '',
+  }) async {
+    final ch = channel.trim().toLowerCase();
+    if (ch == 'phone' && !isForgotBdMobile(phone)) {
       return const ForgotOtpRequestResult(
         sent: false,
         via: 'none',
         reason: 'invalid_phone',
+      );
+    }
+    if (ch != 'phone' && ch != 'email') {
+      return const ForgotOtpRequestResult(
+        sent: false,
+        via: 'none',
+        reason: 'invalid_channel',
       );
     }
     final limited = await _rateLimitError();
@@ -124,73 +141,54 @@ class ForgotPasswordOtpService {
       );
     }
 
+    final body = <String, dynamic>{
+      'channel': ch,
+      'email': email.trim(),
+    };
+    if (ch == 'phone') {
+      body['phone'] = SmsPhone.format(phone, SmsPhoneFormat.local01);
+    }
+
     try {
       final res = await dio.post<dynamic>(
         '/api/mobile/v1/auth/password/otp/request',
-        data: {'phone': SmsPhone.format(phone, SmsPhoneFormat.local01)},
+        data: body,
       );
-      final unknown = _unknownPhone(res.data);
-      if (unknown != null) return unknown;
       final code = res.statusCode ?? 0;
       if (code >= 200 && code < 300) {
         await _markSent();
-        return const ForgotOtpRequestResult(sent: true, via: 'server');
-      }
-      if (!_otpApiMissing(code)) {
         return ForgotOtpRequestResult(
-          sent: false,
-          via: 'none',
-          reason: 'server_$code',
-        );
-      }
-    } on DioException catch (e) {
-      final unknown = _unknownPhone(e.response?.data);
-      if (unknown != null) return unknown;
-      final code = e.response?.statusCode ?? 0;
-      if (!_otpApiMissing(code) && code != 0) {
-        return ForgotOtpRequestResult(
-          sent: false,
-          via: 'none',
-          reason: 'server_$code',
-        );
-      }
-    } catch (_) {}
-
-    final sms = adapter;
-    if (sms != null && sms.config.configured) {
-      final otp = generateOtp();
-      final body =
-          'MAMLAQ-Lawyer Dairy\nYour 6 digit OTP is : $otp\nhttps://mamlaq.com';
-      final out = await sms.send(
-        to: phone,
-        message: body,
-      );
-      if (out.ok) {
-        await _markSent();
-        return const ForgotOtpRequestResult(
           sent: true,
-          via: 'adapter',
-          passwordResetBlocked: true,
+          via: 'server',
+          expiresInSec: _expiresIn(res.data),
         );
       }
       return ForgotOtpRequestResult(
         sent: false,
-        via: 'adapter',
-        passwordResetBlocked: true,
-        reason: out.reason,
+        via: 'none',
+        reason: _reasonCode(res.data, code),
+        message: _messageBn(res.data),
+      );
+    } on DioException catch (e) {
+      final code = e.response?.statusCode ?? 0;
+      return ForgotOtpRequestResult(
+        sent: false,
+        via: 'none',
+        reason: code == 0 ? 'network' : _reasonCode(e.response?.data, code),
+        message: _messageBn(e.response?.data),
+      );
+    } catch (_) {
+      return const ForgotOtpRequestResult(
+        sent: false,
+        via: 'none',
+        reason: 'network',
       );
     }
-
-    return const ForgotOtpRequestResult(
-      sent: false,
-      via: 'none',
-      passwordResetBlocked: true,
-      reason: 'otp_api_missing',
-    );
   }
 
   Future<ForgotOtpCompleteResult> complete({
-    required String phone,
+    String? phone,
+    String? email,
     required String otp,
     required String newPassword,
   }) async {
@@ -201,14 +199,20 @@ class ForgotPasswordOtpService {
       return const ForgotOtpCompleteResult(ok: false, reason: 'weak_password');
     }
     try {
+      final payload = <String, dynamic>{
+        'otp': otp.trim(),
+        'newPassword': newPassword,
+        'confirmPassword': newPassword,
+      };
+      if (phone != null && phone.trim().isNotEmpty) {
+        payload['phone'] = SmsPhone.format(phone, SmsPhoneFormat.local01);
+      }
+      if (email != null && email.trim().isNotEmpty) {
+        payload['email'] = email.trim();
+      }
       final res = await dio.post<dynamic>(
         '/api/mobile/v1/auth/password/otp/complete',
-        data: {
-          'phone': SmsPhone.format(phone, SmsPhoneFormat.local01),
-          'otp': otp.trim(),
-          'newPassword': newPassword,
-          'confirmPassword': newPassword,
-        },
+        data: payload,
       );
       final code = res.statusCode ?? 0;
       if (code >= 200 && code < 300) {
@@ -220,7 +224,11 @@ class ForgotPasswordOtpService {
           reason: 'blocked_webapp',
         );
       }
-      return ForgotOtpCompleteResult(ok: false, reason: 'server_$code');
+      return ForgotOtpCompleteResult(
+        ok: false,
+        reason: _reasonCode(res.data, code),
+        message: _messageBn(res.data),
+      );
     } on DioException catch (e) {
       final code = e.response?.statusCode ?? 0;
       if (_otpApiMissing(code) || code == 0) {
@@ -231,7 +239,8 @@ class ForgotPasswordOtpService {
       }
       return ForgotOtpCompleteResult(
         ok: false,
-        reason: 'server_${code == 0 ? 'error' : code}',
+        reason: _reasonCode(e.response?.data, code),
+        message: _messageBn(e.response?.data),
       );
     } catch (_) {
       return const ForgotOtpCompleteResult(ok: false, reason: 'network');
@@ -243,9 +252,6 @@ ForgotPasswordOtpService forgotOtpService({
   required StringStore store,
   required Map<String, String> remoteConfig,
 }) {
-  final cfg = SmsVendorConfig.resolve(remoteConfig: remoteConfig);
-  return ForgotPasswordOtpService(
-    store: store,
-    adapter: cfg.configured ? SmsVendorAdapter(config: cfg) : null,
-  );
+  // OTP is issued only by the server. [remoteConfig] is unused on purpose.
+  return ForgotPasswordOtpService(store: store);
 }

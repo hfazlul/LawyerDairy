@@ -3,6 +3,7 @@ import { redirect } from 'next/navigation'
 import { prisma } from './prisma'
 import { verifyJwt } from './jwt'
 import type { Plan, User, Workspace, WorkspaceMember } from '@prisma/client'
+import { accountBilling } from './full-access'
 
 export type UserWithWorkspaces = User & {
   memberships: (WorkspaceMember & { workspace: Workspace })[]
@@ -36,5 +37,11 @@ export function personalWorkspace(user: UserWithWorkspaces): Workspace | undefin
 }
 
 export function planOfUser(user: UserWithWorkspaces): Plan {
-  return personalWorkspace(user)?.plan ?? 'FREE'
+  const ws = personalWorkspace(user)
+  return accountBilling(user, ws?.plan ?? 'FREE', ws?.planExpiresAt).plan
+}
+
+export function planExpiresOfUser(user: UserWithWorkspaces): Date | null {
+  const ws = personalWorkspace(user)
+  return accountBilling(user, ws?.plan ?? 'FREE', ws?.planExpiresAt).endsAt
 }

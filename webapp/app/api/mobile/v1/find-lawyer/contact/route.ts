@@ -4,6 +4,7 @@ import { requireAuth, planOf, planExpires } from '@/lib/auth-middleware'
 import { z } from 'zod'
 import { newId } from '@/lib/crypto-tokens'
 import { isPremiumActive } from '@/lib/entitlement-gates'
+import { accountBilling } from '@/lib/full-access'
 import { freeCapsForMonth, freeMonthNumber } from '@/lib/free-caps'
 import { dhakaYmd } from '@/lib/habit'
 
@@ -44,7 +45,8 @@ export async function POST(req: NextRequest) {
   const lawyerWs = await prisma.workspace.findFirst({
     where: { ownerUserId: lawyer.userId, kind: 'PERSONAL', deletedAt: null },
   })
-  const lawyerPaid = lawyerWs ? isPremiumActive(lawyerWs.plan, lawyerWs.planExpiresAt) : false
+  const lawyerBill = accountBilling(lawyer.user, lawyerWs?.plan ?? 'FREE', lawyerWs?.planExpiresAt)
+  const lawyerPaid = isPremiumActive(lawyerBill.plan, lawyerBill.endsAt)
   if (!lawyerPaid) {
     const monthN = freeMonthNumber(lawyer.user.createdAt)
     const cap = freeCapsForMonth(monthN).findLawyerReceive

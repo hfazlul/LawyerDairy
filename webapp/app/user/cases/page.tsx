@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { hasWebDiaryView } from '@/lib/entitlement-gates'
-import { requireWebUser, personalWorkspace, planOfUser } from '@/lib/web-session'
+import { requireWebUser, personalWorkspace, planOfUser, planExpiresOfUser } from '@/lib/web-session'
 import { withWorkspaceTx } from '@/lib/rls'
 import { UserShell } from '@/ui/app-nav'
 import { PrintButton } from '@/ui/print-button'
@@ -14,7 +14,7 @@ export default async function UserCasesPage() {
   const user = await requireWebUser('/user/cases')
   const ws = personalWorkspace(user)
   const plan = planOfUser(user)
-  const open = hasWebDiaryView(plan, ws?.planExpiresAt, user.createdAt, user.webTrialEndsAt)
+  const open = hasWebDiaryView(plan, planExpiresOfUser(user), user.createdAt, user.webTrialEndsAt)
   const cases = open && ws
     ? await withWorkspaceTx(ws.id, (tx) =>
         tx.case.findMany({

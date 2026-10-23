@@ -33,9 +33,8 @@ test('display labels and cycle suffixes resolve to the same catalog ids', () => 
   assert.equal(resolveCheckoutPackage('PRO-YEAR')?.code, 'PRO')
   assert.equal(resolveCheckoutPackage('PRO-YEAR')?.amountBdt, 1069)
   assert.equal(resolveCheckoutPackage('প্রো', 'YEAR')?.amountBdt, 1069)
-  assert.equal(resolveCheckoutPackage('Pro Advance', 'MONTH')?.code, 'PRO_ADVANCE')
-  assert.equal(resolveCheckoutPackage('PRO_ADVANCE_YEAR')?.code, 'PRO_ADVANCE')
-  assert.equal(resolveCheckoutPackage('PRO_ADVANCE_YEAR')?.amountBdt, 1600)
+  assert.equal(resolveCheckoutPackage('Pro Advance', 'MONTH'), null)
+  assert.equal(resolveCheckoutPackage('PRO_ADVANCE_YEAR'), null)
 })
 
 test('every real paid catalog plan resolves and free or legacy packs do not', () => {

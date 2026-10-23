@@ -22,11 +22,11 @@ test('monthly SMS credits 0 / 150 / 280 / 400', () => {
   assert.equal(monthlySmsCredits('CHAMBER'), 280)
 })
 
-test('v2 sellable packages are the four paid SKUs', () => {
+test('v2 sellable packages are Starter and Pro', () => {
   assert.equal(isV1SellablePackage('STARTER'), true)
   assert.equal(isV1SellablePackage('PRO'), true)
-  assert.equal(isV1SellablePackage('PRO_ADVANCE'), true)
-  assert.equal(isV1SellablePackage('ADVANCE'), true)
+  assert.equal(isV1SellablePackage('PRO_ADVANCE'), false)
+  assert.equal(isV1SellablePackage('ADVANCE'), false)
   assert.equal(isV1SellablePackage('CHAMBER'), false)
   assert.equal(isV1SellablePackage('SMS_500'), false)
   assert.equal(isV1SellablePackage('FREE'), false)

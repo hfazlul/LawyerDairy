@@ -50,8 +50,9 @@ describe('auth field rules', () => {
     assert.equal(signupPhoneIssue('017-1234-5678'), 'ফোন নম্বর ১১ সংখ্যার হতে হবে এবং ০১ দিয়ে শুরু হবে।')
   })
 
-  it('signup email requires @ and .com only when typed', () => {
-    assert.equal(signupEmailIssue(''), null)
+  it('signup email is required and must contain @ and .com', () => {
+    assert.equal(signupEmailIssue(''), 'ইমেইল দিন।')
+    assert.equal(signupEmailIssue('   '), 'ইমেইল দিন।')
     assert.equal(signupEmailIssue('a@b.com'), null)
     assert.equal(signupEmailIssue('a@b.COM'), null)
     assert.equal(signupEmailIssue('user@mail.org'), 'ইমেইলে @ এবং .com থাকতে হবে।')

@@ -3,7 +3,7 @@ import { extraTeamSeats } from '@/lib/permissions'
 import { hasWebDiaryView } from '@/lib/entitlement-gates'
 import { prisma } from '@/lib/prisma'
 import { modeFromKeys } from '@/lib/team/chamber-access'
-import { requireWebUser, personalWorkspace, planOfUser } from '@/lib/web-session'
+import { requireWebUser, personalWorkspace, planOfUser, planExpiresOfUser } from '@/lib/web-session'
 import { UserShell } from '@/ui/app-nav'
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
@@ -15,7 +15,7 @@ export default async function UserTeamPage() {
   const user = await requireWebUser('/user/team')
   const ws = personalWorkspace(user)
   const plan = planOfUser(user)
-  const open = hasWebDiaryView(plan, ws?.planExpiresAt, user.createdAt, user.webTrialEndsAt)
+  const open = hasWebDiaryView(plan, planExpiresOfUser(user), user.createdAt, user.webTrialEndsAt)
   const members = open && ws
     ? await prisma.workspaceMember.findMany({
         where: { workspaceId: ws.id, status: 'ACTIVE', deletedAt: null },

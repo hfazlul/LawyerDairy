@@ -4,6 +4,7 @@ import { prisma } from '@/lib/prisma'
 import { requireAuth } from '@/lib/auth-middleware'
 import { extraTeamSeatsAllowed } from '@/lib/permissions'
 import { isPremiumActive, webTrialActive } from '@/lib/entitlement-gates'
+import { accountBilling } from '@/lib/full-access'
 import { hashToken } from '@/lib/crypto-tokens'
 
 const schema = z.object({ token: z.string().min(8) })
@@ -39,8 +40,9 @@ export async function POST(req: NextRequest) {
   const owner = await prisma.user.findFirst({
     where: { id: invite.workspace.ownerUserId, deletedAt: null },
   })
-  const extrasAllowed = extraTeamSeatsAllowed(invite.workspace.plan, {
-    paid: isPremiumActive(invite.workspace.plan, invite.workspace.planExpiresAt),
+  const billing = accountBilling(owner, invite.workspace.plan, invite.workspace.planExpiresAt)
+  const extrasAllowed = extraTeamSeatsAllowed(billing.plan, {
+    paid: isPremiumActive(billing.plan, billing.endsAt),
     trialActive: owner ? webTrialActive(owner.createdAt, owner.webTrialEndsAt) : false,
   })
   if (extras >= extrasAllowed) {

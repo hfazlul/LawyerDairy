@@ -14,7 +14,7 @@ export default async function UserLoginPage({ searchParams }: Props) {
   return (
     <AuthShell
       title="আবার স্বাগতম"
-      description="নাম বা মোবাইল নম্বর ও পাসওয়ার্ড দিয়ে আপনার ডায়েরিতে প্রবেশ করুন।"
+      description="নাম ও পাসওয়ার্ড দিয়ে আপনার ডায়েরিতে প্রবেশ করুন।"
       footer={(
         <p className="font-bengali text-sm text-muted-foreground">
           নতুন ব্যবহারকারী?{' '}

@@ -77,8 +77,10 @@ export function FeatureMatrix() {
             <th className="px-3 py-3 text-left font-semibold">ফ্রি</th>
             <th className="px-3 py-3 text-left font-semibold">Starter</th>
             <th className="px-3 py-3 text-left font-semibold">Pro</th>
+            {/* Paused paid tiers. Uncomment with the catalog when they are sold again.
             <th className="px-3 py-3 text-left font-semibold">Pro Advance</th>
             <th className="px-3 py-3 text-left font-semibold">Advance</th>
+            */}
           </tr>
         </thead>
         <tbody>
@@ -88,8 +90,10 @@ export function FeatureMatrix() {
               <td className="border-t border-border px-3 py-2.5">{r.free}</td>
               <td className="border-t border-border px-3 py-2.5">{r.starter}</td>
               <td className="border-t border-border px-3 py-2.5">{r.pro}</td>
+              {/* Paused paid tiers.
               <td className="border-t border-border px-3 py-2.5">{r.proAdvance}</td>
               <td className="border-t border-border px-3 py-2.5">{r.advance}</td>
+              */}
             </tr>
           ))}
         </tbody>

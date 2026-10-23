@@ -1,7 +1,13 @@
 import type { Plan } from '@prisma/client'
 
 /** Canonical 13 Sep 2026 catalog. Seed, APIs, and tests must use this. */
-export const PAID_SKU_CODES = ['STARTER', 'PRO', 'PRO_ADVANCE', 'ADVANCE'] as const
+export const PAID_SKU_CODES = [
+  'STARTER',
+  'PRO',
+  // Paused paid tiers. The definitions stay below, commented out. Do not delete them.
+  // 'PRO_ADVANCE',
+  // 'ADVANCE',
+] as const
 export type PaidSku = (typeof PAID_SKU_CODES)[number]
 
 export type PlanDef = {
@@ -77,6 +83,7 @@ export const PACKAGE_DEFS: PlanDef[] = [
     active: true,
     sortOrder: 2,
   },
+  /* Paused paid tiers. Uncomment to sell them again. Do not delete.
   {
     code: 'PRO_ADVANCE',
     nameBn: 'প্রো অ্যাডভান্স',
@@ -141,6 +148,7 @@ export const PACKAGE_DEFS: PlanDef[] = [
     active: false,
     sortOrder: 91,
   },
+  */
 ]
 
 export const SELLABLE_CODES = new Set<string>(PAID_SKU_CODES)

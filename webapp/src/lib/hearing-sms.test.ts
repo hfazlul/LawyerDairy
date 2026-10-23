@@ -1,7 +1,8 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
 import { otpRequestMessage } from './auth/password-otp'
-import { HEARING_SMS_DEMO, hearingReminderSms } from './hearing-sms'
+import { smsSegments } from './credits'
+import { codePointLength, formatHearingDate, hearingSms } from './hearing-sms'
 
 test('forgot-password SMS uses the provider-whitelisted format', () => {
   const text = otpRequestMessage('482913')
@@ -12,20 +13,46 @@ test('forgot-password SMS uses the provider-whitelisted format', () => {
   assert.equal(text.includes('123456'), false)
 })
 
-test('hearing reminder keeps every field and the mamlaq.com footer', () => {
-  const text = hearingReminderSms({
-    ...HEARING_SMS_DEMO,
-    lawyerName: 'আব্দুল করিম',
-    chamberName: 'করিম চেম্বার',
-    appearanceTime: 'সকাল ১০টা',
+test('hearing SMS uses জনাব or জনাবা and stays within 70 code points', () => {
+  const male = hearingSms({
+    client: 'করিম',
+    date: formatHearingDate(25, 10),
+    court: 'ঢাকা',
+    lawyer: 'রহিম',
   })
-  assert.match(text, /মক্কেল: করিম উদ্দিন \(নমুনা\)/)
-  assert.match(text, /মামলা: দেওয়ানি ১২৩\/২০২৬ \(নমুনা\)/)
-  assert.match(text, /আদালত: ঢাকা জজ আদালত \(নমুনা\)/)
-  assert.match(text, /শুনানি: ২২\/১০\/২০২৬ \(নমুনা\)/)
-  assert.match(text, /আইনজীবী: আব্দুল করিম/)
-  assert.match(text, /চেম্বার: করিম চেম্বার/)
-  assert.match(text, /সময়: সকাল ১০টা/)
-  assert.ok(text.endsWith('MAMLAQ\nhttps://mamlaq.com'))
-  assert.ok(text.length > 160)
+  const female = hearingSms({
+    gender: 'female',
+    client: 'করিম',
+    date: '২৫ অক্টো',
+    court: 'ঢাকা',
+    lawyer: 'রহিম',
+  })
+  assert.equal(formatHearingDate(25, 10), '২৫ অক্টো')
+  assert.match(male, /^জনাব করিম, কেসের শুনানি ২৫ অক্টো, ঢাকা আদালত। উকিল রহিম।$/)
+  assert.match(female, /^জনাবা /)
+  assert.ok(codePointLength(male) <= 70)
+  assert.ok(codePointLength(female) <= 70)
+  assert.equal(smsSegments(male), 1)
+  assert.doesNotMatch(male, /MAMLAQ/)
+  assert.doesNotMatch(male, /দেওয়ানি/)
+})
+
+test('long hearing names shrink only on word boundaries', () => {
+  const client = 'মোঃ আব্দুল করিম উদ্দিন চৌধুরী'
+  const lawyer = 'মোহাম্মদ ফজলুল হক শিকদার'
+  const text = hearingSms({
+    client,
+    date: '২৫ অক্টো',
+    court: 'ঢাকা',
+    lawyer,
+  })
+  assert.ok(codePointLength(text) <= 70)
+  assert.match(text, /জনাব /)
+  assert.match(text, /আদালত। উকিল/)
+  const allowed = new Set(
+    `${client} ${lawyer} জনাব কেসের শুনানি ২৫ অক্টো ঢাকা আদালত উকিল`.split(/\s+/),
+  )
+  for (const token of text.replace(/[।,]/g, ' ').split(/\s+/).filter(Boolean)) {
+    assert.equal(allowed.has(token), true, token)
+  }
 })

@@ -6,12 +6,14 @@ import { prisma } from '@/lib/prisma'
 import { rateLimit, clientIp } from '@/lib/rate-limit'
 import {
   isValidUsername,
+  kSignupEmailRequired,
   normalizeBdPhone,
   passwordIssues,
   signupEmailIssue,
   signupNameIssue,
   signupPasswordIssue,
   signupPhoneIssue,
+  signupReferralIssue,
   suggestUsername,
   takenAccountMessage,
 } from '@/lib/identity'
@@ -236,7 +238,7 @@ export async function POST_signup(req: NextRequest) {
       name: z.string().trim().min(1).max(80),
       username: z.string().trim().min(4).max(24).optional(),
       phone: z.string().min(1).max(20),
-      email: z.string().trim().max(200).optional().nullable(),
+      email: z.string({ required_error: kSignupEmailRequired }).trim().min(1, kSignupEmailRequired).max(200),
       password: z.string().max(128),
       confirmPassword: z.string().max(128),
       acceptedTerms: z.boolean(),
@@ -246,6 +248,13 @@ export async function POST_signup(req: NextRequest) {
     })
     .safeParse(await req.json())
   if (!body.success) {
+    const emailIssue = body.error.issues.find((issue) => issue.path[0] === 'email')
+    if (emailIssue) {
+      return NextResponse.json(
+        { error: 'validation', messageBn: kSignupEmailRequired, fieldErrors: { email: kSignupEmailRequired } },
+        { status: 422 },
+      )
+    }
     return NextResponse.json(
       { error: 'validation', messageBn: 'নাম, ১১ সংখ্যার মোবাইল ও কমপক্ষে ৬ অক্ষরের পাসওয়ার্ড দিন' },
       { status: 422 },
@@ -264,9 +273,13 @@ export async function POST_signup(req: NextRequest) {
   if (phoneIssue) {
     return NextResponse.json({ error: 'validation', messageBn: phoneIssue, fieldErrors: { phone: phoneIssue } }, { status: 422 })
   }
-  const mailIssue = signupEmailIssue(parsed.email || '')
+  const mailIssue = signupEmailIssue(parsed.email)
   if (mailIssue) {
     return NextResponse.json({ error: 'validation', messageBn: mailIssue, fieldErrors: { email: mailIssue } }, { status: 422 })
+  }
+  const referralErr = signupReferralIssue(parsed.referralCode || '')
+  if (referralErr) {
+    return NextResponse.json({ error: 'validation', messageBn: referralErr, fieldErrors: { referralCode: referralErr } }, { status: 422 })
   }
   const pwErr = signupPasswordIssue(parsed.password)
   if (pwErr) {
@@ -286,7 +299,7 @@ export async function POST_signup(req: NextRequest) {
     return NextResponse.json({ error: 'validation', messageBn: 'ইউজারনেম ৪–২৪ অক্ষর, a-z দিয়ে শুরু', fieldErrors: { username: 'ইউজারনেম ৪–২৪ অক্ষর, a-z দিয়ে শুরু' } }, { status: 422 })
   }
 
-  const email = parsed.email?.trim().toLowerCase() || null
+  const email = parsed.email.trim().toLowerCase()
   const name = collapseName(parsed.name)
 
   if (signingSecretMissing()) {

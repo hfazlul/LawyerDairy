@@ -74,17 +74,19 @@ export async function POST(req: NextRequest) {
 
   try {
     const { isPremiumActive, webTrialActive } = await import('@/lib/entitlement-gates')
+    const { accountBilling } = await import('@/lib/full-access')
     const owner = await prisma.user.findFirst({
       where: { id: workspace.ownerUserId, deletedAt: null },
     })
-    const paid = isPremiumActive(workspace.plan, workspace.planExpiresAt)
+    const billing = accountBilling(owner, workspace.plan, workspace.planExpiresAt)
+    const paid = isPremiumActive(billing.plan, billing.endsAt)
     const trialActive = owner
       ? webTrialActive(owner.createdAt, owner.webTrialEndsAt)
       : false
     await prisma.$transaction(async (tx) => {
       await acceptJoinAsJunior(tx, {
         workspaceId: workspace.id,
-        workspacePlan: workspace.plan,
+        workspacePlan: billing.plan,
         requesterUserId: requester.id,
         actorUserId: user.id,
         paid,

@@ -84,9 +84,11 @@ export function publicSiteUrl(): string {
 export function entitlementPayload(
   plan: Plan,
   endsAt: Date | null | undefined,
-  opts?: { userCreatedAt?: Date; trialEndsAt?: Date | null },
+  opts?: { userCreatedAt?: Date; trialEndsAt?: Date | null; fullAccess?: boolean },
 ) {
-  const active = isPremiumActive(plan, endsAt)
+  const fullAccess = opts?.fullAccess === true
+  const paid = isPremiumActive(plan, endsAt)
+  const active = paid || fullAccess
   const created = opts?.userCreatedAt ?? new Date()
   const trial = webTrialActive(created, opts?.trialEndsAt)
   const caps = freeCapsForMonth(freeMonthNumber(created))
@@ -104,8 +106,10 @@ export function entitlementPayload(
       listing: active,
       caseManageWeb: false,
       causeList: true,
-      careerFull: active && planCareerFull(plan),
-      autoHearingSms: active && planHasAutoHearingSms(plan),
+      careerFull: active && (fullAccess || planCareerFull(plan)),
+      autoHearingSms: fullAccess || (paid && planHasAutoHearingSms(plan)),
+      fullAccess,
+      hearingSmsUi: fullAccess,
       showPlayBillingCta: false,
       showWebBuyCta: true,
     },

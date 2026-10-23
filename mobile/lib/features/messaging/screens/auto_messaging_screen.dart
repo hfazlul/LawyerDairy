@@ -5,6 +5,7 @@ import '../../../core/auth/auth_provider.dart';
 import '../../../core/auth/guest_gate.dart';
 import '../../../core/config/api_config.dart';
 import '../../../core/messaging/auto_messaging_defaults.dart';
+import '../../../core/monetization/entitlement.dart';
 import '../../../core/storage/string_store.dart';
 import '../../../core/theme/app_colors.dart';
 import '../../../core/theme/app_typography.dart';
@@ -29,12 +30,12 @@ class _AutoMessagingScreenState extends ConsumerState<AutoMessagingScreen> {
   String _remaining = '…';
   String? _status;
   bool _busy = false;
+  bool _booted = false;
 
   @override
   void initState() {
     super.initState();
     _kv = widget.kv ?? SecureStringStore();
-    _load();
   }
 
   @override
@@ -81,14 +82,11 @@ class _AutoMessagingScreenState extends ConsumerState<AutoMessagingScreen> {
     setState(() => _remaining = line);
   }
 
-  String get _preview => AutoMessagingDefaults.hearingReminderSms(
-        clientName: AutoMessagingDefaults.demoClientName,
-        caseName: AutoMessagingDefaults.demoCaseName,
-        courtName: AutoMessagingDefaults.demoCourtName,
-        hearingDate: AutoMessagingDefaults.demoHearingDate,
-        lawyerName: _lawyer.text,
-        chamberName: _chamber.text,
-        appearanceTime: _time.text,
+  String get _preview => AutoMessagingDefaults.hearingSms(
+        client: 'করিম',
+        date: '২৫ অক্টো',
+        court: 'ঢাকা',
+        lawyer: _lawyer.text,
       );
 
   Future<void> _send() async {
@@ -157,6 +155,32 @@ class _AutoMessagingScreenState extends ConsumerState<AutoMessagingScreen> {
   @override
   Widget build(BuildContext context) {
     final l10n = AppLocalizations.of(context);
+    final fullAccess = ref.watch(entitlementProvider).fullAccess;
+    if (fullAccess && !_booted) {
+      _booted = true;
+      WidgetsBinding.instance.addPostFrameCallback((_) {
+        if (mounted) _load();
+      });
+    }
+    if (!fullAccess) {
+      return Scaffold(
+        backgroundColor: AppColors.parchment,
+        drawer: const DiaryDrawer(),
+        appBar: DiaryHeader(showBack: true, subtitle: l10n.drawerMessaging),
+        body: const Center(
+          child: Padding(
+            padding: EdgeInsets.all(24),
+            child: Text(
+              'এই ফিচারটি খুব শীঘ্রই আসবে ইনশাআল্লাহ',
+              key: Key('bulk-sms-coming-soon'),
+              textAlign: TextAlign.center,
+              style: AppTypography.body,
+            ),
+          ),
+        ),
+      );
+    }
+    // Restore this screen for everyone later by deleting the fullAccess return above.
     return Scaffold(
       backgroundColor: AppColors.parchment,
       drawer: const DiaryDrawer(),
@@ -171,8 +195,10 @@ class _AutoMessagingScreenState extends ConsumerState<AutoMessagingScreen> {
         children: [
           Text(_remaining, key: const Key('bulk-sms-remaining'), style: AppTypography.body),
           const SizedBox(height: 4),
+          // Pro Advance and Advance stay paused with those packages.
+          // ফ্রি ০/মাস · স্টার্টার ০/মাস · প্রো ১৫০/মাস · প্রো অ্যাডভান্স ২৮০/মাস · অ্যাডভান্স ৪০০/মাস
           Text(
-            'ফ্রি ০/মাস · স্টার্টার ০/মাস · প্রো ১৫০/মাস · প্রো অ্যাডভান্স ২৮০/মাস · অ্যাডভান্স ৪০০/মাস',
+            'ফ্রি ০/মাস · স্টার্টার ০/মাস · প্রো ১৫০/মাস',
             style: AppTypography.caption,
           ),
           const SizedBox(height: 16),

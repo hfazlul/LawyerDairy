@@ -10,6 +10,7 @@ import {
   hasCaseManageAccess,
   maxTeamMembers,
 } from './entitlement-gates'
+import { fullAccessExpiry, fullAccessPlan } from './full-access'
 import { touchReferralActivity } from './referral'
 
 export type AuthedMembership = {
@@ -104,11 +105,11 @@ export async function requireAppRole(req: NextRequest, roles: AppRole[]) {
 }
 
 export function planOf(user: AuthUser): Plan {
-  return user.activeMembership?.workspace.plan ?? 'FREE'
+  return fullAccessPlan(user, user.activeMembership?.workspace.plan ?? 'FREE')
 }
 
 export function planExpires(user: AuthUser): Date | null {
-  return user.activeMembership?.workspace.planExpiresAt ?? null
+  return fullAccessExpiry(user, user.activeMembership?.workspace.planExpiresAt ?? null)
 }
 
 export {

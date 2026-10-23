@@ -4,6 +4,7 @@ import { prisma } from '@/lib/prisma'
 import { requireWorkspace } from '@/lib/auth-middleware'
 import { extraTeamSeatsAllowed } from '@/lib/permissions'
 import { isPremiumActive, webTrialActive } from '@/lib/entitlement-gates'
+import { accountBilling } from '@/lib/full-access'
 
 const patchSchema = z.object({
   role: z.enum(['ADMIN', 'LAWYER', 'STAFF', 'VIEWER']).optional(),
@@ -81,10 +82,11 @@ export async function PATCH(
   const owner = await prisma.user.findFirst({
     where: { id: ws.ownerUserId, deletedAt: null },
   })
+  const billing = accountBilling(owner, ws.plan, ws.planExpiresAt)
   return NextResponse.json({
     ok: true,
-    seatsAllowed: extraTeamSeatsAllowed(ws.plan, {
-      paid: isPremiumActive(ws.plan, ws.planExpiresAt),
+    seatsAllowed: extraTeamSeatsAllowed(billing.plan, {
+      paid: isPremiumActive(billing.plan, billing.endsAt),
       trialActive: owner ? webTrialActive(owner.createdAt, owner.webTrialEndsAt) : false,
     }),
   })

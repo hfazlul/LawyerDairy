@@ -9,6 +9,7 @@ import {
   kLoginEmptyMessage,
   kLoginUnknownMessage,
   kLoginWrongPasswordMessage,
+  kSignupEmailRequired,
   kSignupPhoneError,
   normalizeBdPhone,
   signupEmailIssue,
@@ -40,14 +41,14 @@ class NameTakenError extends Error {}
 /**
  * Web dashboard auth — same User/Workspace model as mobile.
  * Login: name (phone or username still accepted) + password.
- * Signup: name, phone, optional email, password. Username is generated server-side.
+ * Signup: name, phone, required email, password. Username is generated server-side.
  * Username is generated server-side. No OTP.
  */
 
 const signupSchema = z.object({
   name: z.string().trim().max(120).optional().default(''),
   username: z.string().trim().min(4).max(24).optional(),
-  email: z.string().trim().max(200).optional().or(z.literal('')),
+  email: z.string({ required_error: kSignupEmailRequired }).trim().min(1, kSignupEmailRequired).max(200),
   phone: z.string().trim().max(32).optional().default(''),
   password: z.string().max(128).optional().default(''),
   confirmPassword: z.string().max(128).optional(),
@@ -212,7 +213,7 @@ export async function POST_signup(req: NextRequest) {
       return authFail(req, wantsHtml, '/user/signup', signupFailureMessage(), 500)
     }
 
-    const email = body.email && body.email.length ? body.email.toLowerCase() : null
+    const email = body.email.trim().toLowerCase()
     const name = collapseName(body.name)
 
     const earlyConflict = await signupConflictMessage(prisma, { name, phone, email })

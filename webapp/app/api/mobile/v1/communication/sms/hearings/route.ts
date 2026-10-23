@@ -9,7 +9,8 @@ import { newId } from '@/lib/crypto-tokens'
 import { isDhakaQuietHours } from '@/lib/dhaka-hours'
 import { addYmd, utcPadAroundDhakaYmd, ymdInDhaka } from '@/lib/fcm/dhaka'
 import { normalizeBdPhone } from '@/lib/identity'
-import { hearingReminderSms } from '@/lib/hearing-sms'
+import { isFullAccessAccount, COMING_SOON_BN } from '@/lib/full-access'
+import { formatHearingDate, hearingSms } from '@/lib/hearing-sms'
 
 const schema = z.object({
   lawyerName: z.string().trim().min(1).max(80),
@@ -17,9 +18,9 @@ const schema = z.object({
   appearanceTime: z.string().trim().min(1).max(40),
 })
 
-function dmy(ymd: string): string {
-  const [y, m, d] = ymd.split('-')
-  return `${d}/${m}/${y}`
+function hearingDateLabel(ymd: string): string {
+  const [, month, day] = ymd.split('-').map(Number)
+  return formatHearingDate(day || 1, month || 1)
 }
 
 export async function POST(req: NextRequest) {
@@ -29,6 +30,9 @@ export async function POST(req: NextRequest) {
   }
   if (!user.activeMembership.permissions.has('communication.send')) {
     return NextResponse.json({ error: 'permission', message: 'Forbidden' }, { status: 403 })
+  }
+  if (!isFullAccessAccount(user)) {
+    return NextResponse.json({ error: 'coming_soon', messageBn: COMING_SOON_BN }, { status: 403 })
   }
 
   let body: z.infer<typeof schema>
@@ -75,12 +79,19 @@ export async function POST(req: NextRequest) {
         nextDate: { gte: pad.gte, lt: pad.lt },
       },
       include: {
-        court: { select: { nameBn: true } },
-        caseType: { select: { nameBn: true } },
+        court: { select: { district: { select: { nameBn: true } } } },
         parties: { where: { deletedAt: null, isPrimary: true }, take: 1 },
       },
       take: 200,
     })
+    const districtIds = cases.map((c) => c.districtId).filter((id): id is string => Boolean(id))
+    const districtRows = districtIds.length
+      ? await prisma.district.findMany({
+          where: { id: { in: districtIds } },
+          select: { id: true, nameBn: true },
+        })
+      : []
+    const districtById = new Map(districtRows.map((row) => [row.id, row.nameBn]))
 
     for (const c of cases) {
       const phoneRaw = c.parties[0]?.phone
@@ -97,14 +108,17 @@ export async function POST(req: NextRequest) {
         continue
       }
 
-      const message = hearingReminderSms({
-        clientName: c.parties[0]?.partyName || 'মক্কেল',
-        caseName: c.caseType?.nameBn || c.caseTypeFree || c.caseNo,
-        courtName: c.court?.nameBn || c.courtNameFree || 'আদালত',
-        hearingDate: dmy(targetYmd),
-        lawyerName: body.lawyerName,
-        chamberName: body.chamberName,
-        appearanceTime: body.appearanceTime,
+      const district =
+        (c.districtId ? districtById.get(c.districtId) : undefined) ||
+        c.court?.district?.nameBn ||
+        ''
+      // Client has no gender column, so an unknown record uses জনাব.
+      const message = hearingSms({
+        gender: null,
+        client: c.parties[0]?.partyName || 'মক্কেল',
+        date: hearingDateLabel(targetYmd),
+        court: district,
+        lawyer: body.lawyerName,
       })
       const segments = smsSegments(message)
 

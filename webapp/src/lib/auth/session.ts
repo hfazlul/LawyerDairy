@@ -4,6 +4,7 @@ import { signJwt } from '@/lib/jwt'
 import { hashToken, newId, randomOpaqueToken } from '@/lib/crypto-tokens'
 import { extraTeamSeats, monthlySmsCredits, resolvePermissions } from '@/lib/permissions'
 import { entitlementPayload } from '@/lib/entitlement-gates'
+import { fullAccessExpiry, fullAccessPlan, isFullAccessAccount } from '@/lib/full-access'
 import type { MemberRole, Plan, Prisma, ScopeMode } from '@prisma/client'
 
 const ACCESS_TTL = '15m'
@@ -196,10 +197,13 @@ export async function buildLoginEnvelope(userId: string, tx?: Prisma.Transaction
   })
 
   const personal = user.memberships.find((m) => m.workspace.kind === 'PERSONAL')
-  const plan = (personal?.workspace.plan ?? 'FREE') as Plan
-  const entitlement = entitlementPayload(plan, personal?.workspace.planExpiresAt ?? null, {
+  const storedPlan = (personal?.workspace.plan ?? 'FREE') as Plan
+  const fullAccess = isFullAccessAccount(user)
+  const plan = fullAccessPlan(user, storedPlan)
+  const entitlement = entitlementPayload(plan, fullAccessExpiry(user, personal?.workspace.planExpiresAt ?? null), {
     userCreatedAt: user.createdAt,
     trialEndsAt: user.webTrialEndsAt,
+    fullAccess,
   })
 
   const configRow = await db.appConfig.findUnique({ where: { id: 'current' } })

@@ -7,7 +7,8 @@ import { hashPasswordOtp, OTP_MAX_ATTEMPTS } from '@/lib/auth/password-otp'
 import { OTP_EXPIRED_MESSAGE_BN } from '@/lib/auth/issue-password-otp'
 
 const schema = z.object({
-  phone: z.string().min(1).max(20),
+  phone: z.string().max(32).optional(),
+  email: z.string().trim().max(200).optional(),
   otp: z.string().regex(/^\d{6}$/),
   newPassword: z.string().min(6).max(128),
   confirmPassword: z.string().min(6).max(128),
@@ -24,24 +25,37 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'validation', messageBn: 'পাসওয়ার্ড মিলেনি', fieldErrors: { confirmPassword: 'পাসওয়ার্ড মিলেনি' } }, { status: 422 })
   }
 
-  const phoneIssue = phoneFieldIssue(body.phone)
-  if (phoneIssue) {
-    return NextResponse.json({ error: 'validation', messageBn: phoneIssue }, { status: 422 })
+  const email = (body.email || '').trim().toLowerCase()
+  const phoneRaw = (body.phone || '').trim()
+  if (!email && !phoneRaw) {
+    return NextResponse.json({ error: 'invalid_otp', messageBn: 'কোড ভুল বা মেয়াদ শেষ' }, { status: 400 })
   }
-  const phone = normalizeBdPhone(body.phone)
-  if (!phone) {
-    return NextResponse.json({ error: 'validation', messageBn: '১১ সংখ্যার মোবাইল নম্বর দিন, যেমন 01XXXXXXXXX' }, { status: 422 })
+  const phone = phoneRaw ? normalizeBdPhone(phoneRaw) : null
+  if (phoneRaw && !phone && !email) {
+    const phoneIssue = phoneFieldIssue(phoneRaw)
+    return NextResponse.json({ error: 'validation', messageBn: phoneIssue || '১১ সংখ্যার মোবাইল নম্বর দিন, যেমন 01XXXXXXXXX' }, { status: 422 })
+  }
+
+  const user = email && phone
+    ? await prisma.user.findFirst({ where: { email, phone, deletedAt: null } })
+    : email
+      ? await prisma.user.findFirst({ where: { email, deletedAt: null } })
+      : phone
+        ? await prisma.user.findFirst({ where: { phone, deletedAt: null } })
+        : null
+  if (!user) {
+    return NextResponse.json({ error: 'invalid_otp', messageBn: 'কোড ভুল বা মেয়াদ শেষ' }, { status: 400 })
   }
 
   const now = new Date()
   const challenge = await prisma.passwordOtpChallenge.findFirst({
-    where: { phone, usedAt: null, expiresAt: { gt: now } },
+    where: { phone: user.phone, usedAt: null, expiresAt: { gt: now } },
     orderBy: { createdAt: 'desc' },
     include: { user: true },
   })
   if (!challenge) {
     const expired = await prisma.passwordOtpChallenge.findFirst({
-      where: { phone, usedAt: null, expiresAt: { lte: now } },
+      where: { phone: user.phone, usedAt: null, expiresAt: { lte: now } },
       orderBy: { createdAt: 'desc' },
     })
     if (expired) {
@@ -56,7 +70,7 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'invalid_otp', messageBn: 'কোড ভুল বা মেয়াদ শেষ' }, { status: 400 })
   }
 
-  const expected = hashPasswordOtp(phone, body.otp)
+  const expected = hashPasswordOtp(user.phone, body.otp)
   if (expected !== challenge.otpHash) {
     await prisma.passwordOtpChallenge.update({
       where: { id: challenge.id },

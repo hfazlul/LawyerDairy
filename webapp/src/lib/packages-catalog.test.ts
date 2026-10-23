@@ -16,9 +16,8 @@ test('v2 catalog is FREE + 4 paid SKUs at new prices', () => {
   assert.equal(byCode.STARTER.yearlyBdt, 530)
   assert.equal(byCode.PRO.priceBdt, 99)
   assert.equal(byCode.PRO.yearlyBdt, 1069)
-  assert.equal(byCode.PRO_ADVANCE.priceBdt, 149)
-  assert.equal(byCode.ADVANCE.priceBdt, 199)
-  assert.equal(byCode.ADVANCE.yearlyBdt, 2150)
+  assert.equal(byCode.PRO_ADVANCE, undefined)
+  assert.equal(byCode.ADVANCE, undefined)
   assert.equal(rows.some((r) => r.code === 'CHAMBER'), false)
   assert.equal(rows.some((r) => r.code === 'SMS_500'), false)
   assert.equal(JSON.stringify(rows).includes('checkoutUrl'), false)
@@ -26,7 +25,9 @@ test('v2 catalog is FREE + 4 paid SKUs at new prices', () => {
 
 test('legacy CHAMBER is not sellable; STARTER is', () => {
   assert.equal(isSellablePackage('STARTER'), true)
-  assert.equal(isSellablePackage('ADVANCE'), true)
+  assert.equal(isSellablePackage('PRO'), true)
+  assert.equal(isSellablePackage('ADVANCE'), false)
+  assert.equal(isSellablePackage('PRO_ADVANCE'), false)
   assert.equal(isSellablePackage('CHAMBER'), false)
   assert.equal(isSellablePackage('SMS_500'), false)
   assert.equal(isSellablePackage('FREE'), false)

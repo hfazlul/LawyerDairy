@@ -61,6 +61,41 @@ class AutoMessagingDefaults {
   static const demoCourtName = 'ঢাকা জজ আদালত (নমুনা)';
   static const demoHearingDate = '২২/১০/২০২৬ (নমুনা)';
 
+  static String formatHearingDate(DateTime date) {
+    return _formatHearingDay(date.day, date.month);
+  }
+
+  static String hearingTitle(String? gender) {
+    final value = (gender ?? '').trim().toLowerCase();
+    if (value == 'female' ||
+        value == 'f' ||
+        value == 'woman' ||
+        value == 'জনাবা' ||
+        value == 'মহিলা' ||
+        value == 'নারী') {
+      return 'জনাবা';
+    }
+    return 'জনাব';
+  }
+
+  /// One hearing SMS, at most 70 Unicode code points.
+  /// Client rows have no gender; unknown uses জনাব.
+  static String hearingSms({
+    String? gender,
+    required String client,
+    required String date,
+    required String court,
+    required String lawyer,
+  }) {
+    return _composeHearingSms(
+      title: hearingTitle(gender),
+      client: client,
+      date: date,
+      court: court,
+      lawyer: lawyer,
+    );
+  }
+
   static String hearingReminderSms({
     required String clientName,
     required String caseName,
@@ -70,12 +105,12 @@ class AutoMessagingDefaults {
     required String chamberName,
     required String appearanceTime,
   }) {
-    final client = clientName.trim().isEmpty ? 'মক্কেল' : clientName.trim();
-    final matter = caseName.trim().isEmpty ? 'মামলা' : caseName.trim();
-    final court = courtName.trim().isEmpty ? 'আদালত' : courtName.trim();
-    final line =
-        'মক্কেল: $client। মামলা: $matter। আদালত: $court। শুনানি: ${hearingDate.trim()}। আইনজীবী: ${lawyerName.trim()}। চেম্বার: ${chamberName.trim()}। সময়: ${appearanceTime.trim()}।';
-    return '$line\nMAMLAQ\n$mamlaqPublicSite';
+    return hearingSms(
+      client: clientName,
+      date: hearingDate,
+      court: courtName,
+      lawyer: lawyerName,
+    );
   }
 
   static String hearingSmsBody({
@@ -86,18 +121,125 @@ class AutoMessagingDefaults {
     String lawyerName = '',
     String chamberName = '',
     String appearanceTime = '',
+    String? gender,
   }) {
-    final d = hearingDate;
-    final dd = d.day.toString().padLeft(2, '0');
-    final mm = d.month.toString().padLeft(2, '0');
-    return hearingReminderSms(
-      clientName: name,
-      caseName: caseNo,
-      courtName: courtName,
-      hearingDate: '$dd/$mm/${d.year}',
-      lawyerName: lawyerName,
-      chamberName: chamberName,
-      appearanceTime: appearanceTime,
+    return hearingSms(
+      gender: gender,
+      client: name,
+      date: formatHearingDate(hearingDate),
+      court: courtName,
+      lawyer: lawyerName,
     );
   }
+}
+
+const _hearingMonths = [
+  'জানু',
+  'ফেব্রু',
+  'মার্চ',
+  'এপ্রি',
+  'মে',
+  'জুন',
+  'জুলা',
+  'আগ',
+  'সেপ্টে',
+  'অক্টো',
+  'নভে',
+  'ডিসে',
+];
+const _bnDigits = '০১২৩৪৫৬৭৮৯';
+const _honorifics = {'মোঃ', 'মো.', 'মো', 'মোহাম্মদ', 'মোছাঃ', 'মোছা', 'মোসাঃ', 'মোছঃ'};
+
+int _codePoints(String value) => value.runes.length;
+
+String _bnNumber(int value) {
+  return '$value'.replaceAllMapped(RegExp(r'\d'), (m) => _bnDigits[int.parse(m.group(0)!)]);
+}
+
+String _formatHearingDay(int day, int month) {
+  final label = month >= 1 && month <= 12 ? _hearingMonths[month - 1] : '';
+  return '${_bnNumber(day)} $label'.trim();
+}
+
+List<String> _nameTokens(String name) {
+  return name.trim().split(RegExp(r'\s+')).where((t) => t.isNotEmpty).toList();
+}
+
+bool _isHonorific(String token) {
+  final bare = token.replaceAll(RegExp(r'[।.]+$'), '');
+  return _honorifics.contains(token) || _honorifics.contains(bare);
+}
+
+String _longerName(List<String> client, List<String> lawyer) {
+  final clientLen = _codePoints(client.join(' '));
+  final lawyerLen = _codePoints(lawyer.join(' '));
+  if (clientLen != lawyerLen) return clientLen > lawyerLen ? 'client' : 'lawyer';
+  return client.length >= lawyer.length ? 'client' : 'lawyer';
+}
+
+List<String> _dropMiddle(List<String> tokens) {
+  if (tokens.length <= 2) return tokens;
+  return [tokens.first, ...tokens.sublist(2)];
+}
+
+List<String> _toOneToken(List<String> tokens) {
+  if (tokens.length <= 1) return tokens;
+  final plain = tokens.where((token) => !_isHonorific(token)).toList();
+  final pool = plain.isEmpty ? tokens : plain;
+  var best = pool.first;
+  for (final token in pool) {
+    if (_codePoints(token) > _codePoints(best)) best = token;
+  }
+  return [best];
+}
+
+String _line(String title, String client, String date, String court, String? lawyer) {
+  final courtName = court.trim();
+  final courtText = courtName.isEmpty ? '' : '$courtName ';
+  final head = '$title ${client.trim()}, কেসের শুনানি ${date.trim()}, ${courtText}আদালত। উকিল';
+  if (lawyer == null || lawyer.trim().isEmpty) return '$head।';
+  return '$head ${lawyer.trim()}।';
+}
+
+String _composeHearingSms({
+  required String title,
+  required String client,
+  required String date,
+  required String court,
+  required String lawyer,
+}) {
+  var clientTokens = _nameTokens(client);
+  var lawyerTokens = _nameTokens(lawyer);
+  if (clientTokens.isEmpty) clientTokens = ['মক্কেল'];
+  String text() => _line(title, clientTokens.join(' '), date, court, lawyerTokens.join(' '));
+  String bare() => _line(title, clientTokens.join(' '), date, court, null);
+
+  if (_codePoints(text()) <= 70) return text();
+
+  while (_codePoints(text()) > 70 && (clientTokens.length > 2 || lawyerTokens.length > 2)) {
+    final which = _longerName(clientTokens, lawyerTokens);
+    if (which == 'client' && clientTokens.length > 2) {
+      clientTokens = _dropMiddle(clientTokens);
+    } else if (lawyerTokens.length > 2) {
+      lawyerTokens = _dropMiddle(lawyerTokens);
+    } else if (clientTokens.length > 2) {
+      clientTokens = _dropMiddle(clientTokens);
+    } else {
+      break;
+    }
+  }
+  if (_codePoints(text()) <= 70) return text();
+
+  final first = _longerName(clientTokens, lawyerTokens);
+  final second = first == 'client' ? 'lawyer' : 'client';
+  if (first == 'client' && clientTokens.length > 1) clientTokens = _toOneToken(clientTokens);
+  if (first == 'lawyer' && lawyerTokens.length > 1) lawyerTokens = _toOneToken(lawyerTokens);
+  if (_codePoints(text()) <= 70) return text();
+  if (second == 'client' && clientTokens.length > 1) clientTokens = _toOneToken(clientTokens);
+  if (second == 'lawyer' && lawyerTokens.length > 1) lawyerTokens = _toOneToken(lawyerTokens);
+  if (_codePoints(text()) <= 70) return text();
+
+  if (_codePoints(bare()) <= 70) return bare();
+  if (clientTokens.length > 1) clientTokens = _toOneToken(clientTokens);
+  return bare();
 }

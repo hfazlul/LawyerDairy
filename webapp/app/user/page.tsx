@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { requireWebUser, planOfUser, personalWorkspace } from '@/lib/web-session'
+import { requireWebUser, planOfUser, planExpiresOfUser, personalWorkspace } from '@/lib/web-session'
 import { isPremiumActive, webTrialActive } from '@/lib/entitlement-gates'
 import { withWorkspaceTx } from '@/lib/rls'
 import { UserShell } from '@/ui/app-nav'
@@ -23,7 +23,7 @@ export default async function UserHome() {
   const user = await requireWebUser('/user')
   const ws = personalWorkspace(user)
   const plan = planOfUser(user)
-  const active = isPremiumActive(plan, ws?.planExpiresAt)
+  const active = isPremiumActive(plan, planExpiresOfUser(user))
   const trial = webTrialActive(user.createdAt, user.webTrialEndsAt)
 
   const summary = ws

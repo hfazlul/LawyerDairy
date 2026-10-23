@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { prisma } from '@/lib/prisma'
 import { requireAuth } from '@/lib/auth-middleware'
+import { isPremiumActive, webTrialActive } from '@/lib/entitlement-gates'
+import { accountBilling } from '@/lib/full-access'
 import { acceptJoinAsJunior, SeatLimitError } from '@/lib/team/chamber-share'
 
 export async function POST(
@@ -23,12 +25,15 @@ export async function POST(
   }
 
   try {
+    const billing = accountBilling(user, row.workspace.plan, row.workspace.planExpiresAt)
     await prisma.$transaction(async (tx) => {
       await acceptJoinAsJunior(tx, {
         workspaceId: row.workspaceId,
-        workspacePlan: row.workspace.plan,
+        workspacePlan: billing.plan,
         requesterUserId: row.requesterUserId,
         actorUserId: user.id,
+        paid: isPremiumActive(billing.plan, billing.endsAt),
+        trialActive: webTrialActive(user.createdAt, user.webTrialEndsAt),
       })
       await tx.joinRequest.update({
         where: { id: row.id },

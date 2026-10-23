@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { rateLimit, clientIp } from '@/lib/rate-limit'
-import { signupPhoneIssue } from '@/lib/identity'
-import { issuePasswordOtp } from '@/lib/auth/issue-password-otp'
+import { normalizeBdPhone } from '@/lib/identity'
+import { issuePasswordOtp, type PasswordOtpInput } from '@/lib/auth/issue-password-otp'
 import { logAuthFailure } from '@/lib/auth/signup-failure'
 
 function isDev(): boolean {
@@ -36,36 +36,65 @@ function succeed(req: NextRequest, contentType: string, expiresInSec: number) {
   return NextResponse.redirect(sameOrigin(req, '/user/forgot?sent=1'), 303)
 }
 
-export async function POST(req: NextRequest) {
-  const ip = clientIp(req.headers)
-  const contentType = req.headers.get('content-type') || ''
+type Fields = { channel: 'email' | 'phone'; email: string; phone: string }
+
+async function readFields(req: NextRequest, contentType: string): Promise<Fields> {
+  let channel = ''
+  let email = ''
+  let phone = ''
   let identifier = ''
   try {
     if (contentType.includes('application/json')) {
-      const body = (await req.json()) as { identifier?: string; phone?: string }
-      identifier = String(body.identifier || body.phone || '')
+      const body = (await req.json()) as { channel?: string; email?: string; phone?: string; identifier?: string }
+      channel = String(body.channel || '')
+      email = String(body.email || '')
+      phone = String(body.phone || '')
+      identifier = String(body.identifier || '')
     } else {
       const fd = await req.formData()
-      identifier = String(fd.get('identifier') || fd.get('phone') || '')
+      channel = String(fd.get('channel') || '')
+      email = String(fd.get('email') || '')
+      phone = String(fd.get('phone') || '')
+      identifier = String(fd.get('identifier') || '')
     }
   } catch {
-    identifier = ''
+    channel = ''
   }
+  if (!phone) phone = identifier
+  const picked: 'email' | 'phone' = channel === 'email' || (email && !phone) ? 'email' : 'phone'
+  return { channel: picked, email, phone }
+}
 
-  const phoneIssue = signupPhoneIssue(identifier)
-  if (phoneIssue) return fail(req, contentType, phoneIssue, 400)
+export async function POST(req: NextRequest) {
+  const ip = clientIp(req.headers)
+  const contentType = req.headers.get('content-type') || ''
+  const fields = await readFields(req, contentType)
 
   if (!isDev()) {
     const rl = rateLimit(`pwreset:${ip}`, 3, 60 * 60_000)
     if (!rl.ok) return fail(req, contentType, 'একটু পরে আবার চেষ্টা করুন।', 429)
   }
+  const phoneKey = normalizeBdPhone(fields.phone)
+  if (phoneKey) {
+    const rlPhone = rateLimit(`pwreset-phone:${phoneKey}`, 5, 60 * 60_000)
+    if (!rlPhone.ok) return fail(req, contentType, 'একটু পরে আবার চেষ্টা করুন।', 429)
+  }
+  const emailKey = fields.email.trim().toLowerCase()
+  if (emailKey) {
+    const rlEmail = rateLimit(`pwreset-email:${emailKey}`, 5, 60 * 60_000)
+    if (!rlEmail.ok) return fail(req, contentType, 'একটু পরে আবার চেষ্টা করুন।', 429)
+  }
+
+  const input: PasswordOtpInput = fields.channel === 'email'
+    ? { channel: 'email', email: fields.email }
+    : { channel: 'phone', email: fields.email, phone: fields.phone }
 
   try {
-    const issued = await issuePasswordOtp(identifier)
+    const issued = await issuePasswordOtp(input)
     if (!issued.ok) return fail(req, contentType, issued.messageBn, issued.status)
     return succeed(req, contentType, issued.expiresInSec)
   } catch (err) {
     logAuthFailure(err, process.env, 'password reset failed')
-    return fail(req, contentType, 'এসএমএস পাঠানো যায়নি। আবার চেষ্টা করুন।', 500)
+    return fail(req, contentType, 'কোড পাঠানো যায়নি। আবার চেষ্টা করুন।', 500)
   }
 }

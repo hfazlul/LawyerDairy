@@ -85,14 +85,14 @@ export function LoginForm({ error, next }: { error: string; next: string }) {
         </p>
       ) : null}
       <div className="space-y-1.5">
-        <Label htmlFor="identifier" className="font-bengali">নাম বা মোবাইল</Label>
+        <Label htmlFor="identifier" className="font-bengali">নাম</Label>
         <Input
           id="identifier"
           type="text"
           name="identifier"
           required
           autoComplete="username"
-          placeholder="নাম অথবা 01XXXXXXXXX"
+          placeholder="নাম"
           aria-invalid={invalid.identifier || undefined}
           className={cn(invalid.identifier && invalidClass)}
           onChange={() => clearField('identifier')}
