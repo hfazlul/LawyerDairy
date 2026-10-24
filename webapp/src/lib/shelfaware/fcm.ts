@@ -4,8 +4,15 @@ const APP_NAME = 'shelfaware'
 
 type Messaging = import('firebase-admin/messaging').Messaging
 
+/** Shelf account first, then the health checker's FIREBASE_SERVICE_ACCOUNT_JSON. */
+export function shelfFirebaseJson(): string {
+  const shelf = (process.env.SHELFAWARE_FIREBASE_SERVICE_ACCOUNT_JSON || '').trim()
+  if (shelf) return shelf
+  return (process.env.FIREBASE_SERVICE_ACCOUNT_JSON || '').trim()
+}
+
 export function shelfServiceAccount(): Record<string, unknown> | null {
-  const raw = (process.env.SHELFAWARE_FIREBASE_SERVICE_ACCOUNT_JSON || '').trim()
+  const raw = shelfFirebaseJson()
   if (!raw) return null
   try {
     const text = raw.startsWith('{') ? raw : fs.readFileSync(raw, 'utf8')
@@ -33,6 +40,19 @@ export async function shelfMessaging(): Promise<Messaging | null> {
   return admin.messaging(admin.app(APP_NAME))
 }
 
+/** Text the server puts on a ShelfAware expiry push. There is no separate template. */
+export function shelfPushMessage(input: { title: string; body: string; itemKey: string }): {
+  notification: { title: string; body: string }
+  data: { type: 'expiry_reminder'; title: string; body: string; itemKey: string }
+} {
+  const title = input.title
+  const body = input.body || input.title
+  return {
+    notification: { title, body },
+    data: { type: 'expiry_reminder', title, body, itemKey: input.itemKey },
+  }
+}
+
 export async function sendShelfPush(input: {
   token: string
   title: string
@@ -41,22 +61,18 @@ export async function sendShelfPush(input: {
 }): Promise<'sent' | 'invalid' | 'unconfigured' | 'failed'> {
   const messaging = await shelfMessaging()
   if (!messaging) return 'unconfigured'
+  const message = shelfPushMessage(input)
   try {
     await messaging.send({
       token: input.token,
-      notification: { title: input.title, body: input.body },
-      data: {
-        type: 'expiry_reminder',
-        title: input.title,
-        body: input.body,
-        itemKey: input.itemKey,
-      },
+      notification: message.notification,
+      data: message.data,
       android: {
         priority: 'high',
         notification: {
           channelId: 'expiry_today_v3',
-          title: input.title,
-          body: input.body,
+          title: message.notification.title,
+          body: message.notification.body,
         },
       },
     })

@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import { useEffect, useState, type ReactNode } from 'react'
+import { useState, type ReactNode } from 'react'
 import {
   LayoutDashboard,
   User,
@@ -18,8 +18,6 @@ import {
   Share2,
   MessageSquare,
   GraduationCap,
-  Smartphone,
-  ChevronRight,
   Menu,
   LogOut,
   Globe,
@@ -64,14 +62,6 @@ const ADMIN_NAV: NavItem[] = [
   { href: '/hfazlul/career', label: 'Career', labelBn: 'ক্যারিয়ার', icon: GraduationCap },
 ]
 
-const SHELFAWARE_NAV = [
-  { id: 'devices', href: '/hfazlul/shelfaware#devices', labelBn: 'ডিভাইস' },
-  { id: 'push', href: '/hfazlul/shelfaware#push', labelBn: 'পুশ বিট' },
-  { id: 'agent', href: '/hfazlul/shelfaware#agent', labelBn: 'বারকোড এজেন্ট' },
-  { id: 'health', href: '/hfazlul/shelfaware#health', labelBn: 'মডেল হেলথ' },
-  { id: 'device-list', href: '/hfazlul/shelfaware#device-list', labelBn: 'ডিভাইস তালিকা' },
-] as const
-
 function NavLinks(props: {
   items: NavItem[]
   onNavigate?: () => void
@@ -108,62 +98,6 @@ function NavLinks(props: {
         )
       })}
     </nav>
-  )
-}
-
-function ShelfAwareMenu(props: { compact?: boolean; onNavigate?: () => void }) {
-  const pathname = usePathname()
-  const onShelf = pathname === '/hfazlul/shelfaware' || pathname.startsWith('/hfazlul/shelfaware/')
-  const [open, setOpen] = useState(onShelf)
-  const [hash, setHash] = useState('')
-
-  useEffect(() => {
-    if (onShelf) setOpen(true)
-    const read = () => setHash(window.location.hash.replace(/^#/, ''))
-    read()
-    window.addEventListener('hashchange', read)
-    return () => window.removeEventListener('hashchange', read)
-  }, [onShelf])
-
-  return (
-    <div className="shrink-0 border-t border-white/10 p-3">
-      <button
-        type="button"
-        aria-expanded={open}
-        aria-controls={props.compact ? 'shelfaware-submenu-mobile' : 'shelfaware-submenu'}
-        onClick={() => setOpen((value) => !value)}
-        className="flex w-full items-center gap-3 rounded-lg px-3 py-2.5 text-sm font-medium text-white/80 transition-colors hover:bg-white/10 hover:text-white"
-      >
-        <Smartphone className="h-4 w-4 shrink-0" />
-        <span className="flex-1 text-left">ShelfAware</span>
-        <ChevronRight className={cn('h-4 w-4 shrink-0 transition-transform', open && 'rotate-90')} />
-      </button>
-      {open ? (
-        <div id={props.compact ? 'shelfaware-submenu-mobile' : 'shelfaware-submenu'} className="mt-1 flex flex-col gap-0.5 pl-4">
-          {SHELFAWARE_NAV.map((item) => {
-            const active = onShelf && hash === item.id
-            return (
-              <Link
-                key={item.id}
-                href={item.href}
-                onClick={() => {
-                  setHash(item.id)
-                  props.onNavigate?.()
-                }}
-                className={cn(
-                  'rounded-lg px-3 py-2 text-sm font-medium transition-colors',
-                  active
-                    ? 'bg-brass/20 text-brass-soft'
-                    : 'text-white/80 hover:bg-white/10 hover:text-white',
-                )}
-              >
-                <span className="font-bengali">{item.labelBn}</span>
-              </Link>
-            )
-          })}
-        </div>
-      ) : null}
-    </div>
   )
 }
 
@@ -279,7 +213,6 @@ function DashboardShell(props: {
           <div className="min-h-0 flex-1 overflow-y-auto">
             <NavLinks items={items} onNavigate={() => setOpen(false)} />
           </div>
-          {props.variant === 'admin' ? <ShelfAwareMenu compact onNavigate={() => setOpen(false)} /> : null}
         </div>
       </SheetContent>
     </Sheet>
@@ -293,7 +226,6 @@ function DashboardShell(props: {
         <div className="min-h-0 flex-1 overflow-y-auto">
           <NavLinks items={items} />
         </div>
-        {props.variant === 'admin' ? <ShelfAwareMenu /> : null}
         <div className="border-t border-white/10 p-3 text-xs text-white/45">MAMLAQ Legal Management</div>
       </aside>
 

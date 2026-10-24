@@ -2,7 +2,8 @@ import { spawn } from 'node:child_process'
 import path from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { prisma } from '@/lib/prisma'
-import { sendShelfPush, shelfServiceAccount } from './fcm'
+import { sendShelfPush, shelfFirebaseJson, shelfServiceAccount } from './fcm'
+import { redactJobTail } from './schedule'
 
 function money(micros: bigint | null | undefined): string {
   const n = Number(micros ?? 0n) / 1_000_000
@@ -99,6 +100,10 @@ export function shelfAgentChildEnv(): Record<string, string> {
     FIREBASE_PRIVATE_KEY: '',
     GOOGLE_APPLICATION_CREDENTIALS: '',
   }
+  const groq = (process.env.GROQ_API_KEY || '').trim()
+  if (!(process.env.GROQ_KEYS || '').trim() && groq) env.GROQ_KEYS = groq
+  const openRouter = (process.env.OPENROUTER_API_KEY || '').trim()
+  if (!(process.env.OPENROUTER_KEYS || '').trim() && openRouter) env.OPENROUTER_KEYS = openRouter
   const json = shelfServiceAccount()
   if (!json) return env
   const projectId = String(json.project_id || '')
@@ -123,7 +128,7 @@ export async function countAgentQueue(): Promise<{ queue: number } | { error: st
   const matches = result.tail.match(/\{[^{}]*"queue"\s*:\s*\d+[^{}]*\}/g)
   const raw = matches?.[matches.length - 1]
   if (result.code !== 0 || !raw) {
-    return { error: (raw || result.tail || 'queue_count_failed').slice(0, 300) }
+    return { error: redactJobTail(raw || result.tail || 'queue_count_failed').slice(0, 300) }
   }
   try {
     const parsed = JSON.parse(raw) as { queue?: number }
@@ -149,27 +154,30 @@ export async function runCentralAgent() {
     await mod.default(req, res);
   `
   const result = await runChild(process.execPath, ['--input-type=module', '-e', script], dir, shelfAgentChildEnv())
+  const safe = { code: result.code, tail: redactJobTail(result.tail) }
   await prisma.shelfOpsBeat.upsert({
     where: { id: 'agent' },
-    create: { id: 'agent', detail: `code=${result.code} ${result.tail.slice(0, 400)}` },
-    update: { lastRunAt: new Date(), detail: `code=${result.code} ${result.tail.slice(0, 400)}` },
+    create: { id: 'agent', detail: `code=${safe.code} ${safe.tail.slice(0, 400)}` },
+    update: { lastRunAt: new Date(), detail: `code=${safe.code} ${safe.tail.slice(0, 400)}` },
   })
-  return result
+  return safe
 }
 
 export async function runModelHealthCheck() {
   const dir = shelfHealthDir()
   const script = path.join(dir, 'tools', 'model_health_check.py')
-  const shelfJson = (process.env.SHELFAWARE_FIREBASE_SERVICE_ACCOUNT_JSON || '').trim()
+  const shelfJson = shelfFirebaseJson()
   const python = process.env.PYTHON || (process.platform === 'win32' ? 'python' : 'python3')
   const result = await runChild(python, [script], dir, {
+    SHELFAWARE_FIREBASE_SERVICE_ACCOUNT_JSON: shelfJson,
     FIREBASE_SERVICE_ACCOUNT_JSON: shelfJson,
     GOOGLE_APPLICATION_CREDENTIALS: '',
   })
+  const safe = { code: result.code, tail: redactJobTail(result.tail) }
   await prisma.shelfOpsBeat.upsert({
     where: { id: 'health' },
-    create: { id: 'health', detail: `code=${result.code} ${result.tail.slice(0, 400)}` },
-    update: { lastRunAt: new Date(), detail: `code=${result.code} ${result.tail.slice(0, 400)}` },
+    create: { id: 'health', detail: `code=${safe.code} ${safe.tail.slice(0, 400)}` },
+    update: { lastRunAt: new Date(), detail: `code=${safe.code} ${safe.tail.slice(0, 400)}` },
   })
-  return result
+  return safe
 }

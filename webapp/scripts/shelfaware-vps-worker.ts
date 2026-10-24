@@ -1,19 +1,14 @@
 /**
- * VPS loop for ShelfAware. Push stays frequent. The central agent does not.
+ * VPS loop for ShelfAware. Push stays on its short interval and does nothing
+ * when no reminder is due. The central agent does not.
  *
- * process-queue.js (shelfaware-agent) loads at most BATCH_SIZE (30) docs from
- * Firestore agent_queue per invocation, resolves them, and writes products +
- * product_templates. Hobby cron was once a day (vercel.json `0 3 * * *`);
- * GitHub Actions poked that 10-second route every hour. On the VPS one
- * invocation gets a 9-minute budget, so hourly polling is unnecessary.
- *
- * Queue depth picks the day's cap (local clock):
- *   0            skip, and do not consume the daily cap
- *   1–30         1 run (one invocation can see the whole pile)
- *   31–120       4 runs (up to four batches of 30)
- *   121+         5 runs (daily cap; a deeper backlog continues tomorrow)
- * Runs only from 08:00 through 20:00 local time, spaced across that window,
- * and only when the last model-health beat did not fail.
+ * Once per Asia/Dhaka day, at or after 09:00 (the old Hobby cron 03:00 UTC),
+ * if Firestore agent_queue has incomplete barcodes, the agent starts by itself.
+ * That start drains the queue one batch of 30 at a time, yielding between
+ * batches so the push interval still runs, until the queue is empty or 20
+ * batches have run. It is not a 2-minute loop. A deeper pile continues the
+ * next day. The model health check stays on its monthly cadence and replaces
+ * dead model ids when it runs.
  */
 import { existsSync, readFileSync } from 'node:fs'
 import { resolve } from 'node:path'
@@ -24,20 +19,19 @@ import {
   runCentralAgent,
   runModelHealthCheck,
 } from '../src/lib/shelfaware/jobs'
+import { agentDue, dayDone, dayRuns, dhakaParts, parseAgentResult } from '../src/lib/shelfaware/schedule'
 
 const PUSH_MS = 2 * 60 * 1000
 const TICK_MS = 30 * 1000
 const HEALTH_OK_MS = 28 * 24 * 60 * 60 * 1000
 const HEALTH_RETRY_MS = 24 * 60 * 60 * 1000
 const COUNT_GAP_MS = 15 * 60 * 1000
-const BATCH = 30
-const CAP = 5
-const WINDOW_START_H = 8
-const WINDOW_END_H = 20
+const MAX_DRAIN_BATCHES = 20
 const DAY_BEAT = 'agent-day'
 
 let lastPushAt = 0
 let lastDepthCheckAt = 0
+let agentDoneYmd = ''
 
 function loadDotEnv() {
   const p = resolve(process.cwd(), '.env')
@@ -60,50 +54,10 @@ function sleep(ms: number) {
   return new Promise((resolve) => setTimeout(resolve, ms))
 }
 
-function localDay(d = new Date()): string {
-  const y = d.getFullYear()
-  const m = String(d.getMonth() + 1).padStart(2, '0')
-  const day = String(d.getDate()).padStart(2, '0')
-  return `${y}-${m}-${day}`
-}
-
-function inDaytime(now = new Date()): boolean {
-  const h = now.getHours()
-  return h >= WINDOW_START_H && h <= WINDOW_END_H
-}
-
-/** How many agent invocations are worth spending today for this pile. */
-export function runsForQueueDepth(depth: number): number {
-  if (depth <= 0) return 0
-  if (depth <= BATCH) return 1
-  if (depth <= BATCH * 4) return 4
-  return CAP
-}
-
-/** Minimum time between attempts so a restart cannot fire the whole cap at once. */
-export function minGapMs(target: number): number {
-  if (target <= 1) return 12 * 60 * 60 * 1000
-  const span = (WINDOW_END_H - WINDOW_START_H) * 60 * 60 * 1000
-  return Math.floor(span / (target - 1))
-}
-
 function healthFailed(detail: string | null | undefined): boolean {
   const match = /^code=(\d+)/.exec((detail || '').trim())
   if (!match) return false
   return match[1] !== '0'
-}
-
-type DayState = { day: string; runs: number; target: number; lastRunAt: Date | null }
-
-async function readDayState(now = new Date()): Promise<DayState> {
-  const today = localDay(now)
-  const row = await prisma.shelfOpsBeat.findUnique({ where: { id: DAY_BEAT } })
-  if (!row) return { day: today, runs: 0, target: 0, lastRunAt: null }
-  const day = /day=(\d{4}-\d{2}-\d{2})/.exec(row.detail)?.[1]
-  if (day !== today) return { day: today, runs: 0, target: 0, lastRunAt: null }
-  const runs = Math.max(0, Math.trunc(Number(/runs=(\d+)/.exec(row.detail)?.[1] || 0)))
-  const target = Math.max(0, Math.trunc(Number(/target=(\d+)/.exec(row.detail)?.[1] || 0)))
-  return { day: today, runs, target, lastRunAt: row.lastRunAt }
 }
 
 async function writeDay(detail: string, touchLastRun: boolean) {
@@ -125,49 +79,71 @@ async function maybeHealth(nowMs: number) {
 }
 
 async function maybeAgent(now = new Date()) {
-  if (!inDaytime(now)) return
-  const state = await readDayState(now)
-  if (state.runs >= CAP) return
-  const since = state.lastRunAt ? now.getTime() - state.lastRunAt.getTime() : Number.POSITIVE_INFINITY
-  if (state.runs > 0 && since < minGapMs(CAP)) return
-  if (lastDepthCheckAt && now.getTime() - lastDepthCheckAt < COUNT_GAP_MS) return
-
-  lastDepthCheckAt = now.getTime()
-  const counted = await countAgentQueue()
-  if ('error' in counted) {
-    console.error(`agent queue count failed: ${counted.error}`)
+  const parts = dhakaParts(now)
+  if (!agentDue(parts.hour, false)) return
+  if (agentDoneYmd === parts.ymd) return
+  const row = await prisma.shelfOpsBeat.findUnique({ where: { id: DAY_BEAT } })
+  if (dayDone(row?.detail, parts.ymd)) {
+    agentDoneYmd = parts.ymd
     return
   }
-  const target = runsForQueueDepth(counted.queue)
-  if (target === 0) {
-    await writeDay(`day=${state.day} runs=${state.runs} target=0 depth=0 skipped=empty`, false)
+  const runs = dayRuns(row?.detail, parts.ymd)
+  if (runs === 0) {
+    if (lastDepthCheckAt && now.getTime() - lastDepthCheckAt < COUNT_GAP_MS) return
+    lastDepthCheckAt = now.getTime()
+    const counted = await countAgentQueue()
+    if ('error' in counted) {
+      console.error('agent queue count failed')
+      return
+    }
+    if (counted.queue === 0) {
+      await writeDay(`day=${parts.ymd} done=1 runs=0 depth=0 skipped=empty`, false)
+      agentDoneYmd = parts.ymd
+      console.log('agent skipped empty')
+      return
+    }
+    const health = await prisma.shelfOpsBeat.findUnique({ where: { id: 'health' } })
+    if (health && healthFailed(health.detail)) {
+      await writeDay(`day=${parts.ymd} done=1 runs=0 depth=${counted.queue} skipped=health`, false)
+      agentDoneYmd = parts.ymd
+      console.log('agent skipped health')
+      return
+    }
+    console.log(`agent start depth=${counted.queue}`)
+  } else if (runs >= MAX_DRAIN_BATCHES) {
+    await writeDay(`day=${parts.ymd} done=1 runs=${runs} skipped=cap`, true)
+    agentDoneYmd = parts.ymd
+    console.log('agent done cap')
     return
   }
-  if (state.runs >= target) return
-  if (state.runs > 0 && since < minGapMs(target)) return
 
-  const health = await prisma.shelfOpsBeat.findUnique({ where: { id: 'health' } })
-  if (health && healthFailed(health.detail)) {
-    await writeDay(
-      `day=${state.day} runs=${state.runs} target=${target} depth=${counted.queue} skipped=health`,
-      false,
-    )
-    console.log('agent skipped: last model health check failed')
-    return
-  }
-
-  console.log(`agent start depth=${counted.queue} target=${target} runs=${state.runs + 1}`)
   const result = await runCentralAgent()
+  const parsed = parseAgentResult(result.tail)
+  const again = await countAgentQueue()
+  const remaining = 'error' in again ? -1 : again.queue
+  const nextRuns = runs + 1
+  const stop =
+    result.code !== 0 ||
+    !parsed ||
+    parsed.http >= 400 ||
+    parsed.processed === 0 ||
+    remaining === 0 ||
+    nextRuns >= MAX_DRAIN_BATCHES
+  if (stop) agentDoneYmd = parts.ymd
   await writeDay(
-    `day=${state.day} runs=${state.runs + 1} target=${target} depth=${counted.queue} code=${result.code}`,
+    `day=${parts.ymd} done=${stop ? 1 : 0} runs=${nextRuns} remaining=${remaining} code=${result.code}`,
     true,
   )
-  console.log(`agent done code=${result.code}`)
+  console.log(
+    stop
+      ? `agent done code=${result.code} batches=${nextRuns} remaining=${remaining}`
+      : `agent batch code=${result.code} batches=${nextRuns} remaining=${remaining}`,
+  )
 }
 
 async function main() {
   loadDotEnv()
-  console.log('shelfaware worker up (push ~2m, agent by queue depth, health ~28d)')
+  console.log('shelfaware worker up (push ~2m, agent 09:00 Asia/Dhaka, health ~28d)')
   for (;;) {
     const nowMs = Date.now()
     if (nowMs - lastPushAt >= PUSH_MS) {

@@ -1,0 +1,29 @@
+# Hourly drain for Vercel Hobby (daily cron only).
+# Private-repo billed minutes: ~1 min × 24 × 30 ≈ 720, under the 2000 free cap.
+name: Hourly queue drain
+
+on:
+  schedule:
+    - cron: '0 * * * *'
+  workflow_dispatch:
+
+jobs:
+  drain:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: POST /api/process-queue
+        env:
+          CRON_SECRET: ${{ secrets.CRON_SECRET }}
+        run: |
+          set -euo pipefail
+          if [ -z "${CRON_SECRET}" ]; then
+            echo "CRON_SECRET is not set"
+            exit 1
+          fi
+          curl -fsS -X POST \
+            "https://shelfaware-central-agent.vercel.app/api/process-queue" \
+            -H "Authorization: Bearer ${CRON_SECRET}" \
+            -H "Content-Type: application/json" \
+            --max-time 25 \
+            -d '{}'
