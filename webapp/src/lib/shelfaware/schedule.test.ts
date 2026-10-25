@@ -1,6 +1,14 @@
 import assert from 'node:assert/strict'
 import test from 'node:test'
-import { agentDue, dayDone, dayRuns, dhakaParts, parseAgentResult, redactJobTail } from './schedule'
+import {
+  agentDue,
+  dayDone,
+  dayRuns,
+  dhakaParts,
+  parseAgentResult,
+  redactJobTail,
+  shelfReminderIsDue,
+} from './schedule'
 
 test('agent starts at 09:00 Asia/Dhaka and only once that day', () => {
   const atNine = dhakaParts(new Date('2026-10-24T03:00:00.000Z'))
@@ -22,6 +30,14 @@ test('agent result parser reads one batch summary', () => {
   const tail = 'noise\n' + JSON.stringify({ code: 200, body: { processed: 2, resolved: 1 } })
   assert.deepEqual(parseAgentResult(tail), { http: 200, processed: 2, resolved: 1 })
   assert.equal(parseAgentResult('no json'), null)
+})
+
+test('a shelf reminder is sent only after its due time, within the catch-up window', () => {
+  const now = Date.parse('2026-10-25T02:00:00.000Z')
+  assert.equal(shelfReminderIsDue(now, now), true)
+  assert.equal(shelfReminderIsDue(now - 60_000, now), true)
+  assert.equal(shelfReminderIsDue(now + 60_000, now), false)
+  assert.equal(shelfReminderIsDue(now - 13 * 60 * 60 * 1000, now), false)
 })
 
 test('job tail redacts credential-shaped text', () => {

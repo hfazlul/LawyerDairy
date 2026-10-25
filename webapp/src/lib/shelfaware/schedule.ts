@@ -64,6 +64,13 @@ export function parseAgentResult(tail: string): { http: number; processed: numbe
   return null
 }
 
+/** Catch-up after the due time. Nothing earlier than dueAt is sent. */
+export const SHELF_DUE_GRACE_MS = 12 * 60 * 60 * 1000
+
+export function shelfReminderIsDue(dueAtMs: number, nowMs: number): boolean {
+  return dueAtMs <= nowMs && nowMs - dueAtMs <= SHELF_DUE_GRACE_MS
+}
+
 /** Strip credential-shaped fragments before a job tail is stored. */
 export function redactJobTail(text: string): string {
   return text

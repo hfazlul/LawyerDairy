@@ -170,21 +170,17 @@ function bulkSms24CustomerId(): number | string {
   return /^\d+$/.test(raw) ? Number(raw) : raw
 }
 
-/** One recipient. JSON body; messages is an array so each client text can differ. */
-export async function sendBulkSms24(phone: string, message: string): Promise<{
-  ok: boolean
-  skipped?: string
-  error?: string
-}> {
+async function postDynamicSms(
+  messages: { to: string; message: string }[],
+): Promise<{ ok: boolean; skipped?: string; error?: string }> {
   const key = bulkSms24Key()
   if (!key) return { ok: false, skipped: 'sms_unconfigured' }
-  // Gateway example is 880 then the mobile with no leading 0 (88017…).
-  const to = formatSmsPhone(phone, 'e164')
+  if (!messages.length) return { ok: false, error: 'invalid_phone' }
   const url = bulkSms24Url()
   const body = JSON.stringify({
     customer_id: bulkSms24CustomerId(),
     api_key: key,
-    messages: [{ to, message }],
+    messages,
   })
   try {
     const res = await fetch(url, {
@@ -204,6 +200,33 @@ export async function sendBulkSms24(phone: string, message: string): Promise<{
     console.error('[sms] 24bulksmsbd request failed', redactProviderText(detail))
     return { ok: false, error: '24bulksmsbd_failed' }
   }
+}
+
+/** One recipient. JSON body; messages is an array so each client text can differ. */
+export async function sendBulkSms24(phone: string, message: string): Promise<{
+  ok: boolean
+  skipped?: string
+  error?: string
+}> {
+  // Gateway example is 880 then the mobile with no leading 0 (88017…).
+  const to = formatSmsPhone(phone, 'e164')
+  return postDynamicSms([{ to, message }])
+}
+
+/** Several recipients, each with its own text, in one DynamicSMSApi call. */
+export async function sendBulkSms24Messages(
+  rows: { to: string; message: string }[],
+): Promise<{ ok: boolean; skipped?: string; error?: string; count: number }> {
+  const messages: { to: string; message: string }[] = []
+  for (const row of rows) {
+    const to = formatSmsPhone(row.to, 'e164')
+    const message = row.message.trim()
+    if (!message || !/^8801[3-9]\d{8}$/.test(to)) continue
+    messages.push({ to, message })
+  }
+  if (!messages.length) return { ok: false, error: 'invalid_phone', count: 0 }
+  const sent = await postDynamicSms(messages)
+  return { ...sent, count: messages.length }
 }
 
 const SINGLE_OK_STATUS = new Set(['ok', 'success', 'successful', 'sent'])

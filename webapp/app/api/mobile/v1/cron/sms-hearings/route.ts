@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { smsHybridConfigured } from '@/lib/sms-hybrid'
-import { isDhakaQuietHours } from '@/lib/dhaka-hours'
+import { dhakaHour, isDhakaQuietHours } from '@/lib/dhaka-hours'
+import { dispatchAutomaticHearings } from '@/lib/hearing-dispatch'
+import { bulkSms24Configured } from '@/lib/sms-hybrid'
 import { ymdInDhaka } from '@/lib/fcm/dhaka'
 
 export const runtime = 'nodejs'
@@ -16,24 +17,30 @@ function cronAuthorized(req: NextRequest): boolean {
 }
 
 /**
- * Automatic one-line hearing SMS is retired.
- * The lawyer sends from the bulk SMS page (name, chamber, arrival time)
- * for hearings 1 or 2 days away. That path checks the package quota.
+ * Automatic hearing SMS. A lawyer with autoMessaging on gets one DynamicSMSApi
+ * batch for that lawyer's clients, on the day chips they left on (D-1 by default).
+ * The sentence is the existing 70-character hearing text.
  */
 async function handle(req: NextRequest) {
   if (!cronAuthorized(req)) {
     return NextResponse.json({ message: 'Unauthorized' }, { status: 401 })
   }
-  if (!smsHybridConfigured()) {
+  if (!bulkSms24Configured()) {
     return NextResponse.json({ ok: true, skipped: 'sms_unconfigured', sent: 0 })
   }
   if (isDhakaQuietHours()) {
     return NextResponse.json({ ok: true, skipped: 'quiet_hours', sent: 0 })
   }
+  if (dhakaHour() < 10) {
+    return NextResponse.json({ ok: true, skipped: 'before_10', sent: 0, ymd: ymdInDhaka() })
+  }
+  const result = await dispatchAutomaticHearings()
   return NextResponse.json({
-    ok: true,
-    skipped: 'bulk_sms_page',
-    sent: 0,
+    ok: result.failed === 0,
+    sent: result.sent,
+    skipped: result.skipped,
+    failed: result.failed,
+    workspaces: result.workspaces,
     ymd: ymdInDhaka(),
   })
 }
