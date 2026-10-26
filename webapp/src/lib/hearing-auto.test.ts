@@ -5,9 +5,14 @@ import test from 'node:test'
 import { fileURLToPath } from 'node:url'
 import { codePointLength } from './hearing-sms'
 import {
+  automaticHearingOwner,
+  hearingAutomaticOn,
   hearingAutoWindowOpen,
   hearingClientMessage,
+  hearingClientRecipient,
   hearingOffsets,
+  hearingSendSlots,
+  hearingTimesPerDay,
   hearingWhitelistProbeMessage,
 } from './hearing-auto'
 import { sendBulkSms24Messages } from './sms-hybrid'
@@ -45,7 +50,67 @@ test('automatic hearing cron posts DynamicSMSApi and does not use the single SMS
   assert.match(dispatch, /sendBulkSms24Messages/)
   assert.equal(dispatch.includes('smsSendApi'), false)
   assert.equal(dispatch.includes('sms.net.bd'), false)
-  assert.match(dispatch, /autoMessaging:\s*true/)
+  assert.equal(dispatch.includes('autoMessaging'), false)
+  assert.match(dispatch, /hearingAutomaticOn\(ws\.smsAutoEnabled\)/)
+  assert.match(dispatch, /automaticHearingOwner\(ws\.owner\)/)
+  assert.match(dispatch, /hearingClientRecipient/)
+  assert.match(dispatch, /FULL_ACCESS_USERNAME/)
+})
+
+test('unsaved hearing settings are one day before, once, and other accounts stay out', () => {
+  assert.equal(hearingAutomaticOn(null), true)
+  assert.equal(hearingAutomaticOn(undefined), true)
+  assert.equal(hearingAutomaticOn(true), true)
+  assert.equal(hearingAutomaticOn(false), false)
+  assert.equal(hearingTimesPerDay(undefined), 1)
+  assert.equal(hearingTimesPerDay(null), 1)
+  assert.equal(hearingTimesPerDay(2), 2)
+  assert.equal(hearingTimesPerDay(9), 3)
+  assert.equal(automaticHearingOwner({ username: 'fazlul_3601', phone: '01700000000' }), true)
+  assert.equal(automaticHearingOwner({ username: 'other', phone: '01700000000' }), false)
+  assert.equal(hearingClientRecipient('01712345678'), '+8801712345678')
+  assert.equal(hearingClientRecipient('  '), null)
+  assert.equal(hearingClientRecipient(null), null)
+  assert.deepEqual(
+    hearingSendSlots({
+      caseId: 'c',
+      hearingYmd: '2026-10-27',
+      offset: 1,
+      timesPerDay: undefined,
+      existing: [],
+    }),
+    [{ idem: 'sms|c|2026-10-27|1', retry: false }],
+  )
+  assert.deepEqual(
+    hearingSendSlots({
+      caseId: 'c',
+      hearingYmd: '2026-10-27',
+      offset: 1,
+      timesPerDay: 1,
+      existing: [{ idempotencyKey: 'sms|c|2026-10-27|1', status: 'sent' }],
+    }),
+    [],
+  )
+  assert.deepEqual(
+    hearingSendSlots({
+      caseId: 'c',
+      hearingYmd: '2026-10-27',
+      offset: 1,
+      timesPerDay: 2,
+      existing: [{ idempotencyKey: 'sms|c|2026-10-27|1', status: 'sent' }],
+    }),
+    [{ idem: 'sms|c|2026-10-27|1|2', retry: false }],
+  )
+  assert.deepEqual(
+    hearingSendSlots({
+      caseId: 'c',
+      hearingYmd: '2026-10-27',
+      offset: 2,
+      timesPerDay: 1,
+      existing: [{ idempotencyKey: 'sms|c|2026-10-27|2', status: 'failed' }],
+    }),
+    [{ idem: 'sms|c|2026-10-27|2', retry: true }],
+  )
 })
 
 test('dynamic bulk posts one messages array and does not echo the key', async () => {
@@ -80,7 +145,7 @@ test('dynamic bulk posts one messages array and does not echo the key', async ()
     }
     assert.equal(sent.customer_id, 1684)
     assert.equal(sent.messages.length, 2)
-    assert.equal(sent.messages[0].to, '8801531390692')
+    assert.equal(sent.messages[0].to, '+8801531390692')
     assert.equal(sent.messages[0].message, hearingWhitelistProbeMessage())
     assert.equal(logs.some((line) => line.includes('bulk-key')), false)
     assert.equal(sent.api_key, 'bulk-key')

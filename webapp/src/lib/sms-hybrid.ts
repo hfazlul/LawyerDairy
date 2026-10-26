@@ -202,14 +202,20 @@ async function postDynamicSms(
   }
 }
 
+/** DynamicSMSApi `to` is +880…, not 880 without a plus. */
+function dynamicSmsTo(phone: string): string {
+  const digits = formatSmsPhone(phone, 'e164')
+  return /^8801[3-9]\d{8}$/.test(digits) ? `+${digits}` : ''
+}
+
 /** One recipient. JSON body; messages is an array so each client text can differ. */
 export async function sendBulkSms24(phone: string, message: string): Promise<{
   ok: boolean
   skipped?: string
   error?: string
 }> {
-  // Gateway example is 880 then the mobile with no leading 0 (88017…).
-  const to = formatSmsPhone(phone, 'e164')
+  const to = dynamicSmsTo(phone)
+  if (!to) return { ok: false, error: 'invalid_phone' }
   return postDynamicSms([{ to, message }])
 }
 
@@ -219,9 +225,9 @@ export async function sendBulkSms24Messages(
 ): Promise<{ ok: boolean; skipped?: string; error?: string; count: number }> {
   const messages: { to: string; message: string }[] = []
   for (const row of rows) {
-    const to = formatSmsPhone(row.to, 'e164')
+    const to = dynamicSmsTo(row.to)
     const message = row.message.trim()
-    if (!message || !/^8801[3-9]\d{8}$/.test(to)) continue
+    if (!message || !to) continue
     messages.push({ to, message })
   }
   if (!messages.length) return { ok: false, error: 'invalid_phone', count: 0 }

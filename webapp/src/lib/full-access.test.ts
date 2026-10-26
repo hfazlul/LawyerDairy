@@ -38,3 +38,18 @@ test('hearing route refuses everyone else before any SMS send', () => {
   assert.match(route, /error:\s*'coming_soon'/)
   assert.match(route, /COMING_SOON_BN/)
 })
+
+test('hearing settings stay hidden from every other account', () => {
+  const route = readFileSync(
+    join(dirname(fileURLToPath(import.meta.url)), '../../app/api/mobile/v1/workspaces/me/messaging/route.ts'),
+    'utf8',
+  )
+  const gate = route.indexOf('if (!isFullAccessAccount(user))')
+  const update = route.indexOf('prisma.workspace.update')
+  assert.ok(gate >= 0)
+  assert.ok(update > gate)
+  assert.match(route, /smsTimesPerDay/)
+  assert.match(route, /smsAutoEnabled/)
+  assert.match(route, /COMING_SOON_BN/)
+  assert.equal(route.split('if (!isFullAccessAccount(user))').length, 3)
+})

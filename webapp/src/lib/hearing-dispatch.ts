@@ -2,9 +2,18 @@ import type { Plan } from '@prisma/client'
 import { prisma } from '@/lib/prisma'
 import { ensureMonthlySmsGrant, smsSegments } from '@/lib/credits'
 import { addYmd, utcPadAroundDhakaYmd, ymdInDhaka } from '@/lib/fcm/dhaka'
-import { fullAccessPlan } from '@/lib/full-access'
-import { hearingAutoWindowOpen, hearingClientMessage, hearingOffsets } from '@/lib/hearing-auto'
-import { normalizeBdPhone } from '@/lib/identity'
+import { FULL_ACCESS_PHONE, FULL_ACCESS_USERNAME, fullAccessPlan } from '@/lib/full-access'
+import {
+  automaticHearingOwner,
+  hearingAutomaticOn,
+  hearingAutoWindowOpen,
+  hearingClientMessage,
+  hearingClientRecipient,
+  hearingIdempotencyKey,
+  hearingOffsets,
+  hearingSendSlots,
+  hearingTimesPerDay,
+} from '@/lib/hearing-auto'
 import { newId } from '@/lib/crypto-tokens'
 import { setWorkspaceLocal } from '@/lib/rls'
 import { sendBulkSms24Messages } from '@/lib/sms-hybrid'
@@ -21,9 +30,12 @@ type Pending = {
 }
 
 /**
- * One DynamicSMSApi call per lawyer who turned automatic hearing SMS on.
- * Each client gets the existing short hearing sentence. Nothing is sent
- * before 10:00 Dhaka, during quiet hours, or when that day chip is off.
+ * Daily hearing SMS for workspaces owned by the one full-access account.
+ * A null switch means they never saved it, so sending stays on: one day before,
+ * once, until they save other day chips or a times-per-day count.
+ * Explicit smsAutoEnabled false stops that account until they save on again.
+ * Other accounts are not selected. Each client gets the existing hearing sentence.
+ * Nothing is sent before 10:00 Dhaka, during quiet hours, or when every day chip is off.
  */
 export async function dispatchAutomaticHearings(now = new Date()): Promise<{
   sent: number
@@ -36,21 +48,46 @@ export async function dispatchAutomaticHearings(now = new Date()): Promise<{
   }
   const today = ymdInDhaka(now)
   const workspaces = await prisma.workspace.findMany({
-    where: { deletedAt: null, autoMessaging: true },
+    where: {
+      deletedAt: null,
+      owner: {
+        deletedAt: null,
+        OR: [
+          { username: { equals: FULL_ACCESS_USERNAME, mode: 'insensitive' } },
+          { phone: { in: [FULL_ACCESS_PHONE, '01858173601', '8801858173601'] } },
+        ],
+      },
+    },
     include: { owner: { select: { id: true, name: true, username: true, phone: true } } },
-    take: 200,
+    take: 20,
   })
   let sent = 0
   let skipped = 0
   let failed = 0
   for (const ws of workspaces) {
+    if (!automaticHearingOwner(ws.owner)) {
+      skipped++
+      continue
+    }
+    if (!hearingAutomaticOn(ws.smsAutoEnabled)) {
+      skipped++
+      continue
+    }
     const offsets = hearingOffsets(ws)
     if (!offsets.length) {
       skipped++
       continue
     }
     try {
-      const outcome = await sendWorkspace(ws.id, ws.owner.name, fullAccessPlan(ws.owner, ws.plan), offsets, today, ws.owner.id)
+      const outcome = await sendWorkspace(
+        ws.id,
+        ws.owner.name,
+        fullAccessPlan(ws.owner, ws.plan),
+        offsets,
+        hearingTimesPerDay(ws.smsTimesPerDay),
+        today,
+        ws.owner.id,
+      )
       sent += outcome.sent
       skipped += outcome.skipped
       failed += outcome.failed
@@ -66,6 +103,7 @@ async function sendWorkspace(
   lawyerName: string,
   plan: Plan,
   offsets: number[],
+  timesPerDay: number,
   today: string,
   actorUserId: string,
 ): Promise<{ sent: number; skipped: number; failed: number }> {
@@ -95,15 +133,37 @@ async function sendWorkspace(
         })
       : []
     const districtById = new Map(districtRows.map((row) => [row.id, row.nameBn]))
+    const targets: { row: (typeof cases)[number]; phone: string }[] = []
     for (const row of cases) {
-      const phone = row.parties[0]?.phone ? normalizeBdPhone(row.parties[0].phone) : null
+      const phone = hearingClientRecipient(row.parties[0]?.phone)
       if (!phone) {
         skipped++
         continue
       }
-      const idem = `sms|${row.id}|${targetYmd}|${offset}`
-      const existing = await prisma.communicationMessage.findUnique({ where: { idempotencyKey: idem } })
-      if (existing?.status === 'sent') {
+      targets.push({ row, phone })
+    }
+    const cap = hearingTimesPerDay(timesPerDay)
+    const keys = targets.flatMap(({ row }) =>
+      Array.from({ length: cap }, (_, index) => hearingIdempotencyKey(row.id, targetYmd, offset, index + 1)),
+    )
+    const existingRows = keys.length
+      ? await prisma.communicationMessage.findMany({
+          where: { idempotencyKey: { in: keys } },
+          select: { idempotencyKey: true, status: true, creditsUsed: true },
+        })
+      : []
+    const existingByKey = new Map(
+      existingRows.flatMap((item) => (item.idempotencyKey ? [[item.idempotencyKey, item] as const] : [])),
+    )
+    for (const { row, phone } of targets) {
+      const slots = hearingSendSlots({
+        caseId: row.id,
+        hearingYmd: targetYmd,
+        offset,
+        timesPerDay: cap,
+        existing: existingRows,
+      })
+      if (!slots.length) {
         skipped++
         continue
       }
@@ -115,14 +175,17 @@ async function sendWorkspace(
         court: district,
         lawyer: lawyerName,
       })
-      pending.push({
-        idem,
-        phone,
-        message,
-        segments: smsSegments(message),
-        caseId: row.id,
-        reserve: !existing || existing.creditsUsed === 0,
-      })
+      for (const slot of slots) {
+        const existing = existingByKey.get(slot.idem)
+        pending.push({
+          idem: slot.idem,
+          phone,
+          message,
+          segments: smsSegments(message),
+          caseId: row.id,
+          reserve: !existing || existing.creditsUsed === 0,
+        })
+      }
     }
   }
   if (!pending.length) return { sent: 0, skipped, failed: 0 }

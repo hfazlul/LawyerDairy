@@ -17,9 +17,10 @@ function cronAuthorized(req: NextRequest): boolean {
 }
 
 /**
- * Automatic hearing SMS. A lawyer with autoMessaging on gets one DynamicSMSApi
- * batch for that lawyer's clients, on the day chips they left on (D-1 by default).
- * The sentence is the existing 70-character hearing text.
+ * Automatic hearing SMS for the one full-access account. The switch defaults on
+ * until they save it off. One DynamicSMSApi batch per owned workspace, on the
+ * saved day chips (one day before, once, until they save something else).
+ * Other accounts are skipped. The sentence is the existing hearing text.
  */
 async function handle(req: NextRequest) {
   if (!cronAuthorized(req)) {

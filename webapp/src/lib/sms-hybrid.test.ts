@@ -240,7 +240,7 @@ test('non-production hearing does not call sms.net.bd and uses DynamicSMSApi', a
     assert.equal(sent.customer_id, 1684)
     assert.equal(typeof sent.customer_id, 'number')
     assert.equal(sent.api_key, 'bulk-key')
-    assert.deepEqual(sent.messages, [{ to: '8801712345678', message: 'নমস্কার' }])
+    assert.deepEqual(sent.messages, [{ to: '+8801712345678', message: 'নমস্কার' }])
     assert.equal(sent.senderid, undefined)
     assert.equal(sent.sender_id, undefined)
   } finally {
@@ -345,7 +345,7 @@ test('24bulksmsbd-only send when primary missing', async () => {
     assert.equal(sent.customer_id, 1684)
     assert.equal(typeof sent.customer_id, 'number')
     assert.equal(sent.api_key, 'bulk-key')
-    assert.deepEqual(sent.messages, [{ to: '8801712345678', message: 'hi' }])
+    assert.deepEqual(sent.messages, [{ to: '+8801712345678', message: 'hi' }])
     assert.equal(sent.senderid, undefined)
     assert.equal(sent.sender_id, undefined)
     return new Response(JSON.stringify({ status: 'ok', sms_id: 'abc123' }), { status: 200 })
