@@ -14,7 +14,7 @@ export { money }
 export async function dispatchShelfReminders() {
   const now = Date.now()
   const from = new Date(now - 12 * 3600 * 1000)
-  const to = new Date(now + 36 * 3600 * 1000)
+  const to = new Date(now)
   const due = await prisma.shelfReminder.findMany({
     where: { sentAt: null, dueAt: { gte: from, lte: to } },
     include: { device: true },
